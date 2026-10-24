@@ -3,11 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import EventRow from '../components/EventRow.astro';
 import { events } from '../data/events';
 import { ingestStatus, staleSources } from '../data/status';
+import { istDay, compareEventStarts } from '../lib/dates.mjs';
 
 const published = events
   .filter((event) => event.curation.status === 'published')
-  .sort((a, b) => a.startAt.localeCompare(b.startAt));
-const grouped = Map.groupBy(published, (event) => event.startAt.slice(0, 10));
+  .sort(compareEventStarts);
+const grouped = Map.groupBy(published, (event) => istDay(event.startAt));
 const dateFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const refreshedAt = Date.parse(ingestStatus.ranAt);
 const stale = staleSources();
@@ -99,7 +100,7 @@ const healthMessage = stale.length > 0
     const today=`${val('year')}-${val('month')}-${val('day')}`;
     const add=(iso,n)=>{const d=new Date(`${iso}T12:00:00+05:30`);d.setUTCDate(d.getUTCDate()+n);return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).format(d)};
     const tomorrow=add(today,1);
-    const weekday=new Date(`${today}T12:00:00+05:30`).getDay();
+    const weekday=new Date(`${today}T12:00:00+05:30`).getUTCDay();
     const untilSat=weekday===0?-1:(6-weekday+7)%7; const sat=add(today,untilSat); const sun=add(sat,1);
     const groups=[...document.querySelectorAll('.day-group')]; const empty=document.querySelector('#empty-state');
     const count=document.querySelector('#event-count'); const areaSelect=document.querySelector('#area-filter');

@@ -162,3 +162,57 @@ test('venue.area is filled from the address when a source gives none',async t=>{
   assert.equal(out.find(e=>e.id==='a1').venue.area,'Race Course');
   assert.equal(out.find(e=>e.id==='a2').venue.area,'Custom Area');
 });
+
+test('date-only events survive afternoon refreshes through their last IST day',async t=>{
+  await inTempDir(t);
+  t.mock.timers.enable({apis:['Date'],now:new Date('2030-01-10T13:47:00+05:30')});
+  const allDay=ev({startAt:'2030-01-10',endAt:'2030-01-10'});
+  await mergeAndWrite([{source:'district',events:[allDay]}]);
+  assert.equal((await read()).length,1,'a date-only evening listing must survive the afternoon refresh');
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,1,'a partial or failed fetch must retain it too');
+  t.mock.timers.setTime(new Date('2030-01-11T00:00:00+05:30').getTime());
+  await mergeAndWrite([{source:'district',events:[allDay]}]);
+  assert.equal((await read()).length,0,'it expires at midnight IST');
+
+  const festival=ev({startAt:'2030-01-09',endAt:'2030-01-12'});
+  await mergeAndWrite([{source:'district',events:[festival]}]);
+  assert.equal((await read()).length,1,'a multi-day event is still running after its first day');
+  t.mock.timers.setTime(new Date('2030-01-12T23:59:59+05:30').getTime());
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,1,'the final date is inclusive');
+  t.mock.timers.setTime(new Date('2030-01-13T00:00:00+05:30').getTime());
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,0);
+});
+
+test('started timed events use the same expiry rules on successful and partial refreshes',async t=>{
+  await inTempDir(t);
+  t.mock.timers.enable({apis:['Date'],now:new Date('2030-01-10T13:00:00+05:30')});
+  const running=ev({startAt:'2030-01-10T05:00:00+05:30',endAt:'2030-01-10T18:00:00+05:30'});
+  await mergeAndWrite([{source:'district',events:[running]}]);
+  assert.equal((await read()).length,1,'an event with a future end is still running');
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,1,'a partial refresh must not remove a running event');
+  t.mock.timers.setTime(new Date('2030-01-10T18:00:00+05:30').getTime());
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,0);
+
+  const noEnd=ev({startAt:'2030-01-10T15:00:00'});
+  await mergeAndWrite([{source:'district',events:[noEnd]}]);
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,1,'keep the existing six-hour grace for events without an end');
+  t.mock.timers.setTime(new Date('2030-01-10T21:00:00+05:30').getTime());
+  await mergeAndWrite([]);
+  assert.equal((await read()).length,0);
+});
+
+test('mixed UTC and IST timestamps are sorted by actual start time',async t=>{
+  await inTempDir(t);
+  const times=['2030-01-10T12:30:00.000Z','2030-01-10T14:30:00.000Z','2030-01-10T16:00:00+05:30'];
+  await mergeAndWrite([{source:'district',events:times.map((startAt,i)=>ev({
+    id:String(i),title:['Jalsa Festival','Live Music Night','Art Meet'][i],startAt,
+    sources:[src('district',`https://example.test/${i}`)]
+  }))}]);
+  assert.deepEqual((await read()).map(e=>e.startAt),[times[2],times[0],times[1]]);
+});

@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
+import { istDay, compareEventStarts, isUnexpiredEvent } from '../src/lib/dates.mjs';
+export { istDay } from '../src/lib/dates.mjs';
 
 const SOURCE_RANK = {
   manual: 100,
@@ -32,15 +34,6 @@ function venueSimilarity(a='', b='') {
   if (smaller < 2) return base;
   let common=0; for (const t of A) if (B.has(t)) common++;
   return Math.max(base, common / smaller);
-}
-// Calendar day in IST. Timestamps without an offset are treated as IST, and the day is taken in IST
-// rather than from the raw string, so the same instant written as ...Z or ...+05:30 lands on one day.
-export function istDay(value='') {
-  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
-  const withZone=/(Z|[+-]\d{2}:?\d{2})$/i.test(value) ? value : `${value}+05:30`;
-  const t=Date.parse(withZone);
-  if (!Number.isFinite(t)) return value.slice(0,10);
-  return new Date(t + 5.5*3600_000).toISOString().slice(0,10);
 }
 function sourceRank(e) {
   return Math.max(0, ...(e.sources || []).map(s => SOURCE_RANK[s.provider] || 0));
@@ -176,7 +169,7 @@ export async function mergeAndWrite(sourceResults) {
   const retained=[];
   let dropped=0;
   for (const e of previous) {
-    if (new Date(e.startAt).getTime() <= now) continue;
+    if (!isUnexpiredEvent(e,now)) continue;
     if (merged.some(x => same(x,e))) continue;
     // Previously stored duplicates collapse here instead of both being kept.
     const dup=retained.findIndex(x => same(x,e));
@@ -193,9 +186,9 @@ export async function mergeAndWrite(sourceResults) {
   const out=merged
     .filter(eventPassesGeo)
     .filter(e => e.curation?.status === 'published')
-    .filter(e => new Date(e.startAt).getTime() > now - 6*3600_000)
+    .filter(e => isUnexpiredEvent(e,now))
     .map(withArea)
-    .sort((a,b)=>a.startAt.localeCompare(b.startAt));
+    .sort(compareEventStarts);
 
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');

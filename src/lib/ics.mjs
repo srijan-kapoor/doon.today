@@ -1,16 +1,13 @@
 // iCalendar (RFC 5545) output for the calendar feeds and per-event downloads. Plain .mjs so the site
 // build and `node --test` share one implementation.
 
+import { toInstant } from './dates.mjs';
+export { toInstant } from './dates.mjs';
+
 const SITE = 'https://doon.today';
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
-const HAS_ZONE = /(Z|[+-]\d{2}:?\d{2})$/i;
 const DEFAULT_DURATION_MS = 2 * 3600_000;
 const encoder = new TextEncoder();
-
-/** Timestamps without an offset are Dehradun local time (IST), not the build machine's. */
-export function toInstant(value) {
-  return new Date(HAS_ZONE.test(value) ? value : `${value}+05:30`);
-}
 
 const utc = (date) => date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 const ymd = (value) => value.replace(/-/g, '');
