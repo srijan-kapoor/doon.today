@@ -141,9 +141,11 @@ const healthMessage = stale.length > 0
       area: areaSelect && [...areaSelect.options].some(o=>o.value===params.get('area')) ? params.get('area') : ''
     };
 
+    // Month view replaces the date filters, so they must not skew the category and area counts there.
     const dayOk=(row)=>{
       const {startDate:start,endDate:end,days}=row.dataset;
       if(end<today) return false;
+      if(document.documentElement.classList.contains('view-month')) return true;
       // An event on specific dates is only on those days, not on every day between its first and last.
       if(days){
         const on=days.split(' ');
@@ -232,7 +234,7 @@ const healthMessage = stale.length > 0
     if(areaSelect) areaSelect.addEventListener('change',()=>{state.area=areaSelect.value;apply();});
     apply();
     // Lets the Month view (the module script below) read the same filters and react when they change.
-    globalThis.doonFilters={state,today};
+    globalThis.doonFilters={state,today,apply};
   </script>
   <script>
     import './../scripts/month-view.mjs';

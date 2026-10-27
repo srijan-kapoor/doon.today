@@ -141,6 +141,7 @@ if (container && filters) {
     view = b.dataset.view;
     writeUrl();
     render();
+    filters.apply(); // recounts the filter pills for the new view
   }));
   strip.addEventListener('click', (e) => { const b = e.target.closest('[data-day]'); if (b) pick(b.dataset.day); });
   days.addEventListener('click', (e) => { const b = e.target.closest('[data-day]'); if (b && !b.disabled) pick(b.dataset.day); });

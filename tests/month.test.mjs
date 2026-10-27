@@ -100,6 +100,7 @@ test('the page wires the switch, hides the date filters in Month view and keeps 
   assert.match(page, /data-view="list"[\s\S]*data-view="month"/);
   assert.match(page, /Nothing listed for this day yet\. Know of something\?/);
   assert.match(page, /More dots, busier day/);
+  assert.match(page, /dayOk=\(d\)=>document\.documentElement\.classList\.contains\('view-month'\)/, 'date filters do not skew counts in Month view');
   const css = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
   const month = css.slice(css.indexOf('/* List | Month view */'));
   assert.doesNotMatch(month.replace(/var\([^)]*\)/g, ''), /#[0-9a-f]{3,8}\b|rgba?\(/i, 'the Month view uses only CSS tokens');
