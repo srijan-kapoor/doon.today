@@ -100,8 +100,17 @@ test('the page wires the switch, hides the date filters in Month view and keeps 
   assert.match(page, /data-view="list"[\s\S]*data-view="month"/);
   assert.match(page, /Nothing listed for this day yet\. Know of something\?/);
   assert.match(page, /More dots, busier day/);
-  assert.match(page, /dayOk=\(d\)=>document\.documentElement\.classList\.contains\('view-month'\)/, 'date filters do not skew counts in Month view');
+  assert.match(page, /dayOk=\(row\)=>\{[\s\S]*?document\.documentElement\.classList\.contains\('view-month'\)/, 'date filters do not skew counts in Month view');
   const css = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
   const month = css.slice(css.indexOf('/* List | Month view */'));
   assert.doesNotMatch(month.replace(/var\([^)]*\)/g, ''), /#[0-9a-f]{3,8}\b|rgba?\(/i, 'the Month view uses only CSS tokens');
+});
+
+test('an event on specific dates shows on those days only', () => {
+  const plain = make('2026-10-31T16:00:00+05:30', '2026-12-20T18:00:00+05:30');
+  const onDates = { ...plain, range: eventDayRange({ startAt: '2026-10-31T10:30:00.000Z', endAt: '2026-12-20T12:30:00.000Z', occurrences: ['2026-10-31T10:30:00.000Z', '2026-11-22T10:30:00.000Z', '2026-12-20T10:30:00.000Z'] }) };
+  assert.equal(eventsOn([plain], '2026-11-10', {}).length, 1, 'a plain range runs on every day');
+  assert.equal(eventsOn([onDates], '2026-11-10', {}).length, 0);
+  assert.equal(eventsOn([onDates], '2026-11-22', {}).length, 1);
+  assert.equal(eventsOn([onDates], '2026-12-21', {}).length, 0);
 });

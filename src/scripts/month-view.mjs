@@ -23,7 +23,7 @@ if (container && filters) {
 
   const items = [...document.querySelectorAll('.day-group .event-row')].map((el) => ({
     el,
-    range: { start: el.dataset.startDate, end: el.dataset.endDate },
+    range: { start: el.dataset.startDate, end: el.dataset.endDate, ...(el.dataset.days && { days: el.dataset.days.split(' ') }) },
     categories: el.dataset.categories.split(' ').filter(Boolean),
     price: el.dataset.price,
     area: el.dataset.area,
@@ -102,7 +102,7 @@ if (container && filters) {
     list.replaceChildren(...ordered.map((m) => {
       const row = m.el.cloneNode(true);
       row.hidden = false;
-      if (m.range.end > m.range.start) {
+      if (!m.range.days && m.range.end > m.range.start) {
         if (m.range.start < date) row.querySelector('.event-time').textContent = 'Ongoing';
         row.querySelector('.event-tags').append(el('span', 'until', `Until ${shortDate.format(at(m.range.end))}`));
       }

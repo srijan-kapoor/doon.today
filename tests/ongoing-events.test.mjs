@@ -59,7 +59,7 @@ test('production Today, Tomorrow and Weekend filters match the whole date range 
   for(const timezone of ['Asia/Kolkata','America/Los_Angeles','Pacific/Kiritimati']) {
     process.env.TZ=timezone;
     const context=vm.createContext({Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
+      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
     vm.runInContext(script,context);
     for(const event of [longCourse,weekendCourse,timedEvent]) {
       const {start,end}=eventDayRange(event);
@@ -81,7 +81,7 @@ test('production Today, Tomorrow and Weekend filters match the whole date range 
     // On Sunday, an event that ended on Saturday must not reappear in Weekend under a past heading.
     t.mock.timers.setTime(new Date('2026-11-22T13:00:00+05:30').getTime());
     const sunday=vm.createContext({Date,Intl,URLSearchParams,location:{search:'?when=weekend',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
+      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
     vm.runInContext(script,sunday);sunday.row={dataset:{startDate:'2026-11-20',endDate:'2026-11-21'}};
     assert.equal(vm.runInContext('dayOk(row)',sunday),false);
     t.mock.timers.setTime(new Date('2026-11-20T13:00:00+05:30').getTime());
@@ -109,7 +109,7 @@ test('production filters match an event on specific dates only on its dates',asy
   const run=(now,when)=>{
     t.mock.timers.setTime(new Date(now).getTime());
     const context=vm.createContext({Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
+      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
     vm.runInContext(script,context);
     context.row={dataset:{startDate:start,endDate:end,days:days.join(' ')}};
     return vm.runInContext(`state.when='${when}';dayOk(row)`,context);

@@ -1,11 +1,10 @@
 // Pure date and filter logic for the home page's Month view. All days are IST calendar days as
 // YYYY-MM-DD strings and all arithmetic is done in UTC on those strings, so the visitor's timezone never matters.
-import { toInstant, istDay } from './dates.mjs';
+import { eventDayRange } from './dates.mjs';
+export { eventDayRange };
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const DAY_MS = 24 * 3600_000;
-// A timed end before this hour (IST) belongs to the night before: a 9pm show ending at 1am is one evening.
-const NIGHT_ENDS_BEFORE_HOUR = 6;
 
 export const STRIP_DAYS = 14;
 export const DOT_LIMIT = { strip: 4, grid: 8 };
@@ -18,26 +17,8 @@ export const addDays = (day, n) => fromUtc(utc(day) + n * DAY_MS);
 /** 0 = Monday … 6 = Sunday. */
 export const mondayIndex = (day) => (new Date(utc(day)).getUTCDay() + 6) % 7;
 
-/**
- * The inclusive IST days an event runs. Date-only ends are inclusive, timed ends are exclusive, and a timed end
- * before 6am counts as the night before. This mirrors eventDayRange() in open PR #34 (#22); once that lands,
- * import it from dates.mjs instead and delete this copy.
- */
-export function eventDayRange(event) {
-  const start = istDay(event.startAt);
-  const endTime = event.endAt ? toInstant(event.endAt).getTime() : NaN;
-  if (!Number.isFinite(endTime) || !Number.isFinite(toInstant(event.startAt).getTime())) return { start, end: start };
-  let end;
-  if (DATE_ONLY.test(event.endAt)) end = event.endAt;
-  else {
-    const local = new Date(endTime + 5.5 * 3600_000);
-    end = istDay(new Date(endTime).toISOString());
-    if (local.getUTCHours() < NIGHT_ENDS_BEFORE_HOUR) end = addDays(end, -1);
-  }
-  return { start, end: end > start ? end : start };
-}
-
-export const runsOn = (range, day) => range.start <= day && day <= range.end;
+/** An event on specific dates (range.days) runs only on those days, not on every day between its first and last. */
+export const runsOn = (range, day) => (range.days ? range.days.includes(day) : range.start <= day && day <= range.end);
 
 /** Today plus the next 13 days. */
 export const stripDays = (today) => Array.from({ length: STRIP_DAYS }, (_, i) => addDays(today, i));
