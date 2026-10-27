@@ -38,7 +38,7 @@ const healthMessage = stale.length > 0
     <p class="eyebrow">DEHRADUN · UTTARAKHAND</p>
     <h1>What’s happening<br />in Doon?</h1>
     <p class="lede">A quiet, useful calendar of events worth knowing about.</p>
-    <div class="filters" role="group" aria-label="Event date filters">
+    <div class="filters" id="when-filters" role="group" aria-label="Event date filters">
       <button class="active" aria-pressed="true" data-filter="all">Upcoming</button>
       <button aria-pressed="false" data-filter="today">Today</button>
       <button aria-pressed="false" data-filter="tomorrow">Tomorrow</button>
@@ -64,6 +64,10 @@ const healthMessage = stale.length > 0
   <section class="curated">
     <div class="section-heading">
       <h2>Events</h2><span id="event-count">{published.length}</span>
+      <div class="view-switch" role="group" aria-label="Event view">
+        <button type="button" class="active" aria-pressed="true" data-view="list">List</button>
+        <button type="button" aria-pressed="false" data-view="month">Month</button>
+      </div>
       {Number.isFinite(refreshedAt) && <small>Data refreshed {new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit',timeZone:'Asia/Kolkata'}).format(refreshedAt)}</small>}
     </div>
     {showHealthBanner && (
@@ -88,6 +92,21 @@ const healthMessage = stale.length > 0
       </script>
     )}
     <div id="empty-state" class="empty-state" hidden>No events found for this view yet.</div>
+    <div id="month-view" class="month-view">
+      <div id="date-strip" class="date-strip" role="group" aria-label="Pick a day"></div>
+      <div id="month-grid" class="month-grid">
+        <div class="month-nav">
+          <button type="button" id="month-prev" aria-label="Previous month">‹</button>
+          <strong id="month-title" aria-live="polite"></strong>
+          <button type="button" id="month-next" aria-label="Next month">›</button>
+        </div>
+        <div id="month-days" class="month-days" role="group" aria-label="Pick a day"></div>
+      </div>
+      <p class="month-legend"><i class="dot"></i> More dots, busier day</p>
+      <h3 id="month-day-heading" class="month-day-heading" tabindex="-1"></h3>
+      <div id="month-day-list"></div>
+      <p id="month-empty" class="month-empty" hidden>Nothing listed for this day yet. Know of something? <a class="primary-link" href="/submit/">Submit an event</a>.</p>
+    </div>
     {[...grouped.entries()].map(([day, dayEvents]) => (
       <section class="day-group" data-date={day}>
         <h3>{dateFmt.format(new Date(`${day}T12:00:00+05:30`))}</h3>
@@ -96,6 +115,10 @@ const healthMessage = stale.length > 0
     ))}
   </section>
 
+  <script is:inline>
+    // Set before paint so a shared ?view=month link never flashes the list first.
+    if (/[?&]view=month/.test(location.search)) document.documentElement.classList.add('view-month');
+  </script>
   <script is:inline>
     const parts = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit',weekday:'short'}).formatToParts(new Date());
     const val=(type)=>parts.find(p=>p.type===type)?.value;
@@ -194,8 +217,13 @@ const healthMessage = stale.length > 0
       if(state.category) next.set('category',state.category);
       if(state.price) next.set('price',state.price);
       if(state.area) next.set('area',state.area);
+      // The Month view owns view= and date=; keep whatever it last wrote.
+      const month=new URLSearchParams(location.search);
+      if(month.get('view')) next.set('view',month.get('view'));
+      if(month.get('date')) next.set('date',month.get('date'));
       const query=next.toString();
       try{history.replaceState(null,'',location.pathname+(query?'?'+query:'')+location.hash);}catch(e){}
+      if(typeof Event==='function'&&document.dispatchEvent) document.dispatchEvent(new Event('doon:filters'));
     }
 
     document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.when=b.dataset.filter;apply();}));
@@ -203,5 +231,10 @@ const healthMessage = stale.length > 0
     priceButtons.forEach(b=>b.addEventListener('click',()=>{state.price=state.price===b.dataset.price?'':b.dataset.price;apply();}));
     if(areaSelect) areaSelect.addEventListener('change',()=>{state.area=areaSelect.value;apply();});
     apply();
+    // Lets the Month view (the module script below) read the same filters and react when they change.
+    globalThis.doonFilters={state,today};
+  </script>
+  <script>
+    import './../scripts/month-view.mjs';
   </script>
 </BaseLayout>

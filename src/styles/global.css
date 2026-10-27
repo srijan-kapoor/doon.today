@@ -125,3 +125,48 @@ dd { margin: 0; }
 .submit-form .trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .submit-form button[type="submit"] { justify-self: start; font: inherit; font-size: 1rem; background: var(--green); color: var(--paper); border: 0; border-radius: 999px; padding: 12px 22px; cursor: pointer; }
 .submit-form button[type="submit"]:hover { background: color-mix(in srgb, var(--green) 85%, black); }
+
+/* List | Month view */
+.view-switch { display: inline-flex; gap: 6px; margin-left: 6px; }
+.view-switch button { font: inherit; font-size: .88rem; background: transparent; cursor: pointer; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--green); }
+.view-switch button.active { background: var(--green); color: var(--paper); border-color: var(--green); }
+.month-view { display: none; margin-top: 18px; min-height: 420px; }
+html.view-month .month-view { display: block; }
+html.view-month .day-group, html.view-month #empty-state, html.view-month #event-count { display: none; }
+/* Keeps its space so the heading and switch do not jump when the date filters are not needed. */
+html.view-month #when-filters { visibility: hidden; }
+.dots { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3px; min-height: 8px; }
+.dot { display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+.dots .more { font-size: .7rem; line-height: 6px; color: var(--green); }
+.month-legend { display: flex; align-items: center; gap: 6px; margin: 12px 0 0; font-size: .78rem; color: var(--muted); }
+.month-day-heading { margin: 22px 0 0; outline: none; font-family: Georgia, serif; font-size: 1.2rem; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.month-empty { padding: 20px 0; margin: 0; color: var(--muted); border-bottom: 1px solid var(--line); }
+.date-strip { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; scroll-snap-type: x proximity; }
+.strip-month { flex: none; align-self: center; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); }
+.day-chip { flex: none; scroll-snap-align: start; width: 58px; min-height: 84px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 0; font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 12px; cursor: pointer; }
+.day-chip.weekend { border-color: color-mix(in srgb, var(--line), var(--green) 40%); }
+.chip-weekday { font-size: .72rem; color: var(--muted); }
+.chip-date { font-family: Georgia, serif; font-size: 1.25rem; font-weight: 700; }
+.month-grid { display: none; }
+.month-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.month-nav strong { font-family: Georgia, serif; font-size: 1.15rem; }
+.month-nav button { width: 44px; height: 44px; font: inherit; font-size: 1.4rem; line-height: 1; color: var(--green); background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
+.month-nav button:disabled { opacity: .35; cursor: default; }
+.month-days { display: grid; grid-template-columns: repeat(7, 1fr); }
+.grid-head { text-align: center; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-bottom: 6px; }
+.grid-head.weekend { color: var(--green); }
+.grid-day { height: 54px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font: inherit; color: var(--ink); background: transparent; border: 1px solid transparent; border-radius: 10px; cursor: pointer; }
+.grid-date { font-size: .95rem; line-height: 1; }
+.grid-day:disabled { opacity: .4; cursor: default; }
+.grid-day:not(:disabled):not(.selected):hover { background: var(--green-soft); }
+.day-chip.today, .grid-day.today { border-color: var(--green); }
+.day-chip.selected, .grid-day.selected { background: var(--green); color: var(--paper); border-color: var(--green); }
+.day-chip.selected .chip-weekday { color: inherit; }
+.selected .dot { background: var(--paper); }
+.selected .dots .more { color: var(--paper); }
+.day-chip:focus-visible, .grid-day:focus-visible, .view-switch button:focus-visible, .month-nav button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.event-tags span.until { background: transparent; color: var(--green); border: 1px solid var(--line); }
+@media (min-width: 621px) {
+  .date-strip { display: none; }
+  .month-grid { display: block; }
+}
