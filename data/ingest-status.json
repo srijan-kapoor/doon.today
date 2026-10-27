@@ -1,7 +1,14 @@
 {
-  "ranAt": "2026-10-27T08:49:20.127Z",
+  "ranAt": "2026-10-27T14:36:08.596Z",
   "ran": [
-    "district"
+    "allevents",
+    "townscript",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "reddit"
   ],
   "sources": {
     "district": {
@@ -47,8 +54,8 @@
         "timesFound": 23,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "townscript": {
@@ -58,8 +65,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -71,8 +78,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -83,8 +90,8 @@
         "cards": 8,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -95,8 +102,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -107,8 +114,8 @@
         "candidates": 3,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -118,8 +125,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -131,8 +138,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-10-27T08:44:21.209Z",
-      "lastSuccessAt": "2026-10-27T08:44:21.209Z",
+      "lastAttemptAt": "2026-10-27T14:36:08.596Z",
+      "lastSuccessAt": "2026-10-27T14:36:08.596Z",
       "consecutiveFailures": 0
     }
   },
@@ -151,7 +158,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-10-27T08:49:20.127Z",
-      "ageHours": 0,
+      "ageHours": 5.8,
       "fresh": true
     }
   }
