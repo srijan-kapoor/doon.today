@@ -18,7 +18,8 @@ function toEvent(o,url=LIST){
 // (31 Oct to 20 Dec), so it reads as a run of days. The event's own page has an Event per session, each with its
 // own start and end. Returns the session starts, or null when the page does not show several sessions that agree
 // with the listing. The page can leave out the last session; when every session it lists is the same length and
-// the listing's end falls after the last of them, the last session is the one ending at the listing's end.
+// the listing's end falls on a later day than the last of them, the last session is the one ending at the listing's end
+// (a same-day difference is rounding in the listing, not a session).
 export function sessionsFromPage(html,e){
   const url=e.sources[0].url;
   const found=eventLikeObjects(html).filter(o=>sameUrl(o.url||o['@id'],url)&&o.startDate&&Number.isFinite(toInstant(o.startDate).getTime()))
@@ -30,7 +31,7 @@ export function sessionsFromPage(html,e){
   const starts=found.map(s=>s.start);
   const last=found.at(-1);
   const length=last.end-last.start;
-  if(length>0&&listingEnd>last.end&&found.every(s=>s.end-s.start===length)) starts.push(listingEnd-length);
+  if(length>0&&istDay(new Date(listingEnd).toISOString())!==istDay(new Date(last.end).toISOString())&&listingEnd>last.end&&found.every(s=>s.end-s.start===length)) starts.push(listingEnd-length);
   return starts.map(t=>new Date(t).toISOString());
 }
 // Fills `occurrences` on events that span several days, from their own pages. A page that cannot be read or
@@ -38,9 +39,10 @@ export function sessionsFromPage(html,e){
 async function addSessions(events,fetchPage){
   let pages=0,failed=0,filled=0;
   for(const e of events){
-    if(!e.endAt||istDay(e.endAt)===istDay(e.startAt)||pages>=MAX_SESSION_PAGES) continue;
-    pages++;
+    if(!e.endAt||e.sources[0].url===LIST||pages>=MAX_SESSION_PAGES) continue;
     try{
+      if(istDay(e.endAt)===istDay(e.startAt)) continue;
+      pages++;
       const sessions=sessionsFromPage(await fetchPage(e.sources[0].url),e);
       if(sessions){e.occurrences=sessions;filled++}
     }catch{failed++}

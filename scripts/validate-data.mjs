@@ -15,6 +15,7 @@ for(const [i,e] of events.entries()){
   if(ids.has(e.id)) errors.push(`[${i}] duplicate id ${e.id}`); ids.add(e.id);
   if(Number.isNaN(new Date(e.startAt).getTime())) errors.push(`[${i}] invalid startAt`);
   if(e.occurrences!==undefined && !occurrencesOf(e)) errors.push(`[${i}] invalid occurrences (needs two or more ascending timestamps in the form of startAt, the first equal to startAt): ${JSON.stringify(e.occurrences)}`);
+  if(occurrencesOf(e) && e.endAt && new Date(occurrencesOf(e).at(-1))>new Date(e.endAt)) errors.push(`[${i}] last occurrence is after endAt`);
   if(e.venue?.geo!==undefined && !isInDehradun(e.venue.geo)) errors.push(`[${i}] venue coordinates missing or far from Dehradun: ${JSON.stringify(e.venue.geo)}`);
 
   const semantic=`${e.title||''} ${e.description||''}`;

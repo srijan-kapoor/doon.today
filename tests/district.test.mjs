@@ -95,3 +95,9 @@ test('single-day events cost no extra page fetch, and other events\' sessions on
   assert.equal(events.find(e=>e.title==='Doon Music Night').occurrences,undefined);
   assert.equal(events.find(e=>e.title!=='Doon Music Night').occurrences.length,3,'the third is the one ending where the listing does');
 });
+
+test('a listing end later on the same day as the last session is rounding, not another session',async t=>{
+  const padded={...gharListing,endDate:'2026-12-20T12:59:00.000Z'};
+  await withFetch(t,async url=>response(url===listingUrl?listingWith(padded):gharPage('2026-10-31','2026-11-22','2026-12-20'),200,url));
+  assert.equal((await fetchDistrict()).events[0].occurrences.length,3);
+});
