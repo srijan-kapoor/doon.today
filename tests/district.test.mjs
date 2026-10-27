@@ -101,3 +101,11 @@ test('a listing end later on the same day as the last session is rounding, not a
   await withFetch(t,async url=>response(url===listingUrl?listingWith(padded):gharPage('2026-10-31','2026-11-22','2026-12-20'),200,url));
   assert.equal((await fetchDistrict()).events[0].occurrences.length,3);
 });
+
+test('a festival listed as one Event for the whole run plus one per day is a run, not sessions on set dates',async t=>{
+  const url='https://www.district.in/events/doon-festival';
+  const listing={...gharListing,name:'Doon Festival',url,startDate:'2026-11-27T04:30:00.000Z',endDate:'2026-11-29T15:30:00.000Z'};
+  const page=`<html>${[['2026-11-27T04:30:00.000Z','2026-11-29T15:30:00.000Z'],['2026-11-27T04:30:00.000Z','2026-11-27T15:30:00.000Z'],['2026-11-28T04:30:00.000Z','2026-11-28T15:30:00.000Z']].map(([s,e])=>sessionLd(s,e,url)).join('')}</html>`;
+  await withFetch(t,async u=>response(u===listingUrl?listingWith(listing):page,200,u));
+  assert.equal('occurrences' in (await fetchDistrict()).events[0],false);
+});

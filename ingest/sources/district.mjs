@@ -22,9 +22,13 @@ function toEvent(o,url=LIST){
 // (a same-day difference is rounding in the listing, not a session).
 export function sessionsFromPage(html,e){
   const url=e.sources[0].url;
-  const found=eventLikeObjects(html).filter(o=>sameUrl(o.url||o['@id'],url)&&o.startDate&&Number.isFinite(toInstant(o.startDate).getTime()))
+  let found=eventLikeObjects(html).filter(o=>sameUrl(o.url||o['@id'],url)&&o.startDate&&Number.isFinite(toInstant(o.startDate).getTime()))
     .map(o=>({start:toInstant(o.startDate).getTime(),end:o.endDate?toInstant(o.endDate).getTime():NaN}))
-    .sort((a,b)=>a.start-b.start).filter((s,i,all)=>i===0||s.start!==all[i-1].start);
+    .sort((a,b)=>a.start-b.start||b.end-a.end);
+  // A run of days (a festival) is also listed as one Event for the whole run next to its per-day Events: when one
+  // Event spans the start of another, the page describes a continuous event, not sessions on set dates.
+  if(found.some(a=>found.some(b=>b.start>a.start&&b.start<a.end))) return null;
+  found=found.filter((s,i,all)=>i===0||s.start!==all[i-1].start);
   if(found.length<2||found[0].start!==toInstant(e.startAt).getTime()) return null;
   const listingEnd=toInstant(e.endAt).getTime();
   if(found.some(s=>s.end>listingEnd)) return null;
