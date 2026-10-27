@@ -1,7 +1,7 @@
 // iCalendar (RFC 5545) output for the calendar feeds and per-event downloads. Plain .mjs so the site
 // build and `node --test` share one implementation.
 
-import { toInstant } from './dates.mjs';
+import { toInstant, occurrencesOf, nextOccurrence } from './dates.mjs';
 export { toInstant } from './dates.mjs';
 
 const SITE = 'https://doon.today';
@@ -64,15 +64,20 @@ export function eventLines(e) {
   const modified = toInstant(e.modifiedAt || e.firstSeenAt || e.lastCheckedAt);
   const rows = ['BEGIN:VEVENT', `UID:${e.id}@doon.today`, `DTSTAMP:${utc(modified)}`, `LAST-MODIFIED:${utc(modified)}`, `SEQUENCE:${e.sequence || 0}`];
 
+  // An event on specific dates is one VEVENT for its first session plus an RDATE for each later one. Its
+  // startAt..endAt is only the outer span, so the length of a session is the default.
+  const sessions = occurrencesOf(e);
   if (DATE_ONLY.test(e.startAt)) {
     rows.push(`DTSTART;VALUE=DATE:${ymd(e.startAt)}`);
-    const last = e.endAt && DATE_ONLY.test(e.endAt) && e.endAt > e.startAt ? e.endAt : e.startAt;
+    const last = !sessions && e.endAt && DATE_ONLY.test(e.endAt) && e.endAt > e.startAt ? e.endAt : e.startAt;
     rows.push(`DTEND;VALUE=DATE:${ymd(nextDay(last))}`);
+    if (sessions) rows.push(`RDATE;VALUE=DATE:${sessions.slice(1).map(ymd).join(',')}`);
   } else {
     const start = toInstant(e.startAt);
-    const end = e.endAt && !DATE_ONLY.test(e.endAt) ? toInstant(e.endAt) : null;
+    const end = !sessions && e.endAt && !DATE_ONLY.test(e.endAt) ? toInstant(e.endAt) : null;
     // Without an end time Apple and Google show the event with no length, so assume two hours.
     rows.push(`DTSTART:${utc(start)}`, `DTEND:${utc(end && end > start ? end : new Date(start.getTime() + DEFAULT_DURATION_MS))}`);
+    if (sessions) rows.push(`RDATE:${sessions.slice(1).map((value) => utc(toInstant(value))).join(',')}`);
   }
 
   const description = [e.description?.trim(), `Details: ${pageUrl}`, e.sources?.[0]?.url ? `Source: ${e.sources[0].url}` : '']
@@ -89,14 +94,16 @@ export function eventLines(e) {
   return rows;
 }
 
-/** The `dates` value for a Google Calendar "add event" link, matching the .ics download. */
-export function googleDateRange(e) {
-  if (DATE_ONLY.test(e.startAt)) {
-    const last = e.endAt && DATE_ONLY.test(e.endAt) && e.endAt > e.startAt ? e.endAt : e.startAt;
-    return `${ymd(e.startAt)}/${ymd(nextDay(last))}`;
+/** The `dates` value for a Google Calendar "add event" link, matching the .ics download. An event on specific dates links its next session. */
+export function googleDateRange(e, now = Date.now()) {
+  const sessions = occurrencesOf(e);
+  const startAt = sessions ? nextOccurrence(e, now) : e.startAt;
+  if (DATE_ONLY.test(startAt)) {
+    const last = !sessions && e.endAt && DATE_ONLY.test(e.endAt) && e.endAt > startAt ? e.endAt : startAt;
+    return `${ymd(startAt)}/${ymd(nextDay(last))}`;
   }
-  const start = toInstant(e.startAt);
-  const end = e.endAt && !DATE_ONLY.test(e.endAt) ? toInstant(e.endAt) : null;
+  const start = toInstant(startAt);
+  const end = !sessions && e.endAt && !DATE_ONLY.test(e.endAt) ? toInstant(e.endAt) : null;
   return `${utc(start)}/${utc(end && end > start ? end : new Date(start.getTime() + DEFAULT_DURATION_MS))}`;
 }
 

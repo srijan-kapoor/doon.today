@@ -63,3 +63,11 @@ test('a price range becomes an AggregateOffer, and the summary shows the range',
   assert.deepEqual(eventJsonLd(e,opts).offers,{'@type':'AggregateOffer',lowPrice:1500,highPrice:4000,priceCurrency:'INR',url:'https://example.test/e'});
   assert.match(eventSummary(e),/₹1,500–4,000\./);
 });
+
+test('an event on specific dates offers its next session, not the span as one run',()=>{
+  const gharEv=ev({startAt:'2026-10-31T10:30:00.000Z',endAt:'2026-12-20T12:30:00.000Z',occurrences:['2026-10-31T10:30:00.000Z','2026-11-22T10:30:00.000Z']});
+  const ld=eventJsonLd(gharEv,opts);
+  assert.equal(ld.endDate,undefined);
+  assert.ok(ld.startDate);
+  assert.equal(eventJsonLd(ev({endAt:'2026-10-18T12:00:00+05:30'}),opts).endDate,'2026-10-18T12:00:00+05:30');
+});

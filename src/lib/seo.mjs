@@ -1,5 +1,6 @@
 // Search and link-preview metadata for event pages.
 import { toInstant } from './ics.mjs';
+import { occurrencesOf, nextOccurrence } from './dates.mjs';
 import { priceLabel } from './sources.mjs';
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
@@ -16,7 +17,7 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
     '@context': 'https://schema.org',
     '@type': 'Event',
     name: e.title,
-    startDate: schemaDate(e.startAt),
+    startDate: schemaDate(nextOccurrence(e)),
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
@@ -36,7 +37,8 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
     image: [imageUrl],
     url: pageUrl
   };
-  if (e.endAt) ld.endDate = schemaDate(e.endAt);
+  // startAt..endAt is only the outer span of an event on specific dates, so it is not offered as one run.
+  if (e.endAt && !occurrencesOf(e)) ld.endDate = schemaDate(e.endAt);
   if (e.description) ld.description = e.description;
   const sourceUrl = e.sources?.[0]?.url;
   if (e.pricing?.type === 'free') {
@@ -52,10 +54,11 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
 
 /** One-line summary used as the page and link-preview description. */
 export function eventSummary(e) {
-  const dateOnly = DATE_ONLY.test(e.startAt);
+  const startAt = nextOccurrence(e);
+  const dateOnly = DATE_ONLY.test(startAt);
   const when = new Intl.DateTimeFormat('en-IN', {
     weekday: 'short', day: 'numeric', month: 'short', ...(dateOnly ? {} : { hour: 'numeric', minute: '2-digit', hour12: true }), timeZone: 'Asia/Kolkata'
-  }).format(dateOnly ? new Date(`${e.startAt}T12:00:00+05:30`) : toInstant(e.startAt));
+  }).format(dateOnly ? new Date(`${startAt}T12:00:00+05:30`) : toInstant(startAt));
   const price = priceLabel(e.pricing);
   const head = [`${when} at ${e.venue.name}`, e.venue.area, 'Dehradun'].filter(Boolean).join(', ');
   const base = price ? `${head}. ${price}.` : `${head}.`;

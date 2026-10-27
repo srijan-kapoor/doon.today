@@ -290,3 +290,38 @@ test('a real venue from the preferred source is kept, and placeholders are recog
   assert.equal(e.venue.name,'Rajpur Road Hall');
   assert.equal(e.description,'From District.');
 });
+
+const sessions=['2030-01-10T18:00:00+05:30','2030-01-17T18:00:00+05:30','2030-01-24T18:00:00+05:30'];
+const onDates=(over={})=>ev({endAt:'2030-01-24T20:00:00+05:30',occurrences:sessions,...over});
+const withoutKey=(e,key)=>{const {[key]:_,...rest}=e;return rest};
+
+test('an event on specific dates keeps its dates through a merge, and a source without them does not remove them',async t=>{
+  await inTempDir(t);
+  await fs.writeFile('data/events.json',JSON.stringify([onDates()]));
+  await mergeAndWrite([{source:'district',events:[onDates()]}]);
+  assert.deepEqual(JSON.parse(await fs.readFile('data/events.json','utf8'))[0].occurrences,sessions);
+  // A run where the event's page could not be read gives the same span without the dates.
+  await mergeAndWrite([{source:'district',events:[withoutKey(onDates(),'occurrences')]}]);
+  assert.deepEqual(JSON.parse(await fs.readFile('data/events.json','utf8'))[0].occurrences,sessions);
+});
+
+test('stored dates are dropped when the source moves the span, and replaced when it sends new ones',async t=>{
+  await inTempDir(t);
+  await fs.writeFile('data/events.json',JSON.stringify([onDates()]));
+  await mergeAndWrite([{source:'district',events:[withoutKey(onDates({endAt:'2030-01-31T20:00:00+05:30'}),'occurrences')]}]);
+  const moved=JSON.parse(await fs.readFile('data/events.json','utf8'))[0];
+  assert.equal(moved.occurrences,undefined,'stale dates must not outlive their span');
+  assert.equal(moved.endAt,'2030-01-31T20:00:00+05:30');
+  const next=[sessions[0],'2030-01-31T18:00:00+05:30'];
+  await mergeAndWrite([{source:'district',events:[onDates({endAt:'2030-01-31T20:00:00+05:30',occurrences:next})]}]);
+  assert.deepEqual(JSON.parse(await fs.readFile('data/events.json','utf8'))[0].occurrences,next);
+});
+
+test('a change to the dates bumps the calendar SEQUENCE',async t=>{
+  await inTempDir(t);
+  await fs.writeFile('data/events.json',JSON.stringify([onDates()]));
+  await mergeAndWrite([{source:'district',events:[onDates({occurrences:[sessions[0],sessions[2]]})]}]);
+  const e=JSON.parse(await fs.readFile('data/events.json','utf8'))[0];
+  assert.equal(e.sequence,1);
+  assert.deepEqual(e.occurrences,[sessions[0],sessions[2]]);
+});

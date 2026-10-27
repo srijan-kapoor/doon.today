@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { events } from '../../../data/events';
 import { ingestStatus } from '../../../data/status';
 import { googleDateRange, toInstant } from '../../../lib/ics.mjs';
+import { occurrencesOf } from '../../../lib/dates.mjs';
 import { eventJsonLd, eventSummary } from '../../../lib/seo.mjs';
 import { sourceLabel, detailsLinkLabel, priceLabel } from '../../../lib/sources.mjs';
 import { reportEventUrl } from '../../../lib/report.mjs';
@@ -20,6 +21,10 @@ const date = new Intl.DateTimeFormat('en-IN', { weekday: 'long', day: 'numeric',
 const time = dateOnly
   ? 'Time to be announced'
   : new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' }).format(start);
+// An event on specific dates lists each session instead of one date.
+const sessions = occurrencesOf(event);
+const sessionFormat = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', ...(dateOnly ? {} : { hour: 'numeric', minute: '2-digit', hour12: true }), timeZone: 'Asia/Kolkata' });
+const sessionLabels = sessions?.map((value) => sessionFormat.format(dateOnly ? new Date(`${value}T12:00:00+05:30`) : toInstant(value)));
 const checked = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
 
 const address = event.venue.address?.trim();
@@ -51,7 +56,7 @@ const detailsLabel = detailsLinkLabel(primarySource);
     <p class="eyebrow">{event.categories.join(' · ')}</p>
     <h1>{event.title}</h1>
     <dl>
-      <div><dt>When</dt><dd>{date}<br />{time}</dd></div>
+      <div><dt>When</dt><dd>{sessionLabels ? sessionLabels.map((label, i) => <>{i > 0 ? <br /> : null}{label}</>) : <>{date}<br />{time}</>}</dd></div>
       <div><dt>Where</dt><dd>{event.venue.name}{address ? <><br />{address}</> : null}{event.venue.area && !`${event.venue.name} ${address ?? ''}`.toLowerCase().includes(event.venue.area.toLowerCase()) ? <><br />{event.venue.area}</> : null}</dd></div>
       <div><dt>Price</dt><dd>{priceLabel(event.pricing) || 'Check source'}</dd></div>
     </dl>

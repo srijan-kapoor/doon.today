@@ -103,3 +103,31 @@ test('the Google Calendar link uses the same times as the download',()=>{
   assert.equal(googleDateRange(ev({startAt:'2026-10-21'})),'20261021/20261022');
   assert.equal(googleDateRange(ev({startAt:'2026-10-21',endAt:'2026-10-23'})),'20261021/20261024');
 });
+
+const ghar=()=>ev({startAt:'2026-10-31T10:30:00.000Z',endAt:'2026-12-20T12:30:00.000Z',
+  occurrences:['2026-10-31T10:30:00.000Z','2026-11-22T10:30:00.000Z','2026-12-06T10:30:00.000Z','2026-12-20T10:30:00.000Z']});
+
+test('an event on specific dates is one session plus the other dates, not one long block',()=>{
+  const text=buildEventCalendar(ghar());
+  assert.equal(prop(text,'DTSTART'),'DTSTART:20261031T103000Z');
+  assert.equal(prop(text,'DTEND'),'DTEND:20261031T123000Z','a session is the default two hours, not start..endAt');
+  assert.equal(prop(text,'RDATE'),'RDATE:20261122T103000Z,20261206T103000Z,20261220T103000Z');
+});
+
+test('an event on specific dates without a time lists whole days',()=>{
+  const text=buildEventCalendar(ev({startAt:'2026-11-01',endAt:'2026-11-22',occurrences:['2026-11-01','2026-11-08','2026-11-22']}));
+  assert.equal(prop(text,'DTSTART;VALUE=DATE'),'DTSTART;VALUE=DATE:20261101');
+  assert.equal(prop(text,'DTEND;VALUE=DATE'),'DTEND;VALUE=DATE:20261102');
+  assert.equal(prop(text,'RDATE;VALUE=DATE'),'RDATE;VALUE=DATE:20261108,20261122');
+});
+
+test('a list that does not fit is ignored, and an ordinary event has no RDATE',()=>{
+  assert.equal(prop(buildEventCalendar(ev({occurrences:['2026-11-22T10:30:00.000Z','2026-12-06T10:30:00.000Z']})),'RDATE'),undefined);
+  assert.equal(prop(buildEventCalendar(ev()),'RDATE'),undefined);
+});
+
+test('the Google Calendar link opens the next session, not the whole span',()=>{
+  const now=Date.parse('2026-11-01T00:00:00Z');
+  assert.equal(googleDateRange(ghar(),now),'20261122T103000Z/20261122T123000Z');
+  assert.equal(googleDateRange(ev({startAt:'2026-11-01',occurrences:['2026-11-01','2026-11-08']}),Date.parse('2026-11-05T00:00:00Z')),'20261108/20261109');
+});

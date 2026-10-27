@@ -26,6 +26,10 @@ export interface EventRecord {
   description?: string;
   startAt: string;
   endAt?: string;
+  // For an event that runs on specific dates (Sat 31 Oct, Sun 22 Nov, ...) rather than every day in between:
+  // the start of each session, oldest first, in the same form as startAt. The first is startAt, and startAt..endAt
+  // is then only the outer span. Absent for an ordinary event. Read it through occurrencesOf (src/lib/dates.mjs).
+  occurrences?: string[];
   venue: {
     name: string;
     address?: string;

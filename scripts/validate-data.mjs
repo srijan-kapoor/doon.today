@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { eventPassesGeo, isInDehradun } from '../ingest/lib/utils.mjs';
+import { occurrencesOf } from '../src/lib/dates.mjs';
 
 const events=JSON.parse(await fs.readFile('data/events.json','utf8'));
 const errors=[];
@@ -13,6 +14,7 @@ for(const [i,e] of events.entries()){
   if(e.venue?.city!=='Dehradun') errors.push(`[${i}] invalid city ${e.venue?.city}`);
   if(ids.has(e.id)) errors.push(`[${i}] duplicate id ${e.id}`); ids.add(e.id);
   if(Number.isNaN(new Date(e.startAt).getTime())) errors.push(`[${i}] invalid startAt`);
+  if(e.occurrences!==undefined && !occurrencesOf(e)) errors.push(`[${i}] invalid occurrences (needs two or more ascending timestamps in the form of startAt, the first equal to startAt): ${JSON.stringify(e.occurrences)}`);
   if(e.venue?.geo!==undefined && !isInDehradun(e.venue.geo)) errors.push(`[${i}] venue coordinates missing or far from Dehradun: ${JSON.stringify(e.venue.geo)}`);
 
   const semantic=`${e.title||''} ${e.description||''}`;

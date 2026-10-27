@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
-import { istDay, compareEventStarts, isUnexpiredEvent } from '../src/lib/dates.mjs';
+import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
 
 const SOURCE_RANK = {
@@ -64,7 +64,7 @@ function sourceKey(s){ return `${s.provider}|${s.url}`; }
 
 // The fields a calendar subscriber would notice changing.
 function fingerprint(e) {
-  return JSON.stringify([e.title, e.startAt, e.endAt||null, e.venue?.name, e.venue?.address||'']);
+  return JSON.stringify([e.title, e.startAt, e.endAt||null, e.venue?.name, e.venue?.address||'', e.occurrences||null]);
 }
 
 // Hand-checked venues (data/venues.json): a venue whose name contains one of a known venue's phrases, as whole
@@ -162,13 +162,21 @@ function venueOf(preferred, secondary) {
   const geo = venue?.geo || [preferred.venue, secondary.venue].find((other) => other?.geo && other.geoFrom !== 'table' && sameVenue(other))?.geo;
   return geo && venue ? { ...venue, geo } : venue;
 }
+// The dates an event runs on come from the preferred copy. A copy without them (a run where the source's event
+// page could not be read) does not take them off, but only the other copy's list with the same span is kept:
+// one that no longer fits startAt..endAt is stale, and a list not starting at the merged startAt is not valid.
+function occurrencesFor(preferred, secondary, timed) {
+  const sameSpan = secondary.startAt === preferred.startAt && (secondary.endAt||null) === (preferred.endAt||null);
+  const list = preferred.occurrences || (sameSpan ? secondary.occurrences : undefined);
+  return list && occurrencesOf({ ...timed, occurrences: list }) ? list : undefined;
+}
 function mergePair(a,b,{combinePrices=false}={}) {
   const preferred = sourceRank(b) > sourceRank(a) || (sourceRank(b) === sourceRank(a) && eventTimestamp(b) >= eventTimestamp(a)) ? b : a;
   const secondary = preferred === a ? b : a;
   const sources=[...(a.sources||[]),...(b.sources||[])];
   const unique=[...new Map(sources.map(s=>[sourceKey(s),s])).values()]
     .sort((x,y)=>(SOURCE_RANK[y.provider]||0)-(SOURCE_RANK[x.provider]||0));
-  return {
+  const merged = {
     ...secondary,
     ...preferred,
     id: a.id || b.id,
@@ -186,6 +194,9 @@ function mergePair(a,b,{combinePrices=false}={}) {
     pricing: mergePricing(preferred.pricing, secondary.pricing, { combine: combinePrices, handChecked: (preferred.sources||[]).some(s=>s.provider==='manual') }),
     ...timing(preferred, secondary)
   };
+  const occurrences = occurrencesFor(preferred, secondary, merged);
+  if (occurrences) merged.occurrences = occurrences; else delete merged.occurrences;
+  return merged;
 }
 
 export async function mergeAndWrite(sourceResults) {
