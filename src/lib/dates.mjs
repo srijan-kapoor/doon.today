@@ -17,8 +17,13 @@ export function istDay(value = '') {
 
 export const compareEventStarts = (a, b) => toInstant(a.startAt).getTime() - toInstant(b.startAt).getTime();
 
-/** Inclusive IST listing days; timed ends before 6am belong to the previous night. */
+/**
+ * Inclusive IST listing days; timed ends before 6am belong to the previous night. An event on specific dates
+ * (`occurrences`) also gets `days`, the days it is actually on: start..end is then only its outer span.
+ */
 export function eventDayRange(event) {
+  const days = occurrenceDays(event);
+  if (days) return { start: days[0], end: days.at(-1), days };
   const startTime = toInstant(event.startAt).getTime();
   if (!Number.isFinite(startTime)) return { start: '', end: '' };
   const start = istDay(event.startAt);
@@ -32,7 +37,8 @@ export function eventDayRange(event) {
 
 /** Running events belong to today; events that finished on a past day are omitted. */
 export function eventDisplayDay(event, today) {
-  const { start, end } = eventDayRange(event);
+  const { start, end, days } = eventDayRange(event);
+  if (days) return days.find((day) => day >= today) ?? null;
   return end < today ? null : start < today ? today : start;
 }
 

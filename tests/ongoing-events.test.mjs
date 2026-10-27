@@ -87,3 +87,42 @@ test('production Today, Tomorrow and Weekend filters match the whole date range 
     t.mock.timers.setTime(new Date('2026-11-20T13:00:00+05:30').getTime());
   }
 });
+
+const ghar={startAt:'2026-10-31T10:30:00.000Z',endAt:'2026-12-20T12:30:00.000Z',
+  occurrences:['2026-10-31T10:30:00.000Z','2026-11-22T10:30:00.000Z','2026-12-06T10:30:00.000Z','2026-12-20T10:30:00.000Z']};
+
+test('an event on specific dates is listed on those days only, not as ongoing in between',()=>{
+  assert.deepEqual(eventDayRange(ghar),{start:'2026-10-31',end:'2026-12-20',days:['2026-10-31','2026-11-22','2026-12-06','2026-12-20']});
+  assert.equal(eventDisplayDay(ghar,'2026-10-27'),'2026-10-31');
+  assert.equal(eventDisplayDay(ghar,'2026-11-01'),'2026-11-22','between sessions it waits under the next one');
+  assert.equal(eventDisplayDay(ghar,'2026-12-20'),'2026-12-20');
+  assert.equal(eventDisplayDay(ghar,'2026-12-21'),null);
+  assert.deepEqual(eventDayRange({startAt:ghar.startAt,endAt:ghar.endAt}),{start:'2026-10-31',end:'2026-12-20'},'without the list it is still a run');
+});
+
+test('production filters match an event on specific dates only on its dates',async t=>{
+  const page=await readFile(new URL('../src/pages/index.astro',import.meta.url),'utf8');
+  const script=[...page.matchAll(/<script is:inline>([\s\S]*?)<\/script>/g)].at(-1)[1];
+  const previous=process.env.TZ;
+  t.after(()=>{if(previous===undefined) delete process.env.TZ; else process.env.TZ=previous;});
+  const {start,end,days}=eventDayRange(ghar);
+  const run=(now,when)=>{
+    t.mock.timers.setTime(new Date(now).getTime());
+    const context=vm.createContext({Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
+      document:{querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
+    vm.runInContext(script,context);
+    context.row={dataset:{startDate:start,endDate:end,days:days.join(' ')}};
+    return vm.runInContext(`state.when='${when}';dayOk(row)`,context);
+  };
+  t.mock.timers.enable({apis:['Date'],now:new Date('2026-11-20T13:00:00+05:30')});
+  for(const timezone of ['Asia/Kolkata','America/Los_Angeles']) {
+    process.env.TZ=timezone;
+    assert.equal(run('2026-11-20T13:00:00+05:30','today'),false,'between sessions');
+    assert.equal(run('2026-11-20T13:00:00+05:30','tomorrow'),false);
+    assert.equal(run('2026-11-20T13:00:00+05:30','weekend'),true,'Sun 22 Nov is a session');
+    assert.equal(run('2026-11-20T13:00:00+05:30','all'),true);
+    assert.equal(run('2026-11-22T13:00:00+05:30','today'),true);
+    assert.equal(run('2026-11-21T13:00:00+05:30','tomorrow'),true);
+    assert.equal(run('2026-12-21T13:00:00+05:30','all'),false,'over');
+  }
+});

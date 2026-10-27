@@ -119,8 +119,16 @@ const healthMessage = stale.length > 0
     };
 
     const dayOk=(row)=>{
-      const {startDate:start,endDate:end}=row.dataset;
+      const {startDate:start,endDate:end,days}=row.dataset;
       if(end<today) return false;
+      // An event on specific dates is only on those days, not on every day between its first and last.
+      if(days){
+        const on=days.split(' ');
+        return state.when==='all'
+          || (state.when==='today'&&on.includes(today))
+          || (state.when==='tomorrow'&&on.includes(tomorrow))
+          || (state.when==='weekend'&&(on.includes(sat)||on.includes(sun)));
+      }
       return state.when==='all'
         || (state.when==='today'&&start<=today&&end>=today)
         || (state.when==='tomorrow'&&start<=tomorrow&&end>=tomorrow)
@@ -138,15 +146,16 @@ const healthMessage = stale.length > 0
     const untilDate=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',timeZone:'Asia/Kolkata'});
     rows.forEach(row=>{
       const start=row.dataset.startDate, end=row.dataset.endDate;
-      if(end<today) {row.remove();return;}
-      const day=start<today?today:start;
+      const days=row.dataset.days&&row.dataset.days.split(' ');
+      const day=days?days.find(d=>d>=today):(end<today?undefined:start<today?today:start);
+      if(!day) {row.remove();return;}
       if(!byDay.has(day)){
         const group=document.createElement('section');group.className='day-group';group.dataset.date=day;
         const heading=document.createElement('h3');heading.textContent=headingDate.format(new Date(`${day}T12:00:00+05:30`));
         group.append(heading);byDay.set(day,group);
       }
       const time=row.querySelector('.event-time');
-      time.textContent=start<today?`Until ${untilDate.format(new Date(`${end}T12:00:00+05:30`))}`:time.dataset.startTime;
+      time.textContent=!days&&start<today?`Until ${untilDate.format(new Date(`${end}T12:00:00+05:30`))}`:time.dataset.startTime;
       byDay.get(day).append(row);
     });
     document.querySelectorAll('.day-group').forEach(group=>group.remove());

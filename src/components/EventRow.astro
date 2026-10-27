@@ -10,7 +10,7 @@ const time = dateOnly
   ? 'Time TBA'
   : new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' }).format(start);
 const until = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
-const displayTime = range.start < today && range.end >= today
+const displayTime = !range.days && range.start < today && range.end >= today
   ? `Until ${until.format(new Date(`${range.end}T12:00:00+05:30`))}` : time;
 const price = priceLabel(event.pricing, 'short');
 const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -23,6 +23,7 @@ const showArea = event.venue.area && !event.venue.name.toLowerCase().includes(ev
   data-area={event.venue.area ? slug(event.venue.area) : ''}
   data-start-date={range.start}
   data-end-date={range.end}
+  data-days={range.days?.join(' ')}
 >
   <div class="event-time" data-start-time={time}>{displayTime}</div>
   <div class="event-main">
