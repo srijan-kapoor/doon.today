@@ -34,7 +34,7 @@ Other scripts:
 | `npm run review` | Go through community leads: approve one to publish it as a hand-checked event, or reject it for good (or use the GitHub issues, below) |
 | `npm run check:health` | Fail if District has gone too long without a successful refresh |
 
-`INGEST_ONLY=name1,name2` and `INGEST_SKIP=name1,name2` choose which sources `npm run ingest` runs. BookMyShow only runs when named in `INGEST_ONLY`.
+`INGEST_ONLY=name1,name2` and `INGEST_SKIP=name1,name2` choose which sources `npm run ingest` runs.
 
 ## How the data flows
 
@@ -55,13 +55,14 @@ Every event carries its sources, a verification status and when it was first see
 | Source | Role | Status |
 | --- | --- | --- |
 | District | Main source, verified | Works from a home connection; blocks GitHub-hosted runners |
-| Townscript, Virasat, Thrill Zone, Dehradun Literature Festival, Meetup | Ticketing and organizer pages, verified | Fetched by the hosted refresh |
+| Virasat, Thrill Zone, Dehradun Literature Festival, Meetup | Ticketing and organizer pages, verified | Fetched by the hosted refresh |
 | Google Developer Groups | GDG Dehradun and the UPES and Graphic Era campus chapters, from the platform's public JSON API; verified | Fetched by the hosted refresh |
 | AllEvents | Aggregator, labelled "Source reported" | Fetched by the hosted refresh |
 | r/Dehradun | Community leads for review | Fetched by the hosted refresh; never published directly |
-| BookMyShow | Demoted | Cloudflare blocks it from every connection tried; off unless named in `INGEST_ONLY` |
 
-The evidence and the options for District and BookMyShow are in [docs/primary-sources.md](docs/primary-sources.md).
+Removed on 28 Oct 2026: Townscript (its listings went behind a sign-in and it returned no events) and BookMyShow (Cloudflare blocked it from every connection tried, and AllEvents already carries its Dehradun listings).
+
+How District is fetched, and why not from GitHub's runners, is in [docs/primary-sources.md](docs/primary-sources.md).
 
 ## How events are chosen
 

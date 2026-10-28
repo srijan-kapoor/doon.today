@@ -1,5 +1,7 @@
 # Bug report for Claude: District and BookMyShow HTTP 403 in GitHub Actions
 
+> **Resolved (28 Oct 2026).** District is fetched from a normal connection instead of GitHub's runners: see [primary-sources.md](primary-sources.md). BookMyShow was removed as a source. This report is kept for the evidence.
+
 ## Impact and current evidence (18 Oct 2026)
 
 The scheduled `Refresh events` workflow completes, but both primary source adapters fail at their **first listing request**, before parsing. `data/ingest-status.json` records `health: "degraded"`. The published dataset retains two older District-sourced records; it has zero BookMyShow-sourced records. Those are not evidence of a successful current District fetch.
@@ -17,7 +19,7 @@ The same District URL responded `200` from a Mac network, where `fetchDistrict()
 
 Workflow: [`.github/workflows/refresh-events.yml`](../.github/workflows/refresh-events.yml) runs on `ubuntu-latest`, Node 22, and invokes `npm run ingest`. Schedule is unchanged: `30 0,8,16 * * *` UTC (06:00/14:00/22:00 IST). It can also be run manually with `workflow_dispatch`.
 
-`ingest/run.mjs` calls `fetchDistrict()` then `fetchBookMyShow()`. Both call `fetchText()` in `ingest/lib/http.mjs`. That helper uses Node's global `fetch`, a static `User-Agent` (`Mozilla/5.0 (compatible; doon.today/0.1; +https://doon.today/about)`), `Accept-Language: en-IN,en;q=0.9`, a 20-second timeout, and follows redirects. On non-2xx it throws with HTTP status and safe response metadata. District's first call is in `ingest/sources/district.mjs:14`; BookMyShow's is in `ingest/sources/bookmyshow.mjs:22`. No HTML parser has run at the failure point.
+`ingest/run.mjs` calls `fetchDistrict()` then `fetchBookMyShow()`. Both call `fetchText()` in `ingest/lib/http.mjs`. That helper uses Node's global `fetch`, a static `User-Agent` (`Mozilla/5.0 (compatible; doon.today/0.1; +https://doon.today/about)`), `Accept-Language: en-IN,en;q=0.9`, a 20-second timeout, and follows redirects. On non-2xx it throws with HTTP status and safe response metadata. District's first call is in `ingest/sources/district.mjs:14`; BookMyShow's was in `ingest/sources/bookmyshow.mjs:22` (since removed). No HTML parser has run at the failure point.
 
 Reproduce by manually dispatching the Refresh events workflow on `main`, then inspect the `Fetch and normalize events` step and committed `data/ingest-status.json`. A focused runner experiment can call the two listing URLs with `curl -i -L` and Node `fetch` using the current headers, recording status, final URL, selected response headers, and a **redacted** first 500 bytes of the response body. Do not log cookies, tokens, or full challenge pages.
 

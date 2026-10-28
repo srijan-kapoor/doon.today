@@ -1,4 +1,5 @@
 [
+  { "date": "2026-10-28", "tag": "Removed", "text": "Townscript and BookMyShow as sources: neither had brought in a Dehradun event for weeks." },
   { "date": "2026-10-28", "tag": "New", "text": "A dark theme. Switch it from the header (or the menu on phones), and the site remembers your choice." },
   { "date": "2026-10-28", "tag": "Improved", "text": "Submit Event is now in the header on every page, and you don't need the organiser's permission to send one in." },
   { "date": "2026-10-28", "tag": "New", "text": "This changelog." },

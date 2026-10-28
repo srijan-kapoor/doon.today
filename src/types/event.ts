@@ -1,8 +1,6 @@
 export type EventSourceProvider =
   | 'district'
-  | 'bookmyshow'
   | 'allevents'
-  | 'townscript'
   | 'virasat'
   | 'thrillzone'
   | 'literaturefestival'

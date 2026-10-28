@@ -7,8 +7,6 @@ export { istDay } from '../src/lib/dates.mjs';
 const SOURCE_RANK = {
   manual: 100,
   district: 95,
-  bookmyshow: 75,
-  townscript: 85,
   virasat: 90,
   thrillzone: 90,
   literaturefestival: 90,
@@ -52,7 +50,7 @@ function eventTimestamp(e) {
 function verificationStatus(sources=[]) {
   const community=sources.some(source => source.provider === 'manual' && source.community);
   const providers=new Set(sources.filter(source => !(source.provider === 'manual' && source.community)).map(source => source.provider));
-  if (['manual','district','townscript','virasat','thrillzone','literaturefestival','meetup','gdg'].some(provider => providers.has(provider))) return 'verified';
+  if (['manual','district','virasat','thrillzone','literaturefestival','meetup','gdg'].some(provider => providers.has(provider))) return 'verified';
   if (community || (providers.size === 1 && providers.has('reddit'))) return 'community-reported';
   return 'review';
 }

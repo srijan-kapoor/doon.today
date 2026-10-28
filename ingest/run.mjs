@@ -1,24 +1,21 @@
 import fs from 'node:fs/promises';
 import {fetchDistrict} from './sources/district.mjs';
-import {fetchBookMyShow} from './sources/bookmyshow.mjs';
 import {fetchReddit} from './sources/reddit.mjs';
 import {fetchAllEvents} from './sources/allevents.mjs';
-import {fetchTownscript} from './sources/townscript.mjs';
 import {fetchVirasat} from './sources/virasat.mjs';
 import {fetchThrillZone} from './sources/thrillzone.mjs';
 import {fetchLiteratureFestival} from './sources/literaturefestival.mjs';
 import {fetchMeetup} from './sources/meetup.mjs';
 import {fetchGdg} from './sources/gdg.mjs';
 import {mergeAndWrite} from './merge.mjs';
-import {adapterName,selectAdapters,recordAttempt,computeHealth,DEFAULT_MAX_AGE_HOURS,OPT_IN_SOURCES} from './lib/status.mjs';
+import {adapterName,selectAdapters,recordAttempt,computeHealth,DEFAULT_MAX_AGE_HOURS,knownSources} from './lib/status.mjs';
 
-const allAdapters=[fetchDistrict,fetchBookMyShow,fetchAllEvents,fetchTownscript,fetchVirasat,fetchThrillZone,fetchLiteratureFestival,fetchMeetup,fetchGdg,fetchReddit];
+const allAdapters=[fetchDistrict,fetchAllEvents,fetchVirasat,fetchThrillZone,fetchLiteratureFestival,fetchMeetup,fetchGdg,fetchReddit];
 
 // INGEST_ONLY / INGEST_SKIP take comma-separated source names (e.g. INGEST_ONLY=district).
 // District rejects GitHub-hosted runners, so it runs from a separate job; every run only updates the
-// sources it ran and keeps the other sources' status from the previous run. BookMyShow is opt-in:
-// it only runs when named in INGEST_ONLY.
-const adapters=selectAdapters(allAdapters,{only:process.env.INGEST_ONLY,skip:process.env.INGEST_SKIP,optIn:OPT_IN_SOURCES});
+// sources it ran and keeps the other sources' status from the previous run.
+const adapters=selectAdapters(allAdapters,{only:process.env.INGEST_ONLY,skip:process.env.INGEST_SKIP});
 const maxAgeHours=Number(process.env.PRIMARY_MAX_AGE_HOURS)||DEFAULT_MAX_AGE_HOURS;
 
 let previousStatus={};
@@ -26,7 +23,8 @@ try { previousStatus=JSON.parse(await fs.readFile('data/ingest-status.json','utf
 
 const now=new Date();
 const nowIso=now.toISOString();
-const sources={...(previousStatus.sources||{})};
+// A source that has been removed drops out of the status instead of being carried forward for ever.
+const sources=knownSources(previousStatus.sources,allAdapters);
 const results=[];
 const ran=[];
 

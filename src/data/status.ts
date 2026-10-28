@@ -24,7 +24,7 @@ export const ingestStatus = rawStatus as {
   sources?: Record<string, SourceStatus>;
 };
 
-const LABELS: Record<string, string> = { district: 'District', bookmyshow: 'BookMyShow' };
+const LABELS: Record<string, string> = { district: 'District' };
 const when = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' });
 
 // One entry per primary source that has not refreshed recently, with its last successful refresh.

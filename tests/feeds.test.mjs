@@ -18,8 +18,7 @@ test('feed ids are unique, URL-safe and have a path',()=>{
 test('every category an event can get has a feed, and so does every source we ingest',()=>{
   for(const name of CATEGORY_NAMES) assert.ok(byId[`category-${slug(name)}`],`no feed for ${name}`);
   assert.ok(CATEGORY_NAMES.includes(categoryFromText('nothing recognisable')[0]));
-  for(const provider of Object.keys(SOURCE_LABELS).filter(p=>!['bookmyshow','manual'].includes(p))) assert.ok(byId[`source-${provider}`],`no feed for ${provider}`);
-  assert.equal(byId['source-bookmyshow'],undefined,'the demoted source has no feed');
+  for(const provider of Object.keys(SOURCE_LABELS).filter(p=>p!=='manual')) assert.ok(byId[`source-${provider}`],`no feed for ${provider}`);
 });
 
 test('feeds select the right events',()=>{
