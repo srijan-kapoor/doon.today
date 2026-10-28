@@ -1,25 +1,20 @@
-# Primary source (District) and BookMyShow
+# Primary source (District)
 
 District returns `403 Forbidden` to GitHub-hosted runners. See
-[bug-report-primary-sources-403.md](bug-report-primary-sources-403.md) for the evidence. This project does
+[bug-report-primary-sources-403.md](bug-report-primary-sources-403.md) for the original evidence. This project does
 not spoof a browser, solve CAPTCHAs or use stealth tooling, so request headers are not the lever. Where the
 block is on datacenter IPs, the fix is to fetch from a machine on a normal connection.
 
 | Source | GitHub-hosted runner | Home/ISP connection | Status |
 | --- | --- | --- | --- |
 | District | `403` | `200`, 12 candidate events parsed (18 Oct 2026) | primary; fetched by the self-hosted runner or local script, below |
-| BookMyShow | `403` (Cloudflare) | `403` to a plain `curl` and to `fetch` from a Mac, though a browser renders the page | **demoted**: not primary and off by default |
 
-**BookMyShow is demoted.** Cloudflare rejects plain HTTP clients even from a residential IP, so moving the
-job does not help. It is no longer a primary source, so it does not affect the site's health or the banner,
-and it does not run unless it is named: `INGEST_ONLY=bookmyshow npm run ingest`. If it does run, it stops
-after two consecutive blocked event pages. Its events, if it ever returns any, rank as secondary. The
-compliant routes back are an approved partner, organizer or calendar feed from BookMyShow; that decision is
-still open.
+**BookMyShow was removed** on 28 Oct 2026. Cloudflare rejected plain HTTP clients even from a residential IP, so
+moving the job did not help, and AllEvents already carries its Dehradun listings.
 
 | Job | Where it runs | Sources |
 | --- | --- | --- |
-| `Refresh events` (`refresh-events.yml`) | GitHub-hosted `ubuntu-24.04` | everything except District (`INGEST_SKIP`); BookMyShow is opt-in and does not run |
+| `Refresh events` (`refresh-events.yml`) | GitHub-hosted `ubuntu-24.04` | everything except District (`INGEST_SKIP`) |
 | `Refresh primary sources` (`refresh-primary.yml`) | self-hosted runner labelled `doon-primary` | District only (`INGEST_ONLY`) |
 
 Both jobs share one concurrency group, so they never commit at the same time. Each job only updates the
@@ -69,6 +64,5 @@ District, validate, commit `data/`, push. Try it first with `DRY_RUN=1`. Example
 
 ```
 INGEST_ONLY=district npm run ingest      # only this source
-INGEST_ONLY=bookmyshow npm run ingest    # the opt-in source (currently blocked)
-INGEST_SKIP=district npm run ingest      # everything else except the opt-in source
+INGEST_SKIP=district npm run ingest      # everything else
 ```

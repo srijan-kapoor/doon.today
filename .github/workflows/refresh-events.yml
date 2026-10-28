@@ -21,8 +21,7 @@ jobs:
     timeout-minutes: 15
     env:
       # District returns 403 to GitHub-hosted runners (bot protection on datacenter IPs). It is fetched
-      # by refresh-primary.yml or scripts/refresh-primary-local.sh instead. BookMyShow is opt-in and
-      # does not run here.
+      # by refresh-primary.yml or scripts/refresh-primary-local.sh instead.
       INGEST_SKIP: district
     steps:
       - uses: actions/checkout@v5

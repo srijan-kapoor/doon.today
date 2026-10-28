@@ -1,9 +1,7 @@
 // Display names for event sources.
 export const SOURCE_LABELS = {
   district: 'District',
-  bookmyshow: 'BookMyShow',
   allevents: 'AllEvents',
-  townscript: 'Townscript',
   virasat: 'Virasat',
   thrillzone: 'Thrill Zone',
   literaturefestival: 'Dehradun Literature Festival',

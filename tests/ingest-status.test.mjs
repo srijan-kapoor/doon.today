@@ -1,31 +1,26 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {adapterName,selectAdapters,recordAttempt,computeHealth,primaryFreshness} from '../ingest/lib/status.mjs';
+import {adapterName,selectAdapters,knownSources,recordAttempt,computeHealth,primaryFreshness} from '../ingest/lib/status.mjs';
 
 async function fetchDistrict(){}
-async function fetchBookMyShow(){}
+async function fetchMeetup(){}
 async function fetchAllEvents(){}
 async function fetchReddit(){}
-const adapters=[fetchDistrict,fetchBookMyShow,fetchAllEvents,fetchReddit];
+const adapters=[fetchDistrict,fetchMeetup,fetchAllEvents,fetchReddit];
 const names=(list)=>list.map(adapterName);
 
-const optIn=['bookmyshow'];
-
 test('selectAdapters supports only, skip and unknown names',()=>{
-  assert.deepEqual(names(selectAdapters(adapters)),['district','bookmyshow','allevents','reddit']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'district, BookMyShow'})),['district','bookmyshow']);
-  assert.deepEqual(names(selectAdapters(adapters,{skip:'district,bookmyshow'})),['allevents','reddit']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'',skip:''})),['district','bookmyshow','allevents','reddit']);
+  assert.deepEqual(names(selectAdapters(adapters)),['district','meetup','allevents','reddit']);
+  assert.deepEqual(names(selectAdapters(adapters,{only:'district, Meetup'})),['district','meetup']);
+  assert.deepEqual(names(selectAdapters(adapters,{skip:'district,meetup'})),['allevents','reddit']);
+  assert.deepEqual(names(selectAdapters(adapters,{only:'',skip:''})),['district','meetup','allevents','reddit']);
   assert.throws(()=>selectAdapters(adapters,{only:'distrct'}),/Unknown ingest source "distrct"/);
 });
 
-test('opt-in sources only run when named in only',()=>{
-  assert.deepEqual(names(selectAdapters(adapters,{optIn})),['district','allevents','reddit']);
-  assert.deepEqual(names(selectAdapters(adapters,{skip:'district',optIn})),['allevents','reddit']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'district',optIn})),['district']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'bookmyshow',optIn})),['bookmyshow']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'district,bookmyshow',optIn})),['district','bookmyshow']);
-  assert.deepEqual(names(selectAdapters(adapters,{only:'bookmyshow',skip:'bookmyshow',optIn})),[]);
+test('knownSources drops the status of a source that no longer has an adapter',()=>{
+  const previous={district:{status:'ok'},townscript:{status:'ok'},bookmyshow:{status:'failed'}};
+  assert.deepEqual(knownSources(previous,adapters),{district:{status:'ok'}});
+  assert.deepEqual(knownSources(undefined,adapters),{});
 });
 
 test('recordAttempt tracks last success and consecutive failures',()=>{
@@ -47,7 +42,7 @@ const hoursAgo=(h)=>new Date(now-h*3_600_000).toISOString();
 test('health is healthy while the primary source has a recent success, whatever other sources do',()=>{
   const sources={
     district:{status:'ok',lastSuccessAt:hoursAgo(2)},
-    bookmyshow:{status:'failed',consecutiveFailures:9},
+    reddit:{status:'failed',consecutiveFailures:9},
     allevents:{status:'ok'}
   };
   const result=computeHealth(sources,{now,published:30});
@@ -82,7 +77,7 @@ test('a primary source that never succeeded is not fresh, and zero published is 
 });
 
 test('a source listed as primary by the caller is honoured',()=>{
-  const sources={district:{status:'ok',lastSuccessAt:hoursAgo(1)},townscript:{status:'ok',lastSuccessAt:hoursAgo(50)}};
-  const result=computeHealth(sources,{now,published:5,primary:['district','townscript']});
+  const sources={district:{status:'ok',lastSuccessAt:hoursAgo(1)},meetup:{status:'ok',lastSuccessAt:hoursAgo(50)}};
+  const result=computeHealth(sources,{now,published:5,primary:['district','meetup']});
   assert.equal(result.health,'degraded');
 });

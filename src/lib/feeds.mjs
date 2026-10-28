@@ -6,8 +6,8 @@ import { SOURCE_LABELS } from './sources.mjs';
 
 export const slug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// BookMyShow (demoted, no events) and manual entries get no source feed of their own.
-const FEED_SOURCES = Object.entries(SOURCE_LABELS).filter(([provider]) => !['bookmyshow', 'manual'].includes(provider));
+// Manual entries get no source feed of their own.
+const FEED_SOURCES = Object.entries(SOURCE_LABELS).filter(([provider]) => provider !== 'manual');
 
 const isPublished = (e) => e.curation?.status === 'published';
 

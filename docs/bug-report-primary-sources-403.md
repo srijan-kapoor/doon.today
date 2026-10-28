@@ -1,5 +1,7 @@
 # Bug report for Claude: District and BookMyShow HTTP 403 in GitHub Actions
 
+> **Resolved (28 Oct 2026).** District is fetched from a normal connection instead of GitHub's runners: see [primary-sources.md](primary-sources.md). BookMyShow was removed as a source. This report is kept for the evidence.
+
 ## Impact and current evidence (18 Oct 2026)
 
 The scheduled `Refresh events` workflow completes, but both primary source adapters fail at their **first listing request**, before parsing. `data/ingest-status.json` records `health: "degraded"`. The published dataset retains two older District-sourced records; it has zero BookMyShow-sourced records. Those are not evidence of a successful current District fetch.
