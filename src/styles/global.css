@@ -153,8 +153,22 @@ dd { margin: 0; }
 .event-description { max-width: 40rem; line-height: 1.6; }
 
 .prose h2 { font-family: Georgia, serif; margin: 40px 0 12px; }
+/* Changelog: a date, a tag and one sentence per row, grouped by month. */
+.changelog-month h2 { padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bottom: 0; }
+.changelog-list { list-style: none; margin: 0; padding: 0; }
+.changelog-list li { display: grid; grid-template-columns: 64px 84px 1fr; gap: 12px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.changelog-list time { color: var(--muted); font-size: .88rem; }
+.changelog-list p { margin: 0; }
+.changelog-tag { justify-self: start; background: var(--green-soft); color: var(--tag-ink); border-radius: 4px; padding: 3px 7px; font-size: .72rem; }
+.changelog-tag[data-tag="Source"] { background: var(--community); color: var(--community-ink); }
+@media (max-width: 620px) {
+  .changelog-list li { grid-template-columns: auto 1fr; gap: 6px 10px; }
+  .changelog-list p { grid-column: 1 / -1; }
+}
 .about-list { padding-left: 1.2rem; line-height: 1.6; font-size: 1.02rem; }
 .about-list li { margin-bottom: 8px; }
+.about-callout { background: var(--green-soft); color: var(--tag-ink); padding: 10px 14px; border-radius: 8px; }
+.about-callout a { color: var(--green); font-weight: 700; }
 .about-note { color: var(--muted); font-size: .92rem; }
 .report { margin-top: 18px; font-size: .9rem; }
 
