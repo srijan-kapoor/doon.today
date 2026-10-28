@@ -1,9 +1,10 @@
 [
-  { "date": "2026-10-28", "tag": "New", "text": "A dark theme. Switch it with the moon button in the header and the site remembers your choice.", "link": "https://github.com/srijan-kapoor/doon.today/pull/50" },
+  { "date": "2026-10-28", "tag": "New", "text": "A dark theme. Switch it from the header (or the menu on phones), and the site remembers your choice.", "link": "https://github.com/srijan-kapoor/doon.today/pull/50" },
   { "date": "2026-10-28", "tag": "Improved", "text": "Submit Event is now in the header on every page, and you don't need the organiser's permission to send one in.", "link": "https://github.com/srijan-kapoor/doon.today/pull/49" },
   { "date": "2026-10-28", "tag": "New", "text": "This changelog.", "link": "https://github.com/srijan-kapoor/doon.today/pull/52" },
   { "date": "2026-10-27", "tag": "Fixed", "text": "A festival listed both as a whole and day by day no longer shows up as separate sessions.", "link": "https://github.com/srijan-kapoor/doon.today/pull/48" },
   { "date": "2026-10-27", "tag": "Improved", "text": "Courses and festivals show on every day they run, and events on specific dates show only on those dates.", "link": "https://github.com/srijan-kapoor/doon.today/pull/46" },
+  { "date": "2026-10-27", "tag": "Improved", "text": "Events that run for weeks show under Today while they're on, and stay in the Today, Tomorrow and Weekend filters for their whole run.", "link": "https://github.com/srijan-kapoor/doon.today/pull/34" },
   { "date": "2026-10-27", "tag": "New", "text": "Month view on the home page: pick a day to see what's on.", "link": "https://github.com/srijan-kapoor/doon.today/pull/44" },
   { "date": "2026-10-27", "tag": "Source", "text": "Google Developer Groups: GDG Dehradun, UPES and Graphic Era.", "link": "https://github.com/srijan-kapoor/doon.today/pull/42" },
   { "date": "2026-10-26", "tag": "Improved", "text": "Grey text is darker and easier to read.", "link": "https://github.com/srijan-kapoor/doon.today/pull/39" },
@@ -17,9 +18,9 @@
   { "date": "2026-10-23", "tag": "New", "text": "Submit an event: anyone can send one in, and every entry is checked by hand.", "link": "https://github.com/srijan-kapoor/doon.today/pull/9" },
   { "date": "2026-10-23", "tag": "Fixed", "text": "Events in Maldevta are counted as Dehradun.", "link": "https://github.com/srijan-kapoor/doon.today/pull/8" },
   { "date": "2026-10-19", "tag": "Fixed", "text": "Filter counts match the other filters you have picked.", "link": "https://github.com/srijan-kapoor/doon.today/pull/7" },
-  { "date": "2026-10-19", "tag": "Improved", "text": "Virasat performances are listed even before their artist is announced.", "link": "https://github.com/srijan-kapoor/doon.today/pull/5" },
+  { "date": "2026-10-19", "tag": "Fixed", "text": "Every ticketed Virasat performance is listed, including slots whose act is still to be announced.", "link": "https://github.com/srijan-kapoor/doon.today/pull/5" },
   { "date": "2026-10-18", "tag": "Improved", "text": "Shared event links show a preview card, and every event page has a Report a problem link." },
   { "date": "2026-10-18", "tag": "New", "text": "Filter by category, area and price, and subscribe to a calendar for one category or source." },
-  { "date": "2026-10-18", "tag": "Source", "text": "BookMyShow becomes an occasional extra source; District stays the main one." },
+  { "date": "2026-10-18", "tag": "Source", "text": "Events from BookMyShow, when we can reach it." },
   { "date": "2026-10-18", "tag": "New", "text": "doon.today launches: Dehradun events from District, AllEvents, Virasat, Meetup and local organisers, with calendar subscriptions." }
 ]

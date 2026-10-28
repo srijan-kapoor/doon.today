@@ -3,6 +3,11 @@ const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 
 /** @typedef {{ date: string, tag: string, text: string, link?: string }} ChangelogEntry */
 
+const PR_LINK = /^https:\/\/github\.com\/srijan-kapoor\/doon\.today\/pull\/(\d+)$/;
+
+/** The pull request number of an entry's link, e.g. '50'. */
+export const prNumber = (link) => link.match(PR_LINK)?.[1] ?? '';
+
 export const TAGS = ['New', 'Improved', 'Fixed', 'Source', 'Removed'];
 
 const isDay = (value) => typeof value === 'string' && DATE_ONLY.test(value) && new Date(`${value}T00:00:00Z`).toISOString().startsWith(value);
@@ -16,7 +21,7 @@ export function changelogErrors(entries) {
     if (!isDay(entry?.date)) errors.push(`${at}: date must be a real YYYY-MM-DD day`);
     if (!TAGS.includes(entry?.tag)) errors.push(`${at}: tag must be one of ${TAGS.join(', ')}`);
     if (typeof entry?.text !== 'string' || !entry.text.trim()) errors.push(`${at}: text is empty`);
-    if (entry?.link !== undefined && !/^https:\/\/\S+$/.test(entry.link)) errors.push(`${at}: link must be an https URL`);
+    if (entry?.link !== undefined && !PR_LINK.test(entry.link)) errors.push(`${at}: link must be a pull request on github.com/srijan-kapoor/doon.today`);
     if (i > 0 && isDay(entry?.date) && isDay(entries[i - 1]?.date) && entry.date > entries[i - 1].date) errors.push(`${at}: newer than the entry above it`);
   });
   return errors;
