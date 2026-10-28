@@ -167,6 +167,8 @@ dd { margin: 0; }
 }
 .about-list { padding-left: 1.2rem; line-height: 1.6; font-size: 1.02rem; }
 .about-list li { margin-bottom: 8px; }
+.about-callout { background: var(--green-soft); color: var(--tag-ink); padding: 10px 14px; border-radius: 8px; }
+.about-callout a { color: var(--green); font-weight: 700; }
 .about-note { color: var(--muted); font-size: .92rem; }
 .report { margin-top: 18px; font-size: .9rem; }
 

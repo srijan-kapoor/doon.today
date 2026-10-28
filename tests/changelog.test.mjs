@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { changelogByMonth, changelogErrors, dayLabel, prNumber } from '../src/lib/changelog.mjs';
+import { changelogByMonth, changelogErrors, dayLabel } from '../src/lib/changelog.mjs';
 
 const entries = JSON.parse(await readFile(new URL('../src/data/changelog.json', import.meta.url), 'utf8'));
 
@@ -15,15 +15,13 @@ test('bad entries are reported', () => {
     { date: '2026-10-01', tag: 'New', text: 'ok' },
     { date: '2026-10-05', tag: 'New', text: 'newer than the one above' },
     { date: '2026-02-30', tag: 'Fixed', text: 'no such day' },
-    { date: '2026-01-01', tag: 'Misc', text: '  ' },
-    { date: '2026-01-01', tag: 'New', text: 'x', link: 'javascript:alert(1)' }
+    { date: '2026-01-01', tag: 'Misc', text: '  ' }
   ]);
   assert.deepEqual(errors, [
     'entry 2: newer than the entry above it',
     'entry 3: date must be a real YYYY-MM-DD day',
     'entry 4: tag must be one of New, Improved, Fixed, Source, Removed',
-    'entry 4: text is empty',
-    'entry 5: link must be a pull request on github.com/srijan-kapoor/doon.today'
+    'entry 4: text is empty'
   ]);
 });
 
@@ -41,5 +39,4 @@ test('entries group by month in their own order, with labels that ignore the tim
     ['2026-10', 'October 2026', 'bc']
   ]);
   assert.equal(dayLabel('2026-10-01'), '1 Oct');
-  assert.equal(prNumber('https://github.com/srijan-kapoor/doon.today/pull/50'), '50');
 });

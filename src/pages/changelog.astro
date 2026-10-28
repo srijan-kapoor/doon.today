@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import entries from '../data/changelog.json';
-import { changelogByMonth, dayLabel, prNumber } from '../lib/changelog.mjs';
+import { changelogByMonth, dayLabel } from '../lib/changelog.mjs';
 const months = changelogByMonth(entries);
 ---
 <BaseLayout title="Changelog — doon.today" description="What has changed on doon.today, newest first.">
@@ -17,7 +17,7 @@ const months = changelogByMonth(entries);
             <li>
               <time datetime={entry.date}>{dayLabel(entry.date)}</time>
               <span class="changelog-tag" data-tag={entry.tag}>{entry.tag}</span>
-              <p>{entry.text}{entry.link && <> <a href={entry.link} aria-label={`Pull request ${prNumber(entry.link)}`}>#{prNumber(entry.link)}</a></>}</p>
+              <p>{entry.text}</p>
             </li>
           ))}
         </ul>
