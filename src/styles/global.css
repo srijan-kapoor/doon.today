@@ -18,9 +18,20 @@ a { color: inherit; }
 .site-header { border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 94%, white); position: sticky; top: 0; z-index: 5; }
 .nav-wrap { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { font-family: Georgia, 'Times New Roman', serif; color: var(--green); font-size: 1.65rem; font-weight: 700; text-decoration: none; letter-spacing: -0.035em; }
-nav { display: flex; gap: 20px; font-size: 0.9rem; }
+nav { display: flex; align-items: center; gap: 20px; font-size: 0.9rem; }
+.nav-links { display: flex; gap: 20px; }
 nav a { text-decoration: none; color: var(--muted); }
 nav a[aria-current="page"] { color: var(--green); }
+/* The one call to action in the header, in the submit button's colours. */
+nav a.nav-submit { background: var(--green); color: var(--paper); border-radius: 999px; padding: 6px 12px; margin: -6px 0; white-space: nowrap; }
+nav a.nav-submit:hover { background: color-mix(in srgb, var(--green) 85%, black); }
+/* Phones only: Events, Calendars and About in a menu beside Submit Event. */
+.nav-menu { display: none; position: relative; }
+.nav-menu summary { list-style: none; width: 44px; height: 44px; margin: -8px -10px -8px 0; display: flex; align-items: center; justify-content: center; color: var(--green); cursor: pointer; border-radius: 8px; }
+.nav-menu summary::-webkit-details-marker { display: none; }
+.nav-menu summary:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.nav-menu-panel { position: absolute; right: -10px; top: calc(100% + 13px); min-width: 180px; display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 6px 0; z-index: 6; }
+.nav-menu-panel a { padding: 12px 18px; font-size: .95rem; }
 .hero { padding: 56px 0 34px; border-bottom: 1px solid var(--line); }
 .eyebrow { margin: 0 0 12px; font-size: .72rem; letter-spacing: .16em; font-weight: 700; color: var(--green); }
 h1, h2, h3, p { margin-top: 0; }
@@ -71,6 +82,8 @@ dd { margin: 0; }
   .shell { width: min(100% - 24px, 760px); }
   .nav-wrap { height: 58px; }
   nav { gap: 12px; font-size: .82rem; }
+  .nav-links { display: none; }
+  .nav-menu { display: block; }
   .hero { padding-top: 38px; }
   .event-row { grid-template-columns: 72px 1fr; gap: 10px; }
   .event-price { grid-column: 2; }

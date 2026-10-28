@@ -14,7 +14,7 @@ const entry = {
   how_to_join: 'DM @melophile.ddn on Instagram',
   organizer: 'Melophile', organizer_link: '@melophile.ddn',
   repeats: 'monthly', description: 'One album, front to back.\r\nThen we talk.',
-  contact: 'someone@example.com', permission: 'yes', 'bot-field': ''
+  contact: 'someone@example.com', submitter: 'organizer', 'bot-field': ''
 };
 const NOW = '2026-10-23T10:00:00.000Z';
 
@@ -74,6 +74,30 @@ test('an approved form lead becomes a published event', () => {
   assert.match(e.description, /Organized by Melophile\. How to join: DM @melophile\.ddn/);
   assert.equal(e.curation.status, 'published');
   assert.equal(leadKey(parsed, 40), 'form-40');
+});
+
+test("who sent a form entry decides whether it publishes as verified or community reported", () => {
+  assert.equal(formLead(entry).submittedBy, 'organizer');
+  assert.equal(formLead({ ...entry, submitter: 'community' }).submittedBy, 'community');
+  assert.equal(formLead({ ...entry, submitter: undefined }).submittedBy, 'community', 'not saying is not being the organizer');
+  // open-lead-issue.mjs rebuilds the lead from the dispatched JSON; the choice must survive that.
+  assert.equal(formLead({ ...entry, submitter: JSON.parse(JSON.stringify(formLead(entry))).submittedBy }).submittedBy, 'organizer');
+
+  const approve = (lead) => leadToEvent(parseLeadIssue(leadIssue(lead).body), { issueUrl: 'https://github.com/o/r/issues/41', now: NOW });
+  assert.match(leadIssue(formLead({ ...entry, submitter: 'community' })).body, /^submitted by: community$/m, 'the reviewer sees it, and can change it');
+  const fromOrganizer = approve(formLead(entry));
+  assert.equal(fromOrganizer.verificationStatus, 'verified');
+  assert.equal(fromOrganizer.sources[0].community, undefined);
+  const fromCommunity = approve(formLead({ ...entry, submitter: 'community' }));
+  assert.equal(fromCommunity.verificationStatus, 'community-reported');
+  assert.equal(fromCommunity.sources[0].provider, 'manual');
+  assert.equal(fromCommunity.sources[0].community, true);
+  assert.equal(fromCommunity.curation.status, 'published', 'still checked by hand and published');
+
+  const older = leadIssue(formLead(entry)).body.replace(/^submitted by: .*\n/m, '');
+  assert.equal(leadToEvent(parseLeadIssue(older), { issueUrl: 'https://github.com/o/r/issues/12', now: NOW }).verificationStatus, 'verified', 'a lead from before this change stays verified');
+  const reddit = parseLeadIssue(leadIssue(redditLead({ id: 'r1', title: 'Jam night', startAt: '2030-01-05T19:00:00+05:30', venue: { name: 'Cafe' }, sources: [{ provider: 'reddit', url: 'https://www.reddit.com/r/Dehradun/comments/r1/' }] })).body);
+  assert.equal(reddit.fields.submittedBy, '', 'not asked for Reddit leads');
 });
 
 test('two form leads at the same time without links get different ids', () => {

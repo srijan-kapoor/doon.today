@@ -249,6 +249,21 @@ test('venue coordinates survive a run or a source without them',async t=>{
   assert.equal(moved.venue.geo,undefined,"and doesn't keep the old venue's pin");
 });
 
+test('a community submission shows as community reported, unless a verified source lists it too',async t=>{
+  await inTempDir(t);
+  const manual=(community)=>({...src('manual','https://example.test/m'),...(community?{community:true}:{})});
+  await fs.writeFile('data/curated-events.json',JSON.stringify([ev({id:'m',sources:[manual(true)]})]));
+  await mergeAndWrite([]);
+  assert.equal((await read())[0].verificationStatus,'community-reported');
+  await mergeAndWrite([{source:'district',events:[ev()]}]);
+  assert.equal((await read())[0].verificationStatus,'verified','District lists the same event');
+
+  await fs.rm('data/events.json');
+  await fs.writeFile('data/curated-events.json',JSON.stringify([ev({id:'m',sources:[manual(false)]})]));
+  await mergeAndWrite([]);
+  assert.equal((await read())[0].verificationStatus,'verified','an organizer submission, as before');
+});
+
 test('mixed UTC and IST timestamps are sorted by actual start time',async t=>{
   await inTempDir(t);
   const times=['2030-01-10T12:30:00.000Z','2030-01-10T14:30:00.000Z','2030-01-10T16:00:00+05:30'];

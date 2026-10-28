@@ -21,6 +21,12 @@ const imageUrl = new URL(image, Astro.site);
 const structured = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const current = (href: string) => (path === href || (href !== '/' && path.startsWith(`${href}/`)) ? 'page' : undefined);
+// The header links. On phones they move into a menu, but Submit Event stays in the bar.
+const links: { href: string; label: string; current: 'page' | undefined }[] = [
+  { href: '/', label: 'Events', current: path === '/' || path.startsWith('/events') ? 'page' : undefined },
+  { href: '/calendars', label: 'Calendars', current: current('/calendars') },
+  { href: '/about', label: 'About', current: current('/about') }
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -54,9 +60,14 @@ const current = (href: string) => (path === href || (href !== '/' && path.starts
       <div class="shell nav-wrap">
         <a class="brand" href="/">doon.today</a>
         <nav aria-label="Primary navigation">
-          <a aria-current={path === '/' || path.startsWith('/events') ? 'page' : undefined} href="/">Events</a>
-          <a aria-current={current('/calendars')} href="/calendars">Calendars</a>
-          <a aria-current={current('/about')} href="/about">About</a>
+          <span class="nav-links">{links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}</span>
+          <a class="nav-submit" aria-current={current('/submit')} href="/submit/">Submit Event</a>
+          <details class="nav-menu">
+            <summary aria-label="Menu">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14" /></svg>
+            </summary>
+            <div class="nav-menu-panel">{links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}</div>
+          </details>
         </nav>
       </div>
     </header>

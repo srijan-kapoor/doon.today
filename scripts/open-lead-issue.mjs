@@ -18,6 +18,7 @@ const lead = formLead({
   listing_url: input.listing,
   organizer: input.organizer,
   organizer_link: input.organizerLink,
+  submitter: input.submittedBy,
   how_to_join: input.howToJoin,
   repeats: input.repeats,
   description: input.description
