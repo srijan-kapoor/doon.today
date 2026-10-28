@@ -23,6 +23,7 @@ const FIELDS = [
   ['listing', 'listing link'],
   ['organizer', 'organizer'],
   ['organizerLink', 'organizer link'],
+  ['submittedBy', 'submitted by'],
   ['howToJoin', 'how to join'],
   ['repeats', 'repeats'],
   ['post', 'post'],
@@ -76,6 +77,8 @@ export function formLead(data = {}) {
     listing: cleanUrl(data.listing_url),
     organizer: cleanLine(data.organizer),
     organizerLink: cleanLine(data.organizer_link),
+    // "organizer" or "community" (someone who saw it somewhere); anything else counts as community.
+    submittedBy: cleanLine(data.submitter).toLowerCase() === 'organizer' ? 'organizer' : 'community',
     howToJoin: cleanLine(data.how_to_join),
     repeats: cleanLine(data.repeats),
     post: '',
@@ -116,6 +119,7 @@ export function sourceLead(candidate) {
     listing: kind === 'listing' ? url : '',
     organizer: '',
     organizerLink: '',
+    submittedBy: '',
     howToJoin: '',
     repeats: '',
     post: kind === 'reddit' ? url : '',
@@ -230,8 +234,16 @@ export function leadToEvent(parsed, { issueUrl, candidate, now } = {}) {
     description,
     categories: categories.length ? categories : categoryFromText(`${f.title} ${description}`)
   }, now);
+  // A form entry from someone who isn't the organizer is still checked by hand, but shows as "Community
+  // reported". The mark goes on the hand-check source, so the merge keeps it (see verificationStatus).
+  // The same rule as formLead: anything but "organizer" counts as community, so a reviewer's free-text edit
+  // can't publish as verified by accident. Older leads have no "submitted by" line and stay verified.
+  const community = parsed.kind === 'form' && Boolean(f.submittedBy) && f.submittedBy.toLowerCase() !== 'organizer';
+  const checked = community
+    ? { ...event, verificationStatus: 'community-reported', sources: event.sources.map((s, i) => (i === 0 ? { ...s, community: true } : s)) }
+    : event;
   // Only names on the area list, so a typo or "near ISBT" never reaches the Area filter; without one, the
   // merge reads the area from the venue as it does for every other event.
   const area = f.area && areaFromText(f.area);
-  return area ? { ...event, venue: { ...event.venue, area } } : event;
+  return area ? { ...checked, venue: { ...checked.venue, area } } : checked;
 }

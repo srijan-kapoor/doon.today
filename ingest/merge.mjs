@@ -47,10 +47,13 @@ function eventTimestamp(e) {
     0
   );
 }
+// A hand-checked entry sent in by someone other than the organizer (`community: true`) doesn't verify an event
+// on its own; a ticketing platform or organizer page listing the same event still does.
 function verificationStatus(sources=[]) {
-  const providers=new Set(sources.map(source => source.provider));
+  const community=sources.some(source => source.provider === 'manual' && source.community);
+  const providers=new Set(sources.filter(source => !(source.provider === 'manual' && source.community)).map(source => source.provider));
   if (['manual','district','townscript','virasat','thrillzone','literaturefestival','meetup','gdg'].some(provider => providers.has(provider))) return 'verified';
-  if (providers.size === 1 && providers.has('reddit')) return 'community-reported';
+  if (community || (providers.size === 1 && providers.has('reddit'))) return 'community-reported';
   return 'review';
 }
 export function sameEvent(a,b) {

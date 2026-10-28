@@ -17,6 +17,8 @@ export interface EventSource {
   externalId?: string;
   checkedAt: string;
   confidence: number;
+  // On a hand-checked ("manual") source: sent in by someone other than the organizer.
+  community?: boolean;
 }
 
 export interface EventRecord {

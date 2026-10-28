@@ -61,7 +61,14 @@ const categories = CATEGORY_NAMES.map(String).filter((name) => name !== 'Other')
         <label><span>Organizer's Instagram or website <span class="optional">optional</span></span> <input name="organizer_link" maxlength="300" placeholder="@handle or https://" /></label>
         <label><span>Does it happen regularly? <span class="optional">optional</span></span> <input name="repeats" maxlength="300" placeholder="e.g. every second Sunday" /></label>
         <label><span>Your email or phone <span class="optional">optional, only for questions about this event, never published</span></span> <input name="contact" maxlength="200" autocomplete="email" /></label>
-        <label class="check"><input type="checkbox" name="permission" value="yes" required /> I'm the organizer, or I have their permission to share this</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Who's sending this?</legend>
+        <div class="choices">
+          <label class="check"><input type="radio" name="submitter" value="organizer" required /> I'm the organizer</label>
+          <label class="check"><input type="radio" name="submitter" value="community" /> I saw it somewhere (a poster, a post, a friend)</label>
+        </div>
       </fieldset>
 
       <button type="submit">Send the event</button>
