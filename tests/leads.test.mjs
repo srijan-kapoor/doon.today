@@ -94,6 +94,10 @@ test("who sent a form entry decides whether it publishes as verified or communit
   assert.equal(fromCommunity.sources[0].community, true);
   assert.equal(fromCommunity.curation.status, 'published', 'still checked by hand and published');
 
+  for (const edited of ['someone else', 'comunity', 'Community reported']) {
+    const body = leadIssue(formLead(entry)).body.replace('submitted by: organizer', `submitted by: ${edited}`);
+    assert.equal(leadToEvent(parseLeadIssue(body), { issueUrl: 'https://github.com/o/r/issues/41', now: NOW }).verificationStatus, 'community-reported', `a reviewer's "${edited}" is not the organizer`);
+  }
   const older = leadIssue(formLead(entry)).body.replace(/^submitted by: .*\n/m, '');
   assert.equal(leadToEvent(parseLeadIssue(older), { issueUrl: 'https://github.com/o/r/issues/12', now: NOW }).verificationStatus, 'verified', 'a lead from before this change stays verified');
   const reddit = parseLeadIssue(leadIssue(redditLead({ id: 'r1', title: 'Jam night', startAt: '2030-01-05T19:00:00+05:30', venue: { name: 'Cafe' }, sources: [{ provider: 'reddit', url: 'https://www.reddit.com/r/Dehradun/comments/r1/' }] })).body);

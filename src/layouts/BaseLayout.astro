@@ -68,6 +68,17 @@ const links: { href: string; label: string; current: 'page' | undefined }[] = [
             </summary>
             <div class="nav-menu-panel">{links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}</div>
           </details>
+          <script is:inline>
+            // Close the menu on Escape, on a tap outside it, and when coming back to the page.
+            (function () {
+              var menu = document.querySelector('.nav-menu');
+              if (!menu) return;
+              var close = function () { menu.open = false; };
+              document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.open) { close(); menu.querySelector('summary').focus(); } });
+              document.addEventListener('click', function (e) { if (menu.open && !menu.contains(e.target)) close(); });
+              window.addEventListener('pageshow', close);
+            })();
+          </script>
         </nav>
       </div>
     </header>

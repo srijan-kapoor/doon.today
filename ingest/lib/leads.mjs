@@ -236,8 +236,9 @@ export function leadToEvent(parsed, { issueUrl, candidate, now } = {}) {
   }, now);
   // A form entry from someone who isn't the organizer is still checked by hand, but shows as "Community
   // reported". The mark goes on the hand-check source, so the merge keeps it (see verificationStatus).
-  // Older leads have no "submitted by" line and stay verified.
-  const community = parsed.kind === 'form' && f.submittedBy.toLowerCase() === 'community';
+  // The same rule as formLead: anything but "organizer" counts as community, so a reviewer's free-text edit
+  // can't publish as verified by accident. Older leads have no "submitted by" line and stay verified.
+  const community = parsed.kind === 'form' && Boolean(f.submittedBy) && f.submittedBy.toLowerCase() !== 'organizer';
   const checked = community
     ? { ...event, verificationStatus: 'community-reported', sources: event.sources.map((s, i) => (i === 0 ? { ...s, community: true } : s)) }
     : event;

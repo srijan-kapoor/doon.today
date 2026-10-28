@@ -24,7 +24,7 @@ nav a { text-decoration: none; color: var(--muted); }
 nav a[aria-current="page"] { color: var(--green); }
 /* The one call to action in the header, in the submit button's colours. */
 nav a.nav-submit { background: var(--green); color: var(--paper); border-radius: 999px; padding: 6px 12px; margin: -6px 0; white-space: nowrap; }
-nav a.nav-submit:hover { background: color-mix(in srgb, var(--green) 85%, black); }
+nav a.nav-submit:hover { background: color-mix(in srgb, var(--green) 85%, var(--ink)); }
 /* Phones only: Events, Calendars and About in a menu beside Submit Event. */
 .nav-menu { display: none; position: relative; }
 .nav-menu summary { list-style: none; width: 44px; height: 44px; margin: -8px -10px -8px 0; display: flex; align-items: center; justify-content: center; color: var(--green); cursor: pointer; border-radius: 8px; }
