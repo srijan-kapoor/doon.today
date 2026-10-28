@@ -52,7 +52,7 @@ test('the head script applies a saved dark theme before the page draws, and neve
   assert.equal(run(brokenStorage), undefined, 'blocked storage leaves the light theme');
 });
 
-test('the toggle switches the theme, the buttons, the browser colour and storage', async () => {
+test('the toggle switches the theme, the buttons, the browser colour and storage', async (t) => {
   const handlers = [];
   const button = () => ({ attrs: {}, title: '', setAttribute(k, v) { this.attrs[k] = v; }, addEventListener(type, fn) { if (type === 'click') handlers.push(fn); } });
   const buttons = [button(), button()];
@@ -64,6 +64,7 @@ test('the toggle switches the theme, the buttons, the browser colour and storage
     getComputedStyle: () => ({ getPropertyValue: () => (root.dataset.theme === 'dark' ? ' #111a16' : ' #f6f1e8') }),
     localStorage: storage
   });
+  t.after(() => { delete globalThis.document; delete globalThis.getComputedStyle; delete globalThis.localStorage; });
   await import('../src/scripts/theme-toggle.mjs');
   assert.deepEqual(buttons.map((b) => b.attrs['aria-pressed']), ['false', 'false'], 'both buttons start in step with the page');
   handlers[0]();
@@ -76,7 +77,6 @@ test('the toggle switches the theme, the buttons, the browser colour and storage
   assert.equal('theme' in root.dataset, false);
   assert.equal(meta.content, '#f6f1e8');
   assert.deepEqual(storage.data, {});
-  delete globalThis.document; delete globalThis.getComputedStyle; delete globalThis.localStorage;
 });
 
 // The two token blocks at the top of global.css: light (:root) and dark.
