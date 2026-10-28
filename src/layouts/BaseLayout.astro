@@ -35,6 +35,8 @@ const links: { href: string; label: string; current: 'page' | undefined }[] = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f6f1e8" />
+    <!-- Applies a saved dark theme before anything draws, so a reload never flashes light. Same key as src/lib/theme.mjs. -->
+    <script is:inline data-theme-boot>try { if (localStorage.getItem('doon.theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="text/calendar" title="doon.today events" href="/calendar.ics" />
@@ -60,13 +62,19 @@ const links: { href: string; label: string; current: 'page' | undefined }[] = [
       <div class="shell nav-wrap">
         <a class="brand" href="/">doon.today</a>
         <nav aria-label="Primary navigation">
-          <span class="nav-links">{links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}</span>
+          <span class="nav-links">
+            {links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}
+            <button type="button" class="theme-toggle" data-theme-toggle aria-label="Dark theme" aria-pressed="false"><svg class="icon-moon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 11.2A6.5 6.5 0 0 1 6.8 3a6.5 6.5 0 1 0 8.2 8.2z" /></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="3.4" /><path d="M9 1.5v1.6M9 14.9v1.6M1.5 9h1.6M14.9 9h1.6M3.7 3.7l1.1 1.1M13.2 13.2l1.1 1.1M3.7 14.3l1.1-1.1M13.2 4.8l1.1-1.1" /></svg></button>
+          </span>
           <a class="nav-submit" aria-current={current('/submit')} href="/submit/">Submit Event</a>
           <details class="nav-menu">
             <summary aria-label="Menu">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14" /></svg>
             </summary>
-            <div class="nav-menu-panel">{links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}</div>
+            <div class="nav-menu-panel">
+              {links.map((link) => <a aria-current={link.current} href={link.href}>{link.label}</a>)}
+              <button type="button" class="nav-menu-theme" data-theme-toggle aria-pressed="false"><svg class="icon-moon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 11.2A6.5 6.5 0 0 1 6.8 3a6.5 6.5 0 1 0 8.2 8.2z" /></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="3.4" /><path d="M9 1.5v1.6M9 14.9v1.6M1.5 9h1.6M14.9 9h1.6M3.7 3.7l1.1 1.1M13.2 13.2l1.1 1.1M3.7 14.3l1.1-1.1M13.2 4.8l1.1-1.1" /></svg><span>Dark theme</span></button>
+            </div>
           </details>
           <script is:inline>
             // Close the menu on Escape, on a tap outside it, and when coming back to the page.
@@ -82,6 +90,9 @@ const links: { href: string; label: string; current: 'page' | undefined }[] = [
         </nav>
       </div>
     </header>
+    <script>
+      import '../scripts/theme-toggle.mjs';
+    </script>
     <main class="shell"><slot /></main>
     <footer class="shell footer">
       <p>Doon.today is a calendar of things happening in Dehradun.</p>
