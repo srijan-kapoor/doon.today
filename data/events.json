@@ -10,12 +10,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -97,12 +97,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -143,12 +143,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -187,12 +187,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -223,6 +223,41 @@
     "modifiedAt": "2026-10-22T04:57:51.691Z"
   },
   {
+    "id": "6088172797b0a631",
+    "slug": "diwali-drama",
+    "title": "Diwali drama",
+    "description": "🪔 DIWALI DRAMA 🎆\nDehradun’s Ultimate Diwali Party!\n\n✨ Patake, gol gappa stall, mehndi, festive shopping, loads of games, music & more!\n\n📅 30th October 2026\n📍 KYTES Rooftop, Dehradun\n\n🎟️ Pass: ₹599\n💸 DH Community Special: Use code DDH100 for ₹100 OFF!\n\n🍽️ Enjoy 50% of your pass amount redeemable on food & drinks!\n\nOrganized by Dehradun Hangouts. How to join: https://sortmyscene.com/event/diwali-drama-kytes-kitchen-airbar-dehradun-oct-30-2026",
+    "startAt": "2026-10-30T19:00:00+05:30",
+    "venue": {
+      "name": "Kytes Rooftop",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Community"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 499,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://sortmyscene.com/event/diwali-drama-kytes-kitchen-airbar-dehradun-oct-30-2026",
+        "checkedAt": "2026-10-28T17:58:00.031Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-28T17:58:00.031Z",
+    "lastSeenAt": "2026-10-28T17:58:00.031Z",
+    "lastCheckedAt": "2026-10-28T17:58:00.031Z"
+  },
+  {
     "id": "064d632cbcd64e99",
     "slug": "virasat-2026-sitar-recital-by-dhruv-bedi",
     "title": "Virasat 2026: Sitar recital by Dhruv Bedi",
@@ -233,12 +268,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -277,12 +312,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -363,12 +398,12 @@
       "name": "Graphic Era Deemed to be University",
       "address": "566/6, Bell Road, Society Area, Clement Town, Dehradun, Uttarakhand 248002, India, Dehradun, UK",
       "city": "Dehradun",
+      "area": "Clement Town",
       "geo": {
         "lat": 30.26802,
         "lng": 77.99612
       },
-      "geoFrom": "table",
-      "area": "Clement Town"
+      "geoFrom": "table"
     },
     "categories": [
       "Community"
@@ -712,12 +747,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -938,12 +973,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1106,12 +1141,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1149,12 +1184,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1365,12 +1400,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Culture"
@@ -1408,12 +1443,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1453,12 +1488,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1496,12 +1531,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1541,12 +1576,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1584,12 +1619,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1728,12 +1763,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1771,12 +1806,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1816,12 +1851,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1859,12 +1894,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
