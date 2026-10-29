@@ -72,11 +72,13 @@ const detailsLabel = detailsLinkLabel(primarySource);
     </div>
 
     <div class="source-block">
-      <h2>Source</h2>
-      {event.sources.map((source) => <p><a href={source.url} target="_blank" rel="noreferrer">{sourceLabel(source.provider)}</a> · checked {checked.format(new Date(source.checkedAt))}</p>)}
+      <h2>Where this comes from</h2>
+      {event.sources.map((source) => source.provider === 'manual'
+        ? <p>Checked by hand on {checked.format(new Date(source.checkedAt))}</p>
+        : <p>From <a href={source.url} target="_blank" rel="noreferrer">{sourceLabel(source.provider)}</a>, last checked {checked.format(new Date(source.checkedAt))}</p>)}
       {sourceUnavailable && <p class="notice">This source was unavailable during the latest data refresh. These details were last checked {checked.format(new Date(event.lastCheckedAt))}; confirm them with the source before travelling.</p>}
-      {event.verificationStatus === 'review' && <p class="notice">Source reported — details come from an aggregator; confirm with the source before travelling.</p>}
-      {event.verificationStatus === 'community-reported' && <p class="notice">Community reported — verify details with the organizer before travelling.</p>}
+      {event.verificationStatus === 'review' && <p class="notice">Taken from a listing site and not checked by hand yet. Check with the organizer before you go.</p>}
+      {event.verificationStatus === 'community-reported' && <p class="notice">Sent in by a visitor rather than the organizer. Check with the organizer before you go.</p>}
       <p class="report"><a href={reportEventUrl(event, pageUrl)} target="_blank" rel="noreferrer">Report a problem with this event ↗</a></p>
     </div>
   </article>
