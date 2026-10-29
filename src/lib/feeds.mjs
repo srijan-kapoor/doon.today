@@ -15,7 +15,7 @@ const isPublished = (e) => e.curation?.status === 'published';
 /** Every feed: { id, kind, label, description, filter }. `id` is the file name, `/calendars/<id>.ics`. */
 export function feedDefinitions() {
   return [
-    { id: 'verified', kind: 'collection', label: 'Verified only', description: 'Confirmed by a primary source or organizer; leaves out events reported only by aggregators', filter: (e) => e.verificationStatus === 'verified' },
+    { id: 'verified', kind: 'collection', label: 'Confirmed only', description: 'Checked by hand, or listed by the organizer or venue itself; leaves out events taken only from listing sites', filter: (e) => e.verificationStatus === 'verified' },
     { id: 'community', kind: 'collection', label: 'Community picks', description: 'Posted by Dehradun’s own clubs and groups, and checked by hand', filter: isCommunityEvent },
     { id: 'free', kind: 'collection', label: 'Free', description: 'Free events', filter: (e) => e.pricing?.type === 'free' },
     ...CATEGORY_NAMES.map((name) => ({ id: `category-${slug(name)}`, kind: 'category', label: name, description: `${name} events`, filter: (e) => currentCategories(e.categories).includes(name) })),
