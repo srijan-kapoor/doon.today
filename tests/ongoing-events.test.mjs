@@ -1,8 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import vm from 'node:vm';
 import { eventDayRange, eventDisplayDay } from '../src/lib/dates.mjs';
+import { matchesDate } from '../src/lib/filters.mjs';
 
 const longCourse={startAt:'2026-10-31',endAt:'2026-12-20'};
 const weekendCourse={startAt:'2026-11-20',endAt:'2026-11-22'};
@@ -50,41 +49,26 @@ test('timed ends before 6am IST belong to the previous night',()=>{
     {start:'2026-10-31',end:'2026-10-31'},'the final listing day never precedes the start day');
 });
 
-test('production Today, Tomorrow and Weekend filters match the whole date range in every timezone',async t=>{
-  const page=await readFile(new URL('../src/pages/index.astro',import.meta.url),'utf8');
-  const script=[...page.matchAll(/<script is:inline>([\s\S]*?)<\/script>/g)].at(-1)[1];
-  const previous=process.env.TZ;
-  t.after(()=>{if(previous===undefined) delete process.env.TZ; else process.env.TZ=previous;});
-  t.mock.timers.enable({apis:['Date'],now:new Date('2026-11-20T13:00:00+05:30')});
-  for(const timezone of ['Asia/Kolkata','America/Los_Angeles','Pacific/Kiritimati']) {
-    process.env.TZ=timezone;
-    const context=vm.createContext({Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
-    vm.runInContext(script,context);
-    for(const event of [longCourse,weekendCourse,timedEvent]) {
-      const {start,end}=eventDayRange(event);
-      context.row={dataset:{startDate:start,endDate:end}};
-      for(const when of ['all','today','tomorrow','weekend']) {
-        assert.equal(vm.runInContext(`state.when='${when}';dayOk(row)`,context),true,`${timezone}, ${event.startAt}, ${when}`);
+test('production Today, Tomorrow and Weekend filters match the whole date range in every timezone', t => {
+  const previous = process.env.TZ;
+  t.after(() => { if (previous === undefined) delete process.env.TZ; else process.env.TZ = previous; });
+  for (const timezone of ['Asia/Kolkata', 'America/Los_Angeles', 'Pacific/Kiritimati']) {
+    process.env.TZ = timezone;
+    for (const event of [longCourse, weekendCourse, timedEvent]) {
+      for (const when of ['all', 'today', 'tomorrow', 'weekend']) {
+        assert.equal(matchesDate(eventDayRange(event), when, { today: '2026-11-20' }), true, `${timezone}, ${event.startAt}, ${when}`);
       }
     }
-    for(const event of [
-      {startAt:'2026-10-31',endAt:'2026-11-19'},
-      {startAt:'2026-11-23',endAt:'2026-11-25'},
-      {startAt:'2026-11-19T20:00:00+05:30',endAt:'2026-11-20T01:00:00+05:30'}
+    for (const event of [
+      { startAt: '2026-10-31', endAt: '2026-11-19' },
+      { startAt: '2026-11-23', endAt: '2026-11-25' },
+      { startAt: '2026-11-19T20:00:00+05:30', endAt: '2026-11-20T01:00:00+05:30' },
     ]) {
-      const {start,end}=eventDayRange(event);context.row={dataset:{startDate:start,endDate:end}};
-      for(const when of ['today','tomorrow','weekend']) {
-        assert.equal(vm.runInContext(`state.when='${when}';dayOk(row)`,context),false,`${timezone}, exclude ${event.startAt} from ${when}`);
+      for (const when of ['today', 'tomorrow', 'weekend']) {
+        assert.equal(matchesDate(eventDayRange(event), when, { today: '2026-11-20' }), false, `${timezone}, exclude ${event.startAt} from ${when}`);
       }
     }
-    // On Sunday, an event that ended on Saturday must not reappear in Weekend under a past heading.
-    t.mock.timers.setTime(new Date('2026-11-22T13:00:00+05:30').getTime());
-    const sunday=vm.createContext({Date,Intl,URLSearchParams,location:{search:'?when=weekend',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
-    vm.runInContext(script,sunday);sunday.row={dataset:{startDate:'2026-11-20',endDate:'2026-11-21'}};
-    assert.equal(vm.runInContext('dayOk(row)',sunday),false);
-    t.mock.timers.setTime(new Date('2026-11-20T13:00:00+05:30').getTime());
+    assert.equal(matchesDate({ start: '2026-11-20', end: '2026-11-21' }, 'weekend', { today: '2026-11-22' }), false, 'Sunday excludes an event that ended Saturday');
   }
 });
 
@@ -100,29 +84,19 @@ test('an event on specific dates is listed on those days only, not as ongoing in
   assert.deepEqual(eventDayRange({startAt:ghar.startAt,endAt:ghar.endAt}),{start:'2026-10-31',end:'2026-12-20'},'without the list it is still a run');
 });
 
-test('production filters match an event on specific dates only on its dates',async t=>{
-  const page=await readFile(new URL('../src/pages/index.astro',import.meta.url),'utf8');
-  const script=[...page.matchAll(/<script is:inline>([\s\S]*?)<\/script>/g)].at(-1)[1];
-  const previous=process.env.TZ;
-  t.after(()=>{if(previous===undefined) delete process.env.TZ; else process.env.TZ=previous;});
-  const {start,end,days}=eventDayRange(ghar);
-  const run=(now,when)=>{
-    t.mock.timers.setTime(new Date(now).getTime());
-    const context=vm.createContext({Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
-      document:{documentElement:{classList:{contains:()=>false}},querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}});
-    vm.runInContext(script,context);
-    context.row={dataset:{startDate:start,endDate:end,days:days.join(' ')}};
-    return vm.runInContext(`state.when='${when}';dayOk(row)`,context);
-  };
-  t.mock.timers.enable({apis:['Date'],now:new Date('2026-11-20T13:00:00+05:30')});
-  for(const timezone of ['Asia/Kolkata','America/Los_Angeles']) {
-    process.env.TZ=timezone;
-    assert.equal(run('2026-11-20T13:00:00+05:30','today'),false,'between sessions');
-    assert.equal(run('2026-11-20T13:00:00+05:30','tomorrow'),false);
-    assert.equal(run('2026-11-20T13:00:00+05:30','weekend'),true,'Sun 22 Nov is a session');
-    assert.equal(run('2026-11-20T13:00:00+05:30','all'),true);
-    assert.equal(run('2026-11-22T13:00:00+05:30','today'),true);
-    assert.equal(run('2026-11-21T13:00:00+05:30','tomorrow'),true);
-    assert.equal(run('2026-12-21T13:00:00+05:30','all'),false,'over');
+test('production filters match an event on specific dates only on its dates', t => {
+  const previous = process.env.TZ;
+  t.after(() => { if (previous === undefined) delete process.env.TZ; else process.env.TZ = previous; });
+  const range = eventDayRange(ghar);
+  const run = (today, when) => matchesDate(range, when, { today });
+  for (const timezone of ['Asia/Kolkata', 'America/Los_Angeles']) {
+    process.env.TZ = timezone;
+    assert.equal(run('2026-11-20', 'today'), false, 'between sessions');
+    assert.equal(run('2026-11-20', 'tomorrow'), false);
+    assert.equal(run('2026-11-20', 'weekend'), true, 'Sun 22 Nov is a session');
+    assert.equal(run('2026-11-20', 'all'), true);
+    assert.equal(run('2026-11-22', 'today'), true);
+    assert.equal(run('2026-11-21', 'tomorrow'), true);
+    assert.equal(run('2026-12-21', 'all'), false, 'over');
   }
 });

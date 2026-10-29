@@ -100,10 +100,16 @@ test('the page wires the switch, hides the date filters in Month view and keeps 
   assert.match(page, /data-view="list"[\s\S]*data-view="month"/);
   assert.match(page, /Nothing listed for this day yet\. Know of something\?/);
   assert.match(page, /More dots, busier day/);
-  assert.match(page, /dayOk=\(row\)=>\{[\s\S]*?document\.documentElement\.classList\.contains\('view-month'\)/, 'date filters do not skew counts in Month view');
+  assert.match(page, /scripts\/event-filters\.mjs/, 'List and Month use the shared filter controller');
   const css = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
   const month = css.slice(css.indexOf('/* List | Month view */'));
   assert.doesNotMatch(month.replace(/var\([^)]*\)/g, ''), /#[0-9a-f]{3,8}\b|rgba?\(/i, 'the Month view uses only CSS tokens');
+});
+
+test('multiple categories combine with OR in Month dots and day results', () => {
+  const items = [make('2026-11-05', undefined, { categories: ['music', 'culture'] }), make('2026-11-05', undefined, { categories: ['comedy'] }), make('2026-11-05', undefined, { categories: ['outdoors'] })];
+  assert.equal(eventsOn(items, '2026-11-05', { categories: ['music', 'comedy'] }).length, 2);
+  assert.equal(eventsOn(items, '2026-11-05', { categories: ['music', 'culture'] }).length, 1, 'a multi-category event counts once');
 });
 
 test('an event on specific dates shows on those days only', () => {

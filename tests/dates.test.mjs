@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import vm from 'node:vm';
+import { matchesDate } from '../src/lib/filters.mjs';
 import { toInstant, istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, occurrenceDays, nextOccurrence } from '../src/lib/dates.mjs';
 
 test('date-only and offset-less timestamps mean IST, even on a machine in another timezone',t=>{
@@ -31,22 +30,20 @@ test('expiry handles missing/invalid ends and preserves the timed grace period',
   }
 });
 
-test('the home page selects the IST weekend independently of the visitor timezone',async t=>{
-  const page=await readFile(new URL('../src/pages/index.astro',import.meta.url),'utf8');
-  const scripts=[...page.matchAll(/<script is:inline>([\s\S]*?)<\/script>/g)];
-  const script=scripts.at(-1)[1];
-  const previous=process.env.TZ;
-  t.after(()=>{if(previous===undefined) delete process.env.TZ; else process.env.TZ=previous;});
-  t.mock.timers.enable({apis:['Date'],now:new Date('2026-10-24T12:00:00+05:30')});
-  for(const timezone of ['Asia/Kolkata','America/Los_Angeles','Pacific/Honolulu','Pacific/Kiritimati']) {
-    process.env.TZ=timezone;
-    for(const today of ['2026-10-24','2026-10-25']) {
+test('the home page selects the IST weekend independently of the visitor timezone', t => {
+  const previous = process.env.TZ;
+  t.after(() => { if (previous === undefined) delete process.env.TZ; else process.env.TZ = previous; });
+  t.mock.timers.enable({ apis: ['Date'], now: new Date('2026-10-24T12:00:00+05:30') });
+  for (const timezone of ['Asia/Kolkata', 'America/Los_Angeles', 'Pacific/Honolulu', 'Pacific/Kiritimati']) {
+    process.env.TZ = timezone;
+    for (const today of ['2026-10-24', '2026-10-25']) {
       t.mock.timers.setTime(new Date(`${today}T12:00:00+05:30`).getTime());
-      // No rows are needed to exercise the production script's date/filter initialization.
-      const context={Date,Intl,URLSearchParams,location:{search:'',pathname:'/',hash:''},history:{replaceState(){}},
-        document:{querySelectorAll:()=>[],querySelector:(selector)=>selector==='#area-filter'?null:{}}};
-      const range=vm.runInNewContext(`${script}\nJSON.stringify({today,sat,sun})`,context);
-      assert.deepEqual(JSON.parse(range),{today,sat:'2026-10-24',sun:'2026-10-25'},`${timezone}, ${today}`);
+      const readerDay = istDay(new Date().toISOString());
+      assert.equal(readerDay, today);
+      assert.equal(matchesDate({ start: '2026-10-24', end: '2026-10-25' }, 'weekend', { today: readerDay }), true, `${timezone}, ${today}`);
+      assert.equal(matchesDate({ start: '2026-10-25', end: '2026-10-25' }, 'weekend', { today: readerDay }), true);
+      assert.equal(matchesDate({ start: '2026-10-26', end: '2026-10-26' }, 'weekend', { today: readerDay }), false);
+      assert.equal(matchesDate({ start: '2026-10-23', end: '2026-10-23' }, 'weekend', { today: readerDay }), false);
     }
   }
 });

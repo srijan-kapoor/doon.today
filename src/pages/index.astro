@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EventRow from '../components/EventRow.astro';
+import EventFilters from '../components/EventFilters.astro';
 import { events } from '../data/events';
 import { ingestStatus, staleSources } from '../data/status';
 import { istDay, compareEventStarts, eventDisplayDay } from '../lib/dates.mjs';
@@ -16,12 +17,10 @@ const grouped = new Map([...Map.groupBy(published, (event) => eventDisplayDay(ev
 const dateFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const refreshedAt = Date.parse(ingestStatus.ranAt);
 const stale = staleSources();
-const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const tally = (values: string[]) => [...values.reduce((m, v) => m.set(v, (m.get(v) ?? 0) + 1), new Map<string, number>())]
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 const categoryOptions = tally(published.flatMap((e) => e.categories));
 const areaOptions = tally(published.flatMap((e) => (e.venue.area ? [e.venue.area] : [])));
-const hasFree = published.some((e) => e.pricing.type === 'free');
 const communityCount = published.filter(isCommunityEvent).length;
 const showHealthBanner = ingestStatus.health === 'degraded';
 // Identifies which sources the banner is about, so a dismissal only lasts until that set changes.
@@ -41,28 +40,7 @@ const healthMessage = stale.length > 0
     <p class="eyebrow">DEHRADUN · UTTARAKHAND</p>
     <h1>What’s happening<br />in Doon?</h1>
     <p class="lede">A quiet, useful calendar of events worth knowing about.</p>
-    <div class="filters" id="when-filters" role="group" aria-label="Event date filters">
-      <button class="active" aria-pressed="true" data-filter="all">Upcoming</button>
-      <button aria-pressed="false" data-filter="today">Today</button>
-      <button aria-pressed="false" data-filter="tomorrow">Tomorrow</button>
-      <button aria-pressed="false" data-filter="weekend">Weekend</button>
-    </div>
-    <div class="filters" role="group" aria-label="Category filters">
-      <button class="active" aria-pressed="true" data-category="">All categories</button>
-      {categoryOptions.map(([name, count]) => <button aria-pressed="false" data-category={slug(name)}>{name} <span class="filter-count">{count}</span></button>)}
-    </div>
-    <div class="filters" role="group" aria-label="Price and area filters">
-      {communityCount > 0 && <button class="community-filter" aria-pressed="false" data-community-filter>Community picks <span class="filter-count">{communityCount}</span></button>}
-      {hasFree && <button aria-pressed="false" data-price="free">Free only</button>}
-      {areaOptions.length > 0 && (
-        <label class="filter-select">Area
-          <select id="area-filter">
-            <option value="">Anywhere in Dehradun</option>
-            {areaOptions.map(([name, count]) => <option value={slug(name)} data-name={name}>{name} ({count})</option>)}
-          </select>
-        </label>
-      )}
-    </div>
+    <EventFilters categories={categoryOptions} areas={areaOptions} communityCount={communityCount} />
   </section>
 
   <section class="curated">
@@ -102,7 +80,7 @@ const healthMessage = stale.length > 0
         <a class="primary-link" href="/calendars/#community">Subscribe</a>
       </div>
     </div>
-    <div id="empty-state" class="empty-state" hidden>No events found for this view yet.</div>
+    <div id="empty-state" class="empty-state" hidden><p>No events match these filters. Try another date, category or area.</p><button type="button" class="link-button" data-clear-filters>Clear all filters</button></div>
     <div id="month-view" class="month-view">
       <div id="date-strip" class="date-strip" role="group" aria-label="Pick a day"></div>
       <div id="month-grid" class="month-grid">
@@ -116,7 +94,7 @@ const healthMessage = stale.length > 0
       <p class="month-legend"><i class="dot"></i> More dots, busier day</p>
       <h3 id="month-day-heading" class="month-day-heading" tabindex="-1"></h3>
       <div id="month-day-list"></div>
-      <p id="month-empty" class="month-empty" hidden>Nothing listed for this day yet. Know of something? <a class="primary-link" href="/submit/">Submit an event</a>.</p>
+      <p id="month-empty" class="month-empty" hidden>Nothing listed for this day yet. Know of something? <a class="primary-link" href="/submit/">Submit an event</a>. <button type="button" class="link-button" data-clear-filters>Clear all filters</button></p>
     </div>
     {[...grouped.entries()].map(([day, dayEvents]) => (
       <section class="day-group" data-date={day}>
@@ -130,145 +108,8 @@ const healthMessage = stale.length > 0
     // Set before paint so a shared ?view=month link never flashes the list first.
     if (/[?&]view=month/.test(location.search)) document.documentElement.classList.add('view-month');
   </script>
-  <script is:inline>
-    const parts = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit',weekday:'short'}).formatToParts(new Date());
-    const val=(type)=>parts.find(p=>p.type===type)?.value;
-    const today=`${val('year')}-${val('month')}-${val('day')}`;
-    const add=(iso,n)=>{const d=new Date(`${iso}T12:00:00+05:30`);d.setUTCDate(d.getUTCDate()+n);return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).format(d)};
-    const tomorrow=add(today,1);
-    const weekday=new Date(`${today}T12:00:00+05:30`).getUTCDay();
-    const untilSat=weekday===0?-1:(6-weekday+7)%7; const sat=add(today,untilSat); const sun=add(sat,1);
-    const empty=document.querySelector('#empty-state');
-    const count=document.querySelector('#event-count'); const areaSelect=document.querySelector('#area-filter');
-    const whenValues=['all','today','tomorrow','weekend'];
-    const categoryValues=[...document.querySelectorAll('[data-category]')].map(b=>b.dataset.category);
-
-    // The selection lives in the URL (?when=weekend&category=music&price=free&area=rajpur&picks=community) so a filtered view can be shared.
-    const params=new URLSearchParams(location.search);
-    const state={
-      when: whenValues.includes(params.get('when')) ? params.get('when') : 'all',
-      category: categoryValues.includes(params.get('category')) ? params.get('category') : '',
-      price: params.get('price')==='free' ? 'free' : '',
-      area: areaSelect && [...areaSelect.options].some(o=>o.value===params.get('area')) ? params.get('area') : '',
-      community: params.get('picks')==='community'
-    };
-    // querySelectorAll, not querySelector: the tests' stand-in page returns {} from querySelector.
-    const communityButton=[...document.querySelectorAll('[data-community-filter]')][0];
-    if(!communityButton) state.community=false;
-
-    // Month view replaces the date filters, so they must not skew the category and area counts there.
-    const dayOk=(row)=>{
-      const {startDate:start,endDate:end,days}=row.dataset;
-      if(end<today) return false;
-      if(document.documentElement.classList.contains('view-month')) return true;
-      // An event on specific dates is only on those days, not on every day between its first and last.
-      if(days){
-        const on=days.split(' ');
-        return state.when==='all'
-          || (state.when==='today'&&on.includes(today))
-          || (state.when==='tomorrow'&&on.includes(tomorrow))
-          || (state.when==='weekend'&&(on.includes(sat)||on.includes(sun)));
-      }
-      return state.when==='all'
-        || (state.when==='today'&&start<=today&&end>=today)
-        || (state.when==='tomorrow'&&start<=tomorrow&&end>=tomorrow)
-        || (state.when==='weekend'&&start<=sun&&end>=sat);
-    };
-    // A row matches every active filter except the one named in `ignore`, so each filter's counts reflect the others.
-    const matches=(row,ignore)=>dayOk(row)
-      && (ignore==='community' || !state.community || row.dataset.community==='yes')
-      && (ignore==='category' || !state.category || row.dataset.categories.split(' ').includes(state.category))
-      && (ignore==='price' || !state.price || row.dataset.price===state.price)
-      && (ignore==='area' || !state.area || row.dataset.area===state.area);
-    const rows=[...document.querySelectorAll('.event-row')];
-    // A static build can be days old. Regroup using the reader's current IST day on every load.
-    const byDay=new Map();
-    const headingDate=new Intl.DateTimeFormat('en-IN',{weekday:'short',day:'numeric',month:'short',timeZone:'Asia/Kolkata'});
-    const untilDate=new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',timeZone:'Asia/Kolkata'});
-    rows.forEach(row=>{
-      const start=row.dataset.startDate, end=row.dataset.endDate;
-      const days=row.dataset.days&&row.dataset.days.split(' ');
-      const day=days?days.find(d=>d>=today):(end<today?undefined:start<today?today:start);
-      if(!day) {row.remove();return;}
-      if(!byDay.has(day)){
-        const group=document.createElement('section');group.className='day-group';group.dataset.date=day;
-        const heading=document.createElement('h3');heading.textContent=headingDate.format(new Date(`${day}T12:00:00+05:30`));
-        group.append(heading);byDay.set(day,group);
-      }
-      const time=row.querySelector('.event-time');
-      time.textContent=!days&&start<today?`Until ${untilDate.format(new Date(`${end}T12:00:00+05:30`))}`:time.dataset.startTime;
-      byDay.get(day).append(row);
-    });
-    document.querySelectorAll('.day-group').forEach(group=>group.remove());
-    const groups=[...byDay.values()].sort((a,b)=>a.dataset.date.localeCompare(b.dataset.date));
-    // Rows joined from other days land after the day's own; put community events back in front.
-    groups.forEach(g=>{const r=[...g.querySelectorAll('.event-row')];[...r.filter(x=>x.dataset.community),...r.filter(x=>!x.dataset.community)].forEach(x=>g.append(x));});
-    groups.forEach(group=>document.querySelector('.curated').append(group));
-    // Event rows also carry data-price; only buttons should control the price filter.
-    const priceButtons=[...document.querySelectorAll('button[data-price]')];
-
-    function apply(){
-      let shown=0;
-      groups.forEach(g=>{
-        let visible=0;
-        g.querySelectorAll('.event-row').forEach(row=>{
-          const ok=matches(row);
-          row.hidden=!ok; if(ok) visible++;
-        });
-        g.hidden=visible===0; shown+=visible;
-      });
-      empty.hidden=shown!==0;
-      if(count) count.textContent=String(shown);
-      document.querySelectorAll('[data-category]:not([data-category=""])').forEach(b=>{
-        const n=rows.filter(r=>matches(r,'category')&&r.dataset.categories.split(' ').includes(b.dataset.category)).length;
-        b.querySelector('.filter-count').textContent=String(n); b.classList.toggle('empty',n===0);
-      });
-      if(communityButton){
-        const n=rows.filter(r=>matches(r,'community')&&r.dataset.community==='yes').length;
-        communityButton.querySelector('.filter-count').textContent=String(n); communityButton.classList.toggle('empty',n===0);
-      }
-      const note=document.querySelector('#community-note');
-      if(note){
-        note.hidden=!state.community;
-        document.querySelector('#community-shown').textContent=String(shown);
-        document.querySelector('#community-total').textContent=String(rows.filter(r=>matches(r,'community')).length);
-      }
-      if(areaSelect) [...areaSelect.options].forEach(o=>{
-        if(!o.value) return;
-        o.textContent=`${o.dataset.name} (${rows.filter(r=>matches(r,'area')&&r.dataset.area===o.value).length})`;
-      });
-      const mark=(btn,on)=>{btn.classList.toggle('active',on);btn.setAttribute('aria-pressed',String(on));};
-      document.querySelectorAll('[data-filter]').forEach(b=>mark(b,b.dataset.filter===state.when));
-      document.querySelectorAll('[data-category]').forEach(b=>mark(b,b.dataset.category===state.category));
-      priceButtons.forEach(b=>mark(b,b.dataset.price===state.price));
-      if(communityButton) mark(communityButton,state.community);
-      if(areaSelect) areaSelect.value=state.area;
-      const next=new URLSearchParams();
-      if(state.when!=='all') next.set('when',state.when);
-      if(state.category) next.set('category',state.category);
-      if(state.price) next.set('price',state.price);
-      if(state.area) next.set('area',state.area);
-      if(state.community) next.set('picks','community');
-      // The Month view owns view= and date=; keep whatever it last wrote.
-      const month=new URLSearchParams(location.search);
-      if(month.get('view')) next.set('view',month.get('view'));
-      if(month.get('date')) next.set('date',month.get('date'));
-      const query=next.toString();
-      try{history.replaceState(null,'',location.pathname+(query?'?'+query:'')+location.hash);}catch(e){}
-      if(typeof Event==='function'&&document.dispatchEvent) document.dispatchEvent(new Event('doon:filters'));
-    }
-
-    document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.when=b.dataset.filter;apply();}));
-    document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.category;apply();}));
-    priceButtons.forEach(b=>b.addEventListener('click',()=>{state.price=state.price===b.dataset.price?'':b.dataset.price;apply();}));
-    if(areaSelect) areaSelect.addEventListener('change',()=>{state.area=areaSelect.value;apply();});
-    if(communityButton) communityButton.addEventListener('click',()=>{state.community=!state.community;apply();});
-    [...document.querySelectorAll('#community-all')].forEach(b=>b.addEventListener('click',()=>{state.community=false;apply();communityButton?.focus();}));
-    apply();
-    // Lets the Month view (the module script below) read the same filters and react when they change.
-    globalThis.doonFilters={state,today,apply};
-  </script>
   <script>
+    import './../scripts/event-filters.mjs';
     import './../scripts/month-view.mjs';
   </script>
 </BaseLayout>
