@@ -948,6 +948,49 @@
     "lastCheckedAt": "2026-10-29T04:29:49.726Z"
   },
   {
+    "id": "396d3666dc9bbe2f",
+    "slug": "tachila-temple-trek",
+    "title": "Tachila Temple Trek",
+    "description": "A longer trail awaits this Sunday 🌿🥾 Join Doon Outdoors Club for the Tachila Temple Trek on Sunday, 1 November 2026. 📏 Distance: 12–14 km round trip 📍 Meetup: Maldevta Temple ⏰ Meeting time: 5:45 AM 🥾 Trek starting point: Vintage Farm, via Lal Pul This trek is longer than our previous outings. Please consider the distance and your fitness before joining, and come prepared for a full morning outdoors. THE PLAN 5:45 AM — Meet at Maldevta Temple. From here, we’ll travel together in our own vehicles to the trek starting point at Vintage Farm, via Lal Pul. Please arrange your transport accordingly. 6:15 AM — Begin the trek towards Tachila Temple. 9:30–9:45 AM — Expected return to the trek starting point. This is approximate and may change depending on the group’s pace and breaks. W\n\nOrganized by @doonoutdoorsclub. How to join: Join via the link in bio (joint WhatsApp group for details and Google map links)",
+    "startAt": "2026-11-01T05:45:00+05:30",
+    "endAt": "2026-11-01T09:45:00+05:30",
+    "venue": {
+      "name": "Meetup at Maldevta Temple; trek starts at Vintage Farm via Lal Pul",
+      "city": "Dehradun",
+      "area": "Maldevta"
+    },
+    "categories": [
+      "Outdoors",
+      "Community"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfEVFwhSx1l",
+        "checkedAt": "2026-10-29T08:41:23.869Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfEVFwhSx1l",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:41:23.869Z",
+    "lastSeenAt": "2026-10-29T08:41:23.869Z",
+    "lastCheckedAt": "2026-10-29T08:41:23.869Z"
+  },
+  {
     "id": "daf4351a58ab9484",
     "slug": "d9-dehradun-presents-burn-or-boo-gie",
     "title": "D9 Dehradun Presents BURN OR BOO-GIE",
