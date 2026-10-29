@@ -31,15 +31,15 @@ const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').
   </div>
   <div id="desktop-filter-fields">
     <div id="filter-fields">
-      <fieldset id="category-panel" class="category-panel" hidden>
-        <legend>Categories <span>Choose any combination</span></legend>
+      <section id="category-panel" class="category-panel" role="group" aria-labelledby="full-category-heading" hidden>
+        <div class="category-panel-heading"><h3 id="full-category-heading">Categories</h3><span>Choose any combination</span></div>
         <div id="category-options" class="category-options">
           {categories.map(([name, count]) => <label class="category-option" data-category-option={slug(name)} data-name={name}>
             <input type="checkbox" name="category" value={slug(name)} />
             <span>{name}</span><span class="filter-count">{count}</span>
           </label>)}
         </div>
-      </fieldset>
+      </section>
       <div class="filter-details">
         <div class="desktop-preferences" role="group" aria-label="Preferences">
           <button type="button" class="community-filter" data-community-filter aria-pressed="false">Community picks <span class="filter-count">{communityCount}</span></button>

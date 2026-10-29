@@ -42,3 +42,13 @@ test('a description that merely mentions joining is left alone', () => {
 test('the group handle is read from the organizer field too', () => {
   assert.equal(communityHandle({ organizer: '@the5amclub.in', description: 'Run.', sources: [] }), 'the5amclub.in');
 });
+
+test('description presentation separates explicit details and itinerary entries without rewriting words', async () => {
+  const { descriptionParagraphs } = await import('../src/lib/details.mjs');
+  const text = 'Join us. 📏 Distance: 12–14 km 📍 Meetup: Temple ⏰ Meeting time: 5:45 AM 🥾 Trek starting point: Farm THE PLAN 5:45 AM — Meet at Temple. 6:15 AM — Begin. 9:30–9:45 AM — Return.';
+  const blocks = descriptionParagraphs(text);
+  assert.equal(blocks.length, 9);
+  assert.equal(blocks.join(' ').replace(/\s+/g, ' '), text);
+  assert.deepEqual(descriptionParagraphs('First paragraph.\n\nSecond paragraph.\nA new line.'), ['First paragraph.', 'Second paragraph.\nA new line.']);
+  assert.deepEqual(descriptionParagraphs('<script>alert(1)</script>'), ['<script>alert(1)</script>']);
+});

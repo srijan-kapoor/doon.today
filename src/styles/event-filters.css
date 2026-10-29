@@ -15,8 +15,9 @@
 #event-filters .active { color: var(--on-green); border-color: var(--green); background: var(--green); }
 .filter-count { font-size: .75rem; opacity: .75; margin-left: 3px; }
 .category-panel { margin: 20px 0 0; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px 18px; background: var(--field); }
-.category-panel legend { font: 500 1.25rem Georgia, serif; padding: 0 6px; }
-.category-panel legend span { font: 400 .75rem Arial, sans-serif; color: var(--muted); margin-left: 8px; }
+.category-panel-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; margin-bottom: 14px; }
+.category-panel-heading h3 { font: 500 1.25rem Georgia, serif; margin: 0; }
+.category-panel-heading > span { font: 400 .75rem Arial, sans-serif; color: var(--muted); }
 .category-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px 22px; }
 .category-option { min-height: 40px; display: flex; align-items: center; gap: 9px; font-size: .875rem; cursor: pointer; min-width: 0; }
 .category-option .filter-count { margin-left: auto; color: var(--muted); opacity: 1; }
@@ -45,8 +46,9 @@
 .sheet-header button { flex: none; margin-left: auto; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 9px; background: transparent; font-size: 1.5rem !important; }
 .sheet-fields { padding: 6px 20px 16px; overflow-y: auto; overscroll-behavior: contain; min-height: 0; }
 .filter-sheet .category-panel { margin: 0; padding: 12px 0 0; border: 0; border-radius: 0; background: transparent; }
-.filter-sheet .category-panel legend { padding: 0; font: 600 .75rem Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
-.filter-sheet .category-panel legend span { display: block; text-transform: none; letter-spacing: 0; margin: 5px 0 0; }
+.filter-sheet .category-panel-heading { display: block; }
+.filter-sheet .category-panel-heading h3 { font: 600 .75rem Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.filter-sheet .category-panel-heading > span { display: block; margin-top: 5px; }
 .filter-sheet .category-options { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
 .filter-sheet .category-option { min-height: 44px; font-size: .875rem; }
 .filter-sheet .filter-details { display: flex; flex-direction: column-reverse; align-items: stretch; gap: 20px; margin-top: 16px; padding-top: 16px; }

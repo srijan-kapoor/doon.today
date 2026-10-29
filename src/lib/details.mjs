@@ -3,6 +3,16 @@
 // event page shows those as their own rows, and the text around them without hashtags.
 import { stripHashtags } from '../../ingest/lib/utils.mjs';
 
+/** Add presentation breaks at explicit labels; never infer or rewrite event details. */
+export function descriptionParagraphs(description = '') {
+  return String(description)
+    .replace(/\r\n?/g, '\n')
+    .replace(/\s+(?=(?:📏\s*Distance:|📍\s*Meetup:|⏰\s*Meeting time:|🥾\s*Trek starting point:))/gu, '\n\n')
+    .replace(/\s+(?=THE PLAN\b)/g, '\n\n')
+    .replace(/\s+(?=\d{1,2}:\d{2}(?:[–-]\d{1,2}:\d{2})?\s*[AP]M\s*[—–]\s)/g, '\n\n')
+    .split(/\n\s*\n/).map((text) => text.trim()).filter(Boolean);
+}
+
 // The organizer ends at the full stop before "How to join:" or at the end, so "Dr. Rao" stays whole.
 const ORGANIZER = /^Organized by (.+?)\.(?=\s+(?:How to join: |Organizer: )|\s*$)/s;
 const DETAILS = /^(?:Organized by .+?\.(?=\s+(?:How to join: |Organizer: )|\s*$))?\s*(?:How to join: .+?)?\s*(?:Organizer: \S+)?$/s;

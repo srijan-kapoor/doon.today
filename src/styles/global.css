@@ -185,6 +185,7 @@ dd { margin: 0; }
   .feed-list li { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 .event-description { max-width: 40rem; line-height: 1.6; }
+.event-description p { white-space: pre-line; margin: 0 0 1.15em; }
 
 .prose h2 { font-family: Georgia, serif; margin: 40px 0 12px; }
 /* Changelog: a date, a tag and one sentence per row, grouped by month. */

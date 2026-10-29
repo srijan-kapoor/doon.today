@@ -7,6 +7,7 @@ import { occurrencesOf } from '../../../lib/dates.mjs';
 import { eventJsonLd, eventSummary } from '../../../lib/seo.mjs';
 import { sourceLabel, detailsLinkLabel, priceLabel } from '../../../lib/sources.mjs';
 import { reportEventUrl } from '../../../lib/report.mjs';
+import { descriptionParagraphs } from '../../../lib/details.mjs';
 
 export function getStaticPaths() {
   return events.filter(e => e.curation.status === 'published').map((event) => ({ params: { slug: event.slug }, props: { event } }));
@@ -63,7 +64,7 @@ const detailsLabel = detailsLinkLabel(primarySource);
       <div><dt>Price</dt><dd>{priceLabel(event.pricing) || (detailsLabel && primarySource?.url ? <>Not listed. <a href={primarySource.url} target="_blank" rel="noreferrer">{detailsLabel}</a></> : 'Not listed.')}</dd></div>
     </dl>
 
-    {event.description && <p class="event-description">{event.description}</p>}
+    {event.description && <div class="event-description">{descriptionParagraphs(event.description).map((paragraph) => <p>{paragraph}</p>)}</div>}
 
     <div class="event-actions" style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem">
       <a class="primary-link" href={`/events/${event.slug}.ics`}>Add to calendar</a>
