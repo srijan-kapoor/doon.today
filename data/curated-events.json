@@ -262,5 +262,39 @@
     "firstSeenAt": "2026-10-28T17:58:00.031Z",
     "lastSeenAt": "2026-10-28T17:58:00.031Z",
     "lastCheckedAt": "2026-10-28T17:58:00.031Z"
+  },
+  {
+    "id": "4c4dc379f5930697",
+    "slug": "melophile-daft-punk-random-access-memories-album-listening-meet",
+    "title": "Melophile - Daft Punk \"Random Access Memories\" Album Listening Meet",
+    "description": "Our first session was all about Pink Floyd. This time, we're switching things up with Daft Punk's Random Access Memories\n\nThe idea is simple: get together with people who love music, put on an album, and listen to it from start to finish. No skipping, no distractions, just the music.\n\nOnce we've finished the album, we'll take turns playing songs we've brought along. It's a chance to share the music we love, discover something new, meet people with similar tastes, and connect with fellow musicians.\n\n📀 This session:\n    Album: Random Access Memories by Daft Punk\n    Date: Sunday, 1 November 2026\n    Time: 4:30 PM\n\nYou don't need to be a musician or know anything about music theory. If you enjoy listening to music and want to meet people who feel the same way, you're welcome.\n\nBring your favorite songs. We'll bring the speakers and the music.\n\nOne album. Front to back. Then your music, our music, and whatever we discover along the way.\n\nOrganized by Melophile. How to join: https://chat.whatsapp.com/G3fXQMFvx2E5Eyqq0cr8vm",
+    "startAt": "2026-11-01T04:30:00+05:30",
+    "venue": {
+      "name": "Maldevta",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/melophile.ddn?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==",
+        "checkedAt": "2026-10-29T04:29:49.726Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T04:29:49.726Z",
+    "lastSeenAt": "2026-10-29T04:29:49.726Z",
+    "lastCheckedAt": "2026-10-29T04:29:49.726Z"
   }
 ]
