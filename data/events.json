@@ -125,6 +125,48 @@
     "lastCheckedAt": "2026-10-28T17:58:00.031Z"
   },
   {
+    "id": "4c6b28a82b3104b0",
+    "slug": "diwali-diwas-hangout",
+    "title": "Diwali Diwas Hangout",
+    "description": "🪔✨ DEHRADUN, DIWALI DIWAS IS HERE! 🎇 Iss Diwali ghar pe nahi, apne naye friends ke saath celebrate karne ka plan banao! ❤️🪔 Get ready for an evening full of patakhe, masti, games, food & new friendships! 🥳 🎉 What’s waiting for you? 🧨 Patakhe & festive vibes 🌿 Mehndi stall 🍧 Gol Gappe stall 🔮 Tarot Reading 🎲 Fun games — Human Ludo, Jenga & more! 📅 Date: Friday, 30th October ⏰ Time: 7 PM onwards 📍 Venue: Kytes Rooftop Cafe, Doon Square Mall 💸 Entry Fee: DM us for pricing & registration details! ✨ Don’t spend this Diwali scrolling through stories — be the story! 👇 Comment “DIWALI” to get your registration link! #DehradunHangout #DiwaliDiwas #DehradunEvents #DiwaliParty #DehradunDiwali SEO Keywords: Diwali event in Dehradun, Diwali party Dehradun 2026, things to do in De\n\nOrganized by @dehradun_hangouts. How to join: Comment \"DIWALI\" to get the registration link, or DM for pricing and registration details",
+    "startAt": "2026-10-30T19:00:00+05:30",
+    "venue": {
+      "name": "Kytes Rooftop Cafe, Doon Square Mall",
+      "city": "Dehradun",
+      "area": "Sahastradhara"
+    },
+    "categories": [
+      "Books",
+      "Food"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfCWCmFp5uk",
+        "checkedAt": "2026-10-29T08:40:09.643Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfCWCmFp5uk",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:40:09.643Z",
+    "lastSeenAt": "2026-10-29T08:40:09.643Z",
+    "lastCheckedAt": "2026-10-29T08:40:09.643Z"
+  },
+  {
     "id": "064d632cbcd64e99",
     "slug": "virasat-2026-sitar-recital-by-dhruv-bedi",
     "title": "Virasat 2026: Sitar recital by Dhruv Bedi",
