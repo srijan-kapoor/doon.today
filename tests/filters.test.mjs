@@ -82,6 +82,7 @@ function page(t, search = '') {
     <button id="expand-categories" aria-expanded="false">All categories</button>
     <button id="open-filters">Filters<span id="active-filter-count"></span></button><button data-community-filter>Community picks<span class="filter-count"></span></button>
     <div id="desktop-filter-fields"><div id="filter-fields"><fieldset id="category-panel" hidden><div id="category-options">${categories.map((c) => `<label data-category-option="${c.value}" data-name="${c.name}"><input type="checkbox" value="${c.value}">${c.name}<span class="filter-count"></span></label>`).join('')}</div></fieldset>
+    <div class="desktop-preferences"><button data-community-filter>Community picks<span class="filter-count"></span></button><button data-free-filter aria-pressed="false">Free only</button></div>
     <label><input id="community-preference" type="checkbox">Community picks<span class="filter-count"></span></label><input id="free-preference" type="checkbox">
     <select id="area-filter"><option value="">Anywhere</option><option value="rajpur" data-name="Rajpur">Rajpur</option><option value="malsi" data-name="Malsi">Malsi</option></select></div></div>
     <div id="active-filters"></div><p id="filter-status"></p>
@@ -140,6 +141,31 @@ test('backdrop, Close and Escape discard pending choices and never update the UR
     assert.equal($('#filter-fields').parentElement.id, 'desktop-filter-fields');
     assert.equal(window.document.activeElement, $('#open-filters'));
   }
+});
+
+test('desktop preference pills toggle immediately and synchronize sheet checkboxes and URL', (t) => {
+  const { $, api, window } = page(t, '?category=books&area=rajpur');
+  const picks = $('.desktop-preferences [data-community-filter]');
+  const free = $('[data-free-filter]');
+  picks.click();
+  free.click();
+  assert.equal(picks.getAttribute('aria-pressed'), 'true');
+  assert.equal(free.getAttribute('aria-pressed'), 'true');
+  assert.equal($('#community-preference').checked, true);
+  assert.equal($('#free-preference').checked, true);
+  assert.equal(new URLSearchParams(window.location.search).get('picks'), 'community');
+  assert.equal(new URLSearchParams(window.location.search).get('price'), 'free');
+  assert.equal($('#event-count').textContent, '1');
+  picks.click();
+  free.click();
+  assert.equal(picks.getAttribute('aria-pressed'), 'false');
+  assert.equal(free.getAttribute('aria-pressed'), 'false');
+  assert.equal($('#community-preference').checked, false);
+  assert.equal($('#free-preference').checked, false);
+  assert.equal(new URLSearchParams(window.location.search).has('picks'), false);
+  assert.equal(new URLSearchParams(window.location.search).has('price'), false);
+  assert.deepEqual(api.state.categories, ['books']);
+  assert.equal(api.state.area, 'rajpur');
 });
 
 test('sheet Reset is pending, preserves the date, and Apply commits the combined choices', (t) => {

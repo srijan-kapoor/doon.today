@@ -10,8 +10,8 @@
 .category-heading h2 { font: 500 1.375rem/1.3 Georgia, serif; margin: 0; }
 .category-heading > span { color: var(--muted); font-size: .75rem; }
 .quick-categories, #category-shortcuts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.quick-categories button, .mobile-filter-actions button { border: 1px solid var(--line); border-radius: 999px; background: var(--field); padding: 9px 13px; min-height: 40px; }
-.quick-categories button:hover, .mobile-filter-actions button:hover { background: var(--green-soft); }
+.quick-categories button, .mobile-filter-actions button, .desktop-preferences button { border: 1px solid var(--line); border-radius: 999px; background: var(--field); padding: 9px 13px; min-height: 40px; }
+.quick-categories button:hover, .mobile-filter-actions button:hover, .desktop-preferences button:hover { background: var(--green-soft); }
 #event-filters .active { color: var(--on-green); border-color: var(--green); background: var(--green); }
 .filter-count { font-size: .75rem; opacity: .75; margin-left: 3px; }
 .category-panel { margin: 20px 0 0; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px 18px; background: var(--field); }
@@ -23,7 +23,8 @@
 .category-option.empty:not(:has(:checked)) { color: var(--muted); }
 .category-option input, .preference-option input { accent-color: var(--green); width: 16px; height: 16px; margin: 0; flex: none; }
 .filter-details { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
-.filter-preferences { display: flex; flex-wrap: wrap; gap: 8px; border: 0; margin: 0; padding: 0; }
+.desktop-preferences { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-preferences { display: none; border: 0; margin: 0; padding: 0; }
 .filter-preferences legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 .preference-option { display: inline-flex; align-items: center; gap: 7px; padding: 9px 12px; min-height: 40px; border: 1px solid var(--line); border-radius: 999px; color: var(--green); font-size: .875rem; cursor: pointer; }
 .preference-option.community-filter, #event-filters .community-filter { background: var(--community); color: var(--community-ink); border-color: var(--community); }
@@ -52,6 +53,7 @@
 .filter-sheet .filter-select { display: flex; flex-direction: column; align-items: stretch; font-size: .75rem; }
 .filter-sheet .filter-select select { width: 100%; min-height: 44px; font-size: 1rem; background-color: var(--field); }
 .filter-sheet .filter-preferences { display: grid; gap: 0; }
+.filter-sheet .desktop-preferences { display: none; }
 .filter-sheet .filter-preferences legend { position: static; width: auto; height: auto; clip-path: none; font-size: .75rem; font-weight: 600; padding: 0 0 6px; }
 .filter-sheet .preference-option { min-height: 44px; padding: 6px 0; border: 0; border-radius: 0; background: transparent; color: var(--ink); }
 .filter-sheet .preference-option:has(:checked) { background: transparent; color: var(--ink); }
@@ -72,5 +74,5 @@
   .filter-sheet { width: 100%; }
 }
 @media (pointer: coarse) {
-  .quick-categories button, .category-option, .preference-option { min-height: 44px; }
+  .quick-categories button, .desktop-preferences button, .category-option, .preference-option { min-height: 44px; }
 }

@@ -153,6 +153,7 @@ export function initEventFilters(document, window) {
       mark(button, state.community);
       button.querySelector('.filter-count').textContent = String(matching(state, 'community').filter((item) => item.community).length);
     });
+    root.querySelectorAll('[data-free-filter]').forEach((button) => mark(button, state.price === 'free'));
     const n = activeFilterCount(state);
     $('#active-filter-count').hidden = n === 0;
     $('#active-filter-count').textContent = String(n);
@@ -231,6 +232,7 @@ export function initEventFilters(document, window) {
   });
   root.querySelectorAll('[data-filter]').forEach((button) => button.addEventListener('click', () => { state.when = button.dataset.filter; apply({ write: true }); }));
   root.querySelectorAll('[data-community-filter]').forEach((button) => button.addEventListener('click', () => { state.community = !state.community; apply({ write: true }); }));
+  root.querySelectorAll('[data-free-filter]').forEach((button) => button.addEventListener('click', () => { state.price = state.price === 'free' ? '' : 'free'; apply({ write: true }); }));
   $('#community-all').addEventListener('click', () => { state.community = false; apply({ write: true }); });
   document.querySelectorAll('[data-clear-filters]').forEach((button) => button.addEventListener('click', clearAll));
   window.addEventListener('popstate', () => {

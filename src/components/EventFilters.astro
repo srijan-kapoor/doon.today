@@ -41,6 +41,10 @@ const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').
         </div>
       </fieldset>
       <div class="filter-details">
+        <div class="desktop-preferences" role="group" aria-label="Preferences">
+          <button type="button" class="community-filter" data-community-filter aria-pressed="false">Community picks <span class="filter-count">{communityCount}</span></button>
+          <button type="button" data-free-filter aria-pressed="false">Free only</button>
+        </div>
         <fieldset class="filter-preferences">
           <legend>Preferences</legend>
           <label class="preference-option community-filter"><input type="checkbox" id="community-preference" />Community picks <span class="filter-count">{communityCount}</span></label>
