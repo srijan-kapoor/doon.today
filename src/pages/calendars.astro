@@ -17,6 +17,16 @@ const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
     <p class="eyebrow">DOON.TODAY</p><h1>Calendars</h1>
     <p class="lede">Subscribe once and upcoming Doon events appear in your calendar app.</p>
 
+    <details class="feed-help">
+      <summary>How to subscribe</summary>
+      <ul>
+        <li><strong>Apple Calendar:</strong> choose Subscribe, or File, then New Calendar Subscription, and paste the link.</li>
+        <li><strong>Google Calendar:</strong> Other calendars, then From URL, and paste the link (use Copy link, not Subscribe).</li>
+        <li><strong>Outlook:</strong> Add calendar, then Subscribe from web, and paste the link.</li>
+      </ul>
+      <p>Calendar apps refresh subscriptions on their own schedule, so changes can take several hours to show up.</p>
+    </details>
+
     <section class="feed-group">
       <ul class="feed-list">
         {main.map((feed) => (
@@ -48,15 +58,6 @@ const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
     </section>
     )}
 
-    <details class="feed-help">
-      <summary>How to subscribe</summary>
-      <ul>
-        <li><strong>Apple Calendar:</strong> choose Subscribe, or File, then New Calendar Subscription, and paste the link.</li>
-        <li><strong>Google Calendar:</strong> Other calendars, then From URL, and paste the link (use Copy link, not Subscribe).</li>
-        <li><strong>Outlook:</strong> Add calendar, then Subscribe from web, and paste the link.</li>
-      </ul>
-      <p>Calendar apps refresh subscriptions on their own schedule, so changes can take several hours to show up.</p>
-    </details>
   </section>
   <script is:inline>
     document.querySelectorAll('[data-copy]').forEach(function (button) {
