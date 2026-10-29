@@ -8,6 +8,7 @@ export const SOURCE_LABELS = {
   meetup: 'Meetup',
   gdg: 'Google Developer Groups',
   reddit: 'r/Dehradun',
+  instagram: 'Instagram',
   manual: 'doon.today'
 };
 
