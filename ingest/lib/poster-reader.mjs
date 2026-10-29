@@ -16,7 +16,7 @@ export const Reading = z.object({
   is_announcement: z.boolean().describe('True only if the post announces a specific event with a date'),
   title: z.string().nullable(),
   starts: z.string().nullable().describe('YYYY-MM-DD HH:MM in IST, or YYYY-MM-DD when no time is given'),
-  ends: z.string().nullable().describe('Same format as starts'),
+  ends: z.string().nullable().describe('Same format as starts. Set it whenever the caption or poster gives an end time or a time range like 7 PM - 11 PM'),
   venue: z.string().nullable(),
   price: z.string().nullable().describe('"free", an amount in rupees as digits, or null when not stated'),
   how_to_join: z.string().nullable().describe('Registration link, DM, phone, or walk-in'),

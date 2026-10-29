@@ -42,6 +42,9 @@ export interface EventRecord {
     geoFrom?: 'table';
   };
   categories: string[];
+  // Read from the end of the description by src/data/events.ts, for hand-checked events.
+  organizer?: string;
+  howToJoin?: string;
   pricing: {
     type: 'free' | 'paid' | 'unknown';
     minPrice?: number;
