@@ -948,6 +948,47 @@
     "lastCheckedAt": "2026-10-29T04:29:49.726Z"
   },
   {
+    "id": "55a84c2ffc29049b",
+    "slug": "sunday-sunrise-hike-bandal-ghati-beyond-dighu-waterfall",
+    "title": "Sunday Sunrise Hike: Bandal Ghati - Beyond Dighu Waterfall",
+    "description": "Organized by @the5amclub.in.",
+    "startAt": "2026-11-01T05:30:00+05:30",
+    "endAt": "2026-11-01T10:00:00+05:30",
+    "venue": {
+      "name": "Maharana Pratap Chowk, Raipur, Dehradun (meeting point)",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/De_chY_z_Af",
+        "checkedAt": "2026-10-29T08:49:17.917Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/De_chY_z_Af",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:49:17.917Z",
+    "lastSeenAt": "2026-10-29T08:49:17.917Z",
+    "lastCheckedAt": "2026-10-29T08:49:17.917Z"
+  },
+  {
     "id": "396d3666dc9bbe2f",
     "slug": "tachila-temple-trek",
     "title": "Tachila Temple Trek",

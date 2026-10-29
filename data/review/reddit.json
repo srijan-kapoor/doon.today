@@ -43,50 +43,6 @@
     "lastCheckedAt": "2026-10-29T08:24:24.456Z"
   },
   {
-    "id": "dc87a180883cd2bb",
-    "slug": "sunday-sunrise-hike-bandal-ghati-beyond-dighu-waterfall",
-    "title": "Sunday Sunrise Hike: Bandal Ghati - Beyond Dighu Waterfall",
-    "description": "",
-    "startAt": "2026-11-01T05:30:00+05:30",
-    "endAt": "2026-11-01T10:00:00+05:30",
-    "venue": {
-      "name": "Maharana Pratap Chowk, Raipur, Dehradun (meeting point)",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "howToJoin": "",
-    "organizer": "the5amclub.in",
-    "posts": [
-      "https://www.instagram.com/p/De_chY_z_Af"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "medium"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/De_chY_z_Af",
-        "checkedAt": "2026-10-29T08:24:24.456Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-10-29T08:24:24.456Z",
-    "lastSeenAt": "2026-10-29T08:24:24.456Z",
-    "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-  },
-  {
     "id": "58ab0b6014f58930",
     "slug": "starry-night-at-rajpur-nature-fest-2026",
     "title": "Starry Night at Rajpur Nature Fest 2026",
