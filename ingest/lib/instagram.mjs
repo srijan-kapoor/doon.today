@@ -7,7 +7,7 @@
 // passed: the merge replaces a source's queued candidates with what the source returns, so a run that
 // found nothing new must not empty the queue.
 import crypto from 'node:crypto';
-import { stableId, slugify, categoryFromText, CATEGORY_NAMES } from './utils.mjs';
+import { stableId, slugify, categoryFromText, CATEGORY_NAMES, stripHashtags } from './utils.mjs';
 import { parseWhen, parsePrice } from './review.mjs';
 import { istDay } from '../../src/lib/dates.mjs';
 
@@ -101,7 +101,7 @@ export function candidateFromReading(reading, post, handle, { today, checkedAt }
     id: stableId('instagram', handle, istDay(startAt)),
     slug: slugify(title),
     title,
-    description: post.caption.slice(0, 800),
+    description: stripHashtags(post.caption).slice(0, 800),
     startAt,
     ...(endAt && endAt > startAt ? { endAt } : {}),
     venue: { name: String(reading.venue || '').trim() || 'See Instagram post', city: 'Dehradun' },
