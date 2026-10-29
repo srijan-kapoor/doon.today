@@ -4,58 +4,57 @@ import { events } from '../data/events';
 import { eventsForFeed, feedDefinitions, feedPath } from '../lib/feeds.mjs';
 
 const feeds = feedDefinitions().map((feed) => ({ ...feed, count: eventsForFeed(feed, events).length, path: feedPath(feed.id) }));
-const groups = [
-  { title: 'Collections', feeds: feeds.filter((f) => f.kind === 'collection') },
-  { title: 'Categories', feeds: feeds.filter((f) => f.kind === 'category') },
-  { title: 'Sources', feeds: feeds.filter((f) => f.kind === 'source') }
-];
-const all = { label: 'Everything', description: 'Every upcoming event', count: events.filter((e) => e.curation.status === 'published').length, path: '/calendar.ics' };
+// The page offers the feeds people pick most; every feed in feedDefinitions keeps its URL for existing
+// subscribers, including the per-source feeds and "Verified only", which are no longer listed here.
+const byId = Object.fromEntries(feeds.map((f) => [f.id, f]));
+const all = { id: 'everything', label: 'Everything', description: 'Every upcoming event', count: events.filter((e) => e.curation.status === 'published').length, path: '/calendar.ics' };
+const main = [all, byId.community, byId.free].filter(Boolean);
+const categories = feeds.filter((f) => f.kind === 'category' && f.count > 0);
 const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
 ---
-<BaseLayout title="Calendars — doon.today" description="Subscribe to Dehradun events in your calendar app, by category or source.">
+<BaseLayout title="Calendars — doon.today" description="Subscribe to Dehradun events in your calendar app: everything, community picks, free events or a category.">
   <section class="simple-page">
     <p class="eyebrow">DOON.TODAY</p><h1>Calendars</h1>
-    <p class="lede">Subscribe once and let upcoming Doon events appear in your calendar. Pick everything, or only the kinds of events you care about.</p>
+    <p class="lede">Subscribe once and upcoming Doon events appear in your calendar app.</p>
 
-    <section class="feed-help" aria-labelledby="how-to">
-      <h2 id="how-to">How to subscribe</h2>
+    <section class="feed-group">
+      <ul class="feed-list">
+        {main.map((feed) => (
+          <li id={feed.id}>
+            <div><span class="feed-name">{feed.label}</span> <small>{plural(feed.count)}</small><p class="feed-note">{feed.description}</p></div>
+            <div class="feed-actions">
+              <a class="primary-link" href={`webcal://doon.today${feed.path}`}>Subscribe</a>
+              <button type="button" data-copy={`https://doon.today${feed.path}`}>Copy link</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="feed-group">
+      <h2>By category</h2>
+      <ul class="feed-grid">
+        {categories.map((feed) => (
+          <li id={feed.id}>
+            <span class="feed-name">{feed.label}</span> <small>{plural(feed.count)}</small>
+            <div class="feed-actions">
+              <a class="primary-link" href={`webcal://doon.today${feed.path}`}>Subscribe</a>
+              <button type="button" data-copy={`https://doon.today${feed.path}`}>Copy link</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <details class="feed-help">
+      <summary>How to subscribe</summary>
       <ul>
         <li><strong>Apple Calendar:</strong> choose Subscribe, or File, then New Calendar Subscription, and paste the link.</li>
         <li><strong>Google Calendar:</strong> Other calendars, then From URL, and paste the link (use Copy link, not Subscribe).</li>
         <li><strong>Outlook:</strong> Add calendar, then Subscribe from web, and paste the link.</li>
       </ul>
       <p>Calendar apps refresh subscriptions on their own schedule, so changes can take several hours to show up.</p>
-    </section>
-
-    <section class="feed-group">
-      <h2>All events</h2>
-      <ul class="feed-list">
-        <li>
-          <div><span class="feed-name">{all.label}</span> <small>{plural(all.count)}</small></div>
-          <div class="feed-actions">
-            <a class="primary-link" href={`webcal://doon.today${all.path}`}>Subscribe</a>
-            <button type="button" data-copy={`https://doon.today${all.path}`}>Copy link</button>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    {groups.map((group) => (
-      <section class="feed-group">
-        <h2>{group.title}</h2>
-        <ul class="feed-list">
-          {group.feeds.map((feed) => (
-            <li id={feed.id}>
-              <div><span class="feed-name">{feed.label}</span> <small>{plural(feed.count)}</small>{feed.kind === 'collection' && <p class="feed-note">{feed.description}</p>}</div>
-              <div class="feed-actions">
-                <a class="primary-link" href={`webcal://doon.today${feed.path}`}>Subscribe</a>
-                <button type="button" data-copy={`https://doon.today${feed.path}`}>Copy link</button>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
-    ))}
+    </details>
   </section>
   <script is:inline>
     document.querySelectorAll('[data-copy]').forEach(function (button) {
