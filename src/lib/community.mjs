@@ -18,7 +18,7 @@ const PROFILE = /instagram\.com\/(?!p\/|reel\/|stories\/)([a-z0-9._]{2,30})\/?(?
  * when an Instagram lead is approved), or a profile link among its sources. Empty when unknown.
  */
 export function communityHandle(event) {
-  const named = String(event.description || '').match(/Organized by @([a-z0-9._]{2,30})/i);
+  const named = String(event.organizer ? `Organized by ${event.organizer}` : event.description || '').match(/Organized by @([a-z0-9._]{2,30})/i);
   if (named) return named[1].replace(/\.$/, '');
   for (const s of event.sources || []) {
     const m = String(s.url || '').match(PROFILE);
