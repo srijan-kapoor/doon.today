@@ -5,7 +5,7 @@
 // Everything in a lead comes from the public, so it is treated as text: it stays inside the fenced block
 // (where "@name" and "#12" don't notify or link anyone), loses backticks, and is cut to a sane length.
 import { buildCuratedEvent, parsePrice, parseWhen } from './review.mjs';
-import { CATEGORY_NAMES, areaFromText, categoryFromText, decodeEntities, stripHtml } from './utils.mjs';
+import { CATEGORY_NAMES, areaFromText, categoryFromText, decodeEntities, stripHtml, RENAMED_CATEGORIES } from './utils.mjs';
 import { sourceLabel } from '../../src/lib/sources.mjs';
 
 export const LEAD_LABEL = 'lead';
@@ -204,7 +204,8 @@ export function leadSourceUrl(parsed, candidate) {
 /** The review decision key for a lead: the queued candidate's id, or the issue number for a form entry. */
 export const leadKey = (parsed, issueNumber) => (isQueuedKind(parsed.kind) ? parsed.id : `form-${issueNumber}`);
 
-const knownCategory = new Map(CATEGORY_NAMES.map((name) => [name.toLowerCase(), name]));
+// Includes renamed categories, so an older lead that still says Community publishes as Meetups.
+const knownCategory = new Map([...CATEGORY_NAMES.map((name) => [name.toLowerCase(), name]), ...Object.entries(RENAMED_CATEGORIES).map(([old, name]) => [old.toLowerCase(), name])]);
 
 /**
  * The event to publish for an approved lead. Throws with a plain message when a detail is missing or

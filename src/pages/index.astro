@@ -4,13 +4,15 @@ import EventRow from '../components/EventRow.astro';
 import { events } from '../data/events';
 import { ingestStatus, staleSources } from '../data/status';
 import { istDay, compareEventStarts, eventDisplayDay } from '../lib/dates.mjs';
+import { communityFirst, isCommunityEvent } from '../lib/community.mjs';
 
 const today = istDay(new Date().toISOString());
 const published = events
   .filter((event) => event.curation.status === 'published')
   .filter((event) => eventDisplayDay(event, today) !== null)
   .sort(compareEventStarts);
-const grouped = Map.groupBy(published, (event) => eventDisplayDay(event, today)!);
+// Community events lead each day; the page script keeps that order when it regroups by the reader's day.
+const grouped = new Map([...Map.groupBy(published, (event) => eventDisplayDay(event, today)!)].map(([day, list]) => [day, communityFirst(list)]));
 const dateFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const refreshedAt = Date.parse(ingestStatus.ranAt);
 const stale = staleSources();
@@ -20,6 +22,7 @@ const tally = (values: string[]) => [...values.reduce((m, v) => m.set(v, (m.get(
 const categoryOptions = tally(published.flatMap((e) => e.categories));
 const areaOptions = tally(published.flatMap((e) => (e.venue.area ? [e.venue.area] : [])));
 const hasFree = published.some((e) => e.pricing.type === 'free');
+const communityCount = published.filter(isCommunityEvent).length;
 const showHealthBanner = ingestStatus.health === 'degraded';
 // Identifies which sources the banner is about, so a dismissal only lasts until that set changes.
 const healthKey = stale.length > 0 ? stale.map((s) => s.name).sort().join(',') : 'degraded';
@@ -49,6 +52,7 @@ const healthMessage = stale.length > 0
       {categoryOptions.map(([name, count]) => <button aria-pressed="false" data-category={slug(name)}>{name} <span class="filter-count">{count}</span></button>)}
     </div>
     <div class="filters" role="group" aria-label="Price and area filters">
+      {communityCount > 0 && <button class="community-filter" aria-pressed="false" data-community-filter>Community picks <span class="filter-count">{communityCount}</span></button>}
       {hasFree && <button aria-pressed="false" data-price="free">Free only</button>}
       {areaOptions.length > 0 && (
         <label class="filter-select">Area
@@ -91,6 +95,13 @@ const healthMessage = stale.length > 0
         })();
       </script>
     )}
+    <div id="community-note" class="community-note" role="status" hidden>
+      <p><strong>Showing <span id="community-shown"></span> of <span id="community-total"></span> events</strong> posted by Dehradun’s own clubs and groups, and checked by hand.</p>
+      <div class="community-note-actions">
+        <button type="button" class="link-button" id="community-all">Show all events</button>
+        <a class="primary-link" href="/calendars/#community">Subscribe</a>
+      </div>
+    </div>
     <div id="empty-state" class="empty-state" hidden>No events found for this view yet.</div>
     <div id="month-view" class="month-view">
       <div id="date-strip" class="date-strip" role="group" aria-label="Pick a day"></div>
@@ -132,14 +143,18 @@ const healthMessage = stale.length > 0
     const whenValues=['all','today','tomorrow','weekend'];
     const categoryValues=[...document.querySelectorAll('[data-category]')].map(b=>b.dataset.category);
 
-    // The selection lives in the URL (?when=weekend&category=music&price=free&area=rajpur) so a filtered view can be shared.
+    // The selection lives in the URL (?when=weekend&category=music&price=free&area=rajpur&picks=community) so a filtered view can be shared.
     const params=new URLSearchParams(location.search);
     const state={
       when: whenValues.includes(params.get('when')) ? params.get('when') : 'all',
       category: categoryValues.includes(params.get('category')) ? params.get('category') : '',
       price: params.get('price')==='free' ? 'free' : '',
-      area: areaSelect && [...areaSelect.options].some(o=>o.value===params.get('area')) ? params.get('area') : ''
+      area: areaSelect && [...areaSelect.options].some(o=>o.value===params.get('area')) ? params.get('area') : '',
+      community: params.get('picks')==='community'
     };
+    // querySelectorAll, not querySelector: the tests' stand-in page returns {} from querySelector.
+    const communityButton=[...document.querySelectorAll('[data-community-filter]')][0];
+    if(!communityButton) state.community=false;
 
     // Month view replaces the date filters, so they must not skew the category and area counts there.
     const dayOk=(row)=>{
@@ -161,6 +176,7 @@ const healthMessage = stale.length > 0
     };
     // A row matches every active filter except the one named in `ignore`, so each filter's counts reflect the others.
     const matches=(row,ignore)=>dayOk(row)
+      && (ignore==='community' || !state.community || row.dataset.community==='yes')
       && (ignore==='category' || !state.category || row.dataset.categories.split(' ').includes(state.category))
       && (ignore==='price' || !state.price || row.dataset.price===state.price)
       && (ignore==='area' || !state.area || row.dataset.area===state.area);
@@ -185,6 +201,8 @@ const healthMessage = stale.length > 0
     });
     document.querySelectorAll('.day-group').forEach(group=>group.remove());
     const groups=[...byDay.values()].sort((a,b)=>a.dataset.date.localeCompare(b.dataset.date));
+    // Rows joined from other days land after the day's own; put community events back in front.
+    groups.forEach(g=>{const r=[...g.querySelectorAll('.event-row')];[...r.filter(x=>x.dataset.community),...r.filter(x=>!x.dataset.community)].forEach(x=>g.append(x));});
     groups.forEach(group=>document.querySelector('.curated').append(group));
     // Event rows also carry data-price; only buttons should control the price filter.
     const priceButtons=[...document.querySelectorAll('button[data-price]')];
@@ -205,6 +223,16 @@ const healthMessage = stale.length > 0
         const n=rows.filter(r=>matches(r,'category')&&r.dataset.categories.split(' ').includes(b.dataset.category)).length;
         b.querySelector('.filter-count').textContent=String(n); b.classList.toggle('empty',n===0);
       });
+      if(communityButton){
+        const n=rows.filter(r=>matches(r,'community')&&r.dataset.community==='yes').length;
+        communityButton.querySelector('.filter-count').textContent=String(n); communityButton.classList.toggle('empty',n===0);
+      }
+      const note=document.querySelector('#community-note');
+      if(note){
+        note.hidden=!state.community;
+        document.querySelector('#community-shown').textContent=String(shown);
+        document.querySelector('#community-total').textContent=String(rows.filter(r=>matches(r,'community')).length);
+      }
       if(areaSelect) [...areaSelect.options].forEach(o=>{
         if(!o.value) return;
         o.textContent=`${o.dataset.name} (${rows.filter(r=>matches(r,'area')&&r.dataset.area===o.value).length})`;
@@ -213,12 +241,14 @@ const healthMessage = stale.length > 0
       document.querySelectorAll('[data-filter]').forEach(b=>mark(b,b.dataset.filter===state.when));
       document.querySelectorAll('[data-category]').forEach(b=>mark(b,b.dataset.category===state.category));
       priceButtons.forEach(b=>mark(b,b.dataset.price===state.price));
+      if(communityButton) mark(communityButton,state.community);
       if(areaSelect) areaSelect.value=state.area;
       const next=new URLSearchParams();
       if(state.when!=='all') next.set('when',state.when);
       if(state.category) next.set('category',state.category);
       if(state.price) next.set('price',state.price);
       if(state.area) next.set('area',state.area);
+      if(state.community) next.set('picks','community');
       // The Month view owns view= and date=; keep whatever it last wrote.
       const month=new URLSearchParams(location.search);
       if(month.get('view')) next.set('view',month.get('view'));
@@ -232,6 +262,8 @@ const healthMessage = stale.length > 0
     document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.category;apply();}));
     priceButtons.forEach(b=>b.addEventListener('click',()=>{state.price=state.price===b.dataset.price?'':b.dataset.price;apply();}));
     if(areaSelect) areaSelect.addEventListener('change',()=>{state.area=areaSelect.value;apply();});
+    if(communityButton) communityButton.addEventListener('click',()=>{state.community=!state.community;apply();});
+    [...document.querySelectorAll('#community-all')].forEach(b=>b.addEventListener('click',()=>{state.community=false;apply();communityButton?.focus();}));
     apply();
     // Lets the Month view (the module script below) read the same filters and react when they change.
     globalThis.doonFilters={state,today,apply};

@@ -27,7 +27,7 @@ const record = {
 
 const reading = (over = {}) => ({
   is_announcement: true, title: 'Saturday training', starts: '2026-10-31 06:00', ends: null, venue: 'City Forest Park',
-  price: 'free', how_to_join: 'Walk in', details_from: 'image', confidence: 'high', ...over
+  price: 'free', how_to_join: 'Walk in', categories: ['Fitness'], details_from: 'image', confidence: 'high', ...over
 });
 
 test('parseHandles takes commas, spaces and @, without duplicates', () => {
@@ -251,4 +251,12 @@ test('a failed download keeps the job for the next run, and other jobs still go 
   } finally {
     if (old === undefined) delete process.env.INSTAGRAM_HANDLES; else process.env.INSTAGRAM_HANDLES = old;
   }
+});
+
+test('an Instagram lead takes the categories the model picked, falling back to the keyword rules', () => {
+  const post = profilePosts(record).posts[0];
+  const opts = { today: TODAY, checkedAt: CHECKED };
+  assert.deepEqual(candidateFromReading(reading({ categories: ['Games', 'Meetups', 'Music'] }), post, 'example.club', opts).categories, ['Games', 'Meetups']);
+  assert.deepEqual(candidateFromReading(reading({ title: 'Board game night', categories: ['Other'] }), post, 'example.club', opts).categories, ['Games'], 'Other alone falls back to the keyword rules');
+  assert.deepEqual(candidateFromReading(reading({ categories: ['Not a category'] }), post, 'example.club', opts).categories, ['Workshop'], 'unknown names are dropped');
 });

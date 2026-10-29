@@ -187,17 +187,36 @@ const CATEGORY_RULES = [
   ['Comedy', ['comedy','stand up','standup','stand-up','open mic']],
   ['Music', ['music','musical','concert','gig','live band','band','rock night','rock band','rock show','rock music','rock concert','classic rock','live rock','dj','unplugged','sufi','qawwali','karaoke']],
   ['Books', ['book','literature','poetry','reading','author']],
-  ['Outdoors', ['run','running','walking','marathon','walk','hike','hiking','trek','trekking','bird','birding','cycling','cyclothon']],
+  ['Outdoors', ['walking','walk','hike','hiking','trek','trekking','trail','trails','trail run','ultra','bird','birding','cycling','cyclothon','nature trail','stargazing']],
+  ['Fitness', ['run','running','marathon','half marathon','5k','10k','fitness class','fitness session','fitness challenge','workout','functional training','crossfit','hiit','pickleball','calisthenics']],
+  ['Games', ['board game','board games','boardgame','boardgames','game night','games night','quiz','trivia','murder mystery','mystery games','tabletop','chess','dungeons and dragons','dnd','blood on the clocktower']],
   ['Art', ['art','paint','painting','exhibition','gallery']],
   ['Workshop', ['workshop','masterclass','training','ttc','bootcamp']],
   ['Wellness', ['yoga','zumba','meditation','retreat']],
   ['Film', ['film','cinema','screening']],
   ['Culture', ['dandiya','garba','rass','navratri','heritage','culture','folk','festival']],
   ['Food', ['food','feast','brunch','tasting','cuisine','all you can eat']],
-  ['Community', ['meetup','community','social club']]
+  ['Meetups', ['meetup','community','social club','hangout']]
 ].map(([category, terms]) => [category, wordMatcher(terms)]);
 
 export const CATEGORY_NAMES = [...CATEGORY_RULES.map(([category]) => category), 'Live shows', 'Other'];
+
+// Categories that were renamed. Hand-checked events keep the name they were saved with, so the merge
+// and the review queue read the old name as the new one.
+export const RENAMED_CATEGORIES = { Community: 'Meetups' };
+export const currentCategories = (categories = []) => [...new Set(categories.map((c) => RENAMED_CATEGORIES[c] || c))];
+
+// Categories added after events were already checked by hand. A hand-checked event keeps the categories it
+// was saved with, and gains one of these when the rules find it; "Other" goes once it has a real one.
+const ADDED_CATEGORIES = ['Fitness', 'Games'];
+export function withAddedCategories(categories = [], text = '') {
+  const added = categoryFromText(text).filter((c) => ADDED_CATEGORIES.includes(c));
+  const saved = currentCategories(categories);
+  // At most one is added, and none to an event that already has two real categories.
+  const real = saved.filter((c) => c !== 'Other');
+  const all = real.length >= 2 ? saved : [...new Set([...saved, ...added.slice(0, 1)])];
+  return all.length > 1 ? all.filter((c) => c !== 'Other') : all;
+}
 
 const LIVE_RE = new RegExp(`(?<![a-z0-9])live(?![a-z0-9])|(?<!walking |heritage |city |food |bus |temple |village )(?<![a-z0-9])tours?(?![a-z0-9])`, 'i');
 

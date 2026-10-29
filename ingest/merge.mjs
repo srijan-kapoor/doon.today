@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription } from './lib/utils.mjs';
+import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription, currentCategories, withAddedCategories } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
 import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
@@ -275,6 +275,7 @@ export async function mergeAndWrite(sourceResults) {
     .filter(e => isUnexpiredEvent(e,now))
     .map(e => withKnownVenue(e, venues))
     .map(withArea)
+    .map(e => ({...e, categories: (e.sources || []).some(s => s.provider === 'manual') ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
     .sort(compareEventStarts);
 
   await fs.mkdir('data',{recursive:true});

@@ -7,6 +7,7 @@ export type EventSourceProvider =
   | 'meetup'
   | 'gdg'
   | 'reddit'
+  | 'instagram'
   | 'manual';
 
 export interface EventSource {

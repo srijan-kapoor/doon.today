@@ -7,7 +7,7 @@
 // passed: the merge replaces a source's queued candidates with what the source returns, so a run that
 // found nothing new must not empty the queue.
 import crypto from 'node:crypto';
-import { stableId, slugify, categoryFromText } from './utils.mjs';
+import { stableId, slugify, categoryFromText, CATEGORY_NAMES } from './utils.mjs';
 import { parseWhen, parsePrice } from './review.mjs';
 import { istDay } from '../../src/lib/dates.mjs';
 
@@ -94,6 +94,8 @@ export function candidateFromReading(reading, post, handle, { today, checkedAt }
   if (!startAt || istDay(startAt) < today) return null;
   const endAt = reading.ends ? parseWhen(reading.ends) : null;
   const title = String(reading.title || '').trim() || `Event by @${handle}`;
+  // The model's categories, from the fixed list; the keyword rules when it gave none.
+  const picked = (reading.categories || []).filter((c) => CATEGORY_NAMES.includes(c) && c !== 'Other');
   const pricing = parsePrice(reading.price === 'free' ? 'free' : String(reading.price ?? '')) || { type: 'unknown', currency: 'INR' };
   return {
     id: stableId('instagram', handle, istDay(startAt)),
@@ -103,7 +105,7 @@ export function candidateFromReading(reading, post, handle, { today, checkedAt }
     startAt,
     ...(endAt && endAt > startAt ? { endAt } : {}),
     venue: { name: String(reading.venue || '').trim() || 'See Instagram post', city: 'Dehradun' },
-    categories: categoryFromText(`${title} ${post.caption}`),
+    categories: picked.length ? [...new Set(picked)].slice(0, 2) : categoryFromText(`${title} ${post.caption}`),
     pricing,
     howToJoin: String(reading.how_to_join || '').trim(),
     organizer: handle,
