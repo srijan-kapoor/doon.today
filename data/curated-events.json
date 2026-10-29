@@ -503,5 +503,46 @@
     "firstSeenAt": "2026-10-29T08:49:55.011Z",
     "lastSeenAt": "2026-10-29T08:49:55.011Z",
     "lastCheckedAt": "2026-10-29T08:49:55.011Z"
+  },
+  {
+    "id": "796a95871a706bc1",
+    "slug": "starry-night-at-rajpur-nature-fest-2026",
+    "title": "Starry Night at Rajpur Nature Fest 2026",
+    "description": "Another post (https://www.instagram.com/p/DeJ0tWqkxOq) gives the time as 20:00. Rajpur Nature Fest 2026, here we come! 🌌🔭 Dehradun Astronomy Club is bringing the universe a little closer to you with a stargazing session on both days of Rajpur Nature Fest! 🪐 Join us on 31 October and 1 November at MDDA Park, Rajpur, from 9 PM onwards for a night filled with cosmic wonders, fascinating stories and unforgettable sightings under the stars. Remember to bring your curiosity, excitement and sense of wonder. ✨ The session is free and open to people of all ages. Register now — Link in bio.\n\nOrganized by @dehradun_astronomy_club. How to join: Register via link in bio",
+    "startAt": "2026-10-31T21:00:00+05:30",
+    "endAt": "2026-11-01T21:00:00+05:30",
+    "venue": {
+      "name": "MDDA Park, Rajpur",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfAAtAZzcA0",
+        "checkedAt": "2026-10-29T08:50:12.363Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfAAtAZzcA0",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:50:12.363Z",
+    "lastSeenAt": "2026-10-29T08:50:12.363Z",
+    "lastCheckedAt": "2026-10-29T08:50:12.363Z"
   }
 ]
