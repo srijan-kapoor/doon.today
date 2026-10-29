@@ -51,11 +51,12 @@ export function dayLabel(day, count) {
 
 /** Category, Free only and Area, the filters that stay on in Month view. `item` has categories[], price, area. */
 export const matchesFilters = (item, state) =>
-  (!state.category || item.categories.includes(state.category))
+  (!state.community || item.community)
+  && (!state.category || item.categories.includes(state.category))
   && (!state.price || item.price === state.price)
   && (!state.area || item.area === state.area);
 
-/** Events running on `day` that pass the filters. `items` are { range, categories, price, area }. */
+/** Events running on `day` that pass the filters. `items` are { range, categories, price, area, community }. */
 export const eventsOn = (items, day, state) => items.filter((item) => runsOn(item.range, day) && matchesFilters(item, state));
 
 /** The last month the grid can show: the latest month with an event, never before this month. */

@@ -1,4 +1,6 @@
 [
+  { "date": "2026-10-29", "tag": "New", "text": "Community picks: events posted by Dehradun's own clubs and groups are tagged, listed first each day, and have their own filter and calendar." },
+  { "date": "2026-10-29", "tag": "Improved", "text": "New Fitness and Games categories, and Community is now called Meetups." },
   { "date": "2026-10-29", "tag": "Source", "text": "Instagram: event posts from local community groups like run clubs, walks and board game meetups. Each one is checked by hand before it is listed." },
   { "date": "2026-10-28", "tag": "Removed", "text": "Townscript and BookMyShow as sources: neither had brought in a Dehradun event for weeks." },
   { "date": "2026-10-28", "tag": "New", "text": "A dark theme. Switch it from the header (or the menu on phones), and the site remembers your choice." },
