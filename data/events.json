@@ -10,12 +10,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -54,12 +54,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -88,50 +88,6 @@
     "lastCheckedAt": "2026-10-29T08:24:20.853Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.691Z"
-  },
-  {
-    "id": "064d632cbcd64e99",
-    "slug": "virasat-2026-sitar-recital-by-dhruv-bedi",
-    "title": "Virasat 2026: Sitar recital by Dhruv Bedi",
-    "description": "Ticketed instrumental performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-30T19:00:00+05:30",
-    "endAt": "2026-10-30T20:00:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-8",
-        "externalId": "2026-8-sitar-recital-by-dhruv-bedi",
-        "checkedAt": "2026-10-29T08:24:20.853Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T03:52:50.746Z",
-    "lastSeenAt": "2026-10-29T08:24:20.853Z",
-    "lastCheckedAt": "2026-10-29T08:24:20.853Z"
   },
   {
     "id": "6088172797b0a631",
@@ -169,22 +125,22 @@
     "lastCheckedAt": "2026-10-28T17:58:00.031Z"
   },
   {
-    "id": "84b798a1be8f1db3",
-    "slug": "virasat-2026-indian-ocean-live",
-    "title": "Virasat 2026: Indian Ocean LIVE",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-30T20:00:00+05:30",
-    "endAt": "2026-10-30T22:00:00+05:30",
+    "id": "064d632cbcd64e99",
+    "slug": "virasat-2026-sitar-recital-by-dhruv-bedi",
+    "title": "Virasat 2026: Sitar recital by Dhruv Bedi",
+    "description": "Ticketed instrumental performance at Virasat 2026. Check the official programme and ticket page for details.",
+    "startAt": "2026-10-30T19:00:00+05:30",
+    "endAt": "2026-10-30T20:00:00+05:30",
     "venue": {
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -198,7 +154,7 @@
       {
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-8",
-        "externalId": "2026-8-indian-ocean-live",
+        "externalId": "2026-8-sitar-recital-by-dhruv-bedi",
         "checkedAt": "2026-10-29T08:24:20.853Z",
         "confidence": 0.95
       }
@@ -208,7 +164,7 @@
       "status": "published",
       "score": 7
     },
-    "firstSeenAt": "2026-10-19T14:48:02.685Z",
+    "firstSeenAt": "2026-10-19T03:52:50.746Z",
     "lastSeenAt": "2026-10-29T08:24:20.853Z",
     "lastCheckedAt": "2026-10-29T08:24:20.853Z"
   },
@@ -241,7 +197,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dark-side-of-basque-og-shez-katch-jerry-oct30-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
         "confidence": 0.95
       }
     ],
@@ -251,8 +207,52 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-27T08:49:21.124Z",
-    "lastCheckedAt": "2026-10-27T08:49:21.124Z"
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
+  },
+  {
+    "id": "84b798a1be8f1db3",
+    "slug": "virasat-2026-indian-ocean-live",
+    "title": "Virasat 2026: Indian Ocean LIVE",
+    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
+    "startAt": "2026-10-30T20:00:00+05:30",
+    "endAt": "2026-10-30T22:00:00+05:30",
+    "venue": {
+      "name": "Himalayan Cultural Centre — Auditorium",
+      "address": "Garhi Cantt",
+      "city": "Dehradun",
+      "area": "Garhi Cantt",
+      "geo": {
+        "lat": 30.35473,
+        "lng": 78.01122
+      },
+      "geoFrom": "table"
+    },
+    "categories": [
+      "Music",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "paid",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "virasat",
+        "url": "https://reachvirasat.org/programme#day-8",
+        "externalId": "2026-8-indian-ocean-live",
+        "checkedAt": "2026-10-29T08:24:20.853Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 7
+    },
+    "firstSeenAt": "2026-10-19T14:48:02.685Z",
+    "lastSeenAt": "2026-10-29T08:24:20.853Z",
+    "lastCheckedAt": "2026-10-29T08:24:20.853Z"
   },
   {
     "id": "1326f36e49ca9a74",
@@ -265,12 +265,12 @@
       "name": "Graphic Era Deemed to be University",
       "address": "566/6, Bell Road, Society Area, Clement Town, Dehradun, Uttarakhand 248002, India, Dehradun, UK",
       "city": "Dehradun",
+      "area": "Clement Town",
       "geo": {
         "lat": 30.26802,
         "lng": 77.99612
       },
-      "geoFrom": "table",
-      "area": "Clement Town"
+      "geoFrom": "table"
     },
     "categories": [
       "Community"
@@ -366,7 +366,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
+        "checkedAt": "2026-10-29T08:29:27.468Z",
         "confidence": 0.95
       }
     ],
@@ -376,8 +376,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-27T08:49:21.124Z",
-    "lastCheckedAt": "2026-10-27T08:49:21.124Z",
+    "lastSeenAt": "2026-10-29T08:29:27.468Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.468Z",
     "occurrences": [
       "2026-10-31T10:30:00.000Z",
       "2026-11-22T10:30:00.000Z",
@@ -386,6 +386,47 @@
     ],
     "sequence": 1,
     "modifiedAt": "2026-10-27T08:49:22.118Z"
+  },
+  {
+    "id": "8033fa76e24f930a",
+    "slug": "tla-unscripted",
+    "title": "TLA Unscripted",
+    "description": "",
+    "startAt": "2026-10-31T11:30:00.000Z",
+    "endAt": "2026-10-31T13:00:00.000Z",
+    "venue": {
+      "name": "Cafe Brew Casa",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.372,
+        "lng": 78.0788
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 299,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/tla-unscripted-oct31-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-18T07:29:45.462Z",
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
   },
   {
     "id": "96297d668f206584",
@@ -427,47 +468,6 @@
     "firstSeenAt": "2026-10-26T15:15:28.890Z",
     "lastSeenAt": "2026-10-29T08:23:57.190Z",
     "lastCheckedAt": "2026-10-29T08:23:57.190Z"
-  },
-  {
-    "id": "8033fa76e24f930a",
-    "slug": "tla-unscripted",
-    "title": "TLA Unscripted",
-    "description": "",
-    "startAt": "2026-10-31T11:30:00.000Z",
-    "endAt": "2026-10-31T13:00:00.000Z",
-    "venue": {
-      "name": "Cafe Brew Casa",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.372,
-        "lng": 78.0788
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/tla-unscripted-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.123Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-27T08:49:21.123Z",
-    "lastCheckedAt": "2026-10-27T08:49:21.123Z"
   },
   {
     "id": "404ba7c9634aa20c",
@@ -516,21 +516,62 @@
     "modifiedAt": "2026-10-26T15:15:59.945Z"
   },
   {
-    "id": "c29a4b593b676178",
-    "slug": "blaaze-halloween-thrill-night-mall-of-dehradun",
-    "title": "Blaaze Halloween Thrill Night | Mall of Dehradun",
+    "id": "51acbc24651364df",
+    "slug": "halloween-night-at-doon-bakehouse",
+    "title": "Halloween Night at Doon Bakehouse",
     "description": "",
-    "startAt": "2026-10-31T12:30:00.000Z",
-    "endAt": "2026-10-31T15:30:00.000Z",
+    "startAt": "2026-10-31T13:30:00.000Z",
+    "endAt": "2026-10-31T17:45:00.000Z",
     "venue": {
-      "name": "BLAAZE - Mall of Dehradun",
+      "name": "Doon Bake House",
       "address": "Dehradun",
       "city": "Dehradun",
       "geo": {
-        "lat": 30.26686,
-        "lng": 78.0821
+        "lat": 30.3822,
+        "lng": 78.078
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 999,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/halloween-night-at-doon-bakehouse-oct31-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-25T15:11:59.396Z",
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
+  },
+  {
+    "id": "7bf79e168c37516c",
+    "slug": "ghosted-halloween-party-at-dehradun-social",
+    "title": "Ghosted | Halloween Party at Dehradun SOCIAL",
+    "description": "",
+    "startAt": "2026-10-31T13:30:00.000Z",
+    "endAt": "2026-10-31T18:29:00.000Z",
+    "venue": {
+      "name": "Dehradun Social | Hathibarkala Salwala, Dehradun",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3431,
+        "lng": 78.0482
       },
-      "geoFrom": "table"
+      "area": "Hathibarkala"
     },
     "categories": [
       "Other"
@@ -543,8 +584,8 @@
     "sources": [
       {
         "provider": "district",
-        "url": "https://www.district.in/events/1157f4ec-1d01-4bc4-bf0b-19884515aac2-buy-tickets",
-        "checkedAt": "2026-10-25T15:11:59.397Z",
+        "url": "https://www.district.in/events/ghosted-halloween-party-at-dehradun-social-oct31-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
         "confidence": 0.95
       }
     ],
@@ -553,10 +594,11 @@
       "status": "published",
       "score": 8
     },
-    "firstSeenAt": "2026-10-23T02:43:06.187Z",
-    "lastSeenAt": "2026-10-25T15:11:59.397Z",
-    "lastCheckedAt": "2026-10-25T15:11:59.397Z",
-    "missedRuns": 2
+    "firstSeenAt": "2026-10-21T06:09:46.289Z",
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z",
+    "sequence": 1,
+    "modifiedAt": "2026-10-25T15:11:59.403Z"
   },
   {
     "id": "c76bb989bbf9c42e",
@@ -614,12 +656,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -650,35 +692,42 @@
     "modifiedAt": "2026-10-22T04:57:51.691Z"
   },
   {
-    "id": "51acbc24651364df",
-    "slug": "halloween-night-at-doon-bakehouse",
-    "title": "Halloween Night at Doon Bakehouse",
-    "description": "",
-    "startAt": "2026-10-31T13:30:00.000Z",
-    "endAt": "2026-10-31T17:45:00.000Z",
+    "id": "a6294b81aaa91ded",
+    "slug": "halloween-party-dj-musical-monkey",
+    "title": "Halloween Party - DJ Musical Monkey",
+    "description": "Step into a night of dark beats, eerie energy, and unforgettable Halloween vibes at the Halloween Party at Studio XO, Dehradun! Get ready for a spine-chilling celebration where haunting visuals meet electrifying music, creating the perfect atmosphere for a thrilling night out.Featuring Musical Monke",
+    "startAt": "2026-10-31T14:30:00.000Z",
+    "endAt": "2026-10-31T17:30:00.000Z",
     "venue": {
-      "name": "Doon Bake House",
+      "name": "Studio XO | Rajpur, Dehradun",
       "address": "Dehradun",
       "city": "Dehradun",
       "geo": {
-        "lat": 30.3822,
-        "lng": 78.078
-      }
+        "lat": 30.3724,
+        "lng": 78.0786
+      },
+      "area": "Rajpur"
     },
     "categories": [
-      "Other"
+      "Music"
     ],
     "pricing": {
       "type": "paid",
-      "minPrice": 999,
+      "minPrice": 100,
       "currency": "INR"
     },
     "sources": [
       {
         "provider": "district",
-        "url": "https://www.district.in/events/halloween-night-at-doon-bakehouse-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
+        "url": "https://www.district.in/events/halloween-party-dj-musical-monkey-oct31-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/halloween-party-dj-musical-monkey/4100030928819332",
+        "checkedAt": "2026-10-29T08:23:57.191Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -687,52 +736,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-25T15:11:59.396Z",
-    "lastSeenAt": "2026-10-27T08:49:21.124Z",
-    "lastCheckedAt": "2026-10-27T08:49:21.124Z"
-  },
-  {
-    "id": "7bf79e168c37516c",
-    "slug": "ghosted-halloween-party-at-dehradun-social",
-    "title": "Ghosted | Halloween Party at Dehradun SOCIAL",
-    "description": "",
-    "startAt": "2026-10-31T13:30:00.000Z",
-    "endAt": "2026-10-31T18:29:00.000Z",
-    "venue": {
-      "name": "Dehradun Social | Hathibarkala Salwala, Dehradun",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.3431,
-        "lng": 78.0482
-      },
-      "area": "Hathibarkala"
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 1500,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/ghosted-halloween-party-at-dehradun-social-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-21T06:09:46.289Z",
-    "lastSeenAt": "2026-10-27T08:49:21.124Z",
-    "lastCheckedAt": "2026-10-27T08:49:21.124Z",
-    "sequence": 1,
-    "modifiedAt": "2026-10-25T15:11:59.403Z"
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
   },
   {
     "id": "5c236c81f43b60ca",
@@ -763,7 +768,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/litchi-india-tour-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
         "confidence": 0.95
       },
       {
@@ -779,56 +784,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-29T08:23:57.189Z",
-    "lastCheckedAt": "2026-10-29T08:23:57.189Z"
-  },
-  {
-    "id": "a6294b81aaa91ded",
-    "slug": "halloween-party-dj-musical-monkey",
-    "title": "Halloween Party - DJ Musical Monkey",
-    "description": "Step into a night of dark beats, eerie energy, and unforgettable Halloween vibes at the Halloween Party at Studio XO, Dehradun! Get ready for a spine-chilling celebration where haunting visuals meet electrifying music, creating the perfect atmosphere for a thrilling night out.Featuring Musical Monke",
-    "startAt": "2026-10-31T14:30:00.000Z",
-    "endAt": "2026-10-31T17:30:00.000Z",
-    "venue": {
-      "name": "Studio XO | Rajpur, Dehradun",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.3724,
-        "lng": 78.0786
-      },
-      "area": "Rajpur"
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 100,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/halloween-party-dj-musical-monkey-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
-        "confidence": 0.95
-      },
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/halloween-party-dj-musical-monkey/4100030928819332",
-        "checkedAt": "2026-10-29T08:23:57.191Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-25T15:11:59.396Z",
-    "lastSeenAt": "2026-10-29T08:23:57.191Z",
-    "lastCheckedAt": "2026-10-29T08:23:57.191Z"
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
   },
   {
     "id": "2b26d46eba091b3a",
@@ -840,12 +797,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -949,6 +906,47 @@
     "lastCheckedAt": "2026-10-29T04:29:49.726Z"
   },
   {
+    "id": "daf4351a58ab9484",
+    "slug": "d9-dehradun-presents-burn-or-boo-gie",
+    "title": "D9 Dehradun Presents BURN OR BOO-GIE",
+    "description": "",
+    "startAt": "2026-11-01T10:30:00.000Z",
+    "endAt": "2026-11-01T14:30:00.000Z",
+    "venue": {
+      "name": "D9, Dehradun",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3446,
+        "lng": 77.9466
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 100,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/d9-dehradun-presents-burn-or-boogie-nov1-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.472Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-29T08:29:27.472Z",
+    "lastSeenAt": "2026-10-29T08:29:27.472Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.472Z"
+  },
+  {
     "id": "e1664ec65e6e45da",
     "slug": "vipul-goyal-unleashed",
     "title": "Vipul Goyal- Unleashed",
@@ -1043,12 +1041,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1086,12 +1084,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1302,12 +1300,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Culture"
@@ -1345,12 +1343,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1390,12 +1388,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1433,12 +1431,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1478,12 +1476,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1521,12 +1519,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1621,12 +1619,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1664,12 +1662,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1709,12 +1707,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -1752,12 +1750,12 @@
       "name": "Himalayan Cultural Centre — Auditorium",
       "address": "Garhi Cantt",
       "city": "Dehradun",
+      "area": "Garhi Cantt",
       "geo": {
         "lat": 30.35473,
         "lng": 78.01122
       },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
+      "geoFrom": "table"
     },
     "categories": [
       "Music",
@@ -2024,7 +2022,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-10-27T08:49:21.124Z",
+        "checkedAt": "2026-10-29T08:29:27.471Z",
         "confidence": 0.95
       },
       {
@@ -2040,8 +2038,49 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-10-29T08:24:21.136Z",
-    "lastCheckedAt": "2026-10-29T08:24:21.136Z"
+    "lastSeenAt": "2026-10-29T08:29:27.471Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.471Z"
+  },
+  {
+    "id": "58ea9fc74a68de7b",
+    "slug": "run-for-trees-marathon",
+    "title": "Run for Trees | Marathon",
+    "description": "",
+    "startAt": "2026-11-29T00:00:00.000Z",
+    "endAt": "2026-11-29T04:30:00.000Z",
+    "venue": {
+      "name": "Doon University, Dehradun Uttarakhand",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.2696,
+        "lng": 78.0435
+      }
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 499,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
+        "checkedAt": "2026-10-29T08:29:27.470Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-29T08:29:27.470Z",
+    "lastSeenAt": "2026-10-29T08:29:27.470Z",
+    "lastCheckedAt": "2026-10-29T08:29:27.470Z"
   },
   {
     "id": "d092613afd25636e",
