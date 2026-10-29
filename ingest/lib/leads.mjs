@@ -92,37 +92,41 @@ const istText = (iso) => {
   return Number.isFinite(t) ? new Date(t + 5.5 * 3600_000).toISOString().slice(0, 16).replace('T', ' ') : '';
 };
 
-// Kinds of lead that come from the review queue (data/review/reddit.json): an r/Dehradun post, or a listing
-// from a source like AllEvents that was too thin to publish on its own. Both are keyed by the candidate id.
-const QUEUED_KINDS = new Set(['reddit', 'listing']);
+// Kinds of lead that come from the review queue (data/review/reddit.json): an r/Dehradun post, an Instagram
+// post a model read, or a listing from a source like AllEvents that was too thin to publish on its own. All
+// are keyed by the candidate id.
+const QUEUED_KINDS = new Set(['reddit', 'instagram', 'listing']);
 export const isQueuedKind = (kind) => QUEUED_KINDS.has(kind);
 
 const queuedPrice = (pricing = {}) => (pricing.type === 'free' ? 'free' : pricing.type === 'paid' && pricing.minPrice ? String(pricing.minPrice) : 'unknown');
 
-/** The lead for one candidate in the review queue: a Reddit post, or a held-back listing. */
+/** The lead for one candidate in the review queue: a Reddit or Instagram post, or a held-back listing. */
 export function sourceLead(candidate) {
   const provider = candidate.sources?.[0]?.provider || '';
-  const kind = provider === 'reddit' ? 'reddit' : 'listing';
+  const kind = provider === 'reddit' || provider === 'instagram' ? provider : 'listing';
   const url = cleanUrl(candidate.sources?.[0]?.url);
   const venue = cleanLine(candidate.venue?.name);
+  // An Instagram candidate carries what the model read from the post; a Reddit one only a guessed date.
+  const read = kind === 'instagram';
   return {
     kind,
     source: provider,
     id: candidate.id,
     title: cleanLine(candidate.title, MAX_TITLE),
     starts: istText(candidate.startAt),
-    ends: '',
-    venue: venue === 'See community post' ? '' : venue,
+    ends: read ? istText(candidate.endAt) : '',
+    venue: /^See (community|Instagram) post$/.test(venue) ? '' : venue,
     area: '',
-    price: kind === 'listing' ? queuedPrice(candidate.pricing) : 'unknown',
+    price: kind === 'reddit' ? 'unknown' : queuedPrice(candidate.pricing),
     categories: (candidate.categories || []).join(', '),
     listing: kind === 'listing' ? url : '',
-    organizer: '',
+    organizer: read && candidate.organizer ? `@${cleanLine(candidate.organizer)}` : '',
+    // No organizer link: an approved event links to the post, which an organizer link would replace.
     organizerLink: '',
     submittedBy: '',
-    howToJoin: '',
+    howToJoin: read ? cleanLine(candidate.howToJoin) : '',
     repeats: '',
-    post: kind === 'reddit' ? url : '',
+    post: kind === 'listing' ? '' : url,
     // Leads queued before the adapter decoded Reddit's escaped HTML still carry it, so clean it here too.
     description: cleanText(stripHtml(decodeEntities(candidate.description || '')))
   };
@@ -141,6 +145,8 @@ export function leadIssue(lead) {
   }).join('\n');
   const intro = lead.kind === 'reddit'
     ? 'A post on r/Dehradun that looks like an event. The date and time were guessed from the post, and the venue is usually missing.'
+    : lead.kind === 'instagram'
+      ? `An Instagram post that announces an event: ${cleanUrl(lead.post) || 'see the post link below'}\n\nA model read these details from the caption and the poster, and it can be wrong. Open the post and check them against it first.`
     : lead.kind === 'listing'
       ? `A listing from ${sourceLabel(lead.source)} that is on the site but says very little about itself: a short description, no start time and no category. Open the listing link and check it's a real event in Dehradun. Close this issue to remove it from the site; add the \`approve\` label to keep it as a checked event (fix the details first if needed).`
       : 'An event sent through the submit form on doon.today. Contact details, if given, are only in the Netlify submission.';
@@ -164,7 +170,7 @@ export function leadIssue(lead) {
 
 /** The kind and Reddit id from a lead issue's hidden marker, even if the details block was edited away. */
 export function leadMarker(body = '') {
-  const m = String(body).match(/<!--\s*doon-lead\s+kind=(form|reddit|listing)(?:\s+id=([a-z0-9-]+))?\s*-->/i);
+  const m = String(body).match(/<!--\s*doon-lead\s+kind=(form|reddit|instagram|listing)(?:\s+id=([a-z0-9-]+))?\s*-->/i);
   return m ? { kind: m[1].toLowerCase(), id: m[2] || '' } : null;
 }
 

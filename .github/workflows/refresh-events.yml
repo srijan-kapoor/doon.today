@@ -32,6 +32,12 @@ jobs:
       - name: Test ingest adapters
         run: npm test
       - name: Fetch and normalize events
+        env:
+          # Instagram leads (ingest/sources/instagram.mjs). Without these the source keeps its queued leads
+          # and fetches nothing. The handle list is a secret so it stays out of the public logs.
+          BRIGHTDATA_API_TOKEN: ${{ secrets.BRIGHTDATA_API_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INSTAGRAM_HANDLES: ${{ secrets.INSTAGRAM_HANDLES }}
         run: npm run ingest
       - name: Validate event data
         run: npm run validate:data

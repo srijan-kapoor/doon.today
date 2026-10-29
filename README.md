@@ -88,6 +88,7 @@ Every lead also gets a GitHub issue labelled `lead`, so you're notified when som
 
 - **Submit form** (`/submit/`): Netlify verifies the entry and runs `netlify/functions/lead-intake.mjs`, which starts the "Open lead issue" workflow. That workflow opens the issue as github-actions[bot]. Contact details stay in Netlify Forms; issues and workflow inputs are public.
 - **r/Dehradun**: after each refresh, `scripts/sync-lead-issues.mjs` opens an issue for each new lead, and closes issues for leads already decided with `npm run review`.
+- **Instagram**: `ingest/sources/instagram.mjs` fetches community accounts' recent posts through Bright Data and has Claude read each new post's caption and poster. Announcements become leads the same way. Bright Data jobs are started in one refresh and collected in a later one, so no run waits on them. It needs the `BRIGHTDATA_API_TOKEN`, `ANTHROPIC_API_KEY` and `INSTAGRAM_HANDLES` (comma-separated) repo secrets; without them it fetches nothing and keeps its queued leads. Its state is in `data/instagram-state.json`.
 
 To review on GitHub, edit the "Event details" block in the issue if anything is wrong, then:
 
