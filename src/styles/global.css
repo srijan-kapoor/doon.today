@@ -75,7 +75,8 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .filters button { font: inherit; background: transparent; cursor: pointer; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--green); font-size: .88rem; }
 .filters + .filters { margin-top: 10px; }
 .filters .filter-count { opacity: .65; font-size: .78rem; margin-left: 2px; }
-.filters button.empty:not(.active) { opacity: .45; }
+/* A category with nothing in the current view is hidden, so the row only offers what can be picked. */
+.filters button.empty:not(.active) { display: none; }
 .filters button.community-filter { background: var(--community); border-color: var(--community); color: var(--community-ink); font-weight: 600; }
 .filters button.community-filter.active { background: var(--community-ink); border-color: var(--community-ink); color: var(--paper); }
 .community-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-top: 16px; padding: 12px 14px; border: 1px solid var(--warn-line); border-radius: 8px; background: var(--warn-bg); color: var(--warn-ink); font-size: .88rem; }
@@ -127,7 +128,17 @@ dd { margin: 0; }
   nav { gap: 12px; font-size: .82rem; }
   .nav-links { display: none; }
   .nav-menu { display: block; }
-  .hero { padding-top: 38px; }
+  /* Keep the first events on the first screen: a tighter heading, and each filter group on one row
+     that scrolls sideways instead of wrapping into a wall of buttons. */
+  .hero { padding: 22px 0 16px; }
+  .hero h1 { font-size: 2.35rem; margin-bottom: 8px; }
+  .hero .lede { display: none; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 10px -12px 0; padding: 4px 12px; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters + .filters { margin-top: 8px; }
+  .filters > * { flex: 0 0 auto; }
+  .curated { padding-top: 16px; }
+  .section-heading h2 { font-size: 1.6rem; }
   .event-row { grid-template-columns: 72px 1fr; gap: 10px; }
   .event-price { grid-column: 2; }
   .calendar-grid { grid-template-columns: 1fr; }
@@ -143,11 +154,18 @@ dd { margin: 0; }
 .source-health-dismiss:hover { background: color-mix(in srgb, var(--warn-ink) 8%, transparent); }
 .source-health-dismiss:focus-visible { outline: 2px solid var(--warn-ink); outline-offset: -2px; }
 
-.feed-help { margin: 32px 0 8px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 8px; font-size: .92rem; line-height: 1.55; }
+.feed-help { margin: 24px 0 8px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 8px; font-size: .92rem; line-height: 1.55; }
 .feed-help h2, .feed-group h2 { font-family: Georgia, serif; margin-bottom: 10px; }
 .feed-help ul { margin: 0 0 10px; padding-left: 1.1rem; }
 .feed-help p { margin: 0; color: var(--muted); }
-.feed-group { margin-top: 36px; }
+.feed-group { margin-top: 28px; }
+.feed-help summary { cursor: pointer; font-weight: 600; color: var(--green); }
+.feed-help[open] summary { margin-bottom: 10px; }
+.feed-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 165px), 1fr)); gap: 8px; }
+.feed-grid li { border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; }
+.feed-grid small { color: var(--muted); margin-left: 4px; }
+.feed-grid .feed-actions { margin-top: 8px; gap: 8px 12px; font-size: .88rem; flex-wrap: wrap; }
+.feed-grid .feed-actions button { white-space: nowrap; padding: 4px 10px; font-size: .82rem; }
 .feed-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .feed-list li { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .feed-name { font-weight: 600; }
