@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import EventRow from '../components/EventRow.astro';
 import EventFilters from '../components/EventFilters.astro';
 import { events } from '../data/events';
-import { ingestStatus, staleSources } from '../data/status';
+import { ingestStatus, staleSources, VISITOR_BANNER_HOURS } from '../data/status';
 import { istDay, compareEventStarts, eventDisplayDay } from '../lib/dates.mjs';
 import { communityFirst, isCommunityEvent } from '../lib/community.mjs';
 
@@ -15,16 +15,15 @@ const published = events
 // Community events lead each day; the page script keeps that order when it regroups by the reader's day.
 const grouped = new Map([...Map.groupBy(published, (event) => eventDisplayDay(event, today)!)].map(([day, list]) => [day, communityFirst(list)]));
 const dateFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
-const refreshedAt = Date.parse(ingestStatus.ranAt);
-const stale = staleSources();
+const stale = staleSources().filter((s) => s.ageHours >= VISITOR_BANNER_HOURS);
 const tally = (values: string[]) => [...values.reduce((m, v) => m.set(v, (m.get(v) ?? 0) + 1), new Map<string, number>())]
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 const categoryOptions = tally(published.flatMap((e) => e.categories));
 const areaOptions = tally(published.flatMap((e) => (e.venue.area ? [e.venue.area] : [])));
 const communityCount = published.filter(isCommunityEvent).length;
-const showHealthBanner = ingestStatus.health === 'degraded';
+const showHealthBanner = ingestStatus.health === 'degraded' && stale.length > 0;
 // Identifies which sources the banner is about, so a dismissal only lasts until that set changes.
-const healthKey = stale.length > 0 ? stale.map((s) => s.name).sort().join(',') : 'degraded';
+const healthKey = stale.map((s) => s.name).sort().join(',');
 const staleNames = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }).format(stale.map((s) => s.label));
 const lastUpdated = stale.filter((s) => s.lastSuccess !== 'not recorded yet').map((s) => `${s.label} last updated ${s.lastSuccess}.`).join(' ');
 const healthMessage = stale.length > 0
@@ -50,7 +49,6 @@ const healthMessage = stale.length > 0
         <button type="button" class="active" aria-pressed="true" data-view="list">List</button>
         <button type="button" aria-pressed="false" data-view="month">Month</button>
       </div>
-      {Number.isFinite(refreshedAt) && <small>Data refreshed {new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit',timeZone:'Asia/Kolkata'}).format(refreshedAt)}</small>}
     </div>
     {showHealthBanner && (
       <div class="source-health" id="source-health" role="status" data-sources={healthKey}>
