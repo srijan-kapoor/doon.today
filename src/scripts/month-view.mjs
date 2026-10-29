@@ -1,5 +1,5 @@
 // The List | Month view on the home page. Builds the date strip and month grid in the browser from the event rows
-// already on the page; the filters live in the page's inline script, which exposes them as globalThis.doonFilters.
+// already on the page; event-filters.mjs exposes their shared state as globalThis.doonFilters.
 import {
   DOT_LIMIT, dayLabel, dotsFor, eventsOn, mondayIndex, monthBounds, monthGrid, monthOf, parseMonthState, shiftMonth, stripDays, withMonthState,
 } from '../lib/month.mjs';
@@ -116,10 +116,12 @@ if (container && filters) {
 
   function writeUrl() {
     const query = withMonthState(location.search, view, date);
-    try { history.replaceState(null, '', location.pathname + (query ? `?${query}` : '') + location.hash); } catch (e) { /* e.g. file:// previews */ }
+    const url = location.pathname + (query ? `?${query}` : '') + location.hash;
+    if (url !== location.pathname + location.search + location.hash) history.pushState(null, '', url);
   }
 
   function render() {
+    filters.monthDate = date;
     root.classList.toggle('view-month', view === 'month');
     switchButtons.forEach((b) => {
       const on = b.dataset.view === view;
@@ -137,6 +139,7 @@ if (container && filters) {
     viewMonth = monthOf(day);
     writeUrl();
     render();
+    filters.apply();
     container.querySelector(`[data-day="${day}"]:not([disabled])`)?.focus({ preventScroll: true });
   }
 
@@ -151,8 +154,17 @@ if (container && filters) {
   prev.addEventListener('click', () => { viewMonth = shiftMonth(viewMonth, -1); renderGrid(); });
   next.addEventListener('click', () => { viewMonth = shiftMonth(viewMonth, 1); renderGrid(); });
   document.addEventListener('doon:filters', render);
+  window.addEventListener('popstate', () => {
+    const restored = parseMonthState(location.search, today, bounds);
+    view = restored.view;
+    date = restored.date;
+    viewMonth = monthOf(date);
+    render();
+    filters.apply();
+  });
 
   render();
+  filters.apply();
   const selected = strip.querySelector('.selected');
   if (selected && view === 'month') strip.scrollLeft = Math.max(0, selected.offsetLeft - 16);
 }

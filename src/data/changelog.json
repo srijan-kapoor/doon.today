@@ -1,4 +1,6 @@
 [
+  { "date": "2026-10-29", "tag": "Improved", "text": "Event descriptions keep their paragraph breaks, with activity lists, event details and itinerary times easier to scan." },
+  { "date": "2026-10-29", "tag": "Improved", "text": "Simpler category filters on desktop and a filter sheet on phones, with Community picks one tap away and lighter event headings." },
   { "date": "2026-10-29", "tag": "Improved", "text": "Simpler labels: an event either carries a group's handle, meaning it was checked by hand, or comes from a listing site, and its page says which." },
   { "date": "2026-10-29", "tag": "Improved", "text": "A shorter Calendars page: everything, community picks and free events first, then a category grid. Existing subscriptions keep working." },
   { "date": "2026-10-29", "tag": "Improved", "text": "On phones, events show on the first screen: the filters sit in rows you can swipe, and categories with nothing on are hidden." },

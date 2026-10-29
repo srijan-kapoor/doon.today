@@ -1,7 +1,10 @@
 // Pure date and filter logic for the home page's Month view. All days are IST calendar days as
 // YYYY-MM-DD strings and all arithmetic is done in UTC on those strings, so the visitor's timezone never matters.
 import { eventDayRange } from './dates.mjs';
+import { addDays, mondayIndex, runsOn } from './month-dates.mjs';
+import { matchesPreferences } from './filters.mjs';
 export { eventDayRange };
+export { addDays, mondayIndex, runsOn };
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const DAY_MS = 24 * 3600_000;
@@ -11,15 +14,6 @@ export const DOT_LIMIT = { strip: 4, grid: 8 };
 
 const utc = (day) => Date.parse(`${day}T00:00:00Z`);
 const fromUtc = (ms) => new Date(ms).toISOString().slice(0, 10);
-
-export const addDays = (day, n) => fromUtc(utc(day) + n * DAY_MS);
-
-/** 0 = Monday … 6 = Sunday. */
-export const mondayIndex = (day) => (new Date(utc(day)).getUTCDay() + 6) % 7;
-
-/** An event on specific dates (range.days) runs only on those days, not on every day between its first and last. */
-export const runsOn = (range, day) => (range.days ? range.days.includes(day) : range.start <= day && day <= range.end);
-
 /** Today plus the next 13 days. */
 export const stripDays = (today) => Array.from({ length: STRIP_DAYS }, (_, i) => addDays(today, i));
 
@@ -50,11 +44,7 @@ export function dayLabel(day, count) {
 }
 
 /** Category, Free only and Area, the filters that stay on in Month view. `item` has categories[], price, area. */
-export const matchesFilters = (item, state) =>
-  (!state.community || item.community)
-  && (!state.category || item.categories.includes(state.category))
-  && (!state.price || item.price === state.price)
-  && (!state.area || item.area === state.area);
+export const matchesFilters = matchesPreferences;
 
 /** Events running on `day` that pass the filters. `items` are { range, categories, price, area, community }. */
 export const eventsOn = (items, day, state) => items.filter((item) => runsOn(item.range, day) && matchesFilters(item, state));

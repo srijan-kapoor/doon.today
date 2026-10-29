@@ -1,0 +1,69 @@
+---
+import '../styles/event-filters.css';
+interface Props {
+  categories: [string, number][];
+  areas: [string, number][];
+  communityCount: number;
+}
+const { categories, areas, communityCount } = Astro.props;
+const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+---
+<div id="event-filters">
+  <div class="filters date-filters" id="when-filters" role="group" aria-label="Event date filters">
+    <button type="button" class="active" aria-pressed="true" data-filter="all">Upcoming</button>
+    <button type="button" aria-pressed="false" data-filter="today">Today</button>
+    <button type="button" aria-pressed="false" data-filter="tomorrow">Tomorrow</button>
+    <button type="button" aria-pressed="false" data-filter="weekend">Weekend</button>
+  </div>
+  <section class="desktop-categories" aria-labelledby="category-heading">
+    <div class="category-heading"><h2 id="category-heading">What are you in the mood for?</h2><span>Choose one or more</span></div>
+    <div class="quick-categories" role="group" aria-label="Quick category filters">
+      <button type="button" class="active" aria-pressed="true" id="all-categories">All</button>
+      <div id="category-shortcuts">
+        {categories.map(([name, count], index) => <button type="button" data-quick-category={slug(name)} aria-pressed="false" hidden={index >= 5}>{name} <span class="filter-count">{count}</span></button>)}
+      </div>
+      <button type="button" id="expand-categories" aria-expanded="false" aria-controls="category-panel">All {categories.length} categories <span aria-hidden="true">⌄</span></button>
+    </div>
+  </section>
+  <div class="mobile-filter-actions">
+    <button type="button" id="open-filters" aria-haspopup="dialog" aria-controls="filter-sheet">Filters <span id="active-filter-count" hidden></span></button>
+    <button type="button" class="community-filter" data-community-filter aria-pressed="false">Community picks <span class="filter-count">{communityCount}</span></button>
+  </div>
+  <div id="desktop-filter-fields">
+    <div id="filter-fields">
+      <section id="category-panel" class="category-panel" role="group" aria-labelledby="full-category-heading" hidden>
+        <div class="category-panel-heading"><h3 id="full-category-heading">Categories</h3><span>Choose any combination</span></div>
+        <div id="category-options" class="category-options">
+          {categories.map(([name, count]) => <label class="category-option" data-category-option={slug(name)} data-name={name}>
+            <input type="checkbox" name="category" value={slug(name)} />
+            <span>{name}</span><span class="filter-count">{count}</span>
+          </label>)}
+        </div>
+      </section>
+      <div class="filter-details">
+        <div class="desktop-preferences" role="group" aria-label="Preferences">
+          <button type="button" class="community-filter" data-community-filter aria-pressed="false">Community picks <span class="filter-count">{communityCount}</span></button>
+          <button type="button" data-free-filter aria-pressed="false">Free only</button>
+        </div>
+        <fieldset class="filter-preferences">
+          <legend>Preferences</legend>
+          <label class="preference-option community-filter"><input type="checkbox" id="community-preference" />Community picks <span class="filter-count">{communityCount}</span></label>
+          <label class="preference-option"><input type="checkbox" id="free-preference" />Free only</label>
+        </fieldset>
+        <label class="filter-select">Area
+          <select id="area-filter">
+            <option value="">Anywhere in Dehradun</option>
+            {areas.map(([name, count]) => <option value={slug(name)} data-name={name}>{name} ({count})</option>)}
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="active-filters" class="active-filters" role="group" aria-label="Applied filters" hidden></div>
+  <p id="filter-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+  <dialog id="filter-sheet" class="filter-sheet" aria-labelledby="filter-sheet-title">
+    <div class="sheet-header"><div class="sheet-grab" aria-hidden="true"></div><h2 id="filter-sheet-title">Make it your kind of day</h2><button type="button" id="close-filters" aria-label="Close filters without applying">×</button></div>
+    <div id="sheet-fields" class="sheet-fields"></div>
+    <div class="sheet-footer"><button type="button" id="reset-pending-filters" class="link-button">Reset</button><button type="button" id="apply-pending-filters">Show events</button></div>
+  </dialog>
+</div>
