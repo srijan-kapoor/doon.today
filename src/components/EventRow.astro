@@ -34,7 +34,7 @@ const showArea = event.venue.area && !event.venue.name.toLowerCase().includes(ev
     <a class="event-title" href={`/events/${event.slug}/`}>{event.title}</a>
     <div class="event-meta">{event.venue.name}{showArea ? ` · ${event.venue.area}` : ''}</div>
     <div class="event-tags">
-      {community && <span class="community community-pick">{handle ? `Community · @${handle}` : 'Community'}</span>}
+      {community && <span class="community community-pick">{handle ? `@${handle}` : 'Community'}</span>}
       {event.categories.map((category) => <span>{category}</span>)}
       {event.verificationStatus === 'review' && <span class="community">Source reported</span>}
       {event.verificationStatus === 'community-reported' && <span class="community">{community ? 'Sent in by a visitor' : 'Community reported'}</span>}
