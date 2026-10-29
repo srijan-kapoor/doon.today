@@ -52,3 +52,30 @@ test('description presentation separates explicit details and itinerary entries 
   assert.deepEqual(descriptionParagraphs('First paragraph.\n\nSecond paragraph.\nA new line.'), ['First paragraph.', 'Second paragraph.\nA new line.']);
   assert.deepEqual(descriptionParagraphs('<script>alert(1)</script>'), ['<script>alert(1)</script>']);
 });
+
+test('flattened festive and games captions split emoji-led items without separating emoji clusters', async () => {
+  const { descriptionParagraphs } = await import('../src/lib/details.mjs');
+  const captions = [
+    '🪔✨ DIWALI IS HERE! 🎇 Celebrate with friends! 🥳 🎉 What’s waiting? 🧨 Patakhe 🌿 Mehndi 🍧 Gol Gappe 📅 Date: Friday ⏰ Time: 7 PM 📍 Venue: Kytes 💸 Entry: DM us',
+    'Halloween games. 🔍 Mystery Games – Hosted by Ashish 🩸 Blood on the Clocktower 📅 When: Saturday 📍 Where: Board & Banter',
+  ];
+  for (const text of captions) {
+    const blocks = descriptionParagraphs(text);
+    assert.ok(blocks.length >= 5);
+    assert.equal(blocks.join(' ').replace(/\s+/g, ' '), text);
+    assert.ok(blocks.every((block) => /[\p{L}\p{N}]/u.test(block)), 'no isolated decorative emoji blocks');
+  }
+  assert.ok(descriptionParagraphs(captions[0]).includes('🥳 🎉 What’s waiting?'));
+  assert.deepEqual(descriptionParagraphs('A plain sentence. Another sentence.'), ['A plain sentence. Another sentence.']);
+});
+
+test('all saved descriptions preserve their text through presentation formatting', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { descriptionParagraphs } = await import('../src/lib/details.mjs');
+  const events = JSON.parse(await readFile(new URL('../data/events.json', import.meta.url), 'utf8'));
+  const normalize = (text) => text.replace(/\s+/gu, ' ').trim();
+  for (const event of events) {
+    const text = splitDescription(event.description).text;
+    assert.equal(normalize(descriptionParagraphs(text).join(' ')), normalize(text), event.title);
+  }
+});
