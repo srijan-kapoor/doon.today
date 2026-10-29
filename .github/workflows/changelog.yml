@@ -1,0 +1,32 @@
+name: Changelog
+# Every pull request either adds a line to src/data/changelog.json or says "Changelog: none" in its
+# description (see CONTRIBUTING.md). Runs again when the description is edited.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+permissions:
+  contents: read
+jobs:
+  changelog:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Check for a changelog entry
+        env:
+          # Passed through the environment, never pasted into the script: the description is untrusted.
+          BODY: ${{ github.event.pull_request.body }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if printf '%s' "$BODY" | grep -qiE '^[[:space:]]*Changelog:[[:space:]]*none[[:space:]]*$'; then
+            echo "Changelog: none"
+            exit 0
+          fi
+          if git diff --name-only "$BASE"...HEAD | grep -qx 'src/data/changelog.json'; then
+            echo "src/data/changelog.json is updated"
+            exit 0
+          fi
+          echo "::error::Add a line to src/data/changelog.json, or write \"Changelog: none\" in the pull request description for an internal change."
+          exit 1
