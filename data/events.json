@@ -297,6 +297,47 @@
     "lastCheckedAt": "2026-10-29T08:24:20.853Z"
   },
   {
+    "id": "dfed8ffff491b69e",
+    "slug": "saturday-functional-training",
+    "title": "Saturday Functional Training",
+    "description": "Organized by @the5amclub.in.",
+    "startAt": "2026-10-31T06:00:00+05:30",
+    "venue": {
+      "name": "City Forest Park, Sahastradhara Helipad",
+      "city": "Dehradun",
+      "area": "Sahastradhara"
+    },
+    "categories": [
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfBkaONzD-T",
+        "checkedAt": "2026-10-29T08:49:55.011Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfBkaONzD-T",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:49:55.011Z",
+    "lastSeenAt": "2026-10-29T08:49:55.011Z",
+    "lastCheckedAt": "2026-10-29T08:49:55.011Z"
+  },
+  {
     "id": "1326f36e49ca9a74",
     "slug": "aws-student-community-day-dehradun-2026",
     "title": "AWS Student Community Day Dehradun 2026",

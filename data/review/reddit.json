@@ -1,48 +1,5 @@
 [
   {
-    "id": "b2c1638628e6df3d",
-    "slug": "saturday-functional-training",
-    "title": "Saturday Functional Training",
-    "description": "",
-    "startAt": "2026-10-31T06:00:00+05:30",
-    "venue": {
-      "name": "City Forest Park, Sahastradhara Helipad",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Workshop"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "howToJoin": "",
-    "organizer": "the5amclub.in",
-    "posts": [
-      "https://www.instagram.com/p/DfBkaONzD-T"
-    ],
-    "reading": {
-      "detailsFrom": "image",
-      "confidence": "high"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfBkaONzD-T",
-        "checkedAt": "2026-10-29T08:24:24.456Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-10-29T08:24:24.456Z",
-    "lastSeenAt": "2026-10-29T08:24:24.456Z",
-    "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-  },
-  {
     "id": "58ab0b6014f58930",
     "slug": "starry-night-at-rajpur-nature-fest-2026",
     "title": "Starry Night at Rajpur Nature Fest 2026",
