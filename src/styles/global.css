@@ -133,7 +133,7 @@ dd { margin: 0; }
   .hero { padding: 22px 0 16px; }
   .hero h1 { font-size: 2.35rem; margin-bottom: 8px; }
   .hero .lede { display: none; }
-  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 14px -12px 0; padding: 0 12px 2px; scrollbar-width: none; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 10px -12px 0; padding: 4px 12px; scrollbar-width: none; }
   .filters::-webkit-scrollbar { display: none; }
   .filters + .filters { margin-top: 8px; }
   .filters > * { flex: 0 0 auto; }
