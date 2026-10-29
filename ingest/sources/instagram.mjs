@@ -20,7 +20,7 @@ import {
 
 // A cap on model calls per run (about $0.0003 each). An account with posts left over is fetched again on
 // the next run instead of a day later, before the posts drop out of its 12 newest.
-const MAX_READS_PER_RUN = 60;
+const MAX_READS_PER_RUN = 100;
 const PARALLEL_READS = 4;
 
 // The options are for tests: a stand-in Bright Data client, model reader and image fetcher.
