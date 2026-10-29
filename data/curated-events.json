@@ -544,5 +544,45 @@
     "firstSeenAt": "2026-10-29T08:50:12.363Z",
     "lastSeenAt": "2026-10-29T08:50:12.363Z",
     "lastCheckedAt": "2026-10-29T08:50:12.363Z"
+  },
+  {
+    "id": "80afb4161387a6e4",
+    "slug": "trick-or-treat-run",
+    "title": "Trick or Treat Run",
+    "description": "Dehradun’s craziest Halloween themed fitness party! 🏃♀️🏃♂️💨 Only 40 early bird spots so register ASAP!!!! 🏃♂️ 3/5/7KM Group Run 🏋️♂️ Post run fitness challenges 👟 Reebok Giveaways 🎁 ☕🎧 OG Zen Coffee Rave 🥤Electrolytes 🍫 Protein Bars 📸 Polaroid booth 🎮 Access to indoor games! 🖤 Dress Code: All Black Come for the run, stay for the workout, and finish with a coffee-fuelled rave! ⚡️🎶 REGISTRATION LINK IN BIO!!!!!!!! #running #dehradun #dehradun_diaries #dehradun_official_page parties (morning, run club in dehradun, fitness, parties, running, hyrox)\n\nOrganized by @zen_runclub. How to join: Registration link in bio",
+    "startAt": "2026-11-01T07:00:00+05:30",
+    "venue": {
+      "name": "Legends Sports Bar, Rajpur Road",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/De4GTQ5iU4q",
+        "checkedAt": "2026-10-29T08:50:57.932Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/De4GTQ5iU4q",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:50:57.932Z",
+    "lastSeenAt": "2026-10-29T08:50:57.932Z",
+    "lastCheckedAt": "2026-10-29T08:50:57.932Z"
   }
 ]
