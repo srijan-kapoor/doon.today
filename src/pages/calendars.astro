@@ -45,7 +45,7 @@ const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
         <h2>{group.title}</h2>
         <ul class="feed-list">
           {group.feeds.map((feed) => (
-            <li>
+            <li id={feed.id}>
               <div><span class="feed-name">{feed.label}</span> <small>{plural(feed.count)}</small>{feed.kind === 'collection' && <p class="feed-note">{feed.description}</p>}</div>
               <div class="feed-actions">
                 <a class="primary-link" href={`webcal://doon.today${feed.path}`}>Subscribe</a>

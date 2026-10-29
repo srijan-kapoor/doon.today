@@ -2,6 +2,7 @@
 import type { EventRecord } from '../types/event';
 import { toInstant, eventDayRange } from '../lib/dates.mjs';
 import { priceLabel } from '../lib/sources.mjs';
+import { isCommunityEvent, communityHandle } from '../lib/community.mjs';
 const { event, today } = Astro.props as { event: EventRecord; today: string };
 const range = eventDayRange(event);
 const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(event.startAt);
@@ -14,6 +15,8 @@ const displayTime = !range.days && range.start < today && range.end >= today
   ? `Until ${until.format(new Date(`${range.end}T12:00:00+05:30`))}` : time;
 const price = priceLabel(event.pricing, 'short');
 const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const community = isCommunityEvent(event);
+const handle = community ? communityHandle(event) : '';
 const showArea = event.venue.area && !event.venue.name.toLowerCase().includes(event.venue.area.toLowerCase());
 ---
 <article
@@ -24,15 +27,17 @@ const showArea = event.venue.area && !event.venue.name.toLowerCase().includes(ev
   data-start-date={range.start}
   data-end-date={range.end}
   data-days={range.days?.join(' ')}
+  data-community={community ? 'yes' : undefined}
 >
   <div class="event-time" data-start-time={time}>{displayTime}</div>
   <div class="event-main">
     <a class="event-title" href={`/events/${event.slug}/`}>{event.title}</a>
     <div class="event-meta">{event.venue.name}{showArea ? ` · ${event.venue.area}` : ''}</div>
     <div class="event-tags">
+      {community && <span class="community community-pick">{handle ? `@${handle}` : 'Community'}</span>}
       {event.categories.map((category) => <span>{category}</span>)}
       {event.verificationStatus === 'review' && <span class="community">Source reported</span>}
-      {event.verificationStatus === 'community-reported' && <span class="community">Community reported</span>}
+      {event.verificationStatus === 'community-reported' && <span class="community">{community ? 'Sent in by a visitor' : 'Community reported'}</span>}
     </div>
   </div>
   <div class="event-price">{price}</div>

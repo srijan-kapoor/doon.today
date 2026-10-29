@@ -93,7 +93,7 @@
     "venueName": "Venue TBA",
     "description": "Thrill Zone running event in Dehradun. Check the organizer for route, venue and registration details.",
     "expected": [
-      "Outdoors"
+      "Fitness"
     ]
   },
   {
@@ -118,7 +118,7 @@
     "description": "Meetup event in Dehradun. Check the organizer page for the latest details.",
     "address": "566/6, Bell Road, Society Area, Clement Town, Dehradun, Uttarakhand 248002, India, Dehradun, UK",
     "expected": [
-      "Community"
+      "Meetups"
     ]
   },
   {
@@ -240,7 +240,8 @@
     "venueName": "Venue TBA",
     "description": "Thrill Zone running event in Dehradun. Check the organizer for route, venue and registration details.",
     "expected": [
-      "Outdoors"
+      "Outdoors",
+      "Fitness"
     ]
   }
 ]

@@ -27,6 +27,7 @@ if (container && filters) {
     categories: el.dataset.categories.split(' ').filter(Boolean),
     price: el.dataset.price,
     area: el.dataset.area,
+    community: el.dataset.community === 'yes',
   }));
   const bounds = monthBounds(items, today);
   const initial = parseMonthState(location.search, today, bounds);
@@ -97,8 +98,10 @@ if (container && filters) {
     const matches = eventsOn(items, date, filters.state);
     const { date: label } = dayLabel(date, matches.length);
     heading.textContent = `${label} · ${matches.length === 0 ? 'no events' : matches.length === 1 ? '1 event' : `${matches.length} events`}`;
-    // Events that started on an earlier day come first, then the rest in start order (the page order).
-    const ordered = [...matches.filter((m) => m.range.start < date), ...matches.filter((m) => m.range.start >= date)];
+    // Events that started on an earlier day come first, then the rest in start order (the page order);
+    // within each, community events lead, as in the list.
+    const lead = (list) => [...list.filter((m) => m.community), ...list.filter((m) => !m.community)];
+    const ordered = [...lead(matches.filter((m) => m.range.start < date)), ...lead(matches.filter((m) => m.range.start >= date))];
     list.replaceChildren(...ordered.map((m) => {
       const row = m.el.cloneNode(true);
       row.hidden = false;

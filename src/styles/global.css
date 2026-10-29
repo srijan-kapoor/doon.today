@@ -76,6 +76,14 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .filters + .filters { margin-top: 10px; }
 .filters .filter-count { opacity: .65; font-size: .78rem; margin-left: 2px; }
 .filters button.empty:not(.active) { opacity: .45; }
+.filters button.community-filter { background: var(--community); border-color: var(--community); color: var(--community-ink); font-weight: 600; }
+.filters button.community-filter.active { background: var(--community-ink); border-color: var(--community-ink); color: var(--paper); }
+.community-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-top: 16px; padding: 12px 14px; border: 1px solid var(--warn-line); border-radius: 8px; background: var(--warn-bg); color: var(--warn-ink); font-size: .88rem; }
+.community-note[hidden] { display: none; }
+.community-note p { margin: 0; line-height: 1.45; flex: 1 1 260px; }
+.community-note-actions { display: flex; gap: 18px; align-items: center; }
+.community-note-actions > * { color: var(--community-ink); white-space: nowrap; }
+.link-button { font: inherit; background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-weight: 600; }
 .filter-select { display: inline-flex; align-items: center; gap: 8px; font-size: .88rem; color: var(--muted); }
 .filter-select select { appearance: none; -webkit-appearance: none; font: inherit; font-size: .88rem; color: var(--green); border: 1px solid var(--line); border-radius: 999px; padding: 8px 34px 8px 14px; cursor: pointer;
   background: transparent var(--select-arrow) no-repeat right 14px center / 12px 8px; }
@@ -95,6 +103,7 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .event-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .event-tags span { background: var(--green-soft); color: var(--tag-ink); border-radius: 4px; padding: 3px 7px; font-size: .72rem; }
 .event-tags span.community { background: var(--community); color: var(--community-ink); }
+.event-tags span.community-pick { font-weight: 600; }
 .event-price { font-size: .77rem; color: var(--green); font-weight: 800; letter-spacing: .04em; }
 .detail, .simple-page { padding: 54px 0 80px; }
 .detail .back { display: inline-block; margin-bottom: 38px; color: var(--green); }
