@@ -9,6 +9,9 @@ test('hashtags and bracketed keyword lists are removed, the rest is kept', () =>
   assert.equal(stripHashtags('Meet at 7 am.\n\n[ Sunday nature trail, nature trail in Dehradun, guided nature walk ]'), 'Meet at 7 am.');
   assert.equal(stripHashtags('Room #3, then the #1 spot in town'), 'Room #3, then the #1 spot in town', 'numbers are not hashtags');
   assert.equal(stripHashtags('Bring [gloves] and water'), 'Bring [gloves] and water', 'short brackets stay');
+  assert.equal(stripHashtags('चलो #देहरादून walk'), 'चलो walk', 'a Hindi hashtag goes whole');
+  assert.equal(stripHashtags('Party time 🎉#halloween'), 'Party time 🎉', 'a hashtag right after an emoji');
+  assert.equal(stripHashtags('See https://x.com/page#section and C#'), 'See https://x.com/page#section and C#');
 });
 
 test('the organizer and how-to-join line from an approved lead become fields', () => {
@@ -16,6 +19,11 @@ test('the organizer and how-to-join line from an approved lead become fields', (
   assert.equal(d.text, 'Halloween night of mystery games.');
   assert.equal(d.organizer, '@boardandbanter.ddn');
   assert.equal(d.howToJoin, 'Comment or DM to reserve a table (limited spots)');
+});
+
+test('an organizer name with a full stop stays whole', () => {
+  assert.equal(splitDescription('Talk.\n\nOrganized by Dr. Rao. How to join: DM').organizer, 'Dr. Rao');
+  assert.equal(splitDescription('Talk.\n\nOrganized by St. Joseph\'s Academy.').organizer, "St. Joseph's Academy");
 });
 
 test('a form entry with only one of the two, or none, is handled', () => {

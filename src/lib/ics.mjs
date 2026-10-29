@@ -80,7 +80,7 @@ export function eventLines(e) {
     if (sessions) rows.push(`RDATE:${sessions.slice(1).map((value) => utc(toInstant(value))).join(',')}`);
   }
 
-  const description = [e.description?.trim(), `Details: ${pageUrl}`, e.sources?.[0]?.url ? `Source: ${e.sources[0].url}` : '']
+  const description = [e.description?.trim(), e.organizer && `Organized by ${e.organizer}`, e.howToJoin && `How to join: ${e.howToJoin}`, `Details: ${pageUrl}`, e.sources?.[0]?.url ? `Source: ${e.sources[0].url}` : '']
     .filter(Boolean)
     .join('\n\n');
   rows.push(

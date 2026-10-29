@@ -9,7 +9,7 @@ export const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 export function stripHashtags(text='') {
   return String(text)
     .replace(/\[[^\]\n]{40,}\]/g, ' ')
-    .replace(/(^|\s)#\p{L}[\p{L}\p{N}_]*/gu, '$1')
+    .replace(/(^|[\s\p{Extended_Pictographic}])#\p{L}[\p{L}\p{M}\p{N}_]*/gu, '$1')
     .replace(/[ \t]{2,}/g, ' ')
     .replace(/ +\n/g, '\n')
     .replace(/\n{3,}/g, '\n\n')
