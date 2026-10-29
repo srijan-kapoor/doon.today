@@ -75,7 +75,8 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .filters button { font: inherit; background: transparent; cursor: pointer; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--green); font-size: .88rem; }
 .filters + .filters { margin-top: 10px; }
 .filters .filter-count { opacity: .65; font-size: .78rem; margin-left: 2px; }
-.filters button.empty:not(.active) { opacity: .45; }
+/* A category with nothing in the current view is hidden, so the row only offers what can be picked. */
+.filters button.empty:not(.active) { display: none; }
 .filters button.community-filter { background: var(--community); border-color: var(--community); color: var(--community-ink); font-weight: 600; }
 .filters button.community-filter.active { background: var(--community-ink); border-color: var(--community-ink); color: var(--paper); }
 .community-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; margin-top: 16px; padding: 12px 14px; border: 1px solid var(--warn-line); border-radius: 8px; background: var(--warn-bg); color: var(--warn-ink); font-size: .88rem; }
@@ -127,7 +128,17 @@ dd { margin: 0; }
   nav { gap: 12px; font-size: .82rem; }
   .nav-links { display: none; }
   .nav-menu { display: block; }
-  .hero { padding-top: 38px; }
+  /* Keep the first events on the first screen: a tighter heading, and each filter group on one row
+     that scrolls sideways instead of wrapping into a wall of buttons. */
+  .hero { padding: 22px 0 16px; }
+  .hero h1 { font-size: 2.35rem; margin-bottom: 8px; }
+  .hero .lede { display: none; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 14px -12px 0; padding: 0 12px 2px; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters + .filters { margin-top: 8px; }
+  .filters > * { flex: 0 0 auto; }
+  .curated { padding-top: 16px; }
+  .section-heading h2 { font-size: 1.6rem; }
   .event-row { grid-template-columns: 72px 1fr; gap: 10px; }
   .event-price { grid-column: 2; }
   .calendar-grid { grid-template-columns: 1fr; }
