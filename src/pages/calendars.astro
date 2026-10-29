@@ -31,6 +31,7 @@ const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
       </ul>
     </section>
 
+    {categories.length > 0 && (
     <section class="feed-group">
       <h2>By category</h2>
       <ul class="feed-grid">
@@ -45,6 +46,7 @@ const plural = (n: number) => `${n} event${n === 1 ? '' : 's'}`;
         ))}
       </ul>
     </section>
+    )}
 
     <details class="feed-help">
       <summary>How to subscribe</summary>
