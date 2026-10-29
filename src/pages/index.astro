@@ -23,7 +23,7 @@ const areaOptions = tally(published.flatMap((e) => (e.venue.area ? [e.venue.area
 const communityCount = published.filter(isCommunityEvent).length;
 const showHealthBanner = ingestStatus.health === 'degraded' && stale.length > 0;
 // Identifies which sources the banner is about, so a dismissal only lasts until that set changes.
-const healthKey = stale.length > 0 ? stale.map((s) => s.name).sort().join(',') : 'degraded';
+const healthKey = stale.map((s) => s.name).sort().join(',');
 const staleNames = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }).format(stale.map((s) => s.label));
 const lastUpdated = stale.filter((s) => s.lastSuccess !== 'not recorded yet').map((s) => `${s.label} last updated ${s.lastSuccess}.`).join(' ');
 const healthMessage = stale.length > 0

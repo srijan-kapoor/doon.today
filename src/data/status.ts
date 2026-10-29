@@ -27,6 +27,9 @@ export const ingestStatus = rawStatus as {
 const LABELS: Record<string, string> = { district: 'District' };
 const when = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kolkata' });
 
+/** When the event data was last refreshed, for the footer ("29 Oct, 1:59 pm"); empty if unknown. */
+export const updatedLabel = () => { const t = Date.parse(ingestStatus.ranAt); return Number.isFinite(t) ? when.format(t) : ''; };
+
 // A stale source only gets a banner for visitors once it has been days, not hours: until then the saved
 // events are still close to right, and the health check already tells the site owner.
 export const VISITOR_BANNER_HOURS = 72;
