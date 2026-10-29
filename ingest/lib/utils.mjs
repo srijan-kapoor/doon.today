@@ -4,6 +4,17 @@ export const IST = '+05:30';
 export const nowIso = () => new Date().toISOString();
 export const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
+// Hashtags, and the bracketed keyword lists some groups add for search ("[ Nature trail, guided walk, ... ]"),
+// are for Instagram's search, not for readers.
+export function stripHashtags(text='') {
+  return String(text)
+    .replace(/\[[^\]\n]{40,}\]/g, ' ')
+    .replace(/(^|\s)#\p{L}[\p{L}\p{N}_]*/gu, '$1')
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/ +\n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
 export function slugify(input='') {
   return input.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 90);
 }
