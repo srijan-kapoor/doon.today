@@ -584,5 +584,46 @@
     "firstSeenAt": "2026-10-29T08:50:57.932Z",
     "lastSeenAt": "2026-10-29T08:50:57.932Z",
     "lastCheckedAt": "2026-10-29T08:50:57.932Z"
+  },
+  {
+    "id": "76e962ae8a125e01",
+    "slug": "halloween-night",
+    "title": "Halloween Night",
+    "description": "Join us this Saturday from 7 PM – 11 PM at Board & Banter for a spine-chilling Halloween Night! Step into the shadows for a night of secrets, deduction, and tabletop thrills. 🔍 Mystery Games – Hosted by Ashish 🩸 Blood on the Clocktower – Hosted by Shaurya Will you uncover the truth, or will the demons win? Gather your crew, dress up if you dare, and let the games begin! 📅 When: Saturday | 7:00 PM – 11:00 PM 📍 Where: Board & Banter Mothrowala Limited spots available—drop a comment or DM us to reserve your table! #BoardAndBanter #HalloweenNight #BloodOnTheClocktower #DehradunCafes #boardgamegeek\n\nOrganized by @boardandbanter.ddn. How to join: Comment or DM to reserve a table (limited spots)",
+    "startAt": "2026-10-31T19:00:00+05:30",
+    "endAt": "2026-10-31T23:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter, Mothrowala",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfEdNALP4Nz",
+        "checkedAt": "2026-10-29T08:51:16.134Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfEdNALP4Nz",
+        "checkedAt": "2026-10-29T08:24:24.456Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-29T08:51:16.134Z",
+    "lastSeenAt": "2026-10-29T08:51:16.134Z",
+    "lastCheckedAt": "2026-10-29T08:51:16.134Z"
   }
 ]
