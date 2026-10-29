@@ -26,7 +26,7 @@ npm run build
 
 - Add or update a test for the behavior you change. Tests live in `tests/` and run with `node --test`.
 - Keep a pull request to one change, and say in its description what was wrong, what you changed and how you checked it.
-- If visitors would notice the change, add a line for it to `src/data/changelog.json` (newest first; tags `New`, `Improved`, `Fixed`, `Source`, `Removed`) and fill in the `Changelog:` line in the pull request template. Write `Changelog: none` for internal changes.
+- If visitors would notice the change, add a line for it to `src/data/changelog.json` (newest first; tags `New`, `Improved`, `Fixed`, `Source`, `Removed`) and fill in the `Changelog:` line in the pull request template. Write `Changelog: none` for internal changes. The Changelog check fails a pull request that does neither.
 - Dates are Dehradun time (IST). A test that depends on the clock or the time zone should fix both: mock the clock with `t.mock.timers`, and run the suite with another time zone too (`TZ=America/Los_Angeles npm test`).
 
 ## Files you shouldn't edit
