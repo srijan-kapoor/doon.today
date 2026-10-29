@@ -1,7 +1,14 @@
 {
-  "ranAt": "2026-10-29T08:29:26.355Z",
+  "ranAt": "2026-10-29T15:16:35.492Z",
   "ran": [
-    "district"
+    "allevents",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "reddit",
+    "instagram"
   ],
   "sources": {
     "district": {
@@ -32,8 +39,8 @@
         "timesFound": 26,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -45,8 +52,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -57,8 +64,8 @@
         "cards": 8,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -69,8 +76,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -78,11 +85,11 @@
       "events": 2,
       "review": 0,
       "diagnostics": {
-        "candidates": 4,
+        "candidates": 5,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -92,8 +99,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -105,8 +112,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -114,32 +121,32 @@
       "events": 0,
       "review": 8,
       "diagnostics": {
-        "handles": 14,
-        "collected": 14,
-        "started": 0,
+        "handles": 15,
+        "collected": 0,
+        "started": 1,
         "abandoned": 0,
-        "read": 95,
-        "announcements": 13,
-        "alreadyListed": 2,
+        "read": 0,
+        "announcements": 0,
+        "alreadyListed": 0,
         "readErrors": 0,
         "recoverErrors": 0,
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 168620,
-          "output": 10770,
+          "input": 0,
+          "output": 0,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-10-29T08:23:56.861Z",
-      "lastSuccessAt": "2026-10-29T08:23:56.861Z",
+      "lastAttemptAt": "2026-10-29T15:16:35.492Z",
+      "lastSuccessAt": "2026-10-29T15:16:35.492Z",
       "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 55,
-    "review": 8,
-    "dropped": 1
+    "published": 63,
+    "review": 0,
+    "dropped": 0
   },
   "health": "healthy",
   "primarySourcesAvailable": [
@@ -151,7 +158,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-10-29T08:29:26.355Z",
-      "ageHours": 0,
+      "ageHours": 6.8,
       "fresh": true
     }
   }
