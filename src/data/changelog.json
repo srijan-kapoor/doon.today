@@ -1,4 +1,5 @@
 [
+  { "date": "2026-10-29", "tag": "Improved", "text": "A shorter Calendars page: everything, community picks and free events first, then a category grid. Existing subscriptions keep working." },
   { "date": "2026-10-29", "tag": "Improved", "text": "On phones, events show on the first screen: the filters sit in rows you can swipe, and categories with nothing on are hidden." },
   { "date": "2026-10-29", "tag": "Improved", "text": "Events from local groups read more cleanly: no hashtags, and the organizer and how to join are shown on their own lines." },
   { "date": "2026-10-29", "tag": "Improved", "text": "When an event doesn't list a price, its page says so plainly and links to where it was posted." },
