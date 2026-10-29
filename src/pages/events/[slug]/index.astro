@@ -60,7 +60,7 @@ const detailsLabel = detailsLinkLabel(primarySource);
       <div><dt>Where</dt><dd>{event.venue.name}{address ? <><br />{address}</> : null}{event.venue.area && !`${event.venue.name} ${address ?? ''}`.toLowerCase().includes(event.venue.area.toLowerCase()) ? <><br />{event.venue.area}</> : null}</dd></div>
       {event.organizer && <div><dt>Organizer</dt><dd>{event.organizer}</dd></div>}
       {event.howToJoin && <div><dt>How to join</dt><dd>{event.howToJoin}</dd></div>}
-      <div><dt>Price</dt><dd>{priceLabel(event.pricing) || 'Check source'}</dd></div>
+      <div><dt>Price</dt><dd>{priceLabel(event.pricing) || (detailsLabel && primarySource?.url ? <>Not listed. <a href={primarySource.url} target="_blank" rel="noreferrer">{detailsLabel}</a></> : 'Not listed.')}</dd></div>
     </dl>
 
     {event.description && <p class="event-description">{event.description}</p>}
