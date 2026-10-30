@@ -109,5 +109,7 @@ const updated = updatedLabel();
       <h2 id="feedback-title">Feedback</h2>
       <FeedbackForm dialog />
     </dialog>
+    <!-- Empty until a message is sent, and present from the start so screen readers announce it. -->
+    <div class="toast" id="feedback-toast" role="status" data-hidden><span data-toast-text></span><button type="button" class="toast-dismiss" aria-label="Dismiss" data-toast-dismiss hidden>×</button></div>
   </body>
 </html>

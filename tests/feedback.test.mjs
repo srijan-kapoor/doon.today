@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { JSDOM } from 'jsdom';
 import { eventAbout, feedbackBody, feedbackProblem } from '../src/lib/feedback.mjs';
-import { initFeedback } from '../src/scripts/feedback.mjs';
+import { initFeedback, TOAST_MS } from '../src/scripts/feedback.mjs';
 import { dispatchLead } from '../ingest/lib/dispatch-lead.mjs';
 
 test('a message needs a vote or some text, and a filled honeypot is spam', () => {
@@ -37,7 +37,7 @@ function page(t, respond = { ok: true }) {
       <fieldset data-feedback-vote><input type="radio" name="vote" value="like"><input type="radio" name="vote" value="dislike"></fieldset>
       <span data-feedback-prompt></span><textarea name="message"></textarea><input name="email">
       <p data-feedback-status></p><button type="submit">Send</button><button type="button" data-feedback-close>Cancel</button>
-    </form></dialog></body>`, { url: 'https://doon.today/events/jazz/?utm_source=x' });
+    </form></dialog><div id="feedback-toast" data-hidden><span data-toast-text></span><button data-toast-dismiss hidden>×</button></div></body>`, { url: 'https://doon.today/events/jazz/?utm_source=x' });
   t.after(() => dom.window.close());
   const { window } = dom;
   const { document } = window;
@@ -69,7 +69,10 @@ test('an event report opens the form about that event, without the vote', async 
   assert.equal(body.get('form-name'), 'feedback');
   assert.equal(body.get('about'), 'Jazz (abc)');
   assert.equal(body.get('message'), 'It starts at 8, not 7');
-  assert.equal($('[data-feedback-status]').textContent, 'Thanks, we read every message.');
+  assert.equal(dialog.open, false, 'the dialog closes on success');
+  assert.equal($('#feedback-toast').dataset.hidden, undefined);
+  assert.equal($('[data-toast-text]').textContent, 'Thanks, we read every message.');
+  assert.equal($('[data-feedback-status]').textContent, '');
 });
 
 test('general feedback shows the vote, needs something to send, and reports a failed send', async (t) => {
@@ -86,6 +89,26 @@ test('general feedback shows the vote, needs something to send, and reports a fa
   assert.equal(sent.length, 1);
   assert.match($('[data-feedback-status]').textContent, /Couldn't send/);
   assert.equal($('[data-feedback-status]').dataset.state, 'error');
+  assert.equal(dialog.open, true, 'a failed send keeps the message');
+  assert.equal($('#feedback-toast').dataset.hidden, '');
   $('[data-feedback-close]').click();
   assert.equal(dialog.open, false);
+});
+
+test('the thanks toast hides after a while, but not while pointed at, and can be dismissed', async (t) => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const { $, submit, window } = page(t);
+  $('#general').click();
+  $('[value="like"]').checked = true;
+  submit();
+  await Promise.resolve(); await Promise.resolve();
+  const toast = $('#feedback-toast');
+  assert.equal(toast.dataset.hidden, undefined);
+  toast.dispatchEvent(new window.Event('pointerenter'));
+  t.mock.timers.tick(TOAST_MS);
+  assert.equal(toast.dataset.hidden, undefined, 'held while pointed at');
+  toast.dispatchEvent(new window.Event('pointerleave'));
+  t.mock.timers.tick(TOAST_MS);
+  assert.equal(toast.dataset.hidden, '');
+  assert.equal($('[data-toast-dismiss]').hidden, true);
 });

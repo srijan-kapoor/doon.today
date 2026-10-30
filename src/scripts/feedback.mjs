@@ -5,6 +5,8 @@ import { feedbackBody, feedbackProblem } from '../lib/feedback.mjs';
  * data-about (an event's "Report a problem") fills in what it is about and hides the 👍/👎 question.
  * Without JavaScript the links go to /feedback/, which posts the same form.
  */
+export const TOAST_MS = 6000;
+
 export function initFeedback(document, window) {
   const dialog = document.querySelector('#feedback-dialog');
   if (!dialog) return;
@@ -14,6 +16,23 @@ export function initFeedback(document, window) {
   const send = form.querySelector('button[type="submit"]');
   let opener = null;
   const say = (text, error = false) => { status.textContent = text; status.dataset.state = error ? 'error' : ''; };
+  const toast = document.querySelector('#feedback-toast');
+  let toastTimer;
+  let toastHeld = false;
+  const dismiss = toast.querySelector('[data-toast-dismiss]');
+  const hideToast = () => { window.clearTimeout(toastTimer); toast.dataset.hidden = ''; dismiss.hidden = true; toast.querySelector('[data-toast-text]').textContent = ''; };
+  const startToastTimer = () => { window.clearTimeout(toastTimer); if (!toastHeld) toastTimer = window.setTimeout(hideToast, TOAST_MS); };
+  // The thanks shows outside the dialog, which closes. It stays while pointed at or focused.
+  function showToast(text) {
+    toast.querySelector('[data-toast-text]').textContent = text;
+    delete toast.dataset.hidden;
+    dismiss.hidden = false;
+    startToastTimer();
+  }
+  for (const [on, held] of [['pointerenter', true], ['pointerleave', false], ['focusin', true], ['focusout', false]]) {
+    toast.addEventListener(on, () => { toastHeld = held; if (held) window.clearTimeout(toastTimer); else startToastTimer(); });
+  }
+  dismiss.addEventListener('click', () => { hideToast(); opener?.focus({ preventScroll: true }); });
 
   function open(link) {
     opener = link;
@@ -58,7 +77,9 @@ export function initFeedback(document, window) {
       const res = await window.fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: feedbackBody(fields) });
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
-      say('Thanks, we read every message.');
+      say('');
+      close();
+      showToast('Thanks, we read every message.');
     } catch {
       say("Couldn't send that. Check your connection and try again.", true);
     } finally {
