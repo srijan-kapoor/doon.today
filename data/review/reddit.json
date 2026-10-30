@@ -1,1 +1,90 @@
-[]
+[
+  {
+    "id": "9d60a3621e182084",
+    "slug": "melophile-session-02-daft-punk-s-random-access-memories",
+    "title": "Melophile Session 02: Daft Punk's Random Access Memories",
+    "description": "🎧 MELOPHILE — SESSION 02\n\nDehradun, let's listen to some music. 🪩\n\nThis time, we're getting together for Daft Punk's Random Access Memories, one album, played from start to finish. No skipping. No distractions. Just music.\n\nAnd when the album ends? It's your turn. 🎶\n\nWe'll take turns playing songs we've brought along, discovering new music, sharing favourites, and meeting people who love music as much as we do.\n\n🎧 Meet people with similar music taste\n🎸 Connect with fellow musicians\n💿 Discover music beyond your usual playlists\n\n📅 Sunday, 1 November\n🕟 4:30 PM\n📍 Dehradun\n\nYou don't need to be a musician, Just bring your love for music and a few songs you'd like others to hear.\n\nWant to join? 🔗 Join our WhatsApp group through the link in our bio.\n\nOne album. Your music. Our music. Ne",
+    "startAt": "2026-11-01T16:30:00+05:30",
+    "venue": {
+      "name": "See Instagram post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Join the WhatsApp group via the link in bio, or DM / comment to join",
+    "organizer": "melophile.ddn",
+    "posts": [
+      "https://www.instagram.com/p/DfEnhWaJu9w"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfEnhWaJu9w",
+        "checkedAt": "2026-10-30T15:05:56.192Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-10-30T15:05:56.192Z",
+    "lastSeenAt": "2026-10-30T15:05:56.192Z",
+    "lastCheckedAt": "2026-10-30T15:05:56.192Z"
+  },
+  {
+    "id": "c4824b75cba54239",
+    "slug": "deathtoll-hillbomb",
+    "title": "DEATHTOLL HILLBOMB",
+    "description": "DEATHTOLL HILLBOMB\n\n• Date: Saturday, Oct 31\n• Time: 4:00 PM Sharp\n• Meet: Mussoorie Diversion (opposite Sosuru)\n\nPlan:\n1. Park at Diversion\n2. Head up to Old Rajpur Market (walk/Vikram/lift)\n3. Downhill bomb back to Diversion\n4. Game of SKATE back at Sosuru\n\nNotes:\n1. No permits. Open roads. Bomb at your own risk.\n2. Spooky fits, face paint, or costumes welcome.\n3. Non-skaters welcome to pull up and watch.",
+    "startAt": "2026-10-31T16:00:00+05:30",
+    "venue": {
+      "name": "Mussoorie Diversion (opposite Sosuru)",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Walk-in at Mussoorie Diversion, opposite Sosuru; non-skaters welcome to watch",
+    "organizer": "dooncult",
+    "posts": [
+      "https://www.instagram.com/p/DfFYl6Eyz-R"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfFYl6Eyz-R",
+        "checkedAt": "2026-10-30T15:05:56.192Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-10-30T15:05:56.192Z",
+    "lastSeenAt": "2026-10-30T15:05:56.192Z",
+    "lastCheckedAt": "2026-10-30T15:05:56.192Z"
+  }
+]
