@@ -625,5 +625,46 @@
     "firstSeenAt": "2026-10-29T08:51:16.134Z",
     "lastSeenAt": "2026-10-29T08:51:16.134Z",
     "lastCheckedAt": "2026-10-29T08:51:16.134Z"
+  },
+  {
+    "id": "d4d9fc92cd652a4a",
+    "slug": "deathtoll-hillbomb",
+    "title": "DEATHTOLL HILLBOMB",
+    "description": "DEATHTOLL HILLBOMB • Date: Saturday, Oct 31 • Time: 4:00 PM Sharp • Meet: Mussoorie Diversion (opposite Sosuru) Plan: 1. Park at Diversion 2. Head up to Old Rajpur Market (walk/Vikram/lift) 3. Downhill bomb back to Diversion 4. Game of SKATE back at Sosuru Notes: 1. No permits. Open roads. Bomb at your own risk. 2. Spooky fits, face paint, or costumes welcome. 3. Non-skaters welcome to pull up and watch.\n\nOrganized by @dooncult. How to join: Walk-in at Mussoorie Diversion, opposite Sosuru; non-skaters welcome to watch",
+    "startAt": "2026-10-31T16:00:00+05:30",
+    "venue": {
+      "name": "Mussoorie Diversion (opposite Sosuru)",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfFYl6Eyz-R",
+        "checkedAt": "2026-10-30T18:13:40.629Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfFYl6Eyz-R",
+        "checkedAt": "2026-10-30T15:05:56.192Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-30T18:13:40.629Z",
+    "lastSeenAt": "2026-10-30T18:13:40.629Z",
+    "lastCheckedAt": "2026-10-30T18:13:40.629Z"
   }
 ]
