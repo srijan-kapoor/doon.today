@@ -85,11 +85,12 @@ test('sessions that do not begin where the listing does, or run past its end, ar
   assert.equal('occurrences' in (await fetchDistrict()).events[0],false);
 });
 
-test('single-day events cost no extra page fetch, and other events\' sessions on the page are ignored',async t=>{
+test('single-day events cost no extra page fetch for sessions, and other events\' sessions on the page are ignored',async t=>{
   const calls=[];
-  const single={...gharListing,name:'Doon Music Night',url:'https://www.district.in/events/doon-music-night',startDate:'2026-11-01T12:30:00.000Z',endDate:'2026-11-01T15:30:00.000Z'};
+  const described={description:'Listed with a description, so its page is only read for sessions.'};
+  const single={...gharListing,...described,name:'Doon Music Night',url:'https://www.district.in/events/doon-music-night',startDate:'2026-11-01T12:30:00.000Z',endDate:'2026-11-01T15:30:00.000Z'};
   const page=`${gharPage('2026-10-31','2026-11-22')}${sessionLd('2026-10-31T10:30:00.000Z','2026-10-31T12:30:00.000Z','https://www.district.in/events/other')}`;
-  await withFetch(t,async url=>{calls.push(url);return response(url===listingUrl?listingWith(single,gharListing):page,200,url)});
+  await withFetch(t,async url=>{calls.push(url);return response(url===listingUrl?listingWith(single,{...gharListing,...described}):page,200,url)});
   const {events}=await fetchDistrict();
   assert.deepEqual(calls,[listingUrl,gharUrl]);
   assert.equal(events.find(e=>e.title==='Doon Music Night').occurrences,undefined);
@@ -108,4 +109,36 @@ test('a festival listed as one Event for the whole run plus one per day is a run
   const page=`<html>${[['2026-11-27T04:30:00.000Z','2026-11-29T15:30:00.000Z'],['2026-11-27T04:30:00.000Z','2026-11-27T15:30:00.000Z'],['2026-11-28T04:30:00.000Z','2026-11-28T15:30:00.000Z']].map(([s,e])=>sessionLd(s,e,url)).join('')}</html>`;
   await withFetch(t,async u=>response(u===listingUrl?listingWith(listing):page,200,u));
   assert.equal('occurrences' in (await fetchDistrict()).events[0],false);
+});
+
+const ownPage=(url,description,startDate='2026-11-01T12:30:00.000Z')=>`<html><script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'Event',name:'Doon Music Night',url,startDate,description})}</script></html>`;
+const musicUrl='https://www.district.in/events/doon-music-night';
+const music={...gharListing,name:'Doon Music Night',url:musicUrl,startDate:'2026-11-01T12:30:00.000Z',endDate:'2026-11-01T15:30:00.000Z'};
+
+test('an event the listing gives no description for gets it from its own page',async t=>{
+  await withFetch(t,async url=>response(url===listingUrl?listingWith(music):ownPage(musicUrl,'An evening of live music.<br>Doors open at six &amp; food is served.Dress warm!Bring a friend. Visit U.S.A. fans.'),200,url));
+  const {events,diagnostics}=await fetchDistrict();
+  assert.equal(events[0].description,'An evening of live music. Doors open at six & food is served. Dress warm! Bring a friend. Visit U.S.A. fans.','paragraphs the page ran together get their space back');
+  assert.equal(diagnostics.withDescriptions,1);
+});
+
+test('a page that cannot be read, or has no description for this event, leaves the listing as it was',async t=>{
+  await withFetch(t,async url=>url===listingUrl?response(listingWith(music),200,url):response('blocked',403,url));
+  const blocked=await fetchDistrict();
+  assert.equal(blocked.events[0].description,'');
+  const other=async url=>response(url===listingUrl?listingWith(music):ownPage('https://www.district.in/events/someone-else','Not this event.'),200,url);
+  await withFetch(t,other);
+  const {events,diagnostics}=await fetchDistrict();
+  assert.equal(events[0].description,'');
+  assert.equal(diagnostics.withDescriptions,0);
+});
+
+test('an event on specific dates has its page fetched once for both its sessions and its description',async t=>{
+  const calls=[];
+  const page=`${gharPage('2026-10-31','2026-11-22')}${ownPage(gharUrl,'Open mic for words.','2026-10-31T10:30:00.000Z')}`;
+  await withFetch(t,async url=>{calls.push(url);return response(url===listingUrl?listingWith(gharListing):page,200,url)});
+  const {events}=await fetchDistrict();
+  assert.deepEqual(calls,[listingUrl,gharUrl]);
+  assert.equal(events[0].description,'Open mic for words.');
+  assert.equal(events[0].occurrences.length,3,'the page\'s own Event does not count as another session');
 });
