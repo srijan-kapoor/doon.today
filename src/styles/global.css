@@ -74,7 +74,7 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
 .filters button { font: inherit; background: transparent; cursor: pointer; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--green); font-size: .88rem; }
 .filters + .filters { margin-top: 10px; }
-.filters .filter-count { opacity: .65; font-size: .78rem; margin-left: 2px; }
+.filters .filter-count { font-size: .78rem; margin-left: 2px; }
 /* A category with nothing in the current view is hidden, so the row only offers what can be picked. */
 .filters button.empty:not(.active) { display: none; }
 .filters button.community-filter { background: var(--community); border-color: var(--community); color: var(--community-ink); font-weight: 600; }

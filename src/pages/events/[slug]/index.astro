@@ -4,7 +4,7 @@ import { events } from '../../../data/events';
 import { ingestStatus } from '../../../data/status';
 import { googleDateRange, toInstant } from '../../../lib/ics.mjs';
 import { occurrencesOf, istTime } from '../../../lib/dates.mjs';
-import { eventJsonLd, eventSummary } from '../../../lib/seo.mjs';
+import { eventJsonLd, eventPageTitle, eventSummary } from '../../../lib/seo.mjs';
 import { sourceLabel, detailsLinkLabel, priceLabel } from '../../../lib/sources.mjs';
 import { eventAbout } from '../../../lib/feedback.mjs';
 import { descriptionParagraphs } from '../../../lib/details.mjs';
@@ -47,7 +47,7 @@ const primarySource = event.sources?.[0];
 const detailsLabel = detailsLinkLabel(primarySource);
 ---
 <BaseLayout
-  title={`${event.title} — doon.today`}
+  title={eventPageTitle(event.title)}
   description={summary}
   type="article"
   jsonLd={eventJsonLd(event, { pageUrl, imageUrl })}
