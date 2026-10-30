@@ -6,7 +6,7 @@ import { googleDateRange, toInstant } from '../../../lib/ics.mjs';
 import { occurrencesOf } from '../../../lib/dates.mjs';
 import { eventJsonLd, eventSummary } from '../../../lib/seo.mjs';
 import { sourceLabel, detailsLinkLabel, priceLabel } from '../../../lib/sources.mjs';
-import { reportEventUrl } from '../../../lib/report.mjs';
+import { eventAbout } from '../../../lib/feedback.mjs';
 import { descriptionParagraphs } from '../../../lib/details.mjs';
 
 export function getStaticPaths() {
@@ -80,7 +80,7 @@ const detailsLabel = detailsLinkLabel(primarySource);
       {sourceUnavailable && <p class="notice">This source was unavailable during the latest data refresh. These details were last checked {checked.format(new Date(event.lastCheckedAt))}; confirm them with the source before travelling.</p>}
       {event.verificationStatus === 'review' && <p class="notice">Taken from a listing site and not checked by hand yet. Check with the organizer before you go.</p>}
       {event.verificationStatus === 'community-reported' && <p class="notice">Sent in by a visitor rather than the organizer. Check with the organizer before you go.</p>}
-      <p class="report"><a href={reportEventUrl(event, pageUrl)} target="_blank" rel="noreferrer">Report a problem with this event ↗</a></p>
+      <p class="report"><a href="/feedback/" data-feedback data-about={eventAbout(event)} data-about-label={event.title}>Report a problem with this event</a></p>
     </div>
   </article>
 </BaseLayout>
