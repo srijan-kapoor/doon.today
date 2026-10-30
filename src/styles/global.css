@@ -147,10 +147,21 @@ dd { margin: 0; }
   .filters > * { flex: 0 0 auto; }
   .curated { padding-top: 16px; }
   .section-heading h2 { font-size: 1.6rem; }
-  .event-row { grid-template-columns: 72px 1fr; gap: 10px; }
-  .festival-summary { grid-template-columns: 72px 1fr auto; gap: 10px; }
+  /* Tighter rows: the venue on one line, at most two tags, and the price at the end of the tag row.
+     .event-main's children join the row's grid so the price can share the tags' line. */
+  .event-row { grid-template-columns: 72px 1fr auto; gap: 0 10px; padding: 13px 0; }
+  .event-row .event-main { display: contents; }
+  .event-row .event-time { grid-row: 1; }
+  .event-row .event-title, .event-row .event-meta { grid-column: 2 / -1; }
+  .event-row .event-title { margin-bottom: 3px; }
+  .event-row .event-meta { margin-bottom: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .event-row .event-tags { grid-column: 2; flex-wrap: nowrap; overflow: hidden; min-width: 0; }
+  /* The Month view's "Until …" tag always shows. */
+  .event-tags span:not(.until):nth-child(n + 3) { display: none; }
+  .event-tags span { flex: none; }
+  .event-row .event-price { grid-column: 3; grid-row: 3; align-self: center; }
+  .festival-summary { grid-template-columns: 72px 1fr auto; gap: 10px; padding: 13px 0; }
   .event-title { font-size: 1.125rem; }
-  .event-price { grid-column: 2; }
   .calendar-grid { grid-template-columns: 1fr; }
 }
 
