@@ -6,6 +6,7 @@ const { dialog = false } = Astro.props;
 ---
 <form class="submit-form feedback-form" name="feedback" method="POST" action="/feedback/thanks/" data-netlify="true" netlify-honeypot="bot-field" data-feedback-form>
   <input type="hidden" name="form-name" value="feedback" />
+  <input type="hidden" name="kind" value="feedback" />
   <input type="hidden" name="page" value="" />
   <input type="hidden" name="about" value="" />
   <p class="trap" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>

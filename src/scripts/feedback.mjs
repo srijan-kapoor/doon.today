@@ -13,13 +13,14 @@ export function initFeedback(document, window) {
   const about = form.querySelector('[data-feedback-about]');
   const send = form.querySelector('button[type="submit"]');
   let opener = null;
+  const say = (text, error = false) => { status.textContent = text; status.dataset.state = error ? 'error' : ''; };
 
   function open(link) {
     opener = link;
     form.reset();
-    status.textContent = '';
+    say('');
     send.disabled = false;
-    form.elements.page.value = window.location.href;
+    form.elements.page.value = window.location.origin + window.location.pathname;
     form.elements.about.value = link.dataset.about || '';
     about.hidden = !link.dataset.about;
     about.textContent = link.dataset.aboutLabel ? `About: ${link.dataset.aboutLabel}` : '';
@@ -50,16 +51,16 @@ export function initFeedback(document, window) {
     const fields = Object.fromEntries(new window.FormData(form));
     const problem = feedbackProblem(fields);
     if (problem === 'spam') { close(); return; }
-    if (problem) { status.textContent = problem; return; }
+    if (problem) { say(problem, true); return; }
     send.disabled = true;
-    status.textContent = 'Sending…';
+    say('Sending…');
     try {
       const res = await window.fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: feedbackBody(fields) });
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
-      status.textContent = 'Thanks, we read every message.';
+      say('Thanks, we read every message.');
     } catch {
-      status.textContent = "Couldn't send that. Check your connection and try again.";
+      say("Couldn't send that. Check your connection and try again.", true);
     } finally {
       send.disabled = false;
     }

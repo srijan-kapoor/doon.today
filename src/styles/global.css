@@ -232,7 +232,7 @@ dd { margin: 0; }
 .feedback-form .feedback-vote label:has(input:checked) { background: var(--green-soft); border-color: var(--green); }
 .feedback-about { margin: 0; color: var(--muted); font-size: .9rem; }
 .feedback-status { margin: 0; color: var(--green); font-size: .9rem; }
-.feedback-status:empty { display: none; }
+.feedback-status[data-state="error"] { color: var(--warn-ink); }
 .feedback-actions { display: flex; align-items: center; gap: 18px; }
 
 /* List | Month view */

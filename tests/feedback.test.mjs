@@ -24,7 +24,7 @@ test('the body names the feedback form and carries the page and event', () => {
 test('feedback never opens a lead issue', async () => {
   const fetchImpl = async () => { throw new Error('should not be called'); };
   assert.equal(await dispatchLead({ 'form-name': 'feedback', message: 'hi' }, { fetchImpl, token: 't' }), 'other form');
-  assert.equal(await dispatchLead({ message: 'hi', vote: 'like' }, { fetchImpl, token: 't' }), 'not a usable entry', 'even without a form name');
+  assert.equal(await dispatchLead({ kind: 'feedback', title: 'x', date: '2026-11-01', venue: 'y' }, { fetchImpl, token: 't' }), 'other form', 'even without a form name');
 });
 
 function page(t, respond = { ok: true }) {
@@ -37,7 +37,7 @@ function page(t, respond = { ok: true }) {
       <fieldset data-feedback-vote><input type="radio" name="vote" value="like"><input type="radio" name="vote" value="dislike"></fieldset>
       <span data-feedback-prompt></span><textarea name="message"></textarea><input name="email">
       <p data-feedback-status></p><button type="submit">Send</button><button type="button" data-feedback-close>Cancel</button>
-    </form></dialog></body>`, { url: 'https://doon.today/events/jazz/' });
+    </form></dialog></body>`, { url: 'https://doon.today/events/jazz/?utm_source=x' });
   t.after(() => dom.window.close());
   const { window } = dom;
   const { document } = window;
@@ -57,7 +57,7 @@ test('an event report opens the form about that event, without the vote', async 
   $('#report').click();
   assert.equal(dialog.open, true);
   assert.equal($('[name="about"]').value, 'Jazz (abc)');
-  assert.equal($('[name="page"]').value, 'https://doon.today/events/jazz/');
+  assert.equal($('[name="page"]').value, 'https://doon.today/events/jazz/', 'no query string');
   assert.equal($('[data-feedback-vote]').hidden, true);
   assert.equal($('[data-feedback-about]').textContent, 'About: Jazz');
   $('[name="message"]').value = 'It starts at 8, not 7';
@@ -85,6 +85,7 @@ test('general feedback shows the vote, needs something to send, and reports a fa
   await new Promise((r) => setTimeout(r));
   assert.equal(sent.length, 1);
   assert.match($('[data-feedback-status]').textContent, /Couldn't send/);
+  assert.equal($('[data-feedback-status]').dataset.state, 'error');
   $('[data-feedback-close]').click();
   assert.equal(dialog.open, false);
 });
