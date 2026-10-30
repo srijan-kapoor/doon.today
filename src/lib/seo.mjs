@@ -9,6 +9,13 @@ const schemaDate = (value) => (DATE_ONLY.test(value) || HAS_ZONE.test(value) ? v
 
 const clip = (text, max) => (text.length <= max ? text : `${text.slice(0, max - 1).replace(/\s+\S*$/, '')}…`);
 
+/** Cuts at the end of the last whole sentence that fits, keeping all of the first `keep` characters and part of what follows; otherwise at a word, with an ellipsis. */
+const clipSentence = (text, max, keep) => {
+  if (text.length <= max) return text;
+  const ends = [...text.slice(0, max).matchAll(/[.!?](?=\s|$)/g)].map((m) => m.index + 1).filter((end) => end > keep);
+  return ends.length ? text.slice(0, ends.at(-1)) : clip(text, max);
+};
+
 const SITE_SUFFIX = ' — doon.today';
 
 /** The page title, with the event name shortened so the whole title fits what search results show (about 60 characters). */
@@ -60,7 +67,7 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
 const summaryDay = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const summaryDayTime = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
 
-/** One-line summary used as the page and link-preview description, short enough that search results show all of it. */
+/** One-line summary used as the page and link-preview description. When and where come first, so a search result that cuts the end still shows them. */
 export function eventSummary(e) {
   const startAt = nextOccurrence(e);
   const dateOnly = DATE_ONLY.test(startAt);
@@ -68,5 +75,5 @@ export function eventSummary(e) {
   const price = priceLabel(e.pricing);
   const head = [`${when} at ${e.venue.name}`, e.venue.area, 'Dehradun'].filter(Boolean).join(', ');
   const base = price ? `${head}. ${price}.` : `${head}.`;
-  return e.description ? clip(`${base} ${e.description}`, 155) : base;
+  return e.description ? clipSentence(`${base} ${e.description}`, 200, base.length) : base;
 }

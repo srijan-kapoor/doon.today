@@ -37,8 +37,11 @@ test('free and unknown prices',()=>{
 test('the summary reads as one line with place, price and a trimmed description',()=>{
   assert.equal(eventSummary(ev()),'Sun, 18 Oct, 3:00 pm at Rajpur Road Hall, Rajpur, Dehradun. From ₹800.');
   const long=eventSummary(ev({description:'word '.repeat(100)}));
-  assert.ok(long.length<=155,'search results cut descriptions after about 155 characters');
-  assert.ok(long.endsWith('…'));
+  assert.ok(long.length<=200);
+  assert.ok(long.endsWith('…'),'with no sentence to stop at, it cuts at a word');
+  const sentences=eventSummary(ev({description:'First sentence here. '.repeat(3)+'Second part runs on and on '.repeat(10)}));
+  assert.ok(sentences.length<=200);
+  assert.ok(sentences.endsWith('here.'),'it stops at the end of a whole sentence');
   assert.match(eventSummary(ev({startAt:'2026-10-21'})),/^Wed, 21 Oct at /,'date-only events show no time');
 });
 
