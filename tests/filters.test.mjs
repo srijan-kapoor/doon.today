@@ -248,6 +248,7 @@ test("a festival's sessions on a day fold into one row, and filters still count 
   assert.equal(group.hidden, false);
   assert.equal(group.querySelector('.festival-summary .event-time').textContent, '8:30 pm');
   assert.equal(group.querySelector('.festival-summary .event-meta').textContent, '1 session · Auditorium');
+  assert.equal(group.open, true, 'opened so the match is in view');
   $('[data-quick-category="culture"]').click();
   $('[data-quick-category="books"]').click();
   assert.equal(group.hidden, true);

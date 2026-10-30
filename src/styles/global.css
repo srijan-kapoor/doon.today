@@ -108,8 +108,8 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 /* A festival's sessions on one day: one row that opens to the sessions, which sit indented beneath it. */
 .festival-summary { display: grid; grid-template-columns: 92px 1fr auto; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); cursor: pointer; list-style: none; }
 .festival-summary::-webkit-details-marker { display: none; }
-.festival-summary::after { content: '⌄'; color: var(--green); font-size: 1.1rem; line-height: 1; }
-.festival-group[open] > .festival-summary::after { content: '⌃'; }
+.festival-summary::after { content: '⌄' / ''; color: var(--green); font-size: 1.1rem; line-height: 1; }
+.festival-group[open] > .festival-summary::after { content: '⌃' / ''; }
 .festival-summary:hover .event-title { text-decoration: underline; text-underline-offset: 3px; }
 .festival-summary:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .festival-group > .event-row { padding-left: 14px; border-left: 2px solid var(--green-soft); }

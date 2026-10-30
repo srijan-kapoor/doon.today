@@ -77,6 +77,8 @@ export function initEventFilters(document, window) {
       const shown = sessions.filter((row) => !row.hidden);
       details.hidden = shown.length === 0;
       if (!shown.length) continue;
+      // When filters leave only some sessions, open the row so the matches are in view.
+      if (shown.length < sessions.length) details.open = true;
       summary.querySelector('.event-time').textContent = shown[0].querySelector('.event-time').textContent;
       summary.querySelector('.event-meta').textContent = `${sessionLabel(shown.length)} · ${shown[0].dataset.venue}`;
     }
