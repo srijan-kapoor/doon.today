@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { priceFromOffers, priceFromText } from '../ingest/lib/utils.mjs';
-import { LIST, addDetailsFromEventPages, applyEventDetails, detailsFromEventPage, fetchAllEvents } from '../ingest/sources/allevents.mjs';
+import { LIST, addDetailsFromEventPages, applyEventDetails, detailsFromEventPage, fetchAllEvents, pageDescription } from '../ingest/sources/allevents.mjs';
 import { mergeAndWrite } from '../ingest/merge.mjs';
 import { priceLabel } from '../src/lib/sources.mjs';
 import { inTempDir } from './helpers.mjs';
@@ -23,6 +23,38 @@ const pages = async () => ({
   [GHOSTED]: await fixture('allevents-event-price-range.html'),
   [DANDIYA]: await fixture('allevents-event-offer-no-price.html'),
   [ZUMBA]: await fixture('allevents-event-no-offers.html')
+});
+
+const RAJAT = 'https://allevents.in/dehradun/rajat-chauhan-live-a-solo-standup-comedy-show/3900030824167154';
+
+test('the full description comes from the page, not the 300 characters cut mid-word in its structured data', async () => {
+  const html = await fixture('allevents-event-cut-description.html');
+  const details = await detailsFromEventPage(RAJAT, { title: 'Rajat Chauhan Live : A Solo Standup Comedy Show', fetchPage: async () => html });
+  assert.ok(details.description.startsWith('Get ready for an evening of sharp, effortless and feel-good comedy'));
+  assert.ok(details.description.includes('keeps you hooked from start to finish. A perfect plan for a chill night out'));
+  assert.ok(details.description.endsWith('Book your seats now!'), 'AllEvents\' own "Also check out other events" links are left off');
+  assert.ok(details.description.includes('acts! Catch him'), 'paragraphs stay apart');
+  const e = { title: 'Rajat', description: 'Get ready for an evening of sharp, effortless and feel-good comedy as rajat chauhan takes the stage with a lineup of exciting acts!Catch him live at Hideout Comedy Club along with some of the finest comics in the scene, bringing fresh stories, quick wit, and the kind of relatable humour that keeps y', venue: { name: 'Hideout' }, pricing: { type: 'unknown' }, categories: [], startAt: '2026-11-01' };
+  applyEventDetails(e, details);
+  assert.equal(e.description, details.description, 'the cut description is replaced');
+});
+
+test('a description block that does not continue the structured data is ignored, and a missing block changes nothing', async () => {
+  const html = await fixture('allevents-event-cut-description.html');
+  const other = html.replace('Get ready for an evening of sharp', 'Something else entirely, sharp');
+  const detailsOf = async (page) => detailsFromEventPage(RAJAT, { fetchPage: async () => page });
+  assert.ok((await detailsOf(other)).description.endsWith('keeps y'));
+  assert.ok((await detailsOf(html.replace('event-description-html', 'nothing'))).description.endsWith('keeps y'));
+  assert.equal(pageDescription('<p>no block</p>'), '');
+  const block = (inner, open = '<div class="event-description-html">') => `${open}${inner}</div>`;
+  for (const links of ['<p><br>Also check out other <a href="#">Comedy events</a>.</p>', '<p><br />Also check out other Comedy events.</p>', '<p class="x">Also check out other Comedy events.</p>']) {
+    assert.equal(pageDescription(block(`<p>Hello world.</p>${links}`)), 'Hello world.', links);
+  }
+  assert.equal(pageDescription(block('<p>Hello.</p>', "<div class='wide event-description-html' id=d>")), 'Hello.', 'other attributes and quotes');
+  assert.equal(pageDescription('<div class="event-description-html"><p>never closed'), '');
+  const ld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  const shortCut = html.replace(JSON.stringify(ld.description).slice(1, -1), 'Get ready');
+  assert.equal((await detailsOf(shortCut)).description, 'Get ready', 'a structured-data text too short to compare is kept as it is');
 });
 
 test('offers give the lowest real price, the top of the range, and free only when everything is 0', () => {
