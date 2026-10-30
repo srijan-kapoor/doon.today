@@ -71,6 +71,7 @@ test('an event report opens the form about that event, without the vote', async 
   assert.equal(body.get('message'), 'It starts at 8, not 7');
   assert.equal(dialog.open, false, 'the dialog closes on success');
   assert.equal($('#feedback-toast').dataset.hidden, undefined);
+  await new Promise((r) => setTimeout(r));
   assert.equal($('[data-toast-text]').textContent, 'Thanks, we read every message.');
   assert.equal($('[data-feedback-status]').textContent, '');
 });
@@ -111,4 +112,17 @@ test('the thanks toast hides after a while, but not while pointed at, and can be
   t.mock.timers.tick(TOAST_MS);
   assert.equal(toast.dataset.hidden, '');
   assert.equal($('[data-toast-dismiss]').hidden, true);
+
+  $('#general').click();
+  $('[value="like"]').checked = true;
+  submit();
+  await Promise.resolve(); await Promise.resolve();
+  t.mock.timers.tick(0);
+  assert.equal($('[data-toast-text]').textContent, 'Thanks, we read every message.', 'set again for a second send');
+  toast.dispatchEvent(new window.Event('focusin'));
+  t.mock.timers.tick(TOAST_MS);
+  assert.equal(toast.dataset.hidden, undefined, 'held while focused');
+  $('[data-toast-dismiss]').click();
+  assert.equal(toast.dataset.hidden, '');
+  assert.equal(window.document.activeElement.id, 'general', 'focus goes back to the link');
 });

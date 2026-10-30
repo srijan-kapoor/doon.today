@@ -15,24 +15,29 @@ export function initFeedback(document, window) {
   const about = form.querySelector('[data-feedback-about]');
   const send = form.querySelector('button[type="submit"]');
   let opener = null;
+  // A link in the phone menu is hidden once the menu closes; its summary takes focus instead.
+  const focusOpener = () => { const target = opener?.closest('details:not([open])')?.querySelector('summary') ?? opener; target?.focus({ preventScroll: true }); };
   const say = (text, error = false) => { status.textContent = text; status.dataset.state = error ? 'error' : ''; };
   const toast = document.querySelector('#feedback-toast');
   let toastTimer;
   let toastHeld = false;
   const dismiss = toast.querySelector('[data-toast-dismiss]');
-  const hideToast = () => { window.clearTimeout(toastTimer); toast.dataset.hidden = ''; dismiss.hidden = true; toast.querySelector('[data-toast-text]').textContent = ''; };
+  const hideToast = () => { window.clearTimeout(toastTimer); toastHeld = false; toast.dataset.hidden = ''; dismiss.hidden = true; toast.querySelector('[data-toast-text]').textContent = ''; };
   const startToastTimer = () => { window.clearTimeout(toastTimer); if (!toastHeld) toastTimer = window.setTimeout(hideToast, TOAST_MS); };
   // The thanks shows outside the dialog, which closes. It stays while pointed at or focused.
   function showToast(text) {
-    toast.querySelector('[data-toast-text]').textContent = text;
+    const label = toast.querySelector('[data-toast-text]');
+    // Cleared first, so a second thanks in a row is announced again.
+    label.textContent = '';
     delete toast.dataset.hidden;
     dismiss.hidden = false;
+    window.setTimeout(() => { label.textContent = text; }, 0);
     startToastTimer();
   }
   for (const [on, held] of [['pointerenter', true], ['pointerleave', false], ['focusin', true], ['focusout', false]]) {
-    toast.addEventListener(on, () => { toastHeld = held; if (held) window.clearTimeout(toastTimer); else startToastTimer(); });
+    toast.addEventListener(on, () => { if ('hidden' in toast.dataset) return; toastHeld = held; if (held) window.clearTimeout(toastTimer); else startToastTimer(); });
   }
-  dismiss.addEventListener('click', () => { hideToast(); opener?.focus({ preventScroll: true }); });
+  dismiss.addEventListener('click', () => { hideToast(); focusOpener(); });
 
   function open(link) {
     opener = link;
@@ -60,7 +65,7 @@ export function initFeedback(document, window) {
     link.closest('details')?.removeAttribute('open');
     open(link);
   });
-  dialog.addEventListener('close', () => opener?.focus({ preventScroll: true }));
+  dialog.addEventListener('close', focusOpener);
   dialog.querySelector('[data-feedback-close]').addEventListener('click', close);
   // A click on the backdrop lands on the dialog itself, outside the panel.
   dialog.addEventListener('click', (event) => { if (event.target === dialog) close(); });
