@@ -66,7 +66,7 @@ export function descriptionFromPage(html,url){
 // A page that cannot be read leaves the event as the listing gave it.
 async function addDescriptions(events,fetchPage){
   let pages=0,failed=0,filled=0;
-  const queue=events.filter(e=>!e.description&&e.sources[0].url!==LIST).sort((a,b)=>String(a.startAt).localeCompare(String(b.startAt))).slice(0,MAX_DESCRIPTION_PAGES);
+  const queue=events.filter(e=>!e.description&&e.sources[0].url!==LIST).sort((a,b)=>toInstant(a.startAt)-toInstant(b.startAt)).slice(0,MAX_DESCRIPTION_PAGES);
   for(const e of queue){
     pages++;
     try{
