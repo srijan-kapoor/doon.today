@@ -8,7 +8,7 @@ const months = changelogByMonth(entries);
   <section class="simple-page prose">
     <p class="eyebrow">CHANGELOG</p>
     <h1>What's new.</h1>
-    <p class="lede">Changes to doon.today, newest first. Something missing or not working? <a href="https://github.com/srijan-kapoor/doon.today/issues/new">Tell us</a>.</p>
+    <p class="lede">Changes to doon.today, newest first. Something missing or not working? <a href="/feedback/" data-feedback>Tell us</a>.</p>
     {months.map((month) => (
       <section class="changelog-month">
         <h2>{month.label}</h2>

@@ -5,7 +5,8 @@ import { formLead } from './leads.mjs';
 const env = (name) => globalThis.Netlify?.env?.get(name) ?? process.env[name];
 
 export async function dispatchLead(data, { fetchImpl = fetch, token = env('DOON_GITHUB_TOKEN'), repo = env('DOON_GITHUB_REPO') || 'srijan-kapoor/doon.today' } = {}) {
-  if (data['form-name'] && data['form-name'] !== 'submit-event') return 'other form';
+  // The feedback form also says what it is in a field, in case Netlify leaves the form name out of the data.
+  if ((data['form-name'] && data['form-name'] !== 'submit-event') || data.kind === 'feedback') return 'other form';
   const lead = formLead(data);
   if (!lead) return 'not a usable entry';
   if (!token) {
