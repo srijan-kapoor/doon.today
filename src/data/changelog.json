@@ -1,5 +1,6 @@
 [
   { "date": "2026-10-30", "tag": "New", "text": "A feedback form: tell us what's wrong or what could be better from Feedback at the bottom of any page, or from Report a problem on an event. Nothing you send is made public." },
+  { "date": "2026-10-30", "tag": "Improved", "text": "A festival's sessions on the same day are grouped into one row; tap it to see them all." },
   { "date": "2026-10-29", "tag": "Improved", "text": "A cleaner home page: the update time moved to the footer, and the notice about a source not updating only shows when it has been days." },
   { "date": "2026-10-29", "tag": "Improved", "text": "Event descriptions keep their paragraph breaks, with activity lists, event details and itinerary times easier to scan." },
   { "date": "2026-10-29", "tag": "Improved", "text": "Simpler category filters on desktop and a filter sheet on phones, with Community picks one tap away and lighter event headings." },
