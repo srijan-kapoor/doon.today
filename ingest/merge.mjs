@@ -101,7 +101,8 @@ function withOrderedVenue(e) {
 }
 
 // Events that start together are ordered by id, so their order doesn't depend on which sources ran.
-const compareForOutput = (a, b) => compareEventStarts(a, b) || String(a.id).localeCompare(String(b.id));
+// A plain comparison, not localeCompare, so the order is the same on every machine that runs a refresh.
+const compareForOutput = (a, b) => compareEventStarts(a, b) || (String(a.id) < String(b.id) ? -1 : String(a.id) > String(b.id) ? 1 : 0);
 
 // Fill in venue.area from the address or venue name when a source did not provide one.
 function withArea(e) {
