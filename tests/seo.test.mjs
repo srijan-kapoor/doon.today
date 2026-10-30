@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {eventJsonLd,eventSummary} from '../src/lib/seo.mjs';
+import {eventJsonLd,eventPageTitle,eventSummary} from '../src/lib/seo.mjs';
 import {sourceLabel} from '../src/lib/sources.mjs';
 
 const ev=(over={})=>({
@@ -37,7 +37,7 @@ test('free and unknown prices',()=>{
 test('the summary reads as one line with place, price and a trimmed description',()=>{
   assert.equal(eventSummary(ev()),'Sun, 18 Oct, 3:00 pm at Rajpur Road Hall, Rajpur, Dehradun. From ₹800.');
   const long=eventSummary(ev({description:'word '.repeat(100)}));
-  assert.ok(long.length<=200);
+  assert.ok(long.length<=155,'search results cut descriptions after about 155 characters');
   assert.ok(long.endsWith('…'));
   assert.match(eventSummary(ev({startAt:'2026-10-21'})),/^Wed, 21 Oct at /,'date-only events show no time');
 });
@@ -70,4 +70,11 @@ test('an event on specific dates offers its next session, not the span as one ru
   assert.equal(ld.endDate,undefined);
   assert.ok(ld.startDate);
   assert.equal(eventJsonLd(ev({endAt:'2026-10-18T12:00:00+05:30'}),opts).endDate,'2026-10-18T12:00:00+05:30');
+});
+
+test('the page title keeps the site name and fits in 60 characters',()=>{
+  assert.equal(eventPageTitle('Doon Music Night'),'Doon Music Night — doon.today');
+  const title=eventPageTitle('Virasat 2026: A very long programme title that goes on and on and on for far too long');
+  assert.ok(title.length<=60);
+  assert.ok(title.endsWith('… — doon.today'));
 });

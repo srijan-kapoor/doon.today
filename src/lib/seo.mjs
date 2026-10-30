@@ -9,6 +9,13 @@ const schemaDate = (value) => (DATE_ONLY.test(value) || HAS_ZONE.test(value) ? v
 
 const clip = (text, max) => (text.length <= max ? text : `${text.slice(0, max - 1).replace(/\s+\S*$/, '')}…`);
 
+const SITE_SUFFIX = ' — doon.today';
+
+/** The page title, with the event name shortened so the whole title fits what search results show (about 60 characters). */
+export function eventPageTitle(name, max = 60) {
+  return `${clip(name, max - SITE_SUFFIX.length)}${SITE_SUFFIX}`;
+}
+
 /** schema.org Event for Google's event rich results. */
 export function eventJsonLd(e, { pageUrl, imageUrl }) {
   const ld = {
@@ -53,7 +60,7 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
 const summaryDay = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const summaryDayTime = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
 
-/** One-line summary used as the page and link-preview description. */
+/** One-line summary used as the page and link-preview description, short enough that search results show all of it. */
 export function eventSummary(e) {
   const startAt = nextOccurrence(e);
   const dateOnly = DATE_ONLY.test(startAt);
@@ -61,5 +68,5 @@ export function eventSummary(e) {
   const price = priceLabel(e.pricing);
   const head = [`${when} at ${e.venue.name}`, e.venue.area, 'Dehradun'].filter(Boolean).join(', ');
   const base = price ? `${head}. ${price}.` : `${head}.`;
-  return e.description ? clip(`${base} ${e.description}`, 200) : base;
+  return e.description ? clip(`${base} ${e.description}`, 155) : base;
 }
