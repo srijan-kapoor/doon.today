@@ -26,6 +26,21 @@ test('the same event with a shorter and a longer venue name is one event',()=>{
   assert.equal(sameEvent(a,b),true);
 });
 
+test('two posts about one event, titled differently, are one event when they start together at the same venue',()=>{
+  const venue={name:'Maldevta',city:'Dehradun'};
+  const submitted=ev({title:'Melophile - Daft Punk "Random Access Memories" Album Listening Meet',startAt:'2026-11-01T16:30:00+05:30',venue});
+  const posted=ev({title:"Melophile Session 02: Daft Punk's Random Access Memories",startAt:'2026-11-01T16:30:00+05:30',venue});
+  assert.equal(sameEvent(submitted,posted),true);
+  assert.equal(sameEvent(submitted,{...posted,startAt:'2026-11-01T18:00:00+05:30'}),false,'a different time on the same day needs the closer title match');
+  assert.equal(sameEvent(submitted,{...posted,venue:{name:'Rajpur Road Hall',city:'Dehradun'}}),false,'a different venue');
+  const session=(title,stage)=>ev({title,startAt:'2026-10-31T19:00:00+05:30',venue:{name:`Himalayan Cultural Centre — ${stage}`,city:'Dehradun'}});
+  assert.equal(sameEvent(session('Virasat 2026: Sitar recital by Dhruv Bedi','Auditorium'),session('Virasat 2026: Folk dance from Jaunsar','Lawn')),false,'two festival sessions at once share only the festival name');
+  const course=(title,endAt)=>ev({title,startAt:'2026-11-02T07:00:00+05:30',endAt,venue:{name:'Kunwar Yoga Classes',city:'Dehradun'}});
+  assert.equal(sameEvent(course('Begin Your Yoga Teaching Journey with Kunwar Yoga 100-Hour TTC in Dehradun','2026-11-13T20:00:00+05:30'),course('Advance Your Yoga Journey with Kunwar Yoga 200-Hour YTT in Dehradun','2026-11-26T20:00:00+05:30')),false,'a 100-hour and a 200-hour course');
+  assert.equal(sameEvent(course('Kunwar Yoga 100-Hour course in Dehradun','2026-11-13T20:00:00+05:30'),course('Kunwar Yoga Hour course Dehradun intake','2026-11-26T20:00:00+05:30')),false,'ending on different days');
+  assert.equal(sameEvent(ev({title:'Open mic night',startAt:'2026-11-01T19:00:00+05:30'}),ev({title:'Open mic poetry',startAt:'2026-11-01T19:00:00+05:30'})),false,'two words in common is not enough');
+});
+
 test('different venues or different days are still different events',()=>{
   const a=ev();
   assert.equal(sameEvent(a,ev({venue:{name:'Parade Ground',city:'Dehradun'}})),false);
