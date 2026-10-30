@@ -340,3 +340,24 @@ test('a change to the dates bumps the calendar SEQUENCE',async t=>{
   assert.equal(e.sequence,1);
   assert.deepEqual(e.occurrences,[sessions[0],sessions[2]]);
 });
+
+test('a District-only run and a full run write the same file when no event changed',async t=>{
+  await inTempDir(t);
+  await fs.writeFile('data/venues.json',JSON.stringify([{name:'Himalayan Cultural Centre',match:['himalayan cultural centre'],geo:{lat:30.35473,lng:78.01122},area:'Garhi Cantt'}]));
+  // A Virasat session with no coordinates of its own, and a District event at the same time.
+  const virasat=()=>ev({id:'v',slug:'v',title:'Virasat evening',startAt:'2030-01-10T19:00:00+05:30',venue:{name:'Himalayan Cultural Centre — Auditorium',address:'Garhi Cantt',city:'Dehradun'},
+    categories:['Culture'],pricing:{type:'unknown'},sources:[{provider:'virasat',url:'https://example.test/v'}]});
+  const district=()=>ev({id:'d',slug:'d',title:'Comedy night',startAt:'2030-01-10T19:00:00+05:30',pricing:{type:'unknown'},sources:[{provider:'district',url:'https://example.test/d'}]});
+  const full=()=>mergeAndWrite([{source:'virasat',events:[virasat()]},{source:'district',events:[district()]}]);
+  const districtOnly=()=>mergeAndWrite([{source:'district',events:[district()]}]);
+  const file=()=>fs.readFile('data/events.json','utf8');
+  await full();
+  const afterFull=await file();
+  await districtOnly();
+  assert.equal(await file(),afterFull,'the District-only run keeps the stored Virasat session byte for byte');
+  await full();
+  assert.equal(await file(),afterFull,'and the next full run changes nothing either');
+  const [first]=JSON.parse(afterFull);
+  assert.equal(first.id,'d','events at the same time are ordered by id');
+  assert.deepEqual(Object.keys(JSON.parse(afterFull)[1].venue),['name','address','city','area','geo','geoFrom']);
+});

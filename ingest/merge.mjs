@@ -89,6 +89,20 @@ function withKnownVenue(e, venues) {
   return { ...e, venue };
 }
 
+// Venue keys are written in one order, whichever step added them. Without this, a run that re-derives an
+// event's table coordinates writes area before geo and a run that adds them fresh writes geo first, so
+// events.json changed on every refresh with no change to any event.
+const VENUE_KEYS = ['name', 'address', 'city', 'area', 'geo', 'geoFrom'];
+function withOrderedVenue(e) {
+  if (!e.venue) return e;
+  const venue = {};
+  for (const key of VENUE_KEYS) if (key in e.venue) venue[key] = e.venue[key];
+  return { ...e, venue: { ...venue, ...e.venue } };
+}
+
+// Events that start together are ordered by id, so their order doesn't depend on which sources ran.
+const compareForOutput = (a, b) => compareEventStarts(a, b) || String(a.id).localeCompare(String(b.id));
+
 // Fill in venue.area from the address or venue name when a source did not provide one.
 function withArea(e) {
   if (e.venue?.area) return e;
@@ -275,8 +289,9 @@ export async function mergeAndWrite(sourceResults) {
     .filter(e => isUnexpiredEvent(e,now))
     .map(e => withKnownVenue(e, venues))
     .map(withArea)
+    .map(withOrderedVenue)
     .map(e => ({...e, categories: (e.sources || []).some(s => s.provider === 'manual') ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
-    .sort(compareEventStarts);
+    .sort(compareForOutput);
 
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');
