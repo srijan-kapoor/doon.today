@@ -19,9 +19,9 @@ const HOUR = 3_600_000;
 // Fetch each account about once a day; refreshes run every 8 hours, so 20 leaves room for late starts.
 export const REFETCH_HOURS = 20;
 // A job still running after this long is given up and started again.
-export const GIVE_UP_HOURS = 12;
+const GIVE_UP_HOURS = 12;
 // Older posts announce events that are long over, and pinned posts can be months old.
-export const MAX_POST_AGE_DAYS = 30;
+const MAX_POST_AGE_DAYS = 30;
 const SEEN_LIMIT = 60;
 
 export const emptyState = () => ({ accounts: {}, collected: [], candidates: [] });
@@ -36,7 +36,7 @@ export const accountKey = (handle) => crypto.createHash('sha256').update(handle.
 
 export const profileUrl = (handle) => `https://www.instagram.com/${handle}/`;
 
-export function handleFromUrl(url = '') {
+function handleFromUrl(url = '') {
   return String(url).match(/instagram\.com\/([^/?#]+)/i)?.[1]?.toLowerCase() || '';
 }
 

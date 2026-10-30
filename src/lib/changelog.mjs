@@ -1,9 +1,9 @@
 // The visitor-facing changelog: entries are hand-written in src/data/changelog.json, newest first.
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
+import { DATE_ONLY } from './dates.mjs';
 
 /** @typedef {{ date: string, tag: string, text: string }} ChangelogEntry */
 
-export const TAGS = ['New', 'Improved', 'Fixed', 'Source', 'Removed'];
+const TAGS = ['New', 'Improved', 'Fixed', 'Source', 'Removed'];
 
 const isDay = (value) => typeof value === 'string' && DATE_ONLY.test(value) && new Date(`${value}T00:00:00Z`).toISOString().startsWith(value);
 

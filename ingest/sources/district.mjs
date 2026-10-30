@@ -20,7 +20,7 @@ function toEvent(o,url=LIST){
 // with the listing. The page can leave out the last session; when every session it lists is the same length and
 // the listing's end falls on a later day than the last of them, the last session is the one ending at the listing's end
 // (a same-day difference is rounding in the listing, not a session).
-export function sessionsFromPage(html,e){
+function sessionsFromPage(html,e){
   const url=e.sources[0].url;
   let found=eventLikeObjects(html).filter(o=>sameUrl(o.url||o['@id'],url)&&o.startDate&&Number.isFinite(toInstant(o.startDate).getTime()))
     .map(o=>({start:toInstant(o.startDate).getTime(),end:o.endDate?toInstant(o.endDate).getTime():NaN}))

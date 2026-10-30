@@ -1,6 +1,6 @@
 // Source timestamps may be UTC, offset-bearing, or bare Dehradun local dates/times.
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
-const HAS_ZONE = /(Z|[+-]\d{2}:?\d{2})$/i;
+export const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
+export const HAS_ZONE = /(Z|[+-]\d{2}:?\d{2})$/i;
 const DAY_MS = 24 * 3600_000;
 
 export function toInstant(value) {
@@ -86,3 +86,7 @@ export function isUnexpiredEvent(event, now = Date.now()) {
   const end = event.endAt ? toInstant(event.endAt).getTime() : NaN;
   return Math.max(start + 6 * 3600_000, Number.isFinite(end) ? end : start) > now;
 }
+
+// Formatters in Dehradun time, built once rather than for every row or page that uses them.
+export const istTime = new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
+export const istDayMonth = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { CHAPTERS, eventUrl, fetchGdg, listUrl, priceFromTickets, toEvent } from '../ingest/sources/gdg.mjs';
 import { detailsLinkLabel } from '../src/lib/sources.mjs';
+import { inTempDir } from './helpers.mjs';
 
 // The shape of a real event record (GDG Dehradun's "Build with AI", 22 Aug 2026), moved into the future.
 const record = (over = {}) => ({
@@ -88,11 +89,7 @@ test('an empty answer from every chapter is complete, so a cancelled event is ev
   const empty = await fetchGdg({ fetchPage: async () => JSON.stringify({ results: [] }) });
   assert.deepEqual([empty.events.length, empty.complete], [0, true]);
 
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-gdg-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
-  await fs.mkdir('data/review', { recursive: true });
+  await inTempDir(t);
   const stored = { ...toEvent(record()), curation: { status: 'published', score: 6 } };
   await fs.writeFile('data/events.json', JSON.stringify([stored]));
   const read = async () => JSON.parse(await fs.readFile('data/events.json', 'utf8'));

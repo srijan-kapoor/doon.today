@@ -27,7 +27,7 @@ export function withFilters(search, state) {
   return params.toString();
 }
 
-export function matchesCategories(categories, state) {
+function matchesCategories(categories, state) {
   const selected = state.categories ?? (state.category ? [state.category] : []);
   return selected.length === 0 || selected.some((category) => categories.includes(category));
 }

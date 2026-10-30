@@ -1,10 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import os from 'node:os';
-import path from 'node:path';
 import {pendingCandidates,parseWhen,parsePrice,buildCuratedEvent,approve,reject} from '../ingest/lib/review.mjs';
 import {mergeAndWrite} from '../ingest/merge.mjs';
+import { inTempDir } from './helpers.mjs';
 
 const lead=(over={})=>({
   id:'lead1',slug:'doon-book-club',title:'Doon Book Club meetup',description:'Monthly book club, all welcome',startAt:'2030-02-10T06:30:00.000Z',
@@ -64,13 +63,6 @@ test('approve and reject record the decision; approving twice does not duplicate
   assert.equal(r.decisions.lead9.note,'spam');
 });
 
-async function inTempDir(t){
-  const original=process.cwd();
-  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'doon-review-'));
-  process.chdir(dir);
-  t.after(async()=>{process.chdir(original);await fs.rm(dir,{recursive:true,force:true});});
-  await fs.mkdir('data/review',{recursive:true});
-}
 const read=async(p)=>JSON.parse(await fs.readFile(p,'utf8'));
 
 test('a curated event is published on every run, even when no source lists it, and decided leads leave the queue',async(t)=>{

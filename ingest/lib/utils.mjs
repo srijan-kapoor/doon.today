@@ -124,7 +124,7 @@ const OUTSIDE_TERMS = [
 const escapeRe = (term) => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
 
 // Whole-word (or whole-phrase) matcher; a trailing plural "s" is allowed.
-export function wordMatcher(terms) {
+function wordMatcher(terms) {
   return new RegExp(`(?<![a-z0-9])(?:${terms.map(escapeRe).join('|')})s?(?![a-z0-9])`, 'i');
 }
 

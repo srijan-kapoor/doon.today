@@ -12,7 +12,7 @@ export const MODEL = process.env.INSTAGRAM_MODEL || 'claude-haiku-5-5';
 const IMAGE_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif']);
 const MAX_IMAGE_BYTES = 5_000_000;
 
-export const Reading = z.object({
+const Reading = z.object({
   is_announcement: z.boolean().describe('True only if the post announces a specific event with a date'),
   title: z.string().nullable(),
   starts: z.string().nullable().describe('YYYY-MM-DD HH:MM in IST, or YYYY-MM-DD when no time is given'),

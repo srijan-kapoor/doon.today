@@ -1,13 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import os from 'node:os';
-import path from 'node:path';
 import { eventPassesGeo, hasForeignAddress, hasForeignVenue, hasOutsidePin } from '../ingest/lib/utils.mjs';
 import { LIST, isThinListing, fetchAllEvents } from '../ingest/sources/allevents.mjs';
 import { mergeAndWrite } from '../ingest/merge.mjs';
 import { reject } from '../ingest/lib/review.mjs';
 import { sourceLead, leadIssue, parseLeadIssue, leadKey, leadToEvent, leadSourceUrl } from '../ingest/lib/leads.mjs';
+import { inTempDir } from './helpers.mjs';
 
 const event = (over = {}) => ({
   id: 'x', slug: 'x', title: 'Doon Music Night', description: 'An evening of live music in town, with three local bands and food stalls.',
@@ -18,13 +17,6 @@ const event = (over = {}) => ({
   ...over
 });
 
-async function inTempDir(t) {
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-listings-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  await fs.mkdir('data/review', { recursive: true });
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
-}
 const read = async (file = 'data/events.json') => JSON.parse(await fs.readFile(file, 'utf8'));
 
 test('a listing whose own description gives a foreign address is not a Dehradun event', () => {

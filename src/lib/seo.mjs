@@ -1,10 +1,8 @@
 // Search and link-preview metadata for event pages.
 import { toInstant } from './ics.mjs';
-import { occurrencesOf, nextOccurrence } from './dates.mjs';
+import { occurrencesOf, nextOccurrence, DATE_ONLY, HAS_ZONE } from './dates.mjs';
 import { priceLabel } from './sources.mjs';
 
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
-const HAS_ZONE = /(Z|[+-]\d{2}:?\d{2})$/i;
 
 // schema.org wants an offset on date-times; a bare local time is Dehradun time.
 const schemaDate = (value) => (DATE_ONLY.test(value) || HAS_ZONE.test(value) ? value : `${value}+05:30`);
@@ -52,13 +50,14 @@ export function eventJsonLd(e, { pageUrl, imageUrl }) {
   return ld;
 }
 
+const summaryDay = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
+const summaryDayTime = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
+
 /** One-line summary used as the page and link-preview description. */
 export function eventSummary(e) {
   const startAt = nextOccurrence(e);
   const dateOnly = DATE_ONLY.test(startAt);
-  const when = new Intl.DateTimeFormat('en-IN', {
-    weekday: 'short', day: 'numeric', month: 'short', ...(dateOnly ? {} : { hour: 'numeric', minute: '2-digit', hour12: true }), timeZone: 'Asia/Kolkata'
-  }).format(dateOnly ? new Date(`${startAt}T12:00:00+05:30`) : toInstant(startAt));
+  const when = dateOnly ? summaryDay.format(new Date(`${startAt}T12:00:00+05:30`)) : summaryDayTime.format(toInstant(startAt));
   const price = priceLabel(e.pricing);
   const head = [`${when} at ${e.venue.name}`, e.venue.area, 'Dehradun'].filter(Boolean).join(', ');
   const base = price ? `${head}. ${price}.` : `${head}.`;
