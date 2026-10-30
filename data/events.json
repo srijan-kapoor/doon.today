@@ -1204,6 +1204,48 @@
     "modifiedAt": "2026-10-29T09:24:29.838Z"
   },
   {
+    "id": "fc0719634a55b950",
+    "slug": "melophile-session-02-daft-punk-s-random-access-memories",
+    "title": "Melophile Session 02: Daft Punk's Random Access Memories",
+    "description": "🎧 MELOPHILE — SESSION 02 Dehradun, let's listen to some music. 🪩 This time, we're getting together for Daft Punk's Random Access Memories, one album, played from start to finish. No skipping. No distractions. Just music. And when the album ends? It's your turn. 🎶 We'll take turns playing songs we've brought along, discovering new music, sharing favourites, and meeting people who love music as much as we do. 🎧 Meet people with similar music taste 🎸 Connect with fellow musicians 💿 Discover music beyond your usual playlists 📅 Sunday, 1 November 🕟 4:30 PM 📍 Dehradun You don't need to be a musician, Just bring your love for music and a few songs you'd like others to hear. Want to join? 🔗 Join our WhatsApp group through the link in our bio. One album. Your music. Our music. Ne\n\nOrganized by @melophile.ddn. How to join: Join the WhatsApp group via the link in bio, or DM / comment to join",
+    "startAt": "2026-11-01T16:30:00+05:30",
+    "venue": {
+      "name": "Maldevta",
+      "city": "Dehradun",
+      "area": "Maldevta"
+    },
+    "categories": [
+      "Music",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfEnhWaJu9w",
+        "checkedAt": "2026-10-30T18:14:39.691Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfEnhWaJu9w",
+        "checkedAt": "2026-10-30T15:05:56.192Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-10-30T18:14:39.691Z",
+    "lastSeenAt": "2026-10-30T18:14:39.691Z",
+    "lastCheckedAt": "2026-10-30T18:14:39.691Z"
+  },
+  {
     "id": "e1664ec65e6e45da",
     "slug": "vipul-goyal-unleashed",
     "title": "Vipul Goyal- Unleashed",
