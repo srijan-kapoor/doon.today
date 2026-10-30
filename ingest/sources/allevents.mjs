@@ -72,6 +72,21 @@ const pagePath = (value = '') => { try { return new URL(value).pathname.replace(
 const isEventType = (t) => [].concat(t || []).some((x) => /Event$/.test(String(x)));
 
 /**
+ * The description as the page shows it. The structured data carries only its first 300 characters, cut mid-word.
+ * The page's own block ends with AllEvents' "Also check out other ... events" links, which are not the organiser's text.
+ */
+export function pageDescription(html) {
+  const start = html.indexOf('<div class="event-description-html">');
+  if (start < 0) return '';
+  const block = html.slice(start, html.indexOf('</div>', start)).replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '');
+  return stripHtml(block.replace(/<p>\s*<br>\s*Also check out other[\s\S]*$/i, '').replace(/<\/p>|<br\s*\/?>/gi, ' '));
+}
+
+// The two texts are the same description when the shorter one, ignoring spaces, is the start of the longer one.
+const squash = (text) => text.replace(/\s+/g, '');
+const continues = (full, cut) => squash(full).startsWith(squash(cut));
+
+/**
  * What an event's own AllEvents page says about it: price (null when none), start, end and description.
  * Null when the page has no structured data for this event. Only this event's own structured data counts,
  * matched by its link or title, so a "similar events" block can't lend its details.
@@ -84,7 +99,11 @@ export async function detailsFromEventPage(url, { title = '', fetchPage = fetchT
     || events.find((o) => title && stripHtml(o.name || '').toLowerCase() === title.toLowerCase())
     || (events.length === 1 ? events[0] : null);
   if (!own) return null;
-  return { pricing: priceFromOffers(own.offers), startAt: own.startDate, endAt: own.endDate, description: stripHtml(own.description || '') };
+  const cut = stripHtml(own.description || '');
+  const full = pageDescription(html);
+  // The page's text wins only when it carries on from the structured data's, so a block about something else can't replace it.
+  const description = full.length > cut.length && continues(full, cut) ? full : cut;
+  return { pricing: priceFromOffers(own.offers), startAt: own.startDate, endAt: own.endDate, description };
 }
 
 /**
