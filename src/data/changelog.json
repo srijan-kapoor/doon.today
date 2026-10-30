@@ -1,5 +1,5 @@
 [
-  { "date": "2026-10-30", "tag": "Fixed", "text": "Descriptions of events from AllEvents are no longer cut off mid-word: they now show in full." },
+  { "date": "2026-10-30", "tag": "Fixed", "text": "Descriptions of events from AllEvents are no longer cut off mid-word." },
   { "date": "2026-10-30", "tag": "Fixed", "text": "The numbers on the filter buttons are easier to read, and long event titles are shortened so they show in full in search results." },
   { "date": "2026-10-30", "tag": "Improved", "text": "Tighter event rows on phones: more events fit on a screen, with the price at the end of the tag row." },
   { "date": "2026-10-30", "tag": "New", "text": "A feedback form: tell us what's wrong or what could be better from Feedback at the bottom of any page, or from Report a problem on an event. Nothing you send is made public." },

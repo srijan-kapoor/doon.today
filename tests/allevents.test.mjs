@@ -46,6 +46,15 @@ test('a description block that does not continue the structured data is ignored,
   assert.ok((await detailsOf(other)).description.endsWith('keeps y'));
   assert.ok((await detailsOf(html.replace('event-description-html', 'nothing'))).description.endsWith('keeps y'));
   assert.equal(pageDescription('<p>no block</p>'), '');
+  const block = (inner, open = '<div class="event-description-html">') => `${open}${inner}</div>`;
+  for (const links of ['<p><br>Also check out other <a href="#">Comedy events</a>.</p>', '<p><br />Also check out other Comedy events.</p>', '<p class="x">Also check out other Comedy events.</p>']) {
+    assert.equal(pageDescription(block(`<p>Hello world.</p>${links}`)), 'Hello world.', links);
+  }
+  assert.equal(pageDescription(block('<p>Hello.</p>', "<div class='wide event-description-html' id=d>")), 'Hello.', 'other attributes and quotes');
+  assert.equal(pageDescription('<div class="event-description-html"><p>never closed'), '');
+  const ld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  const shortCut = html.replace(JSON.stringify(ld.description).slice(1, -1), 'Get ready');
+  assert.equal((await detailsOf(shortCut)).description, 'Get ready', 'a structured-data text too short to compare is kept as it is');
 });
 
 test('offers give the lowest real price, the top of the range, and free only when everything is 0', () => {

@@ -76,15 +76,19 @@ const isEventType = (t) => [].concat(t || []).some((x) => /Event$/.test(String(x
  * The page's own block ends with AllEvents' "Also check out other ... events" links, which are not the organiser's text.
  */
 export function pageDescription(html) {
-  const start = html.indexOf('<div class="event-description-html">');
-  if (start < 0) return '';
-  const block = html.slice(start, html.indexOf('</div>', start)).replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '');
-  return stripHtml(block.replace(/<p>\s*<br>\s*Also check out other[\s\S]*$/i, '').replace(/<\/p>|<br\s*\/?>/gi, ' '));
+  const open = /<div\b[^>]*\bevent-description-html\b[^>]*>/i.exec(html);
+  if (!open) return '';
+  const from = open.index + open[0].length;
+  const end = html.indexOf('</div>', from);
+  if (end < 0) return '';
+  const block = html.slice(from, end).replace(/<p\b[^>]*>\s*<br\s*\/?>\s*<\/p>/gi, '');
+  return stripHtml(block.replace(/<p\b[^>]*>\s*(?:<br\s*\/?>\s*)?Also check out other[\s\S]*$/i, '').replace(/<\/p>|<br\s*\/?>/gi, ' '));
 }
 
 // The two texts are the same description when the shorter one, ignoring spaces, is the start of the longer one.
 const squash = (text) => text.replace(/\s+/g, '');
-const continues = (full, cut) => squash(full).startsWith(squash(cut));
+// A structured-data text too short to tell descriptions apart (or missing) proves nothing, so it keeps the structured data's.
+const continues = (full, cut) => squash(cut).length >= 20 && squash(full).startsWith(squash(cut));
 
 /**
  * What an event's own AllEvents page says about it: price (null when none), start, end and description.
