@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "id": "acfd4277960a58f8",
+    "slug": "dark-side-of-basque-og-shez",
+    "title": "Dark Side of Basque - OG SHEZ",
+    "description": "",
+    "startAt": "2026-10-30",
+    "endAt": "2026-10-31",
+    "venue": {
+      "name": "Basque | Malsi, Dehradun",
+      "address": "Malsi, Dehradun Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3911,
+        "lng": 78.0713
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 599,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/dark-side-of-basque-og-shez/4100030812793427",
+        "checkedAt": "2026-10-30T20:52:17.975Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "review",
+      "score": 2
+    },
+    "firstSeenAt": "2026-10-30T20:52:17.975Z",
+    "lastSeenAt": "2026-10-30T20:52:17.975Z",
+    "lastCheckedAt": "2026-10-30T20:52:17.975Z"
+  }
+]
