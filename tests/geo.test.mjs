@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { geoFrom, isInDehradun } from '../ingest/lib/utils.mjs';
 import { fetchDistrict } from '../ingest/sources/district.mjs';
 import { fetchAllEvents, LIST } from '../ingest/sources/allevents.mjs';
+import { inTempDir } from './helpers.mjs';
 
 const ldPage = (objects) => `<html><script type="application/ld+json">${JSON.stringify(objects)}</script></html>`;
 
@@ -58,11 +59,7 @@ test('known venues fill in coordinates and area only where a source gave none', 
   assert.equal(named('BLAAZE - Mall of Dehradun'), 'Mall of Dehradun');
   assert.equal(named('Smallmall of Dehradunia'), undefined, 'whole words only');
 
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-venues-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
-  await fs.mkdir('data/review', { recursive: true });
+  await inTempDir(t);
   await fs.writeFile('data/venues.json', JSON.stringify(venues));
   const ev = (id, venue) => ({ id, slug: id, title: `Virasat ${id}`, startAt: '2030-11-01T19:00:00+05:30', venue: { city: 'Dehradun', ...venue },
     categories: ['Culture'], pricing: { type: 'unknown', currency: 'INR' }, sources: [{ provider: 'virasat', url: `https://example.test/${id}` }],
@@ -86,11 +83,7 @@ test('a corrected or removed venue-table entry takes effect on events already st
   const { default: os } = await import('node:os');
   const { default: path } = await import('node:path');
   const { mergeAndWrite } = await import('../ingest/merge.mjs');
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-venues-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
-  await fs.mkdir('data/review', { recursive: true });
+  await inTempDir(t);
   const entry = (geo) => [{ name: 'Himalayan Cultural Centre', match: ['himalayan cultural centre'], geo, source: 'https://example.test/' }];
   const event = { id: 'v', slug: 'v', title: 'Virasat evening', startAt: '2030-11-01T19:00:00+05:30', venue: { name: 'Himalayan Cultural Centre — Auditorium', city: 'Dehradun' },
     categories: ['Culture'], pricing: { type: 'unknown', currency: 'INR' }, sources: [{ provider: 'virasat', url: 'https://example.test/v' }],

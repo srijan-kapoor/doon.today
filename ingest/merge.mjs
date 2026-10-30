@@ -72,7 +72,7 @@ function fingerprint(e) {
 // words, gets that venue's coordinates and area when its source gave none. Virasat's programme page, for one,
 // names its venue but gives no coordinates. Coordinates from the table are marked `geoFrom: 'table'` and worked
 // out again on every run, so a corrected or removed entry takes effect instead of sticking to stored events.
-export const VENUES_PATH = 'data/venues.json';
+const VENUES_PATH = 'data/venues.json';
 export function knownVenueFor(venue, venues = []) {
   const name = ` ${norm(venue?.name)} `;
   return venues.find(v => v && (v.match || []).some(phrase => name.includes(` ${norm(phrase)} `)));
@@ -102,7 +102,11 @@ function withOrderedVenue(e) {
 
 // Events that start together are ordered by id, so their order doesn't depend on which sources ran.
 // A plain comparison, not localeCompare, so the order is the same on every machine that runs a refresh.
-const compareForOutput = (a, b) => compareEventStarts(a, b) || (String(a.id) < String(b.id) ? -1 : String(a.id) > String(b.id) ? 1 : 0);
+const compareText = (x, y) => (x < y ? -1 : x > y ? 1 : 0);
+const compareForOutput = (a, b) => compareEventStarts(a, b) || compareText(String(a.id), String(b.id));
+
+// An event a person checked by hand: approved from the review queue or added to curated-events.json.
+const isHandChecked = (e) => (e.sources || []).some((s) => s.provider === 'manual');
 
 // Fill in venue.area from the address or venue name when a source did not provide one.
 function withArea(e) {
@@ -207,7 +211,7 @@ function mergePair(a,b,{combinePrices=false}={}) {
     // Thrill Zone's listing has no venue, but AllEvents gives the same run's venue and address.
     venue: venueOf(preferred, secondary),
     description: isPlaceholderDescription(preferred.description) && !isPlaceholderDescription(secondary.description) ? secondary.description : preferred.description,
-    pricing: mergePricing(preferred.pricing, secondary.pricing, { combine: combinePrices, handChecked: (preferred.sources||[]).some(s=>s.provider==='manual') }),
+    pricing: mergePricing(preferred.pricing, secondary.pricing, { combine: combinePrices, handChecked: isHandChecked(preferred) }),
     ...timing(preferred, secondary)
   };
   const occurrences = occurrencesFor(preferred, secondary, merged);
@@ -282,7 +286,7 @@ export async function mergeAndWrite(sourceResults) {
   const rejectedLinks=new Set(Object.values(await readJson(DECISIONS_PATH,{}))
     .filter(d=>d?.decision==='rejected' && d.sourceUrl).map(d=>normalizeUrl(d.sourceUrl))
     .filter(u=>(linkCount.get(u)||0)<=1));
-  const rejected=e=>!(e.sources||[]).some(s=>s.provider==='manual') && (e.sources||[]).some(s=>rejectedLinks.has(normalizeUrl(s.url)));
+  const rejected=e=>!isHandChecked(e) && (e.sources||[]).some(s=>rejectedLinks.has(normalizeUrl(s.url)));
   const out=merged
     .filter(e => !rejected(e))
     .filter(eventPassesGeo)
@@ -291,7 +295,7 @@ export async function mergeAndWrite(sourceResults) {
     .map(e => withKnownVenue(e, venues))
     .map(withArea)
     .map(withOrderedVenue)
-    .map(e => ({...e, categories: (e.sources || []).some(s => s.provider === 'manual') ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
+    .map(e => ({...e, categories: isHandChecked(e) ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
     .sort(compareForOutput);
 
   await fs.mkdir('data',{recursive:true});

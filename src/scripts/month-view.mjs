@@ -38,6 +38,7 @@ if (container && filters) {
   const shortDate = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', timeZone: 'UTC' });
   const weekday = new Intl.DateTimeFormat('en-IN', { weekday: 'short', timeZone: 'UTC' });
   const monthName = new Intl.DateTimeFormat('en-IN', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const monthShort = new Intl.DateTimeFormat('en-IN', { month: 'short', timeZone: 'UTC' });
   const at = (day) => new Date(`${day}T12:00:00Z`);
   const isWeekend = (day) => mondayIndex(day) >= 5;
   const el = (tag, className, text) => {
@@ -72,7 +73,7 @@ if (container && filters) {
   function renderStrip() {
     strip.replaceChildren();
     for (const day of stripDays(today)) {
-      if (day.endsWith('-01')) strip.append(el('span', 'strip-month', new Intl.DateTimeFormat('en-IN', { month: 'short', timeZone: 'UTC' }).format(at(day))));
+      if (day.endsWith('-01')) strip.append(el('span', 'strip-month', monthShort.format(at(day))));
       const { button, count } = dayButton(day, 'day-chip', DOT_LIMIT.strip);
       button.append(el('span', 'chip-weekday', day === today ? 'Today' : weekday.format(at(day))), el('span', 'chip-date', String(Number(day.slice(8)))), dotsFrom(count, DOT_LIMIT.strip));
       strip.append(button);

@@ -1,15 +1,14 @@
 // Pure date and filter logic for the home page's Month view. All days are IST calendar days as
 // YYYY-MM-DD strings and all arithmetic is done in UTC on those strings, so the visitor's timezone never matters.
-import { eventDayRange } from './dates.mjs';
+import { eventDayRange, DATE_ONLY } from './dates.mjs';
 import { addDays, mondayIndex, runsOn } from './month-dates.mjs';
 import { matchesPreferences } from './filters.mjs';
 export { eventDayRange };
 export { addDays, mondayIndex, runsOn };
 
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const DAY_MS = 24 * 3600_000;
 
-export const STRIP_DAYS = 14;
+const STRIP_DAYS = 14;
 export const DOT_LIMIT = { strip: 4, grid: 8 };
 
 const utc = (day) => Date.parse(`${day}T00:00:00Z`);

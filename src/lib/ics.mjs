@@ -1,11 +1,10 @@
 // iCalendar (RFC 5545) output for the calendar feeds and per-event downloads. Plain .mjs so the site
 // build and `node --test` share one implementation.
 
-import { toInstant, occurrencesOf, nextOccurrence } from './dates.mjs';
+import { toInstant, occurrencesOf, nextOccurrence, DATE_ONLY } from './dates.mjs';
 export { toInstant } from './dates.mjs';
 
 const SITE = 'https://doon.today';
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const DEFAULT_DURATION_MS = 2 * 3600_000;
 const encoder = new TextEncoder();
 

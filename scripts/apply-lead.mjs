@@ -11,6 +11,7 @@ import { readJson, writeJson, approve, reject, QUEUE_PATH, DECISIONS_PATH, CURAT
 import { APPROVE_LABEL, isQueuedKind, leadKey, leadMarker, leadSourceUrl, leadToEvent, parseLeadIssue, cleanLine } from '../ingest/lib/leads.mjs';
 import { mergeAndWrite } from '../ingest/merge.mjs';
 import { github } from '../ingest/lib/github.mjs';
+import { sleep } from '../ingest/lib/utils.mjs';
 
 const mode = process.argv[2];
 const { issue } = JSON.parse(await fs.readFile(process.env.GITHUB_EVENT_PATH, 'utf8'));
@@ -27,7 +28,7 @@ async function commitAndPush(message) {
       return;
     } catch (error) {
       if (attempt >= 3) throw new Error('could not push the change to main');
-      await new Promise((r) => setTimeout(r, 5000 * attempt));
+      await sleep(5000 * attempt);
     }
   }
 }

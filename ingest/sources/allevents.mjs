@@ -1,7 +1,7 @@
 import { fetchText } from '../lib/http.mjs';
 import { eventLikeObjects, extractJsonLd, flattenObjects } from '../lib/jsonld.mjs';
 import { stableId, slugify, priceFromOffers, priceFromText, categoryFromText, isLikelyDehradunEvent, stripHtml, nowIso, sleep, geoFrom } from '../lib/utils.mjs';
-import { istDay, toInstant } from '../../src/lib/dates.mjs';
+import { istDay, toInstant, DATE_ONLY } from '../../src/lib/dates.mjs';
 
 // The full upcoming list. The plain city page (allevents.in/dehradun) shows only about half of it.
 export const LIST = 'https://allevents.in/dehradun/all';
@@ -24,7 +24,6 @@ export function isThinListing(e) {
   return stripHtml(e.description || '').length < THIN_DESCRIPTION_CHARS
     && (e.categories || []).length === 1 && e.categories[0] === 'Other';
 }
-const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const startTime = (v = '') => Date.parse(DATE_ONLY.test(v) ? `${v}T23:59:59+05:30` : v);
 const validTime = (v) => typeof v === 'string' && Number.isFinite(toInstant(v).getTime());
 

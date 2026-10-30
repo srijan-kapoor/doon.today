@@ -1,7 +1,7 @@
 // The feedback form: one Netlify Form on every page, opened from "Feedback" links and from an event's
 // "Report a problem". Messages stay in Netlify Forms (and its email notification); nothing is public.
-export const FEEDBACK_FORM = 'feedback';
-export const VOTES = ['like', 'dislike'];
+const FEEDBACK_FORM = 'feedback';
+const VOTES = ['like', 'dislike'];
 
 /** What a "Report a problem" link on an event page tells the form: the event's title and id. */
 export const eventAbout = (event) => `${event.title} (${event.id})`;

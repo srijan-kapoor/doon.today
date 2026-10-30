@@ -1,12 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import os from 'node:os';
-import path from 'node:path';
 import { priceFromOffers, priceFromText } from '../ingest/lib/utils.mjs';
 import { LIST, addDetailsFromEventPages, applyEventDetails, detailsFromEventPage, fetchAllEvents } from '../ingest/sources/allevents.mjs';
 import { mergeAndWrite } from '../ingest/merge.mjs';
 import { priceLabel } from '../src/lib/sources.mjs';
+import { inTempDir } from './helpers.mjs';
 
 const fixture = (name) => fs.readFile(new URL(`./fixtures/${name}`, import.meta.url), 'utf8');
 const GHOSTED = 'https://allevents.in/dehradun/ghosted/4100030884279649';
@@ -190,10 +189,7 @@ test('the full upcoming list is read, and a bare listing becomes a full event fr
 });
 
 test('merged sources use the lowest price and the widest range; a known price beats unknown', async (t) => {
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-price-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
+  await inTempDir(t);
   const base = (over) => ({
     title: 'Dehradun Half Marathon 2030', startAt: '2030-10-25T05:30:00+05:30', venue: { name: 'Maharana Pratap Sports College', city: 'Dehradun' },
     categories: ['Outdoors'], curation: { status: 'published', score: 7 }, firstSeenAt: '2030-01-01T00:00:00Z', lastSeenAt: '2030-01-01T00:00:00Z', lastCheckedAt: '2030-01-01T00:00:00Z', ...over
@@ -215,10 +211,7 @@ test('merged sources use the lowest price and the widest range; a known price be
 });
 
 test('a stored price is replaced by this run, not widened, and a hand-checked price is never lowered', async (t) => {
-  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'doon-price-'));
-  const cwd = process.cwd();
-  process.chdir(dir);
-  t.after(async () => { process.chdir(cwd); await fs.rm(dir, { recursive: true, force: true }); });
+  await inTempDir(t);
   const event = (over) => ({
     id: 'g', slug: 'g', title: 'Ghosted 2030', startAt: '2030-10-31', venue: { name: 'BLAAZE', city: 'Dehradun' }, categories: ['Music'],
     curation: { status: 'published', score: 4 }, firstSeenAt: '2030-01-01T00:00:00Z', lastSeenAt: '2030-01-01T00:00:00Z', lastCheckedAt: '2030-01-01T00:00:00Z',

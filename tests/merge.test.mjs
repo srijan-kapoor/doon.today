@@ -1,9 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import os from 'node:os';
-import path from 'node:path';
 import {sameEvent,istDay,mergeAndWrite} from '../ingest/merge.mjs';
+import { inTempDir } from './helpers.mjs';
 
 const ev=(over={})=>({
   id:'x',slug:'x',title:'Doon Music Night',description:'',startAt:'2030-01-10T18:00:00+05:30',
@@ -34,14 +33,6 @@ test('different venues or different days are still different events',()=>{
   assert.equal(sameEvent(a,ev({title:'Totally Different Show'})),false);
 });
 
-async function inTempDir(t){
-  const original=process.cwd();
-  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'doon-merge-'));
-  process.chdir(dir);
-  t.after(async()=>{process.chdir(original);await fs.rm(dir,{recursive:true,force:true});});
-  await fs.mkdir('data/review',{recursive:true});
-  return dir;
-}
 
 test('previously stored duplicates collapse on the next merge',async t=>{
   await inTempDir(t);
@@ -357,7 +348,7 @@ test('a District-only run and a full run write the same file when no event chang
   assert.equal(await file(),afterFull,'the District-only run keeps the stored Virasat session byte for byte');
   await full();
   assert.equal(await file(),afterFull,'and the next full run changes nothing either');
-  const [first]=JSON.parse(afterFull);
+  const [first,second]=JSON.parse(afterFull);
   assert.equal(first.id,'d','events at the same time are ordered by id');
-  assert.deepEqual(Object.keys(JSON.parse(afterFull)[1].venue),['name','address','city','area','geo','geoFrom']);
+  assert.deepEqual(Object.keys(second.venue),['name','address','city','area','geo','geoFrom']);
 });

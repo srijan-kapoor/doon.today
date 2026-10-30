@@ -1,19 +1,18 @@
 ---
 import type { EventRecord } from '../types/event';
-import { toInstant, eventDayRange } from '../lib/dates.mjs';
+import { toInstant, eventDayRange, DATE_ONLY, istTime, istDayMonth } from '../lib/dates.mjs';
 import { priceLabel } from '../lib/sources.mjs';
 import { isCommunityEvent, communityHandle } from '../lib/community.mjs';
 import { festivalName } from '../lib/festivals.mjs';
 const { event, today } = Astro.props as { event: EventRecord; today: string };
 const range = eventDayRange(event);
-const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(event.startAt);
+const dateOnly = DATE_ONLY.test(event.startAt);
 const start = toInstant(event.startAt);
 const time = dateOnly
   ? 'Time TBA'
-  : new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' }).format(start);
-const until = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
+  : istTime.format(start);
 const displayTime = !range.days && range.start < today && range.end >= today
-  ? `Until ${until.format(new Date(`${range.end}T12:00:00+05:30`))}` : time;
+  ? `Until ${istDayMonth.format(new Date(`${range.end}T12:00:00+05:30`))}` : time;
 const price = priceLabel(event.pricing, 'short');
 const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const community = isCommunityEvent(event);

@@ -3,10 +3,12 @@
 // event page shows those as their own rows, and the text around them without hashtags.
 import { stripHashtags } from '../../ingest/lib/utils.mjs';
 
+const graphemes = new Intl.Segmenter('en', { granularity: 'grapheme' });
+
 /** Restore item boundaries in flattened captions without rewriting the source. */
 function breakCaptionItems(text) {
   let result = '', line = '';
-  for (const { segment } of new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(text)) {
+  for (const { segment } of graphemes.segment(text)) {
     if (/\p{Extended_Pictographic}/u.test(segment) && /\s$/.test(line) && /[\p{L}\p{N}]/u.test(line)) {
       result = result.trimEnd() + '\n\n';
       line = '';
