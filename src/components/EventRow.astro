@@ -3,6 +3,7 @@ import type { EventRecord } from '../types/event';
 import { toInstant, eventDayRange } from '../lib/dates.mjs';
 import { priceLabel } from '../lib/sources.mjs';
 import { isCommunityEvent, communityHandle } from '../lib/community.mjs';
+import { festivalName } from '../lib/festivals.mjs';
 const { event, today } = Astro.props as { event: EventRecord; today: string };
 const range = eventDayRange(event);
 const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(event.startAt);
@@ -28,6 +29,8 @@ const showArea = event.venue.area && !event.venue.name.toLowerCase().includes(ev
   data-end-date={range.end}
   data-days={range.days?.join(' ')}
   data-community={community ? 'yes' : undefined}
+  data-festival={festivalName(event.title) || undefined}
+  data-venue={event.venue.name}
 >
   <div class="event-time" data-start-time={time}>{displayTime}</div>
   <div class="event-main">

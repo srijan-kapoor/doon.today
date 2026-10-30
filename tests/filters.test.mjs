@@ -66,7 +66,7 @@ test('sheet draft, Reset and Apply are isolated from applied filters', () => {
   assert.deepEqual(draft.state.categories, [], 'Apply also returns a copy');
 });
 
-function page(t, search = '') {
+function page(t, search = '', extra = []) {
   t.mock.timers.enable({ apis: ['Date'], now: new Date('2026-10-29T12:00:00+05:30') });
   const rows = [
     item(['music', 'culture'], { price: 'paid', community: false }),
@@ -75,6 +75,7 @@ function page(t, search = '') {
     item(['outdoors'], { range: { start: '2026-10-30', end: '2026-10-30' }, area: 'malsi' }),
     item(['workshop'], { range: { start: '2026-11-02', end: '2026-11-02' }, price: 'paid' }),
     item(['art'], { price: 'paid', community: false }),
+    ...extra,
   ];
   const dom = new JSDOM(`<!doctype html><html><body><div id="event-filters">
     <div>${['all', 'today', 'tomorrow', 'weekend'].map((value) => `<button data-filter="${value}">${value}</button>`).join('')}</div>
@@ -88,7 +89,7 @@ function page(t, search = '') {
     <div id="active-filters"></div><p id="filter-status"></p>
     <dialog id="filter-sheet"><button id="close-filters">Close</button><div id="sheet-fields"></div><button id="reset-pending-filters">Reset</button><button id="apply-pending-filters">Apply</button></dialog>
     </div><section class="curated"><span id="event-count"></span><div id="empty-state"></div><div id="community-note"><span id="community-shown"></span><span id="community-total"></span><button id="community-all">Show all</button></div>
-    <section class="day-group">${rows.map((row, index) => `<article class="event-row" data-id="${index}" data-categories="${row.categories.join(' ')}" data-price="${row.price}" data-area="${row.area}" data-community="${row.community ? 'yes' : ''}" data-start-date="${row.range.start}" data-end-date="${row.range.end}"><div class="event-time" data-start-time="7pm">7pm</div></article>`).join('')}</section></section>
+    <section class="day-group">${rows.map((row, index) => `<article class="event-row" data-id="${index}" data-categories="${row.categories.join(' ')}" data-price="${row.price}" data-area="${row.area}" data-community="${row.community ? 'yes' : ''}" data-start-date="${row.range.start}" data-end-date="${row.range.end}"${row.festival ? ` data-festival="${row.festival}" data-venue="${row.venue}"` : ''}><div class="event-time" data-start-time="${row.time ?? '7pm'}">${row.time ?? '7pm'}</div></article>`).join('')}</section></section>
     <button data-clear-filters>Clear all filters</button></body></html>`, { url: `https://doon.today/${search}` });
   t.after(() => dom.window.close());
   const { window } = dom;
@@ -231,4 +232,23 @@ test('Month facet counts track the selected day and hidden category filters can 
   $('[data-clear-filters]').click();
   assert.deepEqual(api.state.categories, []);
   assert.equal($('#event-count').textContent, '1');
+});
+
+test("a festival's sessions on a day fold into one row, and filters still count each session", (t) => {
+  const session = (categories, time) => item(categories, { festival: 'Virasat 2026', venue: 'Auditorium', community: false, time });
+  const { $, document } = page(t, '', [session(['music'], '7:00 pm'), session(['culture'], '8:30 pm')]);
+  const group = $('.festival-group');
+  assert.deepEqual([...group.querySelectorAll('.event-row')].map((row) => row.dataset.id), ['7', '8']);
+  assert.equal(document.querySelectorAll('.festival-group').length, 1);
+  assert.equal(group.querySelector('.festival-summary .event-title').textContent, 'Virasat 2026');
+  assert.equal(group.querySelector('.festival-summary .event-time').textContent, '7:00 pm');
+  assert.equal(group.querySelector('.festival-summary .event-meta').textContent, '2 sessions · Auditorium');
+  assert.equal($('#event-count').textContent, '9');
+  $('[data-quick-category="culture"]').click();
+  assert.equal(group.hidden, false);
+  assert.equal(group.querySelector('.festival-summary .event-time').textContent, '8:30 pm');
+  assert.equal(group.querySelector('.festival-summary .event-meta').textContent, '1 session · Auditorium');
+  $('[data-quick-category="culture"]').click();
+  $('[data-quick-category="books"]').click();
+  assert.equal(group.hidden, true);
 });

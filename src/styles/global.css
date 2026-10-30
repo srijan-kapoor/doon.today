@@ -105,6 +105,14 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.6rem, 11
 .event-tags span { background: var(--green-soft); color: var(--tag-ink); border-radius: 4px; padding: 3px 7px; font-size: .72rem; }
 .event-tags span.community { background: var(--community); color: var(--community-ink); }
 .event-tags span.community-pick { font-weight: 600; }
+/* A festival's sessions on one day: one row that opens to the sessions, which sit indented beneath it. */
+.festival-summary { display: grid; grid-template-columns: 92px 1fr auto; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); cursor: pointer; list-style: none; }
+.festival-summary::-webkit-details-marker { display: none; }
+.festival-summary::after { content: '⌄'; color: var(--green); font-size: 1.1rem; line-height: 1; }
+.festival-group[open] > .festival-summary::after { content: '⌃'; }
+.festival-summary:hover .event-title { text-decoration: underline; text-underline-offset: 3px; }
+.festival-summary:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.festival-group > .event-row { padding-left: 14px; border-left: 2px solid var(--green-soft); }
 .event-price { font-size: .77rem; color: var(--green); font-weight: 800; letter-spacing: .04em; }
 .detail, .simple-page { padding: 54px 0 80px; }
 .detail .back { display: inline-block; margin-bottom: 38px; color: var(--green); }
@@ -140,6 +148,7 @@ dd { margin: 0; }
   .curated { padding-top: 16px; }
   .section-heading h2 { font-size: 1.6rem; }
   .event-row { grid-template-columns: 72px 1fr; gap: 10px; }
+  .festival-summary { grid-template-columns: 72px 1fr auto; gap: 10px; }
   .event-title { font-size: 1.125rem; }
   .event-price { grid-column: 2; }
   .calendar-grid { grid-template-columns: 1fr; }

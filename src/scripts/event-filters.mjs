@@ -1,4 +1,5 @@
 import { istDay } from '../lib/dates.mjs';
+import { festivalGroups, sessionLabel } from '../lib/festivals.mjs';
 import { activeFilterCount, categoryCounts, emptyFilters, filterDraft, matchesEvent, parseFilters, withFilters } from '../lib/filters.mjs';
 
 /** Shared applied state for List and Month. The dialog edits a separate draft. */
@@ -50,6 +51,36 @@ export function initEventFilters(document, window) {
     [...groupRows.filter((r) => r.dataset.community), ...groupRows.filter((r) => !r.dataset.community)].forEach((row) => group.append(row));
     $('.curated').append(group);
   });
+  const festivals = dayGroups.flatMap(groupFestivals);
+
+  // A festival's sessions on one day fold into one row that opens to list them. The session rows stay
+  // .event-row, so filters, counts and the Month view still see each session.
+  function groupFestivals(group) {
+    const groupRows = [...group.querySelectorAll('.event-row')];
+    const found = festivalGroups(groupRows.map((row) => ({ festival: row.dataset.festival || '', venue: row.dataset.venue || '' })));
+    return found.map(({ name, members }) => {
+      const sessions = members.map((i) => groupRows[i]);
+      const details = document.createElement('details');
+      details.className = 'festival-group';
+      const summary = document.createElement('summary');
+      summary.className = 'festival-summary';
+      summary.innerHTML = '<div class="event-time"></div><div class="event-main"><span class="event-title"></span><div class="event-meta"></div></div>';
+      summary.querySelector('.event-title').textContent = name;
+      sessions[0].before(details);
+      details.append(summary, ...sessions);
+      return { details, summary, sessions };
+    });
+  }
+
+  function renderFestivals() {
+    for (const { details, summary, sessions } of festivals) {
+      const shown = sessions.filter((row) => !row.hidden);
+      details.hidden = shown.length === 0;
+      if (!shown.length) continue;
+      summary.querySelector('.event-time').textContent = shown[0].querySelector('.event-time').textContent;
+      summary.querySelector('.event-meta').textContent = `${sessionLabel(shown.length)} · ${shown[0].dataset.venue}`;
+    }
+  }
 
   const sheet = $('#filter-sheet');
   const fields = $('#filter-fields');
@@ -134,6 +165,7 @@ export function initEventFilters(document, window) {
       groupRows.forEach((row) => { row.hidden = !visible.has(row); });
       group.hidden = !groupRows.some((row) => visible.has(row));
     });
+    renderFestivals();
     $('#empty-state').hidden = visible.size !== 0;
     $('#event-count').textContent = String(visible.size);
     const counts = renderFields(state);
