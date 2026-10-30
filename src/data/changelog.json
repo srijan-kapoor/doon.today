@@ -1,4 +1,5 @@
 [
+  { "date": "2026-10-31", "tag": "Fixed", "text": "An event approved from two different posts, with different titles, is listed once." },
   { "date": "2026-10-30", "tag": "Fixed", "text": "Descriptions of events from AllEvents are no longer cut off mid-word." },
   { "date": "2026-10-30", "tag": "Improved", "text": "Events from District now show their description, which was missing before." },
   { "date": "2026-10-30", "tag": "Fixed", "text": "The numbers on the filter buttons are easier to read, and long event titles are shortened so they show in full in search results." },

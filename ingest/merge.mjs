@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription, currentCategories, withAddedCategories } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
-import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf } from '../src/lib/dates.mjs';
+import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
 
 const SOURCE_RANK = {
@@ -59,7 +59,23 @@ export function sameEvent(a,b) {
   if (istDay(a.startAt) !== istDay(b.startAt)) return false;
   const titleScore=similarity(a.title,b.title);
   const venueScore=venueSimilarity(a.venue?.name,b.venue?.name);
-  return titleScore >= 0.72 && (venueScore >= 0.5 || isPlaceholderVenue(a.venue?.name) || isPlaceholderVenue(b.venue?.name));
+  const venueMatches=venueScore >= 0.5 || isPlaceholderVenue(a.venue?.name) || isPlaceholderVenue(b.venue?.name);
+  if (titleScore >= 0.72 && venueMatches) return true;
+  // Two posts about one event are often titled differently ("Melophile Session 02: Daft Punk's Random Access
+  // Memories" and "Melophile - Daft Punk Random Access Memories Album Listening Meet"). Starting at the same
+  // minute at the same venue, half the words and at least three of them in common is enough, unless they end on
+  // different days or their titles name different numbers (a 100-hour and a 200-hour course).
+  return venueScore >= 0.5 && sameMinute(a.startAt,b.startAt) && titleScore >= 0.5 && commonWords(a.title,b.title) >= 3
+    && !(a.endAt && b.endAt && istDay(a.endAt) !== istDay(b.endAt)) && !conflictingNumbers(a.title,b.title);
+}
+const sameMinute=(a,b)=>/T\d/.test(a) && /T\d/.test(b) && Math.floor(toInstant(a).getTime()/60000) === Math.floor(toInstant(b).getTime()/60000);
+function commonWords(a='',b='') { const B=tokens(b); let n=0; for (const t of tokens(a)) if (B.has(t)) n++; return n; }
+// Numbers that only one title has, when both have some: "100 Hour" against "200 Hour". A number on one side only
+// ("Session 02") is not a conflict.
+function conflictingNumbers(a='',b='') {
+  const nums=(t)=>new Set([...tokens(t)].filter(w=>/^\d+$/.test(w)).map(Number));
+  const A=nums(a), B=nums(b);
+  return A.size > 0 && B.size > 0 && ([...A].some(n=>!B.has(n)) || [...B].some(n=>!A.has(n)));
 }
 function sourceKey(s){ return `${s.provider}|${s.url}`; }
 
