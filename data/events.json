@@ -30,7 +30,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-8",
         "externalId": "2026-8-sitar-recital-by-dhruv-bedi",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -40,8 +40,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T03:52:50.746Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "4c6b28a82b3104b0",
@@ -151,7 +151,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-8",
         "externalId": "2026-8-indian-ocean-live",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -161,8 +161,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "e7b921ae8508fd72",
@@ -278,7 +278,7 @@
         "provider": "meetup",
         "url": "https://www.meetup.com/aws-sbg-at-graphic-era-deemed-to-be-university/events/316766651/",
         "externalId": "316766651",
-        "checkedAt": "2026-10-30T15:05:53.949Z",
+        "checkedAt": "2026-10-30T18:25:53.880Z",
         "confidence": 0.9
       }
     ],
@@ -288,8 +288,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-10-18T07:29:54.460Z",
-    "lastSeenAt": "2026-10-30T15:05:53.949Z",
-    "lastCheckedAt": "2026-10-30T15:05:53.949Z"
+    "lastSeenAt": "2026-10-30T18:25:53.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:53.880Z"
   },
   {
     "id": "3de7a089f410e60a",
@@ -467,7 +467,7 @@
     "id": "96297d668f206584",
     "slug": "rajat-chauhan-live-a-solo-standup-comedy-show",
     "title": "Rajat Chauhan Live : A Solo Standup Comedy Show",
-    "description": "Get ready for an evening of sharp, effortless and feel-good comedy as rajat chauhan takes the stage with a lineup of exciting acts!Catch him live at Hideout Comedy Club along with some of the finest comics in the scene, bringing fresh stories, quick wit, and the kind of relatable humour that keeps y",
+    "description": "Get ready for an evening of sharp, effortless and feel-good comedy as rajat chauhan takes the stage with a lineup of exciting acts! Catch him live at Hideout Comedy Club along with some of the finest comics in the scene, bringing fresh stories, quick wit, and the kind of relatable humour that keeps you hooked from start to finish. A perfect plan for a chill night out good vibes, great jokes, and a show that promises plenty of laughs. Book your seats now!",
     "startAt": "2026-10-31T17:00:00+05:30",
     "endAt": "2026-10-31T18:30:00+05:30",
     "venue": {
@@ -481,7 +481,8 @@
       }
     },
     "categories": [
-      "Comedy"
+      "Comedy",
+      "Books"
     ],
     "pricing": {
       "type": "unknown",
@@ -491,7 +492,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/rajat-chauhan-live-a-solo-standup-comedy-show/3900030824167154",
-        "checkedAt": "2026-10-30T15:05:26.867Z",
+        "checkedAt": "2026-10-30T18:25:27.938Z",
         "confidence": 0.75
       }
     ],
@@ -501,14 +502,14 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.890Z",
-    "lastSeenAt": "2026-10-30T15:05:26.867Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.867Z"
+    "lastSeenAt": "2026-10-30T18:25:27.938Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.938Z"
   },
   {
     "id": "404ba7c9634aa20c",
     "slug": "blaaze-halloween-thrill-night",
     "title": "Blaaze Halloween Thrill Night",
-    "description": "Get ready for a spooktacular experience at Blaaze – Halloween Thrill Night! Step into a night filled with thrilling adventures, exciting games, and Halloween madness. Enjoy unlimited arcade games, adrenaline-pumping go-karting, foot-tapping music, delicious food and beverages, and creative face art",
+    "description": "Get ready for a spooktacular experience at Blaaze – Halloween Thrill Night! Step into a night filled with thrilling adventures, exciting games, and Halloween madness. Enjoy unlimited arcade games, adrenaline-pumping go-karting, foot-tapping music, delicious food and beverages, and creative face art for an unforgettable celebration. Dress up in your most creative Halloween costume and stand a chance to win big in our Best Costume Contest! Whether you're coming with friends or family, there's something for everyone to enjoy. From racing thrills to spooky vibes, this Halloween promises non-stop entertainment, laughter, and unforgettable memories. So, bring your Halloween spirit, gather your crew, and get ready to celebrate a night full of fun, frights, and excitement at Blaaze!",
     "startAt": "2026-10-31T18:00:00+05:30",
     "endAt": "2026-10-31T21:00:00+05:30",
     "venue": {
@@ -535,7 +536,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/blaaze-halloween-thrill-night/4100030883457641",
-        "checkedAt": "2026-10-30T15:05:26.871Z",
+        "checkedAt": "2026-10-30T18:25:27.943Z",
         "confidence": 0.75
       }
     ],
@@ -545,8 +546,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-24T04:03:21.634Z",
-    "lastSeenAt": "2026-10-30T15:05:26.871Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.871Z",
+    "lastSeenAt": "2026-10-30T18:25:27.943Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.943Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.945Z"
   },
@@ -581,7 +582,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-9",
         "externalId": "2026-9-tawayafnama-a-journey-in-memory-of-gauhar-jaan-125-years-of-gramophone-recording-in-india",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -591,8 +592,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z",
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.691Z"
   },
@@ -726,7 +727,7 @@
     "id": "c76bb989bbf9c42e",
     "slug": "ghosted",
     "title": "Ghosted",
-    "description": "It’s 2026, the real horrors lie in your DMs!This Halloween, why search for ghosts when your DMs are full of them, a graveyard of delivered texts, sad obituaries announced in friend groups and the unexpected BOO! In the form of “You up?” on a random tuesday. If your DMs are already giving you nightma",
+    "description": "It’s 2026, the real horrors lie in your DMs!This Halloween, why search for ghosts when your DMs are full of them, a graveyard of delivered texts, sad obituaries announced in friend groups and the unexpected BOO! In the form of “You up?” on a random tuesday. If your DMs are already giving you nightmares, wait till you see what we have planned.Icks, red flags and “left on seen” cover the walls of SOCIAL, as you enter the afterlife of your lovelife. And we’ve got an exclusive cocktail menu curated in memory of the spark that once existed. So put on an outfit that screams red flag (dress code: red), grab a drink and pull up to GHOSTING.",
     "startAt": "2026-10-31T19:00:00+05:30",
     "endAt": "2026-10-31T23:59:00+05:30",
     "venue": {
@@ -752,7 +753,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/ghosted/4100030884279649",
-        "checkedAt": "2026-10-30T15:05:26.871Z",
+        "checkedAt": "2026-10-30T18:25:27.943Z",
         "confidence": 0.75
       }
     ],
@@ -762,8 +763,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-23T05:58:51.067Z",
-    "lastSeenAt": "2026-10-30T15:05:26.871Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.871Z",
+    "lastSeenAt": "2026-10-30T18:25:27.943Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.943Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.945Z"
   },
@@ -797,7 +798,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-9",
         "externalId": "2026-9-dastangoi-vs-jumlebaazi",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -807,8 +808,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "5c236c81f43b60ca",
@@ -845,7 +846,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/litchi-india-tour/4100030856672817",
-        "checkedAt": "2026-10-30T15:05:26.868Z",
+        "checkedAt": "2026-10-30T18:25:27.939Z",
         "confidence": 0.75
       }
     ],
@@ -855,8 +856,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-30T15:05:26.868Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.868Z"
+    "lastSeenAt": "2026-10-30T18:25:27.939Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.939Z"
   },
   {
     "id": "a6294b81aaa91ded",
@@ -893,7 +894,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halloween-party-dj-musical-monkey/4100030928819332",
-        "checkedAt": "2026-10-30T15:05:26.868Z",
+        "checkedAt": "2026-10-30T18:25:27.939Z",
         "confidence": 0.75
       }
     ],
@@ -903,14 +904,14 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-25T15:11:59.396Z",
-    "lastSeenAt": "2026-10-30T15:05:26.868Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.868Z"
+    "lastSeenAt": "2026-10-30T18:25:27.939Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.939Z"
   },
   {
     "id": "5e74456cf880932f",
     "slug": "framed-in-crimson-halloween-rock-night",
     "title": "Framed In Crimson: Halloween Rock Night",
-    "description": "This Halloween, Framed In Crimson brings you a high-energy live rock experience packed with the anthems that defined the 2000s rock era, legendary sing-alongs, and the kind of songs that take you right back. Expect infectious hooks, soaring vocals, electrifying riffs, and plenty of moments to sing y",
+    "description": "This Halloween, Framed In Crimson brings you a high-energy live rock experience packed with the anthems that defined the 2000s rock era, legendary sing-alongs, and the kind of songs that take you right back. Expect infectious hooks, soaring vocals, electrifying riffs, and plenty of moments to sing your heart out. We`re also bringing a taste of our own sound to the stage with a selection of original songs. Whether you`re here to relive your favourite rock memories, discover something new, or simply celebrate Halloween with great music and great people, this is your night. Dress for Halloween. Show up for the rock. Leave your voice at the venue.",
     "startAt": "2026-10-31T20:30:00+05:30",
     "endAt": "2026-10-31T22:30:00+05:30",
     "venue": {
@@ -933,7 +934,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/framed-in-crimson-halloween-rock-night/3900030867000008",
-        "checkedAt": "2026-10-30T15:05:26.868Z",
+        "checkedAt": "2026-10-30T18:25:27.939Z",
         "confidence": 0.75
       }
     ],
@@ -943,8 +944,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-30T15:05:26.868Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.868Z"
+    "lastSeenAt": "2026-10-30T18:25:27.939Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.939Z"
   },
   {
     "id": "796a95871a706bc1",
@@ -1169,43 +1170,6 @@
   {
     "id": "4c4dc379f5930697",
     "slug": "melophile-daft-punk-random-access-memories-album-listening-meet",
-    "title": "Melophile - Daft Punk \"Random Access Memories\" Album Listening Meet",
-    "description": "Our first session was all about Pink Floyd. This time, we're switching things up with Daft Punk's Random Access Memories\n\nThe idea is simple: get together with people who love music, put on an album, and listen to it from start to finish. No skipping, no distractions, just the music.\n\nOnce we've finished the album, we'll take turns playing songs we've brought along. It's a chance to share the music we love, discover something new, meet people with similar tastes, and connect with fellow musicians.\n\n📀 This session:\n    Album: Random Access Memories by Daft Punk\n    Date: Sunday, 1 November 2026\n    Time: 4:30 PM\n\nYou don't need to be a musician or know anything about music theory. If you enjoy listening to music and want to meet people who feel the same way, you're welcome.\n\nBring your favorite songs. We'll bring the speakers and the music.\n\nOne album. Front to back. Then your music, our music, and whatever we discover along the way.\n\nOrganized by Melophile. How to join: https://chat.whatsapp.com/G3fXQMFvx2E5Eyqq0cr8vm",
-    "startAt": "2026-11-01T16:30:00+05:30",
-    "venue": {
-      "name": "Maldevta",
-      "city": "Dehradun",
-      "area": "Maldevta"
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "free",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/melophile.ddn?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==",
-        "checkedAt": "2026-10-29T04:29:49.726Z",
-        "confidence": 1
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-10-29T04:29:49.726Z",
-    "lastSeenAt": "2026-10-29T04:29:49.726Z",
-    "lastCheckedAt": "2026-10-29T04:29:49.726Z",
-    "sequence": 1,
-    "modifiedAt": "2026-10-29T09:24:29.838Z"
-  },
-  {
-    "id": "fc0719634a55b950",
-    "slug": "melophile-session-02-daft-punk-s-random-access-memories",
     "title": "Melophile Session 02: Daft Punk's Random Access Memories",
     "description": "🎧 MELOPHILE — SESSION 02 Dehradun, let's listen to some music. 🪩 This time, we're getting together for Daft Punk's Random Access Memories, one album, played from start to finish. No skipping. No distractions. Just music. And when the album ends? It's your turn. 🎶 We'll take turns playing songs we've brought along, discovering new music, sharing favourites, and meeting people who love music as much as we do. 🎧 Meet people with similar music taste 🎸 Connect with fellow musicians 💿 Discover music beyond your usual playlists 📅 Sunday, 1 November 🕟 4:30 PM 📍 Dehradun You don't need to be a musician, Just bring your love for music and a few songs you'd like others to hear. Want to join? 🔗 Join our WhatsApp group through the link in our bio. One album. Your music. Our music. Ne\n\nOrganized by @melophile.ddn. How to join: Join the WhatsApp group via the link in bio, or DM / comment to join",
     "startAt": "2026-11-01T16:30:00+05:30",
@@ -1219,10 +1183,16 @@
       "Meetups"
     ],
     "pricing": {
-      "type": "unknown",
+      "type": "free",
       "currency": "INR"
     },
     "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/melophile.ddn?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==",
+        "checkedAt": "2026-10-29T04:29:49.726Z",
+        "confidence": 1
+      },
       {
         "provider": "manual",
         "url": "https://www.instagram.com/p/DfEnhWaJu9w",
@@ -1241,15 +1211,17 @@
       "status": "published",
       "score": 5
     },
-    "firstSeenAt": "2026-10-30T18:14:39.691Z",
+    "firstSeenAt": "2026-10-29T04:29:49.726Z",
     "lastSeenAt": "2026-10-30T18:14:39.691Z",
-    "lastCheckedAt": "2026-10-30T18:14:39.691Z"
+    "lastCheckedAt": "2026-10-30T18:14:39.691Z",
+    "sequence": 2,
+    "modifiedAt": "2026-10-30T18:25:56.436Z"
   },
   {
     "id": "e1664ec65e6e45da",
     "slug": "vipul-goyal-unleashed",
     "title": "Vipul Goyal- Unleashed",
-    "description": "Vipul Goyal Live in your cityDont miss thisThe best evening of the month is hereGet Ready for a roller coaster ride and experience one of tge beat comics performing live",
+    "description": "Vipul Goyal Live in your city Dont miss this The best evening of the month is here Get Ready for a roller coaster ride and experience one of tge beat comics performing live",
     "startAt": "2026-11-01T17:05:00+05:30",
     "endAt": "2026-11-01T18:20:00+05:30",
     "venue": {
@@ -1273,7 +1245,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/vipul-goyal-unleashed/3900030908940529",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -1283,8 +1255,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.890Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastSeenAt": "2026-10-30T18:25:27.940Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.940Z"
   },
   {
     "id": "694d2e017d95f36b",
@@ -1359,7 +1331,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-10",
         "externalId": "2026-10-violin-recital-by-ragini-shankar",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1369,14 +1341,14 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "c44fbdc5a7afacd7",
     "slug": "zumba-instructor-training-with-steve-frank-in-dehra-dun-uttarakhand-in",
     "title": "Zumba Instructor Training with Steve Frank in Dehra Dun, Uttarakhand, IN",
-    "description": "Included with Session: Instructor Training Manual + Review Videos Certificate of Completion Fitness Certification Credits (varies by country) CEC/CEUs: AFAA 8, ACE 0.7, CANFITPRO 4, AEA 4, REPS NZ 5, AUSACTIVE 5, NCTRC 0.85 What to Expect: Pre-Training Session Optional to join/Highly recommended",
+    "description": "Included with Session: Instructor Training Manual + Review Videos Certificate of Completion Fitness Certification Credits (varies by country) CEC/CEUs: AFAA 8, ACE 0.7, CANFITPRO 4, AEA 4, REPS NZ 5, AUSACTIVE 5, NCTRC 0.85 What to Expect: Pre-Training Session Optional to join/Highly recommended (Your Zumba Education Specialist will send you an email notification with the date and time). Learn how to teach the basic steps to the four Zumba® core rhythms: Merengue, Salsa, Cumbia, and Reggaeton. Using the Zumba® formula, learn how to identify different parts of a song and apply the basic steps to build an effective Zumba class. Practice live with a Zumba Education Specialist to gain confidence to teach sooner. Receive your license to begin teaching Zumba® classes immediately. Get access to even more tools to help you start teaching faster and changing lives sooner. Get the opportunity to receive monthly choreo and music + ongoing support. You may also like the following events from Zumba Fitness : Happening on, 12th April, 08:30 am, Zumba Instructor Training with Lucrecia Venosta in Union City, NJ, US in Union City This month, 22nd October, 08:00 am, Zumba Jump Start Gold Instructor Training with Lucrecia Venosta in Madison, CT, US in Madison This month, 24th October, 07:00 am, Zumba Instructor Training with Laura Angel in Saint Louis, MO, US in St. Louis Also check out other Dance events in Dehradun , Entertainment events in Dehradun , Health & Wellness events in Dehradun .",
     "startAt": "2026-11-01T19:00:00+05:30",
     "endAt": "2026-11-02T05:00:00+05:30",
     "venue": {
@@ -1389,6 +1361,7 @@
       }
     },
     "categories": [
+      "Music",
       "Workshop",
       "Wellness"
     ],
@@ -1400,7 +1373,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/zumba-instructor-training-with-steve-frank-in-dehra-dun-uttarakhand-in/200030777510326",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -1410,8 +1383,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z",
+    "lastSeenAt": "2026-10-30T18:25:27.940Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.940Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.947Z"
   },
@@ -1445,7 +1418,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-10",
         "externalId": "2026-10-vocal-recital-by-begum-parween-sultana",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1455,16 +1428,16 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z",
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.956Z"
   },
   {
     "id": "89a892bec3eaca47",
     "slug": "200-hour-yoga-in-dehradun",
-    "title": "200 hour yoga in dehradun",
-    "description": "Join the 200 Hour Yoga Teacher Training Course in Dehradun at Jyoti Yoga and build a strong foundation in traditional yoga practice, philosophy, and teaching methodology through an immersive 25-day training program.This comprehensive course is designed for beginners, regular yoga practitioners, and",
+    "title": "Why Choose 200 Hour Yoga Teacher Training in Dehradun?",
+    "description": "Join the 200 Hour Yoga Teacher Training Course in Dehradun at Jyoti Yoga and build a strong foundation in traditional yoga practice, philosophy, and teaching methodology through an immersive 25-day training program . This comprehensive course is designed for beginners, regular yoga practitioners, and aspiring yoga teachers who want to deepen their personal practice while developing the essential knowledge and skills required to teach yoga safely and confidently. The training combines Traditional Hatha & Ashtanga Yoga, Asana Practice, Pranayama, Meditation, Mantra, Yoga Anatomy & Physiology, Yoga Philosophy, Alignment, Teaching Methodology, Sequencing, Cueing, and Supervised Teaching Practice . Students learn how to understand the body and movement, improve alignment and breath awareness, structure yoga classes, communicate effectively with students, and apply traditional yogic principles in daily life. Course Highlights: • 200 Hours of Structured Yoga Training • 25-Day Immersive Program • Traditional Hatha & Ashtanga Yoga • Asana, Pranayama & Meditation • Yoga Anatomy & Physiology • Yoga Philosophy & Ethics • Alignment & Injury Awareness • Teaching Methodology & Class Sequencing • Mantra & Sanskrit Terminology • Practical Teaching Sessions & Assessments • Hindi or English Course Manual • Introductory Aerial Yoga Session • Jal Neti Practice & Neti Kit • One-Day Local Excursion • Residential & Non-Residential Options • Completion Certificate After Successful Assessment Location: Jyoti Yoga, Hariom Colony, Upper Tunwala, Raipur Road, Dehradun, Uttarakhand – 248001 Course Duration: 25 Days / 200 Hours Course Fee: Starting from ₹17,500 for Non-Residential Training . Shared and private residential packages with accommodation and meals are also available. Whether you want to deepen your personal yoga journey or take your first serious step toward becoming a yoga teacher, the 200 Hour Yoga Teacher Training Course at Jyoti Yoga, Dehradun provides a structured combination of traditional practice, theoretical knowledge, and practical teaching experience. Limited seats are available for each batch. Contact Jyoti Yoga to confirm upcoming dates, accommodation availability, course inclusions, and enrolment details.",
     "startAt": "2026-11-02T06:00:00+05:30",
     "endAt": "2026-11-27T10:00:00+05:30",
     "venue": {
@@ -1491,6 +1464,12 @@
         "url": "https://allevents.in/dehradun/200-hour-yoga-in-dehradun-tickets/80001825771919",
         "checkedAt": "2026-10-30T15:05:26.869Z",
         "confidence": 0.75
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/why-choose-200-hour-yoga-teacher-training-in-dehradun-tickets/80001825771919",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "review",
@@ -1499,8 +1478,52 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-28T15:10:53.427Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z",
+    "sequence": 1,
+    "modifiedAt": "2026-10-30T18:25:56.417Z"
+  },
+  {
+    "id": "c6eed794774d2a09",
+    "slug": "is-300-hour-yoga-teacher-training-in-dehradun-right-for-you",
+    "title": "Is 300 Hour Yoga Teacher Training in Dehradun Right for You?",
+    "description": "Join the 300 Hour Yoga Teacher Training Course in Dehradun at Jyoti Yoga and take your yoga practice and teaching skills to an advanced level through an intensive 30-day training program . This advanced course is designed for 200 Hour Yoga Teacher Training graduates, experienced yoga practitioners, and yoga teachers who want to deepen their knowledge, refine their personal practice, and develop stronger teaching skills. The program combines Advanced Asana Practice, Pranayama, Meditation, Applied Yoga Anatomy & Biomechanics, Yoga Philosophy, Advanced Teaching Methodology, Sequencing, Alignment, Practicum, Mentorship, and Guided Self-Study . Students learn how to create intelligent yoga sequences, improve observation and communication skills, understand movement and biomechanics, refine breath and meditation practices, and apply traditional yogic philosophy in both personal practice and professional teaching. Course Highlights: • 300 Hours of Advanced Yoga Training • 30-Day Intensive Training Program • Advanced Asana & Practice Techniques • Pranayama & Meditation • Applied Yoga Anatomy & Biomechanics • Advanced Alignment & Safe Progression • Deeper Yoga Philosophy & Ethics • Advanced Teaching Methodology • Class Sequencing & Cueing • Teaching Practicum & Mentorship • Peer Observation & Feedback • Guided Self-Study & Assignments • Residential & Non-Residential Options • Course Completion Certificate Location: Jyoti Yoga, Hariom Colony, Upper Tunwala, Raipur Road, Dehradun, Uttarakhand – 248001 Course Duration: 30 Days / 300 Hours This course is ideal for students who already have a strong yoga foundation and want to move beyond basic teacher training. Through advanced practice, theoretical study, teaching exercises, and reflective learning, students develop greater confidence, awareness, and maturity as yoga practitioners and teachers. The 300 Hour Yoga Teacher Training in Dehradun can also be an important next step for students progressing toward a longer 500 Hour Yoga Teacher Training pathway . Limited seats are available for each batch. Contact Jyoti Yoga to confirm the current course fee, upcoming batch dates, accommodation options, syllabus, and enrolment requirements.",
+    "startAt": "2026-11-02T06:00:00+05:30",
+    "endAt": "2026-12-02T10:00:00+05:30",
+    "venue": {
+      "name": "Hariom Colony, Upper Tunwala, Raipur Road, Dehradun, Uttarakhand, 248001",
+      "address": "Hariom Colony, Upper Tunwala, Raipur Road, Dehradun, Uttarakhand, 248001 Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.31649,
+        "lng": 78.03219
+      }
+    },
+    "categories": [
+      "Workshop",
+      "Wellness"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 25000,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/is-300-hour-yoga-teacher-training-in-dehradun-right-for-you-tickets/80009086749566",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z"
   },
   {
     "id": "e7a86d4f7aeb6b48",
@@ -1542,13 +1565,14 @@
     },
     "firstSeenAt": "2026-10-28T15:10:53.427Z",
     "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastCheckedAt": "2026-10-30T15:05:26.869Z",
+    "missedRuns": 1
   },
   {
     "id": "e22b7ecdc277ce8f",
     "slug": "advance-your-yoga-journey-with-200-hour-ytt-in-dehradun-kunwar-yoga",
     "title": "Advance Your Yoga Journey with 200-Hour YTT in Dehradun | Kunwar Yoga",
-    "description": "200-Hour Yoga Teacher Training in DehradunJoin Kunwar Yoga for an immersive 25-day Yoga Teacher Training program in Dehradun, India. Designed for beginner and intermediate yoga practitioners, this training helps students build a strong foundation in traditional yoga while developing confidence in pe",
+    "description": "200-Hour Yoga Teacher Training in Dehradun Join Kunwar Yoga for an immersive 25-day Yoga Teacher Training program in Dehradun, India. Designed for beginner and intermediate yoga practitioners, this training helps students build a strong foundation in traditional yoga while developing confidence in personal practice and teaching skills. The program combines practical training with theory and includes Asanas, Alignment, Pranayama, Meditation, Yoga Philosophy, Anatomy & Physiology, Sanskrit terminology, Mantra Chanting and Teaching Methodology. What You Will Learn • Hatha Yoga • Ashtanga Yoga • Advanced Yoga Asanas & Alignment • Pranayama • Meditation • Yoga Anatomy & Physiology • Yoga Philosophy • Teaching Methodology • Class Sequencing & Cueing • Practical Teaching Experience • Mantra Chanting • Sanskrit Terminology Students also receive a YTTC manual in Hindi or English, an Aerial Yoga session, a one-day excursion and a yoga cleansing kit including a Jal Neti Pot and Rubber Neti. The course follows a structured daily schedule combining morning yoga practice, theory sessions, self-study, rest and evening practice. Residential packages include accommodation and three meals daily. Successful participants who meet the course requirements receive a Kunwar Yoga 200-Hour Course Completion Certificate associated with the school’s RYS 200 training program. The program is suitable for students who want to deepen their own yoga practice or develop the knowledge and confidence needed to begin teaching yoga. Location: Dehradun, Uttarakhand, India Duration: 25 Days Training: 200 Hours School: Kunwar Yoga",
     "startAt": "2026-11-02T07:00:00+05:30",
     "endAt": "2026-11-26T20:00:00+05:30",
     "venue": {
@@ -1573,7 +1597,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/advance-your-yoga-journey-with-200-hour-ytt-in-dehradun-kunwar-yoga-tickets/80001746879419",
-        "checkedAt": "2026-10-30T15:05:26.871Z",
+        "checkedAt": "2026-10-30T18:25:27.942Z",
         "confidence": 0.75
       }
     ],
@@ -1583,14 +1607,14 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.893Z",
-    "lastSeenAt": "2026-10-30T15:05:26.871Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.871Z"
+    "lastSeenAt": "2026-10-30T18:25:27.942Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.942Z"
   },
   {
     "id": "ec12add48765568e",
     "slug": "begin-your-yoga-teaching-journey-with-kunwar-yoga-s-100-hour-ttc-in-dehradun",
     "title": "Begin Your Yoga Teaching Journey with Kunwar Yoga’s 100-Hour TTC in Dehradun",
-    "description": "Give Your Yoga Practice Time, Structure and DirectionJoin Kunwar Yoga’s 100-Hour Yoga Teacher Training in Dehradun and explore yoga through practical learning and classroom study.Whether you are beginning your journey or returning to regular practice, this programme offers an opportunity to step bey",
+    "description": "Give Your Yoga Practice Time, Structure and Direction Join Kunwar Yoga’s 100-Hour Yoga Teacher Training in Dehradun and explore yoga through practical learning and classroom study. Whether you are beginning your journey or returning to regular practice, this programme offers an opportunity to step beyond occasional classes and spend focused time learning. Bring your curiosity, your questions and a willingness to practise. What You Will Explore Study breathwork, meditation, alignment, anatomy, yoga philosophy and introductory teaching skills. Kunwar Yoga’s teaching approach includes traditional Hatha Yoga and Vinyasa Flow. The emphasis is on connecting practical experience with understanding, rather than simply following a sequence of poses. Learn with Kunwar Yoga The school offers yoga classes and teacher-training programmes in Dehradun. Its faculty includes Yogacharya Kunwar Ajitesh Ji, whose listed qualifications include E-RYT 500, YACEP and a postgraduate diploma in yoga. Certificate Successful course completion earns a Kunwar Yoga certificate, not an RYT-200 qualification. Plan Your Participation Check the event dates and package descriptions before booking. Choose the option that matches your accommodation needs, and contact the school to confirm availability, reporting arrangements and any additional charges. Set aside time to learn, ask questions and develop a more intentional relationship with your practice. Explore the course details and take your next step in yoga education with Kunwar Yoga.",
     "startAt": "2026-11-02T07:00:00+05:30",
     "endAt": "2026-11-13T20:00:00+05:30",
     "venue": {
@@ -1615,7 +1639,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/begin-your-yoga-teaching-journey-with-kunwar-yogas-100-hour-ttc-in-dehradun-tickets/80002105880868",
-        "checkedAt": "2026-10-30T15:05:26.870Z",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
         "confidence": 0.75
       }
     ],
@@ -1625,8 +1649,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-25T04:50:54.752Z",
-    "lastSeenAt": "2026-10-30T15:05:26.870Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.870Z",
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -1660,7 +1684,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-11",
         "externalId": "2026-11-tridhara-bharatnatayam-odissi-and-kathak-by-arohi-munshi-vani-madhav-and-moumala-nayak",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1670,8 +1694,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "92cc4f89dc1d9aca",
@@ -1704,7 +1728,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-11",
         "externalId": "2026-11-osman-mir",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1714,8 +1738,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z",
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.693Z"
   },
@@ -1749,7 +1773,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-12",
         "externalId": "2026-12-sitar-recital-by-samanwaya-sarkar",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1759,8 +1783,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "8bde503b6c4c0626",
@@ -1792,7 +1816,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-12",
         "externalId": "2026-12-vocal-recital-by-mahesh-kale",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1802,8 +1826,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z",
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.694Z"
   },
@@ -1837,7 +1861,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-13",
         "externalId": "2026-13-veena-recital-by-ramana-balachandran",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1847,8 +1871,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "1276cecde7c73cd3",
@@ -1880,7 +1904,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-13",
         "externalId": "2026-13-vocal-recital-by-rahul-deshpande",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1890,14 +1914,14 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "b92833bddecc255a",
     "slug": "300-hour-advanced-yoga-teacher-training-in-dehradun-india",
     "title": "300 Hour Advanced Yoga Teacher Training in Dehradun, India",
-    "description": "300 Hour Advanced Yoga Teacher Training in Dehradun, IndiaDeepen Your Practice. Strengthen Your Knowledge. Develop Your Teaching Skills.Are you ready to take your yoga practice and teaching journey to the next level?Join Kunwar Yoga for an immersive 300 Hour Yoga Teacher Training Course in Dehradun,",
+    "description": "300 Hour Advanced Yoga Teacher Training in Dehradun, India Deepen Your Practice. Strengthen Your Knowledge. Develop Your Teaching Skills. Are you ready to take your yoga practice and teaching journey to the next level? Join Kunwar Yoga for an immersive 300 Hour Yoga Teacher Training Course in Dehradun, Uttarakhand. This 30-day advanced training program is designed for yoga practitioners and aspiring teachers looking to develop deeper knowledge, refine their practice, and build professional teaching confidence. About the Training Our comprehensive training combines traditional yogic knowledge with practical teaching techniques. Participants explore advanced yoga postures, breathing practices, meditation, anatomy, philosophy, and teaching methodology in a supportive learning environment. What You Will Learn Advanced Yoga Asanas: Explore Hatha, Ashtanga, Vinyasa, and Yin yoga practices with attention to alignment, adjustments, and variations. Pranayama: Develop a deeper understanding of traditional yogic breathing techniques. Meditation: Explore different meditation practices to improve concentration, awareness, and inner balance. Yoga Anatomy & Physiology: Understand functional anatomy, body mechanics, and safer movement practices. Yoga Philosophy: Study traditional yogic principles, including the Yoga Sutras and Bhagavad Gita. Teaching Methodology: Learn class sequencing, verbal cueing, student observation, posture modifications, and practical teaching skills. Practical Teaching: Develop confidence through guided teaching exercises and assessments. Course Highlights 300-hour advanced yoga teacher training 30-day structured program Experienced yoga instructors Small-batch learning environment Residential and non-residential options Shared and private accommodation packages Three daily meals with residential packages Course manual in Hindi or English One-day tour included Course completion certificate from Kunwar Yoga upon successful evaluation Who Can Join? This program is suitable for dedicated yoga practitioners, existing yoga teachers, and individuals seeking to advance their knowledge of yoga. Applicants should contact Kunwar Yoga to confirm whether their previous yoga experience or training meets the admission requirements. Training Location Kunwar Yoga Mahadev Residency, Old Nehru Colony, Dharampur, Dehradun, Uttarakhand, India – 248001 Registration & Enquiries Phone / WhatsApp: +91 7906213478 Email: a3Vud2FyICEgYWppdGVzaCB8IGdtYWlsICEgY29t Website: https://www.ajiteshkunwar.com/300-hour-yoga-ttc-in-dehradun.html Take the next step in your yoga education with Kunwar Yoga. Explore the available packages, confirm your preferred batch, and contact our team for enrollment assistance. Reserve Your Place for the Upcoming 300 Hour Yoga Teacher Training in Dehradun!",
     "startAt": "2026-11-05T07:00:00+05:30",
     "endAt": "2026-12-04T20:00:00+05:30",
     "venue": {
@@ -1923,7 +1947,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/300-hour-advanced-yoga-teacher-training-in-dehradun-india-tickets/80002793874803",
-        "checkedAt": "2026-10-30T15:05:26.871Z",
+        "checkedAt": "2026-10-30T18:25:27.942Z",
         "confidence": 0.75
       },
       {
@@ -1945,8 +1969,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-30T15:05:26.871Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.871Z",
+    "lastSeenAt": "2026-10-30T18:25:27.942Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.942Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.944Z"
   },
@@ -1980,7 +2004,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-hindustani-vocal-by-anol-chatterjee",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -1990,8 +2014,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "3f54ac689b6f0c57",
@@ -2023,7 +2047,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-an-evening-of-confluence",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -2033,8 +2057,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z",
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.695Z"
   },
@@ -2068,7 +2092,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-gaya-ang-thumri",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -2078,8 +2102,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "026b60166805ecc4",
@@ -2111,7 +2135,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-usha-uthup-live",
-        "checkedAt": "2026-10-30T15:05:51.654Z",
+        "checkedAt": "2026-10-30T18:25:51.880Z",
         "confidence": 0.95
       }
     ],
@@ -2121,14 +2145,14 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-30T15:05:51.654Z",
-    "lastCheckedAt": "2026-10-30T15:05:51.654Z"
+    "lastSeenAt": "2026-10-30T18:25:51.880Z",
+    "lastCheckedAt": "2026-10-30T18:25:51.880Z"
   },
   {
     "id": "296ba68ddf38e8e2",
     "slug": "weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-amp-drinks-dehradun",
     "title": "Weekend Sizzler Pool Party, Belly Dance, Ramp Show, Games, Buffet Dinner & Drinks @ Dehradun",
-    "description": "After Organizing Rocking Events back To back now your Favorite Host Party out Global Events, invites party animals to indulge and party hard in weekend. Slip into your best attire and those pretty dancing shoes, as resident DJ spins outstanding music to keep you glued to the dance floor. It's going",
+    "description": "After Organizing Rocking Events back To back now your Favorite Host Party out Global Events, invites party animals to indulge and party hard in weekend. Slip into your best attire and those pretty dancing shoes, as resident DJ spins outstanding music to keep you glued to the dance floor. It's going to be a crazy and fun pool party with pulsating beats to sway to and lots of drinks and refreshments to rejuvenate you. Be there to enjoy the rocking pool party and have a blast on that day. We take The Immense Pleasure to Invite you to our upcoming Event ‘ Sensational Sunday ’ at one of The Happening Resort of the city. CITY : DEHRADUN DATE : 08.11.2026 (Sunday) TIME : 6.30pm Onward VENUE : 3*** Deluxe Garden & Pool Resort LOCATION : Mothrowala Road, near Dudha Devi Temple, Dehradun, Uttarakhand 248001 You are requested to read all the event’s Descriptions, Terms & Conditions before you proceed for Pre-Booking. We will not entertain any kind of argument after a Ticket Holder has booked or confirmed his/her Ticket(s). PRE-BOOKING TERMS : Only Pre-Booking facility is available for this event. Anyone can apply for Pre-Booked Ticket(s) at Free of cost. But please keep in mind that Pre-Booked Ticket(s) does not mean Confirmed Ticket(s). Pre-Booked Ticket(s) must need to be confirmed at least before 72 hrs of the schedule event date by paying 50% of your total ticket price including Tax in advance through Bank Ac, PAYTM, UPI, GPAY and What's app Payment . Balance 50% you can pay on spot on date. To get our Service details & Package Details or for any kind of inquiry pls call at our office on 8420570322 (9am – 4pm) (Monday to Saturday) or Whats App @ 6290857643 to get updates about all of our Upcoming Events, Event’s Guidelines, Pre-Booking & Cancellation Policies. Unlimited Package Details : • Swimming Pool Access & Pool Games • Indoor & Outdoor Games ( Table Tennis, Carrom, Ludo, Billiards/Pool, Badminton, Basketball, Vollyball etc) • Mexican, Arabian & Brazilian Belly & Pole Dancers • Live DJ Music • Ramp Show / Walk by Professional Models • Alcoholic & Non-Alcoholic Drinks • Yummy Veg & Non-Veg Snacks • Mouth Watering Veg & Non-Veg Dinner • Sweet Temptation CHARGES : Our Club Member's - Free Non-Member Couple - Chargeable Non-Member Male - Chargeable Non-Member Female - Chargeable 10% to 20% Discount For Group Booking ( Min 5 Heads ) Serving Time : 4.30 Hrs. (7pm – 11.30pm) Venue Information : Our Members can contact at any of our Customer Service number to get the venue information. Exact Venue details will be given to Non-Members only before 24 hrs of the scheduled event date. Important Note : We require a minimum of 75 confirmed bookings to hold an event. In case of less than minimum confirmed bookings, the Authority may postpone the event for some days by showing good reason. Cancellation & Postpone Policy : If for any unwanted reason we are forced to cancel or postpone any event or a Ticket holder wants to cancel his/her Pre-Booked Ticket, no refund will be given against that canceled Event or Ticket(s). Instead, a locking period of 90 days will be given to the guest(s). During that time the guest(s) will be able to attend any of our Regular Event in any city (47 cities) using the money from his/her locker. If you don’t attend any event by using the money from your locker within 90 days locking period then within next 7 days you can claim refund of that amount with proper document i.e Ticket Number(s), Payment details etc ). Refund will be processed within 3 working days of submission of your claim. No refund claim will be entertained after 7 days.",
     "startAt": "2026-11-08T18:30:00+05:30",
     "endAt": "2026-11-08T23:45:00+05:30",
     "venue": {
@@ -2141,7 +2165,8 @@
       }
     },
     "categories": [
-      "Music"
+      "Music",
+      "Outdoors"
     ],
     "pricing": {
       "type": "free",
@@ -2151,7 +2176,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-and-drinks-dehradun-tickets/80001819168334",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -2161,8 +2186,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z",
+    "lastSeenAt": "2026-10-30T18:25:27.940Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.940Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -2205,13 +2230,13 @@
     "firstSeenAt": "2026-10-28T21:09:08.577Z",
     "lastSeenAt": "2026-10-30T05:56:30.261Z",
     "lastCheckedAt": "2026-10-30T05:56:30.261Z",
-    "missedRuns": 1
+    "missedRuns": 2
   },
   {
     "id": "0bfa172498606cb2",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
-    "description": "Drinking is a social habit, Inder has successfully stayed away from this since 1995, but his friends on the other hand has had a glass in their hand every time, if you have group and drunk story, this show should not be missed.Inder says Everyone should once watch this show with their whole gang and",
+    "description": "Drinking is a social habit, Inder has successfully stayed away from this since 1995, but his friends on the other hand has had a glass in their hand every time, if you have group and drunk story, this show should not be missed.Inder says Everyone should once watch this show with their whole gang and you will leave with the feeling Sahani saab baithna hai aapke saath",
     "startAt": "2026-11-15T16:00:00+05:30",
     "venue": {
       "name": "IRDT Auditorium: Dehradun",
@@ -2234,7 +2259,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030713294008",
-        "checkedAt": "2026-10-30T15:05:26.864Z",
+        "checkedAt": "2026-10-30T18:25:27.935Z",
         "confidence": 0.75
       }
     ],
@@ -2244,8 +2269,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-30T15:05:26.864Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.864Z",
+    "lastSeenAt": "2026-10-30T18:25:27.935Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.935Z",
     "sequence": 4,
     "modifiedAt": "2026-10-26T15:15:59.943Z",
     "endAt": "2026-11-15T17:30:00+05:30"
@@ -2254,7 +2279,7 @@
     "id": "bd2f326507984520",
     "slug": "safarnama-by-krishna-shukla",
     "title": "Safarnama by Krishna Shukla",
-    "description": "Safarnama is a heartfelt blend of storytelling, comedy, poetry, and spontaneous crowd work, where laughter and emotions flow naturally. Through personal anecdotes, relatable moments, and honest humour, Krishna Shukla creates a space where the audience does not just watch the show - they become a par",
+    "description": "Safarnama is a heartfelt blend of storytelling, comedy, poetry, and spontaneous crowd work, where laughter and emotions flow naturally. Through personal anecdotes, relatable moments, and honest humour, Krishna Shukla creates a space where the audience does not just watch the show - they become a part of it. Known for turning everyday conversations into poetry and punchlines, Krishna`s performance moves effortlessly between fun, reflection, and warmth. Every story feels familiar, every shayari hits close to home, and every interaction adds a new layer to the experience. Safarnama is not scripted to perfection - it evolves with every audience and every room. Whether you come to laugh, reflect, or simply unwind, the show promises genuine moments, shared smiles, and memories that stay with you long after the lights go down.",
     "startAt": "2026-11-22T18:00:00+05:30",
     "endAt": "2026-11-22T20:00:00+05:30",
     "venue": {
@@ -2278,7 +2303,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/safarnama-by-krishna-shukla/3900030659387200",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -2288,14 +2313,14 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastSeenAt": "2026-10-30T18:25:27.940Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.940Z"
   },
   {
     "id": "fe076565e26a0fd8",
     "slug": "operation-forge-x",
     "title": "Operation Forge X",
-    "description": "Step into an intense 4-day leadership and resilience experience designed to challenge your limits, build discipline, and strengthen your leadership mindset. Operation Forge X brings together 320 civilians across 16 platoons for a unique experience inspired by military-style training and real-world l",
+    "description": "Step into an intense 4-day leadership and resilience experience designed to challenge your limits, build discipline, and strengthen your leadership mindset. Operation Forge X brings together 320 civilians across 16 platoons for a unique experience inspired by military-style training and real-world leadership lessons. Experience obstacle courses, live mission briefings, master grit and gratitude, and learn discipline through challenges guided by experienced veterans and senior military leaders. 📅 Date: 27–30 November 2026 📍 Venue: Hyatt Regency, Dehradun, Uttarakhand 🎖️ Command: Air Marshal Nagesh Kapoor (Retd.), Commodore Shiv Tewari (Retd.) & Lt. Gen. D.P. Pandey (Retd.) Participants who complete the three-day challenge will take home an earned medal, challenge coin, and exclusive event kit. Early-bird offer available. Secure your spot and get ready to test your limits, conquer challenges, and discover your inner strength.",
     "startAt": "2026-11-27T06:00:00+05:30",
     "endAt": "2026-11-30T23:00:00+05:30",
     "venue": {
@@ -2309,6 +2334,7 @@
       }
     },
     "categories": [
+      "Outdoors",
       "Workshop"
     ],
     "pricing": {
@@ -2321,7 +2347,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/operation-forge-x-tickets/80001487149685",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
         "confidence": 0.75
       }
     ],
@@ -2331,8 +2357,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z",
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -2370,7 +2396,7 @@
       {
         "provider": "literaturefestival",
         "url": "https://www.dehradunliteraturefestival.com/",
-        "checkedAt": "2026-10-30T15:05:52.312Z",
+        "checkedAt": "2026-10-30T18:25:52.345Z",
         "confidence": 0.9
       }
     ],
@@ -2380,14 +2406,14 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-10-30T15:05:52.312Z",
-    "lastCheckedAt": "2026-10-30T15:05:52.312Z"
+    "lastSeenAt": "2026-10-30T18:25:52.345Z",
+    "lastCheckedAt": "2026-10-30T18:25:52.345Z"
   },
   {
     "id": "58ea9fc74a68de7b",
     "slug": "run-for-trees-marathon",
     "title": "Run for Trees | Marathon",
-    "description": "",
+    "description": "Organised by Sanyukt Sainik Samaj Seva Samiti, in collaboration with The Next Level Events & Production and in association with Doon University, Run For Trees Marathon 2026 is a sports and environmental awareness initiative that promotes fitness, sustainability, and a greener future.With 3K, 5K, and 10K race categories, the marathon welcomes running enthusiasts, fitness lovers, students, and community members to come together for a meaningful cause. The event encourages participants of all fitness levels to embrace an active lifestyle while spreading awareness about tree plantation, nature conservation, and climate change.Driven by the message “Greener Steps, Brighter Tomorrow,” Run For Trees aims to inspire collective action towards a healthier planet. Every stride is a step towards cleaner air, greener surroundings, and a more sustainable future.",
     "startAt": "2026-11-29T00:00:00.000Z",
     "endAt": "2026-11-29T04:30:00.000Z",
     "venue": {
@@ -2413,6 +2439,12 @@
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
         "checkedAt": "2026-10-30T09:16:21.860Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/run-for-trees/4100030939067213",
+        "checkedAt": "2026-10-30T18:25:27.939Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -2421,14 +2453,14 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-10-30T09:16:21.860Z",
-    "lastCheckedAt": "2026-10-30T09:16:21.860Z"
+    "lastSeenAt": "2026-10-30T18:25:27.939Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.939Z"
   },
   {
     "id": "d092613afd25636e",
     "slug": "level-up-play-fest-centrio-mall-dehradun",
     "title": "Level Up Play Fest- Centrio Mall, Dehradun",
-    "description": "Get ready for LevelUp PlayFest - Dehradun, a three day kids festival at Centrio Mall, Dehradun! Explore the exciting world of robotics, LEGO, coding, VR and AR, RC racing, science, arts, and interactive STEAM experiences. A fun filled celebration where creativity meets innovation, giving children th",
+    "description": "Get ready for LevelUp PlayFest - Dehradun , a three day kids festival at Centrio Mall, Dehradun! Explore the exciting world of robotics, LEGO, coding, VR and AR, RC racing, science, arts, and interactive STEAM experiences. A fun filled celebration where creativity meets innovation, giving children the opportunity to learn, explore, experiment, and play!",
     "startAt": "2026-12-11T11:00:00+05:30",
     "endAt": "2026-12-11T20:00:00+05:30",
     "venue": {
@@ -2452,7 +2484,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/level-up-play-fest-centrio-mall-dehradun/3900030931951226",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
         "confidence": 0.75
       }
     ],
@@ -2462,14 +2494,14 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-28T21:09:08.578Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z"
   },
   {
     "id": "5a0be2a175cd6a49",
     "slug": "halki-halki-fati-by-vikas-kush-sharma",
     "title": "Halki Halki Fati? By Vikas Kush Sharma",
-    "description": "The comedic maestro, the crowd whisperer, the one and only Vikas Kush Sharma. This guys crowd work and the most viral modern shayar of Instagram is so brilliant, its like hes got a PhD in decoding laughter. Hes the master of turning awkward situations into uproarious punchlines, especially when it c",
+    "description": "The comedic maestro, the crowd whisperer, the one and only Vikas Kush Sharma. This guys crowd work and the most viral modern shayar of Instagram is so brilliant, its like hes got a PhD in decoding laughter. Hes the master of turning awkward situations into uproarious punchlines, especially when it comes to relationships. If youre ever in need of a good laugh about love gone wrong or dating disasters, Vikas has got your back. Get ready to chuckle, snort, and maybe even spit out your drink with this comedic genius in action.",
     "startAt": "2026-12-27T18:00:00+05:30",
     "endAt": "2026-12-27T19:30:00+05:30",
     "venue": {
@@ -2493,7 +2525,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halki-halki-fati-by-vikas-kush-sharma/3900030845664301",
-        "checkedAt": "2026-10-30T15:05:26.870Z",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
         "confidence": 0.75
       }
     ],
@@ -2503,8 +2535,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-30T15:05:26.870Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.870Z"
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z"
   },
   {
     "id": "562de29d0166cb06",
@@ -2547,8 +2579,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-30T15:05:26.870Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.870Z",
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -2556,7 +2588,7 @@
     "id": "4951f0fb07c7567b",
     "slug": "chikka-on-roll",
     "title": "Chikka on Roll",
-    "description": "Ruchika will talk about how adulting and being in twenties changed her life, falling in love breaking in one and while not loosing hope for it, her realisation of life and importance of relationships and friendships. Changing life, healing, her mental health and stories of her college days will add",
+    "description": "Ruchika will talk about how adulting and being in twenties changed her life, falling in love breaking in one and while not loosing hope for it, her realisation of life and importance of relationships and friendships. Changing life, healing, her mental health and stories of her college days will add little humour to it.",
     "startAt": "2027-01-08T17:30:00+05:30",
     "endAt": "2027-01-08T18:30:00+05:30",
     "venue": {
@@ -2580,7 +2612,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/chikka-on-roll/3900030703853405",
-        "checkedAt": "2026-10-30T15:05:26.870Z",
+        "checkedAt": "2026-10-30T18:25:27.941Z",
         "confidence": 0.75
       }
     ],
@@ -2590,14 +2622,14 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-30T15:05:26.870Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.870Z"
+    "lastSeenAt": "2026-10-30T18:25:27.941Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.941Z"
   },
   {
     "id": "4e90e288934b77c1",
     "slug": "lakhwinder-wadali-india-tour-dehradun",
     "title": "Lakhwinder Wadali India Tour - Dehradun",
-    "description": "Experience the timeless magic of Sufi music with Heritage of Sufism – India Tour, a soulful musical journey celebrating the rich heritage, poetry, and spiritual essence of Sufism.This extraordinary evening features the mesmerizing Lakhwinder Wadali, bringing his powerful voice and the legendary Wada",
+    "description": "Experience the timeless magic of Sufi music with Heritage of Sufism – India Tour, a soulful musical journey celebrating the rich heritage, poetry, and spiritual essence of Sufism. This extraordinary evening features the mesmerizing Lakhwinder Wadali, bringing his powerful voice and the legendary Wadali tradition to your city. From soulful Sufi melodies to powerful Punjabi folk and traditional compositions, the evening promises an immersive experience filled with devotion, emotion, and music. Heritage of Sufism is more than just a concert—it is a journey into the heart of Sufi culture, where every melody tells a story and every verse connects the soul. Come witness an unforgettable night where music meets spirituality, and tradition meets the modern soul.",
     "startAt": "2027-01-16T19:00:00+05:30",
     "endAt": "2027-01-23T21:00:00+05:30",
     "venue": {
@@ -2622,7 +2654,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lakhwinder-wadali-india-tour-dehradun/3900030624689839",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -2632,8 +2664,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-30T15:05:26.869Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.869Z"
+    "lastSeenAt": "2026-10-30T18:25:27.940Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.940Z"
   },
   {
     "id": "64e33c993e4def3d",
@@ -2678,8 +2710,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-23T02:43:57.432Z",
-    "lastSeenAt": "2026-10-30T15:05:26.871Z",
-    "lastCheckedAt": "2026-10-30T15:05:26.871Z",
+    "lastSeenAt": "2026-10-30T18:25:27.942Z",
+    "lastCheckedAt": "2026-10-30T18:25:27.942Z",
     "sequence": 2,
     "modifiedAt": "2026-10-27T05:13:41.816Z"
   },
@@ -2687,7 +2719,7 @@
     "id": "4adc16d3d6234306",
     "slug": "dehradun-ultra-run-2027-4th-edition",
     "title": "Dehradun Ultra Run 2027 (4th Edition)",
-    "description": "Dehradun Ultra Run 2027 (4th Edition) | 50 KM, 25 KM, 10 KM & 5 KM | Dehradun | Thrill Zone | Route-Kimadi Road, Dehradun | Biggest Ultra run in Uttarakhand | Organized by Thrill ZoneDehradun Ultra Run 2027 (4th Edition)Welcome to the Dehradun Ultra Run 2027, a thrilling adventure that invites you t",
+    "description": "Dehradun Ultra Run 2027 (4th Edition) | 50 KM, 25 KM, 10 KM & 5 KM | Dehradun | Thrill Zone | Route-Kimadi Road, Dehradun | Biggest Ultra run in Uttarakhand | Organized by Thrill Zone Dehradun Ultra Run 2027 (4th Edition) Welcome to the Dehradun Ultra Run 2027, a thrilling adventure that invites you to immerse yourself in the captivating beauty of Uttarakhand's landscapes while conquering challenging roads. Organized by Thrill Zone, a passionate advocate for promoting running as a serious sport, this event is a celebration of endurance, determination, and the spirit of exploration. Event Details: Event:- Dehradun Ultra Run 2027 (4th Edition) Date: 14th March 2027 (Sunday) Venue: Hotel JSR Inn, Parking area, Kimadi Road, Dehradun, Uttarakhand Distances: 50 KM Ultra Run, 25 KM, 10 KM & 5 KM Register at: https://sportifi.in/event/ddnUltraRun Each participant receives: T-Shirt Participation Medal Timing Certificate Refreshments Hydration Support BIB with Timing Chip Registration Fees: 50 KM: ₹4000/- 25 KM: ₹2500/- 10 KM: ₹1500/- 5 KM:- ₹1000/- Cut-off Timings: 50 KM: 8.5 Hours 25 KM: 5 Hours 10 KM: 2 Hours 5 KM: 1 Hr Age Categories (50 KM & 25 KM): 18 to 30 Years 31 to 40 Years 41 to 50 Years 51+ Years No Age Categories in 10 KM - Only Trophies for Winners Route Information: Route (50Km)- Strava Link - activity on Strava: https://strava.app.link/pg8DlsVDgxb Thrill Zone: Thrill Zone is dedicated to establishing running as a serious sport through marathons and extensive training. Having conducted 130+ Running events across India, our mission is to promote a healthy lifestyle within the running community. Contact Information: For queries, call/WhatsApp: 8630446801 or email us at Y29udGFjdCB8IHRocmlsbHpvbmUgISBpbg== Website - www.thrillzone.in Join us at Dehradun Ultra Run 2027 , where every step is a testament to your determination and every trail conquered leaves behind unforgettable memories. Embrace the challenge, register now, and let the adventure begin! BIB Expo for Dehradun Ultra Run BIB Expo Date - 13th March 2027 Time - 4 PM to 6 PM BIB Expo Venue - Hotel JSR Inn, Parking area, Kimadi Road, Dehradun, Uttarakhand Points to remember:- To get customized BIB register at least 20 days before the event date. BIB Expo will be on 1 day before the event at Venue only, there is no BIB Expo on event day. If anyone is collecting other's bibs he/she should have a consent letter along with a ticket from the participants then we will hand over the BIB. There is no on-spot registration. Exchange: Participants are not allowed to exchange their Timing BIBs with other participants. The BIB number assigned to each participant is unique and must be used only by that participant only, if anyone is found putting on another's bib he/she will be disqualified from the event. Put on BIB on Chest, it should be visible, if anyone is found with BIB on the back he/she will be disqualified from the winner's list. All the updates related to the event will be shared on the registered email ID. The timing certificate and timing will be available on the same day, timing message will be sent to a registered number. All photos will be available within 24 Hr Facilities during the event:- Baggage Counter at the venue. Ambulance on the route. Physio and medical team at Venue and on Route at multiple points. Hydration point at every 2-5 km. Washroom at Start/Finish and on route. Route Marking: The route will be marked with arrows and other markers to guide participants on the correct path during the half marathon. Pre-Event Zumba and post-run cooldown session for runners by Zumba instructors. Volunteers will be en route to guide runners and at Hydration points. The medal will be given to all the participants post-completion of the run. WAIVER & RELEASE FROM LIABILITY I know that running or volunteering for a road race is potentially hazardous activity, which could cause injury or death. I will not enter and participate unless I am medically able and properly trained, and by my signature, I certify that I am medically able to perform this event, and am in good health, and I am properly trained. I agree to abide by any decision of a race official relative to any aspect of my participation in this event, including the right of any official to deny or suspend my participation for any reason whatsoever. I attest that I have read the rules of the race and agree to abide by them. I assume all risks associated with running in this event, including but not limited to falls, contact with other participants, the effects of the weather, including high heat and/or humidity, traffic, and the conditions of the road, all such risks being known and appreciated by me. I understand that bicycles, skateboards, baby joggers, roller skates or roller blades, animals, and personal music players are not allowed in the race and I will abide by all race rules. Having read this waiver and knowing these facts and in consideration of your accepting my entry, I, for myself and anyone entitled to act on my behalf, waive and release the Thrill Zone, the group of Runners of India, all event sponsors, their representatives and successors from all claims or liabilities of any kind arising out of my participation in this event, even though that liability may arise out of negligence or carelessness on the part of the persons named in this waiver. I grant permission to all of the foregoing to use my photographs, motion pictures, recordings, or any other record of this event for any race purpose.",
     "startAt": "2027-03-14T04:00:00+05:30",
     "venue": {
       "name": "Hotel JSR INN.",
@@ -2712,13 +2744,13 @@
       {
         "provider": "thrillzone",
         "url": "https://www.sportifiindia.com/events/ddn-ultra-run",
-        "checkedAt": "2026-10-30T15:05:52.042Z",
+        "checkedAt": "2026-10-30T18:25:52.088Z",
         "confidence": 0.9
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-ultra-run-2027-4th-edition-tickets/80001080698758",
-        "checkedAt": "2026-10-30T15:05:26.869Z",
+        "checkedAt": "2026-10-30T18:25:27.940Z",
         "confidence": 0.75
       }
     ],
@@ -2728,8 +2760,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-30T15:05:52.042Z",
-    "lastCheckedAt": "2026-10-30T15:05:52.042Z",
+    "lastSeenAt": "2026-10-30T18:25:52.088Z",
+    "lastCheckedAt": "2026-10-30T18:25:52.088Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.948Z"
   }

@@ -200,7 +200,10 @@
       "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mvvaza802gja6kz5xw",
+        "startedAt": "2026-10-30T18:25:55.958Z"
+      },
       "lastFetchedAt": "2026-10-29T21:13:18.127Z",
       "lastError": "",
       "seen": [

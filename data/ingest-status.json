@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-10-30T15:05:26.361Z",
+  "ranAt": "2026-10-30T18:25:26.349Z",
   "ran": [
     "allevents",
     "virasat",
@@ -30,17 +30,17 @@
     "allevents": {
       "status": "ok",
       "events": 27,
-      "review": 1,
+      "review": 0,
       "diagnostics": {
         "candidates": 27,
-        "flaggedForReview": 1,
+        "flaggedForReview": 0,
         "eventPagesFetched": 27,
         "pricesFound": 1,
         "timesFound": 27,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -52,8 +52,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -64,8 +64,8 @@
         "cards": 8,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -76,8 +76,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -88,8 +88,8 @@
         "candidates": 3,
         "eventsParsed": 3
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -99,8 +99,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -112,8 +112,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -122,30 +122,30 @@
       "review": 10,
       "diagnostics": {
         "handles": 15,
-        "collected": 14,
-        "started": 0,
+        "collected": 0,
+        "started": 1,
         "abandoned": 0,
-        "read": 7,
-        "announcements": 4,
+        "read": 0,
+        "announcements": 0,
         "alreadyListed": 0,
         "readErrors": 0,
         "recoverErrors": 0,
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 14354,
-          "output": 1642,
+          "input": 0,
+          "output": 0,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-10-30T15:05:26.361Z",
-      "lastSuccessAt": "2026-10-30T15:05:26.361Z",
+      "lastAttemptAt": "2026-10-30T18:25:26.349Z",
+      "lastSuccessAt": "2026-10-30T18:25:26.349Z",
       "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 61,
-    "review": 2,
+    "published": 63,
+    "review": 0,
     "dropped": 0
   },
   "health": "healthy",
@@ -158,7 +158,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-10-30T09:16:20.062Z",
-      "ageHours": 5.8,
+      "ageHours": 9.2,
       "fresh": true
     }
   }
