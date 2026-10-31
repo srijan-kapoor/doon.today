@@ -1,7 +1,14 @@
 {
-  "ranAt": "2026-10-31T00:10:40.104Z",
+  "ranAt": "2026-10-31T05:52:39.208Z",
   "ran": [
-    "district"
+    "allevents",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "reddit",
+    "instagram"
   ],
   "sources": {
     "district": {
@@ -26,17 +33,17 @@
     "allevents": {
       "status": "ok",
       "events": 27,
-      "review": 1,
+      "review": 0,
       "diagnostics": {
         "candidates": 27,
-        "flaggedForReview": 1,
+        "flaggedForReview": 0,
         "eventPagesFetched": 27,
         "pricesFound": 1,
-        "timesFound": 26,
+        "timesFound": 27,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -48,8 +55,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -60,8 +67,8 @@
         "cards": 8,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -72,20 +79,20 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "meetup": {
       "status": "ok",
-      "events": 3,
+      "events": 0,
       "review": 0,
       "diagnostics": {
-        "candidates": 3,
-        "eventsParsed": 3
+        "candidates": 0,
+        "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -95,8 +102,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -108,8 +115,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -118,10 +125,10 @@
       "review": 9,
       "diagnostics": {
         "handles": 15,
-        "collected": 1,
+        "collected": 0,
         "started": 0,
         "abandoned": 0,
-        "read": 3,
+        "read": 0,
         "announcements": 0,
         "alreadyListed": 0,
         "readErrors": 0,
@@ -129,20 +136,20 @@
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 5727,
-          "output": 227,
+          "input": 0,
+          "output": 0,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-10-30T20:52:17.364Z",
-      "lastSuccessAt": "2026-10-30T20:52:17.364Z",
+      "lastAttemptAt": "2026-10-31T05:52:39.208Z",
+      "lastSuccessAt": "2026-10-31T05:52:39.208Z",
       "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 58,
-    "review": 1,
-    "dropped": 0
+    "published": 57,
+    "review": 0,
+    "dropped": 1
   },
   "health": "healthy",
   "primarySourcesAvailable": [
@@ -154,7 +161,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-10-31T00:10:40.104Z",
-      "ageHours": 0,
+      "ageHours": 5.7,
       "fresh": true
     }
   }
