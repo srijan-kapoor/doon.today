@@ -1,9 +1,10 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019812074879419901",
         "4009273685393965391",
         "3998955391814436533",
         "4014989281696552049",
@@ -11,15 +12,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6drwnjdcf3mkf",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019177646882933652",
         "4018470361475044319",
         "4015544945844130040",
         "4014271677262543762",
@@ -30,13 +29,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6dx5el58wxp0a",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "4018510583139069808",
@@ -45,15 +41,14 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6e4u2abffvvafe",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019212154393552776",
+        "3999800842605224778",
         "4014249609551365690",
         "4016936719193236976",
         "4018465204412056435",
@@ -67,37 +62,29 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6ea11j2gyviebr",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [],
-      "snapshot": {
-        "id": "sd_mvwi6ee83xqy84hjs",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "4018842081233294914",
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6eiw1e6xv51ske",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019857093657747005",
         "4018727565535332155",
         "4018304465597583022",
         "4017939504673549801",
@@ -112,13 +99,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6eni2jzws84dwp",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "4015720286242169566",
@@ -130,13 +114,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6etylnmba1h5g",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "3998409457608056423",
@@ -145,13 +126,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6eyp1qm6jsr4d6",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "4016228846868923771",
@@ -163,13 +141,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6f3q3mv2af010",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "4018535244180174713",
@@ -180,15 +155,14 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6f7a1jghule4ha",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019434292824153513",
+        "4019167220734898434",
         "4018726400592396177",
         "4017889007027239658",
         "4016411663913238714",
@@ -201,15 +175,13 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6fcv4c9sxfuzr",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
+        "4019618241055799713",
         "4018000648846621414",
         "4017870752927161252",
         "4017925896784950152",
@@ -224,25 +196,22 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6fh51g187vfcdc",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-10-30T15:05:56.192Z",
+      "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mvwi6fm52a1c79fanw",
-        "startedAt": "2026-10-31T14:35:10.738Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mvwtvqeu21b75eidwl",
+        "startedAt": "2026-10-31T20:02:31.767Z"
+      },
       "lastFetchedAt": "2026-10-30T20:52:46.626Z",
       "lastError": "",
       "seen": [
@@ -384,6 +353,62 @@
     {
       "id": "sd_mvvaza802gja6kz5xw",
       "at": "2026-10-30T20:52:46.626Z"
+    },
+    {
+      "id": "sd_mvwi6drwnjdcf3mkf",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6dx5el58wxp0a",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6e4u2abffvvafe",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6ea11j2gyviebr",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6ee83xqy84hjs",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6eiw1e6xv51ske",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6eni2jzws84dwp",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6etylnmba1h5g",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6eyp1qm6jsr4d6",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6f3q3mv2af010",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6f7a1jghule4ha",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6fcv4c9sxfuzr",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6fh51g187vfcdc",
+      "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwi6fm52a1c79fanw",
+      "at": "2026-10-31T20:02:31.767Z"
     }
   ],
   "candidates": [
@@ -463,49 +488,6 @@
         {
           "provider": "instagram",
           "url": "https://www.instagram.com/p/DeYv0wqFVxI",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "b2c1638628e6df3d",
-      "slug": "saturday-functional-training",
-      "title": "Saturday Functional Training",
-      "description": "",
-      "startAt": "2026-10-31T06:00:00+05:30",
-      "venue": {
-        "name": "City Forest Park, Sahastradhara Helipad",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Workshop"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "",
-      "organizer": "the5amclub.in",
-      "posts": [
-        "https://www.instagram.com/p/DfBkaONzD-T"
-      ],
-      "reading": {
-        "detailsFrom": "image",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfBkaONzD-T",
           "checkedAt": "2026-10-29T08:24:24.456Z",
           "confidence": 0.5
         }
@@ -610,50 +592,6 @@
       "lastCheckedAt": "2026-10-30T15:05:56.192Z"
     },
     {
-      "id": "df052547473067f1",
-      "slug": "halloween-night",
-      "title": "Halloween Night",
-      "description": "Join us this Saturday from 7 PM – 11 PM at Board & Banter for a spine-chilling Halloween Night! Step into the shadows for a night of secrets, deduction, and tabletop thrills.\n\n​🔍 Mystery Games – Hosted by Ashish\n🩸 Blood on the Clocktower – Hosted by Shaurya \n\n​​Will you uncover the truth, or will the demons win? Gather your crew, dress up if you dare, and let the games begin!\n\n​📅 When: Saturday | 7:00 PM – 11:00 PM\n📍 Where: Board & Banter Mothrowala\n\n​Limited spots available—drop a comment or DM us to reserve your table!\n\n​#BoardAndBanter #HalloweenNight #BloodOnTheClocktower #DehradunCafes #boardgamegeek",
-      "startAt": "2026-10-31T19:00:00+05:30",
-      "endAt": "2026-10-31T23:00:00+05:30",
-      "venue": {
-        "name": "Board & Banter, Mothrowala",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Other"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Comment or DM to reserve a table (limited spots)",
-      "organizer": "boardandbanter.ddn",
-      "posts": [
-        "https://www.instagram.com/p/DfEdNALP4Nz"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfEdNALP4Nz",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
       "id": "fa621072927d7476",
       "slug": "trick-or-treat-run",
       "title": "Trick or Treat Run",
@@ -741,27 +679,27 @@
       "lastCheckedAt": "2026-10-30T15:05:56.192Z"
     },
     {
-      "id": "c4824b75cba54239",
-      "slug": "deathtoll-hillbomb",
-      "title": "DEATHTOLL HILLBOMB",
-      "description": "DEATHTOLL HILLBOMB\n\n• Date: Saturday, Oct 31\n• Time: 4:00 PM Sharp\n• Meet: Mussoorie Diversion (opposite Sosuru)\n\nPlan:\n1. Park at Diversion\n2. Head up to Old Rajpur Market (walk/Vikram/lift)\n3. Downhill bomb back to Diversion\n4. Game of SKATE back at Sosuru\n\nNotes:\n1. No permits. Open roads. Bomb at your own risk.\n2. Spooky fits, face paint, or costumes welcome.\n3. Non-skaters welcome to pull up and watch.",
-      "startAt": "2026-10-31T16:00:00+05:30",
+      "id": "ce5fbaeae62494ce",
+      "slug": "chakravyuh-garhwali-theatrical-performance-at-virasat-2026",
+      "title": "Chakravyuh - Garhwali theatrical performance at Virasat 2026",
+      "description": "🕸️ Hi friends! Virasat 2026 is hosting a beautiful recreation of the Chakravyuh this year.\nSince we would have no walk this Sunday, we urge you to witness this beautiful theatrical performance from Garhwal. The Chakravyuh tells the story of Abhimanyu from the Mahabharata and how he enters the intricate formation, only to be killed at the end.\n\n⏰Time: 2 pm onwards, Sunday, November 1, 2026\n\n📍 Venue: Himalayan Cultural Centre, Nimbuwala, Garhi Cantt. Entry to the venue is ticketed. Tickets can be purchased at the gate.",
+      "startAt": "2026-11-01T14:00:00+05:30",
       "venue": {
-        "name": "Mussoorie Diversion (opposite Sosuru)",
+        "name": "Himalayan Cultural Centre, Nimbuwala, Garhi Cantt, Dehradun",
         "city": "Dehradun"
       },
       "categories": [
-        "Outdoors",
-        "Fitness"
+        "Live shows",
+        "Culture"
       ],
       "pricing": {
         "type": "unknown",
         "currency": "INR"
       },
-      "howToJoin": "Walk-in at Mussoorie Diversion, opposite Sosuru; non-skaters welcome to watch",
-      "organizer": "dooncult",
+      "howToJoin": "Tickets available at the gate",
+      "organizer": "btdt_official",
       "posts": [
-        "https://www.instagram.com/p/DfFYl6Eyz-R"
+        "https://www.instagram.com/p/DfJPcjDA4X9"
       ],
       "reading": {
         "detailsFrom": "both",
@@ -770,8 +708,8 @@
       "sources": [
         {
           "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfFYl6Eyz-R",
-          "checkedAt": "2026-10-30T15:05:56.192Z",
+          "url": "https://www.instagram.com/p/DfJPcjDA4X9",
+          "checkedAt": "2026-10-31T20:02:31.767Z",
           "confidence": 0.5
         }
       ],
@@ -780,9 +718,9 @@
         "status": "review",
         "score": 3
       },
-      "firstSeenAt": "2026-10-30T15:05:56.192Z",
-      "lastSeenAt": "2026-10-30T15:05:56.192Z",
-      "lastCheckedAt": "2026-10-30T15:05:56.192Z"
+      "firstSeenAt": "2026-10-31T20:02:31.767Z",
+      "lastSeenAt": "2026-10-31T20:02:31.767Z",
+      "lastCheckedAt": "2026-10-31T20:02:31.767Z"
     }
   ]
 }

@@ -1,28 +1,120 @@
 [
   {
-    "id": "33db2f92bdb5d410",
-    "slug": "halloween-plan-for-anyone-who-s-free-we-ve-booked-city-club-for-all-nighter-today-ps5-snoo",
-    "title": "Halloween plan for anyone who’s free: we’ve booked city club for all-nighter today, ps5 snooker poker etc",
-    "description": "Hey Doon. We're REV, a social hangout group in Dehradun (you might've seen us on the \"social groups in Dehradun\" list a couple of weeks back). Tonight (Sat 31 Oct) we've got City Club to ourselves from 8 PM to 6 AM, and 4 spots are still open: 4× PS5 (FIFA, COD, GTA V, Valorant) Snooker and pickleball Poker, UNO, board games Trivia rounds with prizes A cold coffee and a couple of pizza slices each Come with friends or come solo, both are completely fine. You pick how long you stay. Plans and boo",
-    "startAt": "2026-10-31T06:30:00.000Z",
+    "id": "404ba7c9634aa20c",
+    "slug": "blaaze-halloween-thrill-night",
+    "title": "Blaaze Halloween Thrill Night",
+    "description": "",
+    "startAt": "2026-10-31",
+    "endAt": "2026-10-31",
     "venue": {
-      "name": "See community post",
+      "name": "BLAAZE - Mall of Dehradun",
+      "address": "Mall of, IIP, Mohkampur, Dehradun, Uttarakhand 248005, India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.26748,
+        "lng": 78.08207
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 1500,
+      "maxPrice": 3600,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/blaaze-halloween-thrill-night/4100030883457641",
+        "checkedAt": "2026-10-31T20:02:01.145Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "review",
+      "score": 2
+    },
+    "firstSeenAt": "2026-10-31T20:02:01.145Z",
+    "lastSeenAt": "2026-10-31T20:02:01.145Z",
+    "lastCheckedAt": "2026-10-31T20:02:01.145Z"
+  },
+  {
+    "id": "c76bb989bbf9c42e",
+    "slug": "ghosted",
+    "title": "Ghosted",
+    "description": "",
+    "startAt": "2026-10-31",
+    "endAt": "2026-10-31",
+    "venue": {
+      "name": "Dehradun Social | Hathibarkala Salwala, Dehradun",
+      "address": "Hathibarkala Salwala, Dehradun Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3431,
+        "lng": 78.0482
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 1500,
+      "maxPrice": 4000,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/ghosted/4100030884279649",
+        "checkedAt": "2026-10-31T20:02:01.145Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "review",
+      "score": 2
+    },
+    "firstSeenAt": "2026-10-31T20:02:01.145Z",
+    "lastSeenAt": "2026-10-31T20:02:01.145Z",
+    "lastCheckedAt": "2026-10-31T20:02:01.145Z"
+  },
+  {
+    "id": "ce5fbaeae62494ce",
+    "slug": "chakravyuh-garhwali-theatrical-performance-at-virasat-2026",
+    "title": "Chakravyuh - Garhwali theatrical performance at Virasat 2026",
+    "description": "🕸️ Hi friends! Virasat 2026 is hosting a beautiful recreation of the Chakravyuh this year.\nSince we would have no walk this Sunday, we urge you to witness this beautiful theatrical performance from Garhwal. The Chakravyuh tells the story of Abhimanyu from the Mahabharata and how he enters the intricate formation, only to be killed at the end.\n\n⏰Time: 2 pm onwards, Sunday, November 1, 2026\n\n📍 Venue: Himalayan Cultural Centre, Nimbuwala, Garhi Cantt. Entry to the venue is ticketed. Tickets can be purchased at the gate.",
+    "startAt": "2026-11-01T14:00:00+05:30",
+    "venue": {
+      "name": "Himalayan Cultural Centre, Nimbuwala, Garhi Cantt, Dehradun",
       "city": "Dehradun"
     },
     "categories": [
-      "Fitness",
-      "Games",
-      "Meetups"
+      "Live shows",
+      "Culture"
     ],
     "pricing": {
       "type": "unknown",
       "currency": "INR"
     },
+    "howToJoin": "Tickets available at the gate",
+    "organizer": "btdt_official",
+    "posts": [
+      "https://www.instagram.com/p/DfJPcjDA4X9"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
     "sources": [
       {
-        "provider": "reddit",
-        "url": "https://www.reddit.com/r/Dehradun/comments/1xk3lb7/halloween_plan_for_anyone_whos_free_weve_booked/",
-        "checkedAt": "2026-10-31T14:35:10.363Z",
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfJPcjDA4X9",
+        "checkedAt": "2026-10-31T20:02:31.767Z",
         "confidence": 0.5
       }
     ],
@@ -31,8 +123,8 @@
       "status": "review",
       "score": 3
     },
-    "firstSeenAt": "2026-10-31T14:35:10.363Z",
-    "lastSeenAt": "2026-10-31T14:35:10.363Z",
-    "lastCheckedAt": "2026-10-31T14:35:10.363Z"
+    "firstSeenAt": "2026-10-31T20:02:31.767Z",
+    "lastSeenAt": "2026-10-31T20:02:31.767Z",
+    "lastCheckedAt": "2026-10-31T20:02:31.767Z"
   }
 ]
