@@ -1,90 +1,5 @@
 [
   {
-    "id": "dfed8ffff491b69e",
-    "slug": "saturday-functional-training",
-    "title": "Saturday Functional Training",
-    "description": "Organized by @the5amclub.in.",
-    "startAt": "2026-10-31T06:00:00+05:30",
-    "venue": {
-      "name": "City Forest Park, Sahastradhara Helipad",
-      "city": "Dehradun",
-      "area": "Sahastradhara"
-    },
-    "categories": [
-      "Workshop",
-      "Fitness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DfBkaONzD-T",
-        "checkedAt": "2026-10-29T08:49:55.011Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfBkaONzD-T",
-        "checkedAt": "2026-10-29T08:24:24.456Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-10-29T08:49:55.011Z",
-    "lastSeenAt": "2026-10-29T08:49:55.011Z",
-    "lastCheckedAt": "2026-10-29T08:49:55.011Z"
-  },
-  {
-    "id": "1326f36e49ca9a74",
-    "slug": "aws-student-community-day-dehradun-2026",
-    "title": "AWS Student Community Day Dehradun 2026",
-    "description": "Meetup event in Dehradun. Check the organizer page for the latest details.",
-    "startAt": "2026-10-31T02:30:00.000Z",
-    "endAt": "2026-10-31T11:30:00.000Z",
-    "venue": {
-      "name": "Graphic Era Deemed to be University",
-      "address": "566/6, Bell Road, Society Area, Clement Town, Dehradun, Uttarakhand 248002, India, Dehradun, UK",
-      "city": "Dehradun",
-      "area": "Clement Town",
-      "geo": {
-        "lat": 30.26802,
-        "lng": 77.99612
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "meetup",
-        "url": "https://www.meetup.com/aws-sbg-at-graphic-era-deemed-to-be-university/events/316766651/",
-        "externalId": "316766651",
-        "checkedAt": "2026-10-30T20:52:44.532Z",
-        "confidence": 0.9
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 6
-    },
-    "firstSeenAt": "2026-10-18T07:29:54.460Z",
-    "lastSeenAt": "2026-10-30T20:52:44.532Z",
-    "lastCheckedAt": "2026-10-30T20:52:44.532Z"
-  },
-  {
     "id": "3de7a089f410e60a",
     "slug": "rajpur-nature-festival",
     "title": "Rajpur Nature Festival",
@@ -274,8 +189,7 @@
       }
     },
     "categories": [
-      "Comedy",
-      "Books"
+      "Comedy"
     ],
     "pricing": {
       "type": "unknown",
@@ -285,7 +199,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/rajat-chauhan-live-a-solo-standup-comedy-show/3900030824167154",
-        "checkedAt": "2026-10-31T05:52:39.973Z",
+        "checkedAt": "2026-10-31T14:34:44.953Z",
         "confidence": 0.75
       }
     ],
@@ -295,8 +209,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.890Z",
-    "lastSeenAt": "2026-10-31T05:52:39.973Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.973Z"
+    "lastSeenAt": "2026-10-31T14:34:44.953Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.953Z"
   },
   {
     "id": "404ba7c9634aa20c",
@@ -329,7 +243,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/blaaze-halloween-thrill-night/4100030883457641",
-        "checkedAt": "2026-10-31T05:52:39.978Z",
+        "checkedAt": "2026-10-31T14:34:44.957Z",
         "confidence": 0.75
       }
     ],
@@ -339,8 +253,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-24T04:03:21.634Z",
-    "lastSeenAt": "2026-10-31T05:52:39.978Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.978Z",
+    "lastSeenAt": "2026-10-31T14:34:44.957Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.957Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.945Z"
   },
@@ -375,7 +289,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-9",
         "externalId": "2026-9-tawayafnama-a-journey-in-memory-of-gauhar-jaan-125-years-of-gramophone-recording-in-india",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -385,8 +299,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z",
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.691Z"
   },
@@ -546,7 +460,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/ghosted/4100030884279649",
-        "checkedAt": "2026-10-31T05:52:39.978Z",
+        "checkedAt": "2026-10-31T14:34:44.957Z",
         "confidence": 0.75
       }
     ],
@@ -556,8 +470,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-23T05:58:51.067Z",
-    "lastSeenAt": "2026-10-31T05:52:39.978Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.978Z",
+    "lastSeenAt": "2026-10-31T14:34:44.957Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.957Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.945Z"
   },
@@ -591,7 +505,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-9",
         "externalId": "2026-9-dastangoi-vs-jumlebaazi",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -601,8 +515,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "5c236c81f43b60ca",
@@ -639,7 +553,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/litchi-india-tour/4100030856672817",
-        "checkedAt": "2026-10-31T05:52:39.974Z",
+        "checkedAt": "2026-10-31T14:34:44.954Z",
         "confidence": 0.75
       }
     ],
@@ -649,8 +563,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-31T05:52:39.974Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.974Z"
+    "lastSeenAt": "2026-10-31T14:34:44.954Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.954Z"
   },
   {
     "id": "a6294b81aaa91ded",
@@ -687,7 +601,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halloween-party-dj-musical-monkey/4100030928819332",
-        "checkedAt": "2026-10-31T05:52:39.975Z",
+        "checkedAt": "2026-10-31T14:34:44.954Z",
         "confidence": 0.75
       }
     ],
@@ -697,8 +611,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-25T15:11:59.396Z",
-    "lastSeenAt": "2026-10-31T05:52:39.975Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.975Z"
+    "lastSeenAt": "2026-10-31T14:34:44.954Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.954Z"
   },
   {
     "id": "5e74456cf880932f",
@@ -727,7 +641,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/framed-in-crimson-halloween-rock-night/3900030867000008",
-        "checkedAt": "2026-10-31T05:52:39.975Z",
+        "checkedAt": "2026-10-31T14:34:44.954Z",
         "confidence": 0.75
       }
     ],
@@ -737,8 +651,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T05:52:39.975Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.975Z"
+    "lastSeenAt": "2026-10-31T14:34:44.954Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.954Z"
   },
   {
     "id": "796a95871a706bc1",
@@ -1038,7 +952,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/vipul-goyal-unleashed/3900030908940529",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -1048,8 +962,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.890Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z"
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z"
   },
   {
     "id": "694d2e017d95f36b",
@@ -1124,7 +1038,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-10",
         "externalId": "2026-10-violin-recital-by-ragini-shankar",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1134,8 +1048,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "c44fbdc5a7afacd7",
@@ -1166,7 +1080,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/zumba-instructor-training-with-steve-frank-in-dehra-dun-uttarakhand-in/200030777510326",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -1176,8 +1090,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z",
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.947Z"
   },
@@ -1211,7 +1125,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-10",
         "externalId": "2026-10-vocal-recital-by-begum-parween-sultana",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1221,8 +1135,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z",
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.956Z"
   },
@@ -1261,7 +1175,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/why-choose-200-hour-yoga-teacher-training-in-dehradun-tickets/80001825771919",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -1271,8 +1185,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-28T15:10:53.427Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z",
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z",
     "sequence": 1,
     "modifiedAt": "2026-10-30T18:25:56.417Z"
   },
@@ -1305,7 +1219,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/is-300-hour-yoga-teacher-training-in-dehradun-right-for-you-tickets/80009086749566",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -1315,8 +1229,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-30T18:25:27.941Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z"
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z"
   },
   {
     "id": "e22b7ecdc277ce8f",
@@ -1347,7 +1261,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/advance-your-yoga-journey-with-200-hour-ytt-in-dehradun-kunwar-yoga-tickets/80001746879419",
-        "checkedAt": "2026-10-31T05:52:39.978Z",
+        "checkedAt": "2026-10-31T14:34:44.957Z",
         "confidence": 0.75
       }
     ],
@@ -1357,8 +1271,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.893Z",
-    "lastSeenAt": "2026-10-31T05:52:39.978Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.978Z"
+    "lastSeenAt": "2026-10-31T14:34:44.957Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.957Z"
   },
   {
     "id": "ec12add48765568e",
@@ -1389,7 +1303,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/begin-your-yoga-teaching-journey-with-kunwar-yogas-100-hour-ttc-in-dehradun-tickets/80002105880868",
-        "checkedAt": "2026-10-31T05:52:39.977Z",
+        "checkedAt": "2026-10-31T14:34:44.956Z",
         "confidence": 0.75
       }
     ],
@@ -1399,8 +1313,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-25T04:50:54.752Z",
-    "lastSeenAt": "2026-10-31T05:52:39.977Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.977Z",
+    "lastSeenAt": "2026-10-31T14:34:44.956Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.956Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -1434,7 +1348,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-11",
         "externalId": "2026-11-tridhara-bharatnatayam-odissi-and-kathak-by-arohi-munshi-vani-madhav-and-moumala-nayak",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1444,8 +1358,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "92cc4f89dc1d9aca",
@@ -1478,7 +1392,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-11",
         "externalId": "2026-11-osman-mir",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1488,8 +1402,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z",
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.693Z"
   },
@@ -1523,7 +1437,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-12",
         "externalId": "2026-12-sitar-recital-by-samanwaya-sarkar",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1533,8 +1447,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "8bde503b6c4c0626",
@@ -1566,7 +1480,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-12",
         "externalId": "2026-12-vocal-recital-by-mahesh-kale",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1576,8 +1490,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z",
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.694Z"
   },
@@ -1611,7 +1525,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-13",
         "externalId": "2026-13-veena-recital-by-ramana-balachandran",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1621,8 +1535,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "1276cecde7c73cd3",
@@ -1654,7 +1568,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-13",
         "externalId": "2026-13-vocal-recital-by-rahul-deshpande",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1664,8 +1578,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "b92833bddecc255a",
@@ -1697,7 +1611,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/300-hour-advanced-yoga-teacher-training-in-dehradun-india-tickets/80002793874803",
-        "checkedAt": "2026-10-31T05:52:39.978Z",
+        "checkedAt": "2026-10-31T14:34:44.957Z",
         "confidence": 0.75
       },
       {
@@ -1719,8 +1633,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-31T05:52:39.978Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.978Z",
+    "lastSeenAt": "2026-10-31T14:34:44.957Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.957Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.944Z"
   },
@@ -1754,7 +1668,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-hindustani-vocal-by-anol-chatterjee",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1764,8 +1678,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "3f54ac689b6f0c57",
@@ -1797,7 +1711,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-an-evening-of-confluence",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1807,8 +1721,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z",
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.695Z"
   },
@@ -1842,7 +1756,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-gaya-ang-thumri",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1852,8 +1766,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "026b60166805ecc4",
@@ -1885,7 +1799,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-usha-uthup-live",
-        "checkedAt": "2026-10-31T05:53:04.409Z",
+        "checkedAt": "2026-10-31T14:35:07.182Z",
         "confidence": 0.95
       }
     ],
@@ -1895,8 +1809,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-31T05:53:04.409Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.409Z"
+    "lastSeenAt": "2026-10-31T14:35:07.182Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.182Z"
   },
   {
     "id": "296ba68ddf38e8e2",
@@ -1926,7 +1840,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-and-drinks-dehradun-tickets/80001819168334",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -1936,8 +1850,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z",
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -1968,7 +1882,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030713294008",
-        "checkedAt": "2026-10-31T05:52:39.971Z",
+        "checkedAt": "2026-10-31T14:34:44.950Z",
         "confidence": 0.75
       }
     ],
@@ -1978,8 +1892,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-31T05:52:39.971Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.971Z",
+    "lastSeenAt": "2026-10-31T14:34:44.950Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.950Z",
     "sequence": 4,
     "modifiedAt": "2026-10-26T15:15:59.943Z",
     "endAt": "2026-11-15T17:30:00+05:30"
@@ -2012,7 +1926,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/safarnama-by-krishna-shukla/3900030659387200",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -2022,8 +1936,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z"
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z"
   },
   {
     "id": "fe076565e26a0fd8",
@@ -2056,7 +1970,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/operation-forge-x-tickets/80001487149685",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -2066,8 +1980,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z",
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -2105,7 +2019,7 @@
       {
         "provider": "literaturefestival",
         "url": "https://www.dehradunliteraturefestival.com/",
-        "checkedAt": "2026-10-31T05:53:04.907Z",
+        "checkedAt": "2026-10-31T14:35:07.470Z",
         "confidence": 0.9
       }
     ],
@@ -2115,8 +2029,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-10-31T05:53:04.907Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.907Z"
+    "lastSeenAt": "2026-10-31T14:35:07.470Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.470Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -2152,7 +2066,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/run-for-trees/4100030939067213",
-        "checkedAt": "2026-10-31T05:52:39.975Z",
+        "checkedAt": "2026-10-31T14:34:44.954Z",
         "confidence": 0.75
       }
     ],
@@ -2162,8 +2076,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-10-31T05:52:39.975Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.975Z"
+    "lastSeenAt": "2026-10-31T14:34:44.954Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.954Z"
   },
   {
     "id": "d092613afd25636e",
@@ -2193,7 +2107,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/level-up-play-fest-centrio-mall-dehradun/3900030931951226",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -2203,8 +2117,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-28T21:09:08.578Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z"
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z"
   },
   {
     "id": "0ad74b3663c3e847",
@@ -2275,7 +2189,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halki-halki-fati-by-vikas-kush-sharma/3900030845664301",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -2285,8 +2199,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T05:52:39.976Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.976Z"
+    "lastSeenAt": "2026-10-31T14:34:44.955Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.955Z"
   },
   {
     "id": "562de29d0166cb06",
@@ -2329,8 +2243,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-10-31T05:52:39.977Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.977Z",
+    "lastSeenAt": "2026-10-31T14:34:44.956Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.956Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -2362,7 +2276,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/chikka-on-roll/3900030703853405",
-        "checkedAt": "2026-10-31T05:52:39.977Z",
+        "checkedAt": "2026-10-31T14:34:44.956Z",
         "confidence": 0.75
       }
     ],
@@ -2372,8 +2286,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T05:52:39.977Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.977Z"
+    "lastSeenAt": "2026-10-31T14:34:44.956Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.956Z"
   },
   {
     "id": "4e90e288934b77c1",
@@ -2404,7 +2318,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lakhwinder-wadali-india-tour-dehradun/3900030624689839",
-        "checkedAt": "2026-10-31T05:52:39.975Z",
+        "checkedAt": "2026-10-31T14:34:44.954Z",
         "confidence": 0.75
       }
     ],
@@ -2414,8 +2328,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T05:52:39.975Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.975Z"
+    "lastSeenAt": "2026-10-31T14:34:44.954Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.954Z"
   },
   {
     "id": "64e33c993e4def3d",
@@ -2460,8 +2374,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-23T02:43:57.432Z",
-    "lastSeenAt": "2026-10-31T05:52:39.978Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.978Z",
+    "lastSeenAt": "2026-10-31T14:34:44.957Z",
+    "lastCheckedAt": "2026-10-31T14:34:44.957Z",
     "sequence": 2,
     "modifiedAt": "2026-10-27T05:13:41.816Z"
   },
@@ -2494,13 +2408,13 @@
       {
         "provider": "thrillzone",
         "url": "https://www.sportifiindia.com/events/ddn-ultra-run",
-        "checkedAt": "2026-10-31T05:53:04.727Z",
+        "checkedAt": "2026-10-31T14:35:07.333Z",
         "confidence": 0.9
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-ultra-run-2027-4th-edition-tickets/80001080698758",
-        "checkedAt": "2026-10-31T05:52:39.976Z",
+        "checkedAt": "2026-10-31T14:34:44.955Z",
         "confidence": 0.75
       }
     ],
@@ -2510,8 +2424,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-31T05:53:04.727Z",
-    "lastCheckedAt": "2026-10-31T05:53:04.727Z",
+    "lastSeenAt": "2026-10-31T14:35:07.333Z",
+    "lastCheckedAt": "2026-10-31T14:35:07.333Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.948Z"
   }

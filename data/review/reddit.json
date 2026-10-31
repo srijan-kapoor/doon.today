@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "33db2f92bdb5d410",
+    "slug": "halloween-plan-for-anyone-who-s-free-we-ve-booked-city-club-for-all-nighter-today-ps5-snoo",
+    "title": "Halloween plan for anyone who’s free: we’ve booked city club for all-nighter today, ps5 snooker poker etc",
+    "description": "Hey Doon. We're REV, a social hangout group in Dehradun (you might've seen us on the \"social groups in Dehradun\" list a couple of weeks back). Tonight (Sat 31 Oct) we've got City Club to ourselves from 8 PM to 6 AM, and 4 spots are still open: 4× PS5 (FIFA, COD, GTA V, Valorant) Snooker and pickleball Poker, UNO, board games Trivia rounds with prizes A cold coffee and a couple of pizza slices each Come with friends or come solo, both are completely fine. You pick how long you stay. Plans and boo",
+    "startAt": "2026-10-31T06:30:00.000Z",
+    "venue": {
+      "name": "See community post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xk3lb7/halloween_plan_for_anyone_whos_free_weve_booked/",
+        "checkedAt": "2026-10-31T14:35:10.363Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-10-31T14:35:10.363Z",
+    "lastSeenAt": "2026-10-31T14:35:10.363Z",
+    "lastCheckedAt": "2026-10-31T14:35:10.363Z"
+  }
+]
