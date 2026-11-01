@@ -193,7 +193,9 @@ test('fetching also stops after three failures of any kind, and skips events tha
   assert.deepEqual(fetched.map((u) => u.split('/')[4]), ['e3', 'e4'], 'yesterday and this morning are skipped; today (date only) and later are fetched');
 });
 
-test('fetchAllEvents reads the listing, then details from event pages', async () => {
+test('fetchAllEvents reads the listing, then details from event pages', async (t) => {
+  // The fixtures are dated 31 Oct 2026; event pages are only read for events that aren't over yet.
+  t.mock.timers.enable({ apis: ['Date'], now: new Date('2026-10-29T12:00:00+05:30') });
   const html = await pages();
   const listing = `<script type="application/ld+json">${JSON.stringify([
     { '@type': 'Event', name: 'Ghosted', startDate: '2026-10-31', url: GHOSTED, location: { name: 'BLAAZE - Mall of Dehradun', address: { addressLocality: 'Dehradun' } } },
@@ -206,7 +208,9 @@ test('fetchAllEvents reads the listing, then details from event pages', async ()
   assert.equal(diagnostics.pricesFound, 1);
 });
 
-test('the full upcoming list is read, and a bare listing becomes a full event from its own page', async () => {
+test('the full upcoming list is read, and a bare listing becomes a full event from its own page', async (t) => {
+  // The fixtures are dated 31 Oct 2026; event pages are only read for events that aren't over yet.
+  t.mock.timers.enable({ apis: ['Date'], now: new Date('2026-10-29T12:00:00+05:30') });
   assert.equal(LIST, 'https://allevents.in/dehradun/all', 'the plain city page shows only about half the events');
   const fetchPage = async (url) => ({ [LIST]: ldPage([crimsonListing]), [CRIMSON]: crimsonPage })[url] ?? '';
   const { events, reviewCandidates, diagnostics } = await fetchAllEvents({ fetchPage, delayMs: 0 });
