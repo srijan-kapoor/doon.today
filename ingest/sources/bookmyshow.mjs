@@ -5,7 +5,7 @@
 // - each event's own page carries the event as structured data.
 // Without these settings the source fetches nothing and its stored events stay as they are.
 import { extractJsonLd, flattenObjects } from '../lib/jsonld.mjs';
-import { stableId, slugify, priceFromOffers, categoryFromText, isDehradunText, isAreaVenue, stripHtml, nowIso, geoFrom } from '../lib/utils.mjs';
+import { stableId, slugify, priceFromOffers, categoryFromText, isDehradunText, isAreaVenue, stripHtml, nowIso, geoFrom, sleep } from '../lib/utils.mjs';
 
 export const LIST = 'https://in.bookmyshow.com/explore/events-dehradun?cat=CT';
 const UNLOCKER = 'https://api.brightdata.com/request';
@@ -17,8 +17,11 @@ const RUN_BUDGET_MS = 6 * 60_000;
 const MAX_RUN_DAYS = 31;
 // BookMyShow's own one-line summary says nothing the title doesn't.
 const BOILERPLATE = /^Book online tickets for /i;
-// Only the event cards say "₹ 499 onwards"; the page's own text around them doesn't.
+// Only the event cards say "₹ 499 onwards"; the page's own text around them doesn't. (": Dehradun", on every
+// local card, was refused as missing in tests on 1 Nov even when the cards were there.)
 const CARDS_LOADED = { text: 'onwards' };
+// The cards sometimes don't load in time (two of six tries on 1 Nov); a second try a minute later did.
+const LISTING_RETRY_MS = 60_000;
 
 /** The listing's event cards as { href, lines }: title, venue, genre and price, in that order. */
 export function listingCards(html) {
@@ -107,12 +110,13 @@ function unlocker(token, zone) {
 }
 
 // The option is for tests: a stand-in for the Web Unlocker fetcher.
-export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS } = {}) {
+export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS, retryMs = LISTING_RETRY_MS } = {}) {
   const { BRIGHTDATA_API_TOKEN: token, BRIGHTDATA_UNLOCKER_ZONE: zone } = process.env;
   if (!fetchPage && !(token && zone)) return { source: 'bookmyshow', events: [], diagnostics: { configured: false } };
   const get = fetchPage || unlocker(token, zone);
   const deadline = Date.now() + budgetMs;
-  const cards = listingCards(await get(LIST, { expect: CARDS_LOADED }));
+  const listing = () => get(LIST, { expect: CARDS_LOADED });
+  const cards = listingCards(await listing().catch(async () => { await sleep(retryMs); return listing(); }));
   const links = dehradunLinks(cards);
   if (!cards.length) {
     const error = new Error('BookMyShow listing showed no event cards');

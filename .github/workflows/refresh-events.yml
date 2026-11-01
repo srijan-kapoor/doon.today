@@ -2,10 +2,10 @@ name: Refresh events
 on:
   workflow_dispatch:
   schedule:
-    # Every 8 hours, at about 05:47, 13:47 and 21:47 IST. GitHub starts scheduled runs late when many repos
+    # Twice a day, at about 07:47 and 19:47 IST. GitHub starts scheduled runs late when many repos
     # schedule the same minute (:00 and :30 are the busiest; on 19 Oct the 06:00 run started at 10:32), so
     # this uses an off-peak minute. Delays of a few minutes are normal; the health check covers longer gaps.
-    - cron: '17 0,8,16 * * *'
+    - cron: '17 2,14 * * *'
 permissions:
   contents: write
   # For opening review issues for new r/Dehradun leads.

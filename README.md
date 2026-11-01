@@ -66,7 +66,7 @@ How District is fetched, and why not from GitHub's runners, is in [docs/primary-
 
 ## How events are chosen
 
-- The sources above are read about three times a day. District is fetched from a home connection because it refuses cloud servers, so it can lag when that machine is off. When a source is behind, the home page says so.
+- The sources above are read twice a day. District is fetched from a home connection because it refuses cloud servers, so it can lag when that machine is off. When a source is behind, the home page says so.
 - An event is kept when its venue, address or title points to Dehradun. Events that name other cities are dropped.
 - The same event from two sources is merged into one, keeping every source on the page.
 - Categories are guessed from the title and description with simple keyword rules, so some are wrong.
@@ -101,7 +101,7 @@ Setup, once: create the `lead` and `approve` labels; enable form detection in Ne
 
 ## Refresh jobs
 
-Event data is refreshed three times a day, scheduled for about 05:47, 13:47 and 21:47 IST. GitHub starts scheduled runs when it has capacity, so a run can start minutes to a few hours late; a manual run (Actions, Refresh events, Run workflow) always starts at once.
+Event data is refreshed twice a day, scheduled for about 07:47 and 19:47 IST. GitHub starts scheduled runs when it has capacity, so a run can start minutes to a few hours late; a manual run (Actions, Refresh events, Run workflow) always starts at once.
 
 - **Refresh events** (`.github/workflows/refresh-events.yml`) runs on a GitHub-hosted runner: tests, every source except District, validation, build, then commits `data/` when it changed.
 - **District** is fetched shortly before the hosted refresh from a normal home connection, either by `scripts/refresh-primary-local.sh` (cron or launchd on your own machine) or by the self-hosted runner workflow `.github/workflows/refresh-primary.yml`. Setup, and the security notes for a self-hosted runner on a public repo, are in [docs/primary-sources.md](docs/primary-sources.md).

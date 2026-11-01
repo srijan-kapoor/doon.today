@@ -55,6 +55,14 @@ test('the listing is asked for once its cards are there, then each Dehradun even
   assert.equal(r.partial, false);
 });
 
+test('a listing that did not load is tried once more', async () => {
+  let tries = 0;
+  const fetchPage = async (url) => { if (url !== LIST) return pizzaPage; if (++tries === 1) throw new Error('cards not loaded'); return listing; };
+  assert.equal((await fetchBookMyShow({ fetchPage, retryMs: 0 })).events.length, 1);
+  assert.equal(tries, 2);
+  await assert.rejects(fetchBookMyShow({ fetchPage: async () => { throw new Error('cards not loaded'); }, retryMs: 0 }), /cards not loaded/);
+});
+
 test('a run that missed pages, or saw no Dehradun card, is partial, so stored events stay', async () => {
   const pages = { [LIST]: listing + card('/events/other/ET00000003', 'Other show', 'Venue: Dehradun', 'Concerts', '₹ 100 onwards') };
   const r = await fetchBookMyShow({ fetchPage: async (url) => { if (pages[url]) return pages[url]; if (url === PIZZA) return pizzaPage; throw new Error('refused'); } });

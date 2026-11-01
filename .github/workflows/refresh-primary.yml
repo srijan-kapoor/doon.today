@@ -11,7 +11,7 @@ on:
   # in the queue and, because it shares a concurrency group with refresh-events.yml, blocks every hosted
   # refresh behind it. Once a runner exists, restore (ten minutes before the hosted refresh):
   #   schedule:
-  #     - cron: '7 0,8,16 * * *'
+  #     - cron: '7 2,14 * * *'
 permissions:
   contents: write
 concurrency:
