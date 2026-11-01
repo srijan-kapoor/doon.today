@@ -1,6 +1,6 @@
 // A small GitHub REST client for the review queue. In a workflow, GITHUB_TOKEN and GITHUB_REPOSITORY are
-// set by Actions; issues opened with that token are authored by github-actions[bot], so the repo owner
-// gets a notification for each one.
+// set by Actions; issues opened with that token are authored by github-actions[bot], which notifies no one
+// unless they watch the repo's issues, so lead issues are assigned to the owner (see leadIssue).
 export function github({ token = process.env.GITHUB_TOKEN, repo = process.env.GITHUB_REPOSITORY, fetchImpl = fetch } = {}) {
   if (!token || !repo) throw new Error('GITHUB_TOKEN and GITHUB_REPOSITORY are needed');
   async function call(method, path, body) {
@@ -14,7 +14,7 @@ export function github({ token = process.env.GITHUB_TOKEN, repo = process.env.GI
       },
       body: body ? JSON.stringify(body) : undefined
     });
-    if (!res.ok) throw new Error(`${method} ${path}: ${res.status} ${(await res.text()).slice(0, 300)}`);
+    if (!res.ok) throw Object.assign(new Error(`${method} ${path}: ${res.status} ${(await res.text()).slice(0, 300)}`), { status: res.status });
     return res.status === 204 ? null : res.json();
   }
   return {
@@ -28,6 +28,17 @@ export function github({ token = process.env.GITHUB_TOKEN, repo = process.env.GI
         if (batch.length < 100) break;
       }
       return all;
+    },
+    /** Opens an issue. If GitHub refuses its assignee (422), opens it without one: a lead must never be lost
+     *  over who gets the email. */
+    async openIssue(issue) {
+      try { return await call('POST', '/issues', issue); }
+      catch (error) {
+        if (error.status !== 422 || !issue.assignees) throw error;
+        console.error(`Could not assign ${issue.assignees.join(', ')}; opening the issue unassigned.`);
+        const { assignees, ...rest } = issue;
+        return call('POST', '/issues', rest);
+      }
     },
     comment: (number, body) => call('POST', `/issues/${number}/comments`, { body }),
     close: (number, reason = 'completed') => call('PATCH', `/issues/${number}`, { state: 'closed', state_reason: reason }),
