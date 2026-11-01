@@ -13,6 +13,7 @@ const SOURCE_RANK = {
   literaturefestival: 90,
   meetup: 85,
   gdg: 85,
+  bookmyshow: 80,
   allevents: 75,
   reddit: 50
 };

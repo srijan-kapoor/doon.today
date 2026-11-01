@@ -38,6 +38,9 @@ jobs:
           BRIGHTDATA_API_TOKEN: ${{ secrets.BRIGHTDATA_API_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           INSTAGRAM_HANDLES: ${{ secrets.INSTAGRAM_HANDLES }}
+          # BookMyShow (ingest/sources/bookmyshow.mjs) fetches through this Web Unlocker zone; without it the
+          # source fetches nothing.
+          BRIGHTDATA_UNLOCKER_ZONE: ${{ vars.BRIGHTDATA_UNLOCKER_ZONE }}
         run: npm run ingest
       - name: Validate event data
         run: npm run validate:data

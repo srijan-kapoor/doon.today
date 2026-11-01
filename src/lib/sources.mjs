@@ -2,6 +2,7 @@
 export const SOURCE_LABELS = {
   district: 'District',
   allevents: 'AllEvents',
+  bookmyshow: 'BookMyShow',
   virasat: 'Virasat',
   thrillzone: 'Thrill Zone',
   literaturefestival: 'Dehradun Literature Festival',
