@@ -52,6 +52,18 @@ test('the listing is asked for once its cards are there, then each Dehradun even
   assert.deepEqual(asked, [[LIST, { text: 'onwards' }], [PIZZA, undefined]]);
   assert.equal(r.events.length, 1);
   assert.equal(r.complete, true);
+  assert.equal(r.partial, false);
+});
+
+test('a run that missed pages, or saw no Dehradun card, is partial, so stored events stay', async () => {
+  const pages = { [LIST]: listing + card('/events/other/ET00000003', 'Other show', 'Venue: Dehradun', 'Concerts', '₹ 100 onwards') };
+  const r = await fetchBookMyShow({ fetchPage: async (url) => { if (pages[url]) return pages[url]; if (url === PIZZA) return pizzaPage; throw new Error('refused'); } });
+  assert.equal(r.events.length, 1);
+  assert.equal(r.partial, true);
+  const out = await fetchBookMyShow({ fetchPage: async (url) => (url === LIST ? listing : pizzaPage), budgetMs: -1 });
+  assert.deepEqual([out.events.length, out.partial, out.diagnostics.eventPagesSkipped], [0, true, 1], 'pages past the time budget wait for the next run');
+  const elsewhere = await fetchBookMyShow({ fetchPage: async () => card('/events/big-tour-kolkata/ET00000001', 'Big Tour', 'Stadium: Kolkata', 'Concerts', '₹ 1000 onwards') });
+  assert.deepEqual([elsewhere.events.length, elsewhere.complete, elsewhere.partial], [0, false, true]);
 });
 
 test('without settings it fetches nothing; a listing without cards or failing pages is an error', async () => {

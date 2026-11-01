@@ -264,8 +264,9 @@ export async function mergeAndWrite(sourceResults) {
   const ambiguous=new Set([...ambiguousIdentities(current),...ambiguousIdentities(previous)]);
   const same=(a,b)=>sameEvent(a,b) || sharesSource(a,b,ambiguous);
   // Sources that ran successfully this run (failed adapters are not in `results`) and returned events, or said
-  // their empty answer was complete.
-  const answered=new Set(results.filter(r => (r.events||[]).length > 0 || r.complete === true).map(r => r.source));
+  // their empty answer was complete. A source that says it saw only part of its list (pages it couldn't read)
+  // hasn't answered for the events it didn't see.
+  const answered=new Set(results.filter(r => !r.partial && ((r.events||[]).length > 0 || r.complete === true)).map(r => r.source));
 
   const merged=[];
   for (const incoming of current) {

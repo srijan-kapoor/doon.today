@@ -11,6 +11,8 @@ export const LIST = 'https://in.bookmyshow.com/explore/events-dehradun?cat=CT';
 const UNLOCKER = 'https://api.brightdata.com/request';
 const MAX_EVENT_PAGES = 25;
 const PAGE_TIMEOUT_MS = 60_000;
+// The whole source stays well inside the refresh job's 15 minutes; pages not reached by then wait for the next run.
+const RUN_BUDGET_MS = 6 * 60_000;
 // An attraction open every day for months (a gaming zone, an amusement park) is listed as one long "event".
 const MAX_RUN_DAYS = 31;
 // BookMyShow's own one-line summary says nothing the title doesn't.
@@ -81,7 +83,7 @@ function showEvent(o, url, about, genre) {
     categories: categoryFromText([title, genre, description, o.educationalLevel, venueName].filter(Boolean).join(' ')),
     pricing: priceFromOffers(o.offers) || { type: 'unknown', currency: 'INR' },
     sources: [{ provider: 'bookmyshow', url, externalId: (url.match(/ET\d+/) || [])[0], checkedAt, confidence: 0.95 }],
-    verificationStatus: 'verified',
+    verificationStatus: 'review',
     curation: { status: 'published', score: 8 },
     firstSeenAt: checkedAt,
     lastSeenAt: checkedAt,
@@ -105,10 +107,11 @@ function unlocker(token, zone) {
 }
 
 // The option is for tests: a stand-in for the Web Unlocker fetcher.
-export async function fetchBookMyShow({ fetchPage } = {}) {
+export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS } = {}) {
   const { BRIGHTDATA_API_TOKEN: token, BRIGHTDATA_UNLOCKER_ZONE: zone } = process.env;
   if (!fetchPage && !(token && zone)) return { source: 'bookmyshow', events: [], diagnostics: { configured: false } };
   const get = fetchPage || unlocker(token, zone);
+  const deadline = Date.now() + budgetMs;
   const cards = listingCards(await get(LIST, { expect: CARDS_LOADED }));
   const links = dehradunLinks(cards);
   if (!cards.length) {
@@ -117,14 +120,15 @@ export async function fetchBookMyShow({ fetchPage } = {}) {
     throw error;
   }
   const events = [];
-  let failed = 0;
+  let failed = 0, skipped = Math.max(0, links.length - MAX_EVENT_PAGES);
   for (const { url, genre } of links.slice(0, MAX_EVENT_PAGES)) {
+    if (Date.now() > deadline) { skipped++; continue; }
     try {
       events.push(...eventsFromPage(await get(url), url, genre));
     } catch { failed++; }
   }
   // Every page failing says more about the fetcher than about BookMyShow's events.
-  if (links.length && failed === Math.min(links.length, MAX_EVENT_PAGES)) {
+  if (links.length && failed && failed === Math.min(links.length, MAX_EVENT_PAGES) - skipped) {
     const error = new Error('BookMyShow event pages could not be fetched');
     error.diagnostics = { cards: cards.length, dehradunLinks: links.length, eventPagesFailed: failed };
     throw error;
@@ -132,8 +136,11 @@ export async function fetchBookMyShow({ fetchPage } = {}) {
   return {
     source: 'bookmyshow',
     events,
-    // With every page read, the listing's events are all there, so an empty answer is complete.
-    complete: failed === 0,
-    diagnostics: { cards: cards.length, dehradunLinks: links.length, eventPagesFailed: failed, eventsParsed: events.length }
+    // Only a run that read every Dehradun card's page has the whole list. Otherwise (a page failed or wasn't
+    // reached, or the listing showed no Dehradun card, which is likelier a half-loaded page than an empty city)
+    // stored events it didn't see are kept as they are.
+    complete: links.length > 0 && failed === 0 && skipped === 0,
+    partial: !(links.length > 0 && failed === 0 && skipped === 0),
+    diagnostics: { cards: cards.length, dehradunLinks: links.length, eventPagesFailed: failed, eventPagesSkipped: skipped, eventsParsed: events.length }
   };
 }
