@@ -21,7 +21,7 @@ for (const issue of issues) {
 let opened = 0;
 for (const candidate of pendingCandidates(queue, decisions)) {
   if (byLead.has(candidate.id)) continue;
-  const issue = await gh.call('POST', '/issues', leadIssue(sourceLead(candidate)));
+  const issue = await gh.call('POST', '/issues', leadIssue(sourceLead(candidate), { assignee: process.env.GITHUB_REPOSITORY_OWNER }));
   opened++;
   console.log(`Opened #${issue.number} for ${candidate.id}`);
 }

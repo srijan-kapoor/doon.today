@@ -27,5 +27,5 @@ if (!lead) {
   console.error('The entry has no title or date; no issue opened.');
   process.exit(1);
 }
-const issue = await github().call('POST', '/issues', leadIssue(lead));
+const issue = await github().call('POST', '/issues', leadIssue(lead, { assignee: process.env.GITHUB_REPOSITORY_OWNER }));
 console.log(`Opened #${issue.number}: ${issue.html_url}`);

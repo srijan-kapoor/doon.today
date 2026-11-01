@@ -136,8 +136,11 @@ export const redditLead = sourceLead;
 // "@" and "#" in an issue title don't notify anyone, but keep them from reading as handles or links.
 const safeTitle = (text) => cleanLine(text, MAX_TITLE).replace(/@/g, '@​').replace(/#(\d)/g, '#​$1');
 
-/** The GitHub issue (title, body, labels) that puts a lead in the review queue. */
-export function leadIssue(lead) {
+/**
+ * The GitHub issue (title, body, labels) that puts a lead in the review queue. With an assignee (the repo's
+ * owner, in the workflows), GitHub emails them about the new issue; it doesn't for issues its own bot opens.
+ */
+export function leadIssue(lead, { assignee = '' } = {}) {
   const marker = isQueuedKind(lead.kind) ? `<!-- doon-lead kind=${lead.kind} id=${cleanLine(lead.id).replace(/[^a-z0-9-]/gi, '')} -->` : '<!-- doon-lead kind=form -->';
   const block = FIELDS.map(([key, label]) => {
     const value = key === 'description' ? cleanText(lead[key]) : cleanLine(lead[key], key === 'title' ? MAX_TITLE : MAX_LINE);
@@ -165,7 +168,7 @@ export function leadIssue(lead) {
     '```'
   ].join('\n');
   const when = lead.starts ? ` (${cleanLine(lead.starts).slice(0, 10)})` : '';
-  return { title: `Lead: ${safeTitle(lead.title)}${when}`, body, labels: [LEAD_LABEL] };
+  return { title: `Lead: ${safeTitle(lead.title)}${when}`, body, labels: [LEAD_LABEL], ...(assignee && { assignees: [assignee] }) };
 }
 
 /** The kind and Reddit id from a lead issue's hidden marker, even if the details block was edited away. */

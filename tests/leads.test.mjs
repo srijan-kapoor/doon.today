@@ -47,6 +47,8 @@ test('the issue keeps submitted text inside the details block', () => {
   assert.ok(!outside.includes('@'), 'no @ outside the block');
   assert.equal(body.match(/```/g).length, 2, 'submitted backticks cannot close the block');
   assert.ok(!body.includes('someone@example.com'));
+  assert.equal(leadIssue(lead).assignees, undefined, 'no assignee unless one is given');
+  assert.deepEqual(leadIssue(lead, { assignee: 'srijan-kapoor' }).assignees, ['srijan-kapoor'], 'the owner is assigned, so GitHub emails them');
 });
 
 test('a lead issue reads back after edits on GitHub, including Windows line endings', () => {
