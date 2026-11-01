@@ -1,4 +1,6 @@
 [
+  { "date": "2026-11-01", "tag": "Improved", "text": "Events at venues in Mussoorie and Landour listed on District now show up." },
+  { "date": "2026-11-01", "tag": "Fixed", "text": "An event no longer loses its category on the day it happens." },
   { "date": "2026-10-31", "tag": "Fixed", "text": "An event approved from two different posts, with different titles, is listed once." },
   { "date": "2026-10-30", "tag": "Fixed", "text": "Descriptions of events from AllEvents are no longer cut off mid-word." },
   { "date": "2026-10-30", "tag": "Improved", "text": "Events from District now show their description, which was missing before." },

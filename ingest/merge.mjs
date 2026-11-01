@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription, currentCategories, withAddedCategories } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
-import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
+import { isThinListing } from './sources/allevents.mjs';
+import { DATE_ONLY, istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
 
 const SOURCE_RANK = {
@@ -206,6 +207,7 @@ function occurrencesFor(preferred, secondary, timed) {
   const list = preferred.occurrences || (sameSpan ? secondary.occurrences : undefined);
   return list && occurrencesOf({ ...timed, occurrences: list }) ? list : undefined;
 }
+const onlyOther = (categories=[]) => categories.length === 1 && categories[0] === 'Other';
 function mergePair(a,b,{combinePrices=false}={}) {
   const preferred = sourceRank(b) > sourceRank(a) || (sourceRank(b) === sourceRank(a) && eventTimestamp(b) >= eventTimestamp(a)) ? b : a;
   const secondary = preferred === a ? b : a;
@@ -227,6 +229,8 @@ function mergePair(a,b,{combinePrices=false}={}) {
     // Thrill Zone's listing has no venue, but AllEvents gives the same run's venue and address.
     venue: venueOf(preferred, secondary),
     description: isPlaceholderDescription(preferred.description) && !isPlaceholderDescription(secondary.description) ? secondary.description : preferred.description,
+    // A copy that could only say "Other" (an AllEvents page read after the event started) keeps the known category.
+    categories: !isHandChecked(preferred) && onlyOther(preferred.categories) && secondary.categories?.length && !onlyOther(secondary.categories) ? secondary.categories : preferred.categories,
     pricing: mergePricing(preferred.pricing, secondary.pricing, { combine: combinePrices, handChecked: isHandChecked(preferred) }),
     ...timing(preferred, secondary)
   };
@@ -326,7 +330,18 @@ export async function mergeAndWrite(sourceResults) {
   // Candidates queued before other sources could add any were all Reddit posts.
   const kept=(await readJson(QUEUE_PATH,[])).filter(c=>!ran.has(c.sources?.[0]?.provider || 'reddit'));
   const queued=[...new Map([...kept,...results.flatMap(r=>r.reviewCandidates||[])].map((c,i)=>[c.id ?? `#${i}`,c])).values()];
-  const review=pendingCandidates(queued,decisions);
+  // A thin AllEvents listing is only worth a person's check while its event is still ahead and the event on the
+  // site is as thin as the listing. Once an event starts, its page stops giving details, so a listing that was
+  // fine the day before reads as thin; and a listing merged with a fuller copy from another source isn't thin.
+  const worthReview=c=>{
+    if (c.sources?.[0]?.provider !== 'allevents') return true;
+    const shown=merged.find(e=>same(e,c));
+    // A date-only start counts as started at the end of its day, so a same-day evening listing is still checked.
+    const start=shown?.startAt || c.startAt;
+    const started=toInstant(start).getTime() + (DATE_ONLY.test(start || '') ? 24*3600_000 : 0) <= now;
+    return !started && !(shown && !isThinListing(shown));
+  };
+  const review=pendingCandidates(queued.filter(worthReview),decisions);
   await fs.writeFile(QUEUE_PATH,JSON.stringify(review,null,2)+'\n');
   const reviewCount=review.length;
   return {published:out.length,review:reviewCount,dropped};
