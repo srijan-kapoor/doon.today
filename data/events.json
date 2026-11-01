@@ -50,47 +50,6 @@
     "modifiedAt": "2026-10-30T18:25:56.436Z"
   },
   {
-    "id": "e1664ec65e6e45da",
-    "slug": "vipul-goyal-unleashed",
-    "title": "Vipul Goyal- Unleashed",
-    "description": "Vipul Goyal Live in your city Dont miss this The best evening of the month is here Get Ready for a roller coaster ride and experience one of tge beat comics performing live",
-    "startAt": "2026-11-01T17:05:00+05:30",
-    "endAt": "2026-11-01T18:20:00+05:30",
-    "venue": {
-      "name": "Studio XO Bar: Dehradun",
-      "address": "Universal Trade Tower, 140/174/281 Rajpur road, Chowk, Mussoorie Diversion Crossing, Kishanpur, Dehradun, Uttarakhand 248009, India Dehradun",
-      "city": "Dehradun",
-      "area": "Rajpur",
-      "geo": {
-        "lat": 30.3722,
-        "lng": 78.0787
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/vipul-goyal-unleashed/3900030908940529",
-        "checkedAt": "2026-11-01T15:15:29.016Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-10-26T15:15:28.890Z",
-    "lastSeenAt": "2026-11-01T15:15:29.016Z",
-    "lastCheckedAt": "2026-11-01T15:15:29.016Z"
-  },
-  {
     "id": "694d2e017d95f36b",
     "slug": "doon-icon-awards-season-1",
     "title": "Doon Icon Awards – Season 1",
