@@ -1,233 +1,5 @@
 [
   {
-    "id": "9c6337b759a5bb0a",
-    "slug": "ghar-an-open-mic-for-words-by-tape-a-tale-dehradun",
-    "title": "Ghar: An Open Mic for Words by Tape A Tale | Dehradun",
-    "description": "Ghar is Tape A Tale's open mic event: a warm, welcoming home for your words. You can come, share your stories or poems, or just sit back and listen to people. At Ghar, you'll always find a space for your art and a family to share it with. P.S. Ghar is a non-biased, chit-based open mic, and we stay true to this format. It's a safe, welcoming space where you'll find a home in the warmth of stories, poems, and the beautiful people you'll meet! ❤️",
-    "startAt": "2026-10-31T10:30:00.000Z",
-    "endAt": "2026-12-20T12:30:00.000Z",
-    "venue": {
-      "name": "Tapri - The Teafe",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.3317,
-        "lng": 78.0479
-      }
-    },
-    "categories": [
-      "Comedy"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 300,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastCheckedAt": "2026-10-31T00:10:41.499Z",
-    "occurrences": [
-      "2026-10-31T10:30:00.000Z",
-      "2026-11-22T10:30:00.000Z",
-      "2026-12-06T10:30:00.000Z",
-      "2026-12-20T10:30:00.000Z"
-    ],
-    "sequence": 1,
-    "modifiedAt": "2026-10-27T08:49:22.118Z"
-  },
-  {
-    "id": "2b26d46eba091b3a",
-    "slug": "virasat-2026-dastangoi-vs-jumlebaazi",
-    "title": "Virasat 2026: Dastangoi vs Jumlebaazi",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-31T20:00:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-9",
-        "externalId": "2026-9-dastangoi-vs-jumlebaazi",
-        "checkedAt": "2026-10-31T20:02:28.021Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-10-31T20:02:28.021Z",
-    "lastCheckedAt": "2026-10-31T20:02:28.021Z"
-  },
-  {
-    "id": "5c236c81f43b60ca",
-    "slug": "litchi-india-tour",
-    "title": "LITCHI India Tour",
-    "description": "This Halloween, step into the darker side of nightlife as LITCHI brings her India Tour to CHICA, Dehradun for an electrifying night of music, energy and unforgettable experiences. Get ready for an intense sonic journey featuring LITCHI, along with Aakansha & Dropmonk, bringing powerful beats and an immersive atmosphere to the dance floor. With a dark, edgy Halloween setting and high-energy performances, this is one night you don't want to miss. Headlining Artist: LITCHIAlso Featuring: Aakansha & Dropmonk",
-    "startAt": "2026-10-31T14:30:00.000Z",
-    "endAt": "2026-10-31T16:30:00.000Z",
-    "venue": {
-      "name": "Chica | Rajpur, Dehradun",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "area": "Rajpur",
-      "geo": {
-        "lat": 30.3854,
-        "lng": 78.0905
-      }
-    },
-    "categories": [
-      "Live shows"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 800,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/litchi-india-tour-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
-        "confidence": 0.95
-      },
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/litchi-india-tour/4100030856672817",
-        "checkedAt": "2026-10-31T20:02:01.142Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-10-31T20:02:01.142Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.142Z"
-  },
-  {
-    "id": "a6294b81aaa91ded",
-    "slug": "halloween-party-dj-musical-monkey",
-    "title": "Halloween Party - DJ Musical Monkey",
-    "description": "Step into a night of dark beats, eerie energy, and unforgettable Halloween vibes at the Halloween Party at Studio XO, Dehradun! Get ready for a spine-chilling celebration where haunting visuals meet electrifying music, creating the perfect atmosphere for a thrilling night out. Featuring Musical Monkey, this Halloween special brings together a spooky, supernatural theme and an energetic musical experience. With its striking horror-inspired setting and dramatic red-and-black aesthetic, the night promises an immersive party atmosphere for those ready to celebrate Halloween in style. Mark your calendar and head to Studio XO, Dehradun, at Sky High, for an evening that begins at 8 PM onwards. Whether you're coming with friends or looking to soak up the Halloween madness, get ready to embrace the spooky spirit and lose yourself in the music. Dress for the occasion, bring your party energy, and make this Halloween one to remember. Gather your crew and book your tickets now for the Halloween Party at Studio XO!",
-    "startAt": "2026-10-31T14:30:00.000Z",
-    "endAt": "2026-10-31T17:30:00.000Z",
-    "venue": {
-      "name": "Studio XO | Rajpur, Dehradun",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "area": "Rajpur",
-      "geo": {
-        "lat": 30.3724,
-        "lng": 78.0786
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 100,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/halloween-party-dj-musical-monkey-oct31-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
-        "confidence": 0.95
-      },
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/halloween-party-dj-musical-monkey/4100030928819332",
-        "checkedAt": "2026-10-31T20:02:01.143Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-25T15:11:59.396Z",
-    "lastSeenAt": "2026-10-31T20:02:01.143Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.143Z"
-  },
-  {
-    "id": "5e74456cf880932f",
-    "slug": "framed-in-crimson-halloween-rock-night",
-    "title": "Framed In Crimson: Halloween Rock Night",
-    "description": "This Halloween, Framed In Crimson brings you a high-energy live rock experience packed with the anthems that defined the 2000s rock era, legendary sing-alongs, and the kind of songs that take you right back. Expect infectious hooks, soaring vocals, electrifying riffs, and plenty of moments to sing your heart out. We`re also bringing a taste of our own sound to the stage with a selection of original songs. Whether you`re here to relive your favourite rock memories, discover something new, or simply celebrate Halloween with great music and great people, this is your night. Dress for Halloween. Show up for the rock. Leave your voice at the venue.",
-    "startAt": "2026-10-31T20:30:00+05:30",
-    "endAt": "2026-10-31T22:30:00+05:30",
-    "venue": {
-      "name": "Hotel Vishranti: Dehradun",
-      "address": "Canal Road, Near Mata Bala Sundari Mandir, Gangotri Vihar, Dehradun, Uttarakhand 248013, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.3603,
-        "lng": 78.072
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/framed-in-crimson-halloween-rock-night/3900030867000008",
-        "checkedAt": "2026-10-31T20:02:01.143Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-10-31T20:02:01.143Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.143Z"
-  },
-  {
     "id": "796a95871a706bc1",
     "slug": "starry-night-at-rajpur-nature-fest-2026",
     "title": "Starry Night at Rajpur Nature Fest 2026",
@@ -428,7 +200,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/d9-dehradun-presents-burn-or-boogie-nov1-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
+        "checkedAt": "2026-11-01T00:10:53.445Z",
         "confidence": 0.95
       },
       {
@@ -444,8 +216,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.472Z",
-    "lastSeenAt": "2026-10-31T05:52:39.975Z",
-    "lastCheckedAt": "2026-10-31T05:52:39.975Z"
+    "lastSeenAt": "2026-11-01T00:10:53.445Z",
+    "lastCheckedAt": "2026-11-01T00:10:53.445Z"
   },
   {
     "id": "4c4dc379f5930697",
@@ -1472,6 +1244,54 @@
     "endAt": "2026-11-15T17:30:00+05:30"
   },
   {
+    "id": "9c6337b759a5bb0a",
+    "slug": "ghar-an-open-mic-for-words-by-tape-a-tale-dehradun",
+    "title": "Ghar: An Open Mic for Words by Tape A Tale | Dehradun",
+    "description": "Ghar is Tape A Tale's open mic event: a warm, welcoming home for your words. You can come, share your stories or poems, or just sit back and listen to people. At Ghar, you'll always find a space for your art and a family to share it with. P.S. Ghar is a non-biased, chit-based open mic, and we stay true to this format. It's a safe, welcoming space where you'll find a home in the warmth of stories, poems, and the beautiful people you'll meet! ❤️",
+    "startAt": "2026-11-22T10:30:00.000Z",
+    "endAt": "2026-12-20T12:30:00.000Z",
+    "venue": {
+      "name": "Tapri - The Teafe",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3317,
+        "lng": 78.0479
+      }
+    },
+    "categories": [
+      "Comedy"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 300,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
+        "checkedAt": "2026-11-01T00:10:53.445Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-18T07:29:45.462Z",
+    "lastSeenAt": "2026-11-01T00:10:53.445Z",
+    "lastCheckedAt": "2026-11-01T00:10:53.445Z",
+    "occurrences": [
+      "2026-11-22T10:30:00.000Z",
+      "2026-12-06T10:30:00.000Z",
+      "2026-12-20T10:30:00.000Z"
+    ],
+    "sequence": 2,
+    "modifiedAt": "2026-11-01T00:10:56.042Z"
+  },
+  {
     "id": "bd2f326507984520",
     "slug": "safarnama-by-krishna-shukla",
     "title": "Safarnama by Krishna Shukla",
@@ -1586,7 +1406,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.498Z",
+        "checkedAt": "2026-11-01T00:10:53.441Z",
         "confidence": 0.95
       },
       {
@@ -1602,8 +1422,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-10-31T20:02:28.498Z",
-    "lastCheckedAt": "2026-10-31T20:02:28.498Z"
+    "lastSeenAt": "2026-11-01T00:10:53.441Z",
+    "lastCheckedAt": "2026-11-01T00:10:53.441Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -1633,7 +1453,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
+        "checkedAt": "2026-11-01T00:10:53.444Z",
         "confidence": 0.95
       },
       {
@@ -1649,8 +1469,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-10-31T20:02:01.142Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.142Z"
+    "lastSeenAt": "2026-11-01T00:10:53.444Z",
+    "lastCheckedAt": "2026-11-01T00:10:53.444Z"
   },
   {
     "id": "d092613afd25636e",
@@ -1721,7 +1541,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-10-31T00:10:41.499Z",
+        "checkedAt": "2026-11-01T00:10:53.445Z",
         "confidence": 0.95
       }
     ],
@@ -1731,8 +1551,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastCheckedAt": "2026-10-31T00:10:41.499Z"
+    "lastSeenAt": "2026-11-01T00:10:53.445Z",
+    "lastCheckedAt": "2026-11-01T00:10:53.445Z"
   },
   {
     "id": "5a0be2a175cd6a49",
