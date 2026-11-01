@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription, currentCategories, withAddedCategories } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
 import { isThinListing } from './sources/allevents.mjs';
-import { istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
+import { DATE_ONLY, istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
 
 const SOURCE_RANK = {
@@ -230,7 +230,7 @@ function mergePair(a,b,{combinePrices=false}={}) {
     venue: venueOf(preferred, secondary),
     description: isPlaceholderDescription(preferred.description) && !isPlaceholderDescription(secondary.description) ? secondary.description : preferred.description,
     // A copy that could only say "Other" (an AllEvents page read after the event started) keeps the known category.
-    categories: onlyOther(preferred.categories) && secondary.categories?.length && !onlyOther(secondary.categories) ? secondary.categories : preferred.categories,
+    categories: !isHandChecked(preferred) && onlyOther(preferred.categories) && secondary.categories?.length && !onlyOther(secondary.categories) ? secondary.categories : preferred.categories,
     pricing: mergePricing(preferred.pricing, secondary.pricing, { combine: combinePrices, handChecked: isHandChecked(preferred) }),
     ...timing(preferred, secondary)
   };
@@ -336,7 +336,9 @@ export async function mergeAndWrite(sourceResults) {
   const worthReview=c=>{
     if (c.sources?.[0]?.provider !== 'allevents') return true;
     const shown=merged.find(e=>same(e,c));
-    const started=toInstant(shown?.startAt || c.startAt).getTime() <= now;
+    // A date-only start counts as started at the end of its day, so a same-day evening listing is still checked.
+    const start=shown?.startAt || c.startAt;
+    const started=toInstant(start).getTime() + (DATE_ONLY.test(start || '') ? 24*3600_000 : 0) <= now;
     return !started && !(shown && !isThinListing(shown));
   };
   const review=pendingCandidates(queued.filter(worthReview),decisions);

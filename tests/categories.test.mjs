@@ -77,7 +77,8 @@ test('a hand-checked event gains a new category the rules find, and keeps the re
   assert.deepEqual(categoryFromText('Dehradun Ultra Run 2027'),['Outdoors','Fitness'],'a trail or ultra race is both');
 });
 
-test('Mussoorie and Landour count as in the area', () => {
-  assert.equal(isDehradunText('The Fern Brentwood Resort Mussoorie'), true);
-  assert.equal(isDehradunText('Char Dukan, Landour'), true);
+test('Mussoorie and Landour count as in the area for a venue, not in a trip ad', () => {
+  assert.equal(isLikelyDehradunEvent({ title: 'Mussoorie Ultra', venueName: 'The Fern Brentwood Resort Mussoorie' }), true);
+  assert.equal(isLikelyDehradunEvent({ title: 'Book reading', venueName: 'Char Dukan', address: 'Landour' }), true);
+  assert.equal(isLikelyDehradunEvent({ title: 'Delhi to Mussoorie weekend trip', venueName: 'Venue TBA' }), false);
 });

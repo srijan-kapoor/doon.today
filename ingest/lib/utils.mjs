@@ -111,9 +111,13 @@ export function parseMoney(text='') {
 const DEHRADUN_TERMS = [
   'dehradun','dehra dun','rajpur','raipur road','dalanwala','hathibarkala','jakhan','malsi','clement town',
   'race course','kaulagarh','prem nagar','sahastradhara','ballupur','gms road',
-  'clock tower','paltan bazaar','doon library','garhi cantt','niranjanpur','vikasnagar','maldevta','bidholi',
-  'mussoorie','landour'
+  'clock tower','paltan bazaar','doon library','garhi cantt','niranjanpur','vikasnagar','maldevta','bidholi'
 ];
+// Hill towns in the area that trip and tour ads also name ("Delhi to Mussoorie"), so they count only as a venue.
+const AREA_VENUE_RE = /(?<![a-z0-9])(?:mussoorie|landour)(?![a-z0-9])/i;
+export function isAreaVenue(text='') {
+  return AREA_VENUE_RE.test(text);
+}
 
 // Raipur is a Dehradun locality and a city in Chhattisgarh, so only "Raipur Road" counts as Dehradun.
 const OUTSIDE_TERMS = [
@@ -180,7 +184,7 @@ export function isLikelyDehradunEvent({title='', description='', venueName='', a
   // A structured city that names somewhere else wins over loose text matches.
   if (city && !isDehradunText(city) && hasOutsideGeo(city)) return false;
   if (hasOutsideGeo(semantic) && !isDehradunText(semantic)) return false;
-  return isDehradunText(venue) || isDehradunText(semantic);
+  return isDehradunText(venue) || isAreaVenue(venue) || isDehradunText(semantic);
 }
 
 export function eventPassesGeo(e) {

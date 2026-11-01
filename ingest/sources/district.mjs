@@ -1,7 +1,7 @@
 import {fetchText} from '../lib/http.mjs';
 import {eventLikeObjects,flattenObjects} from '../lib/jsonld.mjs';
 import {istDay,toInstant} from '../../src/lib/dates.mjs';
-import {stableId,slugify,parseMoney,categoryFromText,isDehradunText,stripHtml,nowIso,geoFrom} from '../lib/utils.mjs';
+import {stableId,slugify,parseMoney,categoryFromText,isDehradunText,isAreaVenue,stripHtml,nowIso,geoFrom} from '../lib/utils.mjs';
 const LIST='https://www.district.in/events/upcoming-events-in-dehradun';
 // The pages of events listed as a run of days that are read for their own dates; a few at most.
 const MAX_SESSION_PAGES=10;
@@ -12,7 +12,7 @@ function toEvent(o,url=LIST){
   const loc=o.location||o.venue||{}; const addr=typeof loc.address==='string'?loc.address:(loc.address?.streetAddress||'')+' '+(loc.address?.addressLocality||'');
   const title=o.name||o.title; const start=o.startDate||o.start_at||o.startTime||o.start_time;
   const text=[title,o.description,loc.name,addr,o.city,o.locationName].filter(Boolean).join(' ');
-  if(!title||!start||!isDehradunText(text)) return null;
+  if(!title||!start||!(isDehradunText(text)||isAreaVenue(`${loc.name||''} ${addr}`))) return null;
   const checkedAt=nowIso(); const offers=Array.isArray(o.offers)?o.offers[0]:o.offers; const geo=geoFrom(loc);
   return {id:stableId('district',o.url||o.slug||title,start),slug:slugify(title),title:stripHtml(title),description:stripHtml(o.description||''),startAt:start,endAt:o.endDate||o.end_at,venue:{name:loc.name||o.locationName||'Venue TBA',address:stripHtml(addr),city:'Dehradun',...(geo&&{geo})},categories:categoryFromText(text),pricing:offers?.price?{type:Number(offers.price)===0?'free':'paid',minPrice:Number(offers.price)||undefined,currency:'INR'}:parseMoney(JSON.stringify(o)),sources:[{provider:'district',url:o.url||url,externalId:String(o.id||o.eventId||'' )||undefined,checkedAt,confidence:.95}],verificationStatus:'verified',curation:{status:'published',score:8},firstSeenAt:checkedAt,lastSeenAt:checkedAt,lastCheckedAt:checkedAt};
 }
