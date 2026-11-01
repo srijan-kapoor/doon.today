@@ -47,6 +47,53 @@
     "lastCheckedAt": "2026-10-29T08:50:12.363Z"
   },
   {
+    "id": "7e69392cfbcefdd7",
+    "slug": "chakravyuh-garhwali-theatrical-performance-at-virasat-2026",
+    "title": "Chakravyuh - Garhwali theatrical performance at Virasat 2026",
+    "description": "🕸️ Hi friends! Virasat 2026 is hosting a beautiful recreation of the Chakravyuh this year. Since we would have no walk this Sunday, we urge you to witness this beautiful theatrical performance from Garhwal. The Chakravyuh tells the story of Abhimanyu from the Mahabharata and how he enters the intricate formation, only to be killed at the end. ⏰Time: 2 pm onwards, Sunday, November 1, 2026 📍 Venue: Himalayan Cultural Centre, Nimbuwala, Garhi Cantt. Entry to the venue is ticketed. Tickets can be purchased at the gate.\n\nOrganized by Virasat. How to join: Tickets available at the gate",
+    "startAt": "2026-11-01T14:00:00+05:30",
+    "venue": {
+      "name": "Himalayan Cultural Centre, Nimbuwala, Garhi Cantt, Dehradun",
+      "city": "Dehradun",
+      "area": "Garhi Cantt",
+      "geo": {
+        "lat": 30.35473,
+        "lng": 78.01122
+      },
+      "geoFrom": "table"
+    },
+    "categories": [
+      "Live shows",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfJPcjDA4X9",
+        "checkedAt": "2026-11-01T07:38:58.317Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfJPcjDA4X9",
+        "checkedAt": "2026-10-31T20:02:31.767Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T07:38:58.317Z",
+    "lastSeenAt": "2026-11-01T07:38:58.317Z",
+    "lastCheckedAt": "2026-11-01T07:38:58.317Z"
+  },
+  {
     "id": "daf4351a58ab9484",
     "slug": "d9-dehradun-presents-burn-or-boo-gie",
     "title": "D9 Dehradun Presents BURN OR BOO-GIE",
