@@ -47,6 +47,8 @@ test('the issue keeps submitted text inside the details block', () => {
   assert.ok(!outside.includes('@'), 'no @ outside the block');
   assert.equal(body.match(/```/g).length, 2, 'submitted backticks cannot close the block');
   assert.ok(!body.includes('someone@example.com'));
+  assert.equal(leadIssue(lead).assignees, undefined, 'no assignee unless one is given');
+  assert.deepEqual(leadIssue(lead, { assignee: 'srijan-kapoor' }).assignees, ['srijan-kapoor'], 'the owner is assigned, so GitHub emails them');
 });
 
 test('a lead issue reads back after edits on GitHub, including Windows line endings', () => {
@@ -184,4 +186,17 @@ test('the Reddit adapter decodes post HTML before it cuts the description', asyn
   } finally {
     globalThis.fetch = realFetch;
   }
+});
+
+test('a lead issue whose assignee GitHub refuses is opened without one, and other errors still fail', async (t) => {
+  t.mock.method(console, 'error', () => {});
+  const sent = [];
+  const reply = (status, body) => ({ ok: status < 300, status, json: async () => body, text: async () => JSON.stringify(body) });
+  const gh = (statuses) => github({ token: 't', repo: 'o/r', fetchImpl: async (url, init) => { sent.push(JSON.parse(init.body)); return reply(statuses.shift(), { number: 7 }); } });
+  const issue = { title: 'Lead: x', body: 'b', labels: ['lead'], assignees: ['someone'] };
+  assert.equal((await gh([422, 201]).openIssue(issue)).number, 7);
+  assert.deepEqual(sent.map((b) => b.assignees), [['someone'], undefined], 'retried once, unassigned');
+  sent.length = 0;
+  await assert.rejects(gh([500]).openIssue(issue), /500/);
+  assert.equal(sent.length, 1, 'a server error is not retried');
 });
