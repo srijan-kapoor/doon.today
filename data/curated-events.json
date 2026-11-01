@@ -748,5 +748,79 @@
     "firstSeenAt": "2026-11-01T07:38:58.317Z",
     "lastSeenAt": "2026-11-01T07:38:58.317Z",
     "lastCheckedAt": "2026-11-01T07:38:58.317Z"
+  },
+  {
+    "id": "04b297f4d2f40790",
+    "slug": "the-story-circus",
+    "title": "The Story Circus",
+    "description": "A hands-on storytelling workshop: stories, characters, creative writing, theatre-based games and open mic moments. Hosted by The Story Makers, Dr. Swatee Miittal (National School of Drama) and author Gargie Sharma. Ages 16+, in English and Hindi.",
+    "startAt": "2026-11-21T14:45:00+05:30",
+    "endAt": "2026-11-21T17:45:00+05:30",
+    "venue": {
+      "name": "Musee Art Cafe",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Workshop",
+      "Books"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 599,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
+        "checkedAt": "2026-11-01T16:21:08.545Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T16:21:08.545Z",
+    "lastSeenAt": "2026-11-01T16:21:08.545Z",
+    "lastCheckedAt": "2026-11-01T16:21:08.545Z"
+  },
+  {
+    "id": "940caf6d95fc377d",
+    "slug": "d9-presents-pizza-making-workshop",
+    "title": "D9 presents Pizza Making Workshop",
+    "description": "Learn to make thin crust pizza with a professional chef, from preparing the base to the toppings. Rs 299 per person, Rs 399 for a couple or duo. All ages.",
+    "startAt": "2026-11-22T16:00:00+05:30",
+    "endAt": "2026-11-22T18:00:00+05:30",
+    "venue": {
+      "name": "D9",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Food",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 299,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://in.bookmyshow.com/events/d9-presents-pizza-making-workshop/ET00524545",
+        "checkedAt": "2026-11-01T16:21:08.551Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T16:21:08.551Z",
+    "lastSeenAt": "2026-11-01T16:21:08.551Z",
+    "lastCheckedAt": "2026-11-01T16:21:08.551Z"
   }
 ]
