@@ -231,75 +231,25 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mvxjgmoxb5xtkphy7",
-        "startedAt": "2026-11-01T07:58:52.655Z"
-      }
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-01T15:15:52.858Z",
+      "lastError": "",
+      "seen": [
+        "4009848031614033860",
+        "3999625853126578435",
+        "4000488913181646790"
+      ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mvxjgmuulnrf01cjs",
-        "startedAt": "2026-11-01T07:58:52.655Z"
-      }
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-01T15:15:52.858Z",
+      "lastError": "",
+      "seen": [
+        "4013588672830211627"
+      ]
     }
   },
   "collected": [
-    {
-      "id": "sd_mvt9blpf3u06fqbn0",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bldipphdzkeiz",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bkzf25loja8suy",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bknhizm4ncuxi",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bk9o128txtqf0o",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bjg8bqxqbyob2",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bj3n1x4cuecfo9",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bir71358mkzz3c",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9biei2b13nvb149",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bi2y15w6dougl5",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bho818to1bkmkz",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bhc92f2l3wgefm",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt9bgk91632bqswhh",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "sd_mvt6wwgl2aohw14ove",
-      "at": "2026-10-29T08:24:24.456Z"
-    },
     {
       "id": "sd_mvtosp8fkauf7ws2j",
       "at": "2026-10-29T21:13:18.127Z"
@@ -423,6 +373,14 @@
     {
       "id": "sd_mvwtvqeu21b75eidwl",
       "at": "2026-11-01T07:58:52.655Z"
+    },
+    {
+      "id": "sd_mvxjgmoxb5xtkphy7",
+      "at": "2026-11-01T15:15:52.858Z"
+    },
+    {
+      "id": "sd_mvxjgmuulnrf01cjs",
+      "at": "2026-11-01T15:15:52.858Z"
     }
   ],
   "candidates": [
