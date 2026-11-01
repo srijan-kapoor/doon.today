@@ -208,13 +208,11 @@
       "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mvwtvqeu21b75eidwl",
-        "startedAt": "2026-10-31T20:02:31.767Z"
-      },
-      "lastFetchedAt": "2026-10-30T20:52:46.626Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-01T07:58:52.655Z",
       "lastError": "",
       "seen": [
+        "4019948355991815295",
         "4018700062483109203",
         "4018298842772236849",
         "4019221571432177398",
@@ -231,6 +229,18 @@
         "4004563133238074206",
         "4004601244286730486"
       ]
+    },
+    "8d2f75fd9e08": {
+      "snapshot": {
+        "id": "sd_mvxjgmoxb5xtkphy7",
+        "startedAt": "2026-11-01T07:58:52.655Z"
+      }
+    },
+    "c0891813dfeb": {
+      "snapshot": {
+        "id": "sd_mvxjgmuulnrf01cjs",
+        "startedAt": "2026-11-01T07:58:52.655Z"
+      }
     }
   },
   "collected": [
@@ -409,6 +419,10 @@
     {
       "id": "sd_mvwi6fm52a1c79fanw",
       "at": "2026-10-31T20:02:31.767Z"
+    },
+    {
+      "id": "sd_mvwtvqeu21b75eidwl",
+      "at": "2026-11-01T07:58:52.655Z"
     }
   ],
   "candidates": [
