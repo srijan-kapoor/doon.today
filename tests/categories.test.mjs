@@ -76,3 +76,8 @@ test('a hand-checked event gains a new category the rules find, and keeps the re
   assert.ok(!categoryFromText('Check your fitness before joining the trek').includes('Fitness'),'a passing mention of fitness is not a fitness event');
   assert.deepEqual(categoryFromText('Dehradun Ultra Run 2027'),['Outdoors','Fitness'],'a trail or ultra race is both');
 });
+
+test('Mussoorie and Landour count as in the area', () => {
+  assert.equal(isDehradunText('The Fern Brentwood Resort Mussoorie'), true);
+  assert.equal(isDehradunText('Char Dukan, Landour'), true);
+});

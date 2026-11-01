@@ -282,3 +282,27 @@ test('price labels for the event page and the list', () => {
   assert.equal(priceLabel({ type: 'unknown' }), '');
   assert.equal(priceLabel({ type: 'paid', minPrice: 1499.5 }), 'From ₹1,500', 'whole rupees');
 });
+
+test('a thin listing goes to review only while its event is ahead and the event on the site is as thin', async (t) => {
+  await inTempDir(t);
+  const listing = (over) => ({
+    id: 'v', slug: 'v', title: 'Vipul Goyal Unleashed', venue: { name: 'Studio XO Bar', city: 'Dehradun' }, categories: ['Other'], description: '',
+    pricing: { type: 'unknown', currency: 'INR' }, curation: { status: 'published', score: 4 }, sources: [{ provider: 'allevents', url: 'https://example.test/v' }],
+    firstSeenAt: '2030-01-01T00:00:00Z', lastSeenAt: '2030-01-01T00:00:00Z', lastCheckedAt: '2030-01-01T00:00:00Z', ...over
+  });
+  const run = async (e) => {
+    await mergeAndWrite([{ source: 'allevents', events: [e], reviewCandidates: [{ ...e, curation: { status: 'review', score: 2 } }] }]);
+    return JSON.parse(await fs.readFile('data/review/reddit.json', 'utf8')).map((c) => c.id);
+  };
+  assert.deepEqual(await run(listing({ startAt: '2030-11-01' })), ['v'], 'an upcoming thin listing is queued');
+
+  await fs.rm('data', { recursive: true, force: true });
+  const about = 'Vipul Goyal live in your city: the best evening of the month, a roller coaster ride with one of the best comics.';
+  await mergeAndWrite([{ source: 'allevents', events: [listing({ startAt: '2030-11-01T17:05:00+05:30', description: about, categories: ['Live shows'] })] }]);
+  assert.deepEqual(await run(listing({ startAt: '2030-11-01' })), [], 'the event on the site already has a description');
+  const [shown] = JSON.parse(await fs.readFile('data/events.json', 'utf8'));
+  assert.deepEqual(shown.categories, ['Live shows'], 'a copy that only says "Other" keeps the known category');
+
+  await fs.rm('data', { recursive: true, force: true });
+  assert.deepEqual(await run(listing({ startAt: '2020-11-01T17:05:00+05:30', endAt: '2099-11-01T18:00:00+05:30' })), [], 'an event that has started is past reviewing');
+});

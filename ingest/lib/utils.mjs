@@ -111,7 +111,8 @@ export function parseMoney(text='') {
 const DEHRADUN_TERMS = [
   'dehradun','dehra dun','rajpur','raipur road','dalanwala','hathibarkala','jakhan','malsi','clement town',
   'race course','kaulagarh','prem nagar','sahastradhara','ballupur','gms road',
-  'clock tower','paltan bazaar','doon library','garhi cantt','niranjanpur','vikasnagar','maldevta','bidholi'
+  'clock tower','paltan bazaar','doon library','garhi cantt','niranjanpur','vikasnagar','maldevta','bidholi',
+  'mussoorie','landour'
 ];
 
 // Raipur is a Dehradun locality and a city in Chhattisgarh, so only "Raipur Road" counts as Dehradun.
