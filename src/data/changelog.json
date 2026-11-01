@@ -1,4 +1,5 @@
 [
+  { "date": "2026-11-01", "tag": "Source", "text": "BookMyShow: comedy, music, workshops and other ticketed events in Dehradun." },
   { "date": "2026-11-01", "tag": "Improved", "text": "Events at venues in Mussoorie and Landour listed on District now show up." },
   { "date": "2026-11-01", "tag": "Fixed", "text": "An event no longer loses its category on the day it happens." },
   { "date": "2026-10-31", "tag": "Fixed", "text": "An event approved from two different posts, with different titles, is listed once." },
