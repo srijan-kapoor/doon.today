@@ -1,47 +1,5 @@
 [
   {
-    "id": "404ba7c9634aa20c",
-    "slug": "blaaze-halloween-thrill-night",
-    "title": "Blaaze Halloween Thrill Night",
-    "description": "",
-    "startAt": "2026-10-31",
-    "endAt": "2026-10-31",
-    "venue": {
-      "name": "BLAAZE - Mall of Dehradun",
-      "address": "Mall of, IIP, Mohkampur, Dehradun, Uttarakhand 248005, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.26748,
-        "lng": 78.08207
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 1500,
-      "maxPrice": 3600,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/blaaze-halloween-thrill-night/4100030883457641",
-        "checkedAt": "2026-10-31T20:02:01.145Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "review",
-      "score": 2
-    },
-    "firstSeenAt": "2026-10-31T20:02:01.145Z",
-    "lastSeenAt": "2026-10-31T20:02:01.145Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.145Z"
-  },
-  {
     "id": "c76bb989bbf9c42e",
     "slug": "ghosted",
     "title": "Ghosted",
