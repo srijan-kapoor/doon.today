@@ -1,47 +1,5 @@
 [
   {
-    "id": "c76bb989bbf9c42e",
-    "slug": "ghosted",
-    "title": "Ghosted",
-    "description": "",
-    "startAt": "2026-10-31",
-    "endAt": "2026-10-31",
-    "venue": {
-      "name": "Dehradun Social | Hathibarkala Salwala, Dehradun",
-      "address": "Hathibarkala Salwala, Dehradun Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.3431,
-        "lng": 78.0482
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 1500,
-      "maxPrice": 4000,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/ghosted/4100030884279649",
-        "checkedAt": "2026-10-31T20:02:01.145Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "review",
-      "score": 2
-    },
-    "firstSeenAt": "2026-10-31T20:02:01.145Z",
-    "lastSeenAt": "2026-10-31T20:02:01.145Z",
-    "lastCheckedAt": "2026-10-31T20:02:01.145Z"
-  },
-  {
     "id": "ce5fbaeae62494ce",
     "slug": "chakravyuh-garhwali-theatrical-performance-at-virasat-2026",
     "title": "Chakravyuh - Garhwali theatrical performance at Virasat 2026",
