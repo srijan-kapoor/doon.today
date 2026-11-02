@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-11-02T09:37:50.036Z",
+  "ranAt": "2026-11-02T22:49:13.601Z",
   "ran": [
     "allevents",
     "virasat",
@@ -33,44 +33,33 @@
     },
     "allevents": {
       "status": "ok",
-      "events": 18,
+      "events": 16,
       "review": 1,
       "diagnostics": {
-        "candidates": 18,
+        "candidates": 16,
         "flaggedForReview": 1,
-        "eventPagesFetched": 18,
+        "eventPagesFetched": 16,
         "pricesFound": 1,
-        "timesFound": 18,
+        "timesFound": 14,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "virasat": {
-      "status": "ok",
-      "events": 31,
-      "review": 0,
-      "diagnostics": {
-        "dayBlocks": 15,
-        "headlineCandidates": 31,
-        "eventsParsed": 31
-      },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
+      "status": "failed",
+      "error": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:15456:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchText (file:///home/runner/work/doon.today/doon.today/ingest/lib/http.mjs:14:13)\n    at async fetchVirasat (file:///home/runner/work/doon.today/doon.today/ingest/sources/virasat.mjs:84:32)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
       "lastSuccessAt": "2026-11-02T09:37:50.036Z",
-      "consecutiveFailures": 0
+      "consecutiveFailures": 1
     },
     "thrillzone": {
-      "status": "ok",
-      "events": 2,
-      "review": 0,
-      "diagnostics": {
-        "cards": 8,
-        "eventsParsed": 2
-      },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
+      "status": "failed",
+      "error": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:15456:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchText (file:///home/runner/work/doon.today/doon.today/ingest/lib/http.mjs:14:13)\n    at async fetchThrillZone (file:///home/runner/work/doon.today/doon.today/ingest/sources/thrillzone.mjs:36:66)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
       "lastSuccessAt": "2026-11-02T09:37:50.036Z",
-      "consecutiveFailures": 0
+      "consecutiveFailures": 1
     },
     "literaturefestival": {
       "status": "ok",
@@ -80,8 +69,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -92,8 +81,8 @@
         "candidates": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -103,8 +92,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -116,8 +105,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -126,10 +115,10 @@
       "review": 0,
       "diagnostics": {
         "handles": 17,
-        "collected": 15,
-        "started": 0,
+        "collected": 0,
+        "started": 2,
         "abandoned": 0,
-        "read": 12,
+        "read": 0,
         "announcements": 0,
         "alreadyListed": 0,
         "readErrors": 0,
@@ -137,33 +126,33 @@
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 24243,
-          "output": 2142,
+          "input": 0,
+          "output": 0,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     },
     "bookmyshow": {
       "status": "ok",
-      "events": 10,
+      "events": 7,
       "review": 0,
       "diagnostics": {
         "cards": 31,
         "dehradunLinks": 10,
-        "eventPagesFailed": 0,
+        "eventPagesFailed": 2,
         "eventPagesSkipped": 0,
-        "eventsParsed": 10
+        "eventsParsed": 7
       },
-      "lastAttemptAt": "2026-11-02T09:37:50.036Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
+      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
       "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 36,
+    "published": 34,
     "review": 0,
     "dropped": 0
   },
@@ -177,7 +166,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-11-02T00:08:48.479Z",
-      "ageHours": 9.5,
+      "ageHours": 22.7,
       "fresh": true
     }
   }
