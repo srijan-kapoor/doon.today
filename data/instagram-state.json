@@ -12,7 +12,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26cfd1k6xi668wp",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -29,7 +32,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26cle1jbn6b327p",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -41,7 +47,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26crtzoxsxj15t",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -62,13 +71,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26cy21k4ec90b4m",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
       "lastError": "",
       "seen": [],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26d4y628ilee7",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -78,7 +93,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26db2sq2tzau1u",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -99,7 +117,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26dhh27p65l6oxe",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -114,7 +135,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26dnxlbf6iyenw",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -126,7 +150,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26dtxzbqm8jea6",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -141,7 +168,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26e03i4trol23l",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -155,7 +185,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26e8t1k2i70y7vh",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -175,7 +208,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26eij1zve88shr3",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -196,7 +232,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26epg1ogguu7y92",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-10-31T20:02:31.767Z",
@@ -205,10 +244,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mvz26ewnfo89m05tx",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mvz26fdm1t838avdnk",
+        "startedAt": "2026-11-02T09:30:33.563Z"
+      },
       "lastFetchedAt": "2026-11-01T07:58:52.655Z",
       "lastError": "",
       "seen": [
@@ -383,316 +428,5 @@
       "at": "2026-11-01T15:15:52.858Z"
     }
   ],
-  "candidates": [
-    {
-      "id": "58f24fba50c5362f",
-      "slug": "tachila-temple-trek",
-      "title": "Tachila Temple Trek",
-      "description": "A longer trail awaits this Sunday 🌿🥾\n\nJoin Doon Outdoors Club for the Tachila Temple Trek on Sunday, 1 November 2026.\n\n📏 Distance: 12–14 km round trip\n📍 Meetup: Maldevta Temple\n⏰ Meeting time: 5:45 AM\n🥾 Trek starting point: Vintage Farm, via Lal Pul\n\nThis trek is longer than our previous outings. Please consider the distance and your fitness before joining, and come prepared for a full morning outdoors.\n\nTHE PLAN\n\n5:45 AM — Meet at Maldevta Temple.\nFrom here, we’ll travel together in our own vehicles to the trek starting point at Vintage Farm, via Lal Pul. Please arrange your transport accordingly.\n\n6:15 AM — Begin the trek towards Tachila Temple.\n\n9:30–9:45 AM — Expected return to the trek starting point. This is approximate and may change depending on the group’s pace and breaks.\n\nW",
-      "startAt": "2026-11-01T05:45:00+05:30",
-      "endAt": "2026-11-01T09:45:00+05:30",
-      "venue": {
-        "name": "Meetup at Maldevta Temple; trek starts at Vintage Farm via Lal Pul",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors",
-        "Community"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Join via the link in bio (joint WhatsApp group for details and Google map links)",
-      "organizer": "doonoutdoorsclub",
-      "posts": [
-        "https://www.instagram.com/p/DfEVFwhSx1l"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfEVFwhSx1l",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "6f4acaa78f9052bc",
-      "slug": "doon-icon-awards-season-1",
-      "title": "Doon Icon Awards – Season 1",
-      "description": "We are proud to welcome our nominee DOON WALKERS in the Adventure  category to the prestigious Doon Icon Awards – Season 1 ✨\nCelebrating excellence, vision, and impactful contributions across Uttarakhand.\nNominations for DOON ICON AWARDS – Season 1 are officially OPEN!\n🌟 Know someone who deserves recognition? Nominate them today!\n📞 +91-7900797777\n📅 1st November 2026\n📍 Hotel YKM & Resorts, GMS Road, Dehradun\n🕚 5:30 PM – 7:00 PM\n#DoonIconAwards #Season1 #Dehradun #Awards #RealEstate #BusinessExcellence #Entrepreneurs #Uttarakhand",
-      "startAt": "2026-11-01T17:30:00+05:30",
-      "endAt": "2026-11-01T19:00:00+05:30",
-      "venue": {
-        "name": "Hotel YKM & Resorts, GMS Road, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Other"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "For registration call +91-7900797777; nominations open per caption",
-      "organizer": "doon_walkers",
-      "posts": [
-        "https://www.instagram.com/p/DeYv0wqFVxI"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DeYv0wqFVxI",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "dc87a180883cd2bb",
-      "slug": "sunday-sunrise-hike-bandal-ghati-beyond-dighu-waterfall",
-      "title": "Sunday Sunrise Hike: Bandal Ghati - Beyond Dighu Waterfall",
-      "description": "",
-      "startAt": "2026-11-01T05:30:00+05:30",
-      "endAt": "2026-11-01T10:00:00+05:30",
-      "venue": {
-        "name": "Maharana Pratap Chowk, Raipur, Dehradun (meeting point)",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "",
-      "organizer": "the5amclub.in",
-      "posts": [
-        "https://www.instagram.com/p/De_chY_z_Af"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "medium"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/De_chY_z_Af",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "58ab0b6014f58930",
-      "slug": "starry-night-at-rajpur-nature-fest-2026",
-      "title": "Starry Night at Rajpur Nature Fest 2026",
-      "description": "Another post (https://www.instagram.com/p/DfFy5SETVZC) gives the venue as MDDA Park Dehradun.\n\nAnother post (https://www.instagram.com/p/DeJ0tWqkxOq) gives the time as 20:00.\n\nRajpur Nature Fest 2026, here we come! 🌌🔭\n\nDehradun Astronomy Club is bringing the universe a little closer to you with a stargazing session on both days of Rajpur Nature Fest! 🪐\n\nJoin us on 31 October and 1 November at MDDA Park, Rajpur, from 9 PM onwards for a night filled with cosmic wonders, fascinating stories and unforgettable sightings under the stars.\n\nRemember to bring your curiosity, excitement and sense of wonder. ✨\n\nThe session is free and open to people of all ages.\n\nRegister now — Link in bio.",
-      "startAt": "2026-10-31T21:00:00+05:30",
-      "endAt": "2026-11-01T21:00:00+05:30",
-      "venue": {
-        "name": "MDDA Park, Rajpur",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Other"
-      ],
-      "pricing": {
-        "type": "free",
-        "currency": "INR"
-      },
-      "howToJoin": "Register via link in bio",
-      "organizer": "dehradun_astronomy_club",
-      "posts": [
-        "https://www.instagram.com/p/DfAAtAZzcA0",
-        "https://www.instagram.com/p/DeJ0tWqkxOq",
-        "https://www.instagram.com/p/DfFy5SETVZC"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfAAtAZzcA0",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-30T15:05:56.192Z",
-      "lastCheckedAt": "2026-10-30T15:05:56.192Z"
-    },
-    {
-      "id": "fa621072927d7476",
-      "slug": "trick-or-treat-run",
-      "title": "Trick or Treat Run",
-      "description": "Dehradun’s craziest Halloween themed fitness party! 🏃‍♀️🏃‍♂️💨\nOnly 40 early bird spots so register ASAP!!!!\n\n🏃‍♂️ 3/5/7KM Group Run\n🏋️‍♂️ Post run fitness challenges\n👟 Reebok Giveaways 🎁\n☕🎧 OG Zen Coffee Rave\n🥤Electrolytes \n🍫 Protein Bars\n📸 Polaroid booth\n🎮 Access to indoor games!\n\n🖤 Dress Code: All Black\n\nCome for the run, stay for the workout, and finish with a coffee-fuelled rave! ⚡️🎶\n\nREGISTRATION LINK IN BIO!!!!!!!!\n\n#running #dehradun #dehradun_diaries #dehradun_official_page parties (morning, run club in dehradun, fitness, parties, running, hyrox)",
-      "startAt": "2026-11-01T07:00:00+05:30",
-      "venue": {
-        "name": "Legends Sports Bar, Rajpur Road",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Registration link in bio",
-      "organizer": "zen_runclub",
-      "posts": [
-        "https://www.instagram.com/p/De4GTQ5iU4q"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/De4GTQ5iU4q",
-          "checkedAt": "2026-10-29T08:24:24.456Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastSeenAt": "2026-10-29T08:24:24.456Z",
-      "lastCheckedAt": "2026-10-29T08:24:24.456Z"
-    },
-    {
-      "id": "9d60a3621e182084",
-      "slug": "melophile-session-02-daft-punk-s-random-access-memories",
-      "title": "Melophile Session 02: Daft Punk's Random Access Memories",
-      "description": "🎧 MELOPHILE — SESSION 02\n\nDehradun, let's listen to some music. 🪩\n\nThis time, we're getting together for Daft Punk's Random Access Memories, one album, played from start to finish. No skipping. No distractions. Just music.\n\nAnd when the album ends? It's your turn. 🎶\n\nWe'll take turns playing songs we've brought along, discovering new music, sharing favourites, and meeting people who love music as much as we do.\n\n🎧 Meet people with similar music taste\n🎸 Connect with fellow musicians\n💿 Discover music beyond your usual playlists\n\n📅 Sunday, 1 November\n🕟 4:30 PM\n📍 Dehradun\n\nYou don't need to be a musician, Just bring your love for music and a few songs you'd like others to hear.\n\nWant to join? 🔗 Join our WhatsApp group through the link in our bio.\n\nOne album. Your music. Our music. Ne",
-      "startAt": "2026-11-01T16:30:00+05:30",
-      "venue": {
-        "name": "See Instagram post",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Music",
-        "Meetups"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Join the WhatsApp group via the link in bio, or DM / comment to join",
-      "organizer": "melophile.ddn",
-      "posts": [
-        "https://www.instagram.com/p/DfEnhWaJu9w"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfEnhWaJu9w",
-          "checkedAt": "2026-10-30T15:05:56.192Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-30T15:05:56.192Z",
-      "lastSeenAt": "2026-10-30T15:05:56.192Z",
-      "lastCheckedAt": "2026-10-30T15:05:56.192Z"
-    },
-    {
-      "id": "ce5fbaeae62494ce",
-      "slug": "chakravyuh-garhwali-theatrical-performance-at-virasat-2026",
-      "title": "Chakravyuh - Garhwali theatrical performance at Virasat 2026",
-      "description": "🕸️ Hi friends! Virasat 2026 is hosting a beautiful recreation of the Chakravyuh this year.\nSince we would have no walk this Sunday, we urge you to witness this beautiful theatrical performance from Garhwal. The Chakravyuh tells the story of Abhimanyu from the Mahabharata and how he enters the intricate formation, only to be killed at the end.\n\n⏰Time: 2 pm onwards, Sunday, November 1, 2026\n\n📍 Venue: Himalayan Cultural Centre, Nimbuwala, Garhi Cantt. Entry to the venue is ticketed. Tickets can be purchased at the gate.",
-      "startAt": "2026-11-01T14:00:00+05:30",
-      "venue": {
-        "name": "Himalayan Cultural Centre, Nimbuwala, Garhi Cantt, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Live shows",
-        "Culture"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Tickets available at the gate",
-      "organizer": "btdt_official",
-      "posts": [
-        "https://www.instagram.com/p/DfJPcjDA4X9"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfJPcjDA4X9",
-          "checkedAt": "2026-10-31T20:02:31.767Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-10-31T20:02:31.767Z",
-      "lastSeenAt": "2026-10-31T20:02:31.767Z",
-      "lastCheckedAt": "2026-10-31T20:02:31.767Z"
-    }
-  ]
+  "candidates": []
 }
