@@ -1,230 +1,5 @@
 [
   {
-    "id": "4c4dc379f5930697",
-    "slug": "melophile-daft-punk-random-access-memories-album-listening-meet",
-    "title": "Melophile Session 02: Daft Punk's Random Access Memories",
-    "description": "🎧 MELOPHILE — SESSION 02 Dehradun, let's listen to some music. 🪩 This time, we're getting together for Daft Punk's Random Access Memories, one album, played from start to finish. No skipping. No distractions. Just music. And when the album ends? It's your turn. 🎶 We'll take turns playing songs we've brought along, discovering new music, sharing favourites, and meeting people who love music as much as we do. 🎧 Meet people with similar music taste 🎸 Connect with fellow musicians 💿 Discover music beyond your usual playlists 📅 Sunday, 1 November 🕟 4:30 PM 📍 Dehradun You don't need to be a musician, Just bring your love for music and a few songs you'd like others to hear. Want to join? 🔗 Join our WhatsApp group through the link in our bio. One album. Your music. Our music. Ne\n\nOrganized by @melophile.ddn. How to join: Join the WhatsApp group via the link in bio, or DM / comment to join",
-    "startAt": "2026-11-01T16:30:00+05:30",
-    "venue": {
-      "name": "Maldevta",
-      "city": "Dehradun",
-      "area": "Maldevta"
-    },
-    "categories": [
-      "Music",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "free",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/melophile.ddn?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==",
-        "checkedAt": "2026-10-29T04:29:49.726Z",
-        "confidence": 1
-      },
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DfEnhWaJu9w",
-        "checkedAt": "2026-10-30T18:14:39.691Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfEnhWaJu9w",
-        "checkedAt": "2026-10-30T15:05:56.192Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-10-29T04:29:49.726Z",
-    "lastSeenAt": "2026-10-30T18:14:39.691Z",
-    "lastCheckedAt": "2026-10-30T18:14:39.691Z",
-    "sequence": 2,
-    "modifiedAt": "2026-10-30T18:25:56.436Z"
-  },
-  {
-    "id": "694d2e017d95f36b",
-    "slug": "doon-icon-awards-season-1",
-    "title": "Doon Icon Awards – Season 1",
-    "description": "We are proud to welcome our nominee DOON WALKERS in the Adventure category to the prestigious Doon Icon Awards – Season 1 ✨ Celebrating excellence, vision, and impactful contributions across Uttarakhand. Nominations for DOON ICON AWARDS – Season 1 are officially OPEN! 🌟 Know someone who deserves recognition? Nominate them today! 📞 +91-7900797777 📅 1st November 2026 📍 Hotel YKM & Resorts, GMS Road, Dehradun 🕚 5:30 PM – 7:00 PM #DoonIconAwards #Season1 #Dehradun #Awards #RealEstate #BusinessExcellence #Entrepreneurs #Uttarakhand\n\nOrganized by @doon_walkers. How to join: For registration call +91-7900797777; nominations open per caption",
-    "startAt": "2026-11-01T17:30:00+05:30",
-    "endAt": "2026-11-01T19:00:00+05:30",
-    "venue": {
-      "name": "Hotel YKM & Resorts, GMS Road, Dehradun",
-      "city": "Dehradun",
-      "area": "GMS Road"
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DeYv0wqFVxI",
-        "checkedAt": "2026-10-29T08:47:39.875Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DeYv0wqFVxI",
-        "checkedAt": "2026-10-29T08:24:24.456Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-10-29T08:47:39.875Z",
-    "lastSeenAt": "2026-10-29T08:47:39.875Z",
-    "lastCheckedAt": "2026-10-29T08:47:39.875Z"
-  },
-  {
-    "id": "1c4ace039d50feb3",
-    "slug": "virasat-2026-violin-recital-by-ragini-shankar",
-    "title": "Virasat 2026: Violin Recital by Ragini Shankar",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-11-01T19:00:00+05:30",
-    "endAt": "2026-11-01T21:00:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-10",
-        "externalId": "2026-10-violin-recital-by-ragini-shankar",
-        "checkedAt": "2026-11-01T15:15:47.991Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-11-01T15:15:47.991Z",
-    "lastCheckedAt": "2026-11-01T15:15:47.991Z"
-  },
-  {
-    "id": "c44fbdc5a7afacd7",
-    "slug": "zumba-instructor-training-with-steve-frank-in-dehra-dun-uttarakhand-in",
-    "title": "Zumba Instructor Training with Steve Frank in Dehra Dun, Uttarakhand, IN",
-    "description": "Included with Session: Instructor Training Manual + Review Videos Certificate of Completion Fitness Certification Credits (varies by country) CEC/CEUs: AFAA 8, ACE 0.7, CANFITPRO 4, AEA 4, REPS NZ 5, AUSACTIVE 5, NCTRC 0.85 What to Expect: Pre-Training Session Optional to join/Highly recommended (Your Zumba Education Specialist will send you an email notification with the date and time). Learn how to teach the basic steps to the four Zumba® core rhythms: Merengue, Salsa, Cumbia, and Reggaeton. Using the Zumba® formula, learn how to identify different parts of a song and apply the basic steps to build an effective Zumba class. Practice live with a Zumba Education Specialist to gain confidence to teach sooner. Receive your license to begin teaching Zumba® classes immediately. Get access to even more tools to help you start teaching faster and changing lives sooner. Get the opportunity to receive monthly choreo and music + ongoing support. You may also like the following events from Zumba Fitness : Happening on, 12th April, 08:30 am, Zumba Instructor Training with Lucrecia Venosta in Union City, NJ, US in Union City Happening on, 22nd October, 08:00 am, Zumba Jump Start Gold Instructor Training with Lucrecia Venosta in Madison, CT, US in Madison Happening on, 24th October, 07:00 am, Zumba Instructor Training with Laura Angel in Saint Louis, MO, US in St. Louis Also check out other Dance events in Dehradun , Entertainment events in Dehradun , Health & Wellness events in Dehradun .",
-    "startAt": "2026-11-01T19:00:00+05:30",
-    "endAt": "2026-11-02T05:00:00+05:30",
-    "venue": {
-      "name": "The Creative Hub 88 MIG Building, Near Hotel Him Palace, , Nehru Colong, Dehra Dun, Uttarakhand, IN 248001",
-      "address": "484 Haridwar Road, Dronpuri, Ajabpur Kalan, Dehradun 248001, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.30009,
-        "lng": 78.04996
-      }
-    },
-    "categories": [
-      "Music",
-      "Workshop",
-      "Wellness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/zumba-instructor-training-with-steve-frank-in-dehra-dun-uttarakhand-in/200030777510326",
-        "checkedAt": "2026-11-01T15:15:29.016Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-01T15:15:29.016Z",
-    "lastCheckedAt": "2026-11-01T15:15:29.016Z",
-    "sequence": 1,
-    "modifiedAt": "2026-10-26T15:15:59.947Z"
-  },
-  {
-    "id": "d5e06f78f6501fac",
-    "slug": "virasat-2026-vocal-recital-by-begum-parween-sultana",
-    "title": "Virasat 2026: Vocal Recital by Begum Parween Sultana",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-11-01T20:30:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-10",
-        "externalId": "2026-10-vocal-recital-by-begum-parween-sultana",
-        "checkedAt": "2026-11-01T15:15:47.991Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-11-01T15:15:47.991Z",
-    "lastCheckedAt": "2026-11-01T15:15:47.991Z",
-    "sequence": 2,
-    "modifiedAt": "2026-10-26T15:15:59.956Z"
-  },
-  {
     "id": "89a892bec3eaca47",
     "slug": "200-hour-yoga-in-dehradun",
     "title": "Why Choose 200 Hour Yoga Teacher Training in Dehradun?",
@@ -984,6 +759,80 @@
     "endAt": "2026-11-15T17:30:00+05:30"
   },
   {
+    "id": "04b297f4d2f40790",
+    "slug": "the-story-circus",
+    "title": "The Story Circus",
+    "description": "A hands-on storytelling workshop: stories, characters, creative writing, theatre-based games and open mic moments. Hosted by The Story Makers, Dr. Swatee Miittal (National School of Drama) and author Gargie Sharma. Ages 16+, in English and Hindi.",
+    "startAt": "2026-11-21T14:45:00+05:30",
+    "endAt": "2026-11-21T17:45:00+05:30",
+    "venue": {
+      "name": "Musee Art Cafe",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Workshop",
+      "Books"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 599,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
+        "checkedAt": "2026-11-01T16:21:08.545Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T16:21:08.545Z",
+    "lastSeenAt": "2026-11-01T16:21:08.545Z",
+    "lastCheckedAt": "2026-11-01T16:21:08.545Z"
+  },
+  {
+    "id": "940caf6d95fc377d",
+    "slug": "d9-presents-pizza-making-workshop",
+    "title": "D9 presents Pizza Making Workshop",
+    "description": "Learn to make thin crust pizza with a professional chef, from preparing the base to the toppings. Rs 299 per person, Rs 399 for a couple or duo. All ages.",
+    "startAt": "2026-11-22T16:00:00+05:30",
+    "endAt": "2026-11-22T18:00:00+05:30",
+    "venue": {
+      "name": "D9",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Food",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 299,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://in.bookmyshow.com/events/d9-presents-pizza-making-workshop/ET00524545",
+        "checkedAt": "2026-11-01T16:21:08.551Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T16:21:08.551Z",
+    "lastSeenAt": "2026-11-01T16:21:08.551Z",
+    "lastCheckedAt": "2026-11-01T16:21:08.551Z"
+  },
+  {
     "id": "9c6337b759a5bb0a",
     "slug": "ghar-an-open-mic-for-words-by-tape-a-tale-dehradun",
     "title": "Ghar: An Open Mic for Words by Tape A Tale | Dehradun",
@@ -1011,7 +860,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-01T00:10:53.445Z",
+        "checkedAt": "2026-11-02T00:08:49.766Z",
         "confidence": 0.95
       }
     ],
@@ -1021,8 +870,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-01T00:10:53.445Z",
-    "lastCheckedAt": "2026-11-01T00:10:53.445Z",
+    "lastSeenAt": "2026-11-02T00:08:49.766Z",
+    "lastCheckedAt": "2026-11-02T00:08:49.766Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -1146,7 +995,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-01T00:10:53.441Z",
+        "checkedAt": "2026-11-02T00:08:49.763Z",
         "confidence": 0.95
       },
       {
@@ -1162,8 +1011,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-01T15:15:48.492Z",
-    "lastCheckedAt": "2026-11-01T15:15:48.492Z"
+    "lastSeenAt": "2026-11-02T00:08:49.763Z",
+    "lastCheckedAt": "2026-11-02T00:08:49.763Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -1193,7 +1042,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-01T00:10:53.444Z",
+        "checkedAt": "2026-11-02T00:08:49.767Z",
         "confidence": 0.95
       },
       {
@@ -1209,8 +1058,49 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-01T15:15:29.016Z",
-    "lastCheckedAt": "2026-11-01T15:15:29.016Z"
+    "lastSeenAt": "2026-11-02T00:08:49.767Z",
+    "lastCheckedAt": "2026-11-02T00:08:49.767Z"
+  },
+  {
+    "id": "a834c213ac21eb80",
+    "slug": "mussoorie-ultra-2nd-edition",
+    "title": "Mussoorie Ultra 2nd Edition",
+    "description": "Set in the stunning Queen of Hills, Mussoorie, this ultra-running experience brings together challenging trails, crisp mountain air, and unforgettable panoramic views. Whether you're an experienced ultra-runner or looking to take on a new endurance challenge, this is your chance to run beyond your limits and create memories along the way. Run the trails. Conquer the climbs. Own the challenge. Book your spot and get ready for an unforgettable Himalayan running experience!",
+    "startAt": "2026-11-29T00:00:00.000Z",
+    "endAt": "2026-11-29T09:30:00.000Z",
+    "venue": {
+      "name": "The Fern Brentwood Resort Mussoorie, Series by Marriott",
+      "address": "Mussoorie",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.4548,
+        "lng": 78.0798
+      }
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 799,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
+        "checkedAt": "2026-11-02T00:08:49.767Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-02T00:08:49.767Z",
+    "lastSeenAt": "2026-11-02T00:08:49.767Z",
+    "lastCheckedAt": "2026-11-02T00:08:49.767Z"
   },
   {
     "id": "d092613afd25636e",
@@ -1281,7 +1171,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-01T00:10:53.445Z",
+        "checkedAt": "2026-11-02T00:08:49.767Z",
         "confidence": 0.95
       }
     ],
@@ -1291,8 +1181,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-01T00:10:53.445Z",
-    "lastCheckedAt": "2026-11-01T00:10:53.445Z"
+    "lastSeenAt": "2026-11-02T00:08:49.767Z",
+    "lastCheckedAt": "2026-11-02T00:08:49.767Z"
   },
   {
     "id": "5a0be2a175cd6a49",
