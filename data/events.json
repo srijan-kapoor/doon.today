@@ -834,7 +834,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-02T00:08:49.766Z",
+        "checkedAt": "2026-11-03T00:08:40.833Z",
         "confidence": 0.95
       },
       {
@@ -851,8 +851,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-02T22:50:24.561Z",
-    "lastCheckedAt": "2026-11-02T22:50:24.561Z",
+    "lastSeenAt": "2026-11-03T00:08:40.833Z",
+    "lastCheckedAt": "2026-11-03T00:08:40.833Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -985,7 +985,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-02T00:08:49.763Z",
+        "checkedAt": "2026-11-03T00:08:40.837Z",
         "confidence": 0.95
       },
       {
@@ -1001,8 +1001,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-02T22:49:29.027Z",
-    "lastCheckedAt": "2026-11-02T22:49:29.027Z"
+    "lastSeenAt": "2026-11-03T00:08:40.837Z",
+    "lastCheckedAt": "2026-11-03T00:08:40.837Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -1032,7 +1032,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-02T00:08:49.767Z",
+        "checkedAt": "2026-11-03T00:08:40.836Z",
         "confidence": 0.95
       },
       {
@@ -1048,8 +1048,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-02T22:49:14.184Z",
-    "lastCheckedAt": "2026-11-02T22:49:14.184Z"
+    "lastSeenAt": "2026-11-03T00:08:40.836Z",
+    "lastCheckedAt": "2026-11-03T00:08:40.836Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -1079,7 +1079,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-02T00:08:49.767Z",
+        "checkedAt": "2026-11-03T00:08:40.837Z",
         "confidence": 0.95
       }
     ],
@@ -1089,8 +1089,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastCheckedAt": "2026-11-02T00:08:49.767Z"
+    "lastSeenAt": "2026-11-03T00:08:40.837Z",
+    "lastCheckedAt": "2026-11-03T00:08:40.837Z"
   },
   {
     "id": "37149b72433966df",
@@ -1216,7 +1216,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-02T00:08:49.767Z",
+        "checkedAt": "2026-11-03T00:08:40.837Z",
         "confidence": 0.95
       }
     ],
@@ -1226,8 +1226,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastCheckedAt": "2026-11-02T00:08:49.767Z"
+    "lastSeenAt": "2026-11-03T00:08:40.837Z",
+    "lastCheckedAt": "2026-11-03T00:08:40.837Z"
   },
   {
     "id": "5a0be2a175cd6a49",
