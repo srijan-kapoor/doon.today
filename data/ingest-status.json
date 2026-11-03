@@ -1,7 +1,15 @@
 {
-  "ranAt": "2026-11-03T00:08:39.486Z",
+  "ranAt": "2026-11-03T09:42:03.894Z",
   "ran": [
-    "district"
+    "allevents",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "bookmyshow",
+    "reddit",
+    "instagram"
   ],
   "sources": {
     "district": {
@@ -35,23 +43,34 @@
         "timesFound": 14,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "virasat": {
-      "status": "failed",
-      "error": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:15456:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchText (file:///home/runner/work/doon.today/doon.today/ingest/lib/http.mjs:14:13)\n    at async fetchVirasat (file:///home/runner/work/doon.today/doon.today/ingest/sources/virasat.mjs:84:32)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
-      "consecutiveFailures": 1
+      "status": "ok",
+      "events": 31,
+      "review": 0,
+      "diagnostics": {
+        "dayBlocks": 15,
+        "headlineCandidates": 31,
+        "eventsParsed": 31
+      },
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
+      "consecutiveFailures": 0
     },
     "thrillzone": {
-      "status": "failed",
-      "error": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:15456:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchText (file:///home/runner/work/doon.today/doon.today/ingest/lib/http.mjs:14:13)\n    at async fetchThrillZone (file:///home/runner/work/doon.today/doon.today/ingest/sources/thrillzone.mjs:36:66)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T09:37:50.036Z",
-      "consecutiveFailures": 1
+      "status": "ok",
+      "events": 1,
+      "review": 0,
+      "diagnostics": {
+        "cards": 8,
+        "eventsParsed": 1
+      },
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
+      "consecutiveFailures": 0
     },
     "literaturefestival": {
       "status": "ok",
@@ -61,8 +80,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -73,8 +92,8 @@
         "candidates": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -84,8 +103,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -97,8 +116,8 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -107,8 +126,8 @@
       "review": 0,
       "diagnostics": {
         "handles": 17,
-        "collected": 0,
-        "started": 2,
+        "collected": 2,
+        "started": 15,
         "abandoned": 0,
         "read": 0,
         "announcements": 0,
@@ -123,24 +142,16 @@
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
+      "lastSuccessAt": "2026-11-03T09:42:03.894Z",
       "consecutiveFailures": 0
     },
     "bookmyshow": {
-      "status": "ok",
-      "events": 7,
-      "review": 0,
-      "diagnostics": {
-        "cards": 31,
-        "dehradunLinks": 10,
-        "eventPagesFailed": 2,
-        "eventPagesSkipped": 0,
-        "eventsParsed": 7
-      },
-      "lastAttemptAt": "2026-11-02T22:49:13.601Z",
+      "status": "failed",
+      "error": "Error: Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards\n    at file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:107:44\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchBookMyShow (file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:119:30)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
+      "lastAttemptAt": "2026-11-03T09:42:03.894Z",
       "lastSuccessAt": "2026-11-02T22:49:13.601Z",
-      "consecutiveFailures": 0
+      "consecutiveFailures": 1
     }
   },
   "output": {
@@ -158,7 +169,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-11-03T00:08:39.486Z",
-      "ageHours": 0,
+      "ageHours": 9.6,
       "fresh": true
     }
   }
