@@ -12,7 +12,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lid6a1spx79filq",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -30,7 +33,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lidc827adowc9z3",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -42,7 +48,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lidhx2h3ha4ly2p",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -64,13 +73,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lidn31usxldm4i1",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
       "lastError": "",
       "seen": [],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lidsj1g8yve97su",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -82,7 +97,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lidyewny4fxeg2",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -110,7 +128,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lie9i2kk6yxtpbu",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -126,7 +147,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lieg4qdg88udk5",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -139,7 +163,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2liela27fwtzrhdy",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -155,7 +182,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lieqc1m00c0sqgr",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -170,7 +200,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lievm2e892tkpg6",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -192,7 +225,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lif0yyw9ji4spl",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -214,7 +250,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lif8s197ol4as2u",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
@@ -223,10 +262,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw2lifeda3v017zin",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw2lifkg1p0yfllta7",
+        "startedAt": "2026-11-04T20:55:03.698Z"
+      },
       "lastFetchedAt": "2026-11-03T20:35:57.909Z",
       "lastError": "",
       "seen": [
@@ -251,11 +296,8 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mw1x079o20zxnlbvqp",
-        "startedAt": "2026-11-04T09:29:07.539Z"
-      },
-      "lastFetchedAt": "2026-11-03T09:44:59.419Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-04T20:55:03.698Z",
       "lastError": "",
       "seen": [
         "4009848031614033860",
@@ -264,11 +306,8 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mw1x07ew1knboqbwg3",
-        "startedAt": "2026-11-04T09:29:07.539Z"
-      },
-      "lastFetchedAt": "2026-11-03T09:44:59.419Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-04T20:55:03.698Z",
       "lastError": "",
       "seen": [
         "4013588672830211627"
@@ -276,18 +315,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mvwtvqeu21b75eidwl",
-      "at": "2026-11-01T07:58:52.655Z"
-    },
-    {
-      "id": "sd_mvxjgmoxb5xtkphy7",
-      "at": "2026-11-01T15:15:52.858Z"
-    },
-    {
-      "id": "sd_mvxjgmuulnrf01cjs",
-      "at": "2026-11-01T15:15:52.858Z"
-    },
     {
       "id": "sd_mvz26cfd1k6xi668wp",
       "at": "2026-11-02T09:38:56.353Z"
@@ -415,6 +442,14 @@
     {
       "id": "sd_mw0i4wbg24vknqfqpd",
       "at": "2026-11-03T20:35:57.909Z"
+    },
+    {
+      "id": "sd_mw1x079o20zxnlbvqp",
+      "at": "2026-11-04T20:55:03.698Z"
+    },
+    {
+      "id": "sd_mw1x07ew1knboqbwg3",
+      "at": "2026-11-04T20:55:03.698Z"
     }
   ],
   "candidates": [
