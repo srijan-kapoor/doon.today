@@ -360,6 +360,47 @@
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
   {
+    "id": "65a167c1ceb6c6e8",
+    "slug": "sitarganj-tiranga-600-brm",
+    "title": "Sitarganj Tiranga 600 BRM",
+    "description": "SITARGANJ TIRANGA 600 BRM 🚴♂️ 600 kilometres of determination, resilience and passion. Date: 14 November 2026 ⏰ Start Time: 05:30 AM 📍 Starting Point: Decathlon, Dehradun Registrations are OPEN now See the link in bio This Brevet is conducted under the aegis of Audax India Randonneurs (AIR) and is affiliated with Audax Club Parisien (ACP), France. Are you ready to take on the 600 KM challenge? 🇮🇳🔥 #600BRM\n\nOrganized by @pahadipedallers. How to join: Registration link in bio (registrations open)",
+    "startAt": "2026-11-14T05:30:00+05:30",
+    "venue": {
+      "name": "Decathlon, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfRh0FBTFVW",
+        "checkedAt": "2026-11-04T01:04:11.041Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfRh0FBTFVW",
+        "checkedAt": "2026-11-03T20:35:57.909Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-04T01:04:11.041Z",
+    "lastSeenAt": "2026-11-04T01:04:11.041Z",
+    "lastCheckedAt": "2026-11-04T01:04:11.041Z"
+  },
+  {
     "id": "0bfa172498606cb2",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
