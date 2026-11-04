@@ -1,7 +1,15 @@
 {
-  "ranAt": "2026-11-04T00:08:04.921Z",
+  "ranAt": "2026-11-04T05:00:48.040Z",
   "ran": [
-    "district"
+    "allevents",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "bookmyshow",
+    "reddit",
+    "instagram"
   ],
   "sources": {
     "district": {
@@ -35,8 +43,8 @@
         "timesFound": 14,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -48,8 +56,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -60,8 +68,8 @@
         "cards": 8,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -72,8 +80,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -84,8 +92,8 @@
         "candidates": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -95,8 +103,8 @@
       "diagnostics": {
         "candidates": 0
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -108,8 +116,8 @@
         "listed": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -118,37 +126,45 @@
       "review": 1,
       "diagnostics": {
         "handles": 17,
-        "collected": 15,
+        "collected": 0,
         "started": 0,
         "abandoned": 0,
-        "read": 8,
-        "announcements": 1,
+        "read": 0,
+        "announcements": 0,
         "alreadyListed": 0,
         "readErrors": 0,
         "recoverErrors": 0,
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 16298,
-          "output": 1050,
+          "input": 0,
+          "output": 0,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-03T20:32:39.215Z",
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
       "consecutiveFailures": 0
     },
     "bookmyshow": {
-      "status": "failed",
-      "error": "TimeoutError: The operation was aborted due to timeout\n    at node:internal/deps/undici/undici:15456:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:99:17\n    at async fetchBookMyShow (file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:119:30)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:37:13",
-      "lastAttemptAt": "2026-11-03T20:32:39.215Z",
-      "lastSuccessAt": "2026-11-02T22:49:13.601Z",
-      "consecutiveFailures": 2
+      "status": "ok",
+      "events": 8,
+      "review": 0,
+      "diagnostics": {
+        "cards": 22,
+        "dehradunLinks": 10,
+        "eventPagesFailed": 0,
+        "eventPagesSkipped": 0,
+        "eventsParsed": 8
+      },
+      "lastAttemptAt": "2026-11-04T05:00:48.040Z",
+      "lastSuccessAt": "2026-11-04T05:00:48.040Z",
+      "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 29,
-    "review": 1,
+    "published": 30,
+    "review": 0,
     "dropped": 0
   },
   "health": "healthy",
@@ -161,7 +177,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-11-04T00:08:04.921Z",
-      "ageHours": 0,
+      "ageHours": 4.9,
       "fresh": true
     }
   }
