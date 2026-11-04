@@ -11,6 +11,8 @@ export const LIST = 'https://in.bookmyshow.com/explore/events-dehradun?cat=CT';
 const UNLOCKER = 'https://api.brightdata.com/request';
 const MAX_EVENT_PAGES = 25;
 const PAGE_TIMEOUT_MS = 60_000;
+// Waiting for the listing's cards takes 35–40 seconds when it works, so it gets more room than a page.
+const LISTING_TIMEOUT_MS = 150_000;
 // The whole source stays well inside the refresh job's 15 minutes; pages not reached by then wait for the next run.
 const RUN_BUDGET_MS = 6 * 60_000;
 // An attraction open every day for months (a gaming zone, an amusement park) is listed as one long "event".
@@ -20,8 +22,8 @@ const BOILERPLATE = /^Book online tickets for /i;
 // Only the event cards say "₹ 499 onwards"; the page's own text around them doesn't. (": Dehradun", on every
 // local card, was refused as missing in tests on 1 Nov even when the cards were there.)
 const CARDS_LOADED = { text: 'onwards' };
-// The cards sometimes don't load in time (two of six tries on 1 Nov); a second try a minute later did.
-const LISTING_RETRY_MS = 60_000;
+// The cards sometimes don't load in time (two of six tries on 1 Nov); a second try shortly after did.
+const LISTING_RETRY_MS = 30_000;
 
 /** The listing's event cards as { href, lines }: title, venue, genre and price, in that order. */
 export function listingCards(html) {
@@ -95,12 +97,12 @@ function showEvent(o, url, about, genre) {
 }
 
 function unlocker(token, zone) {
-  return async (url, { expect } = {}) => {
+  return async (url, { expect, timeoutMs = PAGE_TIMEOUT_MS } = {}) => {
     const res = await fetch(UNLOCKER, {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ zone, url, format: 'raw', country: 'in', ...(expect && { headers: { 'x-unblock-expect': JSON.stringify(expect) } }) }),
-      signal: AbortSignal.timeout(PAGE_TIMEOUT_MS)
+      signal: AbortSignal.timeout(timeoutMs)
     });
     const text = await res.text();
     const refused = res.headers.get('x-brd-error');
@@ -115,8 +117,15 @@ export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS, ret
   if (!fetchPage && !(token && zone)) return { source: 'bookmyshow', events: [], diagnostics: { configured: false } };
   const get = fetchPage || unlocker(token, zone);
   const deadline = Date.now() + budgetMs;
-  const listing = () => get(LIST, { expect: CARDS_LOADED });
-  const cards = listingCards(await listing().catch(async () => { await sleep(retryMs); return listing(); }));
+  const listing = () => get(LIST, { expect: CARDS_LOADED, timeoutMs: LISTING_TIMEOUT_MS });
+  const cards = listingCards(await listing().catch(async (first) => {
+    await sleep(retryMs);
+    return listing().catch((second) => {
+      // Both tries' reasons, so the status shows whether the cards didn't load or the request ran out of time.
+      second.diagnostics = { listingTries: [first, second].map((e) => String(e?.message || e).slice(0, 160)) };
+      throw second;
+    });
+  }));
   const links = dehradunLinks(cards);
   if (!cards.length) {
     const error = new Error('BookMyShow listing showed no event cards');
@@ -127,8 +136,10 @@ export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS, ret
   let failed = 0, skipped = Math.max(0, links.length - MAX_EVENT_PAGES);
   for (const { url, genre } of links.slice(0, MAX_EVENT_PAGES)) {
     if (Date.now() > deadline) { skipped++; continue; }
+    // A page that fails is tried once more: on 2 Nov two of ten failed once and loaded on the next run.
+    const page = () => get(url);
     try {
-      events.push(...eventsFromPage(await get(url), url, genre));
+      events.push(...eventsFromPage(await page().catch(() => (Date.now() > deadline ? Promise.reject() : page())), url, genre));
     } catch { failed++; }
   }
   // Every page failing says more about the fetcher than about BookMyShow's events.

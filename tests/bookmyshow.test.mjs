@@ -60,7 +60,23 @@ test('a listing that did not load is tried once more', async () => {
   const fetchPage = async (url) => { if (url !== LIST) return pizzaPage; if (++tries === 1) throw new Error('cards not loaded'); return listing; };
   assert.equal((await fetchBookMyShow({ fetchPage, retryMs: 0 })).events.length, 1);
   assert.equal(tries, 2);
-  await assert.rejects(fetchBookMyShow({ fetchPage: async () => { throw new Error('cards not loaded'); }, retryMs: 0 }), /cards not loaded/);
+  await assert.rejects(fetchBookMyShow({ fetchPage: async () => { throw new Error('cards not loaded'); }, retryMs: 0 }),
+    (e) => /cards not loaded/.test(e.message) && e.diagnostics.listingTries.length === 2);
+});
+
+test('the listing gets more time than an event page, and a failed page is tried once more', async () => {
+  const timeouts = {};
+  let pizzaTries = 0;
+  const fetchPage = async (url, opts = {}) => {
+    timeouts[url] = opts.timeoutMs;
+    if (url === LIST) return listing;
+    if (++pizzaTries === 1) throw new Error('timeout');
+    return pizzaPage;
+  };
+  const r = await fetchBookMyShow({ fetchPage, retryMs: 0 });
+  assert.ok(timeouts[LIST] > 60_000);
+  assert.equal(pizzaTries, 2);
+  assert.deepEqual([r.events.length, r.partial], [1, false]);
 });
 
 test('a run that missed pages, or saw no Dehradun card, is partial, so stored events stay', async () => {
