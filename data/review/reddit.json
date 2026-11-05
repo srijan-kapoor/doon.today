@@ -1,1 +1,175 @@
-[]
+[
+  {
+    "id": "7e575200781ae236",
+    "slug": "diwali-festive-hampers",
+    "title": "Diwali Festive Hampers",
+    "description": "",
+    "startAt": "2026-11-05",
+    "endAt": "2026-11-05",
+    "venue": {
+      "name": "Khasra No. 270, Haridwar Bypass Road, Near ISBT, Dehra Dun, India 248001, Uttarakhand",
+      "address": "270 Haridwar Bypass, Prakash Vihar, Ajabpur Kalan, Dehradun 248001, India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.29313,
+        "lng": 78.05296
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/diwali-festive-hampers/200030972129945",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "review",
+      "score": 2
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z"
+  },
+  {
+    "id": "c97354a87d772732",
+    "slug": "blood-on-the-clocktower",
+    "title": "Blood on the Clocktower",
+    "description": "Dm us to participate\n\nUPCOMING EVENTS 🎲\n\n5 November 2026 (Thursday)\n\n* Blood on the Clocktower (BOTC)\n* Time: 7:00 PM\n\n6 November 2026 (Friday)\n\n* Betrayal\n* Time: 7:00 PM\n\n7 November 2026 (Saturday) – Board Game Challenge\n\nGames:\n\n* Exploding Kittens\n* Catan\n* Splendor\n* Incan Gold\n\n🏆 Prize: The player with the most points across the games will be the winner and receive a prize.",
+    "startAt": "2026-11-05T19:00:00+05:30",
+    "endAt": "2026-11-05T22:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "DM the account to participate",
+    "organizer": "boardandbanter.ddn",
+    "posts": [
+      "https://www.instagram.com/p/DfUbSBiikrc"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "medium"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfUbSBiikrc",
+        "checkedAt": "2026-11-05T09:39:56.389Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastCheckedAt": "2026-11-05T09:39:56.389Z"
+  },
+  {
+    "id": "22108a0f5b694e47",
+    "slug": "chapter-43-the-whispers-of-dhaulas",
+    "title": "Chapter 43 — The Whispers of Dhaulas",
+    "description": "🌿 DOON WALKERS PRESENTS\n🏔️ CHAPTER 43 — THE WHISPERS OF DHAULAS\n\nWhere the forest speaks, and the world slows down.\n\nNot every adventure needs a mountain peak. Sometimes, all you need is a quiet trail, a forest full of life, and a little time away from the usual routine.\n\nThis Saturday, we’re heading towards Dhaulas, near Mandu Siddh Temple, for a peaceful walk through the woods, alongside a dry riverbed, surrounded by nature.\n\nA morning to slow down, explore a different side of Doon, connect with people, and enjoy the little things along the way. 🌳\n\n📍 EVENT DETAILS\n\n📅 Date: 7 November 2026 (Saturday)\n📌 Meeting Point: ONGC Chowk\n⏰ Reporting Time: 5:45 AM\n🚶 Departure: 6:00 AM sharp\n🥾 Trail Distance: Approx. 6–7 KM (to and fro)\n🏁 Expected Completion: Around 9:00 AM\n\n🚗 IMPORTANT\n• O",
+    "startAt": "2026-11-07T05:45:00+05:30",
+    "endAt": "2026-11-07T09:00:00+05:30",
+    "venue": {
+      "name": "Mandu Siddh Temple Trail, Dhaulas (meet at ONGC Chowk)",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Registration link in bio; own vehicle mandatory",
+    "organizer": "doon_walkers",
+    "posts": [
+      "https://www.instagram.com/p/DfR6JhlSJXD"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfR6JhlSJXD",
+        "checkedAt": "2026-11-05T09:39:56.389Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastCheckedAt": "2026-11-05T09:39:56.389Z"
+  },
+  {
+    "id": "4e5a92e2588ec8fc",
+    "slug": "celebrate-kukur-tihar-with-us",
+    "title": "Celebrate Kukur Tihar With Us",
+    "description": "Kukur Diwas, also known as Kukur Tihar, is a Nepali tradition where dogs are celebrated for their loyalty and unconditional love.\n\nThis time, we are celebrating the day by coming together for dogs in need. 🐶\n\n❤️ Free Entry! 🐾\nBring dog food, treats or essentials if you can.\n\nIf you can't join then you can still contribute towards the NGO.\n\nComment \"Link\" for more details. Limited slots so book your slot soon.\n\n(Dog event, kukur tihar, kukur diwas, dog lover, dehradun, dehradun dog lover, dog, street dogs, ngo, dog lovers, dehradun dog event)",
+    "startAt": "2026-11-07T11:30:00+05:30",
+    "endAt": "2026-11-07T14:00:00+05:30",
+    "venue": {
+      "name": "Samarth India dog home, Phulsaini",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Culture",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "howToJoin": "Comment \"Link\" on the post for details; limited slots",
+    "organizer": "dehradun_hangouts",
+    "posts": [
+      "https://www.instagram.com/p/DfUUen9sIfH"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfUUen9sIfH",
+        "checkedAt": "2026-11-05T09:39:56.389Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastSeenAt": "2026-11-05T09:39:56.389Z",
+    "lastCheckedAt": "2026-11-05T09:39:56.389Z"
+  }
+]

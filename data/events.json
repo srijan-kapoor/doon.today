@@ -1,5 +1,45 @@
 [
   {
+    "id": "7e575200781ae236",
+    "slug": "diwali-festive-hampers",
+    "title": "Diwali Festive Hampers",
+    "description": "",
+    "startAt": "2026-11-05",
+    "endAt": "2026-11-05",
+    "venue": {
+      "name": "Khasra No. 270, Haridwar Bypass Road, Near ISBT, Dehra Dun, India 248001, Uttarakhand",
+      "address": "270 Haridwar Bypass, Prakash Vihar, Ajabpur Kalan, Dehradun 248001, India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.29313,
+        "lng": 78.05296
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/diwali-festive-hampers/200030972129945",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z"
+  },
+  {
     "id": "b92833bddecc255a",
     "slug": "300-hour-advanced-yoga-teacher-training-in-dehradun-india",
     "title": "300 Hour Advanced Yoga Teacher Training in Dehradun, India",
@@ -29,7 +69,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/300-hour-advanced-yoga-teacher-training-in-dehradun-india-tickets/80002793874803",
-        "checkedAt": "2026-11-04T20:51:51.501Z",
+        "checkedAt": "2026-11-05T09:37:22.962Z",
         "confidence": 0.75
       },
       {
@@ -51,8 +91,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-04T20:51:51.501Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.501Z",
+    "lastSeenAt": "2026-11-05T09:37:22.962Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.962Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.944Z"
   },
@@ -86,7 +126,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-hindustani-vocal-by-anol-chatterjee",
-        "checkedAt": "2026-11-04T20:52:03.739Z",
+        "checkedAt": "2026-11-05T09:37:40.917Z",
         "confidence": 0.95
       }
     ],
@@ -96,8 +136,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-11-04T20:52:03.739Z",
-    "lastCheckedAt": "2026-11-04T20:52:03.739Z"
+    "lastSeenAt": "2026-11-05T09:37:40.917Z",
+    "lastCheckedAt": "2026-11-05T09:37:40.917Z"
   },
   {
     "id": "3f54ac689b6f0c57",
@@ -129,7 +169,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-14",
         "externalId": "2026-14-an-evening-of-confluence",
-        "checkedAt": "2026-11-04T20:52:03.739Z",
+        "checkedAt": "2026-11-05T09:37:40.917Z",
         "confidence": 0.95
       }
     ],
@@ -139,8 +179,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-11-04T20:52:03.739Z",
-    "lastCheckedAt": "2026-11-04T20:52:03.739Z",
+    "lastSeenAt": "2026-11-05T09:37:40.917Z",
+    "lastCheckedAt": "2026-11-05T09:37:40.917Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.695Z"
   },
@@ -174,7 +214,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-gaya-ang-thumri",
-        "checkedAt": "2026-11-04T20:52:03.739Z",
+        "checkedAt": "2026-11-05T09:37:40.917Z",
         "confidence": 0.95
       }
     ],
@@ -184,8 +224,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-11-04T20:52:03.739Z",
-    "lastCheckedAt": "2026-11-04T20:52:03.739Z"
+    "lastSeenAt": "2026-11-05T09:37:40.917Z",
+    "lastCheckedAt": "2026-11-05T09:37:40.917Z"
   },
   {
     "id": "026b60166805ecc4",
@@ -217,7 +257,7 @@
         "provider": "virasat",
         "url": "https://reachvirasat.org/programme#day-15",
         "externalId": "2026-15-usha-uthup-live",
-        "checkedAt": "2026-11-04T20:52:03.739Z",
+        "checkedAt": "2026-11-05T09:37:40.917Z",
         "confidence": 0.95
       }
     ],
@@ -227,8 +267,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-11-04T20:52:03.739Z",
-    "lastCheckedAt": "2026-11-04T20:52:03.739Z"
+    "lastSeenAt": "2026-11-05T09:37:40.917Z",
+    "lastCheckedAt": "2026-11-05T09:37:40.917Z"
   },
   {
     "id": "f9cab847eb979fd6",
@@ -293,7 +333,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-and-drinks-dehradun-tickets/80001819168334",
-        "checkedAt": "2026-11-04T20:51:51.500Z",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
         "confidence": 0.75
       }
     ],
@@ -303,8 +343,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-11-04T20:51:51.500Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.500Z",
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -350,6 +390,90 @@
     "lastCheckedAt": "2026-11-04T01:04:11.041Z"
   },
   {
+    "id": "9527441b3f929b4e",
+    "slug": "pizza-making-workshop",
+    "title": "Pizza Making Workshop",
+    "description": "Learn the art of making thin crust pizza with guidance from a professional chef. From preparing the base to perfecting the toppings, get hands-on experience and discover the techniques behind crafting your own pizza. A hands-on culinary experience for anyone who loves good pizza and wants to learn something new",
+    "startAt": "2026-11-14T16:00:00+05:30",
+    "endAt": "2026-11-14T18:00:00+05:30",
+    "venue": {
+      "name": "D9, Dehradun",
+      "address": "Khasra No. 766, Chakrata Rd, opposite LP Vilas, Nanda Ki Chowki, Sudhowala, Dehradun, Uttarakhand 248015, India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.34456,
+        "lng": 77.94663
+      }
+    },
+    "categories": [
+      "Art",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 299,
+      "maxPrice": 399,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/pizza-making-workshop/4100030972198612",
+        "checkedAt": "2026-11-05T09:37:22.960Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.960Z",
+    "lastSeenAt": "2026-11-05T09:37:22.960Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.960Z"
+  },
+  {
+    "id": "1dabe4f21ac9bf45",
+    "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
+    "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
+    "description": "Drinking is a social habit, Inder has successfully stayed away from this since 1995, but his friends on the other hand has had a glass in their hand every time, if you have group and drunk story, this show should not be missed.Inder says Everyone should once watch this show with their whole gang and you will leave with the feeling Sahani saab baithna hai aapke saath",
+    "startAt": "2026-11-15",
+    "endAt": "2026-11-15",
+    "venue": {
+      "name": "Studio XO Bar: Dehradun",
+      "address": "Universal Trade Tower, 140/174/281 Rajpur road, Chowk, Mussoorie Diversion Crossing, Kishanpur, Dehradun, Uttarakhand 248009, India Dehradun",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3722,
+        "lng": 78.0787
+      }
+    },
+    "categories": [
+      "Comedy"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030972909835",
+        "checkedAt": "2026-11-05T09:37:22.956Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.956Z",
+    "lastSeenAt": "2026-11-05T09:37:22.956Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.956Z"
+  },
+  {
     "id": "0bfa172498606cb2",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
@@ -390,7 +514,8 @@
     "lastCheckedAt": "2026-11-04T20:51:51.494Z",
     "sequence": 4,
     "modifiedAt": "2026-10-26T15:15:59.943Z",
-    "endAt": "2026-11-15T17:30:00+05:30"
+    "endAt": "2026-11-15T17:30:00+05:30",
+    "missedRuns": 1
   },
   {
     "id": "6523eaf403342042",
@@ -417,7 +542,7 @@
         "provider": "meetup",
         "url": "https://www.meetup.com/aws-sbg-at-uttaranchal-university/events/317244334/",
         "externalId": "317244334",
-        "checkedAt": "2026-11-04T20:52:06.432Z",
+        "checkedAt": "2026-11-05T09:37:43.313Z",
         "confidence": 0.9
       }
     ],
@@ -427,8 +552,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-02T09:29:04.044Z",
-    "lastSeenAt": "2026-11-04T20:52:06.432Z",
-    "lastCheckedAt": "2026-11-04T20:52:06.432Z"
+    "lastSeenAt": "2026-11-05T09:37:43.313Z",
+    "lastCheckedAt": "2026-11-05T09:37:43.313Z"
   },
   {
     "id": "04b297f4d2f40790",
@@ -465,7 +590,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
         "externalId": "ET00501667",
-        "checkedAt": "2026-11-04T05:03:02.536Z",
+        "checkedAt": "2026-11-05T09:39:20.738Z",
         "confidence": 0.95
       }
     ],
@@ -475,8 +600,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-11-01T16:21:08.545Z",
-    "lastSeenAt": "2026-11-04T05:03:02.536Z",
-    "lastCheckedAt": "2026-11-04T05:03:02.536Z"
+    "lastSeenAt": "2026-11-05T09:39:20.738Z",
+    "lastCheckedAt": "2026-11-05T09:39:20.738Z"
   },
   {
     "id": "940caf6d95fc377d",
@@ -513,8 +638,14 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/d9-presents-pizza-making-workshop/ET00524545",
         "externalId": "ET00524545",
-        "checkedAt": "2026-11-02T22:50:27.596Z",
+        "checkedAt": "2026-11-05T09:39:55.984Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/pizza-making-workshop-at-d9-dehradun/4100030972199252",
+        "checkedAt": "2026-11-05T09:37:22.960Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -523,8 +654,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-11-01T16:21:08.551Z",
-    "lastSeenAt": "2026-11-02T22:50:27.596Z",
-    "lastCheckedAt": "2026-11-02T22:50:27.596Z"
+    "lastSeenAt": "2026-11-05T09:39:55.984Z",
+    "lastCheckedAt": "2026-11-05T09:39:55.984Z"
   },
   {
     "id": "9c6337b759a5bb0a",
@@ -561,7 +692,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
         "externalId": "ET00377836",
-        "checkedAt": "2026-11-04T20:54:47.166Z",
+        "checkedAt": "2026-11-05T09:39:09.119Z",
         "confidence": 0.95
       }
     ],
@@ -571,8 +702,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-05T00:09:04.423Z",
-    "lastCheckedAt": "2026-11-05T00:09:04.423Z",
+    "lastSeenAt": "2026-11-05T09:39:09.119Z",
+    "lastCheckedAt": "2026-11-05T09:39:09.119Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -611,13 +742,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/safarnama-by-krishna-shukla/ET00508857",
         "externalId": "ET00508857",
-        "checkedAt": "2026-11-04T20:54:19.557Z",
+        "checkedAt": "2026-11-05T09:39:17.836Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/safarnama-by-krishna-shukla/3900030659387200",
-        "checkedAt": "2026-11-04T20:51:51.500Z",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
         "confidence": 0.75
       }
     ],
@@ -627,8 +758,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-04T20:54:19.557Z",
-    "lastCheckedAt": "2026-11-04T20:54:19.557Z",
+    "lastSeenAt": "2026-11-05T09:39:17.836Z",
+    "lastCheckedAt": "2026-11-05T09:39:17.836Z",
     "sequence": 2,
     "modifiedAt": "2026-11-04T09:29:08.015Z"
   },
@@ -663,7 +794,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/operation-forge-x-tickets/80001487149685",
-        "checkedAt": "2026-11-04T20:51:51.500Z",
+        "checkedAt": "2026-11-05T09:37:22.962Z",
         "confidence": 0.75
       }
     ],
@@ -673,8 +804,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-04T20:51:51.500Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.500Z",
+    "lastSeenAt": "2026-11-05T09:37:22.962Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.962Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -712,7 +843,7 @@
       {
         "provider": "literaturefestival",
         "url": "https://www.dehradunliteraturefestival.com/",
-        "checkedAt": "2026-11-04T20:52:04.341Z",
+        "checkedAt": "2026-11-05T09:37:41.522Z",
         "confidence": 0.9
       }
     ],
@@ -722,8 +853,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-05T00:09:04.419Z",
-    "lastCheckedAt": "2026-11-05T00:09:04.419Z"
+    "lastSeenAt": "2026-11-05T09:37:41.522Z",
+    "lastCheckedAt": "2026-11-05T09:37:41.522Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -749,7 +880,7 @@
         "provider": "gdg",
         "url": "https://gdg.community.dev/events/details/google-gdg-dehradun-presents-devfest-dehradun-2026/",
         "externalId": "134977",
-        "checkedAt": "2026-11-04T20:52:07.972Z",
+        "checkedAt": "2026-11-05T09:37:45.019Z",
         "confidence": 0.9
       }
     ],
@@ -759,8 +890,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-03T20:32:56.238Z",
-    "lastSeenAt": "2026-11-04T20:52:07.972Z",
-    "lastCheckedAt": "2026-11-04T20:52:07.972Z"
+    "lastSeenAt": "2026-11-05T09:37:45.019Z",
+    "lastCheckedAt": "2026-11-05T09:37:45.019Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -796,7 +927,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/run-for-trees/4100030939067213",
-        "checkedAt": "2026-11-04T20:51:51.498Z",
+        "checkedAt": "2026-11-05T09:37:22.959Z",
         "confidence": 0.75
       }
     ],
@@ -806,8 +937,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-05T00:09:04.423Z",
-    "lastCheckedAt": "2026-11-05T00:09:04.423Z"
+    "lastSeenAt": "2026-11-05T09:37:22.959Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.959Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -851,6 +982,46 @@
     "lastCheckedAt": "2026-11-05T00:09:04.423Z"
   },
   {
+    "id": "f698989035ae2ed6",
+    "slug": "mukul-sharma-live-a-poetry-storytelling-show",
+    "title": "Mukul Sharma Live - A Poetry & Storytelling Show",
+    "description": "Arz Kiya Hai by Mukul Sharma Arz Kiya Hai is a live poetry and storytelling show by Mukul Sharma. Through heartfelt words and relatable stories, Mukul explores love, heartbreak, relationships and the emotions of everyday life. Join us for an intimate evening of poetry, stories and meaningful conversations.",
+    "startAt": "2026-11-29T19:00:00+05:30",
+    "endAt": "2026-11-29T20:15:00+05:30",
+    "venue": {
+      "name": "Venue To Be Announced: Dehradun",
+      "address": "Dehradun, Uttarakhand India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.31649,
+        "lng": 78.03219
+      }
+    },
+    "categories": [
+      "Books"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/mukul-sharma-live-a-poetry-and-storytelling-show/3900030974543518",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z"
+  },
+  {
     "id": "37149b72433966df",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
@@ -881,7 +1052,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/daru-badnaam-a-comedy-show-by-inder-sahani/ET00484118",
         "externalId": "ET00484118",
-        "checkedAt": "2026-11-04T20:54:54.650Z",
+        "checkedAt": "2026-11-05T09:39:24.000Z",
         "confidence": 0.95
       }
     ],
@@ -891,8 +1062,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:16.455Z",
-    "lastSeenAt": "2026-11-04T20:54:54.650Z",
-    "lastCheckedAt": "2026-11-04T20:54:54.650Z"
+    "lastSeenAt": "2026-11-05T09:39:24.000Z",
+    "lastCheckedAt": "2026-11-05T09:39:24.000Z"
   },
   {
     "id": "d092613afd25636e",
@@ -931,7 +1102,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/level-up-play-fest-centrio-mall-dehradun/3900030931951226",
-        "checkedAt": "2026-11-04T20:51:51.501Z",
+        "checkedAt": "2026-11-05T09:37:22.962Z",
         "confidence": 0.75
       }
     ],
@@ -941,8 +1112,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-28T21:09:08.578Z",
-    "lastSeenAt": "2026-11-04T20:55:01.286Z",
-    "lastCheckedAt": "2026-11-04T20:55:01.286Z",
+    "lastSeenAt": "2026-11-05T09:37:22.962Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.962Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -963,7 +1134,8 @@
       }
     },
     "categories": [
-      "Other"
+      "Music",
+      "Meetups"
     ],
     "pricing": {
       "type": "paid",
@@ -976,6 +1148,12 @@
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
         "checkedAt": "2026-11-05T00:09:04.421Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/dehradun-moto-fest-2026/4100030972198428",
+        "checkedAt": "2026-11-05T09:37:22.960Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -984,8 +1162,49 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-05T00:09:04.421Z",
-    "lastCheckedAt": "2026-11-05T00:09:04.421Z"
+    "lastSeenAt": "2026-11-05T09:37:22.960Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.960Z"
+  },
+  {
+    "id": "2b6e7260a9346d9b",
+    "slug": "the-bel-awards",
+    "title": "The BEL Awards",
+    "description": "🌟 Get Ready for The BEL Awards 2026! An evening dedicated to celebrating excellence, recognising achievements and honouring inspiring leaders across Education, Learning and Business. Join us for a spectacular celebration featuring celebrity guest Ameesha Patel and an evening filled with recognition, networking and unforgettable moments. 🏆 Event Highlights: Celebrate outstanding achievements in Education & Learning Excellence. Recognise inspiring leaders and achievers. Connect with 300+ business leaders and professionals. Showcase your brand and business. Experience an unforgettable red-carpet evening. 🌟 Celebrity Guest: Ameesha Patel 📅 Date: 20th December 2026 (Sunday) 📍 Venue: Gateway Hotel by IHCL (The Tata Group), Dehradun, Uttarakhand 🎟️ Book Your Tickets Now! 📞 Contact: +91 954 812 5629 Be a part of an evening where excellence meets recognition and achievements take the spotlight! #BELAwards2026 #BELMediaAndEvents #BusinessExcellenceAndLeadership #AmeeshaPatel #AwardCeremony #EducationExcellence #BusinessAwards #BusinessLeaders",
+    "startAt": "2026-12-20T16:00:00+05:30",
+    "endAt": "2026-12-20T23:45:00+05:30",
+    "venue": {
+      "name": "Gateway Hotel By IHCL (The Tata Group) Dehradun, Uttarakhand",
+      "address": "The Gateway, Shaheed Durgamal Road, Nimbuwala, Garhi Cantt, Dehradun 248003, India Dehradun",
+      "city": "Dehradun",
+      "area": "Garhi Cantt",
+      "geo": {
+        "lat": 30.35233,
+        "lng": 78.02211
+      }
+    },
+    "categories": [
+      "Books"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/the-bel-awards/200030972130146",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1018,13 +1237,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605",
         "externalId": "ET00407605",
-        "checkedAt": "2026-11-04T20:54:41.200Z",
+        "checkedAt": "2026-11-05T09:39:15.224Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halki-halki-fati-by-vikas-kush-sharma/3900030845664301",
-        "checkedAt": "2026-11-04T20:51:51.501Z",
+        "checkedAt": "2026-11-05T09:37:22.962Z",
         "confidence": 0.75
       }
     ],
@@ -1034,8 +1253,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-04T20:54:41.200Z",
-    "lastCheckedAt": "2026-11-04T20:54:41.200Z",
+    "lastSeenAt": "2026-11-05T09:39:15.224Z",
+    "lastCheckedAt": "2026-11-05T09:39:15.224Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -1072,6 +1291,12 @@
         "externalId": "ET00524738",
         "checkedAt": "2026-11-04T09:28:25.236Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/new-year-2027/3900030973684426",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "review",
@@ -1080,9 +1305,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:21.827Z",
-    "lastSeenAt": "2026-11-04T09:28:25.236Z",
-    "lastCheckedAt": "2026-11-04T09:28:25.236Z",
-    "missedRuns": 1
+    "lastSeenAt": "2026-11-05T09:37:22.961Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.961Z"
   },
   {
     "id": "562de29d0166cb06",
@@ -1125,8 +1349,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-04T20:51:51.501Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.501Z",
+    "lastSeenAt": "2026-11-05T09:37:22.962Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.962Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -1160,13 +1384,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/chikka-on-roll/ET00387309",
         "externalId": "ET00387309",
-        "checkedAt": "2026-11-04T20:54:51.819Z",
+        "checkedAt": "2026-11-05T09:39:41.556Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/chikka-on-roll/3900030703853405",
-        "checkedAt": "2026-11-04T20:51:51.501Z",
+        "checkedAt": "2026-11-05T09:37:22.962Z",
         "confidence": 0.75
       }
     ],
@@ -1176,8 +1400,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-04T20:54:51.819Z",
-    "lastCheckedAt": "2026-11-04T20:54:51.819Z",
+    "lastSeenAt": "2026-11-05T09:39:41.556Z",
+    "lastCheckedAt": "2026-11-05T09:39:41.556Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.866Z"
   },
@@ -1211,13 +1435,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/lakhwinder-wadali-india-tour-dehradun/ET00514210",
         "externalId": "ET00514210",
-        "checkedAt": "2026-11-04T20:54:16.072Z",
+        "checkedAt": "2026-11-05T09:38:55.715Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lakhwinder-wadali-india-tour-dehradun/3900030624689839",
-        "checkedAt": "2026-11-04T20:51:51.500Z",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
         "confidence": 0.75
       }
     ],
@@ -1227,8 +1451,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-04T20:54:16.072Z",
-    "lastCheckedAt": "2026-11-04T20:54:16.072Z",
+    "lastSeenAt": "2026-11-05T09:38:55.715Z",
+    "lastCheckedAt": "2026-11-05T09:38:55.715Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.863Z"
   },
@@ -1275,8 +1499,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-23T02:43:57.432Z",
-    "lastSeenAt": "2026-11-04T20:51:51.502Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.502Z",
+    "lastSeenAt": "2026-11-05T09:37:22.962Z",
+    "lastCheckedAt": "2026-11-05T09:37:22.962Z",
     "sequence": 2,
     "modifiedAt": "2026-10-27T05:13:41.816Z"
   },
@@ -1309,13 +1533,13 @@
       {
         "provider": "thrillzone",
         "url": "https://www.sportifiindia.com/events/ddn-ultra-run",
-        "checkedAt": "2026-11-04T20:52:04.034Z",
+        "checkedAt": "2026-11-05T09:37:41.272Z",
         "confidence": 0.9
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-ultra-run-2027-4th-edition-tickets/80001080698758",
-        "checkedAt": "2026-11-04T20:51:51.500Z",
+        "checkedAt": "2026-11-05T09:37:22.961Z",
         "confidence": 0.75
       }
     ],
@@ -1325,8 +1549,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-11-04T20:52:04.034Z",
-    "lastCheckedAt": "2026-11-04T20:52:04.034Z",
+    "lastSeenAt": "2026-11-05T09:37:41.272Z",
+    "lastCheckedAt": "2026-11-05T09:37:41.272Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.948Z"
   }
