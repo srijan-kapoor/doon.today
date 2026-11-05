@@ -898,5 +898,40 @@
     "firstSeenAt": "2026-11-05T09:39:16.675Z",
     "lastSeenAt": "2026-11-05T09:39:16.675Z",
     "lastCheckedAt": "2026-11-05T09:39:16.675Z"
+  },
+  {
+    "id": "45b8c085afa22ebd",
+    "slug": "book-hangout-potluck",
+    "title": "Book hangout + potluck",
+    "description": "It's a book meetup with food\n\nOrganized by Dehradun Hangouts. How to join: https://forms.gle/25ka8gUU6qHYi4gm7",
+    "startAt": "2026-11-15T12:00:00+05:30",
+    "venue": {
+      "name": "City forest park",
+      "city": "Dehradun",
+      "area": "Sahastradhara"
+    },
+    "categories": [
+      "Books"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://forms.gle/25ka8gUU6qHYi4gm7",
+        "checkedAt": "2026-11-05T09:41:04.924Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-05T09:41:04.924Z",
+    "lastSeenAt": "2026-11-05T09:41:04.924Z",
+    "lastCheckedAt": "2026-11-05T09:41:04.924Z"
   }
 ]
