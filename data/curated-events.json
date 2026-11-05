@@ -933,5 +933,46 @@
     "firstSeenAt": "2026-11-05T09:41:04.924Z",
     "lastSeenAt": "2026-11-05T09:41:04.924Z",
     "lastCheckedAt": "2026-11-05T09:41:04.924Z"
+  },
+  {
+    "id": "7f3785ce38bdf6a9",
+    "slug": "blood-on-the-clocktower",
+    "title": "Blood on the Clocktower",
+    "description": "Dm us to participate UPCOMING EVENTS 🎲 5 November 2026 (Thursday) * Blood on the Clocktower (BOTC) * Time: 7:00 PM 6 November 2026 (Friday) * Betrayal * Time: 7:00 PM 7 November 2026 (Saturday) – Board Game Challenge Games: * Exploding Kittens * Catan * Splendor * Incan Gold 🏆 Prize: The player with the most points across the games will be the winner and receive a prize.\n\nOrganized by @boardandbanter.ddn. How to join: DM the account to participate",
+    "startAt": "2026-11-05T19:00:00+05:30",
+    "endAt": "2026-11-05T22:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfUbSBiikrc",
+        "checkedAt": "2026-11-05T09:42:45.759Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfUbSBiikrc",
+        "checkedAt": "2026-11-05T09:39:56.389Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-05T09:42:45.759Z",
+    "lastSeenAt": "2026-11-05T09:42:45.759Z",
+    "lastCheckedAt": "2026-11-05T09:42:45.759Z"
   }
 ]
