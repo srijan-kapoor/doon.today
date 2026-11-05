@@ -268,7 +268,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw41in3y2ezbxfaqm3",
+        "startedAt": "2026-11-05T21:10:58.210Z"
+      },
       "lastFetchedAt": "2026-11-04T20:55:03.698Z",
       "lastError": "",
       "seen": [
@@ -278,7 +281,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw41in9211nte2inxt",
+        "startedAt": "2026-11-05T21:10:58.210Z"
+      },
       "lastFetchedAt": "2026-11-04T20:55:03.698Z",
       "lastError": "",
       "seen": [
@@ -468,50 +474,6 @@
       "firstSeenAt": "2026-11-03T20:35:57.909Z",
       "lastSeenAt": "2026-11-03T20:35:57.909Z",
       "lastCheckedAt": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "c97354a87d772732",
-      "slug": "blood-on-the-clocktower",
-      "title": "Blood on the Clocktower",
-      "description": "Dm us to participate\n\nUPCOMING EVENTS 🎲\n\n5 November 2026 (Thursday)\n\n* Blood on the Clocktower (BOTC)\n* Time: 7:00 PM\n\n6 November 2026 (Friday)\n\n* Betrayal\n* Time: 7:00 PM\n\n7 November 2026 (Saturday) – Board Game Challenge\n\nGames:\n\n* Exploding Kittens\n* Catan\n* Splendor\n* Incan Gold\n\n🏆 Prize: The player with the most points across the games will be the winner and receive a prize.",
-      "startAt": "2026-11-05T19:00:00+05:30",
-      "endAt": "2026-11-05T22:00:00+05:30",
-      "venue": {
-        "name": "Board & Banter",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Games"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "DM the account to participate",
-      "organizer": "boardandbanter.ddn",
-      "posts": [
-        "https://www.instagram.com/p/DfUbSBiikrc"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "medium"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfUbSBiikrc",
-          "checkedAt": "2026-11-05T09:39:56.389Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastCheckedAt": "2026-11-05T09:39:56.389Z"
     },
     {
       "id": "22108a0f5b694e47",
