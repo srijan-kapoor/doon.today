@@ -231,6 +231,41 @@
     "lastCheckedAt": "2026-11-04T20:52:03.739Z"
   },
   {
+    "id": "f9cab847eb979fd6",
+    "slug": "kukur-diwas",
+    "title": "Kukur diwas",
+    "description": "Organized by Dehradun Hangouts X Samarth. How to join: https://forms.gle/8DKhexHdKiS1eHS1A",
+    "startAt": "2026-11-07T11:30:00+05:30",
+    "endAt": "2026-11-07T14:00:00+05:30",
+    "venue": {
+      "name": "Samarth NGO",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Culture"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://forms.gle/8DKhexHdKiS1eHS1A",
+        "checkedAt": "2026-11-05T09:39:16.675Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-05T09:39:16.675Z",
+    "lastSeenAt": "2026-11-05T09:39:16.675Z",
+    "lastCheckedAt": "2026-11-05T09:39:16.675Z"
+  },
+  {
     "id": "296ba68ddf38e8e2",
     "slug": "weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-amp-drinks-dehradun",
     "title": "Weekend Sizzler Pool Party, Belly Dance, Ramp Show, Games, Buffet Dinner & Drinks @ Dehradun",
