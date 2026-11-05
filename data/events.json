@@ -1,48 +1,5 @@
 [
   {
-    "id": "1276cecde7c73cd3",
-    "slug": "virasat-2026-vocal-recital-by-rahul-deshpande",
-    "title": "Virasat 2026: Vocal Recital by Rahul Deshpande",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-11-04T20:30:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-13",
-        "externalId": "2026-13-vocal-recital-by-rahul-deshpande",
-        "checkedAt": "2026-11-04T20:52:03.739Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-22T04:57:49.108Z",
-    "lastSeenAt": "2026-11-04T20:52:03.739Z",
-    "lastCheckedAt": "2026-11-04T20:52:03.739Z"
-  },
-  {
     "id": "b92833bddecc255a",
     "slug": "300-hour-advanced-yoga-teacher-training-in-dehradun-india",
     "title": "300 Hour Advanced Yoga Teacher Training in Dehradun, India",
@@ -562,7 +519,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-04T00:08:06.293Z",
+        "checkedAt": "2026-11-05T00:09:04.423Z",
         "confidence": 0.95
       },
       {
@@ -579,8 +536,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-04T20:54:47.166Z",
-    "lastCheckedAt": "2026-11-04T20:54:47.166Z",
+    "lastSeenAt": "2026-11-05T00:09:04.423Z",
+    "lastCheckedAt": "2026-11-05T00:09:04.423Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -714,7 +671,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-04T00:08:06.297Z",
+        "checkedAt": "2026-11-05T00:09:04.419Z",
         "confidence": 0.95
       },
       {
@@ -730,8 +687,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-04T20:52:04.341Z",
-    "lastCheckedAt": "2026-11-04T20:52:04.341Z"
+    "lastSeenAt": "2026-11-05T00:09:04.419Z",
+    "lastCheckedAt": "2026-11-05T00:09:04.419Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -798,7 +755,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-04T00:08:06.297Z",
+        "checkedAt": "2026-11-05T00:09:04.423Z",
         "confidence": 0.95
       },
       {
@@ -814,8 +771,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-04T20:51:51.498Z",
-    "lastCheckedAt": "2026-11-04T20:51:51.498Z"
+    "lastSeenAt": "2026-11-05T00:09:04.423Z",
+    "lastCheckedAt": "2026-11-05T00:09:04.423Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -845,7 +802,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-04T00:08:06.297Z",
+        "checkedAt": "2026-11-05T00:09:04.423Z",
         "confidence": 0.95
       }
     ],
@@ -855,8 +812,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-04T00:08:06.297Z",
-    "lastCheckedAt": "2026-11-04T00:08:06.297Z"
+    "lastSeenAt": "2026-11-05T00:09:04.423Z",
+    "lastCheckedAt": "2026-11-05T00:09:04.423Z"
   },
   {
     "id": "37149b72433966df",
@@ -982,7 +939,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-04T00:08:06.296Z",
+        "checkedAt": "2026-11-05T00:09:04.421Z",
         "confidence": 0.95
       }
     ],
@@ -992,8 +949,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-04T00:08:06.296Z",
-    "lastCheckedAt": "2026-11-04T00:08:06.296Z"
+    "lastSeenAt": "2026-11-05T00:09:04.421Z",
+    "lastCheckedAt": "2026-11-05T00:09:04.421Z"
   },
   {
     "id": "5a0be2a175cd6a49",
