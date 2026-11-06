@@ -19,6 +19,7 @@ test('a listed event becomes an aggregator listing, not a community pick', () =>
   assert.equal(e.venue.name, 'Romeo Lane', 'the city suffix is left off the venue');
   assert.deepEqual(e.pricing, { type: 'paid', minPrice: 399, currency: 'INR' });
   assert.deepEqual(e.categories, ['Music'], 'a party with music genres is a music night');
+  assert.equal(e.description, '', 'no made-up description to replace a fuller copy');
   assert.equal(e.sources[0].url, 'https://sortmyscene.com/events/diwali-night-nov-06-2026');
   assert.equal(isCommunityEvent(e), false);
   assert.equal(istTime(Date.parse('2026-11-06T20:00:00Z')), '2026-11-07T01:30:00+05:30');
@@ -48,4 +49,12 @@ test('without settings it fetches nothing; an answer without a list is an error'
     assert.deepEqual((await fetchSortMyScene()).diagnostics, { configured: false });
   } finally { Object.assign(process.env, saved); }
   await assert.rejects(fetchSortMyScene({ fetchPage: async () => '{"message":"blocked"}' }), /without an event list/);
+  await assert.rejects(fetchSortMyScene({ fetchPage: async () => '<html>Just a moment...</html>' }), (e) => e.diagnostics.start.startsWith('<html>'));
+});
+
+test('a list whose every event is unreadable is partial, so stored events stay', async () => {
+  const r = await fetchSortMyScene({ fetchPage: async () => page([listed({ rawStartTime: 'Fri Nov 06' })]) });
+  assert.deepEqual([r.events.length, r.complete, r.partial], [0, false, true]);
+  const empty = await fetchSortMyScene({ fetchPage: async () => page([]) });
+  assert.deepEqual([empty.complete, empty.partial], [true, false], 'an empty list is a complete answer');
 });

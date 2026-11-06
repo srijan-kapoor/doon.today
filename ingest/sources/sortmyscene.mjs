@@ -37,7 +37,9 @@ export function toEvent(e) {
     id: stableId('sortmyscene', url, e.rawStartTime),
     slug: slugify(title),
     title,
-    description: genres.length ? `Music: ${genres.join(', ')}.` : '',
+    // The list carries no description; the genres only inform the category, so a fuller copy from another
+    // source keeps its own text.
+    description: '',
     startAt: istTime(e.rawStartTime),
     ...(Number.isFinite(e.rawEndTime) && e.rawEndTime > e.rawStartTime ? { endAt: istTime(e.rawEndTime) } : {}),
     venue: { name: venue, address: '', city: 'Dehradun' },
@@ -75,10 +77,12 @@ export async function fetchSortMyScene({ fetchPage } = {}) {
   const listed = [];
   let pages = 0, more = true;
   while (more && pages < MAX_PAGES) {
-    const answer = JSON.parse(await get(`${API}?${new URLSearchParams({ page: String(pages), city: 'Dehradun' })}`));
+    const text = await get(`${API}?${new URLSearchParams({ page: String(pages), city: 'Dehradun' })}`);
+    let answer = null;
+    try { answer = JSON.parse(text); } catch {}
     if (!Array.isArray(answer?.events)) {
       const error = new Error('SortMyScene answered without an event list');
-      error.diagnostics = { pages, keys: Object.keys(answer || {}).slice(0, 10) };
+      error.diagnostics = { pages, keys: Object.keys(answer || {}).slice(0, 10), start: text.slice(0, 120) };
       throw error;
     }
     listed.push(...answer.events);
@@ -86,12 +90,14 @@ export async function fetchSortMyScene({ fetchPage } = {}) {
     more = answer.hasMore === true;
   }
   const events = listed.map(toEvent).filter(Boolean);
+  // The whole list was read, so an empty answer means nothing is on. A list cut off by the page cap isn't
+  // complete, and neither is one whose every event was unreadable (a format change, say): stored events stay.
+  const whole = !more && (listed.length === 0 || events.length > 0);
   return {
     source: 'sortmyscene',
     events,
-    // The whole list was read, so an empty answer means nothing is on; a list cut off by the page cap isn't.
-    complete: !more,
-    partial: more,
+    complete: whole,
+    partial: !whole,
     diagnostics: { pages, listed: listed.length, eventsParsed: events.length }
   };
 }
