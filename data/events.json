@@ -675,7 +675,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-05T00:09:04.423Z",
+        "checkedAt": "2026-11-06T00:08:51.437Z",
         "confidence": 0.95
       },
       {
@@ -692,8 +692,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-05T09:39:09.119Z",
-    "lastCheckedAt": "2026-11-05T09:39:09.119Z",
+    "lastSeenAt": "2026-11-06T00:08:51.437Z",
+    "lastCheckedAt": "2026-11-06T00:08:51.437Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -827,7 +827,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-05T00:09:04.419Z",
+        "checkedAt": "2026-11-06T00:08:51.436Z",
         "confidence": 0.95
       },
       {
@@ -843,8 +843,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-05T21:08:08.824Z",
-    "lastCheckedAt": "2026-11-05T21:08:08.824Z"
+    "lastSeenAt": "2026-11-06T00:08:51.436Z",
+    "lastCheckedAt": "2026-11-06T00:08:51.436Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -911,7 +911,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-05T00:09:04.423Z",
+        "checkedAt": "2026-11-06T00:08:51.432Z",
         "confidence": 0.95
       },
       {
@@ -927,8 +927,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-05T21:07:49.638Z",
-    "lastCheckedAt": "2026-11-05T21:07:49.638Z"
+    "lastSeenAt": "2026-11-06T00:08:51.432Z",
+    "lastCheckedAt": "2026-11-06T00:08:51.432Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -958,7 +958,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-05T00:09:04.423Z",
+        "checkedAt": "2026-11-06T00:08:51.435Z",
         "confidence": 0.95
       }
     ],
@@ -968,8 +968,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-05T00:09:04.423Z",
-    "lastCheckedAt": "2026-11-05T00:09:04.423Z"
+    "lastSeenAt": "2026-11-06T00:08:51.435Z",
+    "lastCheckedAt": "2026-11-06T00:08:51.435Z"
   },
   {
     "id": "f698989035ae2ed6",
@@ -1111,7 +1111,7 @@
     "id": "0ad74b3663c3e847",
     "slug": "dehradun-moto-fest-2026",
     "title": "Dehradun Moto Fest 2026",
-    "description": "Dehradun Moto Fest 2026 brings together the biking community for a celebration of brotherhood, music, and shared passion for riding. Connect with fellow riders from over 500 bikers across six biking clubs and enjoy an exciting lineup of live music, performances, and activities. An Opportunity To Connect With Fellow Bikers And Riding Communities.",
+    "description": "Dehradun Moto Fest 2026 brings together the biking community for a celebration of brotherhood, music, and shared passion for riding. Connect with fellow riders from over 500 bikers across six biking clubs and enjoy an exciting lineup of live music, performances, and activities. An Opportunity To Connect With Fellow Bikers And Riding Communities. Terms & Conditions:Right to Admission is Reserved by the Organizer. Entry only with valid ticket + ID proof. Organizer reserves the right to deny entry for misbehaviour, intoxication, or safety reasons, without refund.",
     "startAt": "2026-12-20T09:00:00.000Z",
     "endAt": "2026-12-20T13:00:00.000Z",
     "venue": {
@@ -1136,7 +1136,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-05T00:09:04.421Z",
+        "checkedAt": "2026-11-06T00:08:51.437Z",
         "confidence": 0.95
       },
       {
@@ -1152,8 +1152,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-05T21:07:49.639Z",
-    "lastCheckedAt": "2026-11-05T21:07:49.639Z"
+    "lastSeenAt": "2026-11-06T00:08:51.437Z",
+    "lastCheckedAt": "2026-11-06T00:08:51.437Z"
   },
   {
     "id": "2b6e7260a9346d9b",
