@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "3d318bb37d55438b",
+    "slug": "dehradun-this-weekend-nov-6-8-16-things-to-do-from-music-gigs-to-diwali-parties",
+    "title": "Dehradun this weekend (Nov 6-8): 16 things to do, from Music Gigs to Diwali Parties",
+    "description": "Put together everything happening in Dehradun this weekend, 16 things in all. The image has the posters; here's the same list as text: Friday 6 Nov 10 am: Virasat - the Festival of India at The Himalayan Cultural Centre (free) 7 pm: Vibe and Dine Friday with Bharti Chopra at Chica (₹2,000) 7 pm: Mukesh Live at My Bar Headquarters (free) 8 pm: Dhanteras Special with Devesh Chauhan at Basque 8 pm: DDLJ Diwali at Chica feat. Virat Munjal 8 pm: Ankit Live at Royal Den (free) 8 pm: Spotlight Friday w",
+    "startAt": "2026-11-06T06:30:00.000Z",
+    "venue": {
+      "name": "See community post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music",
+      "Fitness",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xp8881/dehradun_this_weekend_nov_68_16_things_to_do_from/",
+        "checkedAt": "2026-11-06T09:33:43.747Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-06T09:33:43.747Z",
+    "lastSeenAt": "2026-11-06T09:33:43.747Z",
+    "lastCheckedAt": "2026-11-06T09:33:43.747Z"
+  }
+]
