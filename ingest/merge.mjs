@@ -14,6 +14,7 @@ const SOURCE_RANK = {
   meetup: 85,
   gdg: 85,
   bookmyshow: 80,
+  sortmyscene: 78,
   allevents: 75,
   reddit: 50
 };

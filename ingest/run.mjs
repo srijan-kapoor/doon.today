@@ -9,10 +9,11 @@ import {fetchMeetup} from './sources/meetup.mjs';
 import {fetchGdg} from './sources/gdg.mjs';
 import {fetchInstagram} from './sources/instagram.mjs';
 import {fetchBookMyShow} from './sources/bookmyshow.mjs';
+import {fetchSortMyScene} from './sources/sortmyscene.mjs';
 import {mergeAndWrite} from './merge.mjs';
 import {adapterName,selectAdapters,recordAttempt,computeHealth,DEFAULT_MAX_AGE_HOURS,knownSources} from './lib/status.mjs';
 
-const allAdapters=[fetchDistrict,fetchAllEvents,fetchVirasat,fetchThrillZone,fetchLiteratureFestival,fetchMeetup,fetchGdg,fetchBookMyShow,fetchReddit,fetchInstagram];
+const allAdapters=[fetchDistrict,fetchAllEvents,fetchVirasat,fetchThrillZone,fetchLiteratureFestival,fetchMeetup,fetchGdg,fetchBookMyShow,fetchSortMyScene,fetchReddit,fetchInstagram];
 
 // INGEST_ONLY / INGEST_SKIP take comma-separated source names (e.g. INGEST_ONLY=district).
 // District rejects GitHub-hosted runners, so it runs from a separate job; every run only updates the
