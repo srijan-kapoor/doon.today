@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import { mergeAndWrite } from '../ingest/merge.mjs';
+import { inTempDir } from './helpers.mjs';
 import { LIST, aboutText, dehradunLinks, eventsFromPage, fetchBookMyShow, listingCards } from '../ingest/sources/bookmyshow.mjs';
 
 const PIZZA = 'https://in.bookmyshow.com/events/d9-presents-pizza-making-workshop/ET00524545';
@@ -51,8 +54,17 @@ test('the listing is asked for once its cards are there, then each Dehradun even
   const r = await fetchBookMyShow({ fetchPage });
   assert.deepEqual(asked, [[LIST, { text: 'onwards' }], [PIZZA, undefined]]);
   assert.equal(r.events.length, 1);
-  assert.equal(r.complete, true);
-  assert.equal(r.partial, false);
+  assert.deepEqual([r.complete, r.partial], [false, true], 'a run never claims the whole list');
+});
+
+test('an event missing from a short listing stays on the site', async (t) => {
+  await inTempDir(t);
+  const stored = eventsFromPage(pizzaPage, PIZZA)[0];
+  await mergeAndWrite([{ source: 'bookmyshow', events: [stored], partial: true }]);
+  const other = { ...stored, id: 'x', title: 'Another Workshop', startAt: '2026-11-29T16:00:00+05:30', endAt: undefined, sources: [{ ...stored.sources[0], url: TOUR }] };
+  for (let run = 0; run < 4; run++) await mergeAndWrite([await fetchBookMyShow({ fetchPage: async (url) => (url === LIST ? listing.replace('D9: Dehradun', 'D9 Dehradun') + card('/events/big-tour-kolkata/ET00000001', 'Another Workshop', 'Hall: Dehradun', 'Masterclass', '₹ 1 onwards') : ld(other)) })]);
+  const titles = JSON.parse(await fs.readFile('data/events.json', 'utf8')).map((e) => e.title);
+  assert.ok(titles.includes('D9 presents Pizza Making Workshop'), 'four runs without it did not remove it');
 });
 
 test('a listing that did not load is tried once more', async () => {
@@ -76,7 +88,7 @@ test('the listing gets more time than an event page, and a failed page is tried 
   const r = await fetchBookMyShow({ fetchPage, retryMs: 0 });
   assert.ok(timeouts[LIST] > 60_000);
   assert.equal(pizzaTries, 2);
-  assert.deepEqual([r.events.length, r.partial], [1, false]);
+  assert.equal(r.events.length, 1);
 });
 
 test('a run that missed pages, or saw no Dehradun card, is partial, so stored events stay', async () => {

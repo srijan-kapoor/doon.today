@@ -151,11 +151,11 @@ export async function fetchBookMyShow({ fetchPage, budgetMs = RUN_BUDGET_MS, ret
   return {
     source: 'bookmyshow',
     events,
-    // Only a run that read every Dehradun card's page has the whole list. Otherwise (a page failed or wasn't
-    // reached, or the listing showed no Dehradun card, which is likelier a half-loaded page than an empty city)
-    // stored events it didn't see are kept as they are.
-    complete: links.length > 0 && failed === 0 && skipped === 0,
-    partial: !(links.length > 0 && failed === 0 && skipped === 0),
+    // A run never knows it saw the whole list: the listing sometimes loads only part of its cards (23 of 31 on
+    // 4 Nov) and looks no different. So stored events it didn't see are kept; a cancelled one goes once its date
+    // has passed.
+    complete: false,
+    partial: true,
     diagnostics: { cards: cards.length, dehradunLinks: links.length, eventPagesFailed: failed, eventPagesSkipped: skipped, eventsParsed: events.length }
   };
 }
