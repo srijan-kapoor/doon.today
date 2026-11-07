@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "id": "144044846e9939a0",
+    "slug": "lost-luggage-on-delhi-dehradun-expressway",
+    "title": "Lost luggage on delhi dehradun expressway!",
+    "description": "Hey everyone, I'm posting this in a state of absolute panic. My bag fell off the luggage rack/boot of my taxi yesterday , 6 November 2026 , on the Delhi–Dehradun Expressway. • Exact Location: The area which connects the Baghpat Dhanpal petrol pump back to main expressway. • Time & Date: Around 8:00-8:30 PM, yesterday • Bag Details: Blue Greenish school bag , fully packed with lots of books and notes of utmost importance,(my entire preparation of upcoming entrance exam It contains multiple small ",
+    "startAt": "2026-11-06T06:30:00.000Z",
+    "venue": {
+      "name": "See community post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Books"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xq4eqq/lost_luggage_on_delhi_dehradun_expressway/",
+        "checkedAt": "2026-11-07T18:53:51.266Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-07T18:53:51.266Z",
+    "lastSeenAt": "2026-11-07T18:53:51.266Z",
+    "lastCheckedAt": "2026-11-07T18:53:51.266Z"
+  }
+]

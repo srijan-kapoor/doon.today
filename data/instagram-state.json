@@ -12,7 +12,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri39f1l7e2j53j3",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -33,7 +36,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri3jk2aqlkbnbu7",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -45,7 +51,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri3qeow6fo7kqz",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -71,13 +80,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri40q2qnofq3mj8",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
       "lastError": "",
       "seen": [],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri4871dx9fu5yfb",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -89,7 +104,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri5l22kvu2zf1ia",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -120,7 +138,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri5x2omqb08rxc",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -137,7 +158,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri63d1lb9wkvan8",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -151,7 +175,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri6c51ftxn431xi",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -168,7 +195,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri6iirmqnsla0q",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -184,7 +214,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri7yyfmmfh1fgw",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -209,7 +242,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri87vvxewrzi5t",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -235,7 +271,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri8w41ij8reh10g",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
@@ -244,10 +283,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw6ri91v1r0nhsdglw",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw6ri9g5bnqn81hf9",
+        "startedAt": "2026-11-07T18:53:54.133Z"
+      },
       "lastFetchedAt": "2026-11-06T20:33:27.287Z",
       "lastError": "",
       "seen": [
@@ -274,11 +319,8 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mw66767m2fchlycpoi",
-        "startedAt": "2026-11-07T08:57:33.715Z"
-      },
-      "lastFetchedAt": "2026-11-06T09:33:44.204Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-07T18:53:54.133Z",
       "lastError": "",
       "seen": [
         "4009848031614033860",
@@ -287,11 +329,8 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mw6676gnq7sdlzieh",
-        "startedAt": "2026-11-07T08:57:33.715Z"
-      },
-      "lastFetchedAt": "2026-11-06T09:33:44.204Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-07T18:53:54.133Z",
       "lastError": "",
       "seen": [
         "4013588672830211627"
@@ -299,66 +338,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mw0i4sv51s74a845fm",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4t2v24j8x31fqa",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4t9n1tzvgobbqa",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4tgrbzsupp8kh",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4tru2nwp8dl1l8",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4tx526w7xdwp22",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4u3a1u2jscbzft",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4u9710o2mjtt3f",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4ued11fffphofq",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4ukv20l0s8wu2m",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4v8l1kh3oc7kvf",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4ve31kozadnoll",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4vz426o80f673j",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4w511o9a9pjy51",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "sd_mw0i4wbg24vknqfqpd",
-      "at": "2026-11-03T20:35:57.909Z"
-    },
     {
       "id": "sd_mw1x079o20zxnlbvqp",
       "at": "2026-11-04T20:55:03.698Z"
@@ -494,6 +473,14 @@
     {
       "id": "sd_mw4s1xrem5liglidt",
       "at": "2026-11-06T20:33:27.287Z"
+    },
+    {
+      "id": "sd_mw66767m2fchlycpoi",
+      "at": "2026-11-07T18:53:54.133Z"
+    },
+    {
+      "id": "sd_mw6676gnq7sdlzieh",
+      "at": "2026-11-07T18:53:54.133Z"
     }
   ],
   "candidates": [
@@ -540,95 +527,6 @@
       "firstSeenAt": "2026-11-03T20:35:57.909Z",
       "lastSeenAt": "2026-11-03T20:35:57.909Z",
       "lastCheckedAt": "2026-11-03T20:35:57.909Z"
-    },
-    {
-      "id": "22108a0f5b694e47",
-      "slug": "chapter-43-the-whispers-of-dhaulas",
-      "title": "Chapter 43 — The Whispers of Dhaulas",
-      "description": "🌿 DOON WALKERS PRESENTS\n🏔️ CHAPTER 43 — THE WHISPERS OF DHAULAS\n\nWhere the forest speaks, and the world slows down.\n\nNot every adventure needs a mountain peak. Sometimes, all you need is a quiet trail, a forest full of life, and a little time away from the usual routine.\n\nThis Saturday, we’re heading towards Dhaulas, near Mandu Siddh Temple, for a peaceful walk through the woods, alongside a dry riverbed, surrounded by nature.\n\nA morning to slow down, explore a different side of Doon, connect with people, and enjoy the little things along the way. 🌳\n\n📍 EVENT DETAILS\n\n📅 Date: 7 November 2026 (Saturday)\n📌 Meeting Point: ONGC Chowk\n⏰ Reporting Time: 5:45 AM\n🚶 Departure: 6:00 AM sharp\n🥾 Trail Distance: Approx. 6–7 KM (to and fro)\n🏁 Expected Completion: Around 9:00 AM\n\n🚗 IMPORTANT\n• O",
-      "startAt": "2026-11-07T05:45:00+05:30",
-      "endAt": "2026-11-07T09:00:00+05:30",
-      "venue": {
-        "name": "Mandu Siddh Temple Trail, Dhaulas (meet at ONGC Chowk)",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Registration link in bio; own vehicle mandatory",
-      "organizer": "doon_walkers",
-      "posts": [
-        "https://www.instagram.com/p/DfR6JhlSJXD"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfR6JhlSJXD",
-          "checkedAt": "2026-11-05T09:39:56.389Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastCheckedAt": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "4e5a92e2588ec8fc",
-      "slug": "celebrate-kukur-tihar-with-us",
-      "title": "Celebrate Kukur Tihar With Us",
-      "description": "Kukur Diwas, also known as Kukur Tihar, is a Nepali tradition where dogs are celebrated for their loyalty and unconditional love.\n\nThis time, we are celebrating the day by coming together for dogs in need. 🐶\n\n❤️ Free Entry! 🐾\nBring dog food, treats or essentials if you can.\n\nIf you can't join then you can still contribute towards the NGO.\n\nComment \"Link\" for more details. Limited slots so book your slot soon.\n\n(Dog event, kukur tihar, kukur diwas, dog lover, dehradun, dehradun dog lover, dog, street dogs, ngo, dog lovers, dehradun dog event)",
-      "startAt": "2026-11-07T11:30:00+05:30",
-      "endAt": "2026-11-07T14:00:00+05:30",
-      "venue": {
-        "name": "Samarth India dog home, Phulsaini",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Culture",
-        "Meetups"
-      ],
-      "pricing": {
-        "type": "free",
-        "currency": "INR"
-      },
-      "howToJoin": "Comment \"Link\" on the post for details; limited slots",
-      "organizer": "dehradun_hangouts",
-      "posts": [
-        "https://www.instagram.com/p/DfUUen9sIfH"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfUUen9sIfH",
-          "checkedAt": "2026-11-05T09:39:56.389Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastSeenAt": "2026-11-05T09:39:56.389Z",
-      "lastCheckedAt": "2026-11-05T09:39:56.389Z"
     }
   ]
 }
