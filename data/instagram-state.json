@@ -274,7 +274,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw66767m2fchlycpoi",
+        "startedAt": "2026-11-07T08:57:33.715Z"
+      },
       "lastFetchedAt": "2026-11-06T09:33:44.204Z",
       "lastError": "",
       "seen": [
@@ -284,7 +287,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw6676gnq7sdlzieh",
+        "startedAt": "2026-11-07T08:57:33.715Z"
+      },
       "lastFetchedAt": "2026-11-06T09:33:44.204Z",
       "lastError": "",
       "seen": [
