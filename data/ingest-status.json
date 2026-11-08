@@ -1,7 +1,16 @@
 {
-  "ranAt": "2026-11-08T00:08:14.752Z",
+  "ranAt": "2026-11-08T09:08:31.831Z",
   "ran": [
-    "district"
+    "allevents",
+    "virasat",
+    "thrillzone",
+    "literaturefestival",
+    "meetup",
+    "gdg",
+    "bookmyshow",
+    "sortmyscene",
+    "reddit",
+    "instagram"
   ],
   "sources": {
     "district": {
@@ -32,11 +41,11 @@
         "flaggedForReview": 2,
         "eventPagesFetched": 19,
         "pricesFound": 0,
-        "timesFound": 18,
+        "timesFound": 17,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -48,20 +57,20 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
       "status": "ok",
-      "events": 1,
+      "events": 2,
       "review": 0,
       "diagnostics": {
-        "cards": 8,
-        "eventsParsed": 1
+        "cards": 12,
+        "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -72,8 +81,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -81,22 +90,22 @@
       "events": 1,
       "review": 0,
       "diagnostics": {
-        "candidates": 1,
+        "candidates": 4,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "reddit": {
       "status": "ok",
       "events": 0,
-      "review": 1,
+      "review": 0,
       "diagnostics": {
-        "candidates": 1
+        "candidates": 0
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -108,8 +117,8 @@
         "listed": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -118,10 +127,10 @@
       "review": 1,
       "diagnostics": {
         "handles": 17,
-        "collected": 2,
-        "started": 15,
+        "collected": 15,
+        "started": 0,
         "abandoned": 0,
-        "read": 0,
+        "read": 7,
         "announcements": 0,
         "alreadyListed": 0,
         "readErrors": 0,
@@ -129,27 +138,29 @@
         "skippedForBudget": 0,
         "failedAccounts": [],
         "tokens": {
-          "input": 0,
-          "output": 0,
+          "input": 14333,
+          "output": 829,
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     },
     "bookmyshow": {
-      "status": "failed",
-      "error": "Error: Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards\n    at file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:109:44\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchBookMyShow (file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:121:30)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:38:13",
+      "status": "ok",
+      "events": 11,
+      "review": 0,
       "diagnostics": {
-        "listingTries": [
-          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards",
-          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards"
-        ]
+        "cards": 22,
+        "dehradunLinks": 12,
+        "eventPagesFailed": 0,
+        "eventPagesSkipped": 0,
+        "eventsParsed": 11
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T08:54:33.837Z",
-      "consecutiveFailures": 1
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
+      "consecutiveFailures": 0
     },
     "sortmyscene": {
       "status": "ok",
@@ -160,13 +171,13 @@
         "listed": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-11-07T18:51:37.073Z",
-      "lastSuccessAt": "2026-11-07T18:51:37.073Z",
+      "lastAttemptAt": "2026-11-08T09:08:31.831Z",
+      "lastSuccessAt": "2026-11-08T09:08:31.831Z",
       "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 28,
+    "published": 30,
     "review": 1,
     "dropped": 0
   },
@@ -180,7 +191,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-11-08T00:08:14.752Z",
-      "ageHours": 0,
+      "ageHours": 9,
       "fresh": true
     }
   }
