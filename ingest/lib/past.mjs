@@ -6,7 +6,7 @@ import { eventPassesGeo } from './utils.mjs';
 
 export const PAST_PATH = 'data/past-events.json';
 // How long an ended event keeps its page, counted from its last day.
-export const KEEP_DAYS = 90;
+export const KEEP_DAYS = 30;
 const DAY_MS = 24 * 3600_000;
 
 /** When an event was over: its end, or its last session's start, or its start. */
