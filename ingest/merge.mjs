@@ -58,9 +58,24 @@ function verificationStatus(sources=[]) {
   if (community || (providers.size === 1 && providers.has('reddit'))) return 'community-reported';
   return 'review';
 }
+// Titles and venues a person wrote: a form entry or a group's post. Two people describe one event in their own
+// words ("Kukur diwas" at "Samarth NGO", "Celebrate Kukur Tihar With Us" at "Samarth India dog home").
+const FREEFORM = new Set(['manual','instagram','reddit']);
+const isFreeform = (e) => (e.sources||[]).length > 0 && e.sources.every(s => FREEFORM.has(s.provider));
+// Words that say nothing about which event it is: the city and nearby places, and generic event and venue words.
+const COMMON_WORDS = new Set(['dehradun','doon','dehra','mussoorie','landour','rajpur','uttarakhand','india','road',
+  'event','events','session','sessions','meetup','meet','club','community','workshop','night','evening','morning','live','show',
+  'open','with','from','your','this','that','join','celebrate','presents','edition','festival','party','cafe','hall','house',
+  'centre','center','studio','school','park','hotel','resort','venue','announced']);
+const longWords = (s='') => new Set([...tokens(s)].filter(w => w.length >= 4 && !/^\d+$/.test(w) && !COMMON_WORDS.has(w)));
+const shareWord = (a,b) => { const B=longWords(b); return [...longWords(a)].some(w => B.has(w)); };
+const sameTimes = (a,b) => sameMinute(a.startAt,b.startAt) && (a.endAt ? Boolean(b.endAt) && sameMinute(a.endAt,b.endAt) : !b.endAt);
+
 export function sameEvent(a,b) {
   if (!a?.startAt || !b?.startAt) return false;
   if (istDay(a.startAt) !== istDay(b.startAt)) return false;
+  // Two hand-written copies match on the exact start and end, one shared word in the title and one in the venue.
+  if (isFreeform(a) && isFreeform(b) && sameTimes(a,b) && shareWord(a.title,b.title) && shareWord(a.venue?.name,b.venue?.name)) return true;
   const titleScore=similarity(a.title,b.title);
   const venueScore=venueSimilarity(a.venue?.name,b.venue?.name);
   const venueMatches=venueScore >= 0.5 || isPlaceholderVenue(a.venue?.name) || isPlaceholderVenue(b.venue?.name);
@@ -133,6 +148,34 @@ function withArea(e) {
   if (e.venue?.area) return e;
   const area=areaFromText(`${e.venue?.address||''} ${e.venue?.name||''}`);
   return area ? {...e, venue:{...e.venue, area}} : e;
+}
+
+/**
+ * Gives every event its own page address. Different events can share a title (a comedian's shows on two dates,
+ * at two venues), and so a slug: the one seen first keeps it, the others get their date added
+ * ("daru-badnaam-2026-12-06"). Stored events keep the slug they were given, so the addresses stay put.
+ */
+export function withUniqueSlugs(list, past=[]) {
+  // An ended event keeps its page for a while (ingest/lib/past.mjs), so its slug isn't free for a new event.
+  const pastIds=new Map(past.map(e => [e.slug, e.id]));
+  const groups=Map.groupBy(list, e => e.slug);
+  const taken=new Set([...list.map(e => e.slug), ...pastIds.keys()]);
+  // An event with no firstSeenAt counts as newest, so it never takes a slug from one already stored.
+  const seen=(e) => String(e.firstSeenAt || '\uffff');
+  for (const [slug, group] of groups) {
+    const ordered=[...group].sort((a,b) => seen(a).localeCompare(seen(b)) || String(a.id).localeCompare(String(b.id)));
+    const owner=pastIds.has(slug) && pastIds.get(slug) !== ordered[0].id ? null : ordered[0];
+    const rest=ordered.filter(e => e !== owner);
+    if (!rest.length) continue;
+    for (const e of rest) {
+      const base=`${e.slug}-${istDay(e.startAt)}`;
+      let slug=base;
+      for (let n=2; taken.has(slug); n++) slug=`${base}-${n}`;
+      taken.add(slug);
+      e.slug=slug;
+    }
+  }
+  return list;
 }
 
 // An event is dropped after this many successful runs of all of its sources without it appearing.
@@ -321,6 +364,7 @@ export async function mergeAndWrite(sourceResults) {
     .map(withOrderedVenue)
     .map(e => ({...e, categories: isHandChecked(e) ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
     .sort(compareForOutput);
+  withUniqueSlugs(out, await readJson(PAST_PATH,[]));
 
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');

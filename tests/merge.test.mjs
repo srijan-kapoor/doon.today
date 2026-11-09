@@ -367,3 +367,32 @@ test('a District-only run and a full run write the same file when no event chang
   assert.equal(first.id,'d','events at the same time are ordered by id');
   assert.deepEqual(Object.keys(second.venue),['name','address','city','area','geo','geoFrom']);
 });
+
+test('two hand-written copies of one event match on exact times and a shared word in title and venue', async () => {
+  const { sameEvent } = await import('../ingest/merge.mjs');
+  const form = { title: 'Kukur diwas', startAt: '2026-11-07T11:30:00+05:30', endAt: '2026-11-07T14:00:00+05:30', venue: { name: 'Samarth NGO' }, sources: [{ provider: 'manual', url: 'https://forms.gle/x' }] };
+  const post = { title: 'Celebrate Kukur Tihar With Us', startAt: '2026-11-07T11:30:00+05:30', endAt: '2026-11-07T14:00:00+05:30', venue: { name: 'Samarth India dog home, Phulsaini' },
+    sources: [{ provider: 'manual', url: 'https://www.instagram.com/p/x' }, { provider: 'instagram', url: 'https://www.instagram.com/p/x' }] };
+  assert.equal(sameEvent(form, post), true);
+  assert.equal(sameEvent(form, { ...post, endAt: '2026-11-07T15:00:00+05:30' }), false, 'a different end time');
+  assert.equal(sameEvent(form, { ...post, title: 'Dog adoption camp' }), false, 'no word in common');
+  assert.equal(sameEvent(form, { ...post, sources: [{ provider: 'allevents', url: 'https://allevents.in/x' }] }), false, 'a listing site names events its own way');
+});
+
+test('events sharing a slug each get their own, and keep it', async () => {
+  const { withUniqueSlugs } = await import('../ingest/merge.mjs');
+  const show = (id, startAt, firstSeenAt) => ({ id, slug: 'daru-badnaam', startAt, firstSeenAt });
+  const list = withUniqueSlugs([show('b', '2026-12-06T18:00:00+05:30', '2026-11-02'), show('a', '2026-11-15T16:00:00+05:30', '2026-10-20'), show('c', '2026-11-15', '2026-11-05')]);
+  assert.deepEqual(list.map((e) => e.slug), ['daru-badnaam-2026-12-06', 'daru-badnaam', 'daru-badnaam-2026-11-15'], 'the first seen keeps the plain slug');
+  assert.deepEqual(withUniqueSlugs(list).map((e) => e.slug), list.map((e) => e.slug), 'stable on the next run');
+  const [unseen] = withUniqueSlugs([{ id: 'n', slug: 'quiz', startAt: '2026-12-01' }, { id: 'o', slug: 'quiz', startAt: '2026-11-20', firstSeenAt: '2026-11-01' }]);
+  assert.equal(unseen.slug, 'quiz-2026-12-01', 'an event with no first-seen time never takes a stored slug');
+  const [reused] = withUniqueSlugs([{ id: 'new', slug: 'quiz', startAt: '2026-12-01', firstSeenAt: '2026-11-09' }], [{ id: 'old', slug: 'quiz' }]);
+  assert.equal(reused.slug, 'quiz-2026-12-01', 'an ended event keeps its page address');
+});
+
+test('common words alone never make two hand-written events one', async () => {
+  const { sameEvent } = await import('../ingest/merge.mjs');
+  const post = (title, venue) => ({ title, startAt: '2026-11-21T18:00:00+05:30', endAt: '2026-11-21T20:00:00+05:30', venue: { name: venue }, sources: [{ provider: 'instagram', url: `https://www.instagram.com/p/${title}` }] });
+  assert.equal(sameEvent(post('Poetry night at the club', 'Cafe Ivy, Dehradun'), post('Sunday community session: board games', 'Tapri Cafe, Dehradun')), false);
+});
