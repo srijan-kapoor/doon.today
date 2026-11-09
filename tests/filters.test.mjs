@@ -253,3 +253,10 @@ test("a festival's sessions on a day fold into one row, and filters still count 
   $('[data-quick-category="books"]').click();
   assert.equal(group.hidden, true);
 });
+
+test('this weekend is the coming Saturday and Sunday, or just Sunday on a Sunday', async () => {
+  const { weekendDays } = await import('../src/lib/filters.mjs');
+  assert.deepEqual(weekendDays('2026-11-09'), ['2026-11-14', '2026-11-15'], 'Monday');
+  assert.deepEqual(weekendDays('2026-11-14'), ['2026-11-14', '2026-11-15'], 'Saturday');
+  assert.deepEqual(weekendDays('2026-11-15'), ['2026-11-15'], 'Sunday');
+});

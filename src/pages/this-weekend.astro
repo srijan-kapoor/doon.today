@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EventRow from '../components/EventRow.astro';
+import { events } from '../data/events';
+import { istDay, compareEventStarts, eventDayRange } from '../lib/dates.mjs';
+import { communityFirst } from '../lib/community.mjs';
+import { weekendDays } from '../lib/filters.mjs';
+import { runsOn } from '../lib/month-dates.mjs';
+
+// A page for "things to do in Dehradun this weekend". It is rebuilt with every data refresh, so it always
+// shows the coming Saturday and Sunday (only Sunday once Saturday has passed). An event running on both days
+// is listed under the first.
+const today = istDay(new Date().toISOString());
+const days = weekendDays(today);
+const listed = events.filter((e) => e.curation.status === 'published').sort(compareEventStarts);
+const firstWeekendDay = (event: (typeof events)[number]) => days.find((day) => runsOn(eventDayRange(event), day));
+const grouped = days
+  .map((day) => [day, communityFirst(listed.filter((e) => firstWeekendDay(e) === day))] as const)
+  .filter(([, list]) => list.length > 0);
+const count = grouped.reduce((n, [, list]) => n + list.length, 0);
+
+const dayFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Asia/Kolkata' });
+const shortFmt = new Intl.DateTimeFormat('en-IN', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
+const asDate = (day: string) => new Date(`${day}T12:00:00+05:30`);
+const span = days.map((day) => shortFmt.format(asDate(day))).join(' – ');
+const pageUrl = new URL('/this-weekend/', Astro.site).href;
+const description = count
+  ? `${count === 1 ? '1 thing' : `${count} things`} to do in Dehradun this weekend (${span}): ${[...new Set(grouped.flatMap(([, list]) => list.flatMap((e) => e.categories)))].slice(0, 4).join(', ').toLowerCase()} and more, with times, venues and prices.`
+  : `Things to do in Dehradun this weekend (${span}), with times, venues and prices.`;
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `This weekend in Dehradun (${span})`,
+  url: pageUrl,
+  itemListElement: grouped.flatMap(([, list]) => list).map((e, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/events/${e.slug}/`, Astro.site).href, name: e.title }))
+};
+---
+<BaseLayout title="This weekend in Dehradun — doon.today" description={description} jsonLd={itemList}>
+  <section class="curated weekend-page">
+    <h1>This weekend in Dehradun</h1>
+    <p class="weekend-span">{span} · {count === 1 ? '1 event' : `${count} events`}</p>
+    {grouped.map(([day, list]) => (
+      <section class="day-group" data-date={day}>
+        <h2>{dayFmt.format(asDate(day))}</h2>
+        {list.map((event) => <EventRow event={event} today={today} />)}
+      </section>
+    ))}
+    {count === 0 && <p>Nothing is listed for this weekend yet. Know of something? <a class="primary-link" href="/submit/">Submit an event</a>.</p>}
+    <p id="weekend-over" hidden>This weekend's events have passed. The next weekend's list appears with the next update.</p>
+    <p class="weekend-more"><a class="primary-link" href="/">See all upcoming events</a> · <a class="primary-link" href="/calendars/">Add Dehradun events to your calendar</a></p>
+  </section>
+  <script is:inline>
+    // The page is rebuilt twice a day, so between builds a day can pass: hide days already over in Dehradun.
+    (function () {
+      var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date());
+      var groups = document.querySelectorAll('.weekend-page .day-group[data-date]');
+      var left = 0;
+      groups.forEach(function (g) { if (g.dataset.date < today) g.hidden = true; else left++; });
+      if (groups.length && !left) document.getElementById('weekend-over').hidden = false;
+    })();
+  </script>
+</BaseLayout>
