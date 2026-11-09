@@ -12,6 +12,11 @@ test('the card says when: day and time, or the day alone', () => {
   assert.equal(cardWhen(event({ startAt: '2026-12-05' })), 'Sat, 5 Dec');
 });
 
+test('a venue named after the city does not repeat it', async () => {
+  const { cardWhere } = await import('../src/lib/og.mjs');
+  assert.equal(cardWhere(event({ venue: { name: 'Law Prep Tutorial : Dehradun', area: 'Garhi Cantt' } })), 'Law Prep Tutorial · Garhi Cantt · Dehradun');
+});
+
 test('the card is a 1200 by 630 PNG, even for a very long title', async () => {
   for (const e of [event(), event({ title: 'A'.repeat(40) + ' ' + 'very long event title '.repeat(8), pricing: { type: 'free' } })]) {
     const png = await eventCard(e);

@@ -32,6 +32,12 @@ export function cardWhen(e) {
   return text;
 }
 
+/** Venue, area and city. Listing sites often end a venue's name with the city ("IRDT Auditorium: Dehradun"); it's said once. */
+export function cardWhere(e) {
+  const venue = String(e.venue?.name || '').replace(/\s*[:,-]\s*dehradun$/i, '');
+  return clip([venue, e.venue?.area, 'Dehradun'].filter(Boolean).join(' · '), 70);
+}
+
 /** A smaller title for a longer name, so it fits in three lines. */
 const titleSize = (title) => (title.length <= 28 ? 84 : title.length <= 48 ? 68 : title.length <= 72 ? 56 : 46);
 const clip = (text, max) => (text.length <= max ? text : `${text.slice(0, max - 1).replace(/\s+\S*$/, '')}…`);
@@ -41,7 +47,7 @@ const el = (type, style, children) => ({ type, props: { style, children } });
 /** The card as a PNG buffer. */
 export async function eventCard(e) {
   const title = clip(e.title, 96);
-  const where = clip([e.venue?.name, e.venue?.area, 'Dehradun'].filter(Boolean).join(' · '), 70);
+  const where = cardWhere(e);
   // The bundled font subsets have no rupee sign, so the card writes Rs.
   const price = priceLabel(e.pricing)?.replace(/₹\s*/g, 'Rs ');
   const tree = el('div', { width: CARD.width, height: CARD.height, display: 'flex', flexDirection: 'column', background: PAPER, borderTop: `14px solid ${GREEN}`, padding: '64px 88px', fontFamily: 'Sans' }, [
