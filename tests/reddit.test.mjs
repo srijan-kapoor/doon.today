@@ -25,6 +25,15 @@ test('a request with a time or a sign-up link is still a lead', () => {
   assert.equal(judgePost({ ...quiz, content: 'Quiz night in Dehradun, any suggestions for team names?' }).skip, 'asks for help ("Looking for")');
 });
 
+test('word choices: a traffic jam or ticket resale is not an event; a room number or a book launch is fine', () => {
+  const post = (title) => judgePost({ title, content: 'In Dehradun.', postedAt: POSTED });
+  assert.ok(post('Traffic jam on 5 Nov').skip);
+  assert.ok(post('Selling 2 tickets, concert on 5 Nov').skip);
+  assert.ok(post('Workshop at Room 101 on 5 Nov').date);
+  assert.ok(post('Book launch on 5 Nov').date);
+  assert.ok(post('Doon fest on 5 Nov').date);
+});
+
 test('the date must be within 60 days of the post, and rolls into next year after December', () => {
   assert.equal(judgePost({ ...art, content: art.content.replace('24th October', '24th March') }).skip, 'date not within 60 days of the post');
   assert.equal(explicitDate('see you on 5 Jan', Date.parse('2026-12-20T00:00:00Z')).slice(0, 10), '2027-01-05');

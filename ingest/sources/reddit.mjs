@@ -21,13 +21,15 @@ export function explicitDate(text, postedAt=Date.now()){
 }
 
 // Whole words, so "trek" doesn't match "trekking".
-const EVENT_WORDS=wordMatcher(['event','meetup','meet up','meet and greet','workshop','festival','walk','run','book club','screening',
-  'concert','open mic','exhibition','heritage walk','hike','trek','club','jam','jam session','quiz','game night','gig','tournament']);
+const EVENT_WORDS=wordMatcher(['event','meetup','meet up','meet and greet','workshop','festival','fest','walk','run','marathon',
+  'book club','book launch','book fair','screening','concert','open mic','exhibition','heritage','hike','trek','club','jam session',
+  'quiz','game night','gig','tournament','comedy','stand up','show','talk','seminar','party','performance']);
 // Posts asking for help, or about housing, jobs or services, are not events.
 const REQUEST=/\b(looking for|suggest(?:ion)?s?|recommend(?:ation)?s?|help me (?:plan|find)|itinerary|any (?:leads|ideas|tips)|where (?:can|should) i)\b/i;
-const NOT_EVENT=wordMatcher(['flat','room','pg','rent','1bhk','2bhk','3bhk','flatmate','hiring','job','vacancy','internship','for sale','selling','tuition']);
+const NOT_EVENT=wordMatcher(['flat for rent','room for rent','pg','rent','1bhk','2bhk','3bhk','flatmate','hiring','job','vacancy','internship','for sale','selling','tuition']);
 // Details only an event announcement has: a clock time, or a link to tickets or a sign-up form.
-const STRONG=/\b\d{1,2}(?::\d{2})?\s?(?:am|pm)\b|forms\.gle|docs\.google\.com\/forms|bit\.ly|insider\.in|district\.in|bookmyshow\.com|allevents\.in|meetup\.com|tickets?\b/i;
+// "Tickets" alone doesn't count: people sell and ask for them too.
+const STRONG=/\b\d{1,2}(?::\d{2})?\s?(?:am|pm)\b|forms\.gle|docs\.google\.com\/forms|bit\.ly|insider\.in|district\.in|bookmyshow\.com|allevents\.in|meetup\.com/i;
 
 /**
  * Whether a post looks like an event in Dehradun: a date within 60 days of the post, Dehradun named, and an event
