@@ -10,13 +10,16 @@ interface Props {
   type?: 'website' | 'article';
   /** schema.org JSON-LD objects to embed. */
   jsonLd?: object | object[];
+  /** Keeps the page out of search results (an ended event's page). */
+  noindex?: boolean;
 }
 const {
   title = 'doon.today',
   description = 'A calendar of things happening in Dehradun.',
   image = '/og-default.png',
   type = 'website',
-  jsonLd
+  jsonLd,
+  noindex = false
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(image, Astro.site);
@@ -37,6 +40,7 @@ const updated = updatedLabel();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
     <meta name="theme-color" content="#f6f1e8" />
     <!-- Applies a saved dark theme before anything draws, so a reload never flashes light. Same key as src/lib/theme.mjs. -->
     <script is:inline data-theme-boot>try { if (localStorage.getItem('doon.theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { events } from '../../../data/events';
+import { events, pastEvents } from '../../../data/events';
 import { ingestStatus } from '../../../data/status';
 import { googleDateRange, toInstant } from '../../../lib/ics.mjs';
 import { occurrencesOf, istTime } from '../../../lib/dates.mjs';
@@ -10,10 +10,19 @@ import { eventAbout } from '../../../lib/feedback.mjs';
 import { descriptionParagraphs } from '../../../lib/details.mjs';
 
 export function getStaticPaths() {
-  return events.filter(e => e.curation.status === 'published').map((event) => ({ params: { slug: event.slug }, props: { event } }));
+  const listed = events.filter(e => e.curation.status === 'published');
+  // An ended event keeps its page, so links to it don't break; it points to what's on next.
+  const next = (event: (typeof pastEvents)[number]) => {
+    const shared = listed.filter((e) => e.categories.some((c) => event.categories.includes(c)));
+    return (shared.length ? shared : listed).slice(0, 3);
+  };
+  return [
+    ...listed.map((event) => ({ params: { slug: event.slug }, props: { event, ended: false, upcoming: [] } })),
+    ...pastEvents.map((event) => ({ params: { slug: event.slug }, props: { event, ended: true, upcoming: next(event) } }))
+  ];
 }
 
-const { event } = Astro.props;
+const { event, ended, upcoming } = Astro.props;
 const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(event.startAt);
 const start = toInstant(event.startAt);
 const date = new Intl.DateTimeFormat('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata' }).format(
@@ -50,12 +59,19 @@ const detailsLabel = detailsLinkLabel(primarySource);
   title={eventPageTitle(event.title)}
   description={summary}
   type="article"
-  jsonLd={eventJsonLd(event, { pageUrl, imageUrl })}
+  jsonLd={ended ? undefined : eventJsonLd(event, { pageUrl, imageUrl })}
+  noindex={ended}
 >
   <article class="detail">
     <a class="back" href="/">← Events</a>
     <p class="eyebrow">{event.categories.join(' · ')}</p>
     <h1>{event.title}</h1>
+    {ended && (
+      <div class="notice event-ended">
+        <p><strong>This event has ended.</strong> <a href="/">See what's on in Dehradun</a></p>
+        {upcoming.length > 0 && <ul>{upcoming.map((e) => <li><a href={`/events/${e.slug}/`}>{e.title}</a></li>)}</ul>}
+      </div>
+    )}
     <dl>
       <div><dt>When</dt><dd>{sessionLabels ? sessionLabels.map((label, i) => <>{i > 0 ? <br /> : null}{label}</>) : <>{date}<br />{time}</>}</dd></div>
       <div><dt>Where</dt><dd>{event.venue.name}{address ? <><br />{address}</> : null}{event.venue.area && !`${event.venue.name} ${address ?? ''}`.toLowerCase().includes(event.venue.area.toLowerCase()) ? <><br />{event.venue.area}</> : null}</dd></div>
@@ -66,11 +82,11 @@ const detailsLabel = detailsLinkLabel(primarySource);
 
     {event.description && <div class="event-description">{descriptionParagraphs(event.description).map((paragraph) => <p>{paragraph}</p>)}</div>}
 
-    <div class="event-actions" style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem">
+    {!ended && <div class="event-actions" style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem">
       <a class="primary-link" href={`/events/${event.slug}.ics`}>Add to calendar</a>
       <a class="primary-link" href={googleCalendarUrl} target="_blank" rel="noreferrer">Google Calendar ↗</a>
       {detailsLabel && <a class="primary-link" href={primarySource.url} target="_blank" rel="noreferrer">{detailsLabel} ↗</a>}
-    </div>
+    </div>}
 
     <div class="source-block">
       <h2>Where this comes from</h2>

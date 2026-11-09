@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { events } from '../data/events';
+
+// Netlify serves this for any missing page, so a broken or old link still leads to what's on.
+const upcoming = events.filter((e) => e.curation.status === 'published').slice(0, 5);
+---
+<BaseLayout title="Page not found — doon.today" description="This page isn't here. See what's happening in Dehradun." noindex>
+  <article class="detail">
+    <h1>This page isn't here.</h1>
+    <p>It may be an event that ended a while ago, or a link that changed.</p>
+    {upcoming.length > 0 && (
+      <>
+        <h2>Coming up in Dehradun</h2>
+        <ul>{upcoming.map((e) => <li><a href={`/events/${e.slug}/`}>{e.title}</a></li>)}</ul>
+      </>
+    )}
+    <p><a class="primary-link" href="/">See all events</a></p>
+  </article>
+</BaseLayout>

@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { slugify, eventPassesGeo, areaFromText, isPlaceholderVenue, isPlaceholderDescription, currentCategories, withAddedCategories } from './lib/utils.mjs';
 import { readJson, CURATED_PATH, DECISIONS_PATH, QUEUE_PATH, pendingCandidates } from './lib/review.mjs';
 import { isThinListing } from './sources/allevents.mjs';
+import { PAST_PATH, pastEvents } from './lib/past.mjs';
 import { DATE_ONLY, istDay, compareEventStarts, isUnexpiredEvent, occurrencesOf, toInstant } from '../src/lib/dates.mjs';
 export { istDay } from '../src/lib/dates.mjs';
 
@@ -323,6 +324,9 @@ export async function mergeAndWrite(sourceResults) {
 
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');
+  // Ended events keep their page for a while (see ingest/lib/past.mjs).
+  const past=pastEvents({ kept: await readJson(PAST_PATH,[]), previous, listed: out, rejected, now });
+  await fs.writeFile(PAST_PATH,JSON.stringify(past,null,2)+'\n');
 
   // The review queue holds candidates from several sources (Reddit posts, thin AllEvents listings). Each
   // source that ran replaces its own candidates; a source that didn't run (a District-only run, a failed
