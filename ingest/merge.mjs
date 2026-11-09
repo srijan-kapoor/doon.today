@@ -62,7 +62,12 @@ function verificationStatus(sources=[]) {
 // words ("Kukur diwas" at "Samarth NGO", "Celebrate Kukur Tihar With Us" at "Samarth India dog home").
 const FREEFORM = new Set(['manual','instagram','reddit']);
 const isFreeform = (e) => (e.sources||[]).length > 0 && e.sources.every(s => FREEFORM.has(s.provider));
-const longWords = (s='') => new Set([...tokens(s)].filter(w => w.length >= 4 && !/^\d+$/.test(w)));
+// Words that say nothing about which event it is: the city and nearby places, and generic event and venue words.
+const COMMON_WORDS = new Set(['dehradun','doon','dehra','mussoorie','landour','rajpur','uttarakhand','india','road',
+  'event','events','session','sessions','meetup','meet','club','community','workshop','night','evening','morning','live','show',
+  'open','with','from','your','this','that','join','celebrate','presents','edition','festival','party','cafe','hall','house',
+  'centre','center','studio','school','park','hotel','resort','venue','announced']);
+const longWords = (s='') => new Set([...tokens(s)].filter(w => w.length >= 4 && !/^\d+$/.test(w) && !COMMON_WORDS.has(w)));
 const shareWord = (a,b) => { const B=longWords(b); return [...longWords(a)].some(w => B.has(w)); };
 const sameTimes = (a,b) => sameMinute(a.startAt,b.startAt) && (a.endAt ? Boolean(b.endAt) && sameMinute(a.endAt,b.endAt) : !b.endAt);
 
@@ -150,12 +155,18 @@ function withArea(e) {
  * at two venues), and so a slug: the one seen first keeps it, the others get their date added
  * ("daru-badnaam-2026-12-06"). Stored events keep the slug they were given, so the addresses stay put.
  */
-export function withUniqueSlugs(list) {
+export function withUniqueSlugs(list, past=[]) {
+  // An ended event keeps its page for a while (ingest/lib/past.mjs), so its slug isn't free for a new event.
+  const pastIds=new Map(past.map(e => [e.slug, e.id]));
   const groups=Map.groupBy(list, e => e.slug);
-  const taken=new Set(list.map(e => e.slug));
-  for (const group of groups.values()) {
-    if (group.length < 2) continue;
-    const [, ...rest]=[...group].sort((a,b) => String(a.firstSeenAt||'').localeCompare(String(b.firstSeenAt||'')) || String(a.id).localeCompare(String(b.id)));
+  const taken=new Set([...list.map(e => e.slug), ...pastIds.keys()]);
+  // An event with no firstSeenAt counts as newest, so it never takes a slug from one already stored.
+  const seen=(e) => String(e.firstSeenAt || '\uffff');
+  for (const [slug, group] of groups) {
+    const ordered=[...group].sort((a,b) => seen(a).localeCompare(seen(b)) || String(a.id).localeCompare(String(b.id)));
+    const owner=pastIds.has(slug) && pastIds.get(slug) !== ordered[0].id ? null : ordered[0];
+    const rest=ordered.filter(e => e !== owner);
+    if (!rest.length) continue;
     for (const e of rest) {
       const base=`${e.slug}-${istDay(e.startAt)}`;
       let slug=base;
@@ -353,7 +364,7 @@ export async function mergeAndWrite(sourceResults) {
     .map(withOrderedVenue)
     .map(e => ({...e, categories: isHandChecked(e) ? withAddedCategories(e.categories, `${e.title} ${e.description || ''}`) : currentCategories(e.categories)}))
     .sort(compareForOutput);
-  withUniqueSlugs(out);
+  withUniqueSlugs(out, await readJson(PAST_PATH,[]));
 
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');

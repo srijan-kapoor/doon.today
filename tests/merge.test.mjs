@@ -385,4 +385,14 @@ test('events sharing a slug each get their own, and keep it', async () => {
   const list = withUniqueSlugs([show('b', '2026-12-06T18:00:00+05:30', '2026-11-02'), show('a', '2026-11-15T16:00:00+05:30', '2026-10-20'), show('c', '2026-11-15', '2026-11-05')]);
   assert.deepEqual(list.map((e) => e.slug), ['daru-badnaam-2026-12-06', 'daru-badnaam', 'daru-badnaam-2026-11-15'], 'the first seen keeps the plain slug');
   assert.deepEqual(withUniqueSlugs(list).map((e) => e.slug), list.map((e) => e.slug), 'stable on the next run');
+  const [unseen] = withUniqueSlugs([{ id: 'n', slug: 'quiz', startAt: '2026-12-01' }, { id: 'o', slug: 'quiz', startAt: '2026-11-20', firstSeenAt: '2026-11-01' }]);
+  assert.equal(unseen.slug, 'quiz-2026-12-01', 'an event with no first-seen time never takes a stored slug');
+  const [reused] = withUniqueSlugs([{ id: 'new', slug: 'quiz', startAt: '2026-12-01', firstSeenAt: '2026-11-09' }], [{ id: 'old', slug: 'quiz' }]);
+  assert.equal(reused.slug, 'quiz-2026-12-01', 'an ended event keeps its page address');
+});
+
+test('common words alone never make two hand-written events one', async () => {
+  const { sameEvent } = await import('../ingest/merge.mjs');
+  const post = (title, venue) => ({ title, startAt: '2026-11-21T18:00:00+05:30', endAt: '2026-11-21T20:00:00+05:30', venue: { name: venue }, sources: [{ provider: 'instagram', url: `https://www.instagram.com/p/${title}` }] });
+  assert.equal(sameEvent(post('Poetry night at the club', 'Cafe Ivy, Dehradun'), post('Sunday community session: board games', 'Tapri Cafe, Dehradun')), false);
 });
