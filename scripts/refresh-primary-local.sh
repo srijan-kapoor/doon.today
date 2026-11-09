@@ -18,7 +18,7 @@ git fetch origin "$BRANCH"
 git checkout "$BRANCH"
 git pull --rebase origin "$BRANCH"
 
-npm install --no-audit --no-fund
+npm ci --no-audit --no-fund
 npm test
 INGEST_ONLY=district npm run ingest
 npm run validate:data

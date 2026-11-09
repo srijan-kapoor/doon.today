@@ -45,6 +45,8 @@ const updated = updatedLabel();
     <!-- Applies a saved dark theme before anything draws, so a reload never flashes light. Same key as src/lib/theme.mjs. -->
     <script is:inline data-theme-boot>try { if (localStorage.getItem('doon.theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" type="text/calendar" title="doon.today events" href="/calendar.ics" />
     <meta property="og:site_name" content="doon.today" />
