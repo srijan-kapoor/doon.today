@@ -5,6 +5,7 @@ import { ingestStatus } from '../../../data/status';
 import { googleDateRange, toInstant } from '../../../lib/ics.mjs';
 import { occurrencesOf, istTime } from '../../../lib/dates.mjs';
 import { eventJsonLd, eventPageTitle, eventSummary } from '../../../lib/seo.mjs';
+import { cardWhen } from '../../../lib/og.mjs';
 import { sourceLabel, detailsLinkLabel, priceLabel } from '../../../lib/sources.mjs';
 import { eventAbout } from '../../../lib/feedback.mjs';
 import { descriptionParagraphs } from '../../../lib/details.mjs';
@@ -40,7 +41,7 @@ const checked = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short
 const address = event.venue.address?.trim();
 const location = [event.venue.name, event.venue.address, event.venue.area, 'Dehradun'].filter(Boolean).join(', ');
 const pageUrl = new URL(`/events/${event.slug}/`, Astro.site).href;
-const imageUrl = new URL('/og-default.png', Astro.site).href;
+const imageUrl = new URL(ended ? '/og-default.png' : `/events/${event.slug}/og.png`, Astro.site).href;
 const summary = eventSummary(event);
 
 const googleParams = new URLSearchParams({
@@ -58,6 +59,8 @@ const detailsLabel = detailsLinkLabel(primarySource);
 <BaseLayout
   title={eventPageTitle(event.title)}
   description={summary}
+  image={imageUrl}
+  imageAlt={ended ? undefined : `${event.title}: ${cardWhen(event)}, ${event.venue.name}`}
   type="article"
   jsonLd={ended ? undefined : eventJsonLd(event, { pageUrl, imageUrl })}
   noindex={ended}
