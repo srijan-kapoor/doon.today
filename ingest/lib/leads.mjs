@@ -128,7 +128,9 @@ export function sourceLead(candidate) {
     repeats: '',
     post: kind === 'listing' ? '' : url,
     // Leads queued before the adapter decoded Reddit's escaped HTML still carry it, so clean it here too.
-    description: cleanText(stripHtml(decodeEntities(candidate.description || '')))
+    description: cleanText(stripHtml(decodeEntities(candidate.description || ''))),
+    // What made the Reddit filter flag the post, so a reviewer can tell why a non-event got through.
+    why: (candidate.flaggedFor || []).map((w) => cleanLine(w)).join(', ')
   };
 }
 export const redditLead = sourceLead;
@@ -147,7 +149,7 @@ export function leadIssue(lead, { assignee = '' } = {}) {
     return `${label}: ${value}`;
   }).join('\n');
   const intro = lead.kind === 'reddit'
-    ? 'A post on r/Dehradun that looks like an event. The date and time were guessed from the post, and the venue is usually missing.'
+    ? `A post on r/Dehradun that looks like an event. The date and time were guessed from the post, and the venue is usually missing.${lead.why ? ` Flagged for: ${lead.why}.` : ''}`
     : lead.kind === 'instagram'
       ? `An Instagram post that announces an event: ${cleanUrl(lead.post) || 'see the post link below'}\n\nA model read these details from the caption and the poster, and it can be wrong. Open the post and check them against it first.`
     : lead.kind === 'listing'
