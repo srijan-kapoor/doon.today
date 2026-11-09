@@ -131,6 +131,48 @@
     "lastCheckedAt": "2026-11-08T18:56:18.109Z"
   },
   {
+    "id": "c69e923907ba7820",
+    "slug": "a-brunch-for-little-stars",
+    "title": "A Brunch for Little Stars",
+    "description": "Join us at Le Meridien Dehradun, for a specially curated Children's Day Brunch featuring an elaborate themed buffet, interactive activities for young guests, access to our dedicated Kids Club and swimming pool access for the entire family. Whether it's enjoying favorite brunch classics, making new friends, or simply spending quality time together, there's something for every member of the family to enjoy. Set amidst the serene surroundings of the resort, this experience offers parents an opportunity to relax and unwind while children engage in a variety of supervised activities designed to keep them entertained throughout the afternoon.🍽️ Themed Family Brunch Buffet🎈 Interactive Kids' Activities & Entertainment🎮 Access to the Kids Club🏊 Swimming Pool Access👨👩👧👦 Fun-Filled Family ExperiencesJoin the celebration for a fun & memorable Saturday!",
+    "startAt": "2026-11-14T07:00:00.000Z",
+    "endAt": "2026-11-14T11:00:00.000Z",
+    "venue": {
+      "name": "Riviera Cafe - Le Meridien Resorts & Spa | Malsi, Dehradun",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "area": "Malsi",
+      "geo": {
+        "lat": 30.3884,
+        "lng": 78.0243
+      }
+    },
+    "categories": [
+      "Food"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 2400,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/a-brunch-for-little-stars-nov14-2026-buy-tickets",
+        "checkedAt": "2026-11-09T00:08:27.209Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-09T00:08:27.209Z",
+    "lastSeenAt": "2026-11-09T00:08:27.209Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.209Z"
+  },
+  {
     "id": "9527441b3f929b4e",
     "slug": "pizza-making-workshop",
     "title": "Pizza Making Workshop",
@@ -462,7 +504,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-08T00:08:16.049Z",
+        "checkedAt": "2026-11-09T00:08:27.210Z",
         "confidence": 0.95
       },
       {
@@ -479,8 +521,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-08T18:54:30.294Z",
-    "lastCheckedAt": "2026-11-08T18:54:30.294Z",
+    "lastSeenAt": "2026-11-09T00:08:27.210Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.210Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -614,7 +656,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-08T00:08:16.049Z",
+        "checkedAt": "2026-11-09T00:08:27.210Z",
         "confidence": 0.95
       },
       {
@@ -630,8 +672,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-08T18:53:04.648Z",
-    "lastCheckedAt": "2026-11-08T18:53:04.648Z"
+    "lastSeenAt": "2026-11-09T00:08:27.210Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.210Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -698,7 +740,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-08T00:08:16.046Z",
+        "checkedAt": "2026-11-09T00:08:27.207Z",
         "confidence": 0.95
       },
       {
@@ -714,8 +756,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-08T18:52:44.430Z",
-    "lastCheckedAt": "2026-11-08T18:52:44.430Z"
+    "lastSeenAt": "2026-11-09T00:08:27.207Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.207Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -745,7 +787,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-08T00:08:16.049Z",
+        "checkedAt": "2026-11-09T00:08:27.210Z",
         "confidence": 0.95
       }
     ],
@@ -755,8 +797,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-08T00:08:16.049Z",
-    "lastCheckedAt": "2026-11-08T00:08:16.049Z"
+    "lastSeenAt": "2026-11-09T00:08:27.210Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.210Z"
   },
   {
     "id": "f698989035ae2ed6",
@@ -968,7 +1010,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-08T00:08:16.048Z",
+        "checkedAt": "2026-11-09T00:08:27.210Z",
         "confidence": 0.95
       },
       {
@@ -984,8 +1026,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-08T18:52:44.433Z",
-    "lastCheckedAt": "2026-11-08T18:52:44.433Z"
+    "lastSeenAt": "2026-11-09T00:08:27.210Z",
+    "lastCheckedAt": "2026-11-09T00:08:27.210Z"
   },
   {
     "id": "2b6e7260a9346d9b",
