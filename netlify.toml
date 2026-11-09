@@ -6,6 +6,17 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--no-audit --no-fund"
 
+# Basic hardening for every page. frame-ancestors stops other sites framing the pages; a full CSP would also
+# need a hash for the inline theme script in BaseLayout.astro.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
 [[headers]]
   for = "/_astro/*"
   [headers.values]

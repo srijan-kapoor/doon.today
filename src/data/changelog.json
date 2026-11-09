@@ -1,4 +1,5 @@
 [
+  { "date": "2026-11-09", "tag": "Improved", "text": "doon.today gets a proper icon when added to a phone\u2019s home screen." },
   { "date": "2026-11-09", "tag": "Fixed", "text": "Links to an event that has ended now open its page, with what’s on next, instead of a missing page." },
   { "date": "2026-11-06", "tag": "Source", "text": "SortMyScene: club nights, parties and other social events in Dehradun." },
   { "date": "2026-11-01", "tag": "Source", "text": "BookMyShow: comedy, music, workshops and other ticketed events in Dehradun." },
