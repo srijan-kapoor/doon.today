@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "id": "28d17ced185a067f",
+    "slug": "suggestions-for-new-year-s-eve-parties-events-in-uttarakhand-dehradun-rishikesh-mussoorie-",
+    "title": "Suggestions for New Year's Eve parties/events in Uttarakhand (Dehradun, Rishikesh, Mussoorie, Haridwar)?",
+    "description": "Hey everyone! I'll be returning to Dehradun on 29th December after completing a trek and I'm planning to spend New Year's Eve (31st December) somewhere in Uttarakhand. I'm flexible about the location and open to celebrating in Dehradun, Rishikesh, Mussoorie, Haridwar, or anywhere else nearby. I'm looking for suggestions for: Good New Year's Eve parties, events, or music festivals. Places with good DJs, techno/electronic music, or just a fun party vibe. Cafes, hostels, resorts, or venues hosting ",
+    "startAt": "2026-12-29T06:30:00.000Z",
+    "venue": {
+      "name": "See community post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music",
+      "Outdoors",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xrqpzl/suggestions_for_new_years_eve_partiesevents_in/",
+        "checkedAt": "2026-11-09T23:31:42.972Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-09T23:31:42.972Z",
+    "lastSeenAt": "2026-11-09T23:31:42.972Z",
+    "lastCheckedAt": "2026-11-09T23:31:42.972Z"
+  },
+  {
+    "id": "2170fc7b412a8efd",
+    "slug": "grand-group-hike",
+    "title": "Grand group hike",
+    "description": "Happy and safe Diwali to everyone and their families\n\nSo today our group is off on the occasion of Diwali, but I can't sit at home, so I decided to go alone into the forest and do a solo jungle hike in my nearby forest.\n\nPin-drop silence and I am the only one in this forest. It's scary in the daytime, but I am used to it.\n\nSo I did my 10 km hike on the forest trail and I feel so relaxed after this. In nature, I feel so connected and I got all the answers running in my mind.\n\nSo we will meet next Sunday and again do a grand group hike.\n\nSee you guys",
+    "startAt": "2026-11-15",
+    "venue": {
+      "name": "See Instagram post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "",
+    "organizer": "the5amclub.in",
+    "posts": [
+      "https://www.instagram.com/p/DfeZhgPzvrW"
+    ],
+    "reading": {
+      "detailsFrom": "caption",
+      "confidence": "low"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfeZhgPzvrW",
+        "checkedAt": "2026-11-09T23:31:43.570Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-09T23:31:43.570Z",
+    "lastSeenAt": "2026-11-09T23:31:43.570Z",
+    "lastCheckedAt": "2026-11-09T23:31:43.570Z"
+  }
+]
