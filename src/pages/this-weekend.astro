@@ -25,7 +25,7 @@ const asDate = (day: string) => new Date(`${day}T12:00:00+05:30`);
 const span = days.map((day) => shortFmt.format(asDate(day))).join(' – ');
 const pageUrl = new URL('/this-weekend/', Astro.site).href;
 const description = count
-  ? `${count} things to do in Dehradun this weekend (${span}): ${[...new Set(grouped.flatMap(([, list]) => list.flatMap((e) => e.categories)))].slice(0, 4).join(', ').toLowerCase()} and more, with times, venues and prices.`
+  ? `${count === 1 ? '1 thing' : `${count} things`} to do in Dehradun this weekend (${span}): ${[...new Set(grouped.flatMap(([, list]) => list.flatMap((e) => e.categories)))].slice(0, 4).join(', ').toLowerCase()} and more, with times, venues and prices.`
   : `Things to do in Dehradun this weekend (${span}), with times, venues and prices.`;
 const itemList = {
   '@context': 'https://schema.org',
@@ -46,6 +46,17 @@ const itemList = {
       </section>
     ))}
     {count === 0 && <p>Nothing is listed for this weekend yet. Know of something? <a class="primary-link" href="/submit/">Submit an event</a>.</p>}
+    <p id="weekend-over" hidden>This weekend's events have passed. The next weekend's list appears with the next update.</p>
     <p class="weekend-more"><a class="primary-link" href="/">See all upcoming events</a> · <a class="primary-link" href="/calendars/">Add Dehradun events to your calendar</a></p>
   </section>
+  <script is:inline>
+    // The page is rebuilt twice a day, so between builds a day can pass: hide days already over in Dehradun.
+    (function () {
+      var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date());
+      var groups = document.querySelectorAll('.weekend-page .day-group[data-date]');
+      var left = 0;
+      groups.forEach(function (g) { if (g.dataset.date < today) g.hidden = true; else left++; });
+      if (groups.length && !left) document.getElementById('weekend-over').hidden = false;
+    })();
+  </script>
 </BaseLayout>
