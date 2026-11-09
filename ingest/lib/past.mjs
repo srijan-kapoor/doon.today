@@ -24,8 +24,8 @@ export function endedAt(e) {
 export function pastEvents({ kept = [], previous = [], listed = [], rejected = () => false, now = Date.now() }) {
   const live = new Set(listed.map((e) => e.slug));
   const out = new Map();
-  for (const e of [...kept, ...previous.filter((p) => p.curation?.status === 'published')]) {
-    if (live.has(e.slug) || isUnexpiredEvent(e, now) || rejected(e) || !eventPassesGeo(e)) continue;
+  for (const e of [...kept, ...previous]) {
+    if (e.curation?.status !== 'published' || live.has(e.slug) || isUnexpiredEvent(e, now) || rejected(e) || !eventPassesGeo(e)) continue;
     if (!(endedAt(e) > now - KEEP_DAYS * DAY_MS)) continue;
     out.set(e.slug, e);
   }

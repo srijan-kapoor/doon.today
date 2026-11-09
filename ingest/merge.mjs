@@ -325,7 +325,12 @@ export async function mergeAndWrite(sourceResults) {
   await fs.mkdir('data',{recursive:true});
   await fs.writeFile('data/events.json',JSON.stringify(out,null,2)+'\n');
   // Ended events keep their page for a while (see ingest/lib/past.mjs).
-  const past=pastEvents({ kept: await readJson(PAST_PATH,[]), previous, listed: out, rejected, now });
+  // A rejected link shared by several past events (a listing site's city page) identifies none of them either.
+  const kept=await readJson(PAST_PATH,[]);
+  const pastLinks=new Map(linkCount);
+  for (const e of kept) for (const u of new Set((e.sources||[]).map(s=>normalizeUrl(s.url)))) pastLinks.set(u,(pastLinks.get(u)||0)+1);
+  const rejectedPast=e=>!isHandChecked(e) && (e.sources||[]).some(s=>rejectedLinks.has(normalizeUrl(s.url)) && (pastLinks.get(normalizeUrl(s.url))||0)<=1);
+  const past=pastEvents({ kept, previous, listed: out, rejected: rejectedPast, now });
   await fs.writeFile(PAST_PATH,JSON.stringify(past,null,2)+'\n');
 
   // The review queue holds candidates from several sources (Reddit posts, thin AllEvents listings). Each
