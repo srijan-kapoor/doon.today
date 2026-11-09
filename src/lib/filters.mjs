@@ -38,17 +38,20 @@ export const matchesPreferences = (item, state, ignore) =>
   && (ignore === 'area' || !state.area || item.area === state.area)
   && (ignore === 'community' || !state.community || item.community);
 
+/** The days of this weekend still ahead, Saturday and Sunday (just Sunday on a Sunday), as IST dates. */
+export function weekendDays(today) {
+  const weekday = mondayIndex(today);
+  const saturday = addDays(today, weekday === 6 ? -1 : 5 - weekday);
+  return [saturday, addDays(saturday, 1)].filter((day) => day >= today);
+}
+
 /** Includes ongoing ranges and discrete occurrences, using calendar days in IST. */
 export function matchesDate(range, when, { today, view = 'list', date = today }) {
   if (range.end < today) return false;
   if (view === 'month') return runsOn(range, date);
   if (when === 'today') return runsOn(range, today);
   if (when === 'tomorrow') return runsOn(range, addDays(today, 1));
-  if (when === 'weekend') {
-    const weekday = mondayIndex(today);
-    const saturday = addDays(today, weekday === 6 ? -1 : 5 - weekday);
-    return [saturday, addDays(saturday, 1)].some((day) => day >= today && runsOn(range, day));
-  }
+  if (when === 'weekend') return weekendDays(today).some((day) => runsOn(range, day));
   return true;
 }
 

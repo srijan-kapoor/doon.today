@@ -1,4 +1,5 @@
 [
+  { "date": "2026-11-09", "tag": "New", "text": "A This weekend page listing what\u2019s on in Dehradun on Saturday and Sunday, linked from the menu." },
   { "date": "2026-11-09", "tag": "Improved", "text": "Sharing an event now shows a card with its name, date and venue instead of the same picture for every event." },
   { "date": "2026-11-09", "tag": "Improved", "text": "doon.today gets a proper icon when added to a phone\u2019s home screen." },
   { "date": "2026-11-09", "tag": "Fixed", "text": "Links to an event that has ended now open its page, with what’s on next, instead of a missing page." },
