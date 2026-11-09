@@ -12,7 +12,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw938zuf1b6yh1amza",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -33,7 +36,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw93901d26ewvtbyuf",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -45,7 +51,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw93907r2lhj6kvn9t",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -71,13 +80,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9390dmxdotjcjz9",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
       "lastError": "",
       "seen": [],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9390k32prjxvfw4m",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -89,7 +104,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9390qgemokvwsba",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -120,7 +138,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9390wm2mrbqievdd",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -139,7 +160,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw93912p1u3vvpop68",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -153,7 +177,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9391dni95mg04t5",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -170,7 +197,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw93920426cn3yl22m",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -188,7 +218,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw93925l1cc7u6vurl",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -214,7 +247,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9392b3b8lff6wt4",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -241,7 +277,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9392jd2gkncsl704",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
@@ -250,10 +289,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mw9392q91etlkto18d",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mw9392x1dljv854km",
+        "startedAt": "2026-11-09T09:58:15.183Z"
+      },
       "lastFetchedAt": "2026-11-08T09:14:05.179Z",
       "lastError": "",
       "seen": [
@@ -281,24 +326,19 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mw8720ebbwbaspoau",
-        "startedAt": "2026-11-08T18:57:05.175Z"
-      },
-      "lastFetchedAt": "2026-11-07T18:53:54.133Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-09T09:58:15.183Z",
       "lastError": "",
       "seen": [
+        "4025721046660401174",
         "4009848031614033860",
         "3999625853126578435",
         "4000488913181646790"
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mw8720j7kz6u99bbn",
-        "startedAt": "2026-11-08T18:57:05.175Z"
-      },
-      "lastFetchedAt": "2026-11-07T18:53:54.133Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-09T09:58:15.183Z",
       "lastError": "",
       "seen": [
         "4013588672830211627"
@@ -306,74 +346,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mw2lid6a1spx79filq",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lidc827adowc9z3",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lidhx2h3ha4ly2p",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lidn31usxldm4i1",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lidsj1g8yve97su",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lidyewny4fxeg2",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lie9i2kk6yxtpbu",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lieg4qdg88udk5",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2liela27fwtzrhdy",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lieqc1m00c0sqgr",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lievm2e892tkpg6",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lif0yyw9ji4spl",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lif8s197ol4as2u",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lifeda3v017zin",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw2lifkg1p0yfllta7",
-      "at": "2026-11-05T09:39:56.389Z"
-    },
-    {
-      "id": "sd_mw41in3y2ezbxfaqm3",
-      "at": "2026-11-06T09:33:44.204Z"
-    },
-    {
-      "id": "sd_mw41in9211nte2inxt",
-      "at": "2026-11-06T09:33:44.204Z"
-    },
     {
       "id": "sd_mw4s1usp268n8812sw",
       "at": "2026-11-06T20:33:27.287Z"
@@ -501,6 +473,14 @@
     {
       "id": "sd_mw6ri9g5bnqn81hf9",
       "at": "2026-11-08T09:14:05.179Z"
+    },
+    {
+      "id": "sd_mw8720ebbwbaspoau",
+      "at": "2026-11-09T09:58:15.183Z"
+    },
+    {
+      "id": "sd_mw8720j7kz6u99bbn",
+      "at": "2026-11-09T09:58:15.183Z"
     }
   ],
   "candidates": [
