@@ -1,35 +1,28 @@
 [
   {
-    "id": "2170fc7b412a8efd",
-    "slug": "grand-group-hike",
-    "title": "Grand group hike",
-    "description": "Happy and safe Diwali to everyone and their families\n\nSo today our group is off on the occasion of Diwali, but I can't sit at home, so I decided to go alone into the forest and do a solo jungle hike in my nearby forest.\n\nPin-drop silence and I am the only one in this forest. It's scary in the daytime, but I am used to it.\n\nSo I did my 10 km hike on the forest trail and I feel so relaxed after this. In nature, I feel so connected and I got all the answers running in my mind.\n\nSo we will meet next Sunday and again do a grand group hike.\n\nSee you guys",
-    "startAt": "2026-11-15",
+    "id": "d8442e07c66ca6c8",
+    "slug": "heading-up-to-dhanaulti-this-sunday-nov-15-for-a-breakfast-run-with-rev-mc-come-join-us",
+    "title": "Heading up to Dhanaulti this Sunday (Nov 15) for a Breakfast Run with REV MC! Come join us",
+    "description": "Hey everyone! We’re organizing the Dhanaulti Breakfast Run (DBR) with REV MC this Sunday, November 15 , and we’re opening up the invite for fellow riders around Dehradun who want to join in for a crisp morning hill run, good food, and great company. Whether you're on a cruiser, naked, ADV, or sportbike, all machines and riders are welcome as long as you ride safe and respect the group pace. 📍 Ride Details Date: Sunday, 15 November Assembly Time: 6:00 AM Flag-off Time: 6:30 AM sharp Route: Dehra",
+    "startAt": "2026-11-15T06:30:00.000Z",
     "venue": {
-      "name": "See Instagram post",
+      "name": "See community post",
       "city": "Dehradun"
     },
     "categories": [
-      "Outdoors"
+      "Fitness",
+      "Food",
+      "Meetups"
     ],
     "pricing": {
       "type": "unknown",
       "currency": "INR"
     },
-    "howToJoin": "",
-    "organizer": "the5amclub.in",
-    "posts": [
-      "https://www.instagram.com/p/DfeZhgPzvrW"
-    ],
-    "reading": {
-      "detailsFrom": "caption",
-      "confidence": "low"
-    },
     "sources": [
       {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfeZhgPzvrW",
-        "checkedAt": "2026-11-09T23:31:43.570Z",
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xsfwwu/heading_up_to_dhanaulti_this_sunday_nov_15_for_a/",
+        "checkedAt": "2026-11-10T10:03:11.318Z",
         "confidence": 0.5
       }
     ],
@@ -38,8 +31,8 @@
       "status": "review",
       "score": 3
     },
-    "firstSeenAt": "2026-11-09T23:31:43.570Z",
-    "lastSeenAt": "2026-11-09T23:31:43.570Z",
-    "lastCheckedAt": "2026-11-09T23:31:43.570Z"
+    "firstSeenAt": "2026-11-10T10:03:11.318Z",
+    "lastSeenAt": "2026-11-10T10:03:11.318Z",
+    "lastCheckedAt": "2026-11-10T10:03:11.318Z"
   }
 ]
