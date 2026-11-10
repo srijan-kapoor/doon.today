@@ -1,41 +1,5 @@
 [
   {
-    "id": "28d17ced185a067f",
-    "slug": "suggestions-for-new-year-s-eve-parties-events-in-uttarakhand-dehradun-rishikesh-mussoorie-",
-    "title": "Suggestions for New Year's Eve parties/events in Uttarakhand (Dehradun, Rishikesh, Mussoorie, Haridwar)?",
-    "description": "Hey everyone! I'll be returning to Dehradun on 29th December after completing a trek and I'm planning to spend New Year's Eve (31st December) somewhere in Uttarakhand. I'm flexible about the location and open to celebrating in Dehradun, Rishikesh, Mussoorie, Haridwar, or anywhere else nearby. I'm looking for suggestions for: Good New Year's Eve parties, events, or music festivals. Places with good DJs, techno/electronic music, or just a fun party vibe. Cafes, hostels, resorts, or venues hosting ",
-    "startAt": "2026-12-29T06:30:00.000Z",
-    "venue": {
-      "name": "See community post",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Music",
-      "Outdoors",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "reddit",
-        "url": "https://www.reddit.com/r/Dehradun/comments/1xrqpzl/suggestions_for_new_years_eve_partiesevents_in/",
-        "checkedAt": "2026-11-09T23:31:42.972Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-09T23:31:42.972Z",
-    "lastSeenAt": "2026-11-09T23:31:42.972Z",
-    "lastCheckedAt": "2026-11-09T23:31:42.972Z"
-  },
-  {
     "id": "2170fc7b412a8efd",
     "slug": "grand-group-hike",
     "title": "Grand group hike",
