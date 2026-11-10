@@ -1,5 +1,45 @@
 [
   {
+    "id": "4712837d06a01639",
+    "slug": "all-india-clat-lr-tour",
+    "title": "All India CLAT LR Tour",
+    "description": "ALL INDIA CLAT LR TOUR The All India CLAT LR Tour is bringing Law Prep Tutorials expert-led preparation in Logical Reasoning and Legal Reasoning to CLAT aspirants across the country. From critical thinking and logical reasoning to legal principles, passage-based questions, interactive problem solving and exam-focused strategies, experience high-impact sessions designed to strengthen your reasoning skills and approach the CLAT paper with greater confidence. Whether you are a first-time aspirant or a repeat candidate, get the concepts, practice and strategies you need to tackle both Logical and Legal Reasoning effectively. One Nation. Multiple Cities. One Goal, Mastering CLAT LR. Join us as the CLAT LR Tour comes to a city near you.",
+    "startAt": "2026-11-10",
+    "venue": {
+      "name": "Law Prep Tutorial : Dehradun",
+      "address": "Gramin Bank, 36-D/E, 1st Floor Nimuwala, Road, Garhi Cantt, Dehradun, Uttarakhand 248003, India Dehradun",
+      "city": "Dehradun",
+      "area": "Garhi Cantt",
+      "geo": {
+        "lat": 30.3524,
+        "lng": 78.0226
+      }
+    },
+    "categories": [
+      "Live shows"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/all-india-clat-lr-tour/3900030763986558",
+        "checkedAt": "2026-11-10T09:59:21.040Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-08T18:52:44.435Z",
+    "lastSeenAt": "2026-11-10T09:59:21.040Z",
+    "lastCheckedAt": "2026-11-10T09:59:21.040Z"
+  },
+  {
     "id": "296ba68ddf38e8e2",
     "slug": "weekend-sizzler-pool-party-belly-dance-ramp-show-games-buffet-dinner-amp-drinks-dehradun",
     "title": "Weekend Sizzler Pool Party, Belly Dance, Ramp Show, Games, Buffet Dinner & Drinks @ Dehradun",
