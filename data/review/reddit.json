@@ -1,60 +1,26 @@
 [
   {
-    "id": "9ba9abf5ac17fc4c",
-    "slug": "my-bad-experience-in-dehradun",
-    "title": "My bad experience in Dehradun.",
-    "description": "Almost a month ago, I posted about my grandmother (Nani). I live in Delhi, my family lives in a village .We took my grandmother to the village on 21 October, and on the same day, we rented an oxygen machine from a shop outside the hospital. The rental charge was 3000/M, and we paid a refundable security deposit of 5,000; I paid a total 8000. Unfortunately, my grandmother passed away on 2 November. Some of my relatives returned the machine to the shop on 8 November, not me. The machine was in per",
-    "startAt": "2026-10-21T06:30:00.000Z",
+    "id": "a3d2b22074e7e9c2",
+    "slug": "dark-sky-lab-chapter-1",
+    "title": "Dark Sky Lab Chapter 1",
+    "description": "There’s magic in seeing the universe through curious eyes and finding stories in the unknown. ✨\n\nThis Children’s Day, rediscover that sense of curiosity with Dehradun Astronomy Club's first-ever Dark Sky Lab, a space to observe the night sky and the many wonders it holds. 🌌\n\n🗓️ 14 November, Saturday\n⏳ 11.00 pm to 1.00 am\n📍Doonsters Arena, Banjarawala\n\nFrom witnessing the Jupiter–Mars conjunction to keeping an eye out for meteors, there’s plenty to make the night special. We’ll also journey beyond our skies with a special discussion on Voyager 1's latest milestone and identify some constellations!\n\nA little science, a lot of wonder and an evening of looking up at the universe with fresh eyes. 💫\n\nLimited spots. Register from the link in bio.",
+    "startAt": "2026-11-14T23:00:00+05:30",
+    "endAt": "2026-11-15T01:00:00+05:30",
     "venue": {
-      "name": "See community post",
+      "name": "Doonsters Arena, Banjarawala",
       "city": "Dehradun"
     },
     "categories": [
-      "Fitness"
+      "Outdoors"
     ],
     "pricing": {
       "type": "unknown",
       "currency": "INR"
     },
-    "sources": [
-      {
-        "provider": "reddit",
-        "url": "https://www.reddit.com/r/Dehradun/comments/1xsjrws/my_bad_experience_in_dehradun/",
-        "checkedAt": "2026-11-10T20:55:29.772Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-10T20:55:29.772Z",
-    "lastSeenAt": "2026-11-10T20:55:29.772Z",
-    "lastCheckedAt": "2026-11-10T20:55:29.772Z"
-  },
-  {
-    "id": "7cc4bbd919a93129",
-    "slug": "dhanaulti-breakfast-run",
-    "title": "Dhanaulti Breakfast Run",
-    "description": "Back at Dhanaulti with something better this time🏍️\n\n 🏔️",
-    "startAt": "2026-11-15T06:00:00+05:30",
-    "venue": {
-      "name": "Flag-off at Mussoorie Diversion, breakfast stop at Dhanaulti, Tapu Sera waterfall, finish at Maharana Pratap Chowk",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "howToJoin": "",
-    "organizer": "rev_motoclub",
+    "howToJoin": "Register via link in bio",
+    "organizer": "dehradun_astronomy_club",
     "posts": [
-      "https://www.instagram.com/p/Dfjodr1lEd3"
+      "https://www.instagram.com/p/DfjUkq3yLfi"
     ],
     "reading": {
       "detailsFrom": "both",
@@ -63,8 +29,8 @@
     "sources": [
       {
         "provider": "instagram",
-        "url": "https://www.instagram.com/p/Dfjodr1lEd3",
-        "checkedAt": "2026-11-10T20:55:30.401Z",
+        "url": "https://www.instagram.com/p/DfjUkq3yLfi",
+        "checkedAt": "2026-11-11T09:35:39.770Z",
         "confidence": 0.5
       }
     ],
@@ -73,8 +39,8 @@
       "status": "review",
       "score": 3
     },
-    "firstSeenAt": "2026-11-10T20:55:30.401Z",
-    "lastSeenAt": "2026-11-10T20:55:30.401Z",
-    "lastCheckedAt": "2026-11-10T20:55:30.401Z"
+    "firstSeenAt": "2026-11-11T09:35:39.770Z",
+    "lastSeenAt": "2026-11-11T09:35:39.770Z",
+    "lastCheckedAt": "2026-11-11T09:35:39.770Z"
   }
 ]

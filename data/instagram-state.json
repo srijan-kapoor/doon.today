@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
         "4024947697315827239",
@@ -13,15 +13,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwb6649n1khy5xjej8",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027303744164471553",
         "4024311357964076445",
         "4022958752679776512",
         "4022189111512482865",
@@ -37,13 +35,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwb664intfrcp06u4",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
         "4018510583139069808",
@@ -52,15 +47,13 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwb664pu29h0jn4pdh",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027156270149328656",
         "4025707106640329502",
         "4026416143182434260",
         "4024319717005895160",
@@ -83,39 +76,33 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwb665a4emrzdbhhy",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [],
-      "snapshot": {
-        "id": "sd_mwb665zl2civyx65t9",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027152972663797730",
         "4021014901627316537",
         "4020310015992667056",
         "4018842081233294914",
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwb6667115nc0u9b4k",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027279207373391998",
+        "4027049004521201118",
         "4026462366409279979",
         "4025571144824096261",
         "4025767370446273238",
@@ -144,15 +131,13 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwb666en2hg5sszixe",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027412671426503745",
         "4025234683465972736",
         "4025686757147567090",
         "4024925072765830440",
@@ -168,13 +153,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwb666oo9g5fdtru7",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -185,15 +167,13 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwb666u41rwyndknc6",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027338058826937342",
         "4021617437040414676",
         "4021623498527207042",
         "4016228846868923771",
@@ -205,15 +185,13 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwb6680k1o74z9hnwi",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027319624311986841",
         "4024928273871875784",
         "4024465165158520684",
         "4022947535872424799",
@@ -226,15 +204,13 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwb668ahofp3sg966",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4026602903027966559",
         "4026374499942751092",
         "4025143520044233205",
         "4023662807042016280",
@@ -256,15 +232,13 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwb668hd2e66uwiiea",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4026682680992513066",
         "4025972469501072062",
         "4025314643378817031",
         "4023755722166709815",
@@ -287,31 +261,23 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwb668na2aqa8nht6e",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwb668t513tmav8g2u",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwb669qf2kpgvli7tj",
-        "startedAt": "2026-11-10T20:55:30.401Z"
-      },
-      "lastFetchedAt": "2026-11-09T23:31:43.570Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
       "lastError": "",
       "seen": [
+        "4027076424653127140",
         "4025630928118159129",
         "4025093040505705689",
         "4023623954968604109",
@@ -358,66 +324,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mw6ri39f1l7e2j53j3",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri3jk2aqlkbnbu7",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri3qeow6fo7kqz",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri40q2qnofq3mj8",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri4871dx9fu5yfb",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri5l22kvu2zf1ia",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri5x2omqb08rxc",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri63d1lb9wkvan8",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri6c51ftxn431xi",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri6iirmqnsla0q",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri7yyfmmfh1fgw",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri87vvxewrzi5t",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri8w41ij8reh10g",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri91v1r0nhsdglw",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
-    {
-      "id": "sd_mw6ri9g5bnqn81hf9",
-      "at": "2026-11-08T09:14:05.179Z"
-    },
     {
       "id": "sd_mw8720ebbwbaspoau",
       "at": "2026-11-09T09:58:15.183Z"
@@ -493,6 +399,66 @@
     {
       "id": "sd_mwaiv5732fp189vfxx",
       "at": "2026-11-10T20:55:30.401Z"
+    },
+    {
+      "id": "sd_mwb6649n1khy5xjej8",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb664intfrcp06u4",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb664pu29h0jn4pdh",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb665a4emrzdbhhy",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb665zl2civyx65t9",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb6667115nc0u9b4k",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb666en2hg5sszixe",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb666oo9g5fdtru7",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb666u41rwyndknc6",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb6680k1o74z9hnwi",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb668ahofp3sg966",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb668hd2e66uwiiea",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb668na2aqa8nht6e",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb668t513tmav8g2u",
+      "at": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "sd_mwb669qf2kpgvli7tj",
+      "at": "2026-11-11T09:35:39.770Z"
     }
   ],
   "candidates": [
@@ -544,7 +510,7 @@
       "id": "2170fc7b412a8efd",
       "slug": "grand-group-hike",
       "title": "Grand group hike",
-      "description": "Happy and safe Diwali to everyone and their families\n\nSo today our group is off on the occasion of Diwali, but I can't sit at home, so I decided to go alone into the forest and do a solo jungle hike in my nearby forest.\n\nPin-drop silence and I am the only one in this forest. It's scary in the daytime, but I am used to it.\n\nSo I did my 10 km hike on the forest trail and I feel so relaxed after this. In nature, I feel so connected and I got all the answers running in my mind.\n\nSo we will meet next Sunday and again do a grand group hike.\n\nSee you guys",
+      "description": "Another post (https://www.instagram.com/p/Dfi87u_k53e) gives the time as 05:00.\n\nAnother post (https://www.instagram.com/p/Dfi87u_k53e) gives the venue as Benog Tibba (Cloud End), Mussoorie; meeting point Pacific Hills, Mussoorie Diversion, Rajpur Road.\n\nHappy and safe Diwali to everyone and their families\n\nSo today our group is off on the occasion of Diwali, but I can't sit at home, so I decided to go alone into the forest and do a solo jungle hike in my nearby forest.\n\nPin-drop silence and I am the only one in this forest. It's scary in the daytime, but I am used to it.\n\nSo I did my 10 km hike on the forest trail and I feel so relaxed after this. In nature, I feel so connected and I got all the answers running in my mind.\n\nSo we will meet next Sunday and again do a grand group hike.\n\nSee you guys",
       "startAt": "2026-11-15",
       "venue": {
         "name": "See Instagram post",
@@ -560,7 +526,8 @@
       "howToJoin": "",
       "organizer": "the5amclub.in",
       "posts": [
-        "https://www.instagram.com/p/DfeZhgPzvrW"
+        "https://www.instagram.com/p/DfeZhgPzvrW",
+        "https://www.instagram.com/p/Dfi87u_k53e"
       ],
       "reading": {
         "detailsFrom": "caption",
@@ -580,8 +547,8 @@
         "score": 3
       },
       "firstSeenAt": "2026-11-09T23:31:43.570Z",
-      "lastSeenAt": "2026-11-09T23:31:43.570Z",
-      "lastCheckedAt": "2026-11-09T23:31:43.570Z"
+      "lastSeenAt": "2026-11-11T09:35:39.770Z",
+      "lastCheckedAt": "2026-11-11T09:35:39.770Z"
     },
     {
       "id": "7cc4bbd919a93129",
@@ -626,6 +593,50 @@
       "firstSeenAt": "2026-11-10T20:55:30.401Z",
       "lastSeenAt": "2026-11-10T20:55:30.401Z",
       "lastCheckedAt": "2026-11-10T20:55:30.401Z"
+    },
+    {
+      "id": "a3d2b22074e7e9c2",
+      "slug": "dark-sky-lab-chapter-1",
+      "title": "Dark Sky Lab Chapter 1",
+      "description": "There’s magic in seeing the universe through curious eyes and finding stories in the unknown. ✨\n\nThis Children’s Day, rediscover that sense of curiosity with Dehradun Astronomy Club's first-ever Dark Sky Lab, a space to observe the night sky and the many wonders it holds. 🌌\n\n🗓️ 14 November, Saturday\n⏳ 11.00 pm to 1.00 am\n📍Doonsters Arena, Banjarawala\n\nFrom witnessing the Jupiter–Mars conjunction to keeping an eye out for meteors, there’s plenty to make the night special. We’ll also journey beyond our skies with a special discussion on Voyager 1's latest milestone and identify some constellations!\n\nA little science, a lot of wonder and an evening of looking up at the universe with fresh eyes. 💫\n\nLimited spots. Register from the link in bio.",
+      "startAt": "2026-11-14T23:00:00+05:30",
+      "endAt": "2026-11-15T01:00:00+05:30",
+      "venue": {
+        "name": "Doonsters Arena, Banjarawala",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Outdoors"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Register via link in bio",
+      "organizer": "dehradun_astronomy_club",
+      "posts": [
+        "https://www.instagram.com/p/DfjUkq3yLfi"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DfjUkq3yLfi",
+          "checkedAt": "2026-11-11T09:35:39.770Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-11T09:35:39.770Z",
+      "lastSeenAt": "2026-11-11T09:35:39.770Z",
+      "lastCheckedAt": "2026-11-11T09:35:39.770Z"
     }
   ]
 }
