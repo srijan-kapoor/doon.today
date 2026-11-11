@@ -175,7 +175,7 @@ test('Reddit text arrives as plain words, not escaped HTML', async () => {
 test('the Reddit adapter decodes post HTML before it cuts the description', async () => {
   const { fetchReddit } = await import('../ingest/sources/reddit.mjs');
   const body = '&lt;p&gt;' + 'Open mic night in Dehradun at the club. '.repeat(20) + '&lt;/p&gt;';
-  const xml = `<feed><entry><title>Open mic on 2 November</title><link href="https://www.reddit.com/r/Dehradun/comments/x1/"/><content type="html">${body}</content></entry></feed>`;
+  const xml = `<feed><entry><title>Open mic on 2 November</title><published>2026-10-30T10:00:00+00:00</published><link href="https://www.reddit.com/r/Dehradun/comments/x1/"/><content type="html">${body}</content></entry></feed>`;
   const realFetch = globalThis.fetch;
   globalThis.fetch = async () => ({ ok: true, status: 200, text: async () => xml, headers: new Map() });
   try {
