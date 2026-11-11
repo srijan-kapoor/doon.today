@@ -23,11 +23,14 @@ export function explicitDate(text, postedAt=Date.now()){
 // Whole words, so "trek" doesn't match "trekking".
 const EVENT_WORDS=wordMatcher(['event','meetup','meet up','meet and greet','workshop','festival','fest','walk','run','marathon',
   'book club','book launch','book fair','screening','concert','open mic','exhibition','heritage','hike','trek','club','jam session',
-  'quiz','game night','gig','tournament','comedy','stand up','show','talk','seminar','party','performance']);
+  'quiz','game night','gig','tournament','comedy','stand up','show','talk','seminar','party','performance',
+  'live music','jazz','dj night','karaoke','screening']);
 // Posts asking for help, or about housing, jobs or services, are not events.
 const REQUEST=/\b(looking for|suggest(?:ion)?s?|recommend(?:ation)?s?|help me (?:plan|find)|itinerary|any (?:leads|ideas|tips)|where (?:can|should) i)\b/i;
 const NOT_EVENT=wordMatcher(['flat for rent','room for rent','pg','rent','1bhk','2bhk','3bhk','flatmate','hiring','job','vacancy','internship','for sale','selling','tuition']);
 // Details only an event announcement has: a clock time, or a link to tickets or a sign-up form.
+// A roundup of several events ("16 things to do this weekend", "what's on in Dehradun") is a list, not one event.
+const ROUNDUP=/\b(?:\d+\s+)?things to do\b|\bwhat'?s on\b|\b\d+\s+(?:events|gigs|plans|ideas)\b|\bevents? (?:this|next) (?:week|weekend)\b|\bweekend (?:guide|plans|roundup)\b/i;
 // "Tickets" alone doesn't count: people sell and ask for them too.
 const STRONG=/\b\d{1,2}(?::\d{2})?\s?(?:am|pm)\b|forms\.gle|docs\.google\.com\/forms|bit\.ly|insider\.in|district\.in|bookmyshow\.com|allevents\.in|meetup\.com/i;
 
@@ -43,6 +46,8 @@ export function judgePost({title='', content='', postedAt=Date.now()}){
   const t=Date.parse(date);
   if(t<postedAt-DAY_MS || t>postedAt+MAX_DAYS_AHEAD*DAY_MS) return {skip:'date not within 60 days of the post'};
   if(!isDehradunText(text)) return {skip:'Dehradun not named'};
+  const roundup=title.match(ROUNDUP)?.[0];
+  if(roundup) return {skip:`a roundup ("${roundup}")`};
   const word=text.match(EVENT_WORDS)?.[0];
   if(!word) return {skip:'no event word'};
   const strong=text.match(STRONG)?.[0];

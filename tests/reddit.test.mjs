@@ -34,6 +34,14 @@ test('word choices: a traffic jam or ticket resale is not an event; a room numbe
   assert.ok(post('Doon fest on 5 Nov').date);
 });
 
+test('a roundup of several events is skipped; one event is not', () => {
+  const post = (title) => judgePost({ title, content: 'Live music at 8pm in Dehradun, tickets on insider.in', postedAt: Date.parse('2026-11-05T10:00:00Z') });
+  assert.equal(post('Dehradun this weekend (Nov 6-8): 16 things to do, from Music Gigs to Diwali Parties').skip, 'a roundup ("16 things to do")');
+  assert.ok(post("What's on in Dehradun this weekend").skip);
+  assert.ok(post('Events this weekend in Dehradun, 7 Nov').skip);
+  assert.ok(post('Jazz night at Cafe Ivy on 7 Nov').date);
+});
+
 test('the date must be within 60 days of the post, and rolls into next year after December', () => {
   assert.equal(judgePost({ ...art, content: art.content.replace('24th October', '24th March') }).skip, 'date not within 60 days of the post');
   assert.equal(explicitDate('see you on 5 Jan', Date.parse('2026-12-20T00:00:00Z')).slice(0, 10), '2027-01-05');
