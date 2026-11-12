@@ -1146,5 +1146,45 @@
     "firstSeenAt": "2026-11-12T22:16:48.808Z",
     "lastSeenAt": "2026-11-12T22:16:48.808Z",
     "lastCheckedAt": "2026-11-12T22:16:48.808Z"
+  },
+  {
+    "id": "c517853cd83f4736",
+    "slug": "run-with-bee",
+    "title": "Run with Bee",
+    "description": "Another post (https://www.instagram.com/p/DfmnNovyUW-) gives the time as 00:00. Another post (https://www.instagram.com/p/DfmFn0jy2MB) gives the venue as Solaris MMA Academy, Raipur Road. Dehradun, mark your calendars! This Sunday, 15th November! Time: 6AM onwards Registration link in bio 🔗\n\nOrganized by @_runwithbee. How to join: Registration link in bio",
+    "startAt": "2026-11-15T06:00:00+05:30",
+    "venue": {
+      "name": "Solaris MMA Academy",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "checkedAt": "2026-11-12T22:18:48.382Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:18:48.382Z",
+    "lastSeenAt": "2026-11-12T22:18:48.382Z",
+    "lastCheckedAt": "2026-11-12T22:18:48.382Z"
   }
 ]
