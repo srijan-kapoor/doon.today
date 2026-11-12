@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4024947697315827239",
@@ -13,15 +13,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwddlhqz1u48d3tdg8",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
+        "4028621137176326524",
         "4027303744164471553",
         "4024311357964076445",
         "4022958752679776512",
@@ -38,28 +36,23 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwddlhw8gkuc7clko",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
+        "4028013158076474349",
         "4018510583139069808",
         "4016986596384858824",
         "4013588422893638161",
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwddli141b24s2vhxz",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4027156270149328656",
@@ -85,22 +78,18 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwddli6vw4w0ibn0u",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
-      "seen": [],
-      "snapshot": {
-        "id": "sd_mwddlicm1tylgagg8l",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "seen": [
+        "4028089610901567062"
+      ],
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4027152972663797730",
@@ -110,13 +99,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwddlihe3z15pl3sr",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4027279207373391998",
@@ -149,15 +135,13 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwddlink2ejx2cjqec",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
+        "4028151909403290847",
         "4027412671426503745",
         "4025234683465972736",
         "4025686757147567090",
@@ -174,13 +158,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwddlirp3g444l6c",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -191,15 +172,15 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwddliwn11oesdk4nj",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
+        "4027862140558171104",
+        "4027931643456742145",
+        "4028079377648010686",
         "4027338058826937342",
         "4021617437040414676",
         "4021623498527207042",
@@ -212,13 +193,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwddlj1gju1wob1wn",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4027319624311986841",
@@ -234,13 +212,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwddljbp27k0jjxfsj",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4026602903027966559",
@@ -265,13 +240,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwddljgj38y7g91ps",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "4026682680992513066",
@@ -297,31 +269,24 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwddljow18q6iz5ngl",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwddljt12hpmsi9u17",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwddlk0g2o8ddn1ags",
-        "startedAt": "2026-11-12T09:59:01.942Z"
-      },
-      "lastFetchedAt": "2026-11-11T09:35:39.770Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-12T21:31:17.309Z",
       "lastError": "",
       "seen": [
+        "4028598268325713125",
+        "4027745655735509047",
         "4027076424653127140",
         "4025630928118159129",
         "4025093040505705689",
@@ -504,6 +469,66 @@
     {
       "id": "sd_mwcmucd32lngfivrqe",
       "at": "2026-11-12T09:59:01.942Z"
+    },
+    {
+      "id": "sd_mwddlhqz1u48d3tdg8",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlhw8gkuc7clko",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddli141b24s2vhxz",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddli6vw4w0ibn0u",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlicm1tylgagg8l",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlihe3z15pl3sr",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlink2ejx2cjqec",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlirp3g444l6c",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddliwn11oesdk4nj",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlj1gju1wob1wn",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddljbp27k0jjxfsj",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddljgj38y7g91ps",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddljow18q6iz5ngl",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddljt12hpmsi9u17",
+      "at": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "sd_mwddlk0g2o8ddn1ags",
+      "at": "2026-11-12T21:31:17.309Z"
     }
   ],
   "candidates": [
@@ -682,6 +707,184 @@
       "firstSeenAt": "2026-11-11T09:35:39.770Z",
       "lastSeenAt": "2026-11-11T09:35:39.770Z",
       "lastCheckedAt": "2026-11-11T09:35:39.770Z"
+    },
+    {
+      "id": "062451612e0ebf38",
+      "slug": "just-another-not-so-usual-run",
+      "title": "Just Another Not So Usual Run",
+      "description": "Dehradun time to wake up! 🏃‍♀️🏃‍♂️💨\nRegistration link in bio\n\n🏃‍♂️ 4/8KM Group Run\n🏋️‍♂️ Post run group workout\nDate- 15th November\n\n parties (morning, run club in dehradun, fitness, parties, running, hyrox)",
+      "startAt": "2026-11-15T06:30:00+05:30",
+      "venue": {
+        "name": "Vault, EC Road, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Fitness"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Registration link in bio",
+      "organizer": "zen_runclub",
+      "posts": [
+        "https://www.instagram.com/p/DfoiZRoBnF8"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+          "checkedAt": "2026-11-12T21:31:17.309Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "758410791703b302",
+      "slug": "game-meetup",
+      "title": "Game Meetup",
+      "description": "Dehradun, the festive season isn’t over yet, and neither is game night! Join us for a Local Meeple game meetup, a cozy afternoon of board games, card games, laughs and new friends.\n\n📍 The Orchard, EC Road, Dehradun\n🗓️ 15 November\n⏰ 2 – 5 PM\n🎟️ Entry: completely FREE\n\nNever played? Perfect. Bring a friend, bring your competitive side, or just bring yourself. We’ll handle the rest. 🪔\n\nWant a seat at the table? Send us a DM! 📩\nScan the QR on the poster for the location and tap follow so you don’t miss the next one.",
+      "startAt": "2026-11-15T14:00:00+05:30",
+      "endAt": "2026-11-15T17:00:00+05:30",
+      "venue": {
+        "name": "The Orchard, EC Road, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Games",
+        "Meetups"
+      ],
+      "pricing": {
+        "type": "free",
+        "currency": "INR"
+      },
+      "howToJoin": "Send a DM to @localmeeple_doon or walk in",
+      "organizer": "localmeeple_doon",
+      "posts": [
+        "https://www.instagram.com/p/DfmpijNOrZW"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DfmpijNOrZW",
+          "checkedAt": "2026-11-12T21:31:17.309Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "78376d87904772db",
+      "slug": "uttarakhand-26-26-lakh-steps-virtual-challenge",
+      "title": "Uttarakhand@26 - 26 Lakh Steps Virtual Challenge",
+      "description": "🏔️ UTTARAKHAND@26 | 26 LAKH STEPS\n\n26 years of Uttarakhand. 26 lakh steps. One community. ❤️\n\nThis November, let’s celebrate our state’s journey by taking a step towards a healthier one.\n\n🥾 A Virtual Steps Challenge by Doon Walkers\n\n14–15 November 2026\n🎯 Community Goal: 26,00,000 Steps\n\nNo meetup. No fixed location. Just you, your steps and a shared goal.\n\nWalk or run from wherever you are. Every step adds to our collective journey.\n\n🏆 Top 26 walkers will be featured on Doon Walkers Instagram.\n\nInvite a friend. Join the movement. Let’s make this celebration count!\n\n🔗 Join the challenge: Link in bio\n\nOne State. One Community. 26 Lakh Steps. 🧡\n\n #26LakhSteps StepChallenge VirtualWalkingChallenge WalkForFitness HealthyUttarakhand CommunityMovement ExploreUttarakhand FitnessCommunity",
+      "startAt": "2026-11-14",
+      "endAt": "2026-11-15",
+      "venue": {
+        "name": "Virtual - walk or run from wherever you are",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Fitness",
+        "Outdoors"
+      ],
+      "pricing": {
+        "type": "free",
+        "currency": "INR"
+      },
+      "howToJoin": "Join via link in bio (Doon Walkers Instagram)",
+      "organizer": "doon_walkers",
+      "posts": [
+        "https://www.instagram.com/p/Dfm3tHNS2zf"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+          "checkedAt": "2026-11-12T21:31:17.309Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+    },
+    {
+      "id": "9f5597d97afe8248",
+      "slug": "run-with-bee",
+      "title": "Run with Bee",
+      "description": "Another post (https://www.instagram.com/p/DfmnNovyUW-) gives the time as 00:00.\n\nAnother post (https://www.instagram.com/p/DfmFn0jy2MB) gives the venue as Solaris MMA Academy, Raipur Road.\n\nDehradun, mark your calendars!\nThis Sunday, 15th November!\nTime: 6AM onwards\n\nRegistration link in bio 🔗",
+      "startAt": "2026-11-15T06:00:00+05:30",
+      "venue": {
+        "name": "See Instagram post",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Fitness"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Registration link in bio",
+      "organizer": "_runwithbee",
+      "posts": [
+        "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "https://www.instagram.com/p/DfmFn0jy2MB",
+        "https://www.instagram.com/p/DfmnNovyUW-"
+      ],
+      "reading": {
+        "detailsFrom": "caption",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+          "checkedAt": "2026-11-12T21:31:17.309Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastSeenAt": "2026-11-12T21:31:17.309Z",
+      "lastCheckedAt": "2026-11-12T21:31:17.309Z"
     }
   ]
 }

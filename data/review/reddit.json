@@ -1,1 +1,180 @@
-[]
+[
+  {
+    "id": "062451612e0ebf38",
+    "slug": "just-another-not-so-usual-run",
+    "title": "Just Another Not So Usual Run",
+    "description": "Dehradun time to wake up! 🏃‍♀️🏃‍♂️💨\nRegistration link in bio\n\n🏃‍♂️ 4/8KM Group Run\n🏋️‍♂️ Post run group workout\nDate- 15th November\n\n parties (morning, run club in dehradun, fitness, parties, running, hyrox)",
+    "startAt": "2026-11-15T06:30:00+05:30",
+    "venue": {
+      "name": "Vault, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Registration link in bio",
+    "organizer": "zen_runclub",
+    "posts": [
+      "https://www.instagram.com/p/DfoiZRoBnF8"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+  },
+  {
+    "id": "758410791703b302",
+    "slug": "game-meetup",
+    "title": "Game Meetup",
+    "description": "Dehradun, the festive season isn’t over yet, and neither is game night! Join us for a Local Meeple game meetup, a cozy afternoon of board games, card games, laughs and new friends.\n\n📍 The Orchard, EC Road, Dehradun\n🗓️ 15 November\n⏰ 2 – 5 PM\n🎟️ Entry: completely FREE\n\nNever played? Perfect. Bring a friend, bring your competitive side, or just bring yourself. We’ll handle the rest. 🪔\n\nWant a seat at the table? Send us a DM! 📩\nScan the QR on the poster for the location and tap follow so you don’t miss the next one.",
+    "startAt": "2026-11-15T14:00:00+05:30",
+    "endAt": "2026-11-15T17:00:00+05:30",
+    "venue": {
+      "name": "The Orchard, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "howToJoin": "Send a DM to @localmeeple_doon or walk in",
+    "organizer": "localmeeple_doon",
+    "posts": [
+      "https://www.instagram.com/p/DfmpijNOrZW"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfmpijNOrZW",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+  },
+  {
+    "id": "78376d87904772db",
+    "slug": "uttarakhand-26-26-lakh-steps-virtual-challenge",
+    "title": "Uttarakhand@26 - 26 Lakh Steps Virtual Challenge",
+    "description": "🏔️ UTTARAKHAND@26 | 26 LAKH STEPS\n\n26 years of Uttarakhand. 26 lakh steps. One community. ❤️\n\nThis November, let’s celebrate our state’s journey by taking a step towards a healthier one.\n\n🥾 A Virtual Steps Challenge by Doon Walkers\n\n14–15 November 2026\n🎯 Community Goal: 26,00,000 Steps\n\nNo meetup. No fixed location. Just you, your steps and a shared goal.\n\nWalk or run from wherever you are. Every step adds to our collective journey.\n\n🏆 Top 26 walkers will be featured on Doon Walkers Instagram.\n\nInvite a friend. Join the movement. Let’s make this celebration count!\n\n🔗 Join the challenge: Link in bio\n\nOne State. One Community. 26 Lakh Steps. 🧡\n\n #26LakhSteps StepChallenge VirtualWalkingChallenge WalkForFitness HealthyUttarakhand CommunityMovement ExploreUttarakhand FitnessCommunity",
+    "startAt": "2026-11-14",
+    "endAt": "2026-11-15",
+    "venue": {
+      "name": "Virtual - walk or run from wherever you are",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "howToJoin": "Join via link in bio (Doon Walkers Instagram)",
+    "organizer": "doon_walkers",
+    "posts": [
+      "https://www.instagram.com/p/Dfm3tHNS2zf"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+  },
+  {
+    "id": "9f5597d97afe8248",
+    "slug": "run-with-bee",
+    "title": "Run with Bee",
+    "description": "Another post (https://www.instagram.com/p/DfmnNovyUW-) gives the time as 00:00.\n\nAnother post (https://www.instagram.com/p/DfmFn0jy2MB) gives the venue as Solaris MMA Academy, Raipur Road.\n\nDehradun, mark your calendars!\nThis Sunday, 15th November!\nTime: 6AM onwards\n\nRegistration link in bio 🔗",
+    "startAt": "2026-11-15T06:00:00+05:30",
+    "venue": {
+      "name": "See Instagram post",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Registration link in bio",
+    "organizer": "_runwithbee",
+    "posts": [
+      "https://www.instagram.com/p/Dfl10a8Ntvg",
+      "https://www.instagram.com/p/DfmFn0jy2MB",
+      "https://www.instagram.com/p/DfmnNovyUW-"
+    ],
+    "reading": {
+      "detailsFrom": "caption",
+      "confidence": "medium"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastSeenAt": "2026-11-12T21:31:17.309Z",
+    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
+  }
+]
