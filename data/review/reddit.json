@@ -1,50 +1,5 @@
 [
   {
-    "id": "758410791703b302",
-    "slug": "game-meetup",
-    "title": "Game Meetup",
-    "description": "Dehradun, the festive season isn’t over yet, and neither is game night! Join us for a Local Meeple game meetup, a cozy afternoon of board games, card games, laughs and new friends.\n\n📍 The Orchard, EC Road, Dehradun\n🗓️ 15 November\n⏰ 2 – 5 PM\n🎟️ Entry: completely FREE\n\nNever played? Perfect. Bring a friend, bring your competitive side, or just bring yourself. We’ll handle the rest. 🪔\n\nWant a seat at the table? Send us a DM! 📩\nScan the QR on the poster for the location and tap follow so you don’t miss the next one.",
-    "startAt": "2026-11-15T14:00:00+05:30",
-    "endAt": "2026-11-15T17:00:00+05:30",
-    "venue": {
-      "name": "The Orchard, EC Road, Dehradun",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Games",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "free",
-      "currency": "INR"
-    },
-    "howToJoin": "Send a DM to @localmeeple_doon or walk in",
-    "organizer": "localmeeple_doon",
-    "posts": [
-      "https://www.instagram.com/p/DfmpijNOrZW"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "high"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfmpijNOrZW",
-        "checkedAt": "2026-11-12T21:31:17.309Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-12T21:31:17.309Z",
-    "lastSeenAt": "2026-11-12T21:31:17.309Z",
-    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
-  },
-  {
     "id": "78376d87904772db",
     "slug": "uttarakhand-26-26-lakh-steps-virtual-challenge",
     "title": "Uttarakhand@26 - 26 Lakh Steps Virtual Challenge",

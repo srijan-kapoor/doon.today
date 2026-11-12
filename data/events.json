@@ -467,6 +467,48 @@
     "lastCheckedAt": "2026-11-05T09:41:04.924Z"
   },
   {
+    "id": "7195490edb0869b4",
+    "slug": "game-meetup",
+    "title": "Game Meetup",
+    "description": "Dehradun, the festive season isn’t over yet, and neither is game night! Join us for a Local Meeple game meetup, a cozy afternoon of board games, card games, laughs and new friends. 📍 The Orchard, EC Road, Dehradun 🗓️ 15 November ⏰ 2 – 5 PM 🎟️ Entry: completely FREE Never played? Perfect. Bring a friend, bring your competitive side, or just bring yourself. We’ll handle the rest. 🪔 Want a seat at the table? Send us a DM! 📩 Scan the QR on the poster for the location and tap follow so you don’t miss the next one.\n\nOrganized by @localmeeple_doon. How to join: Send a DM to @localmeeple_doon or walk in",
+    "startAt": "2026-11-15T14:00:00+05:30",
+    "endAt": "2026-11-15T17:00:00+05:30",
+    "venue": {
+      "name": "The Orchard, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfmpijNOrZW",
+        "checkedAt": "2026-11-12T22:19:49.006Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfmpijNOrZW",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:19:49.006Z",
+    "lastSeenAt": "2026-11-12T22:19:49.006Z",
+    "lastCheckedAt": "2026-11-12T22:19:49.006Z"
+  },
+  {
     "id": "0bfa172498606cb2",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
