@@ -1,48 +1,5 @@
 [
   {
-    "id": "062451612e0ebf38",
-    "slug": "just-another-not-so-usual-run",
-    "title": "Just Another Not So Usual Run",
-    "description": "Dehradun time to wake up! 🏃‍♀️🏃‍♂️💨\nRegistration link in bio\n\n🏃‍♂️ 4/8KM Group Run\n🏋️‍♂️ Post run group workout\nDate- 15th November\n\n parties (morning, run club in dehradun, fitness, parties, running, hyrox)",
-    "startAt": "2026-11-15T06:30:00+05:30",
-    "venue": {
-      "name": "Vault, EC Road, Dehradun",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Fitness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "howToJoin": "Registration link in bio",
-    "organizer": "zen_runclub",
-    "posts": [
-      "https://www.instagram.com/p/DfoiZRoBnF8"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "high"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
-        "checkedAt": "2026-11-12T21:31:17.309Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-12T21:31:17.309Z",
-    "lastSeenAt": "2026-11-12T21:31:17.309Z",
-    "lastCheckedAt": "2026-11-12T21:31:17.309Z"
-  },
-  {
     "id": "758410791703b302",
     "slug": "game-meetup",
     "title": "Game Meetup",

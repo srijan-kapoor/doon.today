@@ -1106,5 +1106,45 @@
     "firstSeenAt": "2026-11-11T09:57:11.828Z",
     "lastSeenAt": "2026-11-11T09:57:11.828Z",
     "lastCheckedAt": "2026-11-11T09:57:11.828Z"
+  },
+  {
+    "id": "b9fb877d491dfc43",
+    "slug": "just-another-not-so-usual-run",
+    "title": "Just Another Not So Usual Run",
+    "description": "Dehradun time to wake up! 🏃♀️🏃♂️💨 Registration link in bio 🏃♂️ 4/8KM Group Run 🏋️♂️ Post run group workout Date- 15th November parties (morning, run club in dehradun, fitness, parties, running, hyrox)\n\nOrganized by @zen_runclub. How to join: Registration link in bio",
+    "startAt": "2026-11-15T06:30:00+05:30",
+    "venue": {
+      "name": "Vault, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+        "checkedAt": "2026-11-12T22:16:48.808Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:16:48.808Z",
+    "lastSeenAt": "2026-11-12T22:16:48.808Z",
+    "lastCheckedAt": "2026-11-12T22:16:48.808Z"
   }
 ]
