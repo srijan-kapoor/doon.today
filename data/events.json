@@ -37,6 +37,48 @@
     "lastCheckedAt": "2026-11-12T21:31:16.931Z"
   },
   {
+    "id": "c6cfaf9b8112bd22",
+    "slug": "uttarakhand-26-26-lakh-steps-virtual-challenge",
+    "title": "Uttarakhand@26 - 26 Lakh Steps Virtual Challenge",
+    "description": "🏔️ UTTARAKHAND@26 | 26 LAKH STEPS 26 years of Uttarakhand. 26 lakh steps. One community. ❤️ This November, let’s celebrate our state’s journey by taking a step towards a healthier one. 🥾 A Virtual Steps Challenge by Doon Walkers 14–15 November 2026 🎯 Community Goal: 26,00,000 Steps No meetup. No fixed location. Just you, your steps and a shared goal. Walk or run from wherever you are. Every step adds to our collective journey. 🏆 Top 26 walkers will be featured on Doon Walkers Instagram. Invite a friend. Join the movement. Let’s make this celebration count! 🔗 Join the challenge: Link in bio One State. One Community. 26 Lakh Steps. 🧡 #26LakhSteps StepChallenge VirtualWalkingChallenge WalkForFitness HealthyUttarakhand CommunityMovement ExploreUttarakhand FitnessCommunity\n\nOrganized by @doon_walkers. How to join: Join via link in bio (Doon Walkers Instagram)",
+    "startAt": "2026-11-14",
+    "endAt": "2026-11-15",
+    "venue": {
+      "name": "Virtual - walk or run from wherever you are",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+        "checkedAt": "2026-11-12T22:20:13.604Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:20:13.604Z",
+    "lastSeenAt": "2026-11-12T22:20:13.604Z",
+    "lastCheckedAt": "2026-11-12T22:20:13.604Z"
+  },
+  {
     "id": "65a167c1ceb6c6e8",
     "slug": "sitarganj-tiranga-600-brm",
     "title": "Sitarganj Tiranga 600 BRM",
