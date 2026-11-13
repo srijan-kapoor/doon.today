@@ -1,35 +1,26 @@
 {
-  "ranAt": "2026-11-12T21:29:47.100Z",
+  "ranAt": "2026-11-13T00:08:34.117Z",
   "ran": [
-    "allevents",
-    "virasat",
-    "thrillzone",
-    "literaturefestival",
-    "meetup",
-    "gdg",
-    "bookmyshow",
-    "sortmyscene",
-    "reddit",
-    "instagram"
+    "district"
   ],
   "sources": {
     "district": {
       "status": "ok",
-      "events": 7,
+      "events": 9,
       "review": 0,
       "diagnostics": {
-        "listingBytes": 206339,
+        "listingBytes": 207219,
         "candidates": 12,
-        "eventsParsed": 7,
-        "sessionPages": 2,
+        "eventsParsed": 9,
+        "sessionPages": 3,
         "sessionPagesFailed": 0,
         "withOccurrences": 1,
-        "descriptionPages": 7,
+        "descriptionPages": 9,
         "descriptionPagesFailed": 0,
-        "withDescriptions": 7
+        "withDescriptions": 9
       },
-      "lastAttemptAt": "2026-11-12T00:09:44.361Z",
-      "lastSuccessAt": "2026-11-12T00:09:44.361Z",
+      "lastAttemptAt": "2026-11-13T00:08:34.117Z",
+      "lastSuccessAt": "2026-11-13T00:08:34.117Z",
       "consecutiveFailures": 0
     },
     "allevents": {
@@ -181,8 +172,8 @@
     }
   },
   "output": {
-    "published": 39,
-    "review": 4,
+    "published": 45,
+    "review": 0,
     "dropped": 0
   },
   "health": "healthy",
@@ -194,8 +185,8 @@
   ],
   "primarySources": {
     "district": {
-      "lastSuccessAt": "2026-11-12T00:09:44.361Z",
-      "ageHours": 21.3,
+      "lastSuccessAt": "2026-11-13T00:08:34.117Z",
+      "ageHours": 0,
       "fresh": true
     }
   }
