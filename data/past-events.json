@@ -1,5 +1,42 @@
 [
   {
+    "id": "ed278817b2fe5623",
+    "slug": "chandani-bar-night",
+    "title": "Chandani Bar Night",
+    "description": "",
+    "startAt": "2026-11-13T20:00:00+05:30",
+    "endAt": "2026-11-14T01:30:00+05:30",
+    "venue": {
+      "name": "Romeo Lane",
+      "address": "",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/chandani-bar-night-nov-13-2026",
+        "externalId": "6af49fa8b8de31553aaa4260",
+        "checkedAt": "2026-11-13T09:44:21.477Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-11T21:30:04.833Z",
+    "lastSeenAt": "2026-11-13T09:44:21.477Z",
+    "lastCheckedAt": "2026-11-13T09:44:21.477Z"
+  },
+  {
     "id": "4712837d06a01639",
     "slug": "all-india-clat-lr-tour",
     "title": "All India CLAT LR Tour",
