@@ -1270,5 +1270,46 @@
     "firstSeenAt": "2026-11-12T22:20:13.604Z",
     "lastSeenAt": "2026-11-12T22:20:13.604Z",
     "lastCheckedAt": "2026-11-12T22:20:13.604Z"
+  },
+  {
+    "id": "0f19fbda6f322795",
+    "slug": "the-jabarkhet-forest-trek",
+    "title": "The Jabarkhet Forest Trek",
+    "description": "➡️Hello friends! Join us this Sunday morning, *November 15, 2026*, as we trek in one of the most beautiful forests of Mussoorie, the *📍Jabarkhet Nature Reserve*, India’s first private nature reserve. 🌲 While on this trek, we meet dense forests, beautiful trees and stunning landscapes. We will also meet the community which is helping to preserve the pristine area. 🏔️The gradient of this trek is *tough* 💊Ensure that you have no medical ailments, serious medical conditions, or injuries. ________________________________________________ 🔺 Jabarkhet is a 33- km drive from Doon near Bhataghat and offers the most beautiful views of the Himalayas, besides being home to several birds and animals 🐦. 🚗 You are requested to arrange for your own conveyance. 🍃 The total trekking distance is a\n\nOrganized by @btdt_official. How to join: Message 09760699359 to register; details shared via WhatsApp group after sign-up",
+    "startAt": "2026-11-15",
+    "venue": {
+      "name": "Jabarkhet Nature Reserve, Mussoorie",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfpbO5XuNHf",
+        "checkedAt": "2026-11-14T10:45:29.388Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfpbO5XuNHf",
+        "checkedAt": "2026-11-14T09:07:31.755Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-14T10:45:29.388Z",
+    "lastSeenAt": "2026-11-14T10:45:29.388Z",
+    "lastCheckedAt": "2026-11-14T10:45:29.388Z"
   }
 ]
