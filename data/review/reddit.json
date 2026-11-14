@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "9d106c24443e930b",
+    "slug": "the-jabarkhet-forest-trek",
+    "title": "The Jabarkhet Forest Trek",
+    "description": "➡️Hello friends! Join us this Sunday morning, *November 15, 2026*, as we trek in one of the most beautiful forests of Mussoorie, the\n*📍Jabarkhet Nature Reserve*,\nIndia’s first private nature reserve.\n\n🌲 While on this trek, we meet dense forests, beautiful trees and stunning landscapes. We will also meet the community which is helping to preserve the pristine area.\n\n🏔️The gradient of this trek is *tough*\n\n💊Ensure that you have no medical ailments, serious medical conditions, or injuries.\n________________________________________________\n🔺 Jabarkhet is a 33- km drive from Doon near Bhataghat and offers the most beautiful views of the Himalayas, besides being home to several birds and animals 🐦. 🚗 You are requested to arrange for your own conveyance.\n\n🍃 The total trekking distance is a",
+    "startAt": "2026-11-15",
+    "venue": {
+      "name": "Jabarkhet Nature Reserve, Mussoorie",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Message 09760699359 to register; details shared via WhatsApp group after sign-up",
+    "organizer": "btdt_official",
+    "posts": [
+      "https://www.instagram.com/p/DfpbO5XuNHf"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfpbO5XuNHf",
+        "checkedAt": "2026-11-14T09:07:31.755Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-14T09:07:31.755Z",
+    "lastSeenAt": "2026-11-14T09:07:31.755Z",
+    "lastCheckedAt": "2026-11-14T09:07:31.755Z"
+  }
+]
