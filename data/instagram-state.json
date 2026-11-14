@@ -324,7 +324,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwgscqqc2ibg3eo620",
+        "startedAt": "2026-11-14T19:15:27.158Z"
+      },
       "lastFetchedAt": "2026-11-13T20:58:39.953Z",
       "lastError": "",
       "seen": [
@@ -336,7 +339,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwgscqu2eg80g0ddp",
+        "startedAt": "2026-11-14T19:15:27.158Z"
+      },
       "lastFetchedAt": "2026-11-13T20:58:39.953Z",
       "lastError": "",
       "seen": [
@@ -543,50 +549,6 @@
     }
   ],
   "candidates": [
-    {
-      "id": "067130ee2c41d0a5",
-      "slug": "sitarganj-tiranga-600-brm",
-      "title": "Sitarganj Tiranga 600 BRM",
-      "description": "SITARGANJ TIRANGA 600 BRM 🚴‍♂️\n\n600 kilometres of determination, resilience and passion.\n\nDate: 14 November 2026\n⏰ Start Time: 05:30 AM\n📍 Starting Point: Decathlon, Dehradun\n\nRegistrations are OPEN now\nSee the link in bio\n\nThis Brevet is conducted under the aegis of Audax India Randonneurs (AIR) and is affiliated with Audax Club Parisien (ACP), France.\n\nAre you ready to take on the 600 KM challenge? 🇮🇳🔥\n\n #600BRM",
-      "startAt": "2026-11-14T05:30:00+05:30",
-      "venue": {
-        "name": "Decathlon, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Fitness",
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Registration link in bio (registrations open)",
-      "organizer": "pahadipedallers",
-      "posts": [
-        "https://www.instagram.com/p/DfRh0FBTFVW"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfRh0FBTFVW",
-          "checkedAt": "2026-11-03T20:35:57.909Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-03T20:35:57.909Z",
-      "lastSeenAt": "2026-11-03T20:35:57.909Z",
-      "lastCheckedAt": "2026-11-03T20:35:57.909Z"
-    },
     {
       "id": "2170fc7b412a8efd",
       "slug": "grand-group-hike",
