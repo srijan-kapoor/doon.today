@@ -42,47 +42,6 @@
     "lastCheckedAt": "2026-11-12T22:20:13.604Z"
   },
   {
-    "id": "c1df6ea913949973",
-    "slug": "dark-sky-lab-chapter-1",
-    "title": "Dark Sky Lab Chapter 1",
-    "description": "There’s magic in seeing the universe through curious eyes and finding stories in the unknown. ✨ This Children’s Day, rediscover that sense of curiosity with Dehradun Astronomy Club's first-ever Dark Sky Lab, a space to observe the night sky and the many wonders it holds. 🌌 🗓️ 14 November, Saturday ⏳ 11.00 pm to 1.00 am 📍Doonsters Arena, Banjarawala From witnessing the Jupiter–Mars conjunction to keeping an eye out for meteors, there’s plenty to make the night special. We’ll also journey beyond our skies with a special discussion on Voyager 1's latest milestone and identify some constellations! A little science, a lot of wonder and an evening of looking up at the universe with fresh eyes. 💫 Limited spots. Register from the link in bio.\n\nOrganized by @dehradun_astronomy_club. How to join: Register via link in bio",
-    "startAt": "2026-11-14T23:00:00+05:30",
-    "endAt": "2026-11-15T01:00:00+05:30",
-    "venue": {
-      "name": "Doonsters Arena, Banjarawala",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DfjUkq3yLfi",
-        "checkedAt": "2026-11-11T09:57:11.828Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfjUkq3yLfi",
-        "checkedAt": "2026-11-11T09:35:39.770Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-11-11T09:57:11.828Z",
-    "lastSeenAt": "2026-11-11T09:57:11.828Z",
-    "lastCheckedAt": "2026-11-11T09:57:11.828Z"
-  },
-  {
     "id": "0f19fbda6f322795",
     "slug": "the-jabarkhet-forest-trek",
     "title": "The Jabarkhet Forest Trek",
@@ -676,7 +635,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.685Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       },
       {
@@ -693,8 +652,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-14T19:14:57.929Z",
-    "lastCheckedAt": "2026-11-14T19:14:57.929Z",
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -869,7 +828,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       },
       {
@@ -885,8 +844,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-14T19:14:23.735Z",
-    "lastCheckedAt": "2026-11-14T19:14:23.735Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -994,7 +953,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/run-for-trees-marathon-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       },
       {
@@ -1010,8 +969,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-14T19:14:05.400Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.400Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -1041,7 +1000,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.689Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       }
     ],
@@ -1051,8 +1010,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-14T00:08:36.689Z",
-    "lastCheckedAt": "2026-11-14T00:08:36.689Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "b36082addcdc9932",
@@ -1309,7 +1268,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       },
       {
@@ -1325,8 +1284,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-14T19:14:05.401Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.401Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1397,7 +1356,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.687Z",
+        "checkedAt": "2026-11-15T00:08:29.007Z",
         "confidence": 0.95
       }
     ],
@@ -1407,8 +1366,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-14T00:08:36.687Z",
-    "lastCheckedAt": "2026-11-14T00:08:36.687Z"
+    "lastSeenAt": "2026-11-15T00:08:29.007Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.007Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1541,7 +1500,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       }
     ],
@@ -1551,8 +1510,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastCheckedAt": "2026-11-14T00:08:36.688Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1583,7 +1542,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.008Z",
         "confidence": 0.95
       }
     ],
@@ -1593,8 +1552,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastCheckedAt": "2026-11-14T00:08:36.688Z"
+    "lastSeenAt": "2026-11-15T00:08:29.008Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
   },
   {
     "id": "b59dab4202710ff2",
@@ -1869,7 +1828,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/the-philosophy-of-resonance-satinder-sartaaj-live-in-dehradun-2027-buy-tickets",
-        "checkedAt": "2026-11-14T00:08:36.688Z",
+        "checkedAt": "2026-11-15T00:08:29.005Z",
         "confidence": 0.95
       }
     ],
@@ -1879,8 +1838,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.788Z",
-    "lastSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastCheckedAt": "2026-11-14T00:08:36.688Z"
+    "lastSeenAt": "2026-11-15T00:08:29.005Z",
+    "lastCheckedAt": "2026-11-15T00:08:29.005Z"
   },
   {
     "id": "4adc16d3d6234306",
