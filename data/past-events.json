@@ -1,5 +1,177 @@
 [
   {
+    "id": "85606d167d241eb4",
+    "slug": "heading-up-to-dhanaulti-this-sunday-nov-15-for-a-breakfast-run-with-rev-mc-come-join-us",
+    "title": "Dhanaulti Breakfast Run",
+    "description": "The Dhanaulti Breakfast Run (DBR) with REV MC: a morning hill ride for riders around Dehradun, with breakfast on the way. Assembly at 6:00 AM, flag-off at 6:30 AM sharp from Mussoorie Diversion, a breakfast stop at Dhanaulti, Tapu Sera waterfall, and the finish at Maharana Pratap Chowk. Cruisers, nakeds, ADVs and sportbikes are all welcome, as long as you ride safe and keep the group pace.\n\nOrganized by @rev_motoclub.",
+    "startAt": "2026-11-15T06:00:00+05:30",
+    "endAt": "2026-11-15T12:30:00+05:30",
+    "venue": {
+      "name": "Flag-off at Mussoorie Diversion, breakfast at Dhanaulti",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Food",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.revmc.in/rides/dbr_dhanaulti_breakfast_run",
+        "checkedAt": "2026-11-11T04:29:38.238Z",
+        "confidence": 1
+      },
+      {
+        "provider": "reddit",
+        "url": "https://www.reddit.com/r/Dehradun/comments/1xsfwwu/heading_up_to_dhanaulti_this_sunday_nov_15_for_a/",
+        "checkedAt": "2026-11-10T10:03:11.318Z",
+        "confidence": 0.5
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfjodr1lEd3",
+        "checkedAt": "2026-11-11T04:29:38.238Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-10T13:34:58.022Z",
+    "lastSeenAt": "2026-11-11T04:29:38.238Z",
+    "lastCheckedAt": "2026-11-11T04:29:38.238Z",
+    "modifiedAt": "2026-11-11T04:29:38.238Z",
+    "sequence": 1
+  },
+  {
+    "id": "f7bd7dd821d4f81d",
+    "slug": "run-x-mma-15th-november",
+    "title": "Run x MMA | 15th November",
+    "description": "",
+    "startAt": "2026-11-15T06:00:00+05:30",
+    "endAt": "2026-11-15T08:30:00+05:30",
+    "venue": {
+      "name": "Solaris mma and fitness",
+      "address": "",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 199,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/run-x-mma-15th-november-nov-15-2026",
+        "externalId": "6af316ab771b5a3ccf78adf7",
+        "checkedAt": "2026-11-14T19:15:26.790Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-10T20:55:29.772Z",
+    "lastSeenAt": "2026-11-14T19:15:26.790Z",
+    "lastCheckedAt": "2026-11-14T19:15:26.790Z",
+    "sequence": 1,
+    "modifiedAt": "2026-11-11T09:36:00.606Z"
+  },
+  {
+    "id": "b9fb877d491dfc43",
+    "slug": "just-another-not-so-usual-run",
+    "title": "Just Another Not So Usual Run",
+    "description": "Dehradun time to wake up! 🏃♀️🏃♂️💨 Registration link in bio 🏃♂️ 4/8KM Group Run 🏋️♂️ Post run group workout Date- 15th November parties (morning, run club in dehradun, fitness, parties, running, hyrox)\n\nOrganized by @zen_runclub. How to join: Registration link in bio",
+    "startAt": "2026-11-15T06:30:00+05:30",
+    "venue": {
+      "name": "Vault, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+        "checkedAt": "2026-11-12T22:16:48.808Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:16:48.808Z",
+    "lastSeenAt": "2026-11-12T22:16:48.808Z",
+    "lastCheckedAt": "2026-11-12T22:16:48.808Z"
+  },
+  {
+    "id": "c517853cd83f4736",
+    "slug": "run-with-bee",
+    "title": "Run with Bee",
+    "description": "Another post (https://www.instagram.com/p/DfmnNovyUW-) gives the time as 00:00. Another post (https://www.instagram.com/p/DfmFn0jy2MB) gives the venue as Solaris MMA Academy, Raipur Road. Dehradun, mark your calendars! This Sunday, 15th November! Time: 6AM onwards Registration link in bio 🔗\n\nOrganized by @_runwithbee. How to join: Registration link in bio",
+    "startAt": "2026-11-15T06:00:00+05:30",
+    "venue": {
+      "name": "Solaris MMA Academy",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "checkedAt": "2026-11-12T22:18:48.382Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:18:48.382Z",
+    "lastSeenAt": "2026-11-12T22:18:48.382Z",
+    "lastCheckedAt": "2026-11-12T22:18:48.382Z"
+  },
+  {
     "id": "c1df6ea913949973",
     "slug": "dark-sky-lab-chapter-1",
     "title": "Dark Sky Lab Chapter 1",

@@ -83,222 +83,6 @@
     "lastCheckedAt": "2026-11-14T10:45:29.388Z"
   },
   {
-    "id": "1dabe4f21ac9bf45",
-    "slug": "daru-badnaam-a-comedy-show-by-inder-sahani-2026-11-15",
-    "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
-    "description": "Drinking is a social habit, Inder has successfully stayed away from this since 1995, but his friends on the other hand has had a glass in their hand every time, if you have group and drunk story, this show should not be missed.Inder says Everyone should once watch this show with their whole gang and you will leave with the feeling Sahani saab baithna hai aapke saath",
-    "startAt": "2026-11-15",
-    "venue": {
-      "name": "Studio XO Bar: Dehradun",
-      "address": "Universal Trade Tower, 140/174/281 Rajpur road, Chowk, Mussoorie Diversion Crossing, Kishanpur, Dehradun, Uttarakhand 248009, India Dehradun",
-      "city": "Dehradun",
-      "area": "Rajpur",
-      "geo": {
-        "lat": 30.3722,
-        "lng": 78.0787
-      }
-    },
-    "categories": [
-      "Comedy"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030972909835",
-        "checkedAt": "2026-11-13T20:55:51.693Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-13T09:42:14.841Z",
-    "lastSeenAt": "2026-11-13T20:55:51.693Z",
-    "lastCheckedAt": "2026-11-13T20:55:51.693Z",
-    "endAt": "2026-11-15",
-    "sequence": 1,
-    "modifiedAt": "2026-11-13T20:58:44.395Z",
-    "missedRuns": 2
-  },
-  {
-    "id": "85606d167d241eb4",
-    "slug": "heading-up-to-dhanaulti-this-sunday-nov-15-for-a-breakfast-run-with-rev-mc-come-join-us",
-    "title": "Dhanaulti Breakfast Run",
-    "description": "The Dhanaulti Breakfast Run (DBR) with REV MC: a morning hill ride for riders around Dehradun, with breakfast on the way. Assembly at 6:00 AM, flag-off at 6:30 AM sharp from Mussoorie Diversion, a breakfast stop at Dhanaulti, Tapu Sera waterfall, and the finish at Maharana Pratap Chowk. Cruisers, nakeds, ADVs and sportbikes are all welcome, as long as you ride safe and keep the group pace.\n\nOrganized by @rev_motoclub.",
-    "startAt": "2026-11-15T06:00:00+05:30",
-    "endAt": "2026-11-15T12:30:00+05:30",
-    "venue": {
-      "name": "Flag-off at Mussoorie Diversion, breakfast at Dhanaulti",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors",
-      "Food",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "free",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.revmc.in/rides/dbr_dhanaulti_breakfast_run",
-        "checkedAt": "2026-11-11T04:29:38.238Z",
-        "confidence": 1
-      },
-      {
-        "provider": "reddit",
-        "url": "https://www.reddit.com/r/Dehradun/comments/1xsfwwu/heading_up_to_dhanaulti_this_sunday_nov_15_for_a/",
-        "checkedAt": "2026-11-10T10:03:11.318Z",
-        "confidence": 0.5
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/Dfjodr1lEd3",
-        "checkedAt": "2026-11-11T04:29:38.238Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-11-10T13:34:58.022Z",
-    "lastSeenAt": "2026-11-11T04:29:38.238Z",
-    "lastCheckedAt": "2026-11-11T04:29:38.238Z",
-    "modifiedAt": "2026-11-11T04:29:38.238Z",
-    "sequence": 1
-  },
-  {
-    "id": "c517853cd83f4736",
-    "slug": "run-with-bee",
-    "title": "Run with Bee",
-    "description": "Another post (https://www.instagram.com/p/DfmnNovyUW-) gives the time as 00:00. Another post (https://www.instagram.com/p/DfmFn0jy2MB) gives the venue as Solaris MMA Academy, Raipur Road. Dehradun, mark your calendars! This Sunday, 15th November! Time: 6AM onwards Registration link in bio 🔗\n\nOrganized by @_runwithbee. How to join: Registration link in bio",
-    "startAt": "2026-11-15T06:00:00+05:30",
-    "venue": {
-      "name": "Solaris MMA Academy",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Fitness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
-        "checkedAt": "2026-11-12T22:18:48.382Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/Dfl10a8Ntvg",
-        "checkedAt": "2026-11-12T21:31:17.309Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-11-12T22:18:48.382Z",
-    "lastSeenAt": "2026-11-12T22:18:48.382Z",
-    "lastCheckedAt": "2026-11-12T22:18:48.382Z"
-  },
-  {
-    "id": "f7bd7dd821d4f81d",
-    "slug": "run-x-mma-15th-november",
-    "title": "Run x MMA | 15th November",
-    "description": "",
-    "startAt": "2026-11-15T06:00:00+05:30",
-    "endAt": "2026-11-15T08:30:00+05:30",
-    "venue": {
-      "name": "Solaris mma and fitness",
-      "address": "",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Fitness",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 199,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "sortmyscene",
-        "url": "https://sortmyscene.com/events/run-x-mma-15th-november-nov-15-2026",
-        "externalId": "6af316ab771b5a3ccf78adf7",
-        "checkedAt": "2026-11-14T19:15:26.790Z",
-        "confidence": 0.85
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 6
-    },
-    "firstSeenAt": "2026-11-10T20:55:29.772Z",
-    "lastSeenAt": "2026-11-14T19:15:26.790Z",
-    "lastCheckedAt": "2026-11-14T19:15:26.790Z",
-    "sequence": 1,
-    "modifiedAt": "2026-11-11T09:36:00.606Z"
-  },
-  {
-    "id": "b9fb877d491dfc43",
-    "slug": "just-another-not-so-usual-run",
-    "title": "Just Another Not So Usual Run",
-    "description": "Dehradun time to wake up! 🏃♀️🏃♂️💨 Registration link in bio 🏃♂️ 4/8KM Group Run 🏋️♂️ Post run group workout Date- 15th November parties (morning, run club in dehradun, fitness, parties, running, hyrox)\n\nOrganized by @zen_runclub. How to join: Registration link in bio",
-    "startAt": "2026-11-15T06:30:00+05:30",
-    "venue": {
-      "name": "Vault, EC Road, Dehradun",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Fitness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
-        "checkedAt": "2026-11-12T22:16:48.808Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfoiZRoBnF8",
-        "checkedAt": "2026-11-12T21:31:17.309Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-11-12T22:16:48.808Z",
-    "lastSeenAt": "2026-11-12T22:16:48.808Z",
-    "lastCheckedAt": "2026-11-12T22:16:48.808Z"
-  },
-  {
     "id": "45b8c085afa22ebd",
     "slug": "book-hangout-potluck",
     "title": "Book hangout + potluck",
@@ -402,7 +186,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030713294008",
-        "checkedAt": "2026-11-14T19:14:05.398Z",
+        "checkedAt": "2026-11-15T09:35:52.552Z",
         "confidence": 0.75
       }
     ],
@@ -412,8 +196,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-11-14T19:14:05.398Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.398Z",
+    "lastSeenAt": "2026-11-15T09:35:52.552Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.552Z",
     "sequence": 4,
     "modifiedAt": "2026-10-26T15:15:59.943Z",
     "endAt": "2026-11-15T17:30:00+05:30"
@@ -485,7 +269,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/cordyceps-militaris-cultivation-training-and-workshop/200031004675533",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -495,8 +279,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-09T09:55:39.124Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z"
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z"
   },
   {
     "id": "04b297f4d2f40790",
@@ -533,7 +317,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
         "externalId": "ET00501667",
-        "checkedAt": "2026-11-14T19:15:15.875Z",
+        "checkedAt": "2026-11-15T09:37:12.426Z",
         "confidence": 0.95
       }
     ],
@@ -543,8 +327,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-11-01T16:21:08.545Z",
-    "lastSeenAt": "2026-11-14T19:15:15.875Z",
-    "lastCheckedAt": "2026-11-14T19:15:15.875Z"
+    "lastSeenAt": "2026-11-15T09:37:12.426Z",
+    "lastCheckedAt": "2026-11-15T09:37:12.426Z"
   },
   {
     "id": "940caf6d95fc377d",
@@ -581,20 +365,20 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/d9-presents-pizza-making-workshop/ET00524545",
         "externalId": "ET00524545",
-        "checkedAt": "2026-11-14T19:14:54.776Z",
+        "checkedAt": "2026-11-15T09:37:00.507Z",
         "confidence": 0.95
       },
       {
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/d9-present-pizza-making-work-shop-nov-22-2026",
         "externalId": "6af4cde17b85a362d467ed4f",
-        "checkedAt": "2026-11-14T19:15:26.790Z",
+        "checkedAt": "2026-11-15T09:37:33.928Z",
         "confidence": 0.85
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/pizza-making-workshop-at-d9-dehradun/4100030972199252",
-        "checkedAt": "2026-11-14T19:14:05.401Z",
+        "checkedAt": "2026-11-15T09:35:52.555Z",
         "confidence": 0.75
       }
     ],
@@ -604,8 +388,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-11-01T16:21:08.551Z",
-    "lastSeenAt": "2026-11-14T19:15:26.790Z",
-    "lastCheckedAt": "2026-11-14T19:15:26.790Z"
+    "lastSeenAt": "2026-11-15T09:37:33.928Z",
+    "lastCheckedAt": "2026-11-15T09:37:33.928Z"
   },
   {
     "id": "9c6337b759a5bb0a",
@@ -642,7 +426,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
         "externalId": "ET00377836",
-        "checkedAt": "2026-11-14T19:14:57.929Z",
+        "checkedAt": "2026-11-15T09:37:14.691Z",
         "confidence": 0.95
       }
     ],
@@ -652,8 +436,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-15T00:08:29.008Z",
-    "lastCheckedAt": "2026-11-15T00:08:29.008Z",
+    "lastSeenAt": "2026-11-15T09:37:14.691Z",
+    "lastCheckedAt": "2026-11-15T09:37:14.691Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -692,13 +476,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/safarnama-by-krishna-shukla/ET00508857",
         "externalId": "ET00508857",
-        "checkedAt": "2026-11-14T19:15:07.761Z",
+        "checkedAt": "2026-11-15T09:37:17.307Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/safarnama-by-krishna-shukla/3900030659387200",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -708,8 +492,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-14T19:15:07.761Z",
-    "lastCheckedAt": "2026-11-14T19:15:07.761Z",
+    "lastSeenAt": "2026-11-15T09:37:17.307Z",
+    "lastCheckedAt": "2026-11-15T09:37:17.307Z",
     "sequence": 2,
     "modifiedAt": "2026-11-04T09:29:08.015Z"
   },
@@ -741,7 +525,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/death-tere-kilive-comedy-show/3900031026001953",
-        "checkedAt": "2026-11-14T19:14:05.401Z",
+        "checkedAt": "2026-11-15T09:35:52.555Z",
         "confidence": 0.75
       }
     ],
@@ -751,8 +535,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-12T09:56:33.110Z",
-    "lastSeenAt": "2026-11-14T19:14:05.401Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.401Z"
+    "lastSeenAt": "2026-11-15T09:35:52.555Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.555Z"
   },
   {
     "id": "fe076565e26a0fd8",
@@ -785,7 +569,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/operation-forge-x-tickets/80001487149685",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -795,8 +579,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z",
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z",
     "sequence": 1,
     "modifiedAt": "2026-10-26T15:15:59.949Z"
   },
@@ -834,7 +618,7 @@
       {
         "provider": "literaturefestival",
         "url": "https://www.dehradunliteraturefestival.com/",
-        "checkedAt": "2026-11-14T19:14:23.735Z",
+        "checkedAt": "2026-11-15T09:36:13.219Z",
         "confidence": 0.9
       }
     ],
@@ -844,8 +628,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-15T00:08:29.008Z",
-    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
+    "lastSeenAt": "2026-11-15T09:36:13.219Z",
+    "lastCheckedAt": "2026-11-15T09:36:13.219Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -872,7 +656,7 @@
         "provider": "gdg",
         "url": "https://gdg.community.dev/events/details/google-gdg-dehradun-presents-devfest-dehradun-2026/",
         "externalId": "134977",
-        "checkedAt": "2026-11-14T19:14:26.436Z",
+        "checkedAt": "2026-11-15T09:36:16.054Z",
         "confidence": 0.9
       }
     ],
@@ -882,8 +666,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-03T20:32:56.238Z",
-    "lastSeenAt": "2026-11-14T19:14:26.436Z",
-    "lastCheckedAt": "2026-11-14T19:14:26.436Z",
+    "lastSeenAt": "2026-11-15T09:36:16.054Z",
+    "lastCheckedAt": "2026-11-15T09:36:16.054Z",
     "sequence": 1,
     "modifiedAt": "2026-11-14T19:15:27.641Z"
   },
@@ -912,7 +696,7 @@
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/the-prom-night-nov-28-2026",
         "externalId": "6af5f244addc867d3b6e056e",
-        "checkedAt": "2026-11-14T19:15:26.790Z",
+        "checkedAt": "2026-11-15T09:37:33.929Z",
         "confidence": 0.85
       }
     ],
@@ -922,8 +706,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-12T21:31:16.931Z",
-    "lastSeenAt": "2026-11-14T19:15:26.790Z",
-    "lastCheckedAt": "2026-11-14T19:15:26.790Z"
+    "lastSeenAt": "2026-11-15T09:37:33.929Z",
+    "lastCheckedAt": "2026-11-15T09:37:33.929Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -959,7 +743,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/run-for-trees/4100030939067213",
-        "checkedAt": "2026-11-14T19:14:05.400Z",
+        "checkedAt": "2026-11-15T09:35:52.554Z",
         "confidence": 0.75
       }
     ],
@@ -969,8 +753,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-15T00:08:29.008Z",
-    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
+    "lastSeenAt": "2026-11-15T09:35:52.554Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.554Z"
   },
   {
     "id": "a834c213ac21eb80",
@@ -1083,7 +867,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/mukul-sharma-live-a-poetry-and-storytelling-show/3900030974543518",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1093,8 +877,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-05T09:37:22.961Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z"
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z"
   },
   {
     "id": "37149b72433966df",
@@ -1127,7 +911,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/daru-badnaam-a-comedy-show-by-inder-sahani/ET00484118",
         "externalId": "ET00484118",
-        "checkedAt": "2026-11-14T19:15:00.619Z",
+        "checkedAt": "2026-11-15T09:37:25.820Z",
         "confidence": 0.95
       }
     ],
@@ -1137,14 +921,14 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:16.455Z",
-    "lastSeenAt": "2026-11-14T19:15:00.619Z",
-    "lastCheckedAt": "2026-11-14T19:15:00.619Z"
+    "lastSeenAt": "2026-11-15T09:37:25.820Z",
+    "lastCheckedAt": "2026-11-15T09:37:25.820Z"
   },
   {
     "id": "e466e09b8c9739f4",
     "slug": "200-hour-yoga-teacher-training",
-    "title": "100 Hour Yoga Teacher Training",
-    "description": "Start Your 100-Hour Yoga Journey with Kunwar Yoga This 12-day program is designed for students who want a structured introduction to yoga teacher training without immediately committing to a longer course. It combines disciplined practice with essential theory so participants can build a stronger personal foundation. The 100 Hour Yoga Teacher Training in Dehradun covers Hatha and Vinyasa-based asana practice, pranayama, meditation, anatomy and physiology, yoga philosophy, teaching methodology, and supervised practice. The course is organized to balance classroom learning with practical application. Our focus is not only on learning techniques, but also on understanding why they are practiced. Students work on alignment, breath awareness, concentration, safe movement, yogic principles, and the basic communication skills used when guiding a practice.",
+    "title": "200 Hour Yoga Teacher Training",
+    "description": "The 200 Hour Yoga Teacher Training in Dehradun, India, is thoughtfully designed for students who wish to deepen their practice and explore yoga through its traditional teachings, authentic techniques, and time-honored philosophy. At Kunwar Yoga, located in the peaceful heart of Dehradun, we offer 100 Hour, 200 Hour, 300 Hour, and 500 Hour YTTC programs. Our 200 Hour YTTC is a complete 25-day immersive program carefully crafted for individuals who aspire to become confident, knowledgeable, and holistic yoga teachers anywhere in the world. This course deepens your understanding of yoga, refines your personal practice, and guides you toward self-awareness, helping you slow down, stay present, and connect with your true self on both physical and spiritual levels. With years of teaching experience, Kunwar Yoga has created a curriculum that beautifully blends theory and prac",
     "startAt": "2026-12-07T00:00:00+05:30",
     "endAt": "2026-12-07T01:00:00+05:30",
     "venue": {
@@ -1168,13 +952,13 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/200-hour-yoga-teacher-training-tickets/80001338361028",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/100-hour-yoga-teacher-training-tickets/80003663823602",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1184,8 +968,10 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z"
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z",
+    "sequence": 1,
+    "modifiedAt": "2026-11-15T09:37:39.763Z"
   },
   {
     "id": "d092613afd25636e",
@@ -1210,7 +996,7 @@
     "pricing": {
       "type": "paid",
       "minPrice": 799,
-      "maxPrice": 1399,
+      "maxPrice": 2199,
       "currency": "INR"
     },
     "sources": [
@@ -1218,13 +1004,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/level-up-play-fest-centrio-mall-dehradun/ET00523878",
         "externalId": "ET00523878",
-        "checkedAt": "2026-11-14T19:15:25.315Z",
+        "checkedAt": "2026-11-15T09:37:32.808Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/level-up-play-fest-centrio-mall-dehradun/3900030931951226",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1234,8 +1020,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-28T21:09:08.578Z",
-    "lastSeenAt": "2026-11-14T19:15:25.315Z",
-    "lastCheckedAt": "2026-11-14T19:15:25.315Z",
+    "lastSeenAt": "2026-11-15T09:37:32.808Z",
+    "lastCheckedAt": "2026-11-15T09:37:32.808Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -1274,7 +1060,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-moto-fest-2026/4100030972198428",
-        "checkedAt": "2026-11-14T19:14:05.401Z",
+        "checkedAt": "2026-11-15T09:35:52.555Z",
         "confidence": 0.75
       }
     ],
@@ -1284,8 +1070,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-15T00:08:29.008Z",
-    "lastCheckedAt": "2026-11-15T00:08:29.008Z"
+    "lastSeenAt": "2026-11-15T09:35:52.555Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.555Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1315,7 +1101,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/the-bel-awards/200030972130146",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1325,8 +1111,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-05T09:37:22.961Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z"
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z"
   },
   {
     "id": "a2ad6ec0c7a35048",
@@ -1400,13 +1186,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605",
         "externalId": "ET00407605",
-        "checkedAt": "2026-11-13T20:58:21.209Z",
+        "checkedAt": "2026-11-15T09:37:10.237Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halki-halki-fati-by-vikas-kush-sharma/3900030845664301",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1416,8 +1202,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z",
+    "lastSeenAt": "2026-11-15T09:37:10.237Z",
+    "lastCheckedAt": "2026-11-15T09:37:10.237Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -1452,13 +1238,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/new-year-2027/ET00524738",
         "externalId": "ET00524738",
-        "checkedAt": "2026-11-14T19:15:21.683Z",
+        "checkedAt": "2026-11-15T09:37:30.357Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-year-2027/3900030973684426",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1468,8 +1254,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:21.827Z",
-    "lastSeenAt": "2026-11-14T19:15:21.683Z",
-    "lastCheckedAt": "2026-11-14T19:15:21.683Z"
+    "lastSeenAt": "2026-11-15T09:37:30.357Z",
+    "lastCheckedAt": "2026-11-15T09:37:30.357Z"
   },
   {
     "id": "1060b7262192c6b8",
@@ -1586,13 +1372,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/new-year-party-2027-dehradun-nye-eve-maya-farm/ET00525062",
         "externalId": "ET00525062",
-        "checkedAt": "2026-11-14T19:15:02.396Z",
+        "checkedAt": "2026-11-15T09:37:04.069Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-year-party-2027-dehradun-nye-eve-maya-farm/3900031000482049",
-        "checkedAt": "2026-11-14T19:14:05.401Z",
+        "checkedAt": "2026-11-15T09:35:52.555Z",
         "confidence": 0.75
       }
     ],
@@ -1602,8 +1388,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-06T09:31:35.001Z",
-    "lastSeenAt": "2026-11-14T19:15:02.396Z",
-    "lastCheckedAt": "2026-11-14T19:15:02.396Z"
+    "lastSeenAt": "2026-11-15T09:37:04.069Z",
+    "lastCheckedAt": "2026-11-15T09:37:04.069Z"
   },
   {
     "id": "562de29d0166cb06",
@@ -1646,8 +1432,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z",
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -1681,13 +1467,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/chikka-on-roll/ET00387309",
         "externalId": "ET00387309",
-        "checkedAt": "2026-11-14T19:15:19.984Z",
+        "checkedAt": "2026-11-15T09:37:23.402Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/chikka-on-roll/3900030703853405",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1697,8 +1483,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-14T19:15:19.984Z",
-    "lastCheckedAt": "2026-11-14T19:15:19.984Z",
+    "lastSeenAt": "2026-11-15T09:37:23.402Z",
+    "lastCheckedAt": "2026-11-15T09:37:23.402Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.866Z"
   },
@@ -1732,13 +1518,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/lakhwinder-wadali-india-tour-dehradun/ET00514210",
         "externalId": "ET00514210",
-        "checkedAt": "2026-11-14T19:14:52.576Z",
+        "checkedAt": "2026-11-15T09:36:59.207Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lakhwinder-wadali-india-tour-dehradun/3900030624689839",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1748,8 +1534,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-14T19:14:52.576Z",
-    "lastCheckedAt": "2026-11-14T19:14:52.576Z",
+    "lastSeenAt": "2026-11-15T09:36:59.207Z",
+    "lastCheckedAt": "2026-11-15T09:36:59.207Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.863Z"
   },
@@ -1796,8 +1582,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-23T02:43:57.432Z",
-    "lastSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastCheckedAt": "2026-11-14T19:14:05.402Z",
+    "lastSeenAt": "2026-11-15T09:35:52.556Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.556Z",
     "sequence": 2,
     "modifiedAt": "2026-10-27T05:13:41.816Z"
   },
@@ -1870,13 +1656,13 @@
       {
         "provider": "thrillzone",
         "url": "https://www.sportifiindia.com/events/ddn-ultra-run",
-        "checkedAt": "2026-11-14T19:14:23.639Z",
+        "checkedAt": "2026-11-15T09:36:13.065Z",
         "confidence": 0.9
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-ultra-run-2027-4th-edition-tickets/80001080698758",
-        "checkedAt": "2026-11-14T19:14:05.402Z",
+        "checkedAt": "2026-11-15T09:35:52.556Z",
         "confidence": 0.75
       }
     ],
@@ -1886,8 +1672,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-11-14T19:14:23.639Z",
-    "lastCheckedAt": "2026-11-14T19:14:23.639Z",
+    "lastSeenAt": "2026-11-15T09:36:13.065Z",
+    "lastCheckedAt": "2026-11-15T09:36:13.065Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.948Z"
   },
@@ -1913,7 +1699,7 @@
       {
         "provider": "thrillzone",
         "url": "https://sportifiindia.com/events/dhm-2027",
-        "checkedAt": "2026-11-14T19:14:23.639Z",
+        "checkedAt": "2026-11-15T09:36:13.065Z",
         "confidence": 0.9
       }
     ],
@@ -1923,7 +1709,7 @@
       "score": 7
     },
     "firstSeenAt": "2026-11-08T09:08:48.927Z",
-    "lastSeenAt": "2026-11-14T19:14:23.639Z",
-    "lastCheckedAt": "2026-11-14T19:14:23.639Z"
+    "lastSeenAt": "2026-11-15T09:36:13.065Z",
+    "lastCheckedAt": "2026-11-15T09:36:13.065Z"
   }
 ]
