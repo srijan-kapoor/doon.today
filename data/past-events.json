@@ -1,5 +1,90 @@
 [
   {
+    "id": "0bfa172498606cb2",
+    "slug": "daru-badnaam-a-comedy-show-by-inder-sahani",
+    "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
+    "description": "Drinking is a social habit, Inder has successfully stayed away from this since 1995, but his friends on the other hand has had a glass in their hand every time, if you have group and drunk story, this show should not be missed.Inder says Everyone should once watch this show with their whole gang and you will leave with the feeling Sahani saab baithna hai aapke saath",
+    "startAt": "2026-11-15T16:00:00+05:30",
+    "venue": {
+      "name": "IRDT Auditorium: Dehradun",
+      "address": "Near, Survey Chowk, Race Course, Dehradun, Uttarakhand 248001, India Dehradun",
+      "city": "Dehradun",
+      "area": "Race Course",
+      "geo": {
+        "lat": 30.3239,
+        "lng": 78.051
+      }
+    },
+    "categories": [
+      "Comedy"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030713294008",
+        "checkedAt": "2026-11-15T09:35:52.552Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-10-18T03:32:24.114Z",
+    "lastSeenAt": "2026-11-15T09:35:52.552Z",
+    "lastCheckedAt": "2026-11-15T09:35:52.552Z",
+    "sequence": 4,
+    "modifiedAt": "2026-10-26T15:15:59.943Z",
+    "endAt": "2026-11-15T17:30:00+05:30"
+  },
+  {
+    "id": "7195490edb0869b4",
+    "slug": "game-meetup",
+    "title": "Game Meetup",
+    "description": "Dehradun, the festive season isn’t over yet, and neither is game night! Join us for a Local Meeple game meetup, a cozy afternoon of board games, card games, laughs and new friends. 📍 The Orchard, EC Road, Dehradun 🗓️ 15 November ⏰ 2 – 5 PM 🎟️ Entry: completely FREE Never played? Perfect. Bring a friend, bring your competitive side, or just bring yourself. We’ll handle the rest. 🪔 Want a seat at the table? Send us a DM! 📩 Scan the QR on the poster for the location and tap follow so you don’t miss the next one.\n\nOrganized by @localmeeple_doon. How to join: Send a DM to @localmeeple_doon or walk in",
+    "startAt": "2026-11-15T14:00:00+05:30",
+    "endAt": "2026-11-15T17:00:00+05:30",
+    "venue": {
+      "name": "The Orchard, EC Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfmpijNOrZW",
+        "checkedAt": "2026-11-12T22:19:49.006Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfmpijNOrZW",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:19:49.006Z",
+    "lastSeenAt": "2026-11-12T22:19:49.006Z",
+    "lastCheckedAt": "2026-11-12T22:19:49.006Z"
+  },
+  {
     "id": "85606d167d241eb4",
     "slug": "heading-up-to-dhanaulti-this-sunday-nov-15-for-a-breakfast-run-with-rev-mc-come-join-us",
     "title": "Dhanaulti Breakfast Run",
@@ -49,6 +134,41 @@
     "lastCheckedAt": "2026-11-11T04:29:38.238Z",
     "modifiedAt": "2026-11-11T04:29:38.238Z",
     "sequence": 1
+  },
+  {
+    "id": "45b8c085afa22ebd",
+    "slug": "book-hangout-potluck",
+    "title": "Book hangout + potluck",
+    "description": "It's a book meetup with food\n\nOrganized by Dehradun Hangouts. How to join: https://forms.gle/25ka8gUU6qHYi4gm7",
+    "startAt": "2026-11-15T12:00:00+05:30",
+    "venue": {
+      "name": "City forest park",
+      "city": "Dehradun",
+      "area": "Sahastradhara"
+    },
+    "categories": [
+      "Books"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://forms.gle/25ka8gUU6qHYi4gm7",
+        "checkedAt": "2026-11-05T09:41:04.924Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-05T09:41:04.924Z",
+    "lastSeenAt": "2026-11-05T09:41:04.924Z",
+    "lastCheckedAt": "2026-11-05T09:41:04.924Z"
   },
   {
     "id": "f7bd7dd821d4f81d",
@@ -211,6 +331,89 @@
     "firstSeenAt": "2026-11-11T09:57:11.828Z",
     "lastSeenAt": "2026-11-11T09:57:11.828Z",
     "lastCheckedAt": "2026-11-11T09:57:11.828Z"
+  },
+  {
+    "id": "0f19fbda6f322795",
+    "slug": "the-jabarkhet-forest-trek",
+    "title": "The Jabarkhet Forest Trek",
+    "description": "➡️Hello friends! Join us this Sunday morning, *November 15, 2026*, as we trek in one of the most beautiful forests of Mussoorie, the *📍Jabarkhet Nature Reserve*, India’s first private nature reserve. 🌲 While on this trek, we meet dense forests, beautiful trees and stunning landscapes. We will also meet the community which is helping to preserve the pristine area. 🏔️The gradient of this trek is *tough* 💊Ensure that you have no medical ailments, serious medical conditions, or injuries. ________________________________________________ 🔺 Jabarkhet is a 33- km drive from Doon near Bhataghat and offers the most beautiful views of the Himalayas, besides being home to several birds and animals 🐦. 🚗 You are requested to arrange for your own conveyance. 🍃 The total trekking distance is a\n\nOrganized by @btdt_official. How to join: Message 09760699359 to register; details shared via WhatsApp group after sign-up",
+    "startAt": "2026-11-15",
+    "venue": {
+      "name": "Jabarkhet Nature Reserve, Mussoorie",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfpbO5XuNHf",
+        "checkedAt": "2026-11-14T10:45:29.388Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfpbO5XuNHf",
+        "checkedAt": "2026-11-14T09:07:31.755Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-14T10:45:29.388Z",
+    "lastSeenAt": "2026-11-14T10:45:29.388Z",
+    "lastCheckedAt": "2026-11-14T10:45:29.388Z"
+  },
+  {
+    "id": "c6cfaf9b8112bd22",
+    "slug": "uttarakhand-26-26-lakh-steps-virtual-challenge",
+    "title": "Uttarakhand@26 - 26 Lakh Steps Virtual Challenge",
+    "description": "🏔️ UTTARAKHAND@26 | 26 LAKH STEPS 26 years of Uttarakhand. 26 lakh steps. One community. ❤️ This November, let’s celebrate our state’s journey by taking a step towards a healthier one. 🥾 A Virtual Steps Challenge by Doon Walkers 14–15 November 2026 🎯 Community Goal: 26,00,000 Steps No meetup. No fixed location. Just you, your steps and a shared goal. Walk or run from wherever you are. Every step adds to our collective journey. 🏆 Top 26 walkers will be featured on Doon Walkers Instagram. Invite a friend. Join the movement. Let’s make this celebration count! 🔗 Join the challenge: Link in bio One State. One Community. 26 Lakh Steps. 🧡 #26LakhSteps StepChallenge VirtualWalkingChallenge WalkForFitness HealthyUttarakhand CommunityMovement ExploreUttarakhand FitnessCommunity\n\nOrganized by @doon_walkers. How to join: Join via link in bio (Doon Walkers Instagram)",
+    "startAt": "2026-11-14",
+    "endAt": "2026-11-15",
+    "venue": {
+      "name": "Virtual - walk or run from wherever you are",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+        "checkedAt": "2026-11-12T22:20:13.604Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Dfm3tHNS2zf",
+        "checkedAt": "2026-11-12T21:31:17.309Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-12T22:20:13.604Z",
+    "lastSeenAt": "2026-11-12T22:20:13.604Z",
+    "lastCheckedAt": "2026-11-12T22:20:13.604Z"
   },
   {
     "id": "9527441b3f929b4e",
