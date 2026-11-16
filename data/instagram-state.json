@@ -330,7 +330,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwj39t6dtyjvugx4t",
+        "startedAt": "2026-11-16T09:56:37.987Z"
+      },
       "lastFetchedAt": "2026-11-15T09:37:34.544Z",
       "lastError": "",
       "seen": [
@@ -342,7 +345,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwj39tce1munhh3whh",
+        "startedAt": "2026-11-16T09:56:37.987Z"
+      },
       "lastFetchedAt": "2026-11-15T09:37:34.544Z",
       "lastError": "",
       "seen": [
