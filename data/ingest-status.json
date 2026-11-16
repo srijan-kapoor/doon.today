@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-11-16T09:53:53.501Z",
+  "ranAt": "2026-11-16T23:26:09.131Z",
   "ran": [
     "allevents",
     "virasat",
@@ -34,18 +34,18 @@
     },
     "allevents": {
       "status": "ok",
-      "events": 24,
+      "events": 27,
       "review": 1,
       "diagnostics": {
-        "candidates": 24,
+        "candidates": 27,
         "flaggedForReview": 1,
-        "eventPagesFetched": 24,
-        "pricesFound": 1,
-        "timesFound": 24,
+        "eventPagesFetched": 27,
+        "pricesFound": 2,
+        "timesFound": 27,
         "eventPagesFailed": 0
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "virasat": {
@@ -57,8 +57,8 @@
         "headlineCandidates": 31,
         "eventsParsed": 31
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "thrillzone": {
@@ -69,8 +69,8 @@
         "cards": 12,
         "eventsParsed": 2
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "literaturefestival": {
@@ -81,8 +81,8 @@
         "festivalDates": "2026-11-27/2026-11-29",
         "sessionsParsed": 0
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "meetup": {
@@ -93,8 +93,8 @@
         "candidates": 0,
         "eventsParsed": 0
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "reddit": {
@@ -108,8 +108,8 @@
           "date not within 60 days of the post": 1
         }
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "gdg": {
@@ -121,8 +121,8 @@
         "listed": 1,
         "eventsParsed": 1
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "instagram": {
@@ -131,8 +131,8 @@
       "review": 0,
       "diagnostics": {
         "handles": 17,
-        "collected": 0,
-        "started": 2,
+        "collected": 2,
+        "started": 15,
         "abandoned": 0,
         "read": 0,
         "announcements": 0,
@@ -147,33 +147,39 @@
           "model": "claude-haiku-5-5"
         }
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
       "consecutiveFailures": 0
     },
     "bookmyshow": {
       "status": "failed",
-      "error": "Error: Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: Timed out waiting for network idle\n    at file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:109:44\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchBookMyShow (file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:121:30)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:38:13",
+      "error": "Error: Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards\n    at file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:109:44\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchBookMyShow (file:///home/runner/work/doon.today/doon.today/ingest/sources/bookmyshow.mjs:121:30)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:38:13",
       "diagnostics": {
         "listingTries": [
-          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: Timed out waiting for network idle",
-          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: Timed out waiting for network idle"
+          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: Timed out waiting for window.DomContentLoaded event",
+          "Web Unlocker 200 for https://in.bookmyshow.com/explore/events-dehradun?cat=CT: response body doesn't include required text: onwards"
         ]
       },
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
       "lastSuccessAt": "2026-11-15T19:49:34.468Z",
-      "consecutiveFailures": 1
+      "consecutiveFailures": 2
     },
     "sortmyscene": {
-      "status": "failed",
-      "error": "Error: Web Unlocker 200 for https://sortmyscene.com/events/all-v2?page=0&city=Dehradun: Proxy Error\n    at file:///home/runner/work/doon.today/doon.today/ingest/sources/sortmyscene.mjs:67:44\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async fetchSortMyScene (file:///home/runner/work/doon.today/doon.today/ingest/sources/sortmyscene.mjs:80:18)\n    at async file:///home/runner/work/doon.today/doon.today/ingest/run.mjs:38:13",
-      "lastAttemptAt": "2026-11-16T09:53:53.501Z",
-      "lastSuccessAt": "2026-11-15T19:49:34.468Z",
-      "consecutiveFailures": 1
+      "status": "ok",
+      "events": 3,
+      "review": 0,
+      "diagnostics": {
+        "pages": 1,
+        "listed": 3,
+        "eventsParsed": 3
+      },
+      "lastAttemptAt": "2026-11-16T23:26:09.131Z",
+      "lastSuccessAt": "2026-11-16T23:26:09.131Z",
+      "consecutiveFailures": 0
     }
   },
   "output": {
-    "published": 35,
+    "published": 39,
     "review": 0,
     "dropped": 0
   },
@@ -187,7 +193,7 @@
   "primarySources": {
     "district": {
       "lastSuccessAt": "2026-11-16T00:08:29.676Z",
-      "ageHours": 9.8,
+      "ageHours": 23.3,
       "fresh": true
     }
   }
