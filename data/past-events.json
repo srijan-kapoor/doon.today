@@ -4057,40 +4057,5 @@
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
     "lastSeenAt": "2026-10-18T08:05:56.915Z",
     "lastCheckedAt": "2026-10-18T08:05:56.915Z"
-  },
-  {
-    "id": "book-club-social-2026-10-18",
-    "slug": "book-club-meetup-all-we-read",
-    "title": "Book Club Meetup with All We Read",
-    "startAt": "2026-10-18T12:00:00+05:30",
-    "venue": {
-      "name": "Dehradun SOCIAL",
-      "area": "Hathibarkala",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Books",
-      "Community"
-    ],
-    "pricing": {
-      "type": "free",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/upcoming-events-in-dehradun",
-        "checkedAt": "2026-10-18T08:00:00+05:30",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-18T08:00:00+05:30",
-    "lastSeenAt": "2026-10-18T08:00:00+05:30",
-    "lastCheckedAt": "2026-10-18T08:00:00+05:30"
   }
 ]
