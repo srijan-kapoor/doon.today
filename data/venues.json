@@ -25,5 +25,77 @@
     "area": "Rajpur",
     "geo": { "lat": 30.39054, "lng": 78.0946 },
     "source": "https://www.openstreetmap.org/way/105876550"
+  },
+  {
+    "name": "Musee Art Cafe",
+    "match": ["musee art cafe"],
+    "area": "Kishanpur",
+    "source": "https://www.google.com/maps/place/MUSEE+Art+Caf%C3%A9/data=!4m2!3m1!1s0x3908d7966598d623:0x73cbc0c30793018"
+  },
+  {
+    "name": "Parade Ground",
+    "match": ["parade ground"],
+    "area": "Clock Tower",
+    "source": "https://www.openstreetmap.org/way/104352315"
+  },
+  {
+    "name": "The Fern Brentwood Resort Mussoorie",
+    "match": ["fern brentwood resort"],
+    "area": "Mussoorie",
+    "source": "https://maps.app.goo.gl/8i9439Sp5aZhFgef9"
+  },
+  {
+    "name": "Playboy Beer Garden",
+    "match": ["playboy beer garden"],
+    "area": "Jakhan",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
+  },
+  {
+    "name": "Doon University",
+    "match": ["doon university"],
+    "area": "Kedarpur",
+    "source": "https://www.openstreetmap.org/way/334489110"
+  },
+  {
+    "name": "Doon International School",
+    "match": ["doon international school"],
+    "area": "Dalanwala",
+    "source": "https://www.openstreetmap.org/node/6738243382"
+  },
+  {
+    "name": "Centrio Mall",
+    "match": ["centrio mall"],
+    "area": "Vijay Colony",
+    "source": "https://www.openstreetmap.org/node/12119801701"
+  },
+  {
+    "name": "D9",
+    "match": ["d9"],
+    "area": "Sudhowala",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
+  },
+  {
+    "name": "Tapri - The Teafe",
+    "match": ["tapri the teafe", "tapri teafe"],
+    "area": "Rajpur",
+    "source": "https://maps.app.goo.gl/Do3gWU3nWevMtezr6"
+  },
+  {
+    "name": "Basque",
+    "match": ["basque"],
+    "area": "Malsi",
+    "source": "https://maps.app.goo.gl/3U4aUZijiTQWx9uPA"
+  },
+  {
+    "name": "Romeo Lane",
+    "match": ["romeo lane"],
+    "area": "Malsi",
+    "source": "https://maps.app.goo.gl/7Y3kBoMY8WBrM4Gs5"
+  },
+  {
+    "name": "Atulyammm Resort",
+    "match": ["atulyammm resort"],
+    "area": "Tilwari",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
   }
 ]

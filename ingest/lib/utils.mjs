@@ -246,6 +246,7 @@ export function categoryFromText(text='') {
 // Sources rarely give an area, so it is read from the address (or venue name) when they don't.
 const AREAS = [
   ['Rajpur', ['rajpur road', 'rajpur']],
+  ['Raipur', ['raipur']],
   ['Dalanwala', ['dalanwala']],
   ['Hathibarkala', ['hathibarkala']],
   ['Jakhan', ['jakhan']],
@@ -262,7 +263,17 @@ const AREAS = [
   ['Garhi Cantt', ['garhi cantt']],
   ['Niranjanpur', ['niranjanpur']],
   ['Vikasnagar', ['vikasnagar']],
-  ['Maldevta', ['maldevta']]
+  ['Maldevta', ['maldevta']],
+  // Added 17 Nov 2026 for places that listings name in an address. They come last, so earlier matches keep winning.
+  // Mussoorie is not here: "Mussoorie Diversion" and "Mussoorie Road" appear in addresses of other places. Mussoorie
+  // venues get their area from data/venues.json.
+  ['Mothrowala', ['mothrowala']],
+  ['Vijay Colony', ['vijay colony']],
+  ['Dharampur', ['dharampur']],
+  ['Chandrabani', ['chandrabani']],
+  ['Majra', ['majra']],
+  ['Ajabpur Kalan', ['ajabpur kalan']],
+  ['Saheshpur', ['saheshpur']]
 ].map(([name, terms]) => [name, wordMatcher(terms)]);
 
 /** Area names, for the suggestions on the submit form. */
@@ -277,6 +288,10 @@ export function areaFromText(text = '') {
 // source's mistake, and 0,0 is a placeholder, so neither is kept.
 const DEHRADUN_BOUNDS = { minLat: 29.9, maxLat: 31.1, minLng: 77.5, maxLng: 78.4 };
 
+// Where geocoders put a bare "Dehradun" (a listing with a venue still to be announced, or a name they can't place).
+// It is the city's centre, not the venue, so a map pin or an area read from it would be wrong.
+const CITY_CENTRE = { lat: 30.31649, lng: 78.03219 };
+
 export function isInDehradun(geo) {
   return Number.isFinite(geo?.lat) && Number.isFinite(geo?.lng)
     && geo.lat >= DEHRADUN_BOUNDS.minLat && geo.lat <= DEHRADUN_BOUNDS.maxLat
@@ -290,5 +305,5 @@ export function geoFrom(place) {
   const number = (v) => (v === '' || v == null ? NaN : Number(v));
   const round = (n) => Math.round(n * 1e5) / 1e5;
   const point = { lat: round(number(geo.latitude ?? geo.lat)), lng: round(number(geo.longitude ?? geo.lng ?? geo.lon)) };
-  return isInDehradun(point) ? point : undefined;
+  return isInDehradun(point) && !(point.lat === CITY_CENTRE.lat && point.lng === CITY_CENTRE.lng) ? point : undefined;
 }

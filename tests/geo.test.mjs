@@ -14,6 +14,8 @@ test('coordinates are read as numbers from either source shape, and only kept in
   assert.equal(geoFrom({ geo: { latitude: 28.6139, longitude: 77.209 } }), undefined, 'Delhi is out');
   assert.equal(geoFrom({ geo: { latitude: 43.3256, longitude: -83.7385 } }), undefined, 'Frankenmuth is out');
   assert.equal(geoFrom({ geo: { latitude: 0, longitude: 0 } }), undefined, '0,0 is a placeholder');
+  assert.equal(geoFrom({ geo: { latitude: '30.316490', longitude: '78.032190' } }), undefined, "the city centre is where geocoders put a bare 'Dehradun'");
+  assert.deepEqual(geoFrom({ geo: { latitude: 30.3165, longitude: 78.0322 } }), { lat: 30.3165, lng: 78.0322 }, 'a venue near the centre keeps its pin');
   assert.equal(geoFrom({ geo: { latitude: '', longitude: '' } }), undefined, 'empty strings are not 0');
   assert.equal(geoFrom({ geo: { latitude: 'n/a', longitude: 78 } }), undefined);
   assert.equal(geoFrom({ geo: { latitude: 30.3 } }), undefined, 'half a point is no point');
@@ -48,8 +50,8 @@ test('known venues fill in coordinates and area only where a source gave none', 
   const { default: path } = await import('node:path');
   const { knownVenueFor, mergeAndWrite } = await import('../ingest/merge.mjs');
   const venues = JSON.parse(await fs.readFile(new URL('../data/venues.json', import.meta.url), 'utf8'));
-  for (const v of venues) {
-    assert.ok(isInDehradun(v.geo), `${v.name} is near Dehradun`);
+  for (const v of venues.filter((v) => !v.unchecked)) {
+    assert.ok(v.geo === undefined || isInDehradun(v.geo), `${v.name} is near Dehradun`);
     assert.equal(knownVenueFor({ name: v.name }, venues), v, `${v.name} matches its own name`);
   }
   const named = (name) => knownVenueFor({ name }, venues)?.name;
@@ -76,6 +78,27 @@ test('known venues fill in coordinates and area only where a source gave none', 
   assert.equal(out.a.area, 'Garhi Cantt');
   assert.deepEqual(out.b.geo, { lat: 30.355, lng: 78.012 }, "a source's own coordinates stand");
   assert.equal(out.c.geo, undefined, 'unknown venues stay without');
+});
+
+test('a draft venue row is ignored, and a row with only an area fills in the area', async (t) => {
+  const { default: fs } = await import('node:fs/promises');
+  const { knownVenueFor, mergeAndWrite } = await import('../ingest/merge.mjs');
+  const table = [
+    { name: 'Draft Cafe', match: ['draft cafe'], unchecked: true, suggestedArea: 'Rajpur', note: 'to check' },
+    { name: 'Checked Hall', match: ['checked hall'], area: 'Dalanwala', source: 'https://example.test/' }
+  ];
+  assert.equal(knownVenueFor({ name: 'Draft Cafe' }, table), undefined, 'drafts do not match');
+  assert.equal(knownVenueFor({ name: 'Checked Hall' }, table)?.name, 'Checked Hall');
+  await inTempDir(t);
+  await fs.writeFile('data/venues.json', JSON.stringify(table));
+  const ev = (id, name) => ({ id, slug: id, title: `Show ${id}`, startAt: '2030-11-01T19:00:00+05:30', venue: { name, city: 'Dehradun' },
+    categories: ['Culture'], pricing: { type: 'unknown', currency: 'INR' }, sources: [{ provider: 'virasat', url: `https://example.test/${id}` }],
+    curation: { status: 'published', score: 8 }, firstSeenAt: '2030-01-01T00:00:00Z', lastSeenAt: '2030-01-01T00:00:00Z', lastCheckedAt: '2030-01-01T00:00:00Z' });
+  await mergeAndWrite([{ source: 'virasat', events: [ev('a', 'Draft Cafe'), ev('b', 'Checked Hall')] }]);
+  const out = Object.fromEntries(JSON.parse(await fs.readFile('data/events.json', 'utf8')).map((e) => [e.id, e.venue]));
+  assert.equal(out.a.area, undefined, 'a draft row adds nothing');
+  assert.equal(out.b.area, 'Dalanwala');
+  assert.equal(out.b.geo, undefined, 'no coordinates are made up');
 });
 
 test('a corrected or removed venue-table entry takes effect on events already stored', async (t) => {

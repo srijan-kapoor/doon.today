@@ -43,4 +43,15 @@ test('areas are read from addresses on whole words',()=>{
   assert.equal(areaFromText('Maldevta'),'Maldevta','a venue name alone is enough');
   assert.equal(areaFromText('Somewhere in Dehradun'),undefined);
   assert.equal(areaFromText('Malsiwala Farm'),undefined,'"malsi" inside another word does not count');
+  assert.equal(areaFromText('Thakur Study Center, Darshan Kunj, Mothrowala, Dehradun 248001'),'Mothrowala');
+  assert.equal(areaFromText('108/84, Rabindra Nath Tagore Marg,Vijay Colony,Shakti Colony,Dehradun'),'Vijay Colony');
+  assert.equal(areaFromText('822X+VX2, Old Nehru Colony, Dharampur, Dehradun'),'Dharampur');
+  assert.equal(areaFromText('Gangotri Vihar, Chandrabani, Pitthuwala, Eswara Kalan Road'),'Chandrabani');
+  assert.equal(areaFromText('701, W Canal Road, Gangotri Vihar, Majra, Dehradun'),'Majra');
+  assert.equal(areaFromText('Haridwar Bypass Road, Vidhan Sabha Colony, Ajabpur Kalan, Dehradun'),'Ajabpur Kalan');
+  assert.equal(areaFromText('Triple aar school campus Kainchiwala saheshpur, Dehra Dun'),'Saheshpur');
+  assert.equal(areaFromText('Raipur, Dehradun'),'Raipur');
+  assert.equal(areaFromText('Solaris MMA Academy, Rajpur Road, Raipur'),'Rajpur','earlier names keep winning');
+  assert.equal(areaFromText('Flag-off at Mussoorie Diversion, breakfast stop at Dhanaulti'),undefined,'Mussoorie is not read from an address');
+  assert.equal(areaFromText('Forest Edge, Mussoorie Rd, Salan Gaon, Malsi, Dehradun'),'Malsi');
 });
