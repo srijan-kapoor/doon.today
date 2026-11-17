@@ -47,8 +47,8 @@
   {
     "name": "Playboy Beer Garden",
     "match": ["playboy beer garden"],
-    "unchecked": true,
-    "note": "No suggestion. The listing's coordinates are 0.7 km from Kochar Colony, which is not an area people use."
+    "area": "Jakhan",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
   },
   {
     "name": "Doon University",
@@ -65,15 +65,14 @@
   {
     "name": "Centrio Mall",
     "match": ["centrio mall"],
-    "unchecked": true,
-    "source": "https://www.openstreetmap.org/node/12119801701",
-    "note": "Source added; the area still needs to be set. No suggestion. The listings' address says Vijay Colony, Shakti Colony; check which one the mall is known by."
+    "area": "Vijay Colony",
+    "source": "https://www.openstreetmap.org/node/12119801701"
   },
   {
     "name": "D9",
     "match": ["d9"],
-    "unchecked": true,
-    "note": "No suggestion. Listings give no address, and the coordinates (30.34456, 77.94663) are 2 km from the nearest OpenStreetMap place."
+    "area": "Sudhowala",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
   },
   {
     "name": "Tapri - The Teafe",
@@ -96,7 +95,7 @@
   {
     "name": "Atulyammm Resort",
     "match": ["atulyammm resort"],
-    "unchecked": true,
-    "note": "No suggestion. The coordinates are on the Doiwala side, 4 km from the nearest OpenStreetMap place; this may be outside the area the site covers."
+    "area": "Tilwari",
+    "source": "https://github.com/srijan-kapoor/doon.today/issues/165"
   }
 ]
