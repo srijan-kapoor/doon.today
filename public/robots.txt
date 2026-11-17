@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# Per-event calendar downloads aren't pages; they only produce "Not found" reports once the event is gone.
+Disallow: /events/*.ics$
 
 Sitemap: https://doon.today/sitemap-index.xml
