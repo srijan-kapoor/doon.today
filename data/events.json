@@ -297,7 +297,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.862Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       },
       {
@@ -314,8 +314,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-16T00:08:30.862Z",
-    "lastCheckedAt": "2026-11-16T00:08:30.862Z",
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -490,7 +490,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.965Z",
         "confidence": 0.95
       },
       {
@@ -506,8 +506,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-16T23:26:31.981Z",
-    "lastCheckedAt": "2026-11-16T23:26:31.981Z"
+    "lastSeenAt": "2026-11-17T00:08:24.965Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.965Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -662,7 +662,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       }
     ],
@@ -672,8 +672,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-16T00:08:30.865Z",
-    "lastCheckedAt": "2026-11-16T00:08:30.865Z"
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z"
   },
   {
     "id": "b36082addcdc9932",
@@ -1062,7 +1062,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       },
       {
@@ -1078,8 +1078,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-16T23:26:09.552Z",
-    "lastCheckedAt": "2026-11-16T23:26:09.552Z"
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1150,7 +1150,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       }
     ],
@@ -1160,8 +1160,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-16T00:08:30.865Z",
-    "lastCheckedAt": "2026-11-16T00:08:30.865Z"
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1294,7 +1294,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.864Z",
+        "checkedAt": "2026-11-17T00:08:24.967Z",
         "confidence": 0.95
       },
       {
@@ -1310,8 +1310,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-16T23:26:09.553Z",
-    "lastCheckedAt": "2026-11-16T23:26:09.553Z"
+    "lastSeenAt": "2026-11-17T00:08:24.967Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.967Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1342,7 +1342,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       }
     ],
@@ -1352,8 +1352,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-16T00:08:30.865Z",
-    "lastCheckedAt": "2026-11-16T00:08:30.865Z"
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z"
   },
   {
     "id": "b59dab4202710ff2",
@@ -1664,13 +1664,14 @@
     ],
     "pricing": {
       "type": "paid",
+      "minPrice": 1000,
       "currency": "INR"
     },
     "sources": [
       {
         "provider": "district",
         "url": "https://www.district.in/events/the-philosophy-of-resonance-satinder-sartaaj-live-in-dehradun-2027-buy-tickets",
-        "checkedAt": "2026-11-16T00:08:30.865Z",
+        "checkedAt": "2026-11-17T00:08:24.968Z",
         "confidence": 0.95
       }
     ],
@@ -1680,8 +1681,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.788Z",
-    "lastSeenAt": "2026-11-16T00:08:30.865Z",
-    "lastCheckedAt": "2026-11-16T00:08:30.865Z"
+    "lastSeenAt": "2026-11-17T00:08:24.968Z",
+    "lastCheckedAt": "2026-11-17T00:08:24.968Z"
   },
   {
     "id": "4adc16d3d6234306",
