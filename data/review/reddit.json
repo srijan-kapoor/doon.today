@@ -1,50 +1,5 @@
 [
   {
-    "id": "875a80ee03486b47",
-    "slug": "dark-sky-lab-stargazing-session",
-    "title": "Dark Sky Lab: Stargazing Session",
-    "description": "Last day to register for the (rescheduled) Dark Sky Lab session! ✨\n\n🗓️ 17 November, Saturday\n⏳ 11.00 pm to 1.00 am\n📍The Doonsters Arena, Banjarawala\n\nRegistration link in bio.\n\n________________\n\nAll your queries about Dark Sky Lab\n\n1. What is Dark Sky Lab?\n\nDark Sky Lab is a series of stargazing sessions hosted by the Dehradun Astronomy Club (DAC) to observe, rediscover and understand the wonders of the night sky.\n\n2. Where is the session being held?\n\nThis chapter of the Dark Sky Lab is happening at Doonsters Arena, Banjarawala, Dehradun.\n\n3. How do we reach the venue?\n\nYou will need to arrange your own transportation to and from the venue.\n\n4. What are the timings?\n\nWe kick things off at 11:00 PM on Saturday, 14th November, and wrap up around 1:00 AM.\n\n5. What are the charges for the ev",
-    "startAt": "2026-11-17T23:00:00+05:30",
-    "endAt": "2026-11-18T01:00:00+05:30",
-    "venue": {
-      "name": "The Doonsters Arena, Banjarawala",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 499,
-      "currency": "INR"
-    },
-    "howToJoin": "Registration link in bio",
-    "organizer": "dehradun_astronomy_club",
-    "posts": [
-      "https://www.instagram.com/p/Dfy3ml4yKqr"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "high"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/Dfy3ml4yKqr",
-        "checkedAt": "2026-11-17T10:52:05.598Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-17T10:52:05.598Z",
-    "lastSeenAt": "2026-11-17T10:52:05.598Z",
-    "lastCheckedAt": "2026-11-17T10:52:05.598Z"
-  },
-  {
     "id": "245ce12e5a2de55e",
     "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
     "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
