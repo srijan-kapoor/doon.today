@@ -1,49 +1,5 @@
 [
   {
-    "id": "245ce12e5a2de55e",
-    "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
-    "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
-    "description": "Get Ready",
-    "startAt": "2026-11-22T05:00:00+05:30",
-    "venue": {
-      "name": "Bhadraj Temple, via Premnagar, Koti Village, Dehradun",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Outdoors",
-      "Fitness"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "howToJoin": "DM @the5amclub.in or WhatsApp 9997876010 for the WhatsApp group link",
-    "organizer": "the5amclub.in",
-    "posts": [
-      "https://www.instagram.com/p/DfzjJ2hE2nI"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "medium"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
-        "checkedAt": "2026-11-17T10:52:05.598Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-17T10:52:05.598Z",
-    "lastSeenAt": "2026-11-17T10:52:05.598Z",
-    "lastCheckedAt": "2026-11-17T10:52:05.598Z"
-  },
-  {
     "id": "f0a440a263db94f1",
     "slug": "the-wild-purkul-valley",
     "title": "The Wild Purkul Valley",

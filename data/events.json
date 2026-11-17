@@ -254,6 +254,47 @@
     "lastCheckedAt": "2026-11-17T10:50:03.768Z"
   },
   {
+    "id": "11311a187935e101",
+    "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
+    "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
+    "description": "Get Ready\n\nOrganized by @the5amclub.in. How to join: DM @the5amclub.in or WhatsApp 9997876010 for the WhatsApp group link",
+    "startAt": "2026-11-22T05:00:00+05:30",
+    "venue": {
+      "name": "Bhadraj Temple, via Premnagar, Koti Village, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
+        "checkedAt": "2026-11-17T13:36:36.080Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
+        "checkedAt": "2026-11-17T10:52:05.598Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-17T13:36:36.080Z",
+    "lastSeenAt": "2026-11-17T13:36:36.080Z",
+    "lastCheckedAt": "2026-11-17T13:36:36.080Z"
+  },
+  {
     "id": "940caf6d95fc377d",
     "slug": "d9-presents-pizza-making-workshop",
     "title": "D9 presents Pizza Making Workshop",
