@@ -25,5 +25,80 @@
     "area": "Rajpur",
     "geo": { "lat": 30.39054, "lng": 78.0946 },
     "source": "https://www.openstreetmap.org/way/105876550"
+  },
+  {
+    "name": "Musee Art Cafe",
+    "match": ["musee art cafe"],
+    "unchecked": true,
+    "suggestedArea": "Rajpur",
+    "note": "Nearest OpenStreetMap place to the listing's coordinates, 0.4 km. Confirm it is on Rajpur Road."
+  },
+  {
+    "name": "Parade Ground",
+    "match": ["parade ground"],
+    "unchecked": true,
+    "suggestedArea": "Clock Tower",
+    "note": "From memory: the ground sits beside the Clock Tower. The listing's coordinates are 1.4 km from the nearest OpenStreetMap place, so check on a map."
+  },
+  {
+    "name": "The Fern Brentwood Resort Mussoorie",
+    "match": ["fern brentwood resort"],
+    "unchecked": true,
+    "suggestedArea": "Mussoorie",
+    "note": "The venue name says Mussoorie; the listing's coordinates are 0.3 km from Mussoorie in OpenStreetMap."
+  },
+  {
+    "name": "Playboy Beer Garden",
+    "match": ["playboy beer garden"],
+    "unchecked": true,
+    "note": "No suggestion. The listing's coordinates are 0.7 km from Kochar Colony, which is not an area people use."
+  },
+  {
+    "name": "Doon University",
+    "match": ["doon university"],
+    "unchecked": true,
+    "note": "No suggestion. The campus is outside the city centre; confirm its locality before adding it."
+  },
+  {
+    "name": "Doon International School",
+    "match": ["doon international school"],
+    "unchecked": true,
+    "note": "No suggestion. The nearest OpenStreetMap place is a road junction (Araghar Chowk, 0.6 km)."
+  },
+  {
+    "name": "Centrio Mall",
+    "match": ["centrio mall"],
+    "unchecked": true,
+    "note": "No suggestion. The listings' address says Vijay Colony, Shakti Colony; check which one the mall is known by."
+  },
+  {
+    "name": "D9",
+    "match": ["d9"],
+    "unchecked": true,
+    "note": "No suggestion. Listings give no address, and the coordinates (30.34456, 77.94663) are 2 km from the nearest OpenStreetMap place."
+  },
+  {
+    "name": "Tapri - The Teafe",
+    "match": ["tapri the teafe", "tapri teafe"],
+    "unchecked": true,
+    "note": "No suggestion. Listings give only Dehradun; the coordinates are 2.1 km from the nearest OpenStreetMap place."
+  },
+  {
+    "name": "Basque",
+    "match": ["basque"],
+    "unchecked": true,
+    "note": "No suggestion. SortMyScene lists no address or coordinates."
+  },
+  {
+    "name": "Romeo Lane",
+    "match": ["romeo lane"],
+    "unchecked": true,
+    "note": "No suggestion. SortMyScene lists no address or coordinates."
+  },
+  {
+    "name": "Atulyammm Resort",
+    "match": ["atulyammm resort"],
+    "unchecked": true,
+    "note": "No suggestion. The coordinates are on the Doiwala side, 4 km from the nearest OpenStreetMap place; this may be outside the area the site covers."
   }
 ]

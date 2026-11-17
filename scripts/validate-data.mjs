@@ -32,16 +32,24 @@ for(const [i,e] of events.entries()){
   }
 }
 
+// Events without an area are skipped by the area filter. List their venues so new ones get added to the venue
+// table (or the area list in ingest/lib/utils.mjs) instead of piling up.
+const withoutArea=events.filter(e=>!e.venue?.area);
+if(withoutArea.length) warnings.push(`${withoutArea.length} of ${events.length} events have no area. Venues: ${[...new Set(withoutArea.map(e=>e.venue?.name))].join('; ')}`);
+
 // The hand-checked venue table: every entry needs a name, at least one phrase to match, coordinates near
-// Dehradun and the page they were checked against.
+// Dehradun or an area, and the page they were checked against. A row marked "unchecked" is a draft the merge
+// ignores, so it only needs a name and a phrase.
 let venues=[];
 try { venues=JSON.parse(await fs.readFile('data/venues.json','utf8')); } catch(err) { if(err.code!=='ENOENT') errors.push(`data/venues.json: ${err.message}`); }
 if(!Array.isArray(venues)) { errors.push('data/venues.json must be a list of venues'); venues=[]; }
 for(const [i,v] of venues.entries()){
   if(!v || typeof v!=='object') { errors.push(`venues[${i}] is not a venue`); continue; }
   if(!v.name || !Array.isArray(v.match) || v.match.length===0) errors.push(`venues[${i}] needs a name and at least one match phrase`);
-  if(!isInDehradun(v.geo)) errors.push(`venues[${i}] ${v.name}: coordinates missing or far from Dehradun`);
-  if(!/^https:\/\//.test(v.source||'')) errors.push(`venues[${i}] ${v.name}: needs the https source the coordinates came from`);
+  if(v.unchecked===true) continue;
+  if(v.geo===undefined && !v.area) errors.push(`venues[${i}] ${v.name}: needs coordinates or an area`);
+  if(v.geo!==undefined && !isInDehradun(v.geo)) errors.push(`venues[${i}] ${v.name}: coordinates far from Dehradun`);
+  if(!/^https:\/\//.test(v.source||'')) errors.push(`venues[${i}] ${v.name}: needs the https source the coordinates or area came from`);
 }
 
 if(warnings.length) console.warn(warnings.map(w=>`warning ${w}`).join('\n'));

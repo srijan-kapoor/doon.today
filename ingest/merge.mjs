@@ -104,13 +104,14 @@ function fingerprint(e) {
 }
 
 // Hand-checked venues (data/venues.json): a venue whose name contains one of a known venue's phrases, as whole
-// words, gets that venue's coordinates and area when its source gave none. Virasat's programme page, for one,
+// words, gets that venue's coordinates and area when its source gave none. A row marked `unchecked` is a draft
+// waiting for someone to confirm it, and is ignored. Virasat's programme page, for one,
 // names its venue but gives no coordinates. Coordinates from the table are marked `geoFrom: 'table'` and worked
 // out again on every run, so a corrected or removed entry takes effect instead of sticking to stored events.
 const VENUES_PATH = 'data/venues.json';
 export function knownVenueFor(venue, venues = []) {
   const name = ` ${norm(venue?.name)} `;
-  return venues.find(v => v && (v.match || []).some(phrase => name.includes(` ${norm(phrase)} `)));
+  return venues.find(v => v && !v.unchecked && (v.match || []).some(phrase => name.includes(` ${norm(phrase)} `)));
 }
 function withKnownVenue(e, venues) {
   const fromTable = e.venue?.geoFrom === 'table';
