@@ -1394,5 +1394,45 @@
     "firstSeenAt": "2026-11-17T13:36:36.080Z",
     "lastSeenAt": "2026-11-17T13:36:36.080Z",
     "lastCheckedAt": "2026-11-17T13:36:36.080Z"
+  },
+  {
+    "id": "be5cf89ec98b1fdb",
+    "slug": "the-wild-purkul-valley",
+    "title": "The Wild Purkul Valley",
+    "description": "Beyond the familiar. Into the wild. 🌿 DOON WALKERS | CHAPTER 44 THE WILD PURKUL VALLEY A morning of raw landscapes, rocky riverbeds and quiet exploration — in the heart of Doon. 📍 Purkul Valley, Dehradun 📅 22 November 2026 | Sunday 🥾 Approx. 9 KM | Moderate ⏰ 6:00 AM Reporting | 6:15 AM Departure For those who find meaning in the journey, not just the destination. Join us. Link in bio. Come for the trail. Stay for the people.\n\nOrganized by @doon_walkers. How to join: Registration link in bio; comment \"Doon Walkers\" to join",
+    "startAt": "2026-11-22T06:15:00+05:30",
+    "venue": {
+      "name": "Meeting point: Centrio Mall, Dehradun; trail at Purkul Valley",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfzidOiyfYQ",
+        "checkedAt": "2026-11-17T13:39:59.866Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfzidOiyfYQ",
+        "checkedAt": "2026-11-17T10:52:05.598Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-17T13:39:59.866Z",
+    "lastSeenAt": "2026-11-17T13:39:59.866Z",
+    "lastCheckedAt": "2026-11-17T13:39:59.866Z"
   }
 ]
