@@ -35,10 +35,8 @@
   {
     "name": "Parade Ground",
     "match": ["parade ground"],
-    "unchecked": true,
-    "source": "https://www.openstreetmap.org/way/104352315",
-    "suggestedArea": "Clock Tower",
-    "note": "Source added; the area still needs to be set. From memory: the ground sits beside the Clock Tower. The listing's coordinates are 1.4 km from the nearest OpenStreetMap place, so check on a map."
+    "area": "Clock Tower",
+    "source": "https://www.openstreetmap.org/way/104352315"
   },
   {
     "name": "The Fern Brentwood Resort Mussoorie",
@@ -55,16 +53,14 @@
   {
     "name": "Doon University",
     "match": ["doon university"],
-    "unchecked": true,
-    "source": "https://www.openstreetmap.org/way/334489110",
-    "note": "Source added; the area still needs to be set. No suggestion. The campus is outside the city centre; confirm its locality before adding it."
+    "area": "Kedarpur",
+    "source": "https://www.openstreetmap.org/way/334489110"
   },
   {
     "name": "Doon International School",
     "match": ["doon international school"],
-    "unchecked": true,
-    "source": "https://www.openstreetmap.org/node/6738243382",
-    "note": "Source added; the area still needs to be set. No suggestion. The nearest OpenStreetMap place is a road junction (Araghar Chowk, 0.6 km)."
+    "area": "Dalanwala",
+    "source": "https://www.openstreetmap.org/node/6738243382"
   },
   {
     "name": "Centrio Mall",
