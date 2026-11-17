@@ -86,7 +86,7 @@ const detailsLabel = detailsLinkLabel(primarySource);
     {event.description && <div class="event-description">{descriptionParagraphs(event.description).map((paragraph) => <p>{paragraph}</p>)}</div>}
 
     {!ended && <div class="event-actions" style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem">
-      <a class="primary-link" href={`/events/${event.slug}.ics`}>Add to calendar</a>
+      <a class="primary-link" href={`/events/${event.slug}.ics`} rel="nofollow">Add to calendar</a>
       <a class="primary-link" href={googleCalendarUrl} target="_blank" rel="noreferrer">Google Calendar ↗</a>
       {detailsLabel && <a class="primary-link" href={primarySource.url} target="_blank" rel="noreferrer">{detailsLabel} ↗</a>}
     </div>}
