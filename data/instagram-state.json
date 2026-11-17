@@ -344,7 +344,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwl9na33pjctqw00o",
+        "startedAt": "2026-11-17T22:30:36.787Z"
+      },
       "lastFetchedAt": "2026-11-16T23:28:54.052Z",
       "lastError": "",
       "seen": [
@@ -356,12 +359,27 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwl9na9hclmriw8xt",
+        "startedAt": "2026-11-17T22:30:36.787Z"
+      },
       "lastFetchedAt": "2026-11-16T23:28:54.052Z",
       "lastError": "",
       "seen": [
         "4013588672830211627"
       ]
+    },
+    "a08dff1b1a6d": {
+      "snapshot": {
+        "id": "sd_mwl9naht193ygc18y8",
+        "startedAt": "2026-11-17T22:30:36.787Z"
+      }
+    },
+    "944180da5cc0": {
+      "snapshot": {
+        "id": "sd_mwl9napj1lgnw519ns",
+        "startedAt": "2026-11-17T22:30:36.787Z"
+      }
     }
   },
   "collected": [
