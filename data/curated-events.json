@@ -1434,5 +1434,46 @@
     "firstSeenAt": "2026-11-17T13:39:59.866Z",
     "lastSeenAt": "2026-11-17T13:39:59.866Z",
     "lastCheckedAt": "2026-11-17T13:39:59.866Z"
+  },
+  {
+    "id": "d7f448722eac741f",
+    "slug": "ustad-bantoo-road-to-100-screenings-week-2-dehradun",
+    "title": "Ustad Bantoo: Road to 100 Screenings (Week 2, Dehradun)",
+    "description": "After 3 housefull shows in our Week 1, we’re off to Week 2 Screening on 21-24 November in 3 different cities and in 3 very different spaces! 1) Indore - The coolest space in Indore for Independent Films, Music, & Art - @studioingrey. It is both a photography studio and a cultural venue hosting small-scale art and community programming. You’ll be hosted by your city’s very own Harshvardhan Singh (@mintuned ) who is an Indore based actor and filmmaker. 2) Dehradun - If there is anything that can be called the cultural hub of Dehradun, that is @october_dehradun run by @aanchalrjaiswal. Anytime you visit here you’ll find some artist performing there. While known mostly for their captivating music events, they also host a variety of other events like plays and films. You’ll be hosted by the\n\nOrganized by @iamguldar. How to join: Tickets on Fillum, link in bio",
+    "startAt": "2026-11-21",
+    "endAt": "2026-11-24",
+    "venue": {
+      "name": "October, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Film"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df2MbbiHwOv",
+        "checkedAt": "2026-11-18T10:25:55.030Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df2MbbiHwOv",
+        "checkedAt": "2026-11-18T10:21:34.908Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-18T10:25:55.030Z",
+    "lastSeenAt": "2026-11-18T10:25:55.030Z",
+    "lastCheckedAt": "2026-11-18T10:25:55.030Z"
   }
 ]
