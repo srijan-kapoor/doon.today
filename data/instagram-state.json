@@ -14,7 +14,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz242u4f7dthgn",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -39,7 +42,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz248wgv9i1ketp",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -53,7 +59,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz24fl7aeqwq1le",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -85,7 +94,10 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz24ka1stduswrjv",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -94,7 +106,10 @@
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz24oa1mzgtbh74",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -111,7 +126,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz24sqxqmxf9g6p",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -156,7 +174,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz24xf12aqxbsz38",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -180,7 +201,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz252ze2o2h45op",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -194,7 +218,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz257h2ld6jhxjtn",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -217,7 +244,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz25c72qjnhwpphs",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -237,7 +267,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz25ht1n7v50wlrd",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -267,7 +300,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz25my2hfi8b7h9z",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -299,7 +335,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz25s1zwp2mzqch",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
@@ -308,10 +347,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwlz25xb1pe0vlaqko",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwlz262r2gxsk928o2",
+        "startedAt": "2026-11-18T10:21:34.908Z"
+      },
       "lastFetchedAt": "2026-11-17T10:52:05.598Z",
       "lastError": "",
       "seen": [
@@ -344,13 +389,11 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mwl9na33pjctqw00o",
-        "startedAt": "2026-11-17T22:30:36.787Z"
-      },
-      "lastFetchedAt": "2026-11-16T23:28:54.052Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
       "lastError": "",
       "seen": [
+        "4032267921506168040",
         "4027240453594433399",
         "4025721046660401174",
         "4009848031614033860",
@@ -359,38 +402,50 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mwl9na9hclmriw8xt",
-        "startedAt": "2026-11-17T22:30:36.787Z"
-      },
-      "lastFetchedAt": "2026-11-16T23:28:54.052Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
       "lastError": "",
       "seen": [
+        "4032465177904350127",
         "4013588672830211627"
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": {
-        "id": "sd_mwl9naht193ygc18y8",
-        "startedAt": "2026-11-17T22:30:36.787Z"
-      }
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "lastError": "",
+      "seen": [
+        "4030235294690466268",
+        "4030227989915926966",
+        "4026006231163854671",
+        "4025860774227677706",
+        "4020583410618260135",
+        "4025278900920415149",
+        "4025787615315210621",
+        "4025832647512079371",
+        "4020582962203890582"
+      ]
     },
     "944180da5cc0": {
-      "snapshot": {
-        "id": "sd_mwl9napj1lgnw519ns",
-        "startedAt": "2026-11-17T22:30:36.787Z"
-      }
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "lastError": "",
+      "seen": [
+        "4031561807189801307",
+        "4030233359645169700",
+        "4028223188232283998",
+        "4029209445015488601",
+        "4023819242033796482",
+        "4027924892135700278",
+        "4026659814576954028",
+        "4023130101826950527",
+        "4015485147600446438",
+        "4011975298707097114",
+        "4018756059422194561"
+      ]
     }
   },
   "collected": [
-    {
-      "id": "sd_mwgscqqc2ibg3eo620",
-      "at": "2026-11-15T09:37:34.544Z"
-    },
-    {
-      "id": "sd_mwgscqu2eg80g0ddp",
-      "at": "2026-11-15T09:37:34.544Z"
-    },
     {
       "id": "sd_mwhn5gwj1rxplsfn93",
       "at": "2026-11-15T19:51:13.437Z"
@@ -518,6 +573,22 @@
     {
       "id": "sd_mwjwaidz2kxao4okmt",
       "at": "2026-11-17T10:52:05.598Z"
+    },
+    {
+      "id": "sd_mwl9na33pjctqw00o",
+      "at": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "sd_mwl9na9hclmriw8xt",
+      "at": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "sd_mwl9naht193ygc18y8",
+      "at": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "sd_mwl9napj1lgnw519ns",
+      "at": "2026-11-18T10:21:34.908Z"
     }
   ],
   "candidates": [
@@ -652,6 +723,50 @@
       "firstSeenAt": "2026-11-17T10:52:05.598Z",
       "lastSeenAt": "2026-11-17T10:52:05.598Z",
       "lastCheckedAt": "2026-11-17T10:52:05.598Z"
+    },
+    {
+      "id": "9d369366d6aa8319",
+      "slug": "ustad-bantoo-road-to-100-screenings-week-2-dehradun",
+      "title": "Ustad Bantoo: Road to 100 Screenings (Week 2, Dehradun)",
+      "description": "After 3 housefull shows in our Week 1, we’re off to Week 2\n\nScreening on 21-24 November in 3 different cities and in 3 very different spaces!\n\n1) Indore - The coolest space in Indore for Independent Films, Music, & Art - @studioingrey. It is both a photography studio and a cultural venue hosting small-scale art and community programming. You’ll be hosted by your city’s very own Harshvardhan Singh (@mintuned ) who is an Indore based actor and filmmaker.\n\n2) Dehradun - If there is anything that can be called the cultural hub of Dehradun, that is @october_dehradun run by @aanchalrjaiswal. Anytime you visit here you’ll find some artist performing there. While known mostly for their captivating music events, they also host a variety of other events like plays and films. You’ll be hosted by the ",
+      "startAt": "2026-11-21",
+      "endAt": "2026-11-24",
+      "venue": {
+        "name": "October, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Film"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Tickets on Fillum, link in bio",
+      "organizer": "iamguldar",
+      "posts": [
+        "https://www.instagram.com/p/Df2MbbiHwOv"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Df2MbbiHwOv",
+          "checkedAt": "2026-11-18T10:21:34.908Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-18T10:21:34.908Z",
+      "lastSeenAt": "2026-11-18T10:21:34.908Z",
+      "lastCheckedAt": "2026-11-18T10:21:34.908Z"
     }
   ]
 }
