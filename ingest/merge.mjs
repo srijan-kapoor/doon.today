@@ -314,10 +314,24 @@ export async function mergeAndWrite(sourceResults) {
   // hasn't answered for the events it didn't see.
   const answered=new Set(results.filter(r => !r.partial && ((r.events||[]).length > 0 || r.complete === true)).map(r => r.source));
 
+  // A stored event is claimed by at most one incoming event. A stored event that two sources made one can be
+  // matched by both of them once they disagree on the day (each still shares a link with it); if both took
+  // its id, events.json would hold two events with one id. The incoming event that already has that id wins,
+  // otherwise the first one does, and the others are new events with their own ids.
+  const claimed=new Set();
+  const storedFor=new Map();
+  const claim=(incoming,accept) => {
+    if (storedFor.has(incoming)) return;
+    const old=previous.find(e => !claimed.has(e) && accept(e) && same(e,incoming));
+    if (old) { claimed.add(old); storedFor.set(incoming,old); }
+  };
+  for (const incoming of current) claim(incoming, e => e.id === incoming.id);
+  for (const incoming of current) claim(incoming, () => true);
+
   const merged=[];
   for (const incoming of current) {
     // A stored event keeps its id and slug when its source moves it to another day, so calendar UIDs stay put.
-    const old=previous.find(e => same(e,incoming));
+    const old=storedFor.get(incoming);
     const event=old ? mergePair(old,incoming) : incoming;
     delete event.missedRuns;
     // Subscribed calendars only re-read an event when SEQUENCE goes up, so bump it on a real change.
