@@ -356,11 +356,8 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mwneta9n4839jnlxr",
-        "startedAt": "2026-11-19T10:30:47.557Z"
-      },
-      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
         "4032267921506168040",
@@ -372,11 +369,8 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mwnetadr10odstcejn",
-        "startedAt": "2026-11-19T10:30:47.557Z"
-      },
-      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
         "4032465177904350127",
@@ -384,13 +378,11 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": {
-        "id": "sd_mwnetai626dl4wn3im",
-        "startedAt": "2026-11-19T10:30:47.557Z"
-      },
-      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
+        "4033231573359878283",
         "4030235294690466268",
         "4030227989915926966",
         "4026006231163854671",
@@ -403,13 +395,11 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": {
-        "id": "sd_mwnetamw10ljr4d2rj",
-        "startedAt": "2026-11-19T10:30:47.557Z"
-      },
-      "lastFetchedAt": "2026-11-18T10:21:34.908Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
+        "4015635783746875731",
         "4031561807189801307",
         "4030233359645169700",
         "4028223188232283998",
@@ -568,6 +558,22 @@
     {
       "id": "sd_mwlz262r2gxsk928o2",
       "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwneta9n4839jnlxr",
+      "at": "2026-11-19T22:17:57.307Z"
+    },
+    {
+      "id": "sd_mwnetadr10odstcejn",
+      "at": "2026-11-19T22:17:57.307Z"
+    },
+    {
+      "id": "sd_mwnetai626dl4wn3im",
+      "at": "2026-11-19T22:17:57.307Z"
+    },
+    {
+      "id": "sd_mwnetamw10ljr4d2rj",
+      "at": "2026-11-19T22:17:57.307Z"
     }
   ],
   "candidates": [

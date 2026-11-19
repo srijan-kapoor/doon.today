@@ -3914,42 +3914,5 @@
     "firstSeenAt": "2026-10-19T03:52:50.746Z",
     "lastSeenAt": "2026-10-23T19:58:37.855Z",
     "lastCheckedAt": "2026-10-23T19:58:37.855Z"
-  },
-  {
-    "id": "7be0e7530a818fb5",
-    "slug": "dandiya-night-3-0",
-    "title": "DANDIYA NIGHT 3.0",
-    "description": "",
-    "startAt": "2026-10-21",
-    "endAt": "2026-10-21",
-    "venue": {
-      "name": "The Annfield Lawn: Dehradun",
-      "address": "Kotwali Bypass Rd, Fatehpur, Vikasnagar, Dehradun, Uttarakhand 248198, India Dehradun",
-      "city": "Dehradun",
-      "area": "Vikasnagar"
-    },
-    "categories": [
-      "Culture"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/dandiya-night-30/3900030829245453",
-        "checkedAt": "2026-10-20T20:01:38.522Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-10-20T20:01:38.522Z",
-    "lastCheckedAt": "2026-10-20T20:01:38.522Z"
   }
 ]
