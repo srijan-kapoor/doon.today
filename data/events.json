@@ -465,7 +465,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.038Z",
+        "checkedAt": "2026-11-19T00:08:33.171Z",
         "confidence": 0.95
       },
       {
@@ -482,8 +482,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-18T00:08:27.038Z",
-    "lastCheckedAt": "2026-11-18T00:08:27.038Z",
+    "lastSeenAt": "2026-11-19T00:08:33.171Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.171Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -660,7 +660,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.035Z",
+        "checkedAt": "2026-11-19T00:08:33.175Z",
         "confidence": 0.95
       },
       {
@@ -676,8 +676,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-18T10:19:36.085Z",
-    "lastCheckedAt": "2026-11-18T10:19:36.085Z"
+    "lastSeenAt": "2026-11-19T00:08:33.175Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.175Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -835,7 +835,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.038Z",
+        "checkedAt": "2026-11-19T00:08:33.175Z",
         "confidence": 0.95
       }
     ],
@@ -845,8 +845,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-18T00:08:27.038Z",
-    "lastCheckedAt": "2026-11-18T00:08:27.038Z"
+    "lastSeenAt": "2026-11-19T00:08:33.175Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.175Z"
   },
   {
     "id": "b36082addcdc9932",
@@ -1335,7 +1335,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.038Z",
+        "checkedAt": "2026-11-19T00:08:33.175Z",
         "confidence": 0.95
       },
       {
@@ -1351,8 +1351,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-18T10:19:09.055Z",
-    "lastCheckedAt": "2026-11-18T10:19:09.055Z"
+    "lastSeenAt": "2026-11-19T00:08:33.175Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.175Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1466,7 +1466,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.037Z",
+        "checkedAt": "2026-11-19T00:08:33.175Z",
         "confidence": 0.95
       }
     ],
@@ -1476,8 +1476,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-18T00:08:27.037Z",
-    "lastCheckedAt": "2026-11-18T00:08:27.037Z"
+    "lastSeenAt": "2026-11-19T00:08:33.175Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.175Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1611,7 +1611,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.038Z",
+        "checkedAt": "2026-11-19T00:08:33.174Z",
         "confidence": 0.95
       },
       {
@@ -1627,8 +1627,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-18T10:19:09.057Z",
-    "lastCheckedAt": "2026-11-18T10:19:09.057Z"
+    "lastSeenAt": "2026-11-19T00:08:33.174Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.174Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1659,7 +1659,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-18T00:08:27.038Z",
+        "checkedAt": "2026-11-19T00:08:33.175Z",
         "confidence": 0.95
       }
     ],
@@ -1669,8 +1669,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-18T00:08:27.038Z",
-    "lastCheckedAt": "2026-11-18T00:08:27.038Z"
+    "lastSeenAt": "2026-11-19T00:08:33.175Z",
+    "lastCheckedAt": "2026-11-19T00:08:33.175Z"
   },
   {
     "id": "b59dab4202710ff2",
@@ -2006,7 +2006,7 @@
     "firstSeenAt": "2026-11-13T00:08:36.788Z",
     "lastSeenAt": "2026-11-17T00:08:24.968Z",
     "lastCheckedAt": "2026-11-17T00:08:24.968Z",
-    "missedRuns": 1
+    "missedRuns": 2
   },
   {
     "id": "4adc16d3d6234306",
