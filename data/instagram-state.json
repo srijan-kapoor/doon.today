@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4028871112589365727",
@@ -14,15 +14,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwlz242u4f7dthgn",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032426490665707396",
         "4031698325325080591",
         "4029483809419773478",
         "4028621137176326524",
@@ -42,13 +40,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwlz248wgv9i1ketp",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4029253700943185976",
@@ -59,15 +54,13 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwlz24fl7aeqwq1le",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032265960906697651",
         "4030077175922067062",
         "4028730373440465605",
         "4029434403531774531",
@@ -94,25 +87,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwlz24ka1stduswrjv",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwlz24oa1mzgtbh74",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4031529161029364395",
@@ -126,15 +113,13 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwlz24sqxqmxf9g6p",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032144058115197518",
         "4031430963839487154",
         "4031333660384574650",
         "4031764528701985114",
@@ -174,15 +159,14 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwlz24xf12aqxbsz38",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032304408875814225",
+        "4032418851783965531",
         "4031717633488975376",
         "4028151909403290847",
         "4027412671426503745",
@@ -201,13 +185,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwlz252ze2o2h45op",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -218,15 +199,15 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwlz257h2ld6jhxjtn",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032186536525526251",
+        "4032341687770743159",
+        "4032376379563722651",
         "4029233863891363346",
         "4029269546853749473",
         "4027862140558171104",
@@ -244,13 +225,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwlz25c72qjnhwpphs",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4030947294526512635",
@@ -267,15 +245,13 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwlz25ht1n7v50wlrd",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032392371882217821",
         "4030221854519568983",
         "4028730200984025201",
         "4026602903027966559",
@@ -300,13 +276,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwlz25my2hfi8b7h9z",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "4031786021303883275",
@@ -335,31 +308,25 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwlz25s1zwp2mzqch",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwlz25xb1pe0vlaqko",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwlz262r2gxsk928o2",
-        "startedAt": "2026-11-18T10:21:34.908Z"
-      },
-      "lastFetchedAt": "2026-11-17T10:52:05.598Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
       "lastError": "",
       "seen": [
+        "4032927937648678139",
+        "4032875268926128150",
+        "4032215429552195715",
         "4031456438053431146",
         "4028598268325713125",
         "4027745655735509047",
@@ -447,66 +414,6 @@
   },
   "collected": [
     {
-      "id": "sd_mwhn5gwj1rxplsfn93",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5h2u223b1amehk",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5h9p2bu97xkr94",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5hg82do6tjsl6s",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5hns2746q2yn9m",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5huq1g2e5pfik2",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5i0y16uzeoe94q",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5i731dj1f3q6sf",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5igk1iwd9xa2bu",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5ir0270y0a7zuj",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5iwihvx9vy9o8",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5j362mz09s8eqo",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5j9g2c1pndxr7r",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5jfn1eeqqh5vna",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
-      "id": "sd_mwhn5jl72mvuqa408h",
-      "at": "2026-11-15T19:51:13.437Z"
-    },
-    {
       "id": "sd_mwj39t6dtyjvugx4t",
       "at": "2026-11-16T23:28:54.052Z"
     },
@@ -589,54 +496,69 @@
     {
       "id": "sd_mwl9napj1lgnw519ns",
       "at": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "sd_mwlz242u4f7dthgn",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz248wgv9i1ketp",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz24fl7aeqwq1le",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz24ka1stduswrjv",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz24oa1mzgtbh74",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz24sqxqmxf9g6p",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz24xf12aqxbsz38",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz252ze2o2h45op",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz257h2ld6jhxjtn",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz25c72qjnhwpphs",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz25ht1n7v50wlrd",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz25my2hfi8b7h9z",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz25s1zwp2mzqch",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz25xb1pe0vlaqko",
+      "at": "2026-11-19T04:11:59.163Z"
+    },
+    {
+      "id": "sd_mwlz262r2gxsk928o2",
+      "at": "2026-11-19T04:11:59.163Z"
     }
   ],
   "candidates": [
-    {
-      "id": "875a80ee03486b47",
-      "slug": "dark-sky-lab-stargazing-session",
-      "title": "Dark Sky Lab: Stargazing Session",
-      "description": "Last day to register for the (rescheduled) Dark Sky Lab session! ✨\n\n🗓️ 17 November, Saturday\n⏳ 11.00 pm to 1.00 am\n📍The Doonsters Arena, Banjarawala\n\nRegistration link in bio.\n\n________________\n\nAll your queries about Dark Sky Lab\n\n1. What is Dark Sky Lab?\n\nDark Sky Lab is a series of stargazing sessions hosted by the Dehradun Astronomy Club (DAC) to observe, rediscover and understand the wonders of the night sky.\n\n2. Where is the session being held?\n\nThis chapter of the Dark Sky Lab is happening at Doonsters Arena, Banjarawala, Dehradun.\n\n3. How do we reach the venue?\n\nYou will need to arrange your own transportation to and from the venue.\n\n4. What are the timings?\n\nWe kick things off at 11:00 PM on Saturday, 14th November, and wrap up around 1:00 AM.\n\n5. What are the charges for the ev",
-      "startAt": "2026-11-17T23:00:00+05:30",
-      "endAt": "2026-11-18T01:00:00+05:30",
-      "venue": {
-        "name": "The Doonsters Arena, Banjarawala",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "paid",
-        "minPrice": 499,
-        "currency": "INR"
-      },
-      "howToJoin": "Registration link in bio",
-      "organizer": "dehradun_astronomy_club",
-      "posts": [
-        "https://www.instagram.com/p/Dfy3ml4yKqr"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Dfy3ml4yKqr",
-          "checkedAt": "2026-11-17T10:52:05.598Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastCheckedAt": "2026-11-17T10:52:05.598Z"
-    },
     {
       "id": "245ce12e5a2de55e",
       "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
