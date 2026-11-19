@@ -396,3 +396,19 @@ test('common words alone never make two hand-written events one', async () => {
   const post = (title, venue) => ({ title, startAt: '2026-11-21T18:00:00+05:30', endAt: '2026-11-21T20:00:00+05:30', venue: { name: venue }, sources: [{ provider: 'instagram', url: `https://www.instagram.com/p/${title}` }] });
   assert.equal(sameEvent(post('Poetry night at the club', 'Cafe Ivy, Dehradun'), post('Sunday community session: board games', 'Tapri Cafe, Dehradun')), false);
 });
+
+test('two incoming events that both match one stored event do not share its id', async t => {
+  await inTempDir(t);
+  // Stored as one event from two sources. Since then the sources disagree on the day, so this run's copies are
+  // not the same event as each other, but each still shares a source link with the stored one.
+  const stored=ev({id:'4e90e288934b77c1',slug:'wadali-tour',title:'Wadali Tour',startAt:'2030-01-16T19:00:00+05:30',venue:{name:'Venue To Be Announced',city:'Dehradun'},
+    sources:[{provider:'bookmyshow',url:'https://example.test/bms/1'},{provider:'allevents',url:'https://example.test/ae/1'}]});
+  await fs.writeFile('data/events.json',JSON.stringify([stored]));
+  const fromBms=ev({id:'bms-id',slug:'wadali-tour',title:'Wadali Tour',startAt:'2030-01-16T19:00:00+05:30',venue:{name:'Venue To Be Announced',city:'Dehradun'},sources:[{provider:'bookmyshow',url:'https://example.test/bms/1'}]});
+  const fromAe=ev({id:'ae-id',slug:'wadali-tour',title:'Wadali Tour',startAt:'2030-01-17T19:00:00+05:30',venue:{name:'Venue To Be Announced',city:'Dehradun'},sources:[{provider:'allevents',url:'https://example.test/ae/1'}]});
+  await mergeAndWrite([{source:'bookmyshow',events:[fromBms]},{source:'allevents',events:[fromAe]}]);
+  const out=JSON.parse(await fs.readFile('data/events.json','utf8'));
+  assert.equal(out.length,2);
+  assert.equal(new Set(out.map(e=>e.id)).size,2,'every event has its own id');
+  assert.equal(new Set(out.map(e=>e.slug)).size,2,'and its own slug');
+});
