@@ -1,5 +1,43 @@
 [
   {
+    "id": "ba8c96074151b881",
+    "slug": "the-real-shutdown",
+    "title": "The Real Shutdown",
+    "description": "",
+    "startAt": "2026-11-20T20:00:00+05:30",
+    "endAt": "2026-11-21T01:30:00+05:30",
+    "venue": {
+      "name": "Romeo Lane",
+      "address": "",
+      "city": "Dehradun",
+      "area": "Malsi"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/the-real-shutdown-nov-20-2026",
+        "externalId": "6afb1c6a7c09ee5f41df8a80",
+        "checkedAt": "2026-11-20T10:12:05.753Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-16T23:28:53.769Z",
+    "lastSeenAt": "2026-11-20T10:12:05.753Z",
+    "lastCheckedAt": "2026-11-20T10:12:05.753Z"
+  },
+  {
     "id": "6523eaf403342042",
     "slug": "aws-community-meetup-dehradun-2026-build-with-ai-cloud-aws",
     "title": "AWS Community Meetup Dehradun 2026: Build with AI, Cloud & AWS",

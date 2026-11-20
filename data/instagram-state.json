@@ -1,9 +1,10 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4034464138947676986",
         "4028871112589365727",
         "4024947697315827239",
         "4019812074879419901",
@@ -14,13 +15,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwotl3hx13n7wclydb",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4032426490665707396",
@@ -43,15 +41,13 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwotl3p42n9r9niok1",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4033277778772236642",
         "4029253700943185976",
         "4028013158076474349",
         "4018510583139069808",
@@ -60,15 +56,13 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwotl3zj1vhw0oko9",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4033166253236973332",
         "4032265960906697651",
         "4030077175922067062",
         "4028730373440465605",
@@ -96,27 +90,23 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwotl4ac1uqtif8nry",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwotl4jxyx4ir7ptc",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4033108051838099357",
+        "4033297033775115615",
         "4031529161029364395",
         "4030233359645169700",
         "4029303330567818016",
@@ -128,15 +118,16 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwotl4piqyxl4e6j6",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4033261087524628311",
+        "4033716263435662795",
+        "4033954529573370756",
+        "4033547737055939695",
         "4032144058115197518",
         "4031430963839487154",
         "4031333660384574650",
@@ -177,13 +168,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwotl59s1xw0kpps89",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4032304408875814225",
@@ -206,13 +194,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwotl5g71exi0bz0rt",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -223,13 +208,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwotl5o818iqsd9qd2",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4032186536525526251",
@@ -252,13 +234,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwotl5vc1egv1mx0w3",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4030947294526512635",
@@ -275,13 +254,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwotl63i12tnjh0h61",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "4032392371882217821",
@@ -309,15 +285,15 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwotl6976mdupss07",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4033091521648860360",
+        "4033884276337832283",
+        "4033187250265537689",
         "4031786021303883275",
         "4030505201307588853",
         "4029974171415593133",
@@ -344,31 +320,24 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwotl6f3g77rrsdn",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwotl6n7k1aqkhapk",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwotl73znr4kk8xnr",
-        "startedAt": "2026-11-20T10:12:05.856Z"
-      },
-      "lastFetchedAt": "2026-11-19T04:11:59.163Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [
+        "4034333735146729043",
+        "4033658819302178820",
         "4032927937648678139",
         "4032875268926128150",
         "4032215429552195715",
@@ -401,7 +370,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwpipzk5hgrmv6si3",
+        "startedAt": "2026-11-20T21:55:23.317Z"
+      },
       "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
@@ -414,7 +386,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwpipzq917z9xci17m",
+        "startedAt": "2026-11-20T21:55:23.317Z"
+      },
       "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
@@ -423,7 +398,10 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwpipzvz1qqthfvg6c",
+        "startedAt": "2026-11-20T21:55:23.317Z"
+      },
       "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
@@ -440,7 +418,10 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwpiq01r1jphlozv04",
+        "startedAt": "2026-11-20T21:55:23.317Z"
+      },
       "lastFetchedAt": "2026-11-19T22:17:57.307Z",
       "lastError": "",
       "seen": [
@@ -460,74 +441,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwj39t6dtyjvugx4t",
-      "at": "2026-11-16T23:28:54.052Z"
-    },
-    {
-      "id": "sd_mwj39tce1munhh3whh",
-      "at": "2026-11-16T23:28:54.052Z"
-    },
-    {
-      "id": "sd_mwjwaekh2jlhpx4ol3",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaep117dqvlalbi",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaex11lg9ctiat7",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaf1h1cuhrvakez",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaf8r1id24q2usm",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwafdb1do2y40aln",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwafsd1eqea2fp9b",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwafw21lhn1u53rf",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwag6bv9xtddhtk",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaga9sdiylshxt",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwageo8cm49hzql",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwagj02ae1o1fh5w",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwagym11dp7nvapm",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwah2ytwebm9jag",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "sd_mwjwaidz2kxao4okmt",
-      "at": "2026-11-17T10:52:05.598Z"
-    },
     {
       "id": "sd_mwl9na33pjctqw00o",
       "at": "2026-11-18T10:21:34.908Z"
@@ -619,6 +532,66 @@
     {
       "id": "sd_mwnetamw10ljr4d2rj",
       "at": "2026-11-19T22:17:57.307Z"
+    },
+    {
+      "id": "sd_mwotl3hx13n7wclydb",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl3p42n9r9niok1",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl3zj1vhw0oko9",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl4ac1uqtif8nry",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl4jxyx4ir7ptc",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl4piqyxl4e6j6",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl59s1xw0kpps89",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl5g71exi0bz0rt",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl5o818iqsd9qd2",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl5vc1egv1mx0w3",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl63i12tnjh0h61",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl6976mdupss07",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl6f3g77rrsdn",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl6n7k1aqkhapk",
+      "at": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "sd_mwotl73znr4kk8xnr",
+      "at": "2026-11-20T21:55:23.317Z"
     }
   ],
   "candidates": [
@@ -752,6 +725,142 @@
       "firstSeenAt": "2026-11-18T10:21:34.908Z",
       "lastSeenAt": "2026-11-18T10:21:34.908Z",
       "lastCheckedAt": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "4f245226b4f1caf1",
+      "slug": "the-santala-devi-hike",
+      "title": "The Santala Devi Hike",
+      "description": "Hello friends! Join us this Sunday, November 22, 2026 for a fascinating hike upto the 📍Santala Devi temple\n where we embark on a beautiful climb and discover the stories of the revered goddess.\n\n• The climb is steep and we go at a slow pace.\n*_______________________*\n🌱 Meeting Time: 7 am\n🌱 Meeting Point: Garhi Cantt Chowk (Opposite Garhi Cantt. Police Station)\n•••••••••••••••••••••••••••••••••\n👉We drive for about 7 kms from the Chowk to the Santala Devi temple parking lot and begin the hike from there.\n👉 The hike distance two way is about 6 kms. The walk is steep.\n\n👉🐾 NO PETS ALLOWED❗❗\n\n👉 The trail will end by 10:30 am.\n\n🪖 Since we enter the cantonment, please ensure that even the pillion riders on the two wheelers are wearing their helmets. You are requested to arrange for your o",
+      "startAt": "2026-11-22T07:00:00+05:30",
+      "endAt": "2026-11-22T10:30:00+05:30",
+      "venue": {
+        "name": "Santala Devi temple, Dehradun (meeting at Garhi Cantt Chowk, opposite Garhi Cantt Police Station)",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Outdoors",
+        "Fitness"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Get in touch at +91 70884 47304; arrange your own conveyance",
+      "organizer": "btdt_official",
+      "posts": [
+        "https://www.instagram.com/p/Df9S8JFB0s6"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Df9S8JFB0s6",
+          "checkedAt": "2026-11-20T21:55:23.317Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "1ee02f3654966587",
+      "slug": "melophile-jam-session-red-hot-chili-peppers-californication",
+      "title": "Melophile Jam Session: Red Hot Chili Peppers' Californication",
+      "description": "🌶️🎸 MELOPHILE Jam Session\n\nDehradun, we're turning it up!\n\nThis time, we're listening to Red Hot Chili Peppers' Californication, all the way through. No skipping, no distractions. Just music.\n\nAnd when the album ends? We're jamming! 🤘\n\nBring your instruments, meet fellow musicians, share your love for music, and spend an evening listening and playing together.\n\n📀 Californication by Red Hot Chili Peppers\n📅 Sunday, 22 November 2026\n🕟 4:30 PM\n📍 Dehradun\n\n🎸 Bring your instrument if you want to join the jam. Even if you don't play, you're welcome to hang out.\n\nMeet people with similar music tastes, discover new music, and make some noise.\n\nDM or comment to join!\nWhatsApp group link in bio.\n\nOne album. Front to back. No skipping. Then we jam.",
+      "startAt": "2026-11-22T16:30:00+05:30",
+      "venue": {
+        "name": "Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Music",
+        "Meetups"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "DM or comment on the post, or join the WhatsApp group linked in bio",
+      "organizer": "melophile.ddn",
+      "posts": [
+        "https://www.instagram.com/p/Df5FMVEMhli"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Df5FMVEMhli",
+          "checkedAt": "2026-11-20T21:55:23.317Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
+    },
+    {
+      "id": "e8fc72930bd1030b",
+      "slug": "listening-circle-chapter-2-modern-loneliness",
+      "title": "Listening Circle: Chapter 2 - Modern Loneliness",
+      "description": "In a world full of notifications, social media and constant conversations, why do so many of us still feel lonely? 🫂\n\nLet's talk about MODERN LONELINESS at Listening Circle Chapter 2.\n\nJoin us for an afternoon of meaningful conversations, shared experiences and fresh perspectives. A safe, non-judgemental space where you can express yourself, listen to others and connect with people beyond small talk.\n\nYou don't have to share anything you're uncomfortable with. Sometimes, simply being present and listening is enough. 💛\n\n📍 MDDA Park, Dehradun\n📅 Sunday, 22 November\n⏰ 12 PM – 3 PM\n🎟️ Registration: ₹50 (Park entry charges extra)\n\n💬 Want to be a part of this? Comment \"DEHRADUN HANGOUTS\" and we'll share the registration link with you!\n\nCome as you are. Let's make space for real conversation",
+      "startAt": "2026-11-22T12:00:00+05:30",
+      "endAt": "2026-11-22T15:00:00+05:30",
+      "venue": {
+        "name": "MDDA Park, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Meetups",
+        "Wellness"
+      ],
+      "pricing": {
+        "type": "paid",
+        "minPrice": 50,
+        "currency": "INR"
+      },
+      "howToJoin": "Comment \"DEHRADUN HANGOUTS\" on the post to get the registration link",
+      "organizer": "dehradun_hangouts",
+      "posts": [
+        "https://www.instagram.com/p/Df4a17mhRzI",
+        "https://www.instagram.com/p/Df7PGB8JnFb"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/Df4a17mhRzI",
+          "checkedAt": "2026-11-20T21:55:23.317Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastSeenAt": "2026-11-20T21:55:23.317Z",
+      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
     }
   ]
 }
