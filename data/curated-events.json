@@ -1509,5 +1509,49 @@
     "firstSeenAt": "2026-11-20T18:18:13.979Z",
     "lastSeenAt": "2026-11-20T18:18:13.979Z",
     "lastCheckedAt": "2026-11-20T18:18:13.979Z"
+  },
+  {
+    "id": "48d8f040de20895c",
+    "slug": "listening-circle-chapter-2-modern-loneliness",
+    "title": "Listening Circle: Chapter 2 - Modern Loneliness",
+    "description": "In a world full of notifications, social media and constant conversations, why do so many of us still feel lonely? 🫂 Let's talk about MODERN LONELINESS at Listening Circle Chapter 2. Join us for an afternoon of meaningful conversations, shared experiences and fresh perspectives. A safe, non-judgemental space where you can express yourself, listen to others and connect with people beyond small talk. You don't have to share anything you're uncomfortable with. Sometimes, simply being present and listening is enough. 💛 📍 MDDA Park, Dehradun 📅 Sunday, 22 November ⏰ 12 PM – 3 PM 🎟️ Registration: ₹50 (Park entry charges extra) 💬 Want to be a part of this? Comment \"DEHRADUN HANGOUTS\" and we'll share the registration link with you! Come as you are. Let's make space for real conversation\n\nOrganized by @dehradun_hangouts. How to join: Comment \"DEHRADUN HANGOUTS\" on the post to get the registration link",
+    "startAt": "2026-11-22T12:00:00+05:30",
+    "endAt": "2026-11-22T15:00:00+05:30",
+    "venue": {
+      "name": "MDDA Park, Dehradun",
+      "city": "Dehradun",
+      "area": "Rajpur"
+    },
+    "categories": [
+      "Meetups",
+      "Wellness"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 50,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df4a17mhRzI",
+        "checkedAt": "2026-11-20T22:51:57.096Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df4a17mhRzI",
+        "checkedAt": "2026-11-20T21:55:23.317Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-20T22:51:57.096Z",
+    "lastSeenAt": "2026-11-20T22:51:57.096Z",
+    "lastCheckedAt": "2026-11-20T22:51:57.096Z"
   }
 ]

@@ -87,52 +87,5 @@
     "firstSeenAt": "2026-11-20T21:55:23.317Z",
     "lastSeenAt": "2026-11-20T21:55:23.317Z",
     "lastCheckedAt": "2026-11-20T21:55:23.317Z"
-  },
-  {
-    "id": "e8fc72930bd1030b",
-    "slug": "listening-circle-chapter-2-modern-loneliness",
-    "title": "Listening Circle: Chapter 2 - Modern Loneliness",
-    "description": "In a world full of notifications, social media and constant conversations, why do so many of us still feel lonely? 🫂\n\nLet's talk about MODERN LONELINESS at Listening Circle Chapter 2.\n\nJoin us for an afternoon of meaningful conversations, shared experiences and fresh perspectives. A safe, non-judgemental space where you can express yourself, listen to others and connect with people beyond small talk.\n\nYou don't have to share anything you're uncomfortable with. Sometimes, simply being present and listening is enough. 💛\n\n📍 MDDA Park, Dehradun\n📅 Sunday, 22 November\n⏰ 12 PM – 3 PM\n🎟️ Registration: ₹50 (Park entry charges extra)\n\n💬 Want to be a part of this? Comment \"DEHRADUN HANGOUTS\" and we'll share the registration link with you!\n\nCome as you are. Let's make space for real conversation",
-    "startAt": "2026-11-22T12:00:00+05:30",
-    "endAt": "2026-11-22T15:00:00+05:30",
-    "venue": {
-      "name": "MDDA Park, Dehradun",
-      "city": "Dehradun"
-    },
-    "categories": [
-      "Meetups",
-      "Wellness"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 50,
-      "currency": "INR"
-    },
-    "howToJoin": "Comment \"DEHRADUN HANGOUTS\" on the post to get the registration link",
-    "organizer": "dehradun_hangouts",
-    "posts": [
-      "https://www.instagram.com/p/Df4a17mhRzI",
-      "https://www.instagram.com/p/Df7PGB8JnFb"
-    ],
-    "reading": {
-      "detailsFrom": "both",
-      "confidence": "high"
-    },
-    "sources": [
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/Df4a17mhRzI",
-        "checkedAt": "2026-11-20T21:55:23.317Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "community-reported",
-    "curation": {
-      "status": "review",
-      "score": 3
-    },
-    "firstSeenAt": "2026-11-20T21:55:23.317Z",
-    "lastSeenAt": "2026-11-20T21:55:23.317Z",
-    "lastCheckedAt": "2026-11-20T21:55:23.317Z"
   }
 ]

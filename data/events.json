@@ -388,6 +388,50 @@
     "modifiedAt": "2026-11-20T21:55:45.552Z"
   },
   {
+    "id": "48d8f040de20895c",
+    "slug": "listening-circle-chapter-2-modern-loneliness",
+    "title": "Listening Circle: Chapter 2 - Modern Loneliness",
+    "description": "In a world full of notifications, social media and constant conversations, why do so many of us still feel lonely? 🫂 Let's talk about MODERN LONELINESS at Listening Circle Chapter 2. Join us for an afternoon of meaningful conversations, shared experiences and fresh perspectives. A safe, non-judgemental space where you can express yourself, listen to others and connect with people beyond small talk. You don't have to share anything you're uncomfortable with. Sometimes, simply being present and listening is enough. 💛 📍 MDDA Park, Dehradun 📅 Sunday, 22 November ⏰ 12 PM – 3 PM 🎟️ Registration: ₹50 (Park entry charges extra) 💬 Want to be a part of this? Comment \"DEHRADUN HANGOUTS\" and we'll share the registration link with you! Come as you are. Let's make space for real conversation\n\nOrganized by @dehradun_hangouts. How to join: Comment \"DEHRADUN HANGOUTS\" on the post to get the registration link",
+    "startAt": "2026-11-22T12:00:00+05:30",
+    "endAt": "2026-11-22T15:00:00+05:30",
+    "venue": {
+      "name": "MDDA Park, Dehradun",
+      "city": "Dehradun",
+      "area": "Rajpur"
+    },
+    "categories": [
+      "Meetups",
+      "Wellness"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 50,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df4a17mhRzI",
+        "checkedAt": "2026-11-20T22:51:57.096Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df4a17mhRzI",
+        "checkedAt": "2026-11-20T21:55:23.317Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-20T22:51:57.096Z",
+    "lastSeenAt": "2026-11-20T22:51:57.096Z",
+    "lastCheckedAt": "2026-11-20T22:51:57.096Z"
+  },
+  {
     "id": "642dfcd5d734c143",
     "slug": "make-your-own-bouquet",
     "title": "Make Your Own Bouquet",
@@ -1722,7 +1766,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-20T10:09:52.795Z",
+        "checkedAt": "2026-11-20T21:52:17.180Z",
         "confidence": 0.75
       },
       {
@@ -1740,49 +1784,6 @@
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
     "lastSeenAt": "2026-11-20T21:55:08.541Z",
     "lastCheckedAt": "2026-11-20T21:55:08.541Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-20T21:52:17.180Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-20T21:52:17.180Z",
-    "lastSeenAt": "2026-11-20T21:52:17.180Z",
-    "lastCheckedAt": "2026-11-20T21:52:17.180Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
