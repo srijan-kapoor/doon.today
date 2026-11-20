@@ -1,5 +1,43 @@
 [
   {
+    "id": "6523eaf403342042",
+    "slug": "aws-community-meetup-dehradun-2026-build-with-ai-cloud-aws",
+    "title": "AWS Community Meetup Dehradun 2026: Build with AI, Cloud & AWS",
+    "description": "Meetup event in Dehradun. Check the organizer page for the latest details.",
+    "startAt": "2026-11-20T04:00:00.000Z",
+    "endAt": "2026-11-20T11:30:00.000Z",
+    "venue": {
+      "name": "Uttaranchal University",
+      "address": "Prem Nagar, Dehradun, Uttarakhand 248007, India, Dehradun, UK",
+      "city": "Dehradun",
+      "area": "Prem Nagar"
+    },
+    "categories": [
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "meetup",
+        "url": "https://www.meetup.com/aws-sbg-at-uttaranchal-university/events/317244334/",
+        "externalId": "317244334",
+        "checkedAt": "2026-11-14T09:05:21.575Z",
+        "confidence": 0.9
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-02T09:29:04.044Z",
+    "lastSeenAt": "2026-11-14T09:05:21.575Z",
+    "lastCheckedAt": "2026-11-14T09:05:21.575Z"
+  },
+  {
     "id": "0400a6cfc2896445",
     "slug": "dark-sky-lab-stargazing-session",
     "title": "Dark Sky Lab: Stargazing Session",
