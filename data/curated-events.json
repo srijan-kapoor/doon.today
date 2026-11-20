@@ -1553,5 +1553,48 @@
     "firstSeenAt": "2026-11-20T22:51:57.096Z",
     "lastSeenAt": "2026-11-20T22:51:57.096Z",
     "lastCheckedAt": "2026-11-20T22:51:57.096Z"
+  },
+  {
+    "id": "0b8c9e97befad27e",
+    "slug": "the-santala-devi-hike",
+    "title": "The Santala Devi Hike",
+    "description": "Hello friends! Join us this Sunday, November 22, 2026 for a fascinating hike upto the 📍Santala Devi temple where we embark on a beautiful climb and discover the stories of the revered goddess. • The climb is steep and we go at a slow pace. *_______________________* 🌱 Meeting Time: 7 am 🌱 Meeting Point: Garhi Cantt Chowk (Opposite Garhi Cantt. Police Station) ••••••••••••••••••••••••••••••••• 👉We drive for about 7 kms from the Chowk to the Santala Devi temple parking lot and begin the hike from there. 👉 The hike distance two way is about 6 kms. The walk is steep. 👉🐾 NO PETS ALLOWED❗❗ 👉 The trail will end by 10:30 am. 🪖 Since we enter the cantonment, please ensure that even the pillion riders on the two wheelers are wearing their helmets. You are requested to arrange for your o\n\nOrganized by @btdt_official. How to join: Get in touch at +91 70884 47304; arrange your own conveyance",
+    "startAt": "2026-11-22T07:00:00+05:30",
+    "endAt": "2026-11-22T10:30:00+05:30",
+    "venue": {
+      "name": "Santala Devi temple, Dehradun (meeting at Garhi Cantt Chowk, opposite Garhi Cantt Police Station)",
+      "city": "Dehradun",
+      "area": "Garhi Cantt"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df9S8JFB0s6",
+        "checkedAt": "2026-11-20T22:52:38.922Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df9S8JFB0s6",
+        "checkedAt": "2026-11-20T21:55:23.317Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-20T22:52:38.922Z",
+    "lastSeenAt": "2026-11-20T22:52:38.922Z",
+    "lastCheckedAt": "2026-11-20T22:52:38.922Z"
   }
 ]
