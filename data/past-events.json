@@ -1,5 +1,54 @@
 [
   {
+    "id": "04b297f4d2f40790",
+    "slug": "the-story-circus",
+    "title": "The Story Circus",
+    "description": "A hands-on storytelling workshop: stories, characters, creative writing, theatre-based games and open mic moments. Hosted by The Story Makers, Dr. Swatee Miittal (National School of Drama) and author Gargie Sharma. Ages 16+, in English and Hindi.",
+    "startAt": "2026-11-21T14:45:00+05:30",
+    "endAt": "2026-11-21T17:45:00+05:30",
+    "venue": {
+      "name": "Musee Art Cafe",
+      "city": "Dehradun",
+      "area": "Kishanpur",
+      "geo": {
+        "lat": 30.3786,
+        "lng": 78.0902
+      }
+    },
+    "categories": [
+      "Workshop",
+      "Books"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 599,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
+        "checkedAt": "2026-11-01T16:21:08.545Z",
+        "confidence": 1
+      },
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/the-happiness-workshop/ET00501667",
+        "externalId": "ET00501667",
+        "checkedAt": "2026-11-19T04:11:39.124Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-01T16:21:08.545Z",
+    "lastSeenAt": "2026-11-19T04:11:39.124Z",
+    "lastCheckedAt": "2026-11-19T04:11:39.124Z"
+  },
+  {
     "id": "ba8c96074151b881",
     "slug": "the-real-shutdown",
     "title": "The Real Shutdown",

@@ -1637,5 +1637,41 @@
     "firstSeenAt": "2026-11-21T10:09:07.705Z",
     "lastSeenAt": "2026-11-21T10:09:07.705Z",
     "lastCheckedAt": "2026-11-21T10:09:07.705Z"
+  },
+  {
+    "id": "6a6900a1b21b4765",
+    "slug": "waiting-for-godot-play",
+    "title": "Waiting for godot play",
+    "description": "DEHRADUN, GET READY FOR A UNIQUE THEATRICAL EXPERIENCE!\n\nA timeless masterpiece by the world-renowned playwright and Nobel Prize laureate Samuel Beckett.\n\nWAITING FOR GODOT\n\nComing to the stage in Dehradun!\n\nA theatrical experience that explores the profound questions of life, time, hope and human existence.\n\nHindi Adaptation: Roshan Jha\nDirected by: Shubham Gaur\nPresented by: Kala Manch\n\n📅 24 November 2026\n🕕 6:00 PM\n📍 Olympus High School, Dehradun\n\nOne play. Many questions. An unforgettable theatrical experience.\n\nCome and be a part of it.\n\nOrganized by कला मंच. How to join: +91 90841 32455",
+    "startAt": "2026-11-24",
+    "venue": {
+      "name": "Olympus high school",
+      "city": "Dehradun",
+      "area": "GMS Road"
+    },
+    "categories": [
+      "Live shows"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 150,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://github.com/srijan-kapoor/doon.today/issues/177",
+        "checkedAt": "2026-11-21T15:56:45.227Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-21T15:56:45.227Z",
+    "lastSeenAt": "2026-11-21T15:56:45.227Z",
+    "lastCheckedAt": "2026-11-21T15:56:45.227Z"
   }
 ]
