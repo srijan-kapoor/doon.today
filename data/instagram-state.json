@@ -15,7 +15,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf0lj1zper9h88t",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -41,7 +44,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf0rl2lahxmyhqr",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -56,7 +62,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf0x93t9qyag5s",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -90,7 +99,10 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf1491b43ukl06o",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -99,7 +111,10 @@
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf1b31zujp6ohvc",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -118,7 +133,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf1ma1mgtrhyrbe",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -168,7 +186,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf1tc1e2bnzgl5w",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -194,7 +215,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf2211zyo84znw0",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -208,7 +232,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf2dk1311t22kgk",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -234,7 +261,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf2lk78j6k8t52",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -254,7 +284,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf2r71v3h1dun11",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -285,7 +318,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf2zs274co5tset",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -320,7 +356,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf35k2aloxrbrsi",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
@@ -329,10 +368,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwqvf3hfv3z04q9n3",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwqvf3pe2q9rxm9xwa",
+        "startedAt": "2026-11-21T20:38:53.315Z"
+      },
       "lastFetchedAt": "2026-11-20T21:55:23.317Z",
       "lastError": "",
       "seen": [

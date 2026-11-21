@@ -1,5 +1,86 @@
 [
   {
+    "id": "cb2b7f0168ed61f3",
+    "slug": "saturday-biggest-bollywood-night",
+    "title": "SATURDAY- BIGGEST BOLLYWOOD NIGHT",
+    "description": "",
+    "startAt": "2026-11-21T20:00:00+05:30",
+    "endAt": "2026-11-22T00:30:00+05:30",
+    "venue": {
+      "name": "Molecule Dehradun",
+      "address": "",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/saturday-biggest-bollywood-night-nov-21-2026",
+        "externalId": "6afed5cc5b7860737f6d28cc",
+        "checkedAt": "2026-11-21T10:00:32.718Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-19T22:17:57.222Z",
+    "lastSeenAt": "2026-11-21T10:00:32.718Z",
+    "lastCheckedAt": "2026-11-21T10:00:32.718Z"
+  },
+  {
+    "id": "4a1c4c8bdf1f821e",
+    "slug": "punjabi-music-night-at-retro-fine-dine",
+    "title": "Punjabi Music Night at RETRO Fine Dine",
+    "description": "One night. Full Punjabi swag! Get ready for an evening of live Punjabi music, dancing, unlimited Punjabi food and drinks at RETRO Fine Dine, Dehradun. Join us on Saturday, 21 November 2026, from 7:00 PM to 11:00 PM, featuring Ravi Gurvinder Singh and Ravi Musical Group. Whether you are planning a night out with friends, a date night or a family gathering, bring your people and make a night of it. LIVE PUNJABI MUSIC AND DANCING Enjoy live performances by Ravi Gurvinder Singh and Ravi Musical Group, with Punjabi music setting the mood for an evening of celebration and dancing. UNLIMITED PUNJABI FEAST Enjoy vegetarian and non vegetarian starters, a live Amritsari Kulcha and Chole counter, Punjabi main courses, Indian breads, rice, accompaniments and traditional desserts, all included in your ticket package. WELCOME DRINKS Malai Lassi, Patiala Shikanji VEGETARIAN STARTERS Achari Paneer Tikka, Malai Soya Chaap, Bharwan Tandoori Mushroom NON VEGETARIAN STARTERS Amritsari Fish Fry, Punjabi Tandoori Chicken, Mutton Seekh Kebab LIVE COUNTER Amritsari Kulcha and Chole VEGETARIAN MAIN COURSE Sarson Da Saag, Paneer Butter Masala, Punjabi Kadhi Pakoda, Dal Makhani, Punjabi Aloo Gobi NON VEGETARIAN MAIN COURSE 1980s Butter Chicken, Dhaba Style Mutton Curry, Saagwala Chicken INDIAN BREADS Makki Di Roti, Missi Roti, Butter Naan, Garlic Naan, Tandoori Roti RICE Jeera Rice, Peas Pulao ACCOMPANIMENTS Boondi Raita, Sirke Wale Pyaaz, Green Salad, Punjabi Mixed Pickle, Mint Coriander Chutney, Roasted Papad, Fresh White Butter DESSERTS Gulab Jamun, Gajar Ka Halwa UNLIMITED DRINKS Whisky: Black Label, Jameson Cocktails: LIT, Mojito, Patiala Peg, Gabru Da Swag Mocktails: Patiala Shikanji, Punjab Di Ghulabo, Gabru Jamun Cooler Alcoholic beverages will be served only to guests who meet applicable legal drinking age requirements. TICKET PACKAGES 1 Person: Rs 3000 2 People: Rs 5000 4 People: Rs 9000 2 Adults and 2 Kids: Rs 7000 1 Child: Rs 1000 Your ticket package includes the live music experience, unlimited Punjabi food and drinks. Children receive non alcoholic drinks only. DATE AND TIME Saturday, 21 November 2026 7:00 PM to 11:00 PM VENUE RETRO Fine Dine 2nd Floor, Siddharth Rajpur Regal, Dehradun Book your tickets now on BookMyShow.",
+    "startAt": "2026-11-21T19:00:00+05:30",
+    "endAt": "2026-11-21T23:00:00+05:30",
+    "venue": {
+      "name": "Retro - Fine Dine Restaurant: Dehradun",
+      "address": "Siddharth Regal, 182, Rajpur Road, IAS Officers Colony, Rajpur, Dehradun, Uttarakhand 248001, India Dehradun",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3774,
+        "lng": 78.0852
+      }
+    },
+    "categories": [
+      "Music",
+      "Books",
+      "Food"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 3000,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/punjabi-music-night-at-retro-fine-dine/3900031057812517",
+        "checkedAt": "2026-11-21T09:56:58.018Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-16T23:26:09.549Z",
+    "lastSeenAt": "2026-11-21T09:56:58.018Z",
+    "lastCheckedAt": "2026-11-21T09:56:58.018Z"
+  },
+  {
     "id": "04b297f4d2f40790",
     "slug": "the-story-circus",
     "title": "The Story Circus",
