@@ -1596,5 +1596,46 @@
     "firstSeenAt": "2026-11-20T22:52:38.922Z",
     "lastSeenAt": "2026-11-20T22:52:38.922Z",
     "lastCheckedAt": "2026-11-20T22:52:38.922Z"
+  },
+  {
+    "id": "bb44100bed06548b",
+    "slug": "ustad-bantoo",
+    "title": "Ustad Bantoo",
+    "description": "I’m very happy to introduce you to something other than my music today, a film around music “Ustad Bantoo”. It’s a story about a wedding band trumpet player going on a journey of finding his own music. I’m so excited to present this film in my city because I wanted to share this story with all of you! Catch Bantoo on 22nd November at 6 pm at our very own cultura hub October, Karnal Road hosted by me!! Get your tickets now at Fillm (Link in my bio)\n\nOrganized by @iamguldar. How to join: Tickets on Fillm (link in bio)",
+    "startAt": "2026-11-22T18:00:00+05:30",
+    "venue": {
+      "name": "Cultura hub October, Karnal Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Film",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df7afPETG8b",
+        "checkedAt": "2026-11-21T10:09:07.705Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df7afPETG8b",
+        "checkedAt": "2026-11-21T10:00:32.793Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-21T10:09:07.705Z",
+    "lastSeenAt": "2026-11-21T10:09:07.705Z",
+    "lastCheckedAt": "2026-11-21T10:09:07.705Z"
   }
 ]

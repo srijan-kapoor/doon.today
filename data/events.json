@@ -721,6 +721,47 @@
     "modifiedAt": "2026-11-04T09:29:08.015Z"
   },
   {
+    "id": "bb44100bed06548b",
+    "slug": "ustad-bantoo",
+    "title": "Ustad Bantoo",
+    "description": "I’m very happy to introduce you to something other than my music today, a film around music “Ustad Bantoo”. It’s a story about a wedding band trumpet player going on a journey of finding his own music. I’m so excited to present this film in my city because I wanted to share this story with all of you! Catch Bantoo on 22nd November at 6 pm at our very own cultura hub October, Karnal Road hosted by me!! Get your tickets now at Fillm (Link in my bio)\n\nOrganized by @iamguldar. How to join: Tickets on Fillm (link in bio)",
+    "startAt": "2026-11-22T18:00:00+05:30",
+    "venue": {
+      "name": "Cultura hub October, Karnal Road, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Film",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df7afPETG8b",
+        "checkedAt": "2026-11-21T10:09:07.705Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df7afPETG8b",
+        "checkedAt": "2026-11-21T10:00:32.793Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-21T10:09:07.705Z",
+    "lastSeenAt": "2026-11-21T10:09:07.705Z",
+    "lastCheckedAt": "2026-11-21T10:09:07.705Z"
+  },
+  {
     "id": "6b41c142fd4e1d11",
     "slug": "death-tere-ki-live-comedy-show",
     "title": "DEATH TERE KI.......(Live comedy show)",
@@ -1809,7 +1850,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-20T21:52:17.180Z",
+        "checkedAt": "2026-11-21T09:56:58.020Z",
         "confidence": 0.75
       },
       {
@@ -1827,49 +1868,6 @@
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
     "lastSeenAt": "2026-11-21T10:00:00.695Z",
     "lastCheckedAt": "2026-11-21T10:00:00.695Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-21T09:56:58.020Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-21T09:56:58.020Z",
-    "lastSeenAt": "2026-11-21T09:56:58.020Z",
-    "lastCheckedAt": "2026-11-21T09:56:58.020Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
