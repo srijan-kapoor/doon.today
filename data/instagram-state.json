@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4034464138947676986",
@@ -15,15 +15,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf0lj1zper9h88t",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035284508084792706",
         "4032426490665707396",
         "4031698325325080591",
         "4029483809419773478",
@@ -44,15 +42,13 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf0rl2lahxmyhqr",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4034543307333211467",
         "4033277778772236642",
         "4029253700943185976",
         "4028013158076474349",
@@ -62,15 +58,13 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf0x93t9qyag5s",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035287696547934348",
         "4033166253236973332",
         "4032265960906697651",
         "4030077175922067062",
@@ -99,25 +93,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf1491b43ukl06o",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf1b31zujp6ohvc",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4033108051838099357",
@@ -133,15 +121,13 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf1ma1mgtrhyrbe",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035176652920932542",
         "4033261087524628311",
         "4033716263435662795",
         "4033954529573370756",
@@ -186,13 +172,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf1tc1e2bnzgl5w",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4032304408875814225",
@@ -215,13 +198,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf2211zyo84znw0",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -232,13 +212,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf2dk1311t22kgk",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4032186536525526251",
@@ -261,15 +238,13 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf2lk78j6k8t52",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035244859014920237",
         "4030947294526512635",
         "4027319624311986841",
         "4024928273871875784",
@@ -284,13 +259,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf2r71v3h1dun11",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "4032392371882217821",
@@ -318,15 +290,13 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf2zs274co5tset",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035405626011446469",
         "4033091521648860360",
         "4033884276337832283",
         "4033187250265537689",
@@ -356,31 +326,23 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf35k2aloxrbrsi",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwqvf3hfv3z04q9n3",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwqvf3pe2q9rxm9xwa",
-        "startedAt": "2026-11-21T20:38:53.315Z"
-      },
-      "lastFetchedAt": "2026-11-20T21:55:23.317Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
       "lastError": "",
       "seen": [
+        "4035419044148362907",
         "4034333735146729043",
         "4033658819302178820",
         "4032927937648678139",
@@ -415,7 +377,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwrnw1vc22xf0tgjv9",
+        "startedAt": "2026-11-22T09:55:36.865Z"
+      },
       "lastFetchedAt": "2026-11-21T10:00:32.793Z",
       "lastError": "",
       "seen": [
@@ -428,7 +393,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwrnw2931myrl0cqfh",
+        "startedAt": "2026-11-22T09:55:36.865Z"
+      },
       "lastFetchedAt": "2026-11-21T10:00:32.793Z",
       "lastError": "",
       "seen": [
@@ -438,7 +406,10 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwrnw2fc1v46gcx8eu",
+        "startedAt": "2026-11-22T09:55:36.865Z"
+      },
       "lastFetchedAt": "2026-11-21T10:00:32.793Z",
       "lastError": "",
       "seen": [
@@ -455,7 +426,10 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwrnw2mu1b37v9gtm8",
+        "startedAt": "2026-11-22T09:55:36.865Z"
+      },
       "lastFetchedAt": "2026-11-21T10:00:32.793Z",
       "lastError": "",
       "seen": [
@@ -475,82 +449,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwl9na33pjctqw00o",
-      "at": "2026-11-18T10:21:34.908Z"
-    },
-    {
-      "id": "sd_mwl9na9hclmriw8xt",
-      "at": "2026-11-18T10:21:34.908Z"
-    },
-    {
-      "id": "sd_mwl9naht193ygc18y8",
-      "at": "2026-11-18T10:21:34.908Z"
-    },
-    {
-      "id": "sd_mwl9napj1lgnw519ns",
-      "at": "2026-11-18T10:21:34.908Z"
-    },
-    {
-      "id": "sd_mwlz242u4f7dthgn",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz248wgv9i1ketp",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz24fl7aeqwq1le",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz24ka1stduswrjv",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz24oa1mzgtbh74",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz24sqxqmxf9g6p",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz24xf12aqxbsz38",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz252ze2o2h45op",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz257h2ld6jhxjtn",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz25c72qjnhwpphs",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz25ht1n7v50wlrd",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz25my2hfi8b7h9z",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz25s1zwp2mzqch",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz25xb1pe0vlaqko",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
-    {
-      "id": "sd_mwlz262r2gxsk928o2",
-      "at": "2026-11-19T04:11:59.163Z"
-    },
     {
       "id": "sd_mwneta9n4839jnlxr",
       "at": "2026-11-19T22:17:57.307Z"
@@ -642,6 +540,66 @@
     {
       "id": "sd_mwpiq01r1jphlozv04",
       "at": "2026-11-21T10:00:32.793Z"
+    },
+    {
+      "id": "sd_mwqvf0lj1zper9h88t",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf0rl2lahxmyhqr",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf0x93t9qyag5s",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf1491b43ukl06o",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf1b31zujp6ohvc",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf1ma1mgtrhyrbe",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf1tc1e2bnzgl5w",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf2211zyo84znw0",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf2dk1311t22kgk",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf2lk78j6k8t52",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf2r71v3h1dun11",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf2zs274co5tset",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf35k2aloxrbrsi",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf3hfv3z04q9n3",
+      "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwqvf3pe2q9rxm9xwa",
+      "at": "2026-11-22T09:55:36.865Z"
     }
   ],
   "candidates": [

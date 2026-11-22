@@ -1,5 +1,179 @@
 [
   {
+    "id": "0b8c9e97befad27e",
+    "slug": "the-santala-devi-hike",
+    "title": "The Santala Devi Hike",
+    "description": "Hello friends! Join us this Sunday, November 22, 2026 for a fascinating hike upto the 📍Santala Devi temple where we embark on a beautiful climb and discover the stories of the revered goddess. • The climb is steep and we go at a slow pace. *_______________________* 🌱 Meeting Time: 7 am 🌱 Meeting Point: Garhi Cantt Chowk (Opposite Garhi Cantt. Police Station) ••••••••••••••••••••••••••••••••• 👉We drive for about 7 kms from the Chowk to the Santala Devi temple parking lot and begin the hike from there. 👉 The hike distance two way is about 6 kms. The walk is steep. 👉🐾 NO PETS ALLOWED❗❗ 👉 The trail will end by 10:30 am. 🪖 Since we enter the cantonment, please ensure that even the pillion riders on the two wheelers are wearing their helmets. You are requested to arrange for your o\n\nOrganized by @btdt_official. How to join: Get in touch at +91 70884 47304; arrange your own conveyance",
+    "startAt": "2026-11-22T07:00:00+05:30",
+    "endAt": "2026-11-22T10:30:00+05:30",
+    "venue": {
+      "name": "Santala Devi temple, Dehradun (meeting at Garhi Cantt Chowk, opposite Garhi Cantt Police Station)",
+      "city": "Dehradun",
+      "area": "Garhi Cantt"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/Df9S8JFB0s6",
+        "checkedAt": "2026-11-20T22:52:38.922Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/Df9S8JFB0s6",
+        "checkedAt": "2026-11-20T21:55:23.317Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-20T22:52:38.922Z",
+    "lastSeenAt": "2026-11-20T22:52:38.922Z",
+    "lastCheckedAt": "2026-11-20T22:52:38.922Z"
+  },
+  {
+    "id": "28a3afdf48749c81",
+    "slug": "off-the-clock",
+    "title": "Off The Clock",
+    "description": "",
+    "startAt": "2026-11-22T07:30:00+05:30",
+    "endAt": "2026-11-22T09:30:00+05:30",
+    "venue": {
+      "name": "D9, Dehradun",
+      "address": "",
+      "city": "Dehradun",
+      "area": "Sudhowala"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 99,
+      "currency": "INR",
+      "maxPrice": 249
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/off-the-clock-nov-22-2026",
+        "externalId": "6afc53194f30701e3e96436f",
+        "checkedAt": "2026-11-21T20:38:53.160Z",
+        "confidence": 0.85
+      },
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/off-the-clock-d9-dehradun-dehradun-nov-22-2026",
+        "externalId": "6b0037d963254241a5f5530e",
+        "checkedAt": "2026-11-21T20:38:53.160Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-17T22:30:36.683Z",
+    "lastSeenAt": "2026-11-21T20:38:53.160Z",
+    "lastCheckedAt": "2026-11-21T20:38:53.160Z",
+    "sequence": 1,
+    "modifiedAt": "2026-11-20T21:55:45.552Z"
+  },
+  {
+    "id": "be5cf89ec98b1fdb",
+    "slug": "the-wild-purkul-valley",
+    "title": "The Wild Purkul Valley",
+    "description": "Beyond the familiar. Into the wild. 🌿 DOON WALKERS | CHAPTER 44 THE WILD PURKUL VALLEY A morning of raw landscapes, rocky riverbeds and quiet exploration — in the heart of Doon. 📍 Purkul Valley, Dehradun 📅 22 November 2026 | Sunday 🥾 Approx. 9 KM | Moderate ⏰ 6:00 AM Reporting | 6:15 AM Departure For those who find meaning in the journey, not just the destination. Join us. Link in bio. Come for the trail. Stay for the people.\n\nOrganized by @doon_walkers. How to join: Registration link in bio; comment \"Doon Walkers\" to join",
+    "startAt": "2026-11-22T06:15:00+05:30",
+    "venue": {
+      "name": "Meeting point: Centrio Mall, Dehradun; trail at Purkul Valley",
+      "city": "Dehradun",
+      "area": "Vijay Colony"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfzidOiyfYQ",
+        "checkedAt": "2026-11-17T13:39:59.866Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfzidOiyfYQ",
+        "checkedAt": "2026-11-17T10:52:05.598Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-17T13:39:59.866Z",
+    "lastSeenAt": "2026-11-17T13:39:59.866Z",
+    "lastCheckedAt": "2026-11-17T13:39:59.866Z"
+  },
+  {
+    "id": "11311a187935e101",
+    "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
+    "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
+    "description": "Get Ready\n\nOrganized by @the5amclub.in. How to join: DM @the5amclub.in or WhatsApp 9997876010 for the WhatsApp group link",
+    "startAt": "2026-11-22T05:00:00+05:30",
+    "venue": {
+      "name": "Bhadraj Temple, via Premnagar, Koti Village, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
+        "checkedAt": "2026-11-17T13:36:36.080Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
+        "checkedAt": "2026-11-17T10:52:05.598Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-17T13:36:36.080Z",
+    "lastSeenAt": "2026-11-17T13:36:36.080Z",
+    "lastCheckedAt": "2026-11-17T13:36:36.080Z"
+  },
+  {
     "id": "e29556331629cc46",
     "slug": "heritage-vintage-market-merry-bright-photo-with-santa",
     "title": "Heritage Vintage Market 'Merry & Bright' Photo With Santa",
