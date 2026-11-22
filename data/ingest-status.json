@@ -1,16 +1,7 @@
 {
-  "ranAt": "2026-11-21T20:35:33.753Z",
+  "ranAt": "2026-11-22T00:08:38.076Z",
   "ran": [
-    "allevents",
-    "virasat",
-    "thrillzone",
-    "literaturefestival",
-    "meetup",
-    "gdg",
-    "bookmyshow",
-    "sortmyscene",
-    "reddit",
-    "instagram"
+    "district"
   ],
   "sources": {
     "district": {
@@ -18,7 +9,7 @@
       "events": 6,
       "review": 0,
       "diagnostics": {
-        "listingBytes": 199610,
+        "listingBytes": 198693,
         "candidates": 12,
         "eventsParsed": 6,
         "sessionPages": 4,
@@ -28,8 +19,8 @@
         "descriptionPagesFailed": 0,
         "withDescriptions": 6
       },
-      "lastAttemptAt": "2026-11-21T00:08:49.111Z",
-      "lastSuccessAt": "2026-11-21T00:08:49.111Z",
+      "lastAttemptAt": "2026-11-22T00:08:38.076Z",
+      "lastSuccessAt": "2026-11-22T00:08:38.076Z",
       "consecutiveFailures": 0
     },
     "allevents": {
@@ -182,7 +173,7 @@
     }
   },
   "output": {
-    "published": 49,
+    "published": 46,
     "review": 1,
     "dropped": 1
   },
@@ -195,8 +186,8 @@
   ],
   "primarySources": {
     "district": {
-      "lastSuccessAt": "2026-11-21T00:08:49.111Z",
-      "ageHours": 20.4,
+      "lastSuccessAt": "2026-11-22T00:08:38.076Z",
+      "ageHours": 0,
       "fresh": true
     }
   }

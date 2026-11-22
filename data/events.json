@@ -86,49 +86,6 @@
     "missedRuns": 1
   },
   {
-    "id": "e29556331629cc46",
-    "slug": "heritage-vintage-market-merry-bright-photo-with-santa",
-    "title": "Heritage Vintage Market 'Merry & Bright' Photo With Santa",
-    "description": "Join us at the Harvey Kern Pavilion in Frankenmuth on November 21st for a ' Merry & Bright' Holiday Market. Get your FREE PHOTO with Santa & his helpers. Pets are also welcome on a leash. Market Details: 🎄Coming Soon!! YOUR FAVORITE HOLIDAY MARKET! 'Merry And Bright' Holiday Market ⭐️⭐️November 21st ⭐️⭐️ INDOOR & OUTDOOR DISPLAYS 🎅Curated Vendors/Foodtrucks/Santa/Carolers/Holiday Music 🎶/ Live Characters TIME: 10a to 4pm🕑 🍬PLACE: 601 WEISS ST FRANKENMUTH, MI Harvey Kern Pavilion ENTRY: $5.00 PERSON/12UNDERFREE ⛄️FAVORITE FREEBIES Free Parking Free PhotoBooth w/Santa🎅🦌 Free Porter Service Free Carolers🎶 Live Characters🧝♀️ ♿️Handicap Parking Resting Benches Throughout ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️ Shuttle Service🚎 🐕Pets Welcome on A Leash #frankenmuthmichigan #holiday #family #ChristmasGifts #santa You may also like the following events from Olde Heritage Vintage Market : This Saturday, 21st November, 08:30 pm, 'MERRY & BRIGHT' HOLIDAY MARKET FRANKENMUTH in Dehradun",
-    "startAt": "2026-11-21T20:30:00+05:30",
-    "endAt": "2026-11-22T02:30:00+05:30",
-    "venue": {
-      "name": "Traveling Vintage Market",
-      "address": "Friends Travelling Agents, Pant Road, Indira Market, Race Course, Dehradun 248001, India Dehradun",
-      "city": "Dehradun",
-      "area": "Race Course",
-      "geo": {
-        "lat": 30.32385,
-        "lng": 78.04498
-      }
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/heritage-vintage-market-merry-and-bright-photo-with-santa/200031070990934",
-        "checkedAt": "2026-11-21T09:56:58.021Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-19T04:10:21.132Z",
-    "lastSeenAt": "2026-11-21T09:56:58.021Z",
-    "lastCheckedAt": "2026-11-21T09:56:58.021Z",
-    "missedRuns": 1
-  },
-  {
     "id": "11311a187935e101",
     "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
     "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
@@ -479,7 +436,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.126Z",
+        "checkedAt": "2026-11-22T00:08:40.224Z",
         "confidence": 0.95
       },
       {
@@ -496,8 +453,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-21T20:38:20.558Z",
-    "lastCheckedAt": "2026-11-21T20:38:20.558Z",
+    "lastSeenAt": "2026-11-22T00:08:40.224Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.224Z",
     "occurrences": [
       "2026-11-22T10:30:00.000Z",
       "2026-12-06T10:30:00.000Z",
@@ -739,7 +696,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.122Z",
+        "checkedAt": "2026-11-22T00:08:40.221Z",
         "confidence": 0.95
       },
       {
@@ -755,8 +712,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-21T20:35:59.709Z",
-    "lastCheckedAt": "2026-11-21T20:35:59.709Z"
+    "lastSeenAt": "2026-11-22T00:08:40.221Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.221Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -930,49 +887,6 @@
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
     "lastSeenAt": "2026-11-21T20:35:34.246Z",
     "lastCheckedAt": "2026-11-21T20:35:34.246Z"
-  },
-  {
-    "id": "a834c213ac21eb80",
-    "slug": "mussoorie-ultra-2nd-edition",
-    "title": "Mussoorie Ultra 2nd Edition",
-    "description": "Set in the stunning Queen of Hills, Mussoorie, this ultra-running experience brings together challenging trails, crisp mountain air, and unforgettable panoramic views. Whether you're an experienced ultra-runner or looking to take on a new endurance challenge, this is your chance to run beyond your limits and create memories along the way. Run the trails. Conquer the climbs. Own the challenge. Book your spot and get ready for an unforgettable Himalayan running experience!",
-    "startAt": "2026-11-29T00:00:00.000Z",
-    "endAt": "2026-11-29T09:30:00.000Z",
-    "venue": {
-      "name": "The Fern Brentwood Resort Mussoorie, Series by Marriott",
-      "address": "Mussoorie",
-      "city": "Dehradun",
-      "area": "Mussoorie",
-      "geo": {
-        "lat": 30.4548,
-        "lng": 78.0798
-      }
-    },
-    "categories": [
-      "Outdoors"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 799,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/mussoorie-ultra-2nd-edition-buy-tickets",
-        "checkedAt": "2026-11-19T00:08:33.175Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-11-02T00:08:49.767Z",
-    "lastSeenAt": "2026-11-19T00:08:33.175Z",
-    "lastCheckedAt": "2026-11-19T00:08:33.175Z",
-    "missedRuns": 2
   },
   {
     "id": "b36082addcdc9932",
@@ -1422,7 +1336,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.125Z",
+        "checkedAt": "2026-11-22T00:08:40.223Z",
         "confidence": 0.95
       },
       {
@@ -1438,8 +1352,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-21T20:35:34.246Z",
-    "lastCheckedAt": "2026-11-21T20:35:34.246Z"
+    "lastSeenAt": "2026-11-22T00:08:40.223Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.223Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1553,7 +1467,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.126Z",
+        "checkedAt": "2026-11-22T00:08:40.225Z",
         "confidence": 0.95
       }
     ],
@@ -1563,8 +1477,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-21T00:08:50.126Z",
-    "lastCheckedAt": "2026-11-21T00:08:50.126Z"
+    "lastSeenAt": "2026-11-22T00:08:40.225Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.225Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1698,7 +1612,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.126Z",
+        "checkedAt": "2026-11-22T00:08:40.225Z",
         "confidence": 0.95
       },
       {
@@ -1727,51 +1641,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-21T20:35:34.247Z",
-    "lastCheckedAt": "2026-11-21T20:35:34.247Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-21T20:35:34.247Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-21T20:35:34.247Z",
-    "lastSeenAt": "2026-11-21T20:35:34.247Z",
-    "lastCheckedAt": "2026-11-21T20:35:34.247Z"
+    "lastSeenAt": "2026-11-22T00:08:40.225Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.225Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1802,7 +1673,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-21T00:08:50.126Z",
+        "checkedAt": "2026-11-22T00:08:40.224Z",
         "confidence": 0.95
       }
     ],
@@ -1812,8 +1683,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-21T00:08:50.126Z",
-    "lastCheckedAt": "2026-11-21T00:08:50.126Z"
+    "lastSeenAt": "2026-11-22T00:08:40.224Z",
+    "lastCheckedAt": "2026-11-22T00:08:40.224Z"
   },
   {
     "id": "b59dab4202710ff2",

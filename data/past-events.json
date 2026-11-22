@@ -1,5 +1,48 @@
 [
   {
+    "id": "e29556331629cc46",
+    "slug": "heritage-vintage-market-merry-bright-photo-with-santa",
+    "title": "Heritage Vintage Market 'Merry & Bright' Photo With Santa",
+    "description": "Join us at the Harvey Kern Pavilion in Frankenmuth on November 21st for a ' Merry & Bright' Holiday Market. Get your FREE PHOTO with Santa & his helpers. Pets are also welcome on a leash. Market Details: 🎄Coming Soon!! YOUR FAVORITE HOLIDAY MARKET! 'Merry And Bright' Holiday Market ⭐️⭐️November 21st ⭐️⭐️ INDOOR & OUTDOOR DISPLAYS 🎅Curated Vendors/Foodtrucks/Santa/Carolers/Holiday Music 🎶/ Live Characters TIME: 10a to 4pm🕑 🍬PLACE: 601 WEISS ST FRANKENMUTH, MI Harvey Kern Pavilion ENTRY: $5.00 PERSON/12UNDERFREE ⛄️FAVORITE FREEBIES Free Parking Free PhotoBooth w/Santa🎅🦌 Free Porter Service Free Carolers🎶 Live Characters🧝♀️ ♿️Handicap Parking Resting Benches Throughout ❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️ Shuttle Service🚎 🐕Pets Welcome on A Leash #frankenmuthmichigan #holiday #family #ChristmasGifts #santa You may also like the following events from Olde Heritage Vintage Market : This Saturday, 21st November, 08:30 pm, 'MERRY & BRIGHT' HOLIDAY MARKET FRANKENMUTH in Dehradun",
+    "startAt": "2026-11-21T20:30:00+05:30",
+    "endAt": "2026-11-22T02:30:00+05:30",
+    "venue": {
+      "name": "Traveling Vintage Market",
+      "address": "Friends Travelling Agents, Pant Road, Indira Market, Race Course, Dehradun 248001, India Dehradun",
+      "city": "Dehradun",
+      "area": "Race Course",
+      "geo": {
+        "lat": 30.32385,
+        "lng": 78.04498
+      }
+    },
+    "categories": [
+      "Music",
+      "Culture"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/heritage-vintage-market-merry-and-bright-photo-with-santa/200031070990934",
+        "checkedAt": "2026-11-21T09:56:58.021Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-19T04:10:21.132Z",
+    "lastSeenAt": "2026-11-21T09:56:58.021Z",
+    "lastCheckedAt": "2026-11-21T09:56:58.021Z",
+    "missedRuns": 1
+  },
+  {
     "id": "cb2b7f0168ed61f3",
     "slug": "saturday-biggest-bollywood-night",
     "title": "SATURDAY- BIGGEST BOLLYWOOD NIGHT",
