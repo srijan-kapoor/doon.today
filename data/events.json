@@ -417,45 +417,6 @@
     "lastCheckedAt": "2026-11-21T10:09:07.705Z"
   },
   {
-    "id": "3734a2eaded660d9",
-    "slug": "guru-nanak-jayanti",
-    "title": "Guru Nanak Jayanti..",
-    "description": "",
-    "startAt": "2026-11-24",
-    "venue": {
-      "name": "Ground floor, F-7, Transport Nagar, Saharanpur Road, Dehradun (U.K.) Pin 248001, Dehra Dun, India 248001, Uttarakhand",
-      "address": "Prem Batta & Associate, Saharanpur Road, West Patel NGR, Patel Nagar, Dehradun 248001, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.30863,
-        "lng": 78.01905
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/guru-nanak-jayanti/200031094182912",
-        "checkedAt": "2026-11-22T09:54:09.460Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-22T09:54:09.460Z",
-    "lastSeenAt": "2026-11-22T09:54:09.460Z",
-    "lastCheckedAt": "2026-11-22T09:54:09.460Z"
-  },
-  {
     "id": "6a6900a1b21b4765",
     "slug": "waiting-for-godot-play",
     "title": "Waiting for godot play",
@@ -1490,7 +1451,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-21T09:56:58.020Z",
+        "checkedAt": "2026-11-22T09:54:09.459Z",
         "confidence": 0.75
       },
       {
@@ -1508,49 +1469,6 @@
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
     "lastSeenAt": "2026-11-22T09:55:16.737Z",
     "lastCheckedAt": "2026-11-22T09:55:16.737Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-22T09:54:09.459Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-22T09:54:09.459Z",
-    "lastSeenAt": "2026-11-22T09:54:09.459Z",
-    "lastCheckedAt": "2026-11-22T09:54:09.459Z"
   },
   {
     "id": "4ddbc7bfa13bac09",

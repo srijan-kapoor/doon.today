@@ -1,44 +1,5 @@
 [
   {
-    "id": "3734a2eaded660d9",
-    "slug": "guru-nanak-jayanti",
-    "title": "Guru Nanak Jayanti..",
-    "description": "",
-    "startAt": "2026-11-24",
-    "venue": {
-      "name": "Ground floor, F-7, Transport Nagar, Saharanpur Road, Dehradun (U.K.) Pin 248001, Dehra Dun, India 248001, Uttarakhand",
-      "address": "Prem Batta & Associate, Saharanpur Road, West Patel NGR, Patel Nagar, Dehradun 248001, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.30863,
-        "lng": 78.01905
-      }
-    },
-    "categories": [
-      "Other"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/guru-nanak-jayanti/200031094182912",
-        "checkedAt": "2026-11-22T09:54:09.460Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "review",
-      "score": 2
-    },
-    "firstSeenAt": "2026-11-22T09:54:09.460Z",
-    "lastSeenAt": "2026-11-22T09:54:09.460Z",
-    "lastCheckedAt": "2026-11-22T09:54:09.460Z"
-  },
-  {
     "id": "1ee02f3654966587",
     "slug": "melophile-jam-session-red-hot-chili-peppers-californication",
     "title": "Melophile Jam Session: Red Hot Chili Peppers' Californication",
