@@ -377,11 +377,8 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mwrnw1vc22xf0tgjv9",
-        "startedAt": "2026-11-22T09:55:36.865Z"
-      },
-      "lastFetchedAt": "2026-11-21T10:00:32.793Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
         "4032267921506168040",
@@ -393,11 +390,8 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mwrnw2931myrl0cqfh",
-        "startedAt": "2026-11-22T09:55:36.865Z"
-      },
-      "lastFetchedAt": "2026-11-21T10:00:32.793Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
         "4033934386931724059",
@@ -406,11 +400,8 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": {
-        "id": "sd_mwrnw2fc1v46gcx8eu",
-        "startedAt": "2026-11-22T09:55:36.865Z"
-      },
-      "lastFetchedAt": "2026-11-21T10:00:32.793Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
         "4033231573359878283",
@@ -426,11 +417,8 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": {
-        "id": "sd_mwrnw2mu1b37v9gtm8",
-        "startedAt": "2026-11-22T09:55:36.865Z"
-      },
-      "lastFetchedAt": "2026-11-21T10:00:32.793Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
         "4015635783746875731",
@@ -449,22 +437,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwneta9n4839jnlxr",
-      "at": "2026-11-19T22:17:57.307Z"
-    },
-    {
-      "id": "sd_mwnetadr10odstcejn",
-      "at": "2026-11-19T22:17:57.307Z"
-    },
-    {
-      "id": "sd_mwnetai626dl4wn3im",
-      "at": "2026-11-19T22:17:57.307Z"
-    },
-    {
-      "id": "sd_mwnetamw10ljr4d2rj",
-      "at": "2026-11-19T22:17:57.307Z"
-    },
     {
       "id": "sd_mwotl3hx13n7wclydb",
       "at": "2026-11-20T21:55:23.317Z"
@@ -600,96 +572,25 @@
     {
       "id": "sd_mwqvf3pe2q9rxm9xwa",
       "at": "2026-11-22T09:55:36.865Z"
+    },
+    {
+      "id": "sd_mwrnw1vc22xf0tgjv9",
+      "at": "2026-11-23T02:12:00.438Z"
+    },
+    {
+      "id": "sd_mwrnw2931myrl0cqfh",
+      "at": "2026-11-23T02:12:00.438Z"
+    },
+    {
+      "id": "sd_mwrnw2fc1v46gcx8eu",
+      "at": "2026-11-23T02:12:00.438Z"
+    },
+    {
+      "id": "sd_mwrnw2mu1b37v9gtm8",
+      "at": "2026-11-23T02:12:00.438Z"
     }
   ],
   "candidates": [
-    {
-      "id": "245ce12e5a2de55e",
-      "slug": "sunday-sunrise-hike-bhadraj-temple-hike",
-      "title": "Sunday Sunrise Hike - Bhadraj Temple Hike",
-      "description": "Get Ready",
-      "startAt": "2026-11-22T05:00:00+05:30",
-      "venue": {
-        "name": "Bhadraj Temple, via Premnagar, Koti Village, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors",
-        "Fitness"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "DM @the5amclub.in or WhatsApp 9997876010 for the WhatsApp group link",
-      "organizer": "the5amclub.in",
-      "posts": [
-        "https://www.instagram.com/p/DfzjJ2hE2nI"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "medium"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfzjJ2hE2nI",
-          "checkedAt": "2026-11-17T10:52:05.598Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastCheckedAt": "2026-11-17T10:52:05.598Z"
-    },
-    {
-      "id": "f0a440a263db94f1",
-      "slug": "the-wild-purkul-valley",
-      "title": "The Wild Purkul Valley",
-      "description": "Beyond the familiar. Into the wild. 🌿\n\nDOON WALKERS | CHAPTER 44\nTHE WILD PURKUL VALLEY\n\nA morning of raw landscapes, rocky riverbeds and quiet exploration — in the heart of Doon.\n\n📍 Purkul Valley, Dehradun\n📅 22 November 2026 | Sunday\n🥾 Approx. 9 KM | Moderate\n⏰ 6:00 AM Reporting | 6:15 AM Departure\n\nFor those who find meaning in the journey, not just the destination.\n\nJoin us. Link in bio.\n\nCome for the trail. Stay for the people.",
-      "startAt": "2026-11-22T06:15:00+05:30",
-      "venue": {
-        "name": "Meeting point: Centrio Mall, Dehradun; trail at Purkul Valley",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Registration link in bio; comment \"Doon Walkers\" to join",
-      "organizer": "doon_walkers",
-      "posts": [
-        "https://www.instagram.com/p/DfzidOiyfYQ"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/DfzidOiyfYQ",
-          "checkedAt": "2026-11-17T10:52:05.598Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastSeenAt": "2026-11-17T10:52:05.598Z",
-      "lastCheckedAt": "2026-11-17T10:52:05.598Z"
-    },
     {
       "id": "9d369366d6aa8319",
       "slug": "ustad-bantoo-road-to-100-screenings-week-2-dehradun",
@@ -733,186 +634,6 @@
       "firstSeenAt": "2026-11-18T10:21:34.908Z",
       "lastSeenAt": "2026-11-18T10:21:34.908Z",
       "lastCheckedAt": "2026-11-18T10:21:34.908Z"
-    },
-    {
-      "id": "4f245226b4f1caf1",
-      "slug": "the-santala-devi-hike",
-      "title": "The Santala Devi Hike",
-      "description": "Hello friends! Join us this Sunday, November 22, 2026 for a fascinating hike upto the 📍Santala Devi temple\n where we embark on a beautiful climb and discover the stories of the revered goddess.\n\n• The climb is steep and we go at a slow pace.\n*_______________________*\n🌱 Meeting Time: 7 am\n🌱 Meeting Point: Garhi Cantt Chowk (Opposite Garhi Cantt. Police Station)\n•••••••••••••••••••••••••••••••••\n👉We drive for about 7 kms from the Chowk to the Santala Devi temple parking lot and begin the hike from there.\n👉 The hike distance two way is about 6 kms. The walk is steep.\n\n👉🐾 NO PETS ALLOWED❗❗\n\n👉 The trail will end by 10:30 am.\n\n🪖 Since we enter the cantonment, please ensure that even the pillion riders on the two wheelers are wearing their helmets. You are requested to arrange for your o",
-      "startAt": "2026-11-22T07:00:00+05:30",
-      "endAt": "2026-11-22T10:30:00+05:30",
-      "venue": {
-        "name": "Santala Devi temple, Dehradun (meeting at Garhi Cantt Chowk, opposite Garhi Cantt Police Station)",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Outdoors",
-        "Fitness"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Get in touch at +91 70884 47304; arrange your own conveyance",
-      "organizer": "btdt_official",
-      "posts": [
-        "https://www.instagram.com/p/Df9S8JFB0s6"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Df9S8JFB0s6",
-          "checkedAt": "2026-11-20T21:55:23.317Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "1ee02f3654966587",
-      "slug": "melophile-jam-session-red-hot-chili-peppers-californication",
-      "title": "Melophile Jam Session: Red Hot Chili Peppers' Californication",
-      "description": "🌶️🎸 MELOPHILE Jam Session\n\nDehradun, we're turning it up!\n\nThis time, we're listening to Red Hot Chili Peppers' Californication, all the way through. No skipping, no distractions. Just music.\n\nAnd when the album ends? We're jamming! 🤘\n\nBring your instruments, meet fellow musicians, share your love for music, and spend an evening listening and playing together.\n\n📀 Californication by Red Hot Chili Peppers\n📅 Sunday, 22 November 2026\n🕟 4:30 PM\n📍 Dehradun\n\n🎸 Bring your instrument if you want to join the jam. Even if you don't play, you're welcome to hang out.\n\nMeet people with similar music tastes, discover new music, and make some noise.\n\nDM or comment to join!\nWhatsApp group link in bio.\n\nOne album. Front to back. No skipping. Then we jam.",
-      "startAt": "2026-11-22T16:30:00+05:30",
-      "venue": {
-        "name": "Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Music",
-        "Meetups"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "DM or comment on the post, or join the WhatsApp group linked in bio",
-      "organizer": "melophile.ddn",
-      "posts": [
-        "https://www.instagram.com/p/Df5FMVEMhli"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Df5FMVEMhli",
-          "checkedAt": "2026-11-20T21:55:23.317Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "e8fc72930bd1030b",
-      "slug": "listening-circle-chapter-2-modern-loneliness",
-      "title": "Listening Circle: Chapter 2 - Modern Loneliness",
-      "description": "In a world full of notifications, social media and constant conversations, why do so many of us still feel lonely? 🫂\n\nLet's talk about MODERN LONELINESS at Listening Circle Chapter 2.\n\nJoin us for an afternoon of meaningful conversations, shared experiences and fresh perspectives. A safe, non-judgemental space where you can express yourself, listen to others and connect with people beyond small talk.\n\nYou don't have to share anything you're uncomfortable with. Sometimes, simply being present and listening is enough. 💛\n\n📍 MDDA Park, Dehradun\n📅 Sunday, 22 November\n⏰ 12 PM – 3 PM\n🎟️ Registration: ₹50 (Park entry charges extra)\n\n💬 Want to be a part of this? Comment \"DEHRADUN HANGOUTS\" and we'll share the registration link with you!\n\nCome as you are. Let's make space for real conversation",
-      "startAt": "2026-11-22T12:00:00+05:30",
-      "endAt": "2026-11-22T15:00:00+05:30",
-      "venue": {
-        "name": "MDDA Park, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Meetups",
-        "Wellness"
-      ],
-      "pricing": {
-        "type": "paid",
-        "minPrice": 50,
-        "currency": "INR"
-      },
-      "howToJoin": "Comment \"DEHRADUN HANGOUTS\" on the post to get the registration link",
-      "organizer": "dehradun_hangouts",
-      "posts": [
-        "https://www.instagram.com/p/Df4a17mhRzI",
-        "https://www.instagram.com/p/Df7PGB8JnFb"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Df4a17mhRzI",
-          "checkedAt": "2026-11-20T21:55:23.317Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastSeenAt": "2026-11-20T21:55:23.317Z",
-      "lastCheckedAt": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "0652ed152303af84",
-      "slug": "ustad-bantoo",
-      "title": "Ustad Bantoo",
-      "description": "I’m very happy to introduce you to something other than my music today, a film around music “Ustad Bantoo”. It’s a story about a wedding band trumpet player going on a journey of finding his own music. I’m so excited to present this film in my city because I wanted to share this story with all of you!\n\nCatch Bantoo on 22nd November at 6 pm at our very own cultura hub October, Karnal Road hosted by me!!\n\nGet your tickets now at Fillm (Link in my bio)",
-      "startAt": "2026-11-22T18:00:00+05:30",
-      "venue": {
-        "name": "Cultura hub October, Karnal Road, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Film",
-        "Culture"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Tickets on Fillm (link in bio)",
-      "organizer": "iamguldar",
-      "posts": [
-        "https://www.instagram.com/p/Df7afPETG8b"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "high"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Df7afPETG8b",
-          "checkedAt": "2026-11-21T10:00:32.793Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-21T10:00:32.793Z",
-      "lastSeenAt": "2026-11-21T10:00:32.793Z",
-      "lastCheckedAt": "2026-11-21T10:00:32.793Z"
     }
   ]
 }
