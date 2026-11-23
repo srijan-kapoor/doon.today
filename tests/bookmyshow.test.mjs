@@ -16,7 +16,7 @@ const ld = (o) => `<script type="application/ld+json">${JSON.stringify([o])}</sc
 const pizza = {
   '@type': 'EducationEvent', name: 'D9 presents Pizza Making Workshop', url: PIZZA,
   description: 'Book online tickets for D9 presents Pizza Making Workshop in Dehradun on BookMyShow which is a workshops event',
-  startDate: '2026-11-22T16:00:00+05:30', endDate: '2026-11-22T17:30:00+05:30',
+  startDate: '2030-11-22T16:00:00+05:30', endDate: '2030-11-22T17:30:00+05:30',
   location: { '@type': 'Place', name: 'D9: Dehradun', address: { addressLocality: 'Dehradun', streetAddress: 'Chakrata Road, Dehradun, Uttarakhand 248015, India' }, geo: { latitude: 30.3446, longitude: 77.9466 } },
   offers: { '@type': 'AggregateOffer', lowPrice: '299', highPrice: '399', priceCurrency: 'INR' }
 };
@@ -33,7 +33,7 @@ test('only cards at a venue in the area are followed', () => {
 
 test('an event page gives the event, with its About text instead of the booking blurb', () => {
   const [e] = eventsFromPage(pizzaPage, PIZZA);
-  assert.equal(e.startAt, '2026-11-22T16:00:00+05:30');
+  assert.equal(e.startAt, '2030-11-22T16:00:00+05:30');
   assert.equal(e.venue.name, 'D9', 'the city suffix is left off the venue');
   assert.deepEqual(e.pricing, { type: 'paid', minPrice: 299, maxPrice: 399, currency: 'INR' });
   assert.equal(e.description, 'Learn to make thin crust pizza with a chef. 299 per person');
@@ -42,10 +42,10 @@ test('an event page gives the event, with its About text instead of the booking 
 });
 
 test('an attraction open for months and a tour\'s shows elsewhere are left out', () => {
-  assert.deepEqual(eventsFromPage(ld({ ...pizza, endDate: '2027-03-31T22:00:00+05:30' }), PIZZA), []);
-  const kolkata = { ...pizza, startDate: '2026-11-29T19:00:00+05:30', endDate: undefined, location: { name: 'Stadium: Kolkata', address: { addressLocality: 'Kolkata' } } };
+  assert.deepEqual(eventsFromPage(ld({ ...pizza, endDate: '2031-03-31T22:00:00+05:30' }), PIZZA), []);
+  const kolkata = { ...pizza, startDate: '2030-11-29T19:00:00+05:30', endDate: undefined, location: { name: 'Stadium: Kolkata', address: { addressLocality: 'Kolkata' } } };
   const tour = `<script type="application/ld+json">${JSON.stringify([kolkata, pizza])}</script>`;
-  assert.deepEqual(eventsFromPage(tour, TOUR).map((e) => e.startAt), ['2026-11-22T16:00:00+05:30'], 'a tour page gives only its show in the area');
+  assert.deepEqual(eventsFromPage(tour, TOUR).map((e) => e.startAt), ['2030-11-22T16:00:00+05:30'], 'a tour page gives only its show in the area');
 });
 
 test('the listing is asked for once its cards are there, then each Dehradun event page', async (t) => {
@@ -61,7 +61,7 @@ test('an event missing from a short listing stays on the site', async (t) => {
   await inTempDir(t);
   const stored = eventsFromPage(pizzaPage, PIZZA)[0];
   await mergeAndWrite([{ source: 'bookmyshow', events: [stored], partial: true }]);
-  const other = { ...stored, id: 'x', title: 'Another Workshop', startAt: '2026-11-29T16:00:00+05:30', endAt: undefined, sources: [{ ...stored.sources[0], url: TOUR }] };
+  const other = { ...stored, id: 'x', title: 'Another Workshop', startAt: '2030-11-29T16:00:00+05:30', endAt: undefined, sources: [{ ...stored.sources[0], url: TOUR }] };
   for (let run = 0; run < 4; run++) await mergeAndWrite([await fetchBookMyShow({ fetchPage: async (url) => (url === LIST ? listing.replace('D9: Dehradun', 'D9 Dehradun') + card('/events/big-tour-kolkata/ET00000001', 'Another Workshop', 'Hall: Dehradun', 'Masterclass', '₹ 1 onwards') : ld(other)) })]);
   const titles = JSON.parse(await fs.readFile('data/events.json', 'utf8')).map((e) => e.title);
   assert.ok(titles.includes('D9 presents Pizza Making Workshop'), 'four runs without it did not remove it');
