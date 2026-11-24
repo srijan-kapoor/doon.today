@@ -4093,40 +4093,5 @@
     "firstSeenAt": "2026-10-25T19:06:24.188Z",
     "lastSeenAt": "2026-10-25T19:06:24.188Z",
     "lastCheckedAt": "2026-10-25T19:06:24.188Z"
-  },
-  {
-    "id": "05f05b331cdb7059",
-    "slug": "melophile-listening-club-wish-you-were-here-pink-floyd",
-    "title": "Melophile listening club: Wish You Were Here (Pink Floyd)",
-    "description": "An album listening club. The first session plays Pink Floyd's Wish You Were Here front to back, then the group talks about it. Small group; message @melophile.ddn on Instagram to join.",
-    "startAt": "2026-10-25T16:30:00+05:30",
-    "venue": {
-      "name": "Maldevta",
-      "city": "Dehradun",
-      "area": "Maldevta"
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/melophile.ddn/",
-        "checkedAt": "2026-10-23T03:38:19.075Z",
-        "confidence": 1
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-10-23T03:38:19.075Z",
-    "lastSeenAt": "2026-10-23T03:38:19.075Z",
-    "lastCheckedAt": "2026-10-23T03:38:19.075Z"
   }
 ]
