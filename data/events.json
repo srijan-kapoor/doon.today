@@ -42,62 +42,6 @@
     "lastCheckedAt": "2026-11-18T10:25:55.030Z"
   },
   {
-    "id": "9c6337b759a5bb0a",
-    "slug": "ghar-an-open-mic-for-words-by-tape-a-tale-dehradun",
-    "title": "Ghar: An Open Mic for Words by Tape A Tale | Dehradun",
-    "description": "Ghar is Tape A Tale's open mic event: a warm, welcoming home for your words. You can come, share your stories or poems, or just sit back and listen to people. At Ghar, you'll always find a space for your art and a family to share it with. P.S. Ghar is a non-biased, chit-based open mic, and we stay true to this format. It's a safe, welcoming space where you'll find a home in the warmth of stories, poems, and the beautiful people you'll meet! ❤️",
-    "startAt": "2026-11-22T10:30:00.000Z",
-    "endAt": "2026-12-20T12:30:00.000Z",
-    "venue": {
-      "name": "Tapri - The Teafe",
-      "address": "Dehradun",
-      "city": "Dehradun",
-      "area": "Rajpur",
-      "geo": {
-        "lat": 30.3317,
-        "lng": 78.0479
-      }
-    },
-    "categories": [
-      "Comedy"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 300,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "district",
-        "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.224Z",
-        "confidence": 0.95
-      },
-      {
-        "provider": "bookmyshow",
-        "url": "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
-        "externalId": "ET00377836",
-        "checkedAt": "2026-11-22T09:55:14.237Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 8
-    },
-    "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-22T09:55:14.237Z",
-    "lastCheckedAt": "2026-11-22T09:55:14.237Z",
-    "occurrences": [
-      "2026-11-22T10:30:00.000Z",
-      "2026-12-06T10:30:00.000Z",
-      "2026-12-20T10:30:00.000Z"
-    ],
-    "sequence": 2,
-    "modifiedAt": "2026-11-01T00:10:56.042Z"
-  },
-  {
     "id": "6a6900a1b21b4765",
     "slug": "waiting-for-godot-play",
     "title": "Waiting for godot play",
@@ -203,7 +147,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.221Z",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
         "confidence": 0.95
       },
       {
@@ -219,8 +163,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-23T10:54:53.129Z",
-    "lastCheckedAt": "2026-11-23T10:54:53.129Z"
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -346,6 +290,47 @@
     "firstSeenAt": "2026-11-12T21:31:16.931Z",
     "lastSeenAt": "2026-11-23T10:55:53.729Z",
     "lastCheckedAt": "2026-11-23T10:55:53.729Z"
+  },
+  {
+    "id": "27b1fa02ff629cb7",
+    "slug": "naalayak",
+    "title": "Naalayak",
+    "description": "Hailing from Chandigarh, Naalayak is an indie-rock powerhouse led by frontman Sahil Samuel, celebrated across the country for blending the raw grit of rock with soulful Hindi-Urdu poetry. Over the last decade, they have carved out a fierce following through strictly original music and deeply personal anthems like Zakir, Baawra, and tracks from their album Marammat. Known for a voice that breaks, burns, and rises in the same breath, their lyrics cut straight to the bone, turning themes of heartbreak, chaos, and healing into unforgettable live moments. Paired with October’s electric nightlife atmosphere, the evening promises heavy guitar riffs, booming drums, and hundreds of voices screaming every word back at the stage. Whether you’re nursing a heartbreak, chasing an adrenaline rush, or just looking to lose your voice with friends over great food and drinks, this is the kind of raw, unfiltered indie night Dehradun talks about long after the last chord fades.",
+    "startAt": "2026-11-28T14:30:00.000Z",
+    "endAt": "2026-11-28T17:15:00.000Z",
+    "venue": {
+      "name": "October Dehradun",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.3774,
+        "lng": 78.0896
+      }
+    },
+    "categories": [
+      "Other"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 999,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/naalayak-nov28-2026-buy-tickets",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -566,6 +551,61 @@
     "lastCheckedAt": "2026-11-23T10:54:19.872Z"
   },
   {
+    "id": "9c6337b759a5bb0a",
+    "slug": "ghar-an-open-mic-for-words-by-tape-a-tale-dehradun",
+    "title": "Ghar: An Open Mic for Words by Tape A Tale | Dehradun",
+    "description": "Ghar is Tape A Tale's open mic event: a warm, welcoming home for your words. You can come, share your stories or poems, or just sit back and listen to people. At Ghar, you'll always find a space for your art and a family to share it with. P.S. Ghar is a non-biased, chit-based open mic, and we stay true to this format. It's a safe, welcoming space where you'll find a home in the warmth of stories, poems, and the beautiful people you'll meet! ❤️",
+    "startAt": "2026-12-06T10:30:00.000Z",
+    "endAt": "2026-12-20T12:30:00.000Z",
+    "venue": {
+      "name": "Tapri - The Teafe",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3317,
+        "lng": 78.0479
+      }
+    },
+    "categories": [
+      "Comedy"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 300,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
+        "confidence": 0.95
+      },
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
+        "externalId": "ET00377836",
+        "checkedAt": "2026-11-22T09:55:14.237Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-10-18T07:29:45.462Z",
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z",
+    "occurrences": [
+      "2026-12-06T10:30:00.000Z",
+      "2026-12-20T10:30:00.000Z"
+    ],
+    "sequence": 3,
+    "modifiedAt": "2026-11-24T00:08:47.705Z"
+  },
+  {
     "id": "37149b72433966df",
     "slug": "daru-badnaam-a-comedy-show-by-inder-sahani-2026-12-06",
     "title": "Daru Badnaam - A Comedy Show by Inder Sahani",
@@ -767,6 +807,48 @@
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
   {
+    "id": "fe34d9cc5970d79c",
+    "slug": "naam-ka-tour-dehradun",
+    "title": "Naam Ka Tour | Dehradun",
+    "description": "The wait is over! Naam Sujal is coming to DEHRADUN!Get ready for an explosive night of Indian hip-hop as Naam Sujal brings his India Tour to your city, delivering a one-of-a-kind live experience packed with hard-hitting bars, infectious flows, crazy beats and undeniable stage energy. Hailing from Nagpur, Naam Sujal is one of the exciting new voices in India's hip-hop scene. Rising to national recognition on MTV Hustle Season 4, he has built his identity with his distinctive flow, clever wordplay and unique style of storytelling. His 15-track project MAMAFICATION, along with his Red Bull 64 Bars – BAJESH VISHAY, showcases his versatility and continues to establish his presence in the Indian hip-hop scene.",
+    "startAt": "2026-12-11T13:30:00.000Z",
+    "endAt": "2026-12-11T18:29:00.000Z",
+    "venue": {
+      "name": "Playboy Beer Garden",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "area": "Jakhan",
+      "geo": {
+        "lat": 30.3624,
+        "lng": 78.0685
+      }
+    },
+    "categories": [
+      "Live shows"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 499,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/naam-sujal-india-tour-dehradun-dec11-2026-buy-tickets",
+        "checkedAt": "2026-11-24T00:08:44.417Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-24T00:08:44.417Z",
+    "lastSeenAt": "2026-11-24T00:08:44.417Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.417Z"
+  },
+  {
     "id": "1ff1bdee8c7328bb",
     "slug": "lath-dhara-bhittar-by-amit-mahrana",
     "title": "Amit Mahrana Live",
@@ -890,7 +972,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.223Z",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
         "confidence": 0.95
       },
       {
@@ -906,8 +988,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-23T10:54:19.871Z",
-    "lastCheckedAt": "2026-11-23T10:54:19.871Z"
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1021,7 +1103,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.225Z",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
         "confidence": 0.95
       }
     ],
@@ -1031,8 +1113,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-22T00:08:40.225Z",
-    "lastCheckedAt": "2026-11-22T00:08:40.225Z"
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1166,7 +1248,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.225Z",
+        "checkedAt": "2026-11-24T00:08:44.419Z",
         "confidence": 0.95
       },
       {
@@ -1195,51 +1277,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-23T10:54:19.872Z",
-    "lastCheckedAt": "2026-11-23T10:54:19.872Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-23T10:54:19.872Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-23T02:09:43.942Z",
-    "lastSeenAt": "2026-11-23T10:54:19.872Z",
-    "lastCheckedAt": "2026-11-23T10:54:19.872Z"
+    "lastSeenAt": "2026-11-24T00:08:44.419Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.419Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1270,7 +1309,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-22T00:08:40.224Z",
+        "checkedAt": "2026-11-24T00:08:44.420Z",
         "confidence": 0.95
       }
     ],
@@ -1280,8 +1319,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-22T00:08:40.224Z",
-    "lastCheckedAt": "2026-11-22T00:08:40.224Z"
+    "lastSeenAt": "2026-11-24T00:08:44.420Z",
+    "lastCheckedAt": "2026-11-24T00:08:44.420Z"
   },
   {
     "id": "b59dab4202710ff2",
