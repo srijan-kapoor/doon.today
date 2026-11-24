@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4034464138947676986",
@@ -15,15 +15,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwt5gza91h1opsakeg",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
+        "4036645756805947906",
         "4035284508084792706",
         "4032426490665707396",
         "4031698325325080591",
@@ -45,13 +43,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwt5gzg22ak6guwdjv",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4034543307333211467",
@@ -64,13 +59,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwt5gzlplucg6mcwn",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4035287696547934348",
@@ -102,25 +94,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwt5gzqw4emlofrgx",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwt5gzxa2l744tri0t",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4033108051838099357",
@@ -136,15 +122,15 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h024dqnd499c4",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
+        "4036185402670763918",
+        "4036442316902036382",
+        "4036563732696583841",
         "4035176652920932542",
         "4033261087524628311",
         "4033716263435662795",
@@ -190,15 +176,14 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0801uvx5haqjw",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
+        "4036178079692525392",
+        "4036433509568118529",
         "4032304408875814225",
         "4032418851783965531",
         "4031717633488975376",
@@ -219,13 +204,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0dy1dqq8uw40z",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -236,15 +218,13 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0j6ax8y8l6or",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
+        "4035351937360035503",
         "4032186536525526251",
         "4032341687770743159",
         "4032376379563722651",
@@ -265,13 +245,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0nt1aa5a9jmks",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4035244859014920237",
@@ -289,13 +266,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0tr2ae9isq2y7",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4032392371882217821",
@@ -323,13 +297,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h0yv2ngok52j4d",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "4035405626011446469",
@@ -362,31 +333,25 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h157i1ggub2a8",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwt5h1a22j76yzdnun",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwt5h1f546k5z5ub4",
-        "startedAt": "2026-11-23T10:55:53.825Z"
-      },
-      "lastFetchedAt": "2026-11-22T09:55:36.865Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
+        "4035871784477545651",
+        "4035890003314365073",
+        "4036057637556043558",
         "4035419044148362907",
         "4034333735146729043",
         "4033658819302178820",
@@ -422,7 +387,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwu1a1t41m03vvgi4h",
+        "startedAt": "2026-11-24T01:46:04.205Z"
+      },
       "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
@@ -435,7 +403,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwu1a1xkra7hyhrac",
+        "startedAt": "2026-11-24T01:46:04.205Z"
+      },
       "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
@@ -445,7 +416,10 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwu1a21t1tsmfyctuw",
+        "startedAt": "2026-11-24T01:46:04.205Z"
+      },
       "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
@@ -462,7 +436,10 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwu1a25qv0pje3wiy",
+        "startedAt": "2026-11-24T01:46:04.205Z"
+      },
       "lastFetchedAt": "2026-11-23T02:12:00.438Z",
       "lastError": "",
       "seen": [
@@ -482,66 +459,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwotl3hx13n7wclydb",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl3p42n9r9niok1",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl3zj1vhw0oko9",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl4ac1uqtif8nry",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl4jxyx4ir7ptc",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl4piqyxl4e6j6",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl59s1xw0kpps89",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl5g71exi0bz0rt",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl5o818iqsd9qd2",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl5vc1egv1mx0w3",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl63i12tnjh0h61",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl6976mdupss07",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl6f3g77rrsdn",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl6n7k1aqkhapk",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
-    {
-      "id": "sd_mwotl73znr4kk8xnr",
-      "at": "2026-11-20T21:55:23.317Z"
-    },
     {
       "id": "sd_mwpipzk5hgrmv6si3",
       "at": "2026-11-21T10:00:32.793Z"
@@ -633,6 +550,66 @@
     {
       "id": "sd_mwrnw2mu1b37v9gtm8",
       "at": "2026-11-23T02:12:00.438Z"
+    },
+    {
+      "id": "sd_mwt5gza91h1opsakeg",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5gzg22ak6guwdjv",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5gzlplucg6mcwn",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5gzqw4emlofrgx",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5gzxa2l744tri0t",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h024dqnd499c4",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0801uvx5haqjw",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0dy1dqq8uw40z",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0j6ax8y8l6or",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0nt1aa5a9jmks",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0tr2ae9isq2y7",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h0yv2ngok52j4d",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h157i1ggub2a8",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h1a22j76yzdnun",
+      "at": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "sd_mwt5h1f546k5z5ub4",
+      "at": "2026-11-24T01:46:04.205Z"
     }
   ],
   "candidates": [
@@ -679,6 +656,50 @@
       "firstSeenAt": "2026-11-18T10:21:34.908Z",
       "lastSeenAt": "2026-11-18T10:21:34.908Z",
       "lastCheckedAt": "2026-11-18T10:21:34.908Z"
+    },
+    {
+      "id": "e623cbdc7ad0ce6a",
+      "slug": "mussoorie-shakeout-run",
+      "title": "Mussoorie Shakeout Run",
+      "description": "Mussoorie Ultra Marathon is here and we are all set to do a Shakeout run a day before! 🏃‍♂️🏃‍♀️💨\nRegistration link in bio 🎟️\n\nVenue- Fern Brentwood Mussoorie\nTime- 11:00 a.m.\nDate- 28th November",
+      "startAt": "2026-11-28T11:00:00+05:30",
+      "venue": {
+        "name": "Fern Brentwood Mussoorie",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Fitness",
+        "Outdoors"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Registration link in bio",
+      "organizer": "zen_runclub",
+      "posts": [
+        "https://www.instagram.com/p/DgFC-3CgaIC"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DgFC-3CgaIC",
+          "checkedAt": "2026-11-24T01:46:04.205Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-24T01:46:04.205Z",
+      "lastSeenAt": "2026-11-24T01:46:04.205Z",
+      "lastCheckedAt": "2026-11-24T01:46:04.205Z"
     }
   ]
 }

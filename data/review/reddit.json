@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "e623cbdc7ad0ce6a",
+    "slug": "mussoorie-shakeout-run",
+    "title": "Mussoorie Shakeout Run",
+    "description": "Mussoorie Ultra Marathon is here and we are all set to do a Shakeout run a day before! 🏃‍♂️🏃‍♀️💨\nRegistration link in bio 🎟️\n\nVenue- Fern Brentwood Mussoorie\nTime- 11:00 a.m.\nDate- 28th November",
+    "startAt": "2026-11-28T11:00:00+05:30",
+    "venue": {
+      "name": "Fern Brentwood Mussoorie",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Registration link in bio",
+    "organizer": "zen_runclub",
+    "posts": [
+      "https://www.instagram.com/p/DgFC-3CgaIC"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgFC-3CgaIC",
+        "checkedAt": "2026-11-24T01:46:04.205Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-24T01:46:04.205Z",
+    "lastSeenAt": "2026-11-24T01:46:04.205Z",
+    "lastCheckedAt": "2026-11-24T01:46:04.205Z"
+  }
+]
