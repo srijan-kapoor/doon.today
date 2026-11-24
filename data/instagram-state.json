@@ -15,7 +15,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyfdg3fonby9uz",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "3494a3d5e69d": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -43,7 +46,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyg0t1fw8kxodtc",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "e040d23c04b2": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -59,7 +65,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyg6um9sc0cnfy",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "1bdf78e536a6": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -94,7 +103,10 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbygbl3yakc311c",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "d86fbe036a59": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -103,7 +115,10 @@
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbygg91io5vrb5xp",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "43d40805e62b": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -122,7 +137,10 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbygn023u8sb1mut",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "e1613347e983": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -176,7 +194,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbygr89a9zumfxd",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "20ae9c76aa25": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -204,7 +225,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbygvyuybxbctm9",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "7173ecff1e8a": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -218,7 +242,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyh0irnl4ztz95",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "5e87e463fb91": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -245,7 +272,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyh4z5repq3gbg",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "29511b8ce420": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -266,7 +296,10 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyh9up4taxqwda",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "e1953a317e5d": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -297,7 +330,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyhf3hw7mtv458",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "06ad4fb7617a": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -333,7 +369,10 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyhlo2r97kjg64v",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "63e26dcd561c": {
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
@@ -342,10 +381,16 @@
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": null
+      "snapshot": {
+        "id": "sd_mwvbyhrn27w25ihjv0",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      }
     },
     "cc84aaf7bef0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mwvbyhx81ykr1qvr2f",
+        "startedAt": "2026-11-24T23:32:57.798Z"
+      },
       "lastFetchedAt": "2026-11-24T01:46:04.205Z",
       "lastError": "",
       "seen": [
@@ -601,50 +646,6 @@
     }
   ],
   "candidates": [
-    {
-      "id": "9d369366d6aa8319",
-      "slug": "ustad-bantoo-road-to-100-screenings-week-2-dehradun",
-      "title": "Ustad Bantoo: Road to 100 Screenings (Week 2, Dehradun)",
-      "description": "After 3 housefull shows in our Week 1, we’re off to Week 2\n\nScreening on 21-24 November in 3 different cities and in 3 very different spaces!\n\n1) Indore - The coolest space in Indore for Independent Films, Music, & Art - @studioingrey. It is both a photography studio and a cultural venue hosting small-scale art and community programming. You’ll be hosted by your city’s very own Harshvardhan Singh (@mintuned ) who is an Indore based actor and filmmaker.\n\n2) Dehradun - If there is anything that can be called the cultural hub of Dehradun, that is @october_dehradun run by @aanchalrjaiswal. Anytime you visit here you’ll find some artist performing there. While known mostly for their captivating music events, they also host a variety of other events like plays and films. You’ll be hosted by the ",
-      "startAt": "2026-11-21",
-      "endAt": "2026-11-24",
-      "venue": {
-        "name": "October, Dehradun",
-        "city": "Dehradun"
-      },
-      "categories": [
-        "Film"
-      ],
-      "pricing": {
-        "type": "unknown",
-        "currency": "INR"
-      },
-      "howToJoin": "Tickets on Fillum, link in bio",
-      "organizer": "iamguldar",
-      "posts": [
-        "https://www.instagram.com/p/Df2MbbiHwOv"
-      ],
-      "reading": {
-        "detailsFrom": "both",
-        "confidence": "medium"
-      },
-      "sources": [
-        {
-          "provider": "instagram",
-          "url": "https://www.instagram.com/p/Df2MbbiHwOv",
-          "checkedAt": "2026-11-18T10:21:34.908Z",
-          "confidence": 0.5
-        }
-      ],
-      "verificationStatus": "community-reported",
-      "curation": {
-        "status": "review",
-        "score": 3
-      },
-      "firstSeenAt": "2026-11-18T10:21:34.908Z",
-      "lastSeenAt": "2026-11-18T10:21:34.908Z",
-      "lastCheckedAt": "2026-11-18T10:21:34.908Z"
-    },
     {
       "id": "e623cbdc7ad0ce6a",
       "slug": "mussoorie-shakeout-run",
