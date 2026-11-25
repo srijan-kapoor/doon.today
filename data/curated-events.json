@@ -1714,5 +1714,46 @@
     "firstSeenAt": "2026-11-24T03:52:00.488Z",
     "lastSeenAt": "2026-11-24T03:52:00.488Z",
     "lastCheckedAt": "2026-11-24T03:52:00.488Z"
+  },
+  {
+    "id": "95b050c34f47f140",
+    "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
+    "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
+    "description": "🎲 Your next game night is here! A few exciting games are lined up at Board & Banter this week 👀 🗓️ 25 Nov — Cosmolanser 🗓️ 27 Nov — Azul 🗓️ 29 Nov — Girgit & Black Sheep 🔥 ⏰ 6 PM onwards 📍 Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun Bring your friends, pick your game, and let the banter begin! 😎🎲 DM us to join a session. Cosmolancer Azul Girgit BlackSheep\n\nOrganized by @boardandbanter.ddn. How to join: DM the account to join a session",
+    "startAt": "2026-11-25T18:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+        "checkedAt": "2026-11-25T14:18:11.214Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+        "checkedAt": "2026-11-25T11:29:16.114Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-25T14:18:11.214Z",
+    "lastSeenAt": "2026-11-25T14:18:11.214Z",
+    "lastCheckedAt": "2026-11-25T14:18:11.214Z"
   }
 ]
