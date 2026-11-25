@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "id": "4bce8ecfbde9e443",
+    "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
+    "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
+    "description": "🎲 Your next game night is here!\n\nA few exciting games are lined up at Board & Banter this week 👀\n\n🗓️ 25 Nov — Cosmolanser\n🗓️ 27 Nov — Azul\n🗓️ 29 Nov — Girgit & Black Sheep 🔥\n\n⏰ 6 PM onwards\n📍 Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun\n\nBring your friends, pick your game, and let the banter begin! 😎🎲\n\nDM us to join a session.\n\n Cosmolancer Azul Girgit BlackSheep",
+    "startAt": "2026-11-25T18:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "DM the account to join a session",
+    "organizer": "boardandbanter.ddn",
+    "posts": [
+      "https://www.instagram.com/p/DgHueQYv7ZA"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "medium"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+        "checkedAt": "2026-11-25T11:29:16.114Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-25T11:29:16.114Z",
+    "lastSeenAt": "2026-11-25T11:29:16.114Z",
+    "lastCheckedAt": "2026-11-25T11:29:16.114Z"
+  },
+  {
+    "id": "cd5b212f3b382f20",
+    "slug": "stories-in-starlight-stargazing-at-vow",
+    "title": "Stories in Starlight: Stargazing at VoW",
+    "description": "🌌✨ Stories in Starlight | Stargazing at VoW\n\nEvery star has a story, and the night sky is a book waiting to be read!\n\nOn Day 2 of Valley of Words DASHAM 2026, embark on a celestial journey with the Dehradun Astronomy Club.\n\nExplore the wonders of the night sky through telescopes, unravel celestial fables and discover the fascinating world of astronomy in an immersive stargazing experience.\n\nAn evening of science, storytelling and wonder awaits under the stars!\n\n📅 Saturday, 28 November 2026\n🕕 6 PM onwards\n📍 ITC Madhuban, Dehradun\n🎟️ Entry Free!\n\nStargazing is subject to weather and sky visibility.",
+    "startAt": "2026-11-28T18:00:00+05:30",
+    "venue": {
+      "name": "ITC Madhuban, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "howToJoin": "",
+    "organizer": "dehradun_astronomy_club",
+    "posts": [
+      "https://www.instagram.com/p/DgH9jfkTSQf"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgH9jfkTSQf",
+        "checkedAt": "2026-11-25T11:29:16.114Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-25T11:29:16.114Z",
+    "lastSeenAt": "2026-11-25T11:29:16.114Z",
+    "lastCheckedAt": "2026-11-25T11:29:16.114Z"
+  }
+]

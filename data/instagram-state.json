@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4034464138947676986",
@@ -15,13 +15,10 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyfdg3fonby9uz",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4036645756805947906",
@@ -46,13 +43,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyg0t1fw8kxodtc",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4034543307333211467",
@@ -65,15 +59,14 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyg6um9sc0cnfy",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4037321627481928423",
+        "4037399980279838272",
         "4035287696547934348",
         "4033166253236973332",
         "4032265960906697651",
@@ -103,27 +96,22 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwvbygbl3yakc311c",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwvbygg91io5vrb5xp",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4037466310874833951",
         "4033108051838099357",
         "4033297033775115615",
         "4031529161029364395",
@@ -137,15 +125,14 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwvbygn023u8sb1mut",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4036916553584509833",
+        "4037253194035552997",
         "4036185402670763918",
         "4036442316902036382",
         "4036563732696583841",
@@ -194,15 +181,13 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwvbygr89a9zumfxd",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4036833027493012406",
         "4036178079692525392",
         "4036433509568118529",
         "4032304408875814225",
@@ -225,13 +210,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwvbygvyuybxbctm9",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -242,13 +224,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyh0irnl4ztz95",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4035351937360035503",
@@ -272,13 +251,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyh4z5repq3gbg",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4035244859014920237",
@@ -296,15 +272,13 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyh9up4taxqwda",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4036869970880768261",
         "4032392371882217821",
         "4030221854519568983",
         "4028730200984025201",
@@ -330,15 +304,13 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyhf3hw7mtv458",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
+        "4037485746553573644",
         "4035405626011446469",
         "4033091521648860360",
         "4033884276337832283",
@@ -369,29 +341,20 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyhlo2r97kjg64v",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwvbyhrn27w25ihjv0",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwvbyhx81ykr1qvr2f",
-        "startedAt": "2026-11-24T23:32:57.798Z"
-      },
-      "lastFetchedAt": "2026-11-24T01:46:04.205Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
       "lastError": "",
       "seen": [
         "4035871784477545651",
@@ -432,7 +395,10 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mww1jyy4lvdh5nrhy",
+        "startedAt": "2026-11-25T11:29:16.114Z"
+      },
       "lastFetchedAt": "2026-11-24T12:40:11.740Z",
       "lastError": "",
       "seen": [
@@ -445,7 +411,10 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mww1jz1z26o8lbgoph",
+        "startedAt": "2026-11-25T11:29:16.114Z"
+      },
       "lastFetchedAt": "2026-11-24T12:40:11.740Z",
       "lastError": "",
       "seen": [
@@ -455,7 +424,10 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mww1jz6e1cx0ihj3fh",
+        "startedAt": "2026-11-25T11:29:16.114Z"
+      },
       "lastFetchedAt": "2026-11-24T12:40:11.740Z",
       "lastError": "",
       "seen": [
@@ -472,7 +444,10 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": null,
+      "snapshot": {
+        "id": "sd_mww1jz9x2enpnrboqw",
+        "startedAt": "2026-11-25T11:29:16.114Z"
+      },
       "lastFetchedAt": "2026-11-24T12:40:11.740Z",
       "lastError": "",
       "seen": [
@@ -492,66 +467,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwqvf0lj1zper9h88t",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf0rl2lahxmyhqr",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf0x93t9qyag5s",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf1491b43ukl06o",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf1b31zujp6ohvc",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf1ma1mgtrhyrbe",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf1tc1e2bnzgl5w",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf2211zyo84znw0",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf2dk1311t22kgk",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf2lk78j6k8t52",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf2r71v3h1dun11",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf2zs274co5tset",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf35k2aloxrbrsi",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf3hfv3z04q9n3",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
-    {
-      "id": "sd_mwqvf3pe2q9rxm9xwa",
-      "at": "2026-11-22T09:55:36.865Z"
-    },
     {
       "id": "sd_mwrnw1vc22xf0tgjv9",
       "at": "2026-11-23T02:12:00.438Z"
@@ -643,6 +558,66 @@
     {
       "id": "sd_mwu1a25qv0pje3wiy",
       "at": "2026-11-24T12:40:11.740Z"
+    },
+    {
+      "id": "sd_mwvbyfdg3fonby9uz",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyg0t1fw8kxodtc",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyg6um9sc0cnfy",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbygbl3yakc311c",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbygg91io5vrb5xp",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbygn023u8sb1mut",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbygr89a9zumfxd",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbygvyuybxbctm9",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyh0irnl4ztz95",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyh4z5repq3gbg",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyh9up4taxqwda",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyhf3hw7mtv458",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyhlo2r97kjg64v",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyhrn27w25ihjv0",
+      "at": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "sd_mwvbyhx81ykr1qvr2f",
+      "at": "2026-11-25T11:29:16.114Z"
     }
   ],
   "candidates": [
@@ -689,6 +664,93 @@
       "firstSeenAt": "2026-11-24T01:46:04.205Z",
       "lastSeenAt": "2026-11-24T01:46:04.205Z",
       "lastCheckedAt": "2026-11-24T01:46:04.205Z"
+    },
+    {
+      "id": "4bce8ecfbde9e443",
+      "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
+      "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
+      "description": "🎲 Your next game night is here!\n\nA few exciting games are lined up at Board & Banter this week 👀\n\n🗓️ 25 Nov — Cosmolanser\n🗓️ 27 Nov — Azul\n🗓️ 29 Nov — Girgit & Black Sheep 🔥\n\n⏰ 6 PM onwards\n📍 Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun\n\nBring your friends, pick your game, and let the banter begin! 😎🎲\n\nDM us to join a session.\n\n Cosmolancer Azul Girgit BlackSheep",
+      "startAt": "2026-11-25T18:00:00+05:30",
+      "venue": {
+        "name": "Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Games",
+        "Meetups"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "DM the account to join a session",
+      "organizer": "boardandbanter.ddn",
+      "posts": [
+        "https://www.instagram.com/p/DgHueQYv7ZA"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+          "checkedAt": "2026-11-25T11:29:16.114Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-25T11:29:16.114Z",
+      "lastSeenAt": "2026-11-25T11:29:16.114Z",
+      "lastCheckedAt": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "cd5b212f3b382f20",
+      "slug": "stories-in-starlight-stargazing-at-vow",
+      "title": "Stories in Starlight: Stargazing at VoW",
+      "description": "🌌✨ Stories in Starlight | Stargazing at VoW\n\nEvery star has a story, and the night sky is a book waiting to be read!\n\nOn Day 2 of Valley of Words DASHAM 2026, embark on a celestial journey with the Dehradun Astronomy Club.\n\nExplore the wonders of the night sky through telescopes, unravel celestial fables and discover the fascinating world of astronomy in an immersive stargazing experience.\n\nAn evening of science, storytelling and wonder awaits under the stars!\n\n📅 Saturday, 28 November 2026\n🕕 6 PM onwards\n📍 ITC Madhuban, Dehradun\n🎟️ Entry Free!\n\nStargazing is subject to weather and sky visibility.",
+      "startAt": "2026-11-28T18:00:00+05:30",
+      "venue": {
+        "name": "ITC Madhuban, Dehradun",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Outdoors"
+      ],
+      "pricing": {
+        "type": "free",
+        "currency": "INR"
+      },
+      "howToJoin": "",
+      "organizer": "dehradun_astronomy_club",
+      "posts": [
+        "https://www.instagram.com/p/DgH9jfkTSQf"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DgH9jfkTSQf",
+          "checkedAt": "2026-11-25T11:29:16.114Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-25T11:29:16.114Z",
+      "lastSeenAt": "2026-11-25T11:29:16.114Z",
+      "lastCheckedAt": "2026-11-25T11:29:16.114Z"
     }
   ]
 }
