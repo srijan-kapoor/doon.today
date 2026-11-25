@@ -1755,5 +1755,45 @@
     "firstSeenAt": "2026-11-25T14:18:11.214Z",
     "lastSeenAt": "2026-11-25T14:18:11.214Z",
     "lastCheckedAt": "2026-11-25T14:18:11.214Z"
+  },
+  {
+    "id": "9da3b4babac260ec",
+    "slug": "stories-in-starlight-stargazing-at-vow",
+    "title": "Stories in Starlight: Stargazing at VoW",
+    "description": "🌌✨ Stories in Starlight | Stargazing at VoW Every star has a story, and the night sky is a book waiting to be read! On Day 2 of Valley of Words DASHAM 2026, embark on a celestial journey with the Dehradun Astronomy Club. Explore the wonders of the night sky through telescopes, unravel celestial fables and discover the fascinating world of astronomy in an immersive stargazing experience. An evening of science, storytelling and wonder awaits under the stars! 📅 Saturday, 28 November 2026 🕕 6 PM onwards 📍 ITC Madhuban, Dehradun 🎟️ Entry Free! Stargazing is subject to weather and sky visibility.\n\nOrganized by @dehradun_astronomy_club.",
+    "startAt": "2026-11-28T18:00:00+05:30",
+    "venue": {
+      "name": "ITC Madhuban, Dehradun",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgH9jfkTSQf",
+        "checkedAt": "2026-11-25T14:18:50.757Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgH9jfkTSQf",
+        "checkedAt": "2026-11-25T11:29:16.114Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-25T14:18:50.757Z",
+    "lastSeenAt": "2026-11-25T14:18:50.757Z",
+    "lastCheckedAt": "2026-11-25T14:18:50.757Z"
   }
 ]
