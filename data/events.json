@@ -1,47 +1,5 @@
 [
   {
-    "id": "95b050c34f47f140",
-    "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
-    "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
-    "description": "🎲 Your next game night is here! A few exciting games are lined up at Board & Banter this week 👀 🗓️ 25 Nov — Cosmolanser 🗓️ 27 Nov — Azul 🗓️ 29 Nov — Girgit & Black Sheep 🔥 ⏰ 6 PM onwards 📍 Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun Bring your friends, pick your game, and let the banter begin! 😎🎲 DM us to join a session. Cosmolancer Azul Girgit BlackSheep\n\nOrganized by @boardandbanter.ddn. How to join: DM the account to join a session",
-    "startAt": "2026-11-25T18:00:00+05:30",
-    "venue": {
-      "name": "Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun",
-      "city": "Dehradun",
-      "area": "Kedarpur"
-    },
-    "categories": [
-      "Games",
-      "Meetups"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "manual",
-        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
-        "checkedAt": "2026-11-25T14:18:11.214Z",
-        "confidence": 1
-      },
-      {
-        "provider": "instagram",
-        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
-        "checkedAt": "2026-11-25T11:29:16.114Z",
-        "confidence": 0.5
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 5
-    },
-    "firstSeenAt": "2026-11-25T14:18:11.214Z",
-    "lastSeenAt": "2026-11-25T14:18:11.214Z",
-    "lastCheckedAt": "2026-11-25T14:18:11.214Z"
-  },
-  {
     "id": "809c9f869a253782",
     "slug": "dehradun-literature-festival",
     "title": "Dehradun Literature Festival",
@@ -70,7 +28,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.774Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       },
       {
@@ -86,8 +44,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-25T14:25:03.727Z",
-    "lastCheckedAt": "2026-11-25T14:25:03.727Z"
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
   },
   {
     "id": "944964952ddafe15",
@@ -660,7 +618,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/naalayak-nov28-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.774Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       }
     ],
@@ -670,8 +628,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T00:08:44.420Z",
-    "lastSeenAt": "2026-11-25T00:08:39.774Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.774Z"
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -763,6 +721,48 @@
     "firstSeenAt": "2026-11-14T19:15:18.187Z",
     "lastSeenAt": "2026-11-14T19:15:18.187Z",
     "lastCheckedAt": "2026-11-14T19:15:18.187Z"
+  },
+  {
+    "id": "7375042e471850ac",
+    "slug": "man-i-love-frappe-tour-dehradun-frappe-ash",
+    "title": "Man I Love Frappe Tour | Dehradun | Frappe Ash",
+    "description": "Frappe Ash brings the MILF Tour (Man I Love Frappe) to Dehradun and this one's going to be extra special. Coming back to the hills with the Ghati Boys, expect a night that brings together fresh music, hometown energy and a whole lot of madness. Fresh off the release of Late Night in April and his latest album MILF in October, Frappe is ready to bring his newest sounds to the stage. From the infectious “Chinta Nahi” featuring Bollywood legend Kumar Sanu, and the new-age disco sounds of “Dil Dooba” featuring Calm, to his viral hit “Sharmeeli” and the entire Ice Cream Frappe catalogue, expect a set packed with new music and fan favourites. And making this Dehradun stop even more special, Ghati Boys join Frappe Ash on stage for a Devbhoomi link-up! Hills, are you ready? Man I Love Frappe. Come show some love.",
+    "startAt": "2026-11-29T13:30:00.000Z",
+    "endAt": "2026-11-29T18:29:00.000Z",
+    "venue": {
+      "name": "Playboy Beer Garden",
+      "address": "Dehradun",
+      "city": "Dehradun",
+      "area": "Jakhan",
+      "geo": {
+        "lat": 30.3624,
+        "lng": 78.0685
+      }
+    },
+    "categories": [
+      "Live shows"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 549,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "district",
+        "url": "https://www.district.in/events/milf-tour-dehradun-frappe-ash-nov29-2026-buy-tickets",
+        "checkedAt": "2026-11-26T00:08:58.842Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T00:08:58.842Z",
+    "lastSeenAt": "2026-11-26T00:08:58.842Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.842Z"
   },
   {
     "id": "f698989035ae2ed6",
@@ -1104,7 +1104,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.774Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       },
       {
@@ -1121,8 +1121,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-25T00:08:39.774Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.774Z",
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z",
     "occurrences": [
       "2026-12-06T10:30:00.000Z",
       "2026-12-20T10:30:00.000Z"
@@ -1359,7 +1359,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/naam-sujal-india-tour-dehradun-dec11-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.775Z",
+        "checkedAt": "2026-11-26T00:08:58.840Z",
         "confidence": 0.95
       }
     ],
@@ -1369,8 +1369,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T00:08:44.417Z",
-    "lastSeenAt": "2026-11-25T00:08:39.775Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.775Z"
+    "lastSeenAt": "2026-11-26T00:08:58.840Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.840Z"
   },
   {
     "id": "1ff1bdee8c7328bb",
@@ -1534,7 +1534,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.775Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       },
       {
@@ -1550,8 +1550,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-25T14:24:41.812Z",
-    "lastCheckedAt": "2026-11-25T14:24:41.812Z"
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1665,7 +1665,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.771Z",
+        "checkedAt": "2026-11-26T00:08:58.844Z",
         "confidence": 0.95
       }
     ],
@@ -1675,8 +1675,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-25T00:08:39.771Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.771Z"
+    "lastSeenAt": "2026-11-26T00:08:58.844Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.844Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -1810,7 +1810,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.774Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       },
       {
@@ -1839,51 +1839,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-25T14:24:41.812Z",
-    "lastCheckedAt": "2026-11-25T14:24:41.812Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-25T14:24:41.813Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-25T14:24:41.813Z",
-    "lastSeenAt": "2026-11-25T14:24:41.813Z",
-    "lastCheckedAt": "2026-11-25T14:24:41.813Z"
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -1914,7 +1871,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/nye-edit-2027-the-ultimate-new-year-eve-at-gostops-mussoorie-clock-tower-dec31-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.775Z",
+        "checkedAt": "2026-11-26T00:08:58.844Z",
         "confidence": 0.95
       }
     ],
@@ -1924,8 +1881,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
-    "lastSeenAt": "2026-11-25T00:08:39.775Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.775Z"
+    "lastSeenAt": "2026-11-26T00:08:58.844Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.844Z"
   },
   {
     "id": "b59dab4202710ff2",
@@ -2105,7 +2062,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/lohri-vibes-bhangra-night-jan13-2026-buy-tickets",
-        "checkedAt": "2026-11-25T00:08:39.773Z",
+        "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
       }
     ],
@@ -2115,8 +2072,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T00:08:39.773Z",
-    "lastSeenAt": "2026-11-25T00:08:39.773Z",
-    "lastCheckedAt": "2026-11-25T00:08:39.773Z"
+    "lastSeenAt": "2026-11-26T00:08:58.843Z",
+    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
   },
   {
     "id": "4e90e288934b77c1",

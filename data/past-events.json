@@ -1,5 +1,47 @@
 [
   {
+    "id": "95b050c34f47f140",
+    "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
+    "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
+    "description": "🎲 Your next game night is here! A few exciting games are lined up at Board & Banter this week 👀 🗓️ 25 Nov — Cosmolanser 🗓️ 27 Nov — Azul 🗓️ 29 Nov — Girgit & Black Sheep 🔥 ⏰ 6 PM onwards 📍 Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun Bring your friends, pick your game, and let the banter begin! 😎🎲 DM us to join a session. Cosmolancer Azul Girgit BlackSheep\n\nOrganized by @boardandbanter.ddn. How to join: DM the account to join a session",
+    "startAt": "2026-11-25T18:00:00+05:30",
+    "venue": {
+      "name": "Board & Banter, Doon University Road, Bangali Kothi, Mothrowala, Dehradun",
+      "city": "Dehradun",
+      "area": "Kedarpur"
+    },
+    "categories": [
+      "Games",
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+        "checkedAt": "2026-11-25T14:18:11.214Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgHueQYv7ZA",
+        "checkedAt": "2026-11-25T11:29:16.114Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-25T14:18:11.214Z",
+    "lastSeenAt": "2026-11-25T14:18:11.214Z",
+    "lastCheckedAt": "2026-11-25T14:18:11.214Z"
+  },
+  {
     "id": "6b41c142fd4e1d11",
     "slug": "death-tere-ki-live-comedy-show",
     "title": "DEATH TERE KI.......(Live comedy show)",
@@ -4057,45 +4099,5 @@
     "firstSeenAt": "2026-10-19T03:52:50.746Z",
     "lastSeenAt": "2026-10-27T14:36:37.378Z",
     "lastCheckedAt": "2026-10-27T14:36:37.378Z"
-  },
-  {
-    "id": "f2d1f5ff58101ee4",
-    "slug": "virasat-2026-thumri-by-ivy-banerjee",
-    "title": "Virasat 2026: Thumri & Ghazals by Ivy Banerjee",
-    "description": "Ticketed vocal performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-26T20:30:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-4",
-        "externalId": "2026-4-thumri-ghazals-by-ivy-banerjee",
-        "checkedAt": "2026-10-26T15:15:57.284Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T03:52:50.746Z",
-    "lastSeenAt": "2026-10-26T15:15:57.284Z",
-    "lastCheckedAt": "2026-10-26T15:15:57.284Z",
-    "sequence": 1,
-    "modifiedAt": "2026-10-22T04:57:51.690Z"
   }
 ]
