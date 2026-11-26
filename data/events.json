@@ -34,7 +34,7 @@
       {
         "provider": "literaturefestival",
         "url": "https://www.dehradunliteraturefestival.com/",
-        "checkedAt": "2026-11-26T02:27:45.346Z",
+        "checkedAt": "2026-11-26T14:25:04.584Z",
         "confidence": 0.9
       }
     ],
@@ -44,8 +44,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-26T02:27:45.346Z",
-    "lastCheckedAt": "2026-11-26T02:27:45.346Z"
+    "lastSeenAt": "2026-11-26T14:25:04.584Z",
+    "lastCheckedAt": "2026-11-26T14:25:04.584Z"
   },
   {
     "id": "944964952ddafe15",
@@ -73,7 +73,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/workshop-on-digital-awareness-and-safety/200031115857525",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -83,8 +83,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-24T12:37:45.455Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 1,
     "modifiedAt": "2026-11-24T23:33:01.699Z"
   },
@@ -113,7 +113,7 @@
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/grand-theft-party-nov-27-2026",
         "externalId": "6b05b2de860567267511d6f5",
-        "checkedAt": "2026-11-26T02:29:34.683Z",
+        "checkedAt": "2026-11-26T14:28:12.583Z",
         "confidence": 0.85
       }
     ],
@@ -123,14 +123,14 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-24T23:32:57.661Z",
-    "lastSeenAt": "2026-11-26T02:29:34.683Z",
-    "lastCheckedAt": "2026-11-26T02:29:34.683Z"
+    "lastSeenAt": "2026-11-26T14:28:12.583Z",
+    "lastCheckedAt": "2026-11-26T14:28:12.583Z"
   },
   {
     "id": "aef9d4a064faf10d",
     "slug": "devfest-dehradun-2026",
     "title": "DevFest Dehradun 2026",
-    "description": "Join us for DevFest Dehradun 2026: \"Build in the Valley. Solve for the Mountains.\" Connect with industry experts, Google Developer Experts, and fellow enthusiasts. Participate in hands-on workshops and experience project showcases highlighting innovative solutions. Don't miss this opportunity to network and learn from the best! Secure your spot now and be a part of the technological revolution in the valleys and mountains.",
+    "description": "Join us for DevFest Dehradun 2026: \"Build in the Valley. Solve for the Mountains.\" Connect with industry experts, Google Developer Experts, and fellow enthusiasts. Participate in hands-on workshops and experience project showcases highlighting innovative solutions. Don't miss this opportunity to network and learn from the best! Secure your spot now and be a part of the technological revolution in the valleys and mountains. Agenda: 10:30 AM - 11 AM - Check-In and Keynote 11:30 AM - The New Developer Stack: Context Files, Skills, MCP, and Agentic Coding | Harsh Mer 12:15 PM - The Art of Harness Engineering: Turning AI models into reliable agents | Ravi Rawal 1 PM - Building a B2B Lead Generation Engine with Gemini & AI Studio | Varun Poladiya 1:30 PM - Lunch and Networking 2:30 PM - Create 10× More Content with AI: The Modern Creator Stack | Saurabh Singh 3:15 PM - Building a Better Uttarakhand: Solving Environmental Challenges Through Technology | Adarsh Dabral and Akshat Virmani 4 PM - Additional Speaker / Talk (To Be Announced) 4:45 PM - Networking and Giveaway 6 PM - Event Ends",
     "startAt": "2026-11-28T11:00:00+05:30",
     "endAt": "2026-11-28T18:00:00+05:30",
     "venue": {
@@ -140,6 +140,7 @@
       "area": "Kaulagarh"
     },
     "categories": [
+      "Art",
       "Workshop"
     ],
     "pricing": {
@@ -151,7 +152,7 @@
         "provider": "gdg",
         "url": "https://gdg.community.dev/events/details/google-gdg-dehradun-presents-devfest-dehradun-2026/",
         "externalId": "134977",
-        "checkedAt": "2026-11-26T02:27:49.697Z",
+        "checkedAt": "2026-11-26T14:25:07.875Z",
         "confidence": 0.9
       }
     ],
@@ -161,8 +162,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-03T20:32:56.238Z",
-    "lastSeenAt": "2026-11-26T02:27:49.697Z",
-    "lastCheckedAt": "2026-11-26T02:27:49.697Z",
+    "lastSeenAt": "2026-11-26T14:25:07.875Z",
+    "lastCheckedAt": "2026-11-26T14:25:07.875Z",
     "sequence": 1,
     "modifiedAt": "2026-11-14T19:15:27.641Z"
   },
@@ -237,7 +238,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/dream-glass-flower/ET00514317",
         "externalId": "ET00514317",
-        "checkedAt": "2026-11-25T14:26:42.452Z",
+        "checkedAt": "2026-11-26T14:26:19.031Z",
         "confidence": 0.95
       }
     ],
@@ -247,8 +248,51 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T14:26:42.452Z",
-    "lastSeenAt": "2026-11-25T14:26:42.452Z",
-    "lastCheckedAt": "2026-11-25T14:26:42.452Z"
+    "lastSeenAt": "2026-11-26T14:26:19.031Z",
+    "lastCheckedAt": "2026-11-26T14:26:19.031Z"
+  },
+  {
+    "id": "3bde92758949996d",
+    "slug": "diwali-glow-lab",
+    "title": "Diwali Glow Lab",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 999,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/diwali-glow-lab/ET00520893",
+        "externalId": "ET00520893",
+        "checkedAt": "2026-11-26T14:26:46.189Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:26:46.189Z",
+    "lastSeenAt": "2026-11-26T14:26:46.189Z",
+    "lastCheckedAt": "2026-11-26T14:26:46.189Z"
   },
   {
     "id": "41db1b577d7fdc31",
@@ -338,6 +382,49 @@
     "lastCheckedAt": "2026-11-26T02:29:15.894Z"
   },
   {
+    "id": "8965550129ab14e7",
+    "slug": "crochet-parandi",
+    "title": "Crochet Parandi",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:30:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 799,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/crochet-parandi/ET00521005",
+        "externalId": "ET00521005",
+        "checkedAt": "2026-11-26T14:26:51.299Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:26:51.299Z",
+    "lastSeenAt": "2026-11-26T14:26:51.299Z",
+    "lastCheckedAt": "2026-11-26T14:26:51.299Z"
+  },
+  {
     "id": "8e705432d02072fb",
     "slug": "japanese-kintsugi",
     "title": "Japanese Kintsugi",
@@ -381,6 +468,93 @@
     "lastCheckedAt": "2026-11-24T23:32:54.373Z"
   },
   {
+    "id": "95b32b1af518ac2c",
+    "slug": "resin-glass-chain",
+    "title": "Resin Glass Chain",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 999,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/resin-glass-chain/ET00521899",
+        "externalId": "ET00521899",
+        "checkedAt": "2026-11-26T14:26:56.682Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:26:56.682Z",
+    "lastSeenAt": "2026-11-26T14:26:56.682Z",
+    "lastCheckedAt": "2026-11-26T14:26:56.682Z"
+  },
+  {
+    "id": "95d351686a4f3dbc",
+    "slug": "clay-art-workshop",
+    "title": "Clay Art Workshop",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 799,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/clay-art-workshop/ET00512134",
+        "externalId": "ET00512134",
+        "checkedAt": "2026-11-26T14:27:26.101Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:27:26.101Z",
+    "lastSeenAt": "2026-11-26T14:27:26.101Z",
+    "lastCheckedAt": "2026-11-26T14:27:26.101Z"
+  },
+  {
     "id": "962717c93c493c3a",
     "slug": "glass-terrarium-making",
     "title": "Glass Terrarium Making",
@@ -410,7 +584,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/glass-terrarium-making/ET00512261",
         "externalId": "ET00512261",
-        "checkedAt": "2026-11-26T02:29:08.351Z",
+        "checkedAt": "2026-11-26T14:26:54.292Z",
         "confidence": 0.95
       }
     ],
@@ -420,8 +594,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T14:26:49.945Z",
-    "lastSeenAt": "2026-11-26T02:29:08.351Z",
-    "lastCheckedAt": "2026-11-26T02:29:08.351Z"
+    "lastSeenAt": "2026-11-26T14:26:54.292Z",
+    "lastCheckedAt": "2026-11-26T14:26:54.292Z"
   },
   {
     "id": "ab6357d1814a5de9",
@@ -452,7 +626,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/sculpt-your-own-bedazzled-alien/3900031106480939",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -462,8 +636,138 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-24T01:43:48.504Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
+  },
+  {
+    "id": "bcb2a32de00c9f08",
+    "slug": "scented-candle-making",
+    "title": "Scented candle Making",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 799,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/scented-candles/ET00466295",
+        "externalId": "ET00466295",
+        "checkedAt": "2026-11-26T14:27:32.128Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:27:32.128Z",
+    "lastSeenAt": "2026-11-26T14:27:32.128Z",
+    "lastCheckedAt": "2026-11-26T14:27:32.128Z"
+  },
+  {
+    "id": "bf0d50aaf18b5a25",
+    "slug": "relief-art-workshop",
+    "title": "Relief Art Workshop",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 799,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/relief-art-workshop/ET00512402",
+        "externalId": "ET00512402",
+        "checkedAt": "2026-11-26T14:27:37.688Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:27:37.688Z",
+    "lastSeenAt": "2026-11-26T14:27:37.688Z",
+    "lastCheckedAt": "2026-11-26T14:27:37.688Z"
+  },
+  {
+    "id": "c14053e00c8bbf4c",
+    "slug": "make-your-own-clay-buddy",
+    "title": "Make Your Own Clay Buddy",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 699,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/make-your-own-clay-buddy/ET00520905",
+        "externalId": "ET00520905",
+        "checkedAt": "2026-11-26T14:26:37.879Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:26:37.879Z",
+    "lastSeenAt": "2026-11-26T14:26:37.879Z",
+    "lastCheckedAt": "2026-11-26T14:26:37.879Z"
   },
   {
     "id": "cba71bec2601375a",
@@ -495,7 +799,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/ceramic-pottery-making/ET00512628",
         "externalId": "ET00512628",
-        "checkedAt": "2026-11-25T14:27:39.201Z",
+        "checkedAt": "2026-11-26T14:26:44.939Z",
         "confidence": 0.95
       }
     ],
@@ -505,8 +809,52 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T14:27:39.201Z",
-    "lastSeenAt": "2026-11-25T14:27:39.201Z",
-    "lastCheckedAt": "2026-11-25T14:27:39.201Z"
+    "lastSeenAt": "2026-11-26T14:26:44.939Z",
+    "lastCheckedAt": "2026-11-26T14:26:44.939Z"
+  },
+  {
+    "id": "e51a09cb4cad3740",
+    "slug": "open-terrarium-workshop",
+    "title": "Open Terrarium Workshop",
+    "description": "",
+    "startAt": "2026-11-28T15:00:00+05:30",
+    "endAt": "2026-11-28T16:00:00+05:30",
+    "venue": {
+      "name": "Third Wave Coffee, Rajpur Road",
+      "address": "Ground Floor, Rajpur Road, Jakhan, Dehradun, Uttarakhand 248001, India",
+      "city": "Dehradun",
+      "area": "Rajpur",
+      "geo": {
+        "lat": 30.3711,
+        "lng": 78.0764
+      }
+    },
+    "categories": [
+      "Art",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 899,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "bookmyshow",
+        "url": "https://in.bookmyshow.com/events/open-terrarium-workshop/ET00512636",
+        "externalId": "ET00512636",
+        "checkedAt": "2026-11-26T14:28:00.528Z",
+        "confidence": 0.95
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 8
+    },
+    "firstSeenAt": "2026-11-26T14:28:00.528Z",
+    "lastSeenAt": "2026-11-26T14:28:00.528Z",
+    "lastCheckedAt": "2026-11-26T14:28:00.528Z"
   },
   {
     "id": "9da3b4babac260ec",
@@ -620,7 +968,7 @@
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/the-prom-night-nov-28-2026",
         "externalId": "6af5f244addc867d3b6e056e",
-        "checkedAt": "2026-11-26T02:29:34.684Z",
+        "checkedAt": "2026-11-26T14:28:12.583Z",
         "confidence": 0.85
       }
     ],
@@ -630,8 +978,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-12T21:31:16.931Z",
-    "lastSeenAt": "2026-11-26T02:29:34.684Z",
-    "lastCheckedAt": "2026-11-26T02:29:34.684Z"
+    "lastSeenAt": "2026-11-26T14:28:12.583Z",
+    "lastCheckedAt": "2026-11-26T14:28:12.583Z"
   },
   {
     "id": "27b1fa02ff629cb7",
@@ -650,7 +998,9 @@
       }
     },
     "categories": [
-      "Other"
+      "Music",
+      "Books",
+      "Food"
     ],
     "pricing": {
       "type": "paid",
@@ -663,6 +1013,12 @@
         "url": "https://www.district.in/events/naalayak-nov28-2026-buy-tickets",
         "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/naalayak/4100031139740327",
+        "checkedAt": "2026-11-26T14:24:37.021Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -671,8 +1027,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T00:08:44.420Z",
-    "lastSeenAt": "2026-11-26T00:08:58.843Z",
-    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
+    "lastSeenAt": "2026-11-26T14:24:37.021Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.021Z"
   },
   {
     "id": "63c2f6d91258d50b",
@@ -703,7 +1059,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/gyanada-marathon-2026/3900031133010955",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.021Z",
         "confidence": 0.75
       }
     ],
@@ -713,8 +1069,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.021Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.021Z"
   },
   {
     "id": "58ea9fc74a68de7b",
@@ -751,7 +1107,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/run-for-trees/4100030939067213",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.021Z",
         "confidence": 0.75
       }
     ],
@@ -761,8 +1117,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-29T08:29:27.470Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.021Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.021Z"
   },
   {
     "id": "b36082addcdc9932",
@@ -876,7 +1232,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/mukul-sharma-live-a-poetry-and-storytelling-show/3900030974543518",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -886,8 +1242,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-05T09:37:22.961Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "18c10e36589b0118",
@@ -916,7 +1272,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/global-study-abroad-expo-tickets/80002701049698",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -926,8 +1282,98 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-16T23:26:09.553Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
+  },
+  {
+    "id": "e293ea217540b15a",
+    "slug": "cloud-unplugged-2026",
+    "title": "Cloud Unplugged 2026",
+    "description": "Meetup event in Dehradun. Check the organizer page for the latest details.",
+    "startAt": "2026-11-30T05:30:00.000Z",
+    "endAt": "2026-11-30T11:30:00.000Z",
+    "venue": {
+      "name": "Graphic Era Deemed to be University",
+      "address": "566/6, Bell Road, Society Area, Clement Town, Dehradun, Uttarakhand 248002, India, Dehradun, UK",
+      "city": "Dehradun",
+      "area": "Clement Town",
+      "geo": {
+        "lat": 30.26802,
+        "lng": 77.99612
+      },
+      "geoFrom": "table"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "meetup",
+        "url": "https://www.meetup.com/aws-sbg-at-graphic-era-deemed-to-be-university/events/317578439/",
+        "externalId": "317578439",
+        "checkedAt": "2026-11-26T14:25:06.587Z",
+        "confidence": 0.9
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-26T14:25:06.587Z",
+    "lastSeenAt": "2026-11-26T14:25:06.587Z",
+    "lastCheckedAt": "2026-11-26T14:25:06.587Z"
+  },
+  {
+    "id": "82dd4376b476fc91",
+    "slug": "200-hour-yoga-teacher-training-in-dehradun-kunwar-yoga",
+    "title": "300-Hour Advanced Yoga Teacher Training in Dehradun | Kunwar Yoga",
+    "description": "Advance your yoga practice and teaching skills with a 30-day training experience at Kunwar Yoga in Dehradun, India. About this Event Deepen Your Practice. Develop Your Teaching. Ready to explore the next stage of your yoga journey? Explore advanced asana, pranayama, meditation, anatomy, philosophy, sequencing and teaching practice. Designed for practitioners with an existing yoga foundation, this programme brings personal practice and teaching development together. At Kunwar Yoga , practical instruction is supported by theoretical learning. Study with an experienced teaching team, ask questions and take time to understand the principles behind your practice. The school’s Dehradun setting offers a peaceful environment where you can give your learning greater attention. The school’s approach includes Hatha Yoga, Ashtanga Yoga and Vinyasa Flow , connecting traditional practice with the relationship between movement and breath. Your course materials include a teacher training manual in Hindi or English to support your studies. For a residential experience, choose shared or private accommodation. Simple, comfortable rooms provide space to rest and reflect between sessions, while the school’s vegetarian dining arrangements support your stay. Bring your curiosity, commitment and willingness to learn. Make space to consider not only how you practise, but also what you want to communicate as a teacher. Contact Kunwar Yoga to discuss your preferred batch and accommodation before booking. Course inclusions Training materials include a YTTC manual in Hindi or English . A one-day tour is also advertised. Residential packages include accommodation and meals; non-residential training excludes accommodation. For residential meals, the accommodation page specifies vegetarian breakfast, lunch and dinner from Monday to Saturday , with no scheduled meals on Sundays. Confirm these arrangements for your selected batch.",
+    "startAt": "2026-12-05",
+    "venue": {
+      "name": "Kunwar Yoga Classes | Yoga Classes in Dehradun | Yoga Course in Dehradun | Yoga Teacher Training in Dehradun",
+      "address": "Mahadev Residency, Old Nehru Colony, Dharampur, Dehradun, Uttarakhand, India. 248001 Dehradun",
+      "city": "Dehradun",
+      "area": "Dharampur",
+      "geo": {
+        "lat": 30.30215,
+        "lng": 78.0499
+      }
+    },
+    "categories": [
+      "Workshop",
+      "Wellness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/200-hour-yoga-teacher-training-in-dehradun-kunwar-yoga/100002002423319051",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
+        "confidence": 0.75
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/300-hour-advanced-yoga-teacher-training-in-dehradun-kunwar-yoga/100002002423579831",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "0d368cf55a3359e2",
@@ -1065,7 +1511,7 @@
     "id": "e29e4928933a2bc5",
     "slug": "pottery-workshop",
     "title": "Pottery Workshop",
-    "description": "Exclusion: WHEEL POTTERY IS NOT INCLUDED . Important Note on Booking: IMP NOTE: Custs Required to Pay an Mandatory 400 Per Person Cover Charges at Venue, Which is Fully Redeemable at Thier F/B Billing at Venue. Billing only Have to be in Cash, Card, UPI only, No Dineout apps are not Allowed to Pay F/B bill at Venue.",
+    "description": "🎨 Play With Clay: Hands-On Hand-Building Experience This event offers a relaxed, no-pressure creative escape for everyone, from beginners to experienced creators. It focuses exclusively on hand-building pottery, allowing participants to shape, mold, and design whatever they wish without formal instructions—it`s do-your-own-thing pottery. Key Features: Creative Freedom: No rules or instructions; pure experimentation. All-Inclusive: Top-quality clay, tools, and brushes are provided. Relaxing Escape: A perfect way to unplug, unwind, and enjoy hands-on fun. Exclusion: WHEEL POTTERY IS NOT INCLUDED. Important Note on Booking: An additional mandatory fee of ₹500 per person must be paid at the venue. This fee is fully redeemable as a food coupon for orders at the venue",
     "startAt": "2026-12-05T13:15:00+05:30",
     "endAt": "2026-12-05T15:15:00+05:30",
     "venue": {
@@ -1080,20 +1526,20 @@
     },
     "categories": [
       "Art",
-      "Workshop"
+      "Workshop",
+      "Food"
     ],
     "pricing": {
       "type": "paid",
-      "minPrice": 499,
-      "currency": "INR",
-      "maxPrice": 549
+      "minPrice": 549,
+      "currency": "INR"
     },
     "sources": [
       {
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/pottery-workshop/ET00472621",
         "externalId": "ET00472621",
-        "checkedAt": "2026-11-26T02:29:33.347Z",
+        "checkedAt": "2026-11-26T14:28:03.756Z",
         "confidence": 0.95
       },
       {
@@ -1117,8 +1563,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T23:32:23.167Z",
-    "lastSeenAt": "2026-11-26T02:29:33.347Z",
-    "lastCheckedAt": "2026-11-26T02:29:33.347Z",
+    "lastSeenAt": "2026-11-26T14:28:03.756Z",
+    "lastCheckedAt": "2026-11-26T14:28:03.756Z",
     "sequence": 2,
     "modifiedAt": "2026-11-26T02:29:35.124Z"
   },
@@ -1147,7 +1593,7 @@
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/temple-of-darkness-teaser-dec-05-2026",
         "externalId": "6b06e75186056726751bcffa",
-        "checkedAt": "2026-11-26T02:29:34.684Z",
+        "checkedAt": "2026-11-26T14:28:12.584Z",
         "confidence": 0.85
       }
     ],
@@ -1157,8 +1603,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-25T14:27:46.374Z",
-    "lastSeenAt": "2026-11-26T02:29:34.684Z",
-    "lastCheckedAt": "2026-11-26T02:29:34.684Z"
+    "lastSeenAt": "2026-11-26T14:28:12.584Z",
+    "lastCheckedAt": "2026-11-26T14:28:12.584Z"
   },
   {
     "id": "9c6337b759a5bb0a",
@@ -1252,7 +1698,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/daru-badnaam-a-comedy-show-by-inder-sahani/3900030972909835",
-        "checkedAt": "2026-11-26T02:27:21.202Z",
+        "checkedAt": "2026-11-26T14:24:37.019Z",
         "confidence": 0.75
       }
     ],
@@ -1262,8 +1708,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:16.455Z",
-    "lastSeenAt": "2026-11-26T02:27:21.202Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.202Z"
+    "lastSeenAt": "2026-11-26T14:24:37.019Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.019Z"
   },
   {
     "id": "65de228cded6aeb1",
@@ -1294,7 +1740,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/centrio-comedy-night/3900031051689313",
-        "checkedAt": "2026-11-26T02:27:21.203Z",
+        "checkedAt": "2026-11-26T14:24:37.020Z",
         "confidence": 0.75
       }
     ],
@@ -1304,8 +1750,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-15T19:49:34.930Z",
-    "lastSeenAt": "2026-11-26T02:27:21.203Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.203Z"
+    "lastSeenAt": "2026-11-26T14:24:37.020Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.020Z"
   },
   {
     "id": "e466e09b8c9739f4",
@@ -1336,13 +1782,13 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/200-hour-yoga-teacher-training-tickets/80001338361028",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/100-hour-yoga-teacher-training-tickets/80003663823602",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       },
       {
@@ -1358,10 +1804,48 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-14T19:14:05.402Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 3,
     "modifiedAt": "2026-11-20T10:12:11.025Z"
+  },
+  {
+    "id": "a986ba63c959f749",
+    "slug": "aws-community-meetup-dehradun-uu",
+    "title": "AWS Community Meetup Dehradun UU",
+    "description": "Meetup event in Dehradun. Check the organizer page for the latest details.",
+    "startAt": "2026-12-10T04:30:00.000Z",
+    "endAt": "2026-12-10T11:30:00.000Z",
+    "venue": {
+      "name": "Uttaranchal University",
+      "address": "Prem Nagar, Dehradun, Uttarakhand 248007, India, Dehradun, UK",
+      "city": "Dehradun",
+      "area": "Prem Nagar"
+    },
+    "categories": [
+      "Meetups"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "meetup",
+        "url": "https://www.meetup.com/aws-sbg-at-uttaranchal-university/events/317582281/",
+        "externalId": "317582281",
+        "checkedAt": "2026-11-26T14:25:06.587Z",
+        "confidence": 0.9
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-26T14:25:06.587Z",
+    "lastSeenAt": "2026-11-26T14:25:06.587Z",
+    "lastCheckedAt": "2026-11-26T14:25:06.587Z"
   },
   {
     "id": "d092613afd25636e",
@@ -1400,7 +1884,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/level-up-play-fest-centrio-mall-dehradun/3900030931951226",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1410,8 +1894,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-28T21:09:08.578Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -1538,7 +2022,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lath-dhara-bhittar-by-amit-mahrana/3900031065155707",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1548,8 +2032,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-20T21:52:17.180Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "b667fd3ef837c94d",
@@ -1576,7 +2060,7 @@
         "provider": "sortmyscene",
         "url": "https://sortmyscene.com/events/christmas-market-dec-20-2026",
         "externalId": "6b06c40126c4fc25ee27b36a",
-        "checkedAt": "2026-11-26T02:29:34.684Z",
+        "checkedAt": "2026-11-26T14:28:12.584Z",
         "confidence": 0.85
       }
     ],
@@ -1586,8 +2070,8 @@
       "score": 6
     },
     "firstSeenAt": "2026-11-25T11:29:16.087Z",
-    "lastSeenAt": "2026-11-26T02:29:34.684Z",
-    "lastCheckedAt": "2026-11-26T02:29:34.684Z"
+    "lastSeenAt": "2026-11-26T14:28:12.584Z",
+    "lastCheckedAt": "2026-11-26T14:28:12.584Z"
   },
   {
     "id": "0ad74b3663c3e847",
@@ -1625,7 +2109,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-moto-fest-2026/4100030972198428",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.021Z",
         "confidence": 0.75
       }
     ],
@@ -1635,8 +2119,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.021Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.021Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -1666,7 +2150,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/the-bel-awards/200030972130146",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1676,8 +2160,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-05T09:37:22.961Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "caac9b6c619821b3",
@@ -1708,7 +2192,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/christmas-jingle-night-with-dj-sehra/3900031065643920",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1718,8 +2202,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-17T22:28:58.976Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "a2ad6ec0c7a35048",
@@ -1794,13 +2278,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605",
         "externalId": "ET00407605",
-        "checkedAt": "2026-11-26T02:28:45.402Z",
+        "checkedAt": "2026-11-26T14:26:59.925Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/halki-halki-fati-by-vikas-kush-sharma/3900030845664301",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1810,8 +2294,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-26T02:28:45.402Z",
-    "lastCheckedAt": "2026-11-26T02:28:45.402Z",
+    "lastSeenAt": "2026-11-26T14:26:59.925Z",
+    "lastCheckedAt": "2026-11-26T14:26:59.925Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.865Z"
   },
@@ -1853,7 +2337,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-year-2027/3900030973684426",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1863,8 +2347,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-02T09:30:21.827Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "1060b7262192c6b8",
@@ -1914,7 +2398,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-year-party-in-dehradun/3900031076503438",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1924,8 +2408,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-26T02:27:21.204Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.204Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "a106392fadf2f965",
@@ -1957,7 +2441,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -1967,8 +2451,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -2044,13 +2528,13 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/new-year-party-2027-dehradun-nye-eve-maya-farm/ET00525062",
         "externalId": "ET00525062",
-        "checkedAt": "2026-11-26T02:28:54.625Z",
+        "checkedAt": "2026-11-26T14:26:47.051Z",
         "confidence": 0.95
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-year-party-2027-dehradun-nye-eve-maya-farm/3900031000482049",
-        "checkedAt": "2026-11-26T02:27:21.204Z",
+        "checkedAt": "2026-11-26T14:24:37.021Z",
         "confidence": 0.75
       }
     ],
@@ -2060,8 +2544,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-06T09:31:35.001Z",
-    "lastSeenAt": "2026-11-26T02:28:54.625Z",
-    "lastCheckedAt": "2026-11-26T02:28:54.625Z"
+    "lastSeenAt": "2026-11-26T14:26:47.051Z",
+    "lastCheckedAt": "2026-11-26T14:26:47.051Z"
   },
   {
     "id": "562de29d0166cb06",
@@ -2105,8 +2589,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-18T03:32:24.115Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.951Z"
   },
@@ -2146,7 +2630,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/chikka-on-roll/3900030703853405",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -2156,8 +2640,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.866Z"
   },
@@ -2179,7 +2663,7 @@
       }
     },
     "categories": [
-      "Other"
+      "Music"
     ],
     "pricing": {
       "type": "paid",
@@ -2192,6 +2676,12 @@
         "url": "https://www.district.in/events/lohri-vibes-bhangra-night-jan13-2026-buy-tickets",
         "checkedAt": "2026-11-26T00:08:58.843Z",
         "confidence": 0.95
+      },
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/lohri-vibes-bhangra-night/4100031140981507",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
+        "confidence": 0.75
       }
     ],
     "verificationStatus": "verified",
@@ -2200,8 +2690,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T00:08:39.773Z",
-    "lastSeenAt": "2026-11-26T00:08:58.843Z",
-    "lastCheckedAt": "2026-11-26T00:08:58.843Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "4e90e288934b77c1",
@@ -2241,7 +2731,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/lakhwinder-wadali-india-tour-dehradun/3900030624689839",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -2251,8 +2741,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-26T15:15:28.891Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z",
     "sequence": 1,
     "modifiedAt": "2026-11-02T09:30:37.863Z"
   },
@@ -2285,7 +2775,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/healthon-half-marathon-dehradun/3900031055362652",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -2295,8 +2785,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-16T23:26:09.553Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "cd4129b12de2b79a",
@@ -2325,7 +2815,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/arz-kiya-hai/3900031117189008",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -2335,8 +2825,8 @@
       "score": 4
     },
     "firstSeenAt": "2026-11-24T23:31:02.906Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z"
+    "lastSeenAt": "2026-11-26T14:24:37.022Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.022Z"
   },
   {
     "id": "d5f6a21b7e497e9f",
@@ -2364,7 +2854,7 @@
         "provider": "bookmyshow",
         "url": "https://in.bookmyshow.com/events/lakhwinder-wadali-india-tour-dehradun/ET00514210",
         "externalId": "ET00514210",
-        "checkedAt": "2026-11-26T02:28:35.090Z",
+        "checkedAt": "2026-11-26T14:26:14.111Z",
         "confidence": 0.95
       }
     ],
@@ -2374,8 +2864,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-19T04:11:21.602Z",
-    "lastSeenAt": "2026-11-26T02:28:35.090Z",
-    "lastCheckedAt": "2026-11-26T02:28:35.090Z"
+    "lastSeenAt": "2026-11-26T14:26:14.111Z",
+    "lastCheckedAt": "2026-11-26T14:26:14.111Z"
   },
   {
     "id": "64e33c993e4def3d",
@@ -2421,8 +2911,8 @@
       "score": 5
     },
     "firstSeenAt": "2026-10-23T02:43:57.432Z",
-    "lastSeenAt": "2026-11-26T02:27:21.205Z",
-    "lastCheckedAt": "2026-11-26T02:27:21.205Z",
+    "lastSeenAt": "2026-11-26T14:24:37.023Z",
+    "lastCheckedAt": "2026-11-26T14:24:37.023Z",
     "sequence": 2,
     "modifiedAt": "2026-10-27T05:13:41.816Z"
   },
@@ -2455,13 +2945,13 @@
       {
         "provider": "thrillzone",
         "url": "https://www.sportifiindia.com/events/ddn-ultra-run",
-        "checkedAt": "2026-11-26T02:27:45.142Z",
+        "checkedAt": "2026-11-26T14:25:04.356Z",
         "confidence": 0.9
       },
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/dehradun-ultra-run-2027-4th-edition-tickets/80001080698758",
-        "checkedAt": "2026-11-26T02:27:21.205Z",
+        "checkedAt": "2026-11-26T14:24:37.022Z",
         "confidence": 0.75
       }
     ],
@@ -2471,8 +2961,8 @@
       "score": 7
     },
     "firstSeenAt": "2026-10-18T03:32:24.114Z",
-    "lastSeenAt": "2026-11-26T02:27:45.142Z",
-    "lastCheckedAt": "2026-11-26T02:27:45.142Z",
+    "lastSeenAt": "2026-11-26T14:25:04.356Z",
+    "lastCheckedAt": "2026-11-26T14:25:04.356Z",
     "sequence": 2,
     "modifiedAt": "2026-10-26T15:15:59.948Z"
   },
@@ -2498,7 +2988,7 @@
       {
         "provider": "thrillzone",
         "url": "https://sportifiindia.com/events/dhm-2027",
-        "checkedAt": "2026-11-26T02:27:45.142Z",
+        "checkedAt": "2026-11-26T14:25:04.356Z",
         "confidence": 0.9
       }
     ],
@@ -2508,7 +2998,7 @@
       "score": 7
     },
     "firstSeenAt": "2026-11-08T09:08:48.927Z",
-    "lastSeenAt": "2026-11-26T02:27:45.142Z",
-    "lastCheckedAt": "2026-11-26T02:27:45.142Z"
+    "lastSeenAt": "2026-11-26T14:25:04.356Z",
+    "lastCheckedAt": "2026-11-26T14:25:04.356Z"
   }
 ]
