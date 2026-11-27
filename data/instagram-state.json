@@ -1,7 +1,7 @@
 {
   "accounts": {
     "0ebeddf3e523": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4034464138947676986",
@@ -15,15 +15,13 @@
         "3998210265553340240",
         "3998926697487619260"
       ],
-      "snapshot": {
-        "id": "sd_mwxndkpjxou3ck087",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "3494a3d5e69d": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
+        "4038246797301623825",
         "4036645756805947906",
         "4035284508084792706",
         "4032426490665707396",
@@ -46,13 +44,10 @@
         "4008276136951109215",
         "4004867788108833761"
       ],
-      "snapshot": {
-        "id": "sd_mwxndkuc15hsqxjcss",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "e040d23c04b2": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4034543307333211467",
@@ -65,13 +60,10 @@
         "4017155109572766949",
         "4012702140158958957"
       ],
-      "snapshot": {
-        "id": "sd_mwxndkz91k9vffmfeo",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "1bdf78e536a6": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4037321627481928423",
@@ -105,25 +97,19 @@
         "4006106049285377892",
         "4002794212897512779"
       ],
-      "snapshot": {
-        "id": "sd_mwxndl5636rerxy0c",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "d86fbe036a59": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4031481865668912302",
         "4028089610901567062"
       ],
-      "snapshot": {
-        "id": "sd_mwxndl9n1ra6szz5d0",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "43d40805e62b": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4037466310874833951",
@@ -140,15 +126,15 @@
         "4017213960423850036",
         "4001961559027028906"
       ],
-      "snapshot": {
-        "id": "sd_mwxndlf42himm6ab5g",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "e1613347e983": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
+        "4038041542949880435",
+        "4038660707381650172",
+        "4038346332737371361",
         "4036916553584509833",
         "4037253194035552997",
         "4036185402670763918",
@@ -199,13 +185,10 @@
         "4013686581177002847",
         "4012967059113605876"
       ],
-      "snapshot": {
-        "id": "sd_mwxndlk71niehp09o1",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "20ae9c76aa25": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4036833027493012406",
@@ -231,13 +214,10 @@
         "4005292787528535746",
         "4006162202390518856"
       ],
-      "snapshot": {
-        "id": "sd_mwxndlpm4aa4ushg6",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "7173ecff1e8a": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4022742430386372413",
@@ -248,13 +228,10 @@
         "4013460574721184476",
         "3998388348556710966"
       ],
-      "snapshot": {
-        "id": "sd_mwxndlu9aii4os3oh",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "5e87e463fb91": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4035351937360035503",
@@ -278,13 +255,10 @@
         "4008269356792781090",
         "4007572742819804022"
       ],
-      "snapshot": {
-        "id": "sd_mwxndlz11cy3hnz8lz",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "29511b8ce420": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4035244859014920237",
@@ -302,15 +276,14 @@
         "4002056298543579712",
         "4001306640154135780"
       ],
-      "snapshot": {
-        "id": "sd_mwxndm381b03cxedrs",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "e1953a317e5d": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
+        "4038899095137036213",
+        "4038181829814542243",
         "4036869970880768261",
         "4032392371882217821",
         "4030221854519568983",
@@ -337,13 +310,10 @@
         "4007908763218142920",
         "4004829109993314082"
       ],
-      "snapshot": {
-        "id": "sd_mwxndm8rrcnd5e996",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "06ad4fb7617a": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4037485746553573644",
@@ -377,29 +347,20 @@
         "4011420457628869200",
         "4012178999653751396"
       ],
-      "snapshot": {
-        "id": "sd_mwxndmd0133n3kb04e",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "63e26dcd561c": {
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "3997599074325735897",
         "3997403390649061657"
       ],
-      "snapshot": {
-        "id": "sd_mwxndmhm1m25jwbfiy",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      }
+      "snapshot": null
     },
     "cc84aaf7bef0": {
-      "snapshot": {
-        "id": "sd_mwxndn4aku0okgv9z",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      },
-      "lastFetchedAt": "2026-11-25T11:29:16.114Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4035871784477545651",
@@ -440,11 +401,8 @@
       ]
     },
     "8d2f75fd9e08": {
-      "snapshot": {
-        "id": "sd_mwxndna02qylgfpli6",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      },
-      "lastFetchedAt": "2026-11-25T14:27:46.408Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4032267921506168040",
@@ -456,11 +414,8 @@
       ]
     },
     "c0891813dfeb": {
-      "snapshot": {
-        "id": "sd_mwxndnf719p984h6qn",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      },
-      "lastFetchedAt": "2026-11-25T14:27:46.408Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4033934386931724059",
@@ -469,13 +424,11 @@
       ]
     },
     "a08dff1b1a6d": {
-      "snapshot": {
-        "id": "sd_mwxndnl41p51ad19u4",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      },
-      "lastFetchedAt": "2026-11-25T14:27:46.408Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
+        "4038223025576374349",
         "4033231573359878283",
         "4030235294690466268",
         "4030227989915926966",
@@ -489,11 +442,8 @@
       ]
     },
     "944180da5cc0": {
-      "snapshot": {
-        "id": "sd_mwxndnqlsvwzu7o7b",
-        "startedAt": "2026-11-26T14:28:12.735Z"
-      },
-      "lastFetchedAt": "2026-11-25T14:27:46.408Z",
+      "snapshot": null,
+      "lastFetchedAt": "2026-11-27T02:30:56.615Z",
       "lastError": "",
       "seen": [
         "4015635783746875731",
@@ -512,82 +462,6 @@
     }
   },
   "collected": [
-    {
-      "id": "sd_mwrnw1vc22xf0tgjv9",
-      "at": "2026-11-23T02:12:00.438Z"
-    },
-    {
-      "id": "sd_mwrnw2931myrl0cqfh",
-      "at": "2026-11-23T02:12:00.438Z"
-    },
-    {
-      "id": "sd_mwrnw2fc1v46gcx8eu",
-      "at": "2026-11-23T02:12:00.438Z"
-    },
-    {
-      "id": "sd_mwrnw2mu1b37v9gtm8",
-      "at": "2026-11-23T02:12:00.438Z"
-    },
-    {
-      "id": "sd_mwt5gza91h1opsakeg",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5gzg22ak6guwdjv",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5gzlplucg6mcwn",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5gzqw4emlofrgx",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5gzxa2l744tri0t",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h024dqnd499c4",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0801uvx5haqjw",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0dy1dqq8uw40z",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0j6ax8y8l6or",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0nt1aa5a9jmks",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0tr2ae9isq2y7",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h0yv2ngok52j4d",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h157i1ggub2a8",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h1a22j76yzdnun",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
-    {
-      "id": "sd_mwt5h1f546k5z5ub4",
-      "at": "2026-11-24T01:46:04.205Z"
-    },
     {
       "id": "sd_mwu1a1t41m03vvgi4h",
       "at": "2026-11-24T12:40:11.740Z"
@@ -679,6 +553,82 @@
     {
       "id": "sd_mww1jz9x2enpnrboqw",
       "at": "2026-11-25T14:27:46.408Z"
+    },
+    {
+      "id": "sd_mwxndkpjxou3ck087",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndkuc15hsqxjcss",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndkz91k9vffmfeo",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndl5636rerxy0c",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndl9n1ra6szz5d0",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndlf42himm6ab5g",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndlk71niehp09o1",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndlpm4aa4ushg6",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndlu9aii4os3oh",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndlz11cy3hnz8lz",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndm381b03cxedrs",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndm8rrcnd5e996",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndmd0133n3kb04e",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndmhm1m25jwbfiy",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndn4aku0okgv9z",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndna02qylgfpli6",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndnf719p984h6qn",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndnl41p51ad19u4",
+      "at": "2026-11-27T02:30:56.615Z"
+    },
+    {
+      "id": "sd_mwxndnqlsvwzu7o7b",
+      "at": "2026-11-27T02:30:56.615Z"
     }
   ],
   "candidates": [
@@ -768,6 +718,51 @@
       "firstSeenAt": "2026-11-25T11:29:16.114Z",
       "lastSeenAt": "2026-11-25T11:29:16.114Z",
       "lastCheckedAt": "2026-11-25T11:29:16.114Z"
+    },
+    {
+      "id": "afcf56f33b257ec6",
+      "slug": "sunday-sunrise-hike-khedasuri-temple-trail",
+      "title": "Sunday Sunrise Hike: Khedasuri Temple Trail",
+      "description": "Hello everyone\n\nWe are going back to Khedasuri Temple Trail after a year. Last time, we visited this place in September.\n\nWe have explored this trail with our group before and have visited it 4–5 times. As we usually do, we plan to visit this trail once a year.\n\nThe total hike will be around 8–10 km.\n\nMeeting Point: Maharana Pratap Chowk, Maldevta\nMeeting Time: 5:30 AM\n\nFrom there, we will drive around 6 km to the hike starting point. We will park our vehicles there and start the hike.\n\nWe should be back by 10–11 AM. It will be a short and quick morning hike.\n\nThe trail will be a mix of easy and moderate sections.\n\nAnyone can join, but please make sure you are physically active and don't have any knee, joint or BP-related issues.\n\nSee you all on the trail. Let's have another good Sunday mo",
+      "startAt": "2026-11-29T05:30:00+05:30",
+      "endAt": "2026-11-29T11:00:00+05:30",
+      "venue": {
+        "name": "Maharana Pratap Chowk, Maldevta (meeting point); Khedasuri Temple Trail",
+        "city": "Dehradun"
+      },
+      "categories": [
+        "Outdoors",
+        "Fitness"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "currency": "INR"
+      },
+      "howToJoin": "Meet at Maharana Pratap Chowk, Maldevta at 5:30 AM; own vehicle, parking available at hike start",
+      "organizer": "the5amclub.in",
+      "posts": [
+        "https://www.instagram.com/p/DgMNIP_z6L8"
+      ],
+      "reading": {
+        "detailsFrom": "both",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "provider": "instagram",
+          "url": "https://www.instagram.com/p/DgMNIP_z6L8",
+          "checkedAt": "2026-11-27T02:30:56.615Z",
+          "confidence": 0.5
+        }
+      ],
+      "verificationStatus": "community-reported",
+      "curation": {
+        "status": "review",
+        "score": 3
+      },
+      "firstSeenAt": "2026-11-27T02:30:56.615Z",
+      "lastSeenAt": "2026-11-27T02:30:56.615Z",
+      "lastCheckedAt": "2026-11-27T02:30:56.615Z"
     }
   ]
 }

@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": "afcf56f33b257ec6",
+    "slug": "sunday-sunrise-hike-khedasuri-temple-trail",
+    "title": "Sunday Sunrise Hike: Khedasuri Temple Trail",
+    "description": "Hello everyone\n\nWe are going back to Khedasuri Temple Trail after a year. Last time, we visited this place in September.\n\nWe have explored this trail with our group before and have visited it 4–5 times. As we usually do, we plan to visit this trail once a year.\n\nThe total hike will be around 8–10 km.\n\nMeeting Point: Maharana Pratap Chowk, Maldevta\nMeeting Time: 5:30 AM\n\nFrom there, we will drive around 6 km to the hike starting point. We will park our vehicles there and start the hike.\n\nWe should be back by 10–11 AM. It will be a short and quick morning hike.\n\nThe trail will be a mix of easy and moderate sections.\n\nAnyone can join, but please make sure you are physically active and don't have any knee, joint or BP-related issues.\n\nSee you all on the trail. Let's have another good Sunday mo",
+    "startAt": "2026-11-29T05:30:00+05:30",
+    "endAt": "2026-11-29T11:00:00+05:30",
+    "venue": {
+      "name": "Maharana Pratap Chowk, Maldevta (meeting point); Khedasuri Temple Trail",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "howToJoin": "Meet at Maharana Pratap Chowk, Maldevta at 5:30 AM; own vehicle, parking available at hike start",
+    "organizer": "the5amclub.in",
+    "posts": [
+      "https://www.instagram.com/p/DgMNIP_z6L8"
+    ],
+    "reading": {
+      "detailsFrom": "both",
+      "confidence": "high"
+    },
+    "sources": [
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgMNIP_z6L8",
+        "checkedAt": "2026-11-27T02:30:56.615Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "community-reported",
+    "curation": {
+      "status": "review",
+      "score": 3
+    },
+    "firstSeenAt": "2026-11-27T02:30:56.615Z",
+    "lastSeenAt": "2026-11-27T02:30:56.615Z",
+    "lastCheckedAt": "2026-11-27T02:30:56.615Z"
+  }
+]
