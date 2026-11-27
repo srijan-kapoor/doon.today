@@ -1672,6 +1672,43 @@
     "lastCheckedAt": "2026-11-27T02:28:27.410Z"
   },
   {
+    "id": "d043a020d990b771",
+    "slug": "indian-miniature-painting-workshop",
+    "title": "Indian miniature painting workshop",
+    "description": "Organized by Ayush Katiyar. How to join: DM on instagram. https://www.instagram.com/ayush._.katiyar_?bqrl=MXZtYzhnbmxzeDFnYg==",
+    "startAt": "2026-12-01T10:00:00+05:30",
+    "endAt": "2026-12-01T18:00:00+05:30",
+    "venue": {
+      "name": "Mahi ceramics studio",
+      "city": "Dehradun",
+      "area": "Prem Nagar"
+    },
+    "categories": [
+      "Art"
+    ],
+    "pricing": {
+      "type": "paid",
+      "minPrice": 1699,
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/ayush._.katiyar_?bqrl=MXZtYzhnbmxzeDFnYg==",
+        "checkedAt": "2026-11-27T08:49:28.468Z",
+        "confidence": 1
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-27T08:49:28.468Z",
+    "lastSeenAt": "2026-11-27T08:49:28.468Z",
+    "lastCheckedAt": "2026-11-27T08:49:28.468Z"
+  },
+  {
     "id": "82dd4376b476fc91",
     "slug": "200-hour-yoga-teacher-training-in-dehradun-kunwar-yoga",
     "title": "300-Hour Advanced Yoga Teacher Training in Dehradun | Kunwar Yoga",
