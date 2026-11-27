@@ -1334,6 +1334,49 @@
     "lastCheckedAt": "2026-11-27T02:28:00.309Z"
   },
   {
+    "id": "52ec83369102ee3b",
+    "slug": "sunday-sunrise-hike-khedasuri-temple-trail",
+    "title": "Sunday Sunrise Hike: Khedasuri Temple Trail",
+    "description": "Hello everyone We are going back to Khedasuri Temple Trail after a year. Last time, we visited this place in September. We have explored this trail with our group before and have visited it 4–5 times. As we usually do, we plan to visit this trail once a year. The total hike will be around 8–10 km. Meeting Point: Maharana Pratap Chowk, Maldevta Meeting Time: 5:30 AM From there, we will drive around 6 km to the hike starting point. We will park our vehicles there and start the hike. We should be back by 10–11 AM. It will be a short and quick morning hike. The trail will be a mix of easy and moderate sections. Anyone can join, but please make sure you are physically active and don't have any knee, joint or BP-related issues. See you all on the trail. Let's have another good Sunday mo\n\nOrganized by @the5amclub.in. How to join: Meet at Maharana Pratap Chowk, Maldevta at 5:30 AM; own vehicle, parking available at hike start",
+    "startAt": "2026-11-29T05:30:00+05:30",
+    "endAt": "2026-11-29T11:00:00+05:30",
+    "venue": {
+      "name": "Maharana Pratap Chowk, Maldevta (meeting point); Khedasuri Temple Trail",
+      "city": "Dehradun",
+      "area": "Maldevta"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgMNIP_z6L8",
+        "checkedAt": "2026-11-27T03:02:35.260Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgMNIP_z6L8",
+        "checkedAt": "2026-11-27T02:30:56.615Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-27T03:02:35.260Z",
+    "lastSeenAt": "2026-11-27T03:02:35.260Z",
+    "lastCheckedAt": "2026-11-27T03:02:35.260Z"
+  },
+  {
     "id": "58ea9fc74a68de7b",
     "slug": "run-for-trees-marathon",
     "title": "Run for Trees | Marathon",
@@ -2783,7 +2826,7 @@
       {
         "provider": "allevents",
         "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-25T11:27:33.973Z",
+        "checkedAt": "2026-11-27T02:28:00.311Z",
         "confidence": 0.75
       },
       {
@@ -2799,49 +2842,6 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-27T02:28:00.310Z",
-    "lastCheckedAt": "2026-11-27T02:28:00.310Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-27T02:28:00.311Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-27T02:28:00.311Z",
     "lastSeenAt": "2026-11-27T02:28:00.311Z",
     "lastCheckedAt": "2026-11-27T02:28:00.311Z"
   },
