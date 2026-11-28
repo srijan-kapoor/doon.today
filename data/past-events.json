@@ -3996,49 +3996,5 @@
     "lastCheckedAt": "2026-10-29T15:17:05.511Z",
     "sequence": 1,
     "modifiedAt": "2026-10-22T04:57:51.691Z"
-  },
-  {
-    "id": "605b9fcf7277ea1c",
-    "slug": "virasat-2026-vocal-recital-by-siddharth-belmannu",
-    "title": "Virasat 2026: Vocal recital by Siddharth Belmannu",
-    "description": "Ticketed vocal performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-29T19:00:00+05:30",
-    "endAt": "2026-10-29T20:00:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table",
-      "area": "Garhi Cantt"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-7",
-        "externalId": "2026-7-vocal-recital-by-siddharth-belmannu",
-        "checkedAt": "2026-10-29T15:17:05.511Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T03:52:50.746Z",
-    "lastSeenAt": "2026-10-29T15:17:05.511Z",
-    "lastCheckedAt": "2026-10-29T15:17:05.511Z"
   }
 ]

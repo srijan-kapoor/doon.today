@@ -1874,5 +1874,46 @@
     "firstSeenAt": "2026-11-27T08:49:28.468Z",
     "lastSeenAt": "2026-11-27T08:49:28.468Z",
     "lastCheckedAt": "2026-11-27T08:49:28.468Z"
+  },
+  {
+    "id": "797974444b8d0bdb",
+    "slug": "maggie-hike",
+    "title": "Maggie Hike",
+    "description": "A short hike, some yoga and hot Maggie with a view! 🍜🌿 Join Doon Outdoors Club for our Maggie Hike this Sunday. 📅 29 November 2026 📍 Destination: Dwara ⏰ Meetup: 6:15 AM 📌 Maharana Pratap Chowk, Raipur 🥾 Distance: 1.5 km each way — 3 km total We’ll meet at the chowk, drive together to the starting point, then hike up for yoga and Maggie. Please arrange your own transport to the trailhead. Each person should bring: • 1 packet of Maggie • 500 ml of sealed drinking water for cooking • Your own disposable bowl/plate and spoon • Extra water for drinking The DOC team will bring the stove and cook for everyone. Wear comfortable shoes and carry a warm layer for the morning. We’ll bring every wrapper and used utensil back with us. Let’s leave the place clean. 🌱 Coming along? See you S\n\nOrganized by @doonoutdoorsclub. How to join: Meet at Maharana Pratap Chowk, Raipur at 6:15 AM; arrange own transport to the trailhead",
+    "startAt": "2026-11-29T06:15:00+05:30",
+    "venue": {
+      "name": "Maharana Pratap Chowk, Raipur (meetup); Dwara hike starting point",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Outdoors",
+      "Fitness"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgPNM-IS13D",
+        "checkedAt": "2026-11-28T14:48:17.176Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgPNM-IS13D",
+        "checkedAt": "2026-11-28T14:25:07.512Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-28T14:48:17.176Z",
+    "lastSeenAt": "2026-11-28T14:48:17.176Z",
+    "lastCheckedAt": "2026-11-28T14:48:17.176Z"
   }
 ]
