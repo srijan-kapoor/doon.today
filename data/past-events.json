@@ -1,5 +1,87 @@
 [
   {
+    "id": "aef9d4a064faf10d",
+    "slug": "devfest-dehradun-2026",
+    "title": "DevFest Dehradun 2026",
+    "description": "Join us for DevFest Dehradun 2026: \"Build in the Valley. Solve for the Mountains.\" Connect with industry experts, Google Developer Experts, and fellow enthusiasts. Participate in hands-on workshops and experience project showcases highlighting innovative solutions. Don't miss this opportunity to network and learn from the best! Secure your spot now and be a part of the technological revolution in the valleys and mountains. Agenda: 10:30 AM - 11 AM - Check-In and Keynote 11 AM - Building a Better Uttarakhand: Solving Environmental Challenges Through Technology | Adarsh Dabral and Akshat Virmani 11:30 AM - The New Developer Stack: Context Files, Skills, MCP, and Agentic Coding | Harsh Mer 12:15 PM - The Art of Harness Engineering: Turning AI models into reliable agents | Ravi Rawal 1:00 PM - Building a B2B Lead Generation Engine with Gemini & AI Studio | Varun Poladiya 1:30 PM - Lunch and Networking 2:30 PM - Building startups in Dehradun: Big Ideas, Local Roots, and the Startup Journey | Pawan Gupta 3:00 PM - Create 10× More Content with AI: The Modern Creator Stack | Saurabh Singh 4:00 PM - From Hackathon to Product: What Nobody Teaches You | Gaurav Shukla 5:00 PM - Networking and Goodies Distribution 6:00 PM - Event Ends",
+    "startAt": "2026-11-28T11:00:00+05:30",
+    "endAt": "2026-11-28T18:00:00+05:30",
+    "venue": {
+      "name": "Hotel Alaknanda",
+      "address": "274, 293, Kaulagarh Road, Rajendra Nagar, Dehradun, 248001",
+      "city": "Dehradun",
+      "area": "Kaulagarh"
+    },
+    "categories": [
+      "Art",
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "free",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "gdg",
+        "url": "https://gdg.community.dev/events/details/google-gdg-dehradun-presents-devfest-dehradun-2026/",
+        "externalId": "134977",
+        "checkedAt": "2026-11-28T02:27:37.507Z",
+        "confidence": 0.9
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-03T20:32:56.238Z",
+    "lastSeenAt": "2026-11-28T02:27:37.507Z",
+    "lastCheckedAt": "2026-11-28T02:27:37.507Z",
+    "sequence": 1,
+    "modifiedAt": "2026-11-14T19:15:27.641Z"
+  },
+  {
+    "id": "c35f4b8923e425ef",
+    "slug": "mussoorie-shakeout-run",
+    "title": "Mussoorie Shakeout Run",
+    "description": "Mussoorie Ultra Marathon is here and we are all set to do a Shakeout run a day before! 🏃♂️🏃♀️💨 Registration link in bio 🎟️ Venue- Fern Brentwood Mussoorie Time- 11:00 a.m. Date- 28th November\n\nOrganized by @zen_runclub. How to join: Registration link in bio",
+    "startAt": "2026-11-28T11:00:00+05:30",
+    "venue": {
+      "name": "Fern Brentwood Mussoorie",
+      "city": "Dehradun"
+    },
+    "categories": [
+      "Fitness",
+      "Outdoors"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "manual",
+        "url": "https://www.instagram.com/p/DgFC-3CgaIC",
+        "checkedAt": "2026-11-24T03:52:00.488Z",
+        "confidence": 1
+      },
+      {
+        "provider": "instagram",
+        "url": "https://www.instagram.com/p/DgFC-3CgaIC",
+        "checkedAt": "2026-11-24T01:46:04.205Z",
+        "confidence": 0.5
+      }
+    ],
+    "verificationStatus": "verified",
+    "curation": {
+      "status": "published",
+      "score": 5
+    },
+    "firstSeenAt": "2026-11-24T03:52:00.488Z",
+    "lastSeenAt": "2026-11-24T03:52:00.488Z",
+    "lastCheckedAt": "2026-11-24T03:52:00.488Z"
+  },
+  {
     "id": "4fb2a311f1bdbd26",
     "slug": "grand-theft-party",
     "title": "Grand Theft Party",
