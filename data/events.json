@@ -4,7 +4,7 @@
     "slug": "dehradun-literature-festival",
     "title": "Dehradun Literature Festival",
     "description": "The Dehradun Literature Festival returns for its 8th edition, bringing together celebrated authors, poets, thinkers, artists, and readers for inspiring conversations on literature, culture, art, and contemporary ideas. This year’s theme, “Life. Literature. Legacy.”, celebrates the stories we inherit, the lives we shape, and the ideas and works we leave behind. Set in the beautiful Doon Valley, the festival features engaging discussions, book sessions, poetry, music, theatre, and workshops. Join us for a celebration of words, ideas, and enduring legacies.",
-    "startAt": "2026-11-27T04:30:00.000Z",
+    "startAt": "2026-11-28T04:30:00.000Z",
     "endAt": "2026-11-29T15:30:00.000Z",
     "venue": {
       "name": "Doon International School",
@@ -28,7 +28,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-literature-festival-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.053Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       },
       {
@@ -44,87 +44,10 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.461Z",
-    "lastSeenAt": "2026-11-27T14:24:24.794Z",
-    "lastCheckedAt": "2026-11-27T14:24:24.794Z"
-  },
-  {
-    "id": "944964952ddafe15",
-    "slug": "workshop-on-digital-awareness-and-safety",
-    "title": "Workshop on Digital Awareness and Safety",
-    "description": "� Stay Safe in the Digital World! �� Did you know that online scams, fake links, hacked social media accounts, UPI fraud, and privacy threats are increasing every day? Whether you're a student, parent, or working professional, knowing how to protect yourself online is no longer optional. It's essential. � Learn how to identify online scams � Stay safe while using UPI & digital payments � Protect your WhatsApp, Facebook & Instagram accounts � Secure your passwords and personal information � Shop safely online and avoid fraud websites � Understand AI tools and use them responsibly � Technology Safety & Digital Awareness Workshop � Friday, 27 November 2026 � 3:00 PM - 6:00 PM � Ryan Code Labs, 55-B, Laxman Chowk, Dehradun This practical hands-on workshop will help students and families become smarter, safer, and more confident digital citizens. � Limited Seats Available! � Scan the QR code on the poster and register now. Tag your friends, classmates, and family members who should attend this important workshop. #RyanCodeLabs #DigitalSafety #CyberSafety #Dehradun #DigitalAwareness #StudentWorkshop #OnlineSafety #CyberSecurity #TechnologyEducation #UPISafety #InternetSafety #AIAwareness #DehradunStudents #LearnAndGrow #RyanCodeLabsDehradun",
-    "startAt": "2026-11-27T15:00:00+05:30",
-    "venue": {
-      "name": "55-B Laxman Chowk, Dehra Dun, India 248001, Uttarakhand",
-      "address": "55B, Laxman Chowk, Dehradun 248001, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.32019,
-        "lng": 78.01926
-      }
-    },
-    "categories": [
-      "Workshop"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/workshop-on-digital-awareness-and-safety/200031115857525",
-        "checkedAt": "2026-11-27T14:24:00.038Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-24T12:37:45.455Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z",
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z",
     "sequence": 1,
-    "modifiedAt": "2026-11-24T23:33:01.699Z"
-  },
-  {
-    "id": "4fb2a311f1bdbd26",
-    "slug": "grand-theft-party",
-    "title": "Grand Theft Party",
-    "description": "",
-    "startAt": "2026-11-27T20:00:00+05:30",
-    "endAt": "2026-11-28T01:30:00+05:30",
-    "venue": {
-      "name": "Romeo Lane",
-      "address": "",
-      "city": "Dehradun",
-      "area": "Malsi"
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "unknown",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "sortmyscene",
-        "url": "https://sortmyscene.com/events/grand-theft-party-nov-27-2026",
-        "externalId": "6b05b2de860567267511d6f5",
-        "checkedAt": "2026-11-27T14:27:05.116Z",
-        "confidence": 0.85
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 6
-    },
-    "firstSeenAt": "2026-11-24T23:32:57.661Z",
-    "lastSeenAt": "2026-11-27T14:27:05.116Z",
-    "lastCheckedAt": "2026-11-27T14:27:05.116Z"
+    "modifiedAt": "2026-11-28T00:09:18.445Z"
   },
   {
     "id": "aef9d4a064faf10d",
@@ -1402,7 +1325,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/naalayak-nov28-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.194Z",
         "confidence": 0.95
       },
       {
@@ -1418,8 +1341,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T00:08:44.420Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z"
+    "lastSeenAt": "2026-11-28T00:09:13.194Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.194Z"
   },
   {
     "id": "63c2f6d91258d50b",
@@ -1665,7 +1588,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/milf-tour-dehradun-frappe-ash-nov29-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       }
     ],
@@ -1675,8 +1598,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-26T00:08:58.842Z",
-    "lastSeenAt": "2026-11-27T00:08:37.061Z",
-    "lastCheckedAt": "2026-11-27T00:08:37.061Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "f698989035ae2ed6",
@@ -2190,7 +2113,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/ghar-an-open-mic-for-words-by-tape-a-tale-dehradun-apr19-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.191Z",
         "confidence": 0.95
       },
       {
@@ -2207,8 +2130,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-18T07:29:45.462Z",
-    "lastSeenAt": "2026-11-27T00:08:37.061Z",
-    "lastCheckedAt": "2026-11-27T00:08:37.061Z",
+    "lastSeenAt": "2026-11-28T00:09:13.191Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.191Z",
     "occurrences": [
       "2026-12-06T10:30:00.000Z",
       "2026-12-20T10:30:00.000Z"
@@ -2378,7 +2301,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/screening-of-abu-dhabi-gp-lights-out-social-community-meetup-dec6-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.060Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       }
     ],
@@ -2388,8 +2311,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-27T00:08:37.060Z",
-    "lastSeenAt": "2026-11-27T00:08:37.060Z",
-    "lastCheckedAt": "2026-11-27T00:08:37.060Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "e466e09b8c9739f4",
@@ -2566,7 +2489,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/naam-sujal-india-tour-dehradun-dec11-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       }
     ],
@@ -2576,8 +2499,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-24T00:08:44.417Z",
-    "lastSeenAt": "2026-11-27T00:08:37.061Z",
-    "lastCheckedAt": "2026-11-27T00:08:37.061Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "1ff1bdee8c7328bb",
@@ -2741,7 +2664,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/dehradun-moto-fest-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.194Z",
         "confidence": 0.95
       },
       {
@@ -2757,8 +2680,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-10-31T00:10:41.499Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z"
+    "lastSeenAt": "2026-11-28T00:09:13.194Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.194Z"
   },
   {
     "id": "2b6e7260a9346d9b",
@@ -2788,7 +2711,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/the-bel-awards-2026-dec20-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       },
       {
@@ -2804,8 +2727,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-05T09:37:22.961Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z",
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z",
     "sequence": 1,
     "modifiedAt": "2026-11-27T00:08:42.093Z"
   },
@@ -2880,7 +2803,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/vvvv-india-tour-dehradun-nov26-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       }
     ],
@@ -2890,8 +2813,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-12T00:09:45.383Z",
-    "lastSeenAt": "2026-11-27T00:08:37.061Z",
-    "lastCheckedAt": "2026-11-27T00:08:37.061Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "5a0be2a175cd6a49",
@@ -3025,7 +2948,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/new-years-eve-rumours-dec31-2025-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       },
       {
@@ -3054,51 +2977,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-13T00:08:36.792Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z"
-  },
-  {
-    "id": "a106392fadf2f965",
-    "slug": "new-year-s-eve",
-    "title": "New Year's Eve",
-    "description": "Step into a dazzling night of glamour, music, and high-energy celebration as we present New Year’s Eve 2026.Get ready for an electrifying countdown where immersive visuals, pulsating beats, and spectacular performances come together to welcome the New Year in unforgettable style.Dance the night away to a virtual DJ set and multiple artist DJs playing back-to-back, keeping the energy soaring till midnight and beyond. As the clock strikes twelve, witness a thrilling countdown celebration amplified by surprise acts and a breathtaking fire show that lights up the night.With an opulent ambience, vibrant crowd, and non-stop entertainment, this is not just a party—it’s a statement celebration. Ring in 2026, where every moment sparkles and every beat counts.",
-    "startAt": "2026-12-31T19:00:00+05:30",
-    "endAt": "2027-01-01T01:00:00+05:30",
-    "venue": {
-      "name": "Rumours | Jakhan, Dehradun",
-      "address": "Jakhan, Dehradun Dehradun",
-      "city": "Dehradun",
-      "area": "Jakhan",
-      "geo": {
-        "lat": 30.3673,
-        "lng": 78.0718
-      }
-    },
-    "categories": [
-      "Music"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 299,
-      "maxPrice": 999,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/new-years-eve/4100031054343037",
-        "checkedAt": "2026-11-27T14:24:00.038Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "4ddbc7bfa13bac09",
@@ -3141,7 +3021,7 @@
     "firstSeenAt": "2026-11-14T00:08:36.688Z",
     "lastSeenAt": "2026-11-26T00:08:58.844Z",
     "lastCheckedAt": "2026-11-26T00:08:58.844Z",
-    "missedRuns": 1
+    "missedRuns": 2
   },
   {
     "id": "b59dab4202710ff2",
@@ -3321,7 +3201,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/lohri-vibes-bhangra-night-jan13-2026-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.193Z",
         "confidence": 0.95
       },
       {
@@ -3337,8 +3217,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-25T00:08:39.773Z",
-    "lastSeenAt": "2026-11-27T14:24:00.038Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.038Z"
+    "lastSeenAt": "2026-11-28T00:09:13.193Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.193Z"
   },
   {
     "id": "4e90e288934b77c1",
@@ -3422,7 +3302,7 @@
       {
         "provider": "district",
         "url": "https://www.district.in/events/healthon-half-marathon-dehradun-jan10-2027-buy-tickets",
-        "checkedAt": "2026-11-27T00:08:37.061Z",
+        "checkedAt": "2026-11-28T00:09:13.189Z",
         "confidence": 0.95
       },
       {
@@ -3438,8 +3318,8 @@
       "score": 8
     },
     "firstSeenAt": "2026-11-16T23:26:09.553Z",
-    "lastSeenAt": "2026-11-27T14:24:00.039Z",
-    "lastCheckedAt": "2026-11-27T14:24:00.039Z",
+    "lastSeenAt": "2026-11-28T00:09:13.189Z",
+    "lastCheckedAt": "2026-11-28T00:09:13.189Z",
     "sequence": 1,
     "modifiedAt": "2026-11-27T00:08:42.092Z"
   },

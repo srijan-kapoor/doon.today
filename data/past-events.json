@@ -1,5 +1,84 @@
 [
   {
+    "id": "4fb2a311f1bdbd26",
+    "slug": "grand-theft-party",
+    "title": "Grand Theft Party",
+    "description": "",
+    "startAt": "2026-11-27T20:00:00+05:30",
+    "endAt": "2026-11-28T01:30:00+05:30",
+    "venue": {
+      "name": "Romeo Lane",
+      "address": "",
+      "city": "Dehradun",
+      "area": "Malsi"
+    },
+    "categories": [
+      "Music"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "sortmyscene",
+        "url": "https://sortmyscene.com/events/grand-theft-party-nov-27-2026",
+        "externalId": "6b05b2de860567267511d6f5",
+        "checkedAt": "2026-11-27T14:27:05.116Z",
+        "confidence": 0.85
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 6
+    },
+    "firstSeenAt": "2026-11-24T23:32:57.661Z",
+    "lastSeenAt": "2026-11-27T14:27:05.116Z",
+    "lastCheckedAt": "2026-11-27T14:27:05.116Z"
+  },
+  {
+    "id": "944964952ddafe15",
+    "slug": "workshop-on-digital-awareness-and-safety",
+    "title": "Workshop on Digital Awareness and Safety",
+    "description": "� Stay Safe in the Digital World! �� Did you know that online scams, fake links, hacked social media accounts, UPI fraud, and privacy threats are increasing every day? Whether you're a student, parent, or working professional, knowing how to protect yourself online is no longer optional. It's essential. � Learn how to identify online scams � Stay safe while using UPI & digital payments � Protect your WhatsApp, Facebook & Instagram accounts � Secure your passwords and personal information � Shop safely online and avoid fraud websites � Understand AI tools and use them responsibly � Technology Safety & Digital Awareness Workshop � Friday, 27 November 2026 � 3:00 PM - 6:00 PM � Ryan Code Labs, 55-B, Laxman Chowk, Dehradun This practical hands-on workshop will help students and families become smarter, safer, and more confident digital citizens. � Limited Seats Available! � Scan the QR code on the poster and register now. Tag your friends, classmates, and family members who should attend this important workshop. #RyanCodeLabs #DigitalSafety #CyberSafety #Dehradun #DigitalAwareness #StudentWorkshop #OnlineSafety #CyberSecurity #TechnologyEducation #UPISafety #InternetSafety #AIAwareness #DehradunStudents #LearnAndGrow #RyanCodeLabsDehradun",
+    "startAt": "2026-11-27T15:00:00+05:30",
+    "venue": {
+      "name": "55-B Laxman Chowk, Dehra Dun, India 248001, Uttarakhand",
+      "address": "55B, Laxman Chowk, Dehradun 248001, India Dehradun",
+      "city": "Dehradun",
+      "geo": {
+        "lat": 30.32019,
+        "lng": 78.01926
+      }
+    },
+    "categories": [
+      "Workshop"
+    ],
+    "pricing": {
+      "type": "unknown",
+      "currency": "INR"
+    },
+    "sources": [
+      {
+        "provider": "allevents",
+        "url": "https://allevents.in/dehradun/workshop-on-digital-awareness-and-safety/200031115857525",
+        "checkedAt": "2026-11-27T14:24:00.038Z",
+        "confidence": 0.75
+      }
+    ],
+    "verificationStatus": "review",
+    "curation": {
+      "status": "published",
+      "score": 4
+    },
+    "firstSeenAt": "2026-11-24T12:37:45.455Z",
+    "lastSeenAt": "2026-11-27T14:24:00.038Z",
+    "lastCheckedAt": "2026-11-27T14:24:00.038Z",
+    "sequence": 1,
+    "modifiedAt": "2026-11-24T23:33:01.699Z"
+  },
+  {
     "id": "95b050c34f47f140",
     "slug": "board-banter-game-nights-cosmolancer-azul-girgit-black-sheep",
     "title": "Board & Banter game nights: Cosmolancer, Azul, Girgit & Black Sheep",
@@ -3879,138 +3958,5 @@
     "firstSeenAt": "2026-10-19T03:52:50.746Z",
     "lastSeenAt": "2026-10-29T15:17:05.511Z",
     "lastCheckedAt": "2026-10-29T15:17:05.511Z"
-  },
-  {
-    "id": "31e6147cb500477c",
-    "slug": "virasat-2026-geet-and-ghazals-by-priyanka-barve",
-    "title": "Virasat 2026: Geet and Ghazals by Priyanka Barve",
-    "description": "Ticketed vocal performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-28T20:30:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-6",
-        "externalId": "2026-6-geet-and-ghazals-by-priyanka-barve",
-        "checkedAt": "2026-10-28T15:11:16.539Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T03:52:50.746Z",
-    "lastSeenAt": "2026-10-28T15:11:16.539Z",
-    "lastCheckedAt": "2026-10-28T15:11:16.539Z",
-    "sequence": 2,
-    "modifiedAt": "2026-10-26T15:15:59.955Z"
-  },
-  {
-    "id": "b4fd38185883b198",
-    "slug": "workshop-how-to-date-better",
-    "title": "Workshop: How to Date Better",
-    "description": "Dating can feel confusing, whether you are just starting out or have years of experience. This hands-on workshop gives you practical tools for assessing compatibility, getting more quality matches, av",
-    "startAt": "2026-10-28T19:30:00+05:30",
-    "endAt": "2026-10-28T20:30:00+05:30",
-    "venue": {
-      "name": "Tapri - The Teafe",
-      "address": "5th Floor, MJ Tower, 55, Rajpur Rd, opposite St Joseph's Academy, Dobhalwala, Chukkuwala, Dehradun, Uttarakhand 248001, India Dehradun",
-      "city": "Dehradun",
-      "geo": {
-        "lat": 30.33148,
-        "lng": 78.04832
-      },
-      "area": "Rajpur"
-    },
-    "categories": [
-      "Workshop"
-    ],
-    "pricing": {
-      "type": "paid",
-      "minPrice": 1200,
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "allevents",
-        "url": "https://allevents.in/dehradun/workshop-how-to-date-better-tickets/80003047212665",
-        "checkedAt": "2026-10-28T15:10:53.427Z",
-        "confidence": 0.75
-      }
-    ],
-    "verificationStatus": "review",
-    "curation": {
-      "status": "published",
-      "score": 4
-    },
-    "firstSeenAt": "2026-10-26T04:55:36.433Z",
-    "lastSeenAt": "2026-10-28T15:10:53.427Z",
-    "lastCheckedAt": "2026-10-28T15:10:53.427Z",
-    "sequence": 1,
-    "modifiedAt": "2026-10-26T15:15:59.947Z"
-  },
-  {
-    "id": "08ba11ca7e95a349",
-    "slug": "virasat-2026-flute-by-ashwin-sriniivasan",
-    "title": "Virasat 2026: Flute by Ashwin Sriniivasan",
-    "description": "Ticketed performance at Virasat 2026. Check the official programme and ticket page for details.",
-    "startAt": "2026-10-28T19:00:00+05:30",
-    "endAt": "2026-10-28T20:00:00+05:30",
-    "venue": {
-      "name": "Himalayan Cultural Centre — Auditorium",
-      "address": "Garhi Cantt",
-      "city": "Dehradun",
-      "area": "Garhi Cantt",
-      "geo": {
-        "lat": 30.35473,
-        "lng": 78.01122
-      },
-      "geoFrom": "table"
-    },
-    "categories": [
-      "Music",
-      "Culture"
-    ],
-    "pricing": {
-      "type": "paid",
-      "currency": "INR"
-    },
-    "sources": [
-      {
-        "provider": "virasat",
-        "url": "https://reachvirasat.org/programme#day-6",
-        "externalId": "2026-6-flute-by-ashwin-sriniivasan",
-        "checkedAt": "2026-10-28T15:11:16.539Z",
-        "confidence": 0.95
-      }
-    ],
-    "verificationStatus": "verified",
-    "curation": {
-      "status": "published",
-      "score": 7
-    },
-    "firstSeenAt": "2026-10-19T14:48:02.685Z",
-    "lastSeenAt": "2026-10-28T15:11:16.539Z",
-    "lastCheckedAt": "2026-10-28T15:11:16.539Z"
   }
 ]
